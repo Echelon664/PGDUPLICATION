@@ -885,11 +885,11 @@ html_template = f"""<!DOCTYPE html>
             <div class="flex items-center justify-between pt-1 border-t border-slate-100 text-xs">
               <span class="font-semibold text-blue-600">${{(s.programs || []).join(', ')}}</span>
               <div class="flex items-center gap-1.5">
-                <button type="button" onclick="viewDocPdf('${{s.id}}')" class="bg-red-600 hover:bg-red-700 text-white px-2.5 py-1 rounded font-bold transition inline-flex items-center gap-1 shadow-2xs cursor-pointer">
+                <button type="button" onclick="viewDocPdf('${{s.id}}')" class="bg-emerald-600 hover:bg-emerald-700 text-white px-2.5 py-1 rounded font-bold transition inline-flex items-center gap-1 shadow-2xs cursor-pointer">
                   <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
                   <span>View in Page</span>
                 </button>
-                <a href="${{localPdf}}" target="_blank" class="p-1 text-slate-400 hover:text-slate-700 transition" title="Open in dedicated tab">
+                <a href="${{localPdf}}" target="_blank" class="bg-red-600 hover:bg-red-700 text-white p-1 rounded transition" title="Open in dedicated tab">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                 </a>
               </div>
@@ -1090,11 +1090,7 @@ html_template = f"""<!DOCTYPE html>
           <div class="flex flex-wrap items-center gap-2 mb-1.5">
             <span class="px-2 py-0.5 rounded text-xs font-bold border ${{progBadgeColor}}">${{(doc.programs || []).join(' / ')}}</span>
             ${{secBadgeHtml}}
-            <a href="${{localPdfLink}}" onclick="event.preventDefault(); viewDocPdf('${{doc.id}}')" class="font-bold text-slate-800 text-xs sm:text-sm hover:text-blue-600 transition inline-flex items-center gap-1.5 cursor-pointer">
-              <span>${{escapeHtml(doc.title)}}</span>
-              <span class="text-[10px] text-blue-600 font-semibold bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">View in Page 👁</span>
-            </a>
-            <span class="text-xs bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-mono font-medium">Original PDF</span>
+            <span class="font-bold text-slate-800 text-xs sm:text-sm">${{escapeHtml(doc.title)}}</span>
           </div>
           
           <!-- Quick PDF Summary Everywhere -->
@@ -1133,12 +1129,12 @@ html_template = f"""<!DOCTYPE html>
           </div>
         </div>
         <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
-          <button type="button" onclick="viewDocPdf('${{doc.id}}')" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center gap-1.5 shadow-2xs cursor-pointer">
+          <button type="button" onclick="viewDocPdf('${{doc.id}}')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center gap-1.5 shadow-2xs cursor-pointer">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
             <span>View PDF in Page</span>
           </button>
-          <a href="${{localPdfLink}}" target="_blank" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 text-xs font-semibold px-2.5 py-2 rounded-lg transition inline-flex items-center gap-1 shadow-2xs" title="Open in new window or tab">
-            <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          <a href="${{localPdfLink}}" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-2.5 py-2 rounded-lg transition inline-flex items-center gap-1 shadow-2xs" title="Open in new window or tab">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
             <span class="hidden md:inline">New Tab</span>
           </a>
         </div>
