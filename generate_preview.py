@@ -30,15 +30,52 @@ CHAPTER_DESCRIPTIONS = {
     'Chapter 63-1100: Standards & Benefit Tables': 'Gross 130% FPL, Net 100% FPL, Maximum Allotments, and budgeting formulas',
     'Special Notices & Policy Updates': 'County Policy Bulletins, COLA notices, emergency directives, and annual adjustments',
 
-    # CalWORKs
-    'Chapter 10: Stage One Child Care': 'Child care duration, eligibility, assessment, transfers, and provider payments',
-    'Chapter 10: Welfare-to-Work (WTW) & Employment': 'Core work participation (30/35 hrs), learning disabilities, subsidized employment, and supportive services',
-    'Chapter 40: Application & General Requirements': 'Application filing, interviews, rights and responsibilities, and Immediate Need emergency cash ($200)',
-    'Chapter 41: Age & Deprivation': 'Age rules, deprivation factors (unemployment, continued absence, incapacity, death)',
-    'Chapter 42: Non-Financial & Property Limits': 'Residence, citizenship/noncitizen rules, vehicle exemptions, and property limitation thresholds',
-    'Chapter 44: Budgeting, Income & MAP': 'Maximum Aid Payment (MAP) tables, income disregards, self-employment, and SAR 7 reporting',
-    'Program Operations & Special Services': 'Case management, program exit, and specialized county supportive programs',
-    'Special Notices & Policy Bulletins': 'COLA increases, state directives, and policy update notices',
+    # CalWORKs (Folder 448) - 44 Official County Chapters & Special Notices
+    '10-001 Background': 'CalWORKs and Employment Services legal authority, program goals, and administrative framework',
+    '10-002 Federal Work Participation Rate (WPR)': 'Federal Work Participation Rate requirements, data reporting, and verification standards',
+    '10-005 Welfare-to-Work': 'Welfare-to-Work flow, orientation, appraisal, assessment, employment plans, and teen participation',
+    '10-006 Learning Disabilities': 'Learning disability screening, evaluation protocols, and workplace accommodations',
+    '10-007 Family Stabilization': 'Intensive case management, barrier removal, and family stabilization support services',
+    '10-008 CalWORKs Housing Support Program': 'Housing identification, rent assistance, rapid re-housing, and housing case management',
+    '10-009 Home Visiting Program': 'Voluntary nurse home visits, early childhood development, and prenatal/parenting support',
+    '10-010 Child Care': 'Stage One child care eligibility, provider authorization, payment rules, and NOA requirements',
+    '10-011 Supportive Services': 'Transportation reimbursement, work-related expenses, tools/uniforms, and mental health/substance abuse support',
+    '10-020 Exemptions & Good Cause': 'Welfare-to-Work participation exemptions and good cause criteria',
+    '10-025 Compliance Process': 'Noncompliance conciliation, cause determinations, compliance plans, and sanction cure procedures',
+    '10-030 Participants Rights': 'Participant rights, formal grievance procedures, and state fair hearing rules',
+    '10-050 Community Service': 'Community service work experience placements, activities, and hour requirements',
+    '10-150 Subsidized Employment Programs': 'Expanded Subsidized Employment (ESE) and work experience wage subsidy programs',
+    '10-160 Wrap Around': 'Comprehensive wraparound family services and multi-agency support',
+    '10-170 CalWORKs Outcomes and Accountability Review (Cal-OAR)': 'State performance measures, continuous quality improvement (CQI), and outcome metrics',
+    '10-200 Refugee Services': 'Refugee employment services, coordination with resettlement agencies, and language access',
+    '10-260 Document Capture Procedures for Employment Services Contractors': 'Electronic document imaging standards, contractor workflows, and indexing protocols',
+    '10-300 WTW Activity Documentation and Reporting Requirements': 'Work activity logs, attendance verification, timesheets, and reporting protocols',
+    '15-000 Cal-Learn': 'Mandatory program for pregnant and parenting teens, school attendance, and bonuses/sanctions',
+    '15-100 TIME ON AID': '60-month cumulative lifetime cash aid time limit, tracking, and good cause exemptions',
+    '19-000 Confidentiality of Information & Records': 'Case confidentiality, safeguarding public assistance records, and release authorizations',
+    '20-000 Integrity': 'Early fraud prevention, Special Investigations Unit (SIU), and child care program integrity',
+    '22-000 Notifications': 'Adequate and timely Notice of Action (NOA) standards and verification requests',
+    '40-100 Application and Redetermination': 'Application intake, 45-day processing, Immediate Need cash ($200), redeterminations, and ICT',
+    '40-125 Restoration of Aid': 'Expedited restoration of aid following discontinuance within 12 months',
+    '40-183 CalWORKs Special Programs': 'Approved Relative Caregiver (ARC), extended CalWORKs for non-minor dependents (NMD), and family reunification',
+    '41-400 Deprivation': 'Parental deprivation factors: unemployment (U-parent), absence, physical/mental incapacity, or death',
+    '41-500 Assistance Unit': 'Assistance unit (AU) composition, mandatory inclusion rules, caretaker relatives, and temporary absence',
+    '42-100 Age-Immunization-School Attendance': 'Age limits, school attendance mandates for children under 16, and preschool immunization requirements',
+    '42-200 Property': 'Real and personal property limitations ($11,634 / $15,873), vehicle exemptions, and resource evaluation',
+    '42-400 Residence': 'State residency, county jurisdiction, citizenship verification, and qualified immigrant eligibility',
+    '43-100 Responsible Relatives': 'Legal responsibility of parents and financial contributions of unrelated adults in the home',
+    '43-200 Child Support': 'Child support assignment of rights, cooperation with Department of Child Support Services (DCSS), and good cause',
+    '44-100 Income': 'Earned and unearned income, $450/month disregard, 50% earned income disregard, and exempt income',
+    '44-200 Special Needs': 'Recurring and nonrecurring special needs, pregnancy dietary supplements, and homeless assistance (temp/perm)',
+    '44-260 Annual Reporting (Child Only Cases)': 'Annual reporting and budgeting rules for child-only assistance units',
+    '44-270 Semi-Annual Reporting (SAR)': 'Semi-Annual Reporting (SAR 7) cycles, Income Reporting Threshold (IRT), and mandatory mid-period reports',
+    '44-300 Benefit Payments': 'Region 1 Maximum Aid Payment (MAP) calculations, proration, vendor payments, and issuance dates',
+    '44-350 Overpayment-IPV-Underpayment': 'Overpayment investigations, IPV sanctions, 10% grant reduction recoupment, and corrective underpayments',
+    '45-000 CalWORKs Questions and Answers': 'County policy clarifications, state interpretations, and questions & answers',
+    '45-200 Resources and Desk Aids': 'Assistance standards charts, MAP levels, property tables, SAR cycles, and income desk aids',
+    '69-205 Refugee Cash Assistance (RCA)': 'Federal RCA program eligibility, time limits, and budgeting',
+    '70-100 Trafficking and Crime Victims Assistance Program (TCVAP)': 'State-funded cash and supportive services for eligible victims of crime',
+    'Special Notices & Policy Bulletins': 'County Policy Bulletins, COLA notices, emergency directives, and annual adjustments',
 
     # Medi-Cal
     'MAGI Eligibility & Income Limits': 'Modified Adjusted Gross Income, 138% Federal Poverty Level thresholds, and Covered California coordination',
@@ -84,21 +121,15 @@ def categorize_doc(doc):
         return 'Chapter 63-100: Application Process & General Provisions', 'cf-63-100', 10
 
     elif 'CalWORKs' in programs:
+        cat = doc.get('category')
+        if cat:
+            order = doc.get('order', 50)
+            sec_num = doc.get('section_num', '')
+            cat_id = 'cw-' + sec_num.replace(' ', '-').lower() if sec_num else 'cw-sec'
+            return cat, cat_id, order
         if 'sn ' in t or 'notice' in t:
             return 'Special Notices & Policy Bulletins', 'cw-sn', 99
-        if any(k in t for k in ['child care', 'stage one', '10-010']):
-            return 'Chapter 10: Stage One Child Care', 'cw-childcare', 15
-        if any(k in t for k in ['welfare-to-work', 'wtw', 'work participation', '10-00', '10-02', '10-03', '10-05', '10-15', 'subsidized', 'community service', 'supportive']):
-            return 'Chapter 10: Welfare-to-Work (WTW) & Employment', 'cw-wtw', 10
-        if any(k in t for k in ['immediate need', 'application', 'rights', '40-']):
-            return 'Chapter 40: Application & General Requirements', 'cw-40', 20
-        if any(k in t for k in ['deprivation', 'age', '41-']):
-            return 'Chapter 41: Age & Deprivation', 'cw-41', 30
-        if any(k in t for k in ['residence', 'noncitizen', 'citizenship', 'property', 'resource', 'vehicle', '42-']):
-            return 'Chapter 42: Non-Financial & Property Limits', 'cw-42', 40
-        if any(k in t for k in ['income', 'budget', 'map', 'earned', 'unearned', 'sar 7', 'reporting', '44-']):
-            return 'Chapter 44: Budgeting, Income & MAP', 'cw-44', 50
-        return 'Program Operations & Special Services', 'cw-ops', 60
+        return '40-100 Application and Redetermination', 'cw-40-100', 25
 
     else: # Medi-Cal
         if 'sn ' in t or 'acwdl' in t or 'bulletin' in t or 'special notice' in t:
@@ -134,12 +165,14 @@ embedded_docs = []
 for d in full_docs:
     cat_name, cat_id, cat_order = categorize_doc(d)
     content_snippet = d.get('content', '')[:2500].strip()
-    cat_desc = CHAPTER_DESCRIPTIONS.get(cat_name, 'Official County Policy and Procedure Sections')
+    cat_desc = CHAPTER_DESCRIPTIONS.get(cat_name, d.get('category_desc', 'Official County Policy and Procedure Sections'))
     embedded_docs.append({
         "id": d.get("id"),
         "title": d.get("title", ""),
         "chapter": d.get("chapter", ""),
         "programs": d.get("programs", []),
+        "section_num": d.get("section_num", ""),
+        "section_title": d.get("section_title", ""),
         "category": cat_name,
         "category_id": cat_id,
         "category_desc": cat_desc,
@@ -1021,15 +1054,37 @@ html_template = f"""<!DOCTYPE html>
         }}`;
         headerBtn.onclick = () => toggleChapterDropdown(gId);
 
+        const cwMatch = catName.match(/^(\d{2}-\d{3})\s+(.*)$/);
+        let titleBlock = '';
+        if (cwMatch) {{
+          titleBlock = `
+            <div class="flex items-center gap-2">
+              <span class="bg-purple-700 text-white font-mono font-extrabold text-xs px-2.5 py-0.5 rounded shadow-2xs shrink-0">${{cwMatch[1]}}</span>
+              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(cwMatch[2])}}</h4>
+            </div>
+          `;
+        }} else if (catName.includes('Special Notices')) {{
+          titleBlock = `
+            <div class="flex items-center gap-2">
+              <span class="bg-amber-600 text-white font-mono font-extrabold text-[11px] px-2 py-0.5 rounded shadow-2xs shrink-0">NOTICES</span>
+              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(catName)}}</h4>
+            </div>
+          `;
+        }} else {{
+          titleBlock = `
+            <div class="flex items-center gap-2">
+              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(catName)}}</h4>
+            </div>
+          `;
+        }}
+
         headerBtn.innerHTML = `
           <div class="flex items-center gap-3 min-w-0 pr-2">
             <div class="w-8 h-8 rounded-lg ${{isInitiallyOpen ? 'bg-blue-600 text-white' : 'bg-slate-200 text-slate-700'}} flex items-center justify-center font-extrabold text-xs shrink-0 shadow-2xs">
               ${{groupIdx + 1}}
             </div>
             <div class="min-w-0">
-              <div class="flex items-center gap-2">
-                <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(catName)}}</h4>
-              </div>
+              ${{titleBlock}}
               <p class="text-xs text-slate-500 mt-0.5 line-clamp-1">${{escapeHtml(gDesc)}}</p>
             </div>
           </div>
@@ -1066,6 +1121,7 @@ html_template = f"""<!DOCTYPE html>
             <div class="flex-1 min-w-0">
               <div class="flex flex-wrap items-center gap-2 mb-1.5">
                 <span class="px-2 py-0.5 rounded text-xs font-bold border ${{progBadgeColor}}">${{(doc.programs || []).join(' / ')}}</span>
+                ${{doc.section_num ? `<span class="px-2 py-0.5 rounded text-xs font-mono font-extrabold bg-purple-100 text-purple-900 border border-purple-300 shadow-2xs">${{escapeHtml(doc.section_num)}}</span>` : ''}}
                 <a href="${{localPdfLink}}" onclick="event.preventDefault(); viewDocPdf('${{doc.id}}')" class="font-bold text-slate-800 text-xs sm:text-sm hover:text-blue-600 transition inline-flex items-center gap-1.5 cursor-pointer">
                   <span>${{escapeHtml(doc.title)}}</span>
                   <span class="text-[10px] text-blue-600 font-semibold bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">View in Page 👁</span>
@@ -1103,7 +1159,7 @@ html_template = f"""<!DOCTYPE html>
               ` : ''}}
 
               <div class="flex items-center gap-3 text-xs text-slate-400 mt-1">
-                <span>Section: <strong class="text-slate-600">${{escapeHtml(doc.chapter || doc.id)}}</strong></span>
+                <span>Section: <strong class="text-slate-600">${{escapeHtml(doc.section_num ? (doc.section_num + (doc.section_title ? (' • ' + doc.section_title) : '')) : (doc.chapter || doc.id))}}</strong></span>
                 <span>•</span>
                 <span>Revised: ${{revisionStr}}</span>
               </div>

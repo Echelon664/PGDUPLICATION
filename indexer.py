@@ -148,6 +148,9 @@ class BM25Index:
                     "local_pdf_url": r.get("local_pdf_url", f"/pdfs/{r['id']}.pdf"),
                     "official_url": r.get("official_url", ""),
                     "summary": r.get("summary", ""),
+                    "section_num": r.get("section_num", ""),
+                    "section_title": r.get("section_title", ""),
+                    "category": r.get("category", ""),
                     "score": r["score"],
                     "matched_excerpt": excerpt,
                     "matched_terms": list(set(r.get("matched_terms", [])))
@@ -185,6 +188,7 @@ def chunk_documents(docs_path: str = None, chunk_size: int = 700, chunk_overlap:
                 current_chunk = (current_chunk + " " + p).strip() if current_chunk else p
             else:
                 if current_chunk:
+                    sec_prefix = f"{doc.get('section_num', '')} " if doc.get('section_num') else ""
                     chunks.append({
                         "id": doc["id"],
                         "title": doc["title"],
@@ -194,12 +198,16 @@ def chunk_documents(docs_path: str = None, chunk_size: int = 700, chunk_overlap:
                         "local_pdf_url": doc.get("local_pdf_url", f"/pdfs/{doc['id']}.pdf"),
                         "official_url": doc["official_url"],
                         "summary": doc.get("summary", ""),
-                        "text": f"[{' / '.join(doc['programs'])} - {doc['title']}]\n{current_chunk}"
+                        "section_num": doc.get("section_num", ""),
+                        "section_title": doc.get("section_title", ""),
+                        "category": doc.get("category", ""),
+                        "text": f"[{' / '.join(doc['programs'])} - {sec_prefix}{doc['title']}]\n{current_chunk}"
                     })
                 # Overlap
                 current_chunk = (current_chunk[-chunk_overlap:] + " " + p).strip() if len(current_chunk) > chunk_overlap else p
 
         if current_chunk:
+            sec_prefix = f"{doc.get('section_num', '')} " if doc.get('section_num') else ""
             chunks.append({
                 "id": doc["id"],
                 "title": doc["title"],
@@ -209,7 +217,10 @@ def chunk_documents(docs_path: str = None, chunk_size: int = 700, chunk_overlap:
                 "local_pdf_url": doc.get("local_pdf_url", f"/pdfs/{doc['id']}.pdf"),
                 "official_url": doc["official_url"],
                 "summary": doc.get("summary", ""),
-                "text": f"[{' / '.join(doc['programs'])} - {doc['title']}]\n{current_chunk}"
+                "section_num": doc.get("section_num", ""),
+                "section_title": doc.get("section_title", ""),
+                "category": doc.get("category", ""),
+                "text": f"[{' / '.join(doc['programs'])} - {sec_prefix}{doc['title']}]\n{current_chunk}"
             })
 
     return chunks
