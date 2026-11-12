@@ -499,13 +499,13 @@ html_template = f"""<!DOCTYPE html>
       </div>
 
       <!-- Quick Summary Sub-bar (Dismissible) -->
-      <div id="pdfModalSummaryBar" class="bg-blue-50/95 border-b border-blue-200 px-4 py-2 text-xs text-slate-800 flex items-start justify-between gap-3 shrink-0">
+      <div id="pdfModalSummaryBar" class="bg-blue-50/95 border-b border-blue-200 px-4 py-3 text-xs sm:text-sm text-slate-800 flex items-start justify-between gap-3 shrink-0">
         <div class="flex items-start gap-2 min-w-0">
-          <span class="font-bold text-blue-900 shrink-0 text-[11px] mt-0.5 flex items-center gap-1">
-            <svg class="w-3.5 h-3.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <span class="font-bold text-blue-900 shrink-0 text-xs mt-0.5 flex items-center gap-1">
+            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
             Quick Summary:
           </span>
-          <span id="pdfModalSummaryText" class="text-slate-700 line-clamp-2 leading-relaxed">Official policy summary...</span>
+          <span id="pdfModalSummaryText" class="text-slate-700 line-clamp-4 leading-relaxed text-xs sm:text-[13px]">Official policy summary...</span>
         </div>
         <button type="button" onclick="toggleModalSummary()" class="text-slate-400 hover:text-slate-600 p-0.5 rounded cursor-pointer shrink-0" title="Hide Summary Bar">
           ✕
@@ -877,8 +877,8 @@ html_template = f"""<!DOCTYPE html>
           el.innerHTML = `
             <div class="mb-2">
               <div class="font-bold text-slate-800 line-clamp-1">${{escapeHtml(s.title)}}</div>
-              <div class="mt-1.5 p-2 bg-blue-50/70 border border-blue-100 rounded text-xs text-slate-700 leading-relaxed">
-                <span class="font-bold text-blue-900 block text-[11px] mb-0.5">Quick PDF Summary:</span>
+              <div class="mt-2 p-3.5 bg-blue-50/70 border border-blue-100 rounded-lg text-xs sm:text-[13px] text-slate-700 leading-relaxed">
+                <span class="font-bold text-blue-900 block text-xs mb-1">Quick PDF Summary:</span>
                 ${{escapeHtml(s.summary || s.snippet || '')}}
               </div>
             </div>
@@ -1094,12 +1094,12 @@ html_template = f"""<!DOCTYPE html>
           </div>
           
           <!-- Quick PDF Summary Everywhere -->
-          <div class="my-2 p-2.5 bg-slate-50 border border-slate-200/90 rounded-lg text-xs text-slate-700 leading-relaxed shadow-2xs">
-            <div class="flex items-center gap-1.5 text-blue-900 font-bold mb-1 text-[11px] tracking-wide">
-              <svg class="w-3.5 h-3.5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <div class="my-2.5 p-3.5 sm:p-4 bg-slate-50/90 border border-slate-200/90 rounded-xl text-xs sm:text-[13px] text-slate-700 leading-relaxed shadow-2xs">
+            <div class="flex items-center gap-1.5 text-blue-900 font-bold mb-1.5 text-xs tracking-wide">
+              <svg class="w-4 h-4 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
               <span>Quick Policy Summary:</span>
             </div>
-            <div class="text-slate-700 font-normal">
+            <div class="text-slate-700 font-normal leading-relaxed text-xs sm:text-[13px]">
               ${{escapeHtml(doc.summary || doc.snippet || 'Official County of San Diego Health and Human Services Agency Policy Document.')}}
             </div>
           </div>
