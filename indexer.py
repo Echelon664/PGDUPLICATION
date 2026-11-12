@@ -153,7 +153,8 @@ class BM25Index:
                     "category": r.get("category", ""),
                     "score": r["score"],
                     "matched_excerpt": excerpt,
-                    "matched_terms": list(set(r.get("matched_terms", [])))
+                    "matched_terms": list(set(r.get("matched_terms", []))),
+                    "text": raw_text
                 }
 
         results = list(unique_docs.values())

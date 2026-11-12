@@ -160,56 +160,109 @@
     <!-- Main Content Body -->
     <div class="p-4 sm:p-6 flex-1 flex flex-col gap-5">
       
-      <!-- AI Answer Container -->
-      <div id="aiAnswerContainer" class="hidden">
-        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-5 shadow-sm">
-          <div class="flex items-center justify-between mb-3 border-b border-blue-200/60 pb-2">
-            <div class="flex items-center gap-2 text-blue-900 font-bold text-sm">
-              <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
-              </svg>
-              <span>AI Policy Direct Answer</span>
-              <span id="aiScopeTag" class="text-xs px-2 py-0.5 rounded-full font-semibold bg-blue-200 text-blue-900 ml-1">CalFresh</span>
+      <!-- VIEW 1: Manual Chapter & Section Dropdowns View (Default View) -->
+      <div id="manualDropdownsView" class="flex flex-col gap-5">
+        <!-- Section Catalog Header with Expand / Collapse All Controls -->
+        <div class="flex flex-wrap items-center justify-between border-b border-slate-200 pb-3 gap-2">
+          <div>
+            <h3 id="listHeading" class="font-extrabold text-slate-800 text-sm sm:text-base">
+              CalFresh Policy Manual Sections &amp; Chapters (106)
+            </h3>
+            <p id="resultMeta" class="text-xs text-slate-500 mt-0.5">
+              Click any chapter or section dropdown below to view official regulations and subchapters.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button type="button" onclick="expandAllChapters()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-2.5 py-1.5 rounded-lg border border-slate-300 transition flex items-center gap-1 cursor-pointer">
+              <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              <span>Expand All</span>
+            </button>
+            <button type="button" onclick="collapseAllChapters()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-2.5 py-1.5 rounded-lg border border-slate-300 transition flex items-center gap-1 cursor-pointer">
+              <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+              <span>Collapse All</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- List of Documents Grouped by Chapter Dropdowns -->
+        <div id="documentsList" class="flex flex-col gap-3.5">
+          <!-- Populated dynamically when in dropdowns mode -->
+        </div>
+      </div>
+
+      <!-- VIEW 2: Dedicated Search Results Page View (Opens when searching) -->
+      <div id="searchResultsPageView" class="hidden flex flex-col gap-5">
+        
+        <!-- Search Results Top Navigation Bar with Cancel / Back Button -->
+        <div class="bg-gradient-to-r from-blue-50/90 via-slate-50 to-indigo-50/80 border border-blue-200/90 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-start sm:items-center gap-3 min-w-0">
+            <!-- Prominent Cancel / Back to Dropdowns Button -->
+            <button type="button" onclick="cancelSearchToDropdowns()" class="bg-white hover:bg-slate-100 text-slate-800 border-2 border-slate-300 hover:border-slate-400 font-bold text-xs sm:text-sm px-3.5 py-2.5 rounded-xl transition flex items-center gap-2 shadow-xs cursor-pointer shrink-0" title="Exit search and return to the chapter dropdowns">
+              <svg class="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+              <span>← Back to Dropdowns</span>
+            </button>
+            
+            <div class="min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span id="searchResultScopeBadge" class="bg-blue-600 text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">CalFresh</span>
+                <h3 class="font-extrabold text-slate-900 text-sm sm:text-base truncate">
+                  Search Results for: <span id="searchResultQueryText" class="text-blue-700">"..."</span>
+                </h3>
+              </div>
+              <p id="searchResultCountText" class="text-xs text-slate-600 mt-0.5">
+                Searching 100% of internal PDF text with BM25 engine...
+              </p>
             </div>
-            <span class="text-xs text-blue-600 font-semibold bg-white/80 px-2.5 py-0.5 rounded border border-blue-200">
-              Grounded in Official Manuals
-            </span>
           </div>
-          <div id="aiAnswerText" class="text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2 mb-4"></div>
-          
-          <!-- Cited Sources for AI Answer -->
-          <div class="border-t border-blue-200 pt-3">
-            <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Cited County Policy References</h4>
-            <div id="aiSourcesList" class="grid grid-cols-1 md:grid-cols-2 gap-2"></div>
+
+          <!-- Action on the Right: Cancel search button -->
+          <div class="flex items-center gap-2 shrink-0 self-end sm:self-auto">
+            <button type="button" onclick="cancelSearchToDropdowns()" class="text-xs bg-red-50 hover:bg-red-100 text-red-700 hover:text-red-800 font-bold px-3 py-2 rounded-xl border border-red-200 transition flex items-center gap-1.5 cursor-pointer shadow-2xs">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+              <span>Cancel Search</span>
+            </button>
           </div>
         </div>
-      </div>
 
-      <!-- Section Catalog & Search Results Header with Expand / Collapse All Controls -->
-      <div class="flex flex-wrap items-center justify-between border-b border-slate-200 pb-3 gap-2">
-        <div>
-          <h3 id="listHeading" class="font-extrabold text-slate-800 text-sm sm:text-base">
-            CalFresh Policy Manual Sections &amp; Chapters (106)
-          </h3>
-          <p id="resultMeta" class="text-xs text-slate-500 mt-0.5">
-            Click any chapter dropdown below to hide or unhide its subchapters. Zero repeated sections.
-          </p>
+        <!-- AI Direct Answer Container (Shown on search page if Ask Policy AI used) -->
+        <div id="aiAnswerContainer" class="hidden">
+          <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-5 shadow-sm">
+            <div class="flex items-center justify-between mb-3 border-b border-blue-200/60 pb-2">
+              <div class="flex items-center gap-2 text-blue-900 font-bold text-sm">
+                <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+                </svg>
+                <span>AI Policy Direct Answer</span>
+                <span id="aiScopeTag" class="text-xs px-2 py-0.5 rounded-full font-semibold bg-blue-200 text-blue-900 ml-1">CalFresh</span>
+              </div>
+              <span class="text-xs text-blue-600 font-semibold bg-white/80 px-2.5 py-0.5 rounded border border-blue-200">
+                Grounded in Official Manuals
+              </span>
+            </div>
+            <div id="aiAnswerText" class="text-xs sm:text-sm text-slate-800 leading-relaxed space-y-2 mb-4"></div>
+            
+            <!-- Cited Sources for AI Answer -->
+            <div class="border-t border-blue-200 pt-3">
+              <h4 class="text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">Cited County Policy References</h4>
+              <div id="aiSourcesList" class="grid grid-cols-1 md:grid-cols-2 gap-2"></div>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center gap-2">
-          <button type="button" onclick="expandAllChapters()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-2.5 py-1.5 rounded-lg border border-slate-300 transition flex items-center gap-1 cursor-pointer">
-            <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-            <span>Expand All</span>
-          </button>
-          <button type="button" onclick="collapseAllChapters()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-2.5 py-1.5 rounded-lg border border-slate-300 transition flex items-center gap-1 cursor-pointer">
-            <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
-            <span>Collapse All</span>
-          </button>
-        </div>
-      </div>
 
-      <!-- List of Documents Grouped by Chapter Dropdowns -->
-      <div id="documentsList" class="flex flex-col gap-3.5">
-        <!-- Populated dynamically -->
+        <!-- Search Results Document Cards List -->
+        <div id="searchResultsList" class="flex flex-col gap-3.5">
+          <!-- Populated dynamically when in search mode -->
+        </div>
+
+        <!-- Bottom Return to Dropdowns Banner -->
+        <div class="pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+          <button type="button" onclick="cancelSearchToDropdowns()" class="bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs sm:text-sm px-4 py-2.5 rounded-xl transition flex items-center gap-2 shadow-sm cursor-pointer">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+            <span>Cancel &amp; Return to Chapter Dropdowns</span>
+          </button>
+          <span class="text-xs text-slate-400">Tip: You can also press Esc or clear the search bar to return to dropdowns</span>
+        </div>
+
       </div>
 
     </div>
@@ -414,13 +467,13 @@
       // Render suggested quick topic chips
       renderTopicChips(meta.chips);
 
-      // Reset AI answer box
-      const aiContainer = document.getElementById('aiAnswerContainer');
-      if (aiContainer) aiContainer.classList.add('hidden');
-
       // Re-run search or display full program catalog
       const q = getSearchQuery();
-      executeSearch(q, q ? 'search' : 'list');
+      if (q) {
+        executeSearch(q, 'search');
+      } else {
+        cancelSearchToDropdowns();
+      }
     }
 
     function renderTopicChips(chips) {
@@ -441,15 +494,12 @@
     }
 
     function clearSearch() {
-      setSearchQuery('');
-      const aiContainer = document.getElementById('aiAnswerContainer');
-      if (aiContainer) aiContainer.classList.add('hidden');
-      executeSearch('', 'list');
+      cancelSearchToDropdowns();
     }
 
     function handleSearchSubmit(e) {
       e.preventDefault();
-      const mode = (e.submitter && e.submitter.value) || 'ask';
+      const mode = (e.submitter && e.submitter.value) || 'search';
       handleSearchMode(mode);
     }
 
@@ -526,7 +576,27 @@
       const prog = activeProgram;
       const meta = PROGRAM_METADATA[prog];
 
-      if (mode === 'ask' && query) {
+      if (!query || !query.trim()) {
+        cancelSearchToDropdowns();
+        return;
+      }
+
+      // Switch to Dedicated Search Results Page
+      const manualView = document.getElementById('manualDropdownsView');
+      const searchView = document.getElementById('searchResultsPageView');
+      if (manualView) manualView.classList.add('hidden');
+      if (searchView) searchView.classList.remove('hidden');
+
+      // Update Top Search Results Header Info
+      const scopeBadge = document.getElementById('searchResultScopeBadge');
+      const queryText = document.getElementById('searchResultQueryText');
+      const countText = document.getElementById('searchResultCountText');
+
+      if (scopeBadge) scopeBadge.textContent = prog === 'All' ? 'All Programs' : prog;
+      if (queryText) queryText.textContent = `"${query}"`;
+      if (countText) countText.textContent = 'Searching 100% of internal PDF text with BM25 engine...';
+
+      if (mode === 'ask') {
         showAIAnswerLoading();
         let aiData = null;
         try {
@@ -554,35 +624,36 @@
 
       // 1. Full-Text BM25 Deep Search via Backend API when available
       let apiDocs = null;
-      if (query) {
-        try {
-          const searchResp = await fetch(LOCAL_SERVER_BASE + '/api/search?q=' + encodeURIComponent(query) + '&program=' + encodeURIComponent(prog) + '&limit=150');
-          if (searchResp.ok) {
-            const data = await searchResp.json();
-            if (data && data.results && data.results.length > 0) {
-              const docMap = {};
-              EMBEDDED_DOCS.forEach(d => { docMap[d.id] = d; });
-              apiDocs = data.results.map(r => {
-                const base = docMap[r.id] || {};
-                return {
-                  ...base,
-                  ...r,
-                  category: base.category || r.category || 'General Sections',
-                  order: base.order || 50,
-                  category_desc: base.category_desc || '',
-                  category_id: base.category_id || 'cat-general'
-                };
-              });
-            }
+      try {
+        const searchResp = await fetch(LOCAL_SERVER_BASE + '/api/search?q=' + encodeURIComponent(query) + '&program=' + encodeURIComponent(prog) + '&limit=150');
+        if (searchResp.ok) {
+          const data = await searchResp.json();
+          if (data && data.results && data.results.length > 0) {
+            const docMap = {};
+            EMBEDDED_DOCS.forEach(d => { docMap[d.id] = d; });
+            apiDocs = data.results.map(r => {
+              const base = docMap[r.id] || {};
+              return {
+                ...base,
+                ...r,
+                category: base.category || r.category || 'General Sections',
+                order: base.order || 50,
+                category_desc: base.category_desc || '',
+                category_id: base.category_id || 'cat-general'
+              };
+            });
           }
-        } catch (err) {
-          console.log('Using client-side full-text search fallback:', err);
         }
+      } catch (err) {
+        console.log('Using client-side full-text search fallback:', err);
       }
 
-      // 2. Render matching documents with Deep PDF Body Match highlights
+      // 2. Render matching documents in dedicated search results page
       const docs = apiDocs || filterDocs(query, prog);
-      renderDocumentsList(docs, query);
+      if (countText) {
+        countText.textContent = `${docs.length} matching official policy document${docs.length === 1 ? '' : 's'} (Ranked by BM25 Relevance)`;
+      }
+      renderSearchResultsView(docs, query);
     }
 
     function showAIAnswerLoading() {
@@ -749,10 +820,18 @@
       openPdfModal(pdfUrl, doc.title, (doc.programs || []).join(' / '), doc.summary || doc.snippet || '', doc.chapter || doc.id);
     }
 
-    // Close modal on Escape key or outside backdrop click
+    // Close modal or return from search results page on Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
-        closePdfModal();
+        const modal = document.getElementById('pdfViewerModal');
+        if (modal && !modal.classList.contains('hidden')) {
+          closePdfModal();
+          return;
+        }
+        const searchView = document.getElementById('searchResultsPageView');
+        if (searchView && !searchView.classList.contains('hidden')) {
+          cancelSearchToDropdowns();
+        }
       }
     });
 
@@ -798,31 +877,90 @@
       document.querySelectorAll('.chapter-header-btn').forEach(el => el.classList.remove('bg-blue-50/70', 'border-b', 'border-slate-200'));
     }
 
-    function renderDocumentsList(docs, query) {
+    function createDocumentCard(doc, query) {
+      const card = document.createElement('div');
+      card.className = 'border border-slate-200 hover:border-blue-400 rounded-lg p-3 sm:p-3.5 shadow-2xs hover:shadow-xs transition flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-white';
+      
+      const progBadgeColor = doc.programs.includes('CalFresh') 
+        ? 'bg-emerald-100 text-emerald-800 border-emerald-200' 
+        : doc.programs.includes('CalWORKs') 
+          ? 'bg-purple-100 text-purple-800 border-purple-200' 
+          : 'bg-sky-100 text-sky-800 border-sky-200';
+
+      const localPdfLink = resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
+      const revisionStr = doc.published_on ? doc.published_on.slice(0, 10) : 'Active';
+
+      card.innerHTML = `
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap items-center gap-2 mb-1.5">
+            <span class="px-2 py-0.5 rounded text-xs font-bold border ${progBadgeColor}">${(doc.programs || []).join(' / ')}</span>
+            ${doc.section_num ? `<span class="px-2 py-0.5 rounded text-xs font-mono font-extrabold bg-purple-100 text-purple-900 border border-purple-300 shadow-2xs">Section ${escapeHtml(doc.section_num)}</span>` : ''}
+            <a href="${localPdfLink}" onclick="event.preventDefault(); viewDocPdf('${doc.id}')" class="font-bold text-slate-800 text-xs sm:text-sm hover:text-blue-600 transition inline-flex items-center gap-1.5 cursor-pointer">
+              <span>${escapeHtml(doc.title)}</span>
+              <span class="text-[10px] text-blue-600 font-semibold bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">View in Page 👁</span>
+            </a>
+            <span class="text-xs bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-mono font-medium">Original PDF</span>
+          </div>
+          
+          <!-- Quick PDF Summary Everywhere -->
+          <div class="my-2 p-2.5 bg-slate-50 border border-slate-200/90 rounded-lg text-xs text-slate-700 leading-relaxed shadow-2xs">
+            <div class="flex items-center gap-1.5 text-blue-900 font-bold mb-1 text-[11px] tracking-wide">
+              <svg class="w-3.5 h-3.5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+              <span>Quick Policy Summary:</span>
+            </div>
+            <div class="text-slate-700 font-normal">
+              ${escapeHtml(doc.summary || doc.snippet || 'Official County of San Diego Health and Human Services Agency Policy Document.')}
+            </div>
+          </div>
+
+          <!-- Deep PDF Body Match (if query matched inside PDF) -->
+          ${doc.matched_excerpt ? `
+            <div class="my-2 p-2.5 bg-amber-50/90 border border-amber-300 rounded-lg text-xs text-slate-800 leading-relaxed shadow-2xs">
+              <div class="flex items-center justify-between mb-1.5 text-[11px]">
+                <span class="font-bold text-amber-950 flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"></path></svg>
+                  <span>Matched PDF Body Passage:</span>
+                </span>
+                <span class="bg-amber-200 text-amber-950 font-bold text-[10px] px-1.5 py-0.5 rounded border border-amber-300">
+                  BM25 Score: ${doc.score || 'Full Text Match'}
+                </span>
+              </div>
+              <div class="font-mono text-[11px] text-slate-800 bg-white/80 p-2 rounded border border-amber-200/80">
+                ${highlightMatchedText(doc.matched_excerpt, query)}
+              </div>
+            </div>
+          ` : ''}
+
+          <div class="flex items-center gap-3 text-xs text-slate-400 mt-1">
+            <span>Section: <strong class="text-slate-600">${escapeHtml(doc.section_num ? (doc.section_num + (doc.section_title ? (' • ' + doc.section_title) : '')) : (doc.chapter || doc.id))}</strong></span>
+            <span>•</span>
+            <span>Revised: ${revisionStr}</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
+          <button type="button" onclick="viewDocPdf('${doc.id}')" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center gap-1.5 shadow-2xs cursor-pointer">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+            <span>View PDF in Page</span>
+          </button>
+          <a href="${localPdfLink}" target="_blank" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 text-xs font-semibold px-2.5 py-2 rounded-lg transition inline-flex items-center gap-1 shadow-2xs" title="Open in new window or tab">
+            <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <span class="hidden md:inline">New Tab</span>
+          </a>
+        </div>
+      `;
+      return card;
+    }
+
+    function renderDropdownsView(docs) {
       const meta = PROGRAM_METADATA[activeProgram];
       const heading = document.getElementById('listHeading');
-      
-      if (query) {
-        heading.innerText = `Search Results: "${query}" in ${activeProgram === 'All' ? 'All Programs' : meta.title} (${docs.length} found)`;
-      } else {
+      if (heading) {
         heading.innerText = `${activeProgram === 'All' ? 'All County Benefits Policy Manual Sections & Chapters' : meta.title + ' Policy Manual Sections & Chapters'} (${docs.length})`;
       }
 
       const container = document.getElementById('documentsList');
+      if (!container) return;
       container.innerHTML = '';
-
-      if (docs.length === 0) {
-        container.innerHTML = `
-          <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 text-center text-amber-900 text-xs">
-            <p class="font-bold text-sm mb-1">No matching documents found in ${meta.title}</p>
-            <p class="text-slate-600 mb-3">No sections matched "${escapeHtml(query)}" inside this specific program guide.</p>
-            <button type="button" onclick="switchProgram('All')" class="bg-red-600 hover:bg-red-700 text-white font-bold px-3 py-1.5 rounded-lg transition cursor-pointer">
-              Search in All Programs (417 Documents)
-            </button>
-          </div>
-        `;
-        return;
-      }
 
       // Group documents by Category / Chapter preserving ordering
       const groups = {};
@@ -848,10 +986,7 @@
         const groupDocs = groups[catName];
         const gId = groupIds[catName] || ('ch-' + groupIdx);
         const gDesc = groupDescs[catName];
-
-        // Should this dropdown be expanded initially?
-        // Expand if searching, or expand the first chapter by default
-        const isInitiallyOpen = (Boolean(query) || groupIdx === 0);
+        const isInitiallyOpen = (groupIdx === 0);
 
         const chapterCard = document.createElement('div');
         chapterCard.className = 'chapter-dropdown-card bg-white border border-slate-200/90 hover:border-slate-300 rounded-xl overflow-hidden shadow-2xs transition';
@@ -910,83 +1045,13 @@
         `;
         chapterCard.appendChild(headerBtn);
 
-        // Subchapters / Sections Content Container (Hidden / Unhidden by Dropdown)
+        // Subchapters / Sections Content Container
         const contentPanel = document.createElement('div');
         contentPanel.id = 'chapter-content-' + gId;
         contentPanel.className = `chapter-content-panel p-3 sm:p-4 flex flex-col gap-2.5 bg-slate-50/40 ${isInitiallyOpen ? '' : 'hidden'}`;
 
         groupDocs.forEach(doc => {
-          const card = document.createElement('div');
-          card.className = 'border border-slate-200 hover:border-blue-400 rounded-lg p-3 sm:p-3.5 shadow-2xs hover:shadow-xs transition flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-white';
-          
-          const progBadgeColor = doc.programs.includes('CalFresh') 
-            ? 'bg-emerald-100 text-emerald-800 border-emerald-200' 
-            : doc.programs.includes('CalWORKs') 
-              ? 'bg-purple-100 text-purple-800 border-purple-200' 
-              : 'bg-sky-100 text-sky-800 border-sky-200';
-
-          const localPdfLink = resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
-          const revisionStr = doc.published_on ? doc.published_on.slice(0, 10) : 'Active';
-
-          card.innerHTML = `
-            <div class="flex-1 min-w-0">
-              <div class="flex flex-wrap items-center gap-2 mb-1.5">
-                <span class="px-2 py-0.5 rounded text-xs font-bold border ${progBadgeColor}">${(doc.programs || []).join(' / ')}</span>
-                ${doc.section_num ? `<span class="px-2 py-0.5 rounded text-xs font-mono font-extrabold bg-purple-100 text-purple-900 border border-purple-300 shadow-2xs">${escapeHtml(doc.section_num)}</span>` : ''}
-                <a href="${localPdfLink}" onclick="event.preventDefault(); viewDocPdf('${doc.id}')" class="font-bold text-slate-800 text-xs sm:text-sm hover:text-blue-600 transition inline-flex items-center gap-1.5 cursor-pointer">
-                  <span>${escapeHtml(doc.title)}</span>
-                  <span class="text-[10px] text-blue-600 font-semibold bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">View in Page 👁</span>
-                </a>
-                <span class="text-xs bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-mono font-medium">Original PDF</span>
-              </div>
-              
-              <!-- Quick PDF Summary Everywhere -->
-              <div class="my-2 p-2.5 bg-slate-50 border border-slate-200/90 rounded-lg text-xs text-slate-700 leading-relaxed shadow-2xs">
-                <div class="flex items-center gap-1.5 text-blue-900 font-bold mb-1 text-[11px] tracking-wide">
-                  <svg class="w-3.5 h-3.5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
-                  <span>Quick Policy Summary:</span>
-                </div>
-                <div class="text-slate-700 font-normal">
-                  ${escapeHtml(doc.summary || doc.snippet || 'Official County of San Diego Health and Human Services Agency Policy Document.')}
-                </div>
-              </div>
-
-              <!-- Deep PDF Body Match (if query matched inside PDF) -->
-              ${doc.matched_excerpt ? `
-                <div class="my-2 p-2.5 bg-amber-50/90 border border-amber-300 rounded-lg text-xs text-slate-800 leading-relaxed shadow-2xs">
-                  <div class="flex items-center justify-between mb-1.5 text-[11px]">
-                    <span class="font-bold text-amber-950 flex items-center gap-1.5">
-                      <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"></path></svg>
-                      <span>Matched PDF Body Passage:</span>
-                    </span>
-                    <span class="bg-amber-200 text-amber-950 font-bold text-[10px] px-1.5 py-0.5 rounded border border-amber-300">
-                      BM25 Score: ${doc.score || 'Full Text Match'}
-                    </span>
-                  </div>
-                  <div class="font-mono text-[11px] text-slate-800 bg-white/80 p-2 rounded border border-amber-200/80">
-                    ${highlightMatchedText(doc.matched_excerpt, query)}
-                  </div>
-                </div>
-              ` : ''}
-
-              <div class="flex items-center gap-3 text-xs text-slate-400 mt-1">
-                <span>Section: <strong class="text-slate-600">${escapeHtml(doc.section_num ? (doc.section_num + (doc.section_title ? (' • ' + doc.section_title) : '')) : (doc.chapter || doc.id))}</strong></span>
-                <span>•</span>
-                <span>Revised: ${revisionStr}</span>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
-              <button type="button" onclick="viewDocPdf('${doc.id}')" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center gap-1.5 shadow-2xs cursor-pointer">
-                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
-                <span>View PDF in Page</span>
-              </button>
-              <a href="${localPdfLink}" target="_blank" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 text-xs font-semibold px-2.5 py-2 rounded-lg transition inline-flex items-center gap-1 shadow-2xs" title="Open in new window or tab">
-                <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                <span class="hidden md:inline">New Tab</span>
-              </a>
-            </div>
-          `;
-          contentPanel.appendChild(card);
+          contentPanel.appendChild(createDocumentCard(doc, ''));
         });
 
         chapterCard.appendChild(contentPanel);
@@ -994,9 +1059,66 @@
       });
     }
 
+    function renderSearchResultsView(docs, query) {
+      const container = document.getElementById('searchResultsList');
+      if (!container) return;
+      container.innerHTML = '';
+
+      if (docs.length === 0) {
+        container.innerHTML = `
+          <div class="bg-amber-50 border border-amber-200 rounded-xl p-8 text-center text-amber-900 text-xs shadow-xs">
+            <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-lg">
+              🔍
+            </div>
+            <h4 class="font-bold text-sm sm:text-base text-amber-950 mb-1">No matching policy documents found for "${escapeHtml(query)}"</h4>
+            <p class="text-slate-600 mb-4 max-w-md mx-auto">No policy sections or regulations matched your search query in the current guide. Try broader keywords or search across all County benefit programs.</p>
+            <div class="flex items-center justify-center gap-3">
+              <button type="button" onclick="cancelSearchToDropdowns()" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-bold px-4 py-2 rounded-lg transition cursor-pointer">
+                ← Back to Chapter Dropdowns
+              </button>
+              <button type="button" onclick="switchProgram('All'); executeSearch('${escapeHtml(query)}', 'search')" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded-lg transition shadow-xs cursor-pointer">
+                Search All Programs
+              </button>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      docs.forEach(doc => {
+        container.appendChild(createDocumentCard(doc, query));
+      });
+    }
+
+    function cancelSearchToDropdowns() {
+      setSearchQuery('');
+      const manualView = document.getElementById('manualDropdownsView');
+      const searchView = document.getElementById('searchResultsPageView');
+      const aiContainer = document.getElementById('aiAnswerContainer');
+
+      if (searchView) searchView.classList.add('hidden');
+      if (manualView) manualView.classList.remove('hidden');
+      if (aiContainer) aiContainer.classList.add('hidden');
+
+      // Refresh default dropdowns view
+      const currentDocs = filterDocs('', activeProgram);
+      renderDropdownsView(currentDocs);
+    }
+
     // Auto initialize with CalFresh on load
     document.addEventListener('DOMContentLoaded', () => {
       switchProgram('CalFresh');
+      const searchInp = document.getElementById('searchInput');
+      if (searchInp) {
+        searchInp.addEventListener('input', (e) => {
+          if (!e.target.value.trim()) {
+            const searchView = document.getElementById('searchResultsPageView');
+            if (searchView && !searchView.classList.contains('hidden')) {
+              cancelSearchToDropdowns();
+            }
+          }
+        });
+      }
     });
   </script>
 </body>

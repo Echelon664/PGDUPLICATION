@@ -165,7 +165,7 @@ class BenefitsHandler(BaseHTTPRequestHandler):
                 return
 
             context_str = "\n\n---\n\n".join([
-                f"Document: {r['title']}\nProgram: {', '.join(r['programs'])}\nOfficial Link: {r['official_url']}\nExcerpt:\n{r['text']}"
+                f"Document: {r.get('title', '')}\nProgram: {', '.join(r.get('programs', []))}\nOfficial Link: {r.get('official_url', '')}\nExcerpt:\n{r.get('matched_excerpt') or r.get('text') or r.get('summary', '')}"
                 for r in retrieved
             ])
 
