@@ -77,20 +77,27 @@ CHAPTER_DESCRIPTIONS = {
     '70-100 Trafficking and Crime Victims Assistance Program (TCVAP)': 'State-funded cash and supportive services for eligible victims of crime',
     'Special Notices & Policy Bulletins': 'County Policy Bulletins, COLA notices, emergency directives, and annual adjustments',
 
-    # Medi-Cal
-    'MAGI Eligibility & Income Limits': 'Modified Adjusted Gross Income, 138% Federal Poverty Level thresholds, and Covered California coordination',
-    'Property Rules & 2024 Asset Elimination': 'Complete elimination of asset/property test effective January 1, 2024, and vehicle rules',
-    'Postpartum & Continuous Child Coverage': '12-month postpartum continuous coverage and continuous child eligibility for children under 5',
-    'Citizenship & Full Scope Expansion': 'Full-scope Medi-Cal expansion for adults ages 26–49 regardless of immigration status',
-    'Renewals, Ex Parte & Redeterminations': 'Automatic ex parte electronic renewals, redetermination packets, and disenrollment protections',
-    'LTC, Waivers & Spousal Impoverishment': 'Long-Term Care, Home & Community-Based waivers, and spousal impoverishment caps',
-    'Sections 01–05: Application & Initial Eligibility': 'County of responsibility, conditions of eligibility, hospital referrals, minor consent, immediate need',
-    'Sections 06–10: Interviews & Verification': 'Interviews, identity verification, citizenship, noncitizen status, and residency',
-    'Sections 11–15: Property & Treatment of Income': 'Income calculations, exempt income, child support, and treatment of property',
-    'Sections 16–20: Special Coverage Groups & Waivers': 'Refugees, foster care, breast & cervical cancer treatment, and waiver programs',
-    'Sections 21+: Case Maintenance & Administration': 'Case maintenance, inter-county transfers, confidentiality, and notices of action',
-    'Special Notices & All County Letters': 'Statewide ACWDL letters, FPL updates, and emergency directives',
-    'General Medi-Cal Eligibility & Administration': 'Administrative guidelines, hearings, confidentiality, and case records'
+    # Medi-Cal Articles
+    'ARTICLE 01 - DEFINITIONS': 'Official Medi-Cal terms, beneficiary definitions, and program concepts',
+    'ARTICLE 02 - CONFIDENTIALITY': 'Safeguarding Medi-Cal case records and confidential health information',
+    'ARTICLE 03 - COUNTY OF RESPONSIBILITY': 'County residency, intercounty transfers (ICT), and jurisdictional rules',
+    'ARTICLE 04 - APPLICATION PROCESS': 'Intake procedures, verifications, expedited medical need, renewals, and NOAs',
+    'ARTICLE 05 - Medi-Cal Programs': 'MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs',
+    'ARTICLE 06 - Institutional Status': 'Public institutions, mental disease facilities, and inmates medical coverage',
+    'ARTICLE 07 - Citizenship/Immigration Status': 'Citizenship verification, PRUCOL, and immigrant eligibility rules',
+    'ARTICLE 08 - Responsible Relatives & Unit Determination': 'Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations',
+    'ARTICLE 09 - Property': 'Real and personal property evaluation, principal residence, and transfers',
+    'ARTICLE 10 - NON-MAGI INCOME': 'Earned/unearned income, deductions, and Non-MAGI budgeting computations',
+    'ARTICLE 11 - Maintenance Needs': 'Maintenance need standards and basic subsistence income levels',
+    'ARTICLE 12 - Share-of-Cost': 'Share of Cost (SOC) determination, liability computation, and form processing',
+    'ARTICLE 13 - PERIOD OF ELIGIBILITY': 'Retroactive coverage, ongoing eligibility periods, and continuous coverage',
+    'ARTICLE 14 - MEDI-CAL CARD USE AND ISSUANCE': 'Benefits Identification Card (BIC) issuance, replacements, and authorization letters',
+    'ARTICLE 15 - OTHER HEALTH CARE COVERAGE AND MEDICARE BUY-IN COVERAGE': 'Other Health Coverage (OHC), third-party liability, and Medicare Part A/B buy-in',
+    'ARTICLE 16 - OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION': 'Fraud prevention, estate recovery, administrative disqualification, and overpayments',
+    'ARTICLE 17 - MEDI-CAL SPECIAL TREATMENT PROGRAMS': 'Kidney transplant, organ anti-rejection, dialysis, and parenteral nutrition programs',
+    'ARTICLE 20 - PERFORMANCE STANDARDS': 'Casework processing standards, redetermination timelines, and MEDS alerts',
+    'ARTICLE 21 - MAGI APTC and Health Care Reform': 'Modified Adjusted Gross Income (MAGI), Covered CA, tax households, and ACA rules',
+    'Special Notices & Policy Bulletins': 'County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments'
 }
 
 def categorize_doc(doc):
@@ -132,34 +139,14 @@ def categorize_doc(doc):
         return '40-100 Application and Redetermination', 'cw-40-100', 25
 
     else: # Medi-Cal
+        cat = doc.get('category')
+        if cat:
+            order = doc.get('order', 50)
+            cat_id = doc.get('category_id') or ('mc-' + cat.replace(' ', '-').lower())
+            return cat, cat_id, order
         if 'sn ' in t or 'acwdl' in t or 'bulletin' in t or 'special notice' in t:
-            return 'Special Notices & All County Letters', 'mc-sn', 99
-        if any(k in t for k in ['magi', 'fpl', 'modified adjusted']):
-            return 'MAGI Eligibility & Income Limits', 'mc-magi', 10
-        if any(k in t for k in ['asset', 'property', 'resource', 'elimination']):
-            return 'Property Rules & 2024 Asset Elimination', 'mc-asset', 20
-        if any(k in t for k in ['child', 'children', 'under 5', 'postpartum', 'pregnant']):
-            return 'Postpartum & Continuous Child Coverage', 'mc-child', 30
-        if any(k in t for k in ['citizenship', 'noncitizen', 'immigrant', 'undocumented', 'expansion']):
-            return 'Citizenship & Full Scope Expansion', 'mc-citizen', 40
-        if any(k in t for k in ['renewal', 'redetermination', 'ex parte', 'disenrollment']):
-            return 'Renewals, Ex Parte & Redeterminations', 'mc-renew', 50
-        if any(k in t for k in ['long term care', 'ltc', 'spousal', 'waiver', 'home and community']):
-            return 'LTC, Waivers & Spousal Impoverishment', 'mc-ltc', 60
-        m = re.search(r'Section[_\s]+(\d+)', title, re.IGNORECASE)
-        if m:
-            sec_num = int(m.group(1))
-            if sec_num <= 5:
-                return 'Sections 01–05: Application & Initial Eligibility', 'mc-sec-1-5', 70
-            elif sec_num <= 10:
-                return 'Sections 06–10: Interviews & Verification', 'mc-sec-6-10', 75
-            elif sec_num <= 15:
-                return 'Sections 11–15: Property & Treatment of Income', 'mc-sec-11-15', 80
-            elif sec_num <= 20:
-                return 'Sections 16–20: Special Coverage Groups & Waivers', 'mc-sec-16-20', 85
-            else:
-                return 'Sections 21+: Case Maintenance & Administration', 'mc-sec-high', 90
-        return 'General Medi-Cal Eligibility & Administration', 'mc-general', 95
+            return 'Special Notices & Policy Bulletins', 'mc-sn', 99
+        return 'ARTICLE 04 - APPLICATION PROCESS', 'mc-art-04', 4
 
 embedded_docs = []
 for d in full_docs:
@@ -597,7 +584,7 @@ html_template = f"""<!DOCTYPE html>
       }},
       'Medi-Cal': {{
         title: 'Medi-Cal (Medicaid)',
-        folder: 'Folder 599 (Policy Articles)',
+        folder: 'Folder 599 (19 Official Articles & Special Notices)',
         total: {mc_count},
         color: 'sky',
         placeholder: 'Searching ONLY Medi-Cal Guide (MAGI FPL, asset limit elimination, postpartum)...',
@@ -1074,16 +1061,33 @@ html_template = f"""<!DOCTYPE html>
         ? 'bg-emerald-100 text-emerald-800 border-emerald-200' 
         : doc.programs.includes('CalWORKs') 
           ? 'bg-purple-100 text-purple-800 border-purple-200' 
-          : 'bg-sky-100 text-sky-800 border-sky-200';
+          : 'bg-teal-100 text-teal-800 border-teal-200';
 
       const localPdfLink = resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
       const revisionStr = doc.published_on ? doc.published_on.slice(0, 10) : 'Active';
+
+      let secBadgeHtml = '';
+      if (doc.section_num) {{
+        let badgeColor = 'bg-slate-100 text-slate-800 border-slate-300';
+        if (doc.programs.includes('CalWORKs')) {{
+          badgeColor = 'bg-purple-100 text-purple-900 border-purple-300';
+        }} else if (doc.programs.includes('Medi-Cal')) {{
+          badgeColor = 'bg-teal-100 text-teal-900 border-teal-300';
+        }} else if (doc.programs.includes('CalFresh')) {{
+          badgeColor = 'bg-emerald-100 text-emerald-900 border-emerald-300';
+        }}
+        let label = doc.section_num;
+        if (!label.toLowerCase().startsWith('section') && !label.toLowerCase().startsWith('sn')) {{
+          label = 'Section ' + label;
+        }}
+        secBadgeHtml = `<span class="px-2 py-0.5 rounded text-xs font-mono font-extrabold ${{badgeColor}} border shadow-2xs">${{escapeHtml(label)}}</span>`;
+      }}
 
       card.innerHTML = `
         <div class="flex-1 min-w-0">
           <div class="flex flex-wrap items-center gap-2 mb-1.5">
             <span class="px-2 py-0.5 rounded text-xs font-bold border ${{progBadgeColor}}">${{(doc.programs || []).join(' / ')}}</span>
-            ${{doc.section_num ? `<span class="px-2 py-0.5 rounded text-xs font-mono font-extrabold bg-purple-100 text-purple-900 border border-purple-300 shadow-2xs">Section ${{escapeHtml(doc.section_num)}}</span>` : ''}}
+            ${{secBadgeHtml}}
             <a href="${{localPdfLink}}" onclick="event.preventDefault(); viewDocPdf('${{doc.id}}')" class="font-bold text-slate-800 text-xs sm:text-sm hover:text-blue-600 transition inline-flex items-center gap-1.5 cursor-pointer">
               <span>${{escapeHtml(doc.title)}}</span>
               <span class="text-[10px] text-blue-600 font-semibold bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">View in Page 👁</span>
@@ -1190,12 +1194,20 @@ html_template = f"""<!DOCTYPE html>
         headerBtn.onclick = () => toggleChapterDropdown(gId);
 
         const cwMatch = catName.match(/^(\d{2}-\d{3})\s+(.*)$/);
+        const mcMatch = catName.match(/^(ARTICLE\s+\d+)\s*[-–:]*\s*(.*)$/i);
         let titleBlock = '';
         if (cwMatch) {{
           titleBlock = `
             <div class="flex items-center gap-2">
               <span class="bg-purple-700 text-white font-mono font-extrabold text-xs px-2.5 py-0.5 rounded shadow-2xs shrink-0">${{cwMatch[1]}}</span>
               <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(cwMatch[2])}}</h4>
+            </div>
+          `;
+        }} else if (mcMatch) {{
+          titleBlock = `
+            <div class="flex items-center gap-2">
+              <span class="bg-teal-700 text-white font-mono font-extrabold text-xs px-2.5 py-0.5 rounded shadow-2xs shrink-0">${{mcMatch[1]}}</span>
+              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(mcMatch[2])}}</h4>
             </div>
           `;
         }} else if (catName.includes('Special Notices')) {{
