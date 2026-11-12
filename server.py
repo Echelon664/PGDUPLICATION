@@ -1,9 +1,10 @@
 import os
 import json
 import urllib.parse
+import urllib.request
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-from indexer import BM25Index, chunk_documents
+from search_engine import get_engine
 
 def call_ollama(prompt: str, model: str = "llama3.2") -> str:
     try:
@@ -16,39 +17,12 @@ def call_ollama(prompt: str, model: str = "llama3.2") -> str:
     except Exception:
         return ""
 
-def call_gemini(prompt: str, api_key: str) -> str:
-    try:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
-        payload = json.dumps({"contents": [{"parts": [{"text": prompt}]}]}).encode("utf-8")
-        req = urllib.request.Request(url, data=payload, headers={"Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            candidates = data.get("candidates", [])
-            if candidates:
-                return candidates[0]["content"]["parts"][0]["text"]
-    except Exception as e:
-        print(f"[!] Gemini error: {e}")
-    return ""
-
 PORT = 8000
-DOCS_FILE = os.path.join(os.path.dirname(__file__), "data", "documents.json")
-_LAST_MTIME = 0
-INDEX = BM25Index()
+ENGINE = get_engine()
 
 def get_index():
-    global _LAST_MTIME, INDEX
-    try:
-        mtime = os.path.getmtime(DOCS_FILE)
-        if mtime > _LAST_MTIME:
-            chunks = chunk_documents(DOCS_FILE)
-            new_idx = BM25Index()
-            new_idx.build(chunks)
-            INDEX = new_idx
-            _LAST_MTIME = mtime
-            print(f"[*] Dynamically reloaded {len(chunks)} chunks from {DOCS_FILE}")
-    except Exception as e:
-        print(f"[!] Error checking mtime: {e}")
-    return INDEX
+    # The engine rebuilds data/search.db automatically when documents.json changes.
+    return ENGINE
 
 class BenefitsHandler(BaseHTTPRequestHandler):
     def do_HEAD(self):
@@ -187,23 +161,16 @@ ANSWER WITH CITATIONS:"""
             answer = None
             provider = "heuristic"
 
-            gemini_key = os.environ.get("GEMINI_API_KEY")
-            if gemini_key:
-                answer = call_gemini(system_prompt, gemini_key)
-                if answer:
-                    provider = "Gemini Flash"
-
-            if not answer:
-                answer = call_ollama(system_prompt)
-                if answer:
-                    provider = "Local Ollama"
+            answer = call_ollama(system_prompt)
+            if answer:
+                provider = "Local Ollama"
 
             if not answer:
                 provider = "Direct Manual Evidence"
                 answer = (
                     f"Relevant policy rules regarding '{question}':\n\n"
                     + "\n\n".join([f"• **{r['title']}** ({', '.join(r['programs'])}):\n> {r['text'][:350]}..." for r in retrieved[:3]])
-                    + "\n\n*(Connect Ollama locally or export GEMINI_API_KEY for full conversational synthesis.)*"
+                    + "\n\n*(Connect Ollama locally for full conversational synthesis.)*"
                 )
 
             self._set_headers(200)

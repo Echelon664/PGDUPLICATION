@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import json, html, os, re
 
-ARTIFACT_PATH = "/Users/echelon619/.gemini/antigravity/brain/df70e671-e6fb-4e6d-b828-18340155569b/web_preview.html"
 TEMPLATE_PATH = "/Users/echelon619/Desktop/ChrisPG/templates/index.html"
 DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
 
@@ -182,11 +181,10 @@ html_template = f"""<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SDCounty HHSA Program Guide</title>
-  <!-- Approved Tailwind script per generative_ui guidelines -->
-  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <style>
     .gradient-header {{
-      background: #000000;
+      background: #0b2545;
     }}
     ::-webkit-scrollbar {{
       width: 6px;
@@ -202,14 +200,74 @@ html_template = f"""<!DOCTYPE html>
     .chapter-chevron {{
       transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }}
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {{
+      -webkit-appearance: none;
+      appearance: none;
+    }}
+    .search-seg {{
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      padding: 3px;
+      background: #0f2f57;
+      border: 1px solid #27496f;
+      border-radius: 10px;
+    }}
+    .search-seg-btn {{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      min-height: 38px;
+      padding: 0 14px;
+      border: 0;
+      border-radius: 8px;
+      background: transparent;
+      color: #cbd5e1;
+      font-size: 12px;
+      font-weight: 800;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+    }}
+    .search-seg-btn:hover {{
+      background: #173d6b;
+      color: #fff;
+    }}
+    .search-seg-btn.is-active {{
+      background: #2563eb;
+      color: #fff;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    }}
+    .search-seg-btn:disabled {{
+      opacity: 0.6;
+      cursor: not-allowed;
+    }}
+    .search-scope {{
+      flex: none;
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1d4ed8;
+      font-size: 10.5px;
+      font-weight: 800;
+      white-space: nowrap;
+    }}
+    @media (max-width: 400px) {{
+      .search-scope {{ display: none; }}
+    }}
   </style>
 </head>
-<body class="bg-black text-slate-900 antialiased p-3 sm:p-5 min-h-screen">
+<body class="bg-[#0b2545] text-slate-900 antialiased p-3 sm:p-5 min-h-screen">
 
-  <div class="max-w-5xl mx-auto bg-black text-slate-900 border border-slate-800 rounded-2xl shadow-xl overflow-hidden flex flex-col">
+  <div class="max-w-5xl mx-auto bg-[#0b2545] text-slate-900 border border-slate-800 rounded-2xl shadow-xl overflow-hidden flex flex-col">
     
     <!-- Top Official Notice Bar -->
-    <div class="bg-black text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap justify-between items-center gap-2">
+    <div class="bg-[#0b2545] text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-2">
         <svg class="w-4 h-4 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20">
           <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
@@ -226,7 +284,7 @@ html_template = f"""<!DOCTYPE html>
     </div>
 
     <!-- Official Notice & Disclaimer Banner -->
-    <div class="bg-black border-b border-slate-800 px-4 py-3 text-amber-200 text-xs flex items-start gap-3">
+    <div class="bg-[#0b2545] border-b border-slate-800 px-4 py-3 text-amber-200 text-xs flex items-start gap-3">
       <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
       </svg>
@@ -286,44 +344,45 @@ html_template = f"""<!DOCTYPE html>
         </div>
 
         <!-- Search Input Box & Submit Buttons -->
-        <form id="searchForm" onsubmit="handleSearchSubmit(event)" class="flex flex-col sm:flex-row gap-2">
-          <div class="relative flex-1">
-            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-              </svg>
-            </div>
-            <input type="text" id="searchInput" 
-              placeholder="Searching ONLY CalFresh Guide (student eligibility, SUA, SAR 7, income limits)..." 
-              class="w-full pl-10 pr-4 py-2.5 rounded-lg text-slate-900 bg-white border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-xs sm:text-sm font-medium shadow-inner">
+        <form id="searchForm" role="search" onsubmit="handleSearchSubmit(event)" class="flex flex-col sm:flex-row gap-2">
+          <label for="searchInput" class="sr-only">Search policy manuals</label>
+          <div class="flex items-center gap-2 flex-1 min-w-0 min-h-[44px] pl-3 pr-1 bg-white border border-slate-300 rounded-lg shadow-inner transition focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500">
+            <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <span id="searchScopeChip" class="search-scope">CalFresh</span>
+            <input type="search" id="searchInput"
+              placeholder="Search CalFresh policy: student eligibility, SUA, SAR 7..."
+              aria-describedby="searchScope" aria-controls="searchResultsPageView"
+              enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false"
+              class="flex-1 min-w-0 h-11 bg-transparent border-0 outline-none text-slate-900 placeholder:text-slate-500 text-base sm:text-sm font-medium">
+            <button type="button" id="clearSearchBtn" onclick="clearSearch()" class="hidden shrink-0 h-11 w-11 items-center justify-center rounded-md text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition cursor-pointer" aria-label="Clear search" title="Clear search">
+              <span aria-hidden="true">✕</span>
+            </button>
           </div>
-          <div class="flex gap-2 shrink-0">
-            <button type="submit" name="searchMode" value="ask" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition shadow-sm cursor-pointer">
-              <svg class="w-4 h-4 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
+          <div class="search-seg w-full sm:w-auto shrink-0" role="group" aria-label="Search mode">
+            <button type="submit" name="searchMode" value="search" class="search-seg-btn is-active flex-1 sm:flex-none">
+              <span data-label>Search</span>
+            </button>
+            <button type="submit" name="searchMode" value="ask" class="search-seg-btn flex-1 sm:flex-none">
+              <svg class="w-3.5 h-3.5 text-amber-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.477.859h4z"></path>
               </svg>
-              <span>Ask Policy AI</span>
-            </button>
-            <button type="submit" name="searchMode" value="search" class="bg-slate-700 hover:bg-slate-800 text-white px-3.5 py-2.5 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition cursor-pointer">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
-              </svg>
-              <span>Search Manual</span>
-            </button>
-            <button type="button" onclick="clearSearch()" class="bg-slate-800/80 hover:bg-slate-800 text-slate-300 px-2.5 py-2.5 rounded-lg text-xs font-semibold transition cursor-pointer" title="Clear Search">
-              ✕
+              <span data-label>Ask AI</span>
             </button>
           </div>
         </form>
+        <p id="searchScope" class="sr-only">Searching the CalFresh (SNAP) guide.</p>
+        <p id="searchError" class="hidden text-xs font-semibold text-amber-300 mt-2 px-1" role="alert"></p>
 
         <!-- Deep BM25 Search Status Indicator -->
         <div class="flex items-center justify-between text-[11px] text-blue-200/90 mt-2 px-1">
           <div class="flex items-center gap-1.5">
             <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
-            <span><strong>BM25 Full-Text Engine:</strong> Searches 100% of PDF contents, regulations, tables & citations</span>
+            <span><strong>Scope:</strong> <span id="searchScopeLabel">CalFresh (SNAP)</span> &bull; <strong>SQLite FTS5</strong> searches 100% of PDF contents, regulations, tables & citations</span>
           </div>
           <div class="text-right text-blue-200/70 hidden sm:block">
-            6,398 indexed section pages &bull; Exact excerpts
+            413 documents &bull; 8,636 indexed passages
           </div>
         </div>
 
@@ -383,11 +442,11 @@ html_template = f"""<!DOCTYPE html>
             <div class="min-w-0">
               <div class="flex items-center gap-2 flex-wrap">
                 <span id="searchResultScopeBadge" class="bg-blue-600 text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">CalFresh</span>
-                <h3 class="font-extrabold text-slate-900 text-sm sm:text-base truncate">
+                <h3 id="searchResultsHeading" tabindex="-1" class="font-extrabold text-slate-900 text-sm sm:text-base truncate focus:outline-none">
                   Search Results for: <span id="searchResultQueryText" class="text-blue-700">"..."</span>
                 </h3>
               </div>
-              <p id="searchResultCountText" class="text-xs text-slate-600 mt-0.5">
+              <p id="searchResultCountText" class="text-xs text-slate-600 mt-0.5" aria-live="polite" aria-atomic="true">
                 Searching 100% of internal PDF text with BM25 engine...
               </p>
             </div>
@@ -446,7 +505,7 @@ html_template = f"""<!DOCTYPE html>
     </div>
 
     <!-- Official Portal Footnotes -->
-    <div class="bg-black border-t border-slate-800 p-4 text-xs text-slate-400 flex flex-wrap justify-between items-center gap-2">
+    <div class="bg-[#0b2545] border-t border-slate-800 p-4 text-xs text-slate-400 flex flex-wrap justify-between items-center gap-2">
       <div>
         SDCounty HHSA Program Guide • <strong>100% Original %PDF-1.7 Documents Locally Indexed</strong>
       </div>
@@ -547,6 +606,57 @@ html_template = f"""<!DOCTYPE html>
     function setSearchQuery(val) {{
       const el = document.getElementById('searchInput');
       if (el) el.value = val;
+      updateClearButtonVisibility();
+    }}
+
+    function updateClearButtonVisibility() {{
+      const input = document.getElementById('searchInput');
+      const btn = document.getElementById('clearSearchBtn');
+      if (!btn) return;
+      const hasText = !!(input && input.value.length > 0);
+      btn.classList.toggle('hidden', !hasText);
+      btn.classList.toggle('flex', hasText);
+    }}
+
+    function showSearchError(message) {{
+      const err = document.getElementById('searchError');
+      if (!err) return;
+      err.textContent = message;
+      err.classList.remove('hidden');
+    }}
+
+    function hideSearchError() {{
+      const err = document.getElementById('searchError');
+      if (err) err.classList.add('hidden');
+    }}
+
+    function readSearchStateFromUrl() {{
+      const params = new URLSearchParams(window.location.search);
+      const programParam = params.get('program');
+      return {{
+        query: (params.get('q') || '').trim(),
+        program: PROGRAM_METADATA[programParam] ? programParam : 'CalFresh',
+        mode: params.get('mode') === 'ask' ? 'ask' : 'search'
+      }};
+    }}
+
+    function updateSearchUrl(query, mode, opts = {{}}) {{
+      const params = new URLSearchParams(window.location.search);
+      if (query) {{
+        params.set('q', query);
+        params.set('program', activeProgram);
+        params.set('mode', mode === 'ask' ? 'ask' : 'search');
+      }} else {{
+        params.delete('q');
+        params.delete('mode');
+        if (activeProgram === 'CalFresh') params.delete('program');
+        else params.set('program', activeProgram);
+      }}
+      const qs = params.toString();
+      const url = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
+      const state = {{ query, program: activeProgram, mode }};
+      if (opts.replace) window.history.replaceState(state, '', url);
+      else window.history.pushState(state, '', url);
     }}
 
     // Embedded catalog containing all deduplicated documents
@@ -563,7 +673,7 @@ html_template = f"""<!DOCTYPE html>
         folder: 'Folder 542 (Chapter 63)',
         total: {cf_count},
         color: 'blue',
-        placeholder: 'Searching ONLY CalFresh Guide (student eligibility, SUA, SAR 7, income limits)...',
+        placeholder: 'Search CalFresh policy: student eligibility, SUA, SAR 7...',
         chips: [
           {{ label: 'Student Exemption (20-hr)', query: 'student eligibility 20 hours' }},
           {{ label: 'Standard Utility Allowance (SUA)', query: 'Standard Utility Allowance SUA' }},
@@ -576,7 +686,7 @@ html_template = f"""<!DOCTYPE html>
         folder: 'Folder 448 (Chapters 40-44)',
         total: {cw_count},
         color: 'purple',
-        placeholder: 'Searching ONLY CalWORKs Guide (WTW participation hours, immediate need, property)...',
+        placeholder: 'Search CalWORKs policy: WTW hours, immediate need...',
         chips: [
           {{ label: 'Welfare-to-Work (30/35 hrs)', query: 'Welfare to Work 30 hours' }},
           {{ label: 'Immediate Need Cash ($200)', query: 'Immediate need emergency cash' }},
@@ -589,7 +699,7 @@ html_template = f"""<!DOCTYPE html>
         folder: 'Folder 599 (19 Official Articles & Special Notices)',
         total: {mc_count},
         color: 'sky',
-        placeholder: 'Searching ONLY Medi-Cal Guide (MAGI FPL, asset limit elimination, postpartum)...',
+        placeholder: 'Search Medi-Cal policy: MAGI income, postpartum coverage...',
         chips: [
           {{ label: 'Asset Limit Elimination (2024)', query: 'Asset test elimination 2024' }},
           {{ label: 'MAGI FPL 138% Income Limits', query: 'MAGI income eligibility Federal Poverty Level 138%' }},
@@ -602,7 +712,7 @@ html_template = f"""<!DOCTYPE html>
         folder: 'Folders 542, 448, 599',
         total: {all_count},
         color: 'red',
-        placeholder: 'Search across all San Diego benefits guides (CalFresh, CalWORKs, Medi-Cal)...',
+        placeholder: 'Search all programs: CalFresh, CalWORKs, Medi-Cal...',
         chips: [
           {{ label: 'CalFresh Student Rules', query: 'CalFresh student eligibility' }},
           {{ label: 'CalWORKs WTW Hours', query: 'CalWORKs Welfare to Work hours' }},
@@ -612,7 +722,7 @@ html_template = f"""<!DOCTYPE html>
       }}
     }};
 
-    function switchProgram(prog) {{
+    function switchProgram(prog, opts = {{}}) {{
       activeProgram = prog;
       const meta = PROGRAM_METADATA[prog];
 
@@ -638,12 +748,23 @@ html_template = f"""<!DOCTYPE html>
         }}
       }}
 
-      // Update input placeholder
+      // Update input placeholder and visible / screen-reader scope hints
       const searchInp = document.getElementById('searchInput');
       if (searchInp) searchInp.placeholder = meta.placeholder;
+      const scopeLabel = document.getElementById('searchScopeLabel');
+      if (scopeLabel) scopeLabel.textContent = meta.title;
+      const scopeChip = document.getElementById('searchScopeChip');
+      if (scopeChip) scopeChip.textContent = prog === 'All' ? 'All programs' : prog;
+      const scopeDesc = document.getElementById('searchScope');
+      if (scopeDesc) scopeDesc.textContent = prog === 'All' ? 'Searching all program guides.' : 'Searching the ' + meta.title + ' guide.';
 
       // Render suggested quick topic chips
       renderTopicChips(meta.chips);
+
+      if (opts.skipSearch) {{
+        updateClearButtonVisibility();
+        return;
+      }}
 
       // Re-run search or display full program catalog
       const q = getSearchQuery();
@@ -665,14 +786,24 @@ html_template = f"""<!DOCTYPE html>
         btn.innerHTML = '<span>💡</span> <span>' + escapeHtml(c.label) + '</span>';
         btn.onclick = () => {{
           setSearchQuery(c.query);
-          handleSearchMode('ask');
+          handleSearchMode('search');
         }};
         container.appendChild(btn);
       }});
     }}
 
     function clearSearch() {{
-      cancelSearchToDropdowns();
+      const searchView = document.getElementById('searchResultsPageView');
+      const onResultsPage = searchView && !searchView.classList.contains('hidden');
+      if (onResultsPage) {{
+        cancelSearchToDropdowns();
+        return;
+      }}
+      setSearchQuery('');
+      hideSearchError();
+      updateSearchUrl('', 'search', {{ replace: true }});
+      const el = document.getElementById('searchInput');
+      if (el) el.focus();
     }}
 
     function handleSearchSubmit(e) {{
@@ -684,19 +815,22 @@ html_template = f"""<!DOCTYPE html>
     function handleSearchMode(mode) {{
       const q = getSearchQuery();
       if (!q) {{
-        executeSearch('', 'list');
+        showSearchError('Enter a search term to search the policy manuals.');
+        const el = document.getElementById('searchInput');
+        if (el) el.focus();
         return;
       }}
-      executeSearch(q, mode);
+      hideSearchError();
+      executeSearch(q, mode === 'ask' ? 'ask' : 'search');
     }}
 
     function highlightMatchedText(text, query) {{
       if (!text || !query) return escapeHtml(text || '');
-      const words = query.toLowerCase().split(/\\s+/).filter(w => w.length > 2);
+      const words = query.toLowerCase().split(/\s+/).filter(w => w.length > 2);
       if (words.length === 0) return escapeHtml(text);
       let escaped = escapeHtml(text);
       words.forEach(w => {{
-        const safeW = w.replace(/[.*+?^${{}}()|[\\]\\\\]/g, '\\\\$&');
+        const safeW = w.replace(/[.*+?^${{}}()|[\]\\]/g, '\\$&');
         const reg = new RegExp('(' + safeW + ')', 'gi');
         escaped = escaped.replace(reg, '<mark class="bg-amber-200 text-amber-950 font-bold px-0.5 rounded">$1</mark>');
       }});
@@ -710,7 +844,7 @@ html_template = f"""<!DOCTYPE html>
       }}
       if (!query) return filtered;
 
-      const words = query.toLowerCase().split(/\\s+/).filter(Boolean);
+      const words = query.toLowerCase().split(/\s+/).filter(Boolean);
       const scored = [];
 
       filtered.forEach(d => {{
@@ -750,13 +884,48 @@ html_template = f"""<!DOCTYPE html>
       return scored.sort((a, b) => b.score - a.score);
     }}
 
-    async function executeSearch(query, mode) {{
+    let activeSearchController = null;
+
+    function setSearchBusy(busy, mode) {{
+      const form = document.getElementById('searchForm');
+      if (!form) return;
+      const labels = {{ search: 'Search', ask: 'Ask AI' }};
+      form.querySelectorAll('button[type="submit"]').forEach(btn => {{
+        btn.disabled = busy;
+        btn.classList.toggle('is-active', busy ? btn.value === mode : btn.value === 'search');
+        const label = btn.querySelector('[data-label]');
+        if (!label) return;
+        label.textContent = (busy && btn.value === mode)
+          ? (btn.value === 'ask' ? 'Asking…' : 'Searching…')
+          : labels[btn.value];
+      }});
+      form.setAttribute('aria-busy', busy ? 'true' : 'false');
+    }}
+
+    function focusSearchResultsHeading() {{
+      const heading = document.getElementById('searchResultsHeading');
+      const view = document.getElementById('searchResultsPageView');
+      if (view) view.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+      if (heading) {{
+        try {{ heading.focus({{ preventScroll: true }}); }} catch (err) {{ heading.focus(); }}
+      }}
+    }}
+
+    async function executeSearch(query, mode, opts = {{}}) {{
       const prog = activeProgram;
-      const meta = PROGRAM_METADATA[prog];
 
       if (!query || !query.trim()) {{
         cancelSearchToDropdowns();
         return;
+      }}
+
+      // Abort any earlier request so a stale response cannot overwrite this one.
+      if (activeSearchController) activeSearchController.abort();
+      const controller = new AbortController();
+      activeSearchController = controller;
+
+      if (!opts.skipHistory) {{
+        updateSearchUrl(query, mode, {{ replace: !!opts.replaceHistory }});
       }}
 
       // Switch to Dedicated Search Results Page
@@ -772,66 +941,96 @@ html_template = f"""<!DOCTYPE html>
 
       if (scopeBadge) scopeBadge.textContent = prog === 'All' ? 'All Programs' : prog;
       if (queryText) queryText.textContent = `"${{query}}"`;
-      if (countText) countText.textContent = 'Searching 100% of internal PDF text with BM25 engine...';
+      if (countText) countText.textContent = 'Searching official policy documents...';
+
+      hideSearchError();
+      setSearchBusy(true, mode);
 
       if (mode === 'ask') {{
         showAIAnswerLoading();
-        let aiData = null;
-        try {{
-          const resp = await fetch(LOCAL_SERVER_BASE + '/api/ask', {{
-            method: 'POST',
-            headers: {{ 'Content-Type': 'application/json' }},
-            body: JSON.stringify({{ question: query, program: prog }})
-          }});
-          if (resp.ok) {{
-            aiData = await resp.json();
-          }}
-        }} catch (err) {{
-          console.warn('Backend /api/ask unavailable, using client-side synthesis:', err);
-        }}
-
-        if (aiData && aiData.answer) {{
-          renderAIAnswer(aiData.answer, aiData.sources || []);
-        }} else {{
-          synthesizeClientAnswer(query, prog);
-        }}
       }} else {{
         const aiContainer = document.getElementById('aiAnswerContainer');
         if (aiContainer) aiContainer.classList.add('hidden');
       }}
 
-      // 1. Full-Text BM25 Deep Search via Backend API when available
-      let apiDocs = null;
-      try {{
-        const searchResp = await fetch(LOCAL_SERVER_BASE + '/api/search?q=' + encodeURIComponent(query) + '&program=' + encodeURIComponent(prog) + '&limit=150');
-        if (searchResp.ok) {{
-          const data = await searchResp.json();
-          if (data && data.results && data.results.length > 0) {{
-            const docMap = {{}};
-            EMBEDDED_DOCS.forEach(d => {{ docMap[d.id] = d; }});
-            apiDocs = data.results.map(r => {{
-              const base = docMap[r.id] || {{}};
-              return {{
-                ...base,
-                ...r,
-                category: base.category || r.category || 'General Sections',
-                order: base.order || 50,
-                category_desc: base.category_desc || '',
-                category_id: base.category_id || 'cat-general'
-              }};
-            }});
-          }}
-        }}
-      }} catch (err) {{
-        console.log('Using client-side full-text search fallback:', err);
+      // Start both requests at once so the AI answer never delays the document list.
+      const searchPromise = fetch(LOCAL_SERVER_BASE + '/api/search?q=' + encodeURIComponent(query) + '&program=' + encodeURIComponent(prog) + '&limit=150', {{ signal: controller.signal }})
+        .then(resp => resp.ok ? resp.json() : null)
+        .catch(err => {{
+          if (err && err.name === 'AbortError') throw err;
+          console.log('Using client-side full-text search fallback:', err);
+          return null;
+        }});
+
+      let aiPromise = null;
+      if (mode === 'ask') {{
+        aiPromise = fetch(LOCAL_SERVER_BASE + '/api/ask', {{
+          method: 'POST',
+          headers: {{ 'Content-Type': 'application/json' }},
+          body: JSON.stringify({{ question: query, program: prog }}),
+          signal: controller.signal
+        }})
+          .then(resp => resp.ok ? resp.json() : null)
+          .catch(err => {{
+            if (err && err.name === 'AbortError') throw err;
+            console.warn('Backend /api/ask unavailable, using client-side synthesis:', err);
+            return null;
+          }});
       }}
 
-      // 2. Render matching documents in dedicated search results page
-      const docs = apiDocs || filterDocs(query, prog);
-      if (countText) {{
-        countText.textContent = `${{docs.length}} matching official policy document${{docs.length === 1 ? '' : 's'}} (Ranked by BM25 Relevance)`;
+      try {{
+        let apiDocs = null;
+        const data = await searchPromise;
+        if (controller.signal.aborted) return;
+
+        if (data && data.results && data.results.length > 0) {{
+          const docMap = {{}};
+          EMBEDDED_DOCS.forEach(d => {{ docMap[d.id] = d; }});
+          apiDocs = data.results.map(r => {{
+            const base = docMap[r.id] || {{}};
+            return {{
+              ...base,
+              ...r,
+              category: base.category || r.category || 'General Sections',
+              order: base.order || 50,
+              category_desc: base.category_desc || '',
+              category_id: base.category_id || 'cat-general'
+            }};
+          }});
+        }}
+
+        const docs = apiDocs || filterDocs(query, prog);
+        if (countText) {{
+          countText.textContent = `${{docs.length}} matching official policy document${{docs.length === 1 ? '' : 's'}} (Ranked by BM25 Relevance)`;
+        }}
+        renderSearchResultsView(docs, query);
+        if (opts.focusResults !== false) focusSearchResultsHeading();
+      }} catch (err) {{
+        if (err && err.name === 'AbortError') return;
+        const docs = filterDocs(query, prog);
+        if (countText) {{
+          countText.textContent = `${{docs.length}} matching official policy document${{docs.length === 1 ? '' : 's'}}`;
+        }}
+        renderSearchResultsView(docs, query);
+      }} finally {{
+        if (activeSearchController === controller) {{
+          setSearchBusy(false, mode);
+        }}
       }}
-      renderSearchResultsView(docs, query);
+
+      if (aiPromise) {{
+        try {{
+          const aiData = await aiPromise;
+          if (controller.signal.aborted) return;
+          if (aiData && aiData.answer) {{
+            renderAIAnswer(aiData.answer, aiData.sources || []);
+          }} else {{
+            synthesizeClientAnswer(query, prog);
+          }}
+        }} catch (err) {{
+          if (!err || err.name !== 'AbortError') synthesizeClientAnswer(query, prog);
+        }}
+      }}
     }}
 
     function showAIAnswerLoading() {{
@@ -865,7 +1064,7 @@ html_template = f"""<!DOCTYPE html>
              <span>Cross-Program Search (All 3 County Benefit Guides)</span>
            </div>`;
 
-      document.getElementById('aiAnswerText').innerHTML = scopeBadge + '<div class="leading-relaxed">' + escapeHtml(answerText).replace(/\\n/g, '<br>') + '</div>';
+      document.getElementById('aiAnswerText').innerHTML = scopeBadge + '<div class="leading-relaxed">' + escapeHtml(answerText).replace(/\n/g, '<br>') + '</div>';
 
       const sourcesList = document.getElementById('aiSourcesList');
       sourcesList.innerHTML = '';
@@ -909,8 +1108,8 @@ html_template = f"""<!DOCTYPE html>
         return;
       }}
       const topMatch = matches[0];
-      const answer = `Based on County of San Diego **${{topMatch.programs.join('/')}}** policy manual (**${{topMatch.title}}**):\\n\\n` +
-        `• **Quick Policy Summary**: ${{topMatch.summary || topMatch.snippet.slice(0, 300)}}\\n\\n` +
+      const answer = `Based on County of San Diego **${{topMatch.programs.join('/')}}** policy manual (**${{topMatch.title}}**):\n\n` +
+        `• **Quick Policy Summary**: ${{topMatch.summary || topMatch.snippet.slice(0, 300)}}\n\n` +
         `This policy rule applies strictly under ${{topMatch.programs.join('/')}} guidelines. For full administrative regulations, open the complete official PDF linked below.`;
 
       renderAIAnswer(answer, matches.slice(0, 4));
@@ -1192,7 +1391,7 @@ html_template = f"""<!DOCTYPE html>
         headerBtn.onclick = () => toggleChapterDropdown(gId);
 
         const cfMatch = catName.match(/^(63-\d+)\s+(.*)$/);
-        const cwMatch = catName.match(/^([0-5]\d-\d{3}|69-\d{3}|70-\d{3})\s+(.*)$/);
+        const cwMatch = catName.match(/^([0-5]\d-\d3|69-\d3|70-\d3)\s+(.*)$/);
         const mcMatch = catName.match(/^(ARTICLE\s+\d+)\s*[-–:]*\s*(.*)$/i);
         let titleBlock = '';
         if (cfMatch) {{
@@ -1283,12 +1482,19 @@ html_template = f"""<!DOCTYPE html>
               <button type="button" onclick="cancelSearchToDropdowns()" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-bold px-4 py-2 rounded-lg transition cursor-pointer">
                 ← Back to Chapter Dropdowns
               </button>
-              <button type="button" onclick="switchProgram('All'); executeSearch('${{escapeHtml(query)}}', 'search')" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded-lg transition shadow-xs cursor-pointer">
+              <button type="button" id="searchAllProgramsBtn" class="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded-lg transition shadow-xs cursor-pointer">
                 Search All Programs
               </button>
             </div>
           </div>
         `;
+        const allBtn = document.getElementById('searchAllProgramsBtn');
+        if (allBtn) {{
+          allBtn.onclick = () => {{
+            switchProgram('All', {{ skipSearch: true }});
+            executeSearch(query, 'search');
+          }};
+        }}
         return;
       }}
 
@@ -1297,8 +1503,14 @@ html_template = f"""<!DOCTYPE html>
       }});
     }}
 
-    function cancelSearchToDropdowns() {{
+    function cancelSearchToDropdowns(opts = {{}}) {{
+      if (activeSearchController) {{
+        activeSearchController.abort();
+        activeSearchController = null;
+      }}
       setSearchQuery('');
+      hideSearchError();
+      setSearchBusy(false);
       const manualView = document.getElementById('manualDropdownsView');
       const searchView = document.getElementById('searchResultsPageView');
       const aiContainer = document.getElementById('aiAnswerContainer');
@@ -1307,18 +1519,60 @@ html_template = f"""<!DOCTYPE html>
       if (manualView) manualView.classList.remove('hidden');
       if (aiContainer) aiContainer.classList.add('hidden');
 
+      if (opts.updateHistory !== false) {{
+        updateSearchUrl('', 'search', {{ replace: true }});
+      }}
+
       // Refresh default dropdowns view
       const currentDocs = filterDocs('', activeProgram);
       renderDropdownsView(currentDocs);
     }}
 
-    // Auto initialize with CalFresh on load
+    // Keep the URL in sync with the browser's back/forward buttons.
+    window.addEventListener('popstate', () => {{
+      const state = readSearchStateFromUrl();
+      setSearchQuery(state.query);
+      switchProgram(state.program, {{ skipSearch: true }});
+      if (state.query) {{
+        executeSearch(state.query, state.mode, {{ replaceHistory: true, focusResults: false }});
+      }} else {{
+        cancelSearchToDropdowns({{ updateHistory: false }});
+      }}
+    }});
+
+    // "/" or Cmd/Ctrl+K focuses the search box from anywhere on the page.
+    document.addEventListener('keydown', (e) => {{
+      if (e.defaultPrevented) return;
+      const el = document.activeElement;
+      const isTyping = el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.tagName === 'SELECT' || el.isContentEditable);
+      const isShortcut = (e.key === '/' && !isTyping) || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k');
+      if (!isShortcut) return;
+      e.preventDefault();
+      const input = document.getElementById('searchInput');
+      if (input) {{
+        input.focus();
+        input.select();
+      }}
+    }});
+
+    // Restore search state from the URL, then wire up input feedback.
     document.addEventListener('DOMContentLoaded', () => {{
-      switchProgram('CalFresh');
+      const state = readSearchStateFromUrl();
+      setSearchQuery(state.query);
+      switchProgram(state.program, {{ skipSearch: true }});
+
+      if (state.query) {{
+        executeSearch(state.query, state.mode, {{ replaceHistory: true, focusResults: false }});
+      }} else {{
+        cancelSearchToDropdowns();
+      }}
+
       const searchInp = document.getElementById('searchInput');
       if (searchInp) {{
-        searchInp.addEventListener('input', (e) => {{
-          if (!e.target.value.trim()) {{
+        searchInp.addEventListener('input', () => {{
+          updateClearButtonVisibility();
+          hideSearchError();
+          if (!searchInp.value.trim()) {{
             const searchView = document.getElementById('searchResultsPageView');
             if (searchView && !searchView.classList.contains('hidden')) {{
               cancelSearchToDropdowns();
@@ -1326,18 +1580,11 @@ html_template = f"""<!DOCTYPE html>
           }}
         }});
       }}
+      updateClearButtonVisibility();
     }});
   </script>
 </body>
 </html>"""
-
-# Generate preview file for iframe / agent-embed
-preview_html = html_template.replace('__SERVER_BASE__', 'http://localhost:8000')
-
-with open(ARTIFACT_PATH, 'w', encoding='utf-8') as f:
-    f.write(preview_html)
-
-print(f"Generated {ARTIFACT_PATH} ({os.path.getsize(ARTIFACT_PATH)} bytes)")
 
 # Generate templates/index.html for server.py
 web_html = html_template.replace('__SERVER_BASE__', '')

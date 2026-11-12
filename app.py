@@ -2,14 +2,14 @@ import os
 import json
 import urllib.request
 from typing import Optional, List
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import FastAPI, Query
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from fastapi.staticfiles import StaticFiles
 
-from indexer import BM25Index, chunk_documents
+from search_engine import get_engine
 
 app = FastAPI(title="San Diego County Benefits Policy Search & AI Assistant")
 
@@ -25,25 +25,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DOCS_FILE = os.path.join(os.path.dirname(__file__), "data", "documents.json")
-INDEX = BM25Index()
-CHUNKS = []
-
-def initialize_index():
-    global CHUNKS, INDEX
-    if os.path.exists(DOCS_FILE):
-        CHUNKS = chunk_documents(DOCS_FILE)
-        INDEX.build(CHUNKS)
-        print(f"[✓] Search index initialized with {len(CHUNKS)} policy chunks.")
-    else:
-        print("[!] Warning: data/documents.json not found. Run crawler.py first.")
-
-initialize_index()
+ENGINE = get_engine()
+print(f"[✓] Search engine ready: {ENGINE.stats()}")
 
 class AskRequest(BaseModel):
     question: str
     program: Optional[str] = "All"
-    model_provider: Optional[str] = "auto" # 'ollama', 'gemini', 'mock'
+    model_provider: Optional[str] = "auto" # 'ollama', 'mock'
 
 def call_ollama(prompt: str, model: str = "llama3.2") -> Optional[str]:
     """Queries local Ollama instance if available."""
@@ -57,29 +45,9 @@ def call_ollama(prompt: str, model: str = "llama3.2") -> Optional[str]:
     except Exception:
         return None
 
-def call_gemini(prompt: str, api_key: str) -> Optional[str]:
-    """Queries Gemini Flash API if GEMINI_API_KEY is present."""
-    try:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={api_key}"
-        payload = json.dumps({
-            "contents": [{"parts": [{"text": prompt}]}]
-        }).encode("utf-8")
-        req = urllib.request.Request(url, data=payload, headers={"Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            candidates = data.get("candidates", [])
-            if candidates:
-                return candidates[0]["content"]["parts"][0]["text"]
-    except Exception as e:
-        print(f"[!] Gemini API error: {e}")
-    return None
-
 @app.get("/api/search")
 def search_documents(q: Optional[str] = "", program: str = "All", limit: int = 50):
-    if not CHUNKS:
-        return {"results": [], "total": 0, "message": "Index empty. Please run crawler.py first."}
-    
-    results = INDEX.search(q or "", program_filter=program, top_k=limit)
+    results = ENGINE.search(q or "", program_filter=program, top_k=limit)
     return {
         "query": q,
         "program": program,
@@ -89,11 +57,8 @@ def search_documents(q: Optional[str] = "", program: str = "All", limit: int = 5
 
 @app.post("/api/ask")
 def ask_question(req: AskRequest):
-    if not CHUNKS:
-        raise HTTPException(status_code=503, detail="Search index is not loaded. Please run crawler.py to populate documents.")
-
     # 1. Retrieve most relevant context chunks
-    retrieved = INDEX.search(req.question, program_filter=req.program, top_k=4)
+    retrieved = ENGINE.search(req.question, program_filter=req.program, top_k=4)
     if not retrieved:
         return {
             "answer": "No matching policy sections found for this query in the current guide index. Try broadening your keywords.",
@@ -123,18 +88,10 @@ ANSWER WITH CITATIONS:"""
     answer = None
     provider_used = "heuristic"
 
-    # Try Gemini if key is provided
-    gemini_key = os.environ.get("GEMINI_API_KEY")
-    if gemini_key:
-        answer = call_gemini(system_prompt, gemini_key)
-        if answer:
-            provider_used = "Gemini Flash"
-
-    # Try local Ollama if no Gemini or if Ollama is preferred
-    if not answer:
-        answer = call_ollama(system_prompt)
-        if answer:
-            provider_used = "Local Ollama"
+    # Try local Ollama
+    answer = call_ollama(system_prompt)
+    if answer:
+        provider_used = "Local Ollama"
 
     # Fallback to direct citation synthesis if no LLM server is running
     if not answer:
@@ -142,7 +99,7 @@ ANSWER WITH CITATIONS:"""
         answer = (
             f"Here are the most relevant official policy rules found regarding '{req.question}':\n\n"
             + "\n\n".join([f"• **{r['title']}** ({', '.join(r['programs'])}):\n> {r['text'][:350]}..." for r in retrieved[:3]])
-            + "\n\n*(Note: Configure an LLM provider such as local Ollama or set GEMINI_API_KEY to enable full conversational AI synthesis.)*"
+            + "\n\n*(Note: Start a local Ollama instance to enable full conversational AI synthesis.)*"
         )
 
     return {
@@ -157,6 +114,16 @@ ANSWER WITH CITATIONS:"""
             "published_on": r.get("published_on", ""),
             "snippet": r["text"][:250] + "..."
         } for r in retrieved]
+    }
+
+@app.get("/health")
+def health():
+    stats = ENGINE.stats()
+    return {
+        "status": "ok",
+        "engine": stats.get("engine"),
+        "docs": stats.get("docs"),
+        "chunks": stats.get("chunks"),
     }
 
 @app.get("/", response_class=HTMLResponse)

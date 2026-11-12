@@ -1,0 +1,15 @@
+.git
+.gitignore
+.dockerignore
+__pycache__
+*.pyc
+.DS_Store
+
+# Rebuilt at container startup from data/documents.json
+data/search.db
+data/search.db.tmp.*
+
+# Dev / duplicate data not needed at runtime
+data/documents.backup.json
+evaluate_search.py
+README.md

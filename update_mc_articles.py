@@ -4,8 +4,7 @@ import re
 import os
 
 DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
-PART1_PATH = "/Users/echelon619/.gemini/antigravity/brain/cecb2a45-dbe4-4639-bcf4-7ffbb562b7ad/browser_sandbox/outputs/step_29.json"
-PART2_PATH = "/Users/echelon619/.gemini/antigravity/brain/cecb2a45-dbe4-4639-bcf4-7ffbb562b7ad/browser_sandbox/outputs/step_27.json"
+MC_JSON_PATH = "/Users/echelon619/Desktop/ChrisPG/data/medical_folder_sections.json"
 
 ARTICLE_DESCRIPTIONS = {
     "ARTICLE 01": ("ARTICLE 01 - DEFINITIONS", "Official Medi-Cal terms, beneficiary definitions, and program concepts", 1),
@@ -35,13 +34,8 @@ def clean_doc_title(raw_title):
     return re.sub(r'\s+', ' ', t)
 
 def main():
-    with open(PART1_PATH) as f:
-        part1 = json.load(f)['value']
-
-    with open(PART2_PATH) as f:
-        part2 = json.load(f)['value']['part2']
-
-    all_sections = part1 + part2
+    with open(MC_JSON_PATH) as f:
+        all_sections = json.load(f)
 
     with open(DOCS_PATH, 'r', encoding='utf-8') as f:
         docs = json.load(f)

@@ -3,7 +3,7 @@ import json
 import re
 
 DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
-CF_JSON_PATH = "/Users/echelon619/.gemini/antigravity/brain/853be71c-f4b9-4dc7-ac35-825758b66374/browser_sandbox/outputs/step_11.json"
+CF_JSON_PATH = "/Users/echelon619/Desktop/ChrisPG/data/calfresh_folder_sections.json"
 
 CHAPTER_METADATA = {
     "63-100": ("63-100 Application Process", "Household concept, application filing, expedited service, interviews, and verification", 1),
@@ -33,9 +33,8 @@ CHAPTER_METADATA = {
 
 def main():
     with open(CF_JSON_PATH) as f:
-        data = json.load(f)
+        items = json.load(f)
 
-    items = data.get('value', {}).get('items', [])
     sec_to_ch = {}
 
     for it in items[1:]:
