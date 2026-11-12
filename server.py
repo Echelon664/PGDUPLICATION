@@ -1,21 +1,10 @@
 import os
 import json
 import urllib.parse
-import urllib.request
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
+from ai_backend import generate_answer, provider_label
 from search_engine import get_engine
-
-def call_ollama(prompt: str, model: str = "llama3.2") -> str:
-    try:
-        url = "http://localhost:11434/api/generate"
-        payload = json.dumps({"model": model, "prompt": prompt, "stream": False}).encode("utf-8")
-        req = urllib.request.Request(url, data=payload, headers={"Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            return data.get("response", "")
-    except Exception:
-        return ""
 
 PORT = 8000
 ENGINE = get_engine()
@@ -158,19 +147,14 @@ USER QUESTION:
 
 ANSWER WITH CITATIONS:"""
 
-            answer = None
-            provider = "heuristic"
-
-            answer = call_ollama(system_prompt)
-            if answer:
-                provider = "Local Ollama"
+            answer = generate_answer(system_prompt)
+            provider = provider_label() if answer else "Direct Manual Evidence"
 
             if not answer:
-                provider = "Direct Manual Evidence"
                 answer = (
                     f"Relevant policy rules regarding '{question}':\n\n"
                     + "\n\n".join([f"• **{r['title']}** ({', '.join(r['programs'])}):\n> {r['text'][:350]}..." for r in retrieved[:3]])
-                    + "\n\n*(Connect Ollama locally for full conversational synthesis.)*"
+                    + "\n\n*(Set AI_PROVIDER (and AI_API_KEY for a hosted LLM) to enable full conversational synthesis.)*"
                 )
 
             self._set_headers(200)

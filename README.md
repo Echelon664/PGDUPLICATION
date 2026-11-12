@@ -87,12 +87,35 @@ No extra services or Python packages are required.
 
 ## Enabling AI Answers
 
+The "Ask Policy AI" feature is configurable through environment variables and
+falls back to a built-in "Direct Manual Evidence" answer when no provider is set.
+
+| Variable | Description |
+|---|---|
+| `AI_PROVIDER` | `ollama`, `openai` (any OpenAI-compatible API), or unset to disable |
+| `AI_BASE_URL` | Provider base URL (defaults: `http://localhost:11434` for ollama, `https://api.openai.com/v1` for openai) |
+| `AI_MODEL` | Model name (defaults: `llama3.2` for ollama, `gpt-4o-mini` for openai) |
+| `AI_API_KEY` | Required for the `openai` provider |
+| `AI_TIMEOUT` | Request timeout in seconds (default 60) |
+
 ### Local Ollama (100% Free & Local)
-Install [Ollama](https://ollama.ai) and pull a fast model:
 ```bash
 ollama run llama3.2:3b
+AI_PROVIDER=ollama uvicorn app:app --reload --port 8000
 ```
-The FastAPI backend will automatically detect and query your local Ollama instance on port 11434.
+
+### Hosted OpenAI-compatible API (Groq, OpenAI, Together…)
+```bash
+AI_PROVIDER=openai \
+AI_BASE_URL=https://api.groq.com/openai/v1 \
+AI_MODEL=llama-3.3-70b-versatile \
+AI_API_KEY=... \
+uvicorn app:app --port 8000
+```
+
+Set the same variables in your hosting platform's environment (Railway, Render,
+Fly, etc.). If no provider is configured, `/api/ask` returns the built-in
+"Direct Manual Evidence" answer with no LLM.
 
 ---
 

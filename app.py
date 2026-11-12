@@ -1,6 +1,4 @@
 import os
-import json
-import urllib.request
 from typing import Optional, List
 from fastapi import FastAPI, Query
 from fastapi.responses import HTMLResponse, JSONResponse
@@ -9,6 +7,7 @@ from pydantic import BaseModel
 
 from fastapi.staticfiles import StaticFiles
 
+from ai_backend import generate_answer, provider_label
 from search_engine import get_engine
 
 app = FastAPI(title="San Diego County Benefits Policy Search & AI Assistant")
@@ -32,18 +31,6 @@ class AskRequest(BaseModel):
     question: str
     program: Optional[str] = "All"
     model_provider: Optional[str] = "auto" # 'ollama', 'mock'
-
-def call_ollama(prompt: str, model: str = "llama3.2") -> Optional[str]:
-    """Queries local Ollama instance if available."""
-    try:
-        url = "http://localhost:11434/api/generate"
-        payload = json.dumps({"model": model, "prompt": prompt, "stream": False}).encode("utf-8")
-        req = urllib.request.Request(url, data=payload, headers={"Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            return data.get("response", "")
-    except Exception:
-        return None
 
 @app.get("/api/search")
 def search_documents(q: Optional[str] = "", program: str = "All", limit: int = 50):
@@ -85,21 +72,15 @@ USER QUESTION:
 
 ANSWER WITH CITATIONS:"""
 
-    answer = None
-    provider_used = "heuristic"
+    answer = generate_answer(system_prompt)
+    provider_used = provider_label() if answer else "Direct Index Evidence"
 
-    # Try local Ollama
-    answer = call_ollama(system_prompt)
-    if answer:
-        provider_used = "Local Ollama"
-
-    # Fallback to direct citation synthesis if no LLM server is running
+    # Fallback to direct citation synthesis when no LLM is configured/reachable.
     if not answer:
-        provider_used = "Direct Index Evidence"
         answer = (
             f"Here are the most relevant official policy rules found regarding '{req.question}':\n\n"
             + "\n\n".join([f"• **{r['title']}** ({', '.join(r['programs'])}):\n> {r['text'][:350]}..." for r in retrieved[:3]])
-            + "\n\n*(Note: Start a local Ollama instance to enable full conversational AI synthesis.)*"
+            + "\n\n*(Note: Set AI_PROVIDER (and AI_API_KEY for a hosted LLM) to enable full conversational AI synthesis.)*"
         )
 
     return {
