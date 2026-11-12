@@ -1057,7 +1057,7 @@ html_template = f"""<!DOCTYPE html>
 
     function createDocumentCard(doc, query) {{
       const card = document.createElement('div');
-      card.className = 'border border-slate-200 hover:border-blue-400 rounded-lg p-3 sm:p-3.5 shadow-2xs hover:shadow-xs transition flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-white';
+      card.className = 'border border-slate-200 hover:border-blue-400 rounded-xl p-3.5 sm:p-4.5 shadow-2xs hover:shadow-xs transition flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white';
       
       const progBadgeColor = doc.programs.includes('CalFresh') 
         ? 'bg-emerald-100 text-emerald-800 border-emerald-200' 
@@ -1094,12 +1094,12 @@ html_template = f"""<!DOCTYPE html>
           </div>
           
           <!-- Quick PDF Summary Everywhere -->
-          <div class="my-2.5 p-3.5 sm:p-4 bg-slate-50/90 border border-slate-200/90 rounded-xl text-xs sm:text-[13px] text-slate-700 leading-relaxed shadow-2xs">
-            <div class="flex items-center gap-1.5 text-blue-900 font-bold mb-1.5 text-xs tracking-wide">
-              <svg class="w-4 h-4 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+          <div class="my-3 p-4 sm:p-5 bg-slate-50/95 border border-slate-300/80 rounded-2xl text-[13px] sm:text-sm text-slate-800 leading-relaxed shadow-xs">
+            <div class="flex items-center gap-2 text-blue-900 font-bold mb-2 text-xs sm:text-sm tracking-wide">
+              <svg class="w-4 h-4 sm:w-4.5 sm:h-4.5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
               <span>Quick Policy Summary:</span>
             </div>
-            <div class="text-slate-700 font-normal leading-relaxed text-xs sm:text-[13px]">
+            <div class="text-slate-800 font-normal leading-relaxed text-[13px] sm:text-sm">
               ${{escapeHtml(doc.summary || doc.snippet || 'Official County of San Diego Health and Human Services Agency Policy Document.')}}
             </div>
           </div>
