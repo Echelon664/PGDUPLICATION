@@ -84,6 +84,7 @@ class BM25Index:
                 frequencies[token] = frequencies.get(token, 0) + 1
 
             score = 0.0
+            matched_terms = []
             for token in query_tokens:
                 if token in frequencies:
                     tf = frequencies[token]
@@ -91,23 +92,71 @@ class BM25Index:
                     numerator = tf * (self.k1 + 1)
                     denominator = tf + self.k1 * (1 - self.b + self.b * (doc_len / self.avgdl))
                     score += idf * (numerator / denominator)
+                    matched_terms.append(token)
 
             # Extra weight if terms appear in the document title
             title_tokens = set(self._tokenize(doc.get("title", "")))
             matching_title_tokens = sum(1 for t in query_tokens if t in title_tokens)
-            score += matching_title_tokens * 2.5
+            score += matching_title_tokens * 3.5
+
+            # Boost if terms appear in summary
+            summary_tokens = set(self._tokenize(doc.get("summary", "")))
+            matching_summary_tokens = sum(1 for t in query_tokens if t in summary_tokens)
+            score += matching_summary_tokens * 1.5
 
             if score > 0.01:
                 scored_results.append({
                     "score": round(score, 3),
+                    "matched_terms": matched_terms,
                     **doc
                 })
 
-        # 3. Sort strictly by score
+        # Deduplicate by document ID, selecting highest score and best excerpt
         scored_results.sort(key=lambda x: x["score"], reverse=True)
-        return scored_results[:top_k]
+        unique_docs = {}
+        for r in scored_results:
+            did = r["id"]
+            if did not in unique_docs:
+                # Extract excerpt around matched query terms
+                raw_text = r["text"]
+                # remove [Program - Title] prefix if present
+                clean_text = re.sub(r"^\[.*?\]\s*", "", raw_text).strip()
+                tokens_in_text = [t for t in query_tokens if t in clean_text.lower()]
+                excerpt = ""
+                if tokens_in_text:
+                    pos = clean_text.lower().find(tokens_in_text[0])
+                    start = max(0, pos - 90)
+                    end = min(len(clean_text), pos + 180)
+                    if start > 0:
+                        sp = clean_text.find(" ", start)
+                        if sp != -1 and sp < pos: start = sp + 1
+                    if end < len(clean_text):
+                        sp = clean_text.rfind(" ", pos, end + 30)
+                        if sp != -1 and sp > pos: end = sp
+                    excerpt = clean_text[start:end].strip()
+                    if start > 0: excerpt = "..." + excerpt
+                    if end < len(clean_text): excerpt = excerpt + "..."
+                else:
+                    excerpt = clean_text[:220] + ("..." if len(clean_text) > 220 else "")
 
-def chunk_documents(docs_path: str = None, chunk_size: int = 800, chunk_overlap: int = 150) -> List[Dict[str, Any]]:
+                unique_docs[did] = {
+                    "id": r["id"],
+                    "title": r["title"],
+                    "chapter": r.get("chapter", ""),
+                    "programs": r.get("programs", []),
+                    "published_on": r.get("published_on", ""),
+                    "local_pdf_url": r.get("local_pdf_url", f"/pdfs/{r['id']}.pdf"),
+                    "official_url": r.get("official_url", ""),
+                    "summary": r.get("summary", ""),
+                    "score": r["score"],
+                    "matched_excerpt": excerpt,
+                    "matched_terms": list(set(r.get("matched_terms", [])))
+                }
+
+        results = list(unique_docs.values())
+        return results[:top_k]
+
+def chunk_documents(docs_path: str = None, chunk_size: int = 700, chunk_overlap: int = 120) -> List[Dict[str, Any]]:
     if docs_path is None:
         docs_path = os.path.join(os.path.dirname(__file__), "data", "documents.json")
 
@@ -123,16 +172,17 @@ def chunk_documents(docs_path: str = None, chunk_size: int = 800, chunk_overlap:
         if not text:
             continue
 
-        paragraphs = text.split("\n\n")
+        # Split by sentence boundaries, double newlines, or single newlines
+        parts = re.split(r"(?<=[.!?])\s+|\n+", text)
         current_chunk = ""
 
-        for p in paragraphs:
+        for p in parts:
             p = p.strip()
             if not p:
                 continue
 
-            if len(current_chunk) + len(p) <= chunk_size:
-                current_chunk += "\n" + p if current_chunk else p
+            if len(current_chunk) + len(p) + 1 <= chunk_size:
+                current_chunk = (current_chunk + " " + p).strip() if current_chunk else p
             else:
                 if current_chunk:
                     chunks.append({
@@ -147,7 +197,7 @@ def chunk_documents(docs_path: str = None, chunk_size: int = 800, chunk_overlap:
                         "text": f"[{' / '.join(doc['programs'])} - {doc['title']}]\n{current_chunk}"
                     })
                 # Overlap
-                current_chunk = current_chunk[-chunk_overlap:] + "\n" + p if len(current_chunk) > chunk_overlap else p
+                current_chunk = (current_chunk[-chunk_overlap:] + " " + p).strip() if len(current_chunk) > chunk_overlap else p
 
         if current_chunk:
             chunks.append({
