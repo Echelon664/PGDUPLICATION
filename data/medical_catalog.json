@@ -1,0 +1,732 @@
+[
+  {
+    "index": 0,
+    "title": "SN_26-04_2026_Covered_California_(CA)_Renewal_for_Advanced_Premium_Tax_Credit_(APTC)_to_Modified_Adjusted_Gross_Income_(MAGI)",
+    "published_on": "10/12/2026"
+  },
+  {
+    "index": 1,
+    "title": "SN_26-03_Family_Members_Base_Allocation_Amount_for_2026-2027",
+    "published_on": "8/20/2026"
+  },
+  {
+    "index": 2,
+    "title": "SN_26_01_2026_Federal_Poverty_Levels_(FPL)_and_Maintenance_Need_Standards",
+    "published_on": "4/06/2026"
+  },
+  {
+    "index": 3,
+    "title": "SN_26-02_Earned_Income_Tax_Credit_(EITC)_Outreach",
+    "published_on": "3/25/2026"
+  },
+  {
+    "index": 4,
+    "title": "SN_25-07_Social_Security_Administration_(SSA)_Cost_of_Living_Adjustment_(COLA)_2026",
+    "published_on": "12/23/2025"
+  },
+  {
+    "index": 5,
+    "title": "SN_25-06_2025_Covered California (CA) Renewal for Advanced Premium Tax Credit (APTC) to Modified Adjusted Gross Income (MAGI)",
+    "published_on": "11/04/2025"
+  },
+  {
+    "index": 6,
+    "title": "SN 25-04 2025 Tuberculosis (TB) Program Income Limit",
+    "published_on": "10/13/2025"
+  },
+  {
+    "index": 7,
+    "title": "SN_25-03_2025-2026_Family_Members_Base_Allocation_Amount",
+    "published_on": "6/24/2025"
+  },
+  {
+    "index": 8,
+    "title": "SN_25-02_2025_Federal_Poverty_Level_and_Statewide_Average_Private_Pay",
+    "published_on": "3/05/2025"
+  },
+  {
+    "index": 9,
+    "title": "SN_25-01_Earned_Income_Tax_Credit_(EITC)_Outreach",
+    "published_on": "2/18/2025"
+  },
+  {
+    "index": 10,
+    "title": "SN_24-04_January 2025_Social_Security_Administration (SSA)_Cost_of_Living_Adjustment_(COLA) and Related Changes",
+    "published_on": "12/18/2024"
+  },
+  {
+    "index": 11,
+    "title": "SN 24-03 - 2024/2025 Family Member Base Allocation Amount",
+    "published_on": "8/06/2024"
+  },
+  {
+    "index": 12,
+    "title": "SN 24-02 - 2024 Federal Poverty Level and Statewide Average Private Pay Rate for Nursing Facilities",
+    "published_on": "3/26/2024"
+  },
+  {
+    "index": 13,
+    "title": "SN_24-01_Earned_Income_Tax_Credit_Outreach",
+    "published_on": "2/28/2024"
+  },
+  {
+    "index": 14,
+    "title": "SN 23-05 Adult Expansion for Individuals Ages 26 to 49",
+    "published_on": "1/10/2024"
+  },
+  {
+    "index": 15,
+    "title": "SN 23-06 Asset Elimination",
+    "published_on": "1/09/2024"
+  },
+  {
+    "index": 16,
+    "title": "SN 23-07 January 2024 Social Security Cost of Living Adjustment and Related Changes",
+    "published_on": "12/14/2023"
+  },
+  {
+    "index": 17,
+    "title": "SN 23-03 2023 Statewide Average Private Pay Rate for Nursing Facility Services",
+    "published_on": "4/14/2023"
+  },
+  {
+    "index": 18,
+    "title": "SN 23-02 2023 Medicare Catastrophic Coverage Act Spousal Impoverishment Caps and Federal Poverty Levels23",
+    "published_on": "3/13/2023"
+  },
+  {
+    "index": 19,
+    "title": "SN 23-01 Earned Income Tax Credit Outreach",
+    "published_on": "3/13/2023"
+  },
+  {
+    "index": 20,
+    "title": "SN_22-10_January_2023_Social_Security_Administration_Cost_of_Living_Adjustment_and_Related_Changes",
+    "published_on": "12/30/2022"
+  },
+  {
+    "index": 21,
+    "title": "SN 22-09 - TB Program Income Limit",
+    "published_on": "8/23/2022"
+  },
+  {
+    "index": 22,
+    "title": "SN 22-07 Increase to the Reasonable Compatibility Threshold in CalHEERS",
+    "published_on": "7/01/2022"
+  },
+  {
+    "index": 23,
+    "title": "SN 22-05 2022 Medicare Savings Programs Property Limit",
+    "published_on": "7/01/2022"
+  },
+  {
+    "index": 24,
+    "title": "SN_22-06_2022-2023_Family_Members_Base_Allocation_Amount",
+    "published_on": "6/22/2022"
+  },
+  {
+    "index": 25,
+    "title": "SN 22-02 Earned Income Tax Credit Outreach",
+    "published_on": "3/17/2022"
+  },
+  {
+    "index": 26,
+    "title": "SN_22-04_2022_FPL_Increase_and_APPR",
+    "published_on": "3/01/2022"
+  },
+  {
+    "index": 27,
+    "title": "SN 22-01 Medicare Catastrophic Coverage Act Spousal Impoverishment Caps and  substantial Gainful Activity",
+    "published_on": "2/10/2022"
+  },
+  {
+    "index": 28,
+    "title": "SN_22-03_Temporary_Directions_for_Collecting_Gender_Information",
+    "published_on": "2/03/2022"
+  },
+  {
+    "index": 29,
+    "title": "SN 21-05 \u2013 2022 Federal Poverty Level Increases",
+    "published_on": "12/14/2021"
+  },
+  {
+    "index": 30,
+    "title": "SN 21-04 2021-2022 Family Member Base Allocation Amount",
+    "published_on": "9/20/2021"
+  },
+  {
+    "index": 31,
+    "title": "SN 21-03 - Suspected Unemployment Insurance Fraud and Identity Theft Information",
+    "published_on": "2/12/2021"
+  },
+  {
+    "index": 32,
+    "title": "SN_20-04_2020_Tuberculosis_(TB)_Income_Limit",
+    "published_on": "9/22/2020"
+  },
+  {
+    "index": 33,
+    "title": "SN 18-07 Addendum A - Pre-ACA and Transitional Aid Code Clean-Up",
+    "published_on": "3/18/2019"
+  },
+  {
+    "index": 34,
+    "title": "SN_18-07_Obsolete_and_Transitional_Pre-ACA_Aid_Code_Clean-Up",
+    "published_on": "11/19/2018"
+  },
+  {
+    "index": 35,
+    "title": "SN 13-09 Health Care Reform Medi-Cal Addendum Q- Whose Income Counts and How to Count Income for MAGI",
+    "published_on": "5/19/2015"
+  },
+  {
+    "index": 36,
+    "title": "SN 15-02 - Medi-Cal Eligibility for Deferred Action for Childhood Arrivals",
+    "published_on": "3/05/2015"
+  },
+  {
+    "index": 37,
+    "title": "SN 13-09 Health Care Reform Medi-Cal Addendum I - MAGI Order of Evaluation, Interim Process for Pregnancy Reported, Children's Aid Codes, HH Composition, E-Verified Income, Reasonable Compatibility Standard",
+    "published_on": "11/13/2014"
+  },
+  {
+    "index": 38,
+    "title": "SN 13-09 Health Care Reform Medi-Cal Addendum E - Citizenship/Immigration Status, Unconditionally Available Income, MAGI Countable Income and Income Deductions, American Indian/Alaskan Native Exemptions from Premium Payments, LTC",
+    "published_on": "4/23/2014"
+  },
+  {
+    "index": 39,
+    "title": "SN 13-09 Health Care Reform Medi-Cal and Low Income Health Program Addendum A - MAGI Eligibility Requirements",
+    "published_on": "12/06/2013"
+  },
+  {
+    "index": 40,
+    "title": "Section 1 - Definitions",
+    "published_on": "7/17/2020"
+  },
+  {
+    "index": 41,
+    "title": "Section_1_Confidentiality.doc",
+    "published_on": "9/19/2019"
+  },
+  {
+    "index": 42,
+    "title": "Section 01 - County of Responsibility",
+    "published_on": "5/01/1996"
+  },
+  {
+    "index": 43,
+    "title": "Section 02 - Intercounty Transfers.doc",
+    "published_on": "4/26/2021"
+  },
+  {
+    "index": 44,
+    "title": "Section 01 - Conditions of Eligibility",
+    "published_on": "8/06/2021"
+  },
+  {
+    "index": 45,
+    "title": "Section_02 - Application_Processing_Requirements",
+    "published_on": "10/31/2025"
+  },
+  {
+    "index": 46,
+    "title": "Section 03 - Hospital Referral System",
+    "published_on": "11/18/2019"
+  },
+  {
+    "index": 47,
+    "title": "Section_04 - Minor_Consent_Services",
+    "published_on": "1/29/2026"
+  },
+  {
+    "index": 48,
+    "title": "Section 05 - Immediate Medical Need",
+    "published_on": "2/01/2024"
+  },
+  {
+    "index": 49,
+    "title": "Section 06 - Interviews",
+    "published_on": "12/18/2019"
+  },
+  {
+    "index": 50,
+    "title": "Section_07 - Verification_and_Documentation_Procedures",
+    "published_on": "7/30/2026"
+  },
+  {
+    "index": 51,
+    "title": "Section 08 - Residency_Requirements",
+    "published_on": "7/30/2026"
+  },
+  {
+    "index": 52,
+    "title": "Section_09 - Diligent Search",
+    "published_on": "10/27/2026"
+  },
+  {
+    "index": 53,
+    "title": "Section 10 - Child Health and Disability Prevention Program",
+    "published_on": "12/24/2019"
+  },
+  {
+    "index": 54,
+    "title": "Section 11 - Social Security Number Requirements",
+    "published_on": "6/24/2020"
+  },
+  {
+    "index": 55,
+    "title": "Section 12-Unconditionally Available Income",
+    "published_on": "11/14/2025"
+  },
+  {
+    "index": 56,
+    "title": "Section 13 - Denial/Discontinuance Requirements",
+    "published_on": "9/09/2009"
+  },
+  {
+    "index": 57,
+    "title": "Section 15 - Renewal",
+    "published_on": "9/15/2026"
+  },
+  {
+    "index": 58,
+    "title": "Section 16 - Inter/Intra Program Transfer",
+    "published_on": "2/09/2024"
+  },
+  {
+    "index": 59,
+    "title": "Section 17 - Notice of Action",
+    "published_on": "10/13/2025"
+  },
+  {
+    "index": 60,
+    "title": "Section 18 - Medical Support Enforcement Program",
+    "published_on": "11/19/2018"
+  },
+  {
+    "index": 61,
+    "title": "Section 19 - Long-Term Care and Incompetent Applicants",
+    "published_on": "11/12/2020"
+  },
+  {
+    "index": 62,
+    "title": "Section 20 - Accelerated Enrollment",
+    "published_on": "5/01/2026"
+  },
+  {
+    "index": 63,
+    "title": "Section 21 - Good Cause",
+    "published_on": "4/01/2020"
+  },
+  {
+    "index": 64,
+    "title": "Section 22 - Medi-Cal Hierarchy",
+    "published_on": "6/21/2017"
+  },
+  {
+    "index": 65,
+    "title": "Section 23 - Tax Form 1095 for Minimum Essential Coverage Beneficiary",
+    "published_on": "5/11/2022"
+  },
+  {
+    "index": 66,
+    "title": "Section 01 - Medi-Cal Categories",
+    "published_on": "3/02/2020"
+  },
+  {
+    "index": 67,
+    "title": "Section 02-Medi-Cal Linkage",
+    "published_on": "11/01/2019"
+  },
+  {
+    "index": 68,
+    "title": "Section 03 - Aged, Blind, or Disabled (ABD) Linkage",
+    "published_on": "9/24/2020"
+  },
+  {
+    "index": 69,
+    "title": "Section 04 - DDSD Referrals",
+    "published_on": "4/25/2018"
+  },
+  {
+    "index": 70,
+    "title": "Section 05 - Medically Indigent Linkage",
+    "published_on": "9/24/2020"
+  },
+  {
+    "index": 71,
+    "title": "Section 06 - Postpartum Benefits",
+    "published_on": "3/02/2022"
+  },
+  {
+    "index": 72,
+    "title": "Section 07 - Transitional Medi-Cal (TMC) and Four-Month Continuing Medi-Cal (FMC)",
+    "published_on": "6/22/2022"
+  },
+  {
+    "index": 73,
+    "title": "Section 08 - Non-Citizen Special Programs",
+    "published_on": "6/08/2026"
+  },
+  {
+    "index": 74,
+    "title": "Section 10 - Pickle Benefits",
+    "published_on": "12/03/2019"
+  },
+  {
+    "index": 75,
+    "title": "Section 11 - Medi-Cal Coverage Foster Care and AAP-AAC",
+    "published_on": "9/10/2020"
+  },
+  {
+    "index": 76,
+    "title": "Section 12 - Special No-Cost Programs for Pregnant Women and Children",
+    "published_on": "12/31/2012"
+  },
+  {
+    "index": 77,
+    "title": "Section 13 - Medicare Savings Programs (MSP)",
+    "published_on": "6/02/2025"
+  },
+  {
+    "index": 78,
+    "title": "Section 14 - Sneede v. Kizer",
+    "published_on": "10/25/2007"
+  },
+  {
+    "index": 79,
+    "title": "Section 15 - Miscellaneous Continuing Eligibility Programs",
+    "published_on": "5/19/2026"
+  },
+  {
+    "index": 80,
+    "title": "Section 16 Presumptive Eligibility for Pregnant Women",
+    "published_on": "5/09/2017"
+  },
+  {
+    "index": 81,
+    "title": "Section 17 - Tuberculosis Program",
+    "published_on": "12/12/2003"
+  },
+  {
+    "index": 82,
+    "title": "Section 18 - Waiver Programs for Medi-Cal Home and Community-Based Services",
+    "published_on": "3/13/2026"
+  },
+  {
+    "index": 83,
+    "title": "Section 19 Miscellaneous Programs for Aged and Disabled Individuals",
+    "published_on": "12/04/2020"
+  },
+  {
+    "index": 84,
+    "title": "Section 20 - Safe Arms for Newborns",
+    "published_on": "5/22/2018"
+  },
+  {
+    "index": 85,
+    "title": "Section 21 - In-Home Supportive Services",
+    "published_on": "5/28/2021"
+  },
+  {
+    "index": 86,
+    "title": "Section 22 - Hospital Presumptive Eligibility",
+    "published_on": "5/23/2016"
+  },
+  {
+    "index": 87,
+    "title": "Section 1 - Institutional Status",
+    "published_on": "10/16/2018"
+  },
+  {
+    "index": 88,
+    "title": "Section_2_Inmates_of_a_Public_Institution",
+    "published_on": "8/05/2026"
+  },
+  {
+    "index": 89,
+    "title": "Section 3 - Institution for Mental Diseases",
+    "published_on": "4/09/2020"
+  },
+  {
+    "index": 90,
+    "title": "Section 4 - Fleeing Felons",
+    "published_on": "8/05/2020"
+  },
+  {
+    "index": 91,
+    "title": "Section 5 - Juveniles in Public Institutions",
+    "published_on": "8/07/2024"
+  },
+  {
+    "index": 92,
+    "title": "Section 1 - Citizenship",
+    "published_on": "12/18/2025"
+  },
+  {
+    "index": 93,
+    "title": "Section 2 - Non-Citizens",
+    "published_on": "12/18/2025"
+  },
+  {
+    "index": 94,
+    "title": "Section 1 - Medi-Cal Family Budget Unit",
+    "published_on": "9/19/2012"
+  },
+  {
+    "index": 95,
+    "title": "Section 2 - Tax Dependency",
+    "published_on": "9/19/2012"
+  },
+  {
+    "index": 96,
+    "title": "Section 4 - Long-Term Care/Board & Care and PACE",
+    "published_on": "1/21/2018"
+  },
+  {
+    "index": 97,
+    "title": "Section 5 - Caretaker Relatives",
+    "published_on": "9/19/2012"
+  },
+  {
+    "index": 98,
+    "title": "Section 6 - Registered Domestic Partnerships",
+    "published_on": "9/09/2019"
+  },
+  {
+    "index": 99,
+    "title": "Section 7 - Same-Sex Marriages",
+    "published_on": "10/16/2017"
+  },
+  {
+    "index": 100,
+    "title": "Section 01 - Types of Property, Property Reserve, and Reduction of Property",
+    "published_on": "6/10/2022"
+  },
+  {
+    "index": 101,
+    "title": "Section 02 - Ownership and Availability",
+    "published_on": "6/10/2013"
+  },
+  {
+    "index": 102,
+    "title": "Section 03 - Community/Separate Property",
+    "published_on": "9/10/1990"
+  },
+  {
+    "index": 103,
+    "title": "Section 04 - Principal Residence",
+    "published_on": "5/03/2003"
+  },
+  {
+    "index": 104,
+    "title": "Section 05 - Real Property",
+    "published_on": "6/27/1988"
+  },
+  {
+    "index": 105,
+    "title": "Section 06 - Personal Property",
+    "published_on": "3/09/2022"
+  },
+  {
+    "index": 106,
+    "title": "Section 07 - Conversions and Transfers",
+    "published_on": "3/04/2002"
+  },
+  {
+    "index": 107,
+    "title": "Section 08 - Business Property",
+    "published_on": "4/21/1995"
+  },
+  {
+    "index": 108,
+    "title": "Section 09 - Deeds of Trust, Mortgages, and Life Estates",
+    "published_on": "3/11/2020"
+  },
+  {
+    "index": 109,
+    "title": "Section 10 - Loans",
+    "published_on": "2/08/2021"
+  },
+  {
+    "index": 110,
+    "title": "Section 11 - Life Insurance, Burial Plots/Crypts/Vaults, Burial Trusts",
+    "published_on": "3/09/1994"
+  },
+  {
+    "index": 111,
+    "title": "Section 12 - Voluntary Repayment of Excess Property-People in Long-Term Care",
+    "published_on": "9/22/2020"
+  },
+  {
+    "index": 112,
+    "title": "Section 13 - Treatment of Property of Insitutionalized and Community Spouses and LTC Property Exemption",
+    "published_on": "5/07/2019"
+  },
+  {
+    "index": 113,
+    "title": "Section 14 - Trusts and Annuities",
+    "published_on": "7/23/1996"
+  },
+  {
+    "index": 114,
+    "title": "Section 1 - Income Ownership/Availability",
+    "published_on": "4/24/2013"
+  },
+  {
+    "index": 115,
+    "title": "Section 2 - Earned/Unearned Income",
+    "published_on": "7/20/2021"
+  },
+  {
+    "index": 116,
+    "title": "Section 3 - Exempt Income",
+    "published_on": "12/20/2017"
+  },
+  {
+    "index": 117,
+    "title": "Section 4 - Determining Monthly Income Amounts",
+    "published_on": "4/24/2013"
+  },
+  {
+    "index": 118,
+    "title": "Section 5 - Treatment of Income",
+    "published_on": "7/03/2013"
+  },
+  {
+    "index": 119,
+    "title": "Section_6 - Deductions",
+    "published_on": "7/29/2026"
+  },
+  {
+    "index": 120,
+    "title": "Section 7 - TMC Income",
+    "published_on": "9/22/2020"
+  },
+  {
+    "index": 121,
+    "title": "Section 1 - Maintenance Needs",
+    "published_on": "9/16/2009"
+  },
+  {
+    "index": 122,
+    "title": "Section_1A_Appendix_A_Assistance_Standards",
+    "published_on": "8/20/2026"
+  },
+  {
+    "index": 123,
+    "title": "Section 1 - Share of Cost Determinations",
+    "published_on": "11/09/2020"
+  },
+  {
+    "index": 124,
+    "title": "Section 2 - Processing of Forms and Adjustments",
+    "published_on": "10/31/2001"
+  },
+  {
+    "index": 125,
+    "title": "Section 1 - Period of Eligibility",
+    "published_on": "4/24/2013"
+  },
+  {
+    "index": 126,
+    "title": "Section_1_Card_Use",
+    "published_on": "1/29/2026"
+  },
+  {
+    "index": 127,
+    "title": "Section_2_Benefits_Identification_Card_(BIC)_Issuance",
+    "published_on": "1/29/2026"
+  },
+  {
+    "index": 128,
+    "title": "Section 3 - Medi-Cal Eligibility Verification and Letter of Authorization",
+    "published_on": "9/22/2020"
+  },
+  {
+    "index": 129,
+    "title": "Section 4 - Proof of Medi-Cal Eligibility and the Provider's Responsibility",
+    "published_on": "11/18/2019"
+  },
+  {
+    "index": 130,
+    "title": "Section 1 - Other Health Coverage",
+    "published_on": "9/19/2018"
+  },
+  {
+    "index": 131,
+    "title": "Section 3 - Third Party Liability Claims",
+    "published_on": "6/23/2017"
+  },
+  {
+    "index": 132,
+    "title": "Section_4_Medicare",
+    "published_on": "6/03/2024"
+  },
+  {
+    "index": 133,
+    "title": "Section 1 - Fraud Prevention and Referral",
+    "published_on": "6/28/2023"
+  },
+  {
+    "index": 134,
+    "title": "Section 2 - Overpayments",
+    "published_on": "3/18/2015"
+  },
+  {
+    "index": 135,
+    "title": "Section 3 - Medi-Cal Estate Recovery",
+    "published_on": "3/18/2015"
+  },
+  {
+    "index": 136,
+    "title": "Section 4 - Employee Integrity/Conflict of Interest Issues",
+    "published_on": "3/15/2015"
+  },
+  {
+    "index": 137,
+    "title": "Section 5 - Fraudulent/Altered Documents",
+    "published_on": "3/18/2015"
+  },
+  {
+    "index": 138,
+    "title": "Section 1 - Medi-Cal Special Treatment Benefits",
+    "published_on": "1/10/2001"
+  },
+  {
+    "index": 139,
+    "title": "Section 2 - Organ Transplant Anti-Rejection Medications Program",
+    "published_on": "6/08/2026"
+  },
+  {
+    "index": 140,
+    "title": "Section_1_Performance_Standards_Overview",
+    "published_on": "5/15/2025"
+  },
+  {
+    "index": 141,
+    "title": "Section_2_Eligibility_Determinations_and_Redeterminations",
+    "published_on": "5/15/2025"
+  },
+  {
+    "index": 142,
+    "title": "Section_3_MEDS_Alerts",
+    "published_on": "5/20/2025"
+  },
+  {
+    "index": 143,
+    "title": "Section 1 - MAGI APTC and Health Care Reform",
+    "published_on": "3/16/2015"
+  },
+  {
+    "index": 144,
+    "title": "Section 3 - MAGI Medi-Cal Tax Household Composition",
+    "published_on": "6/29/2021"
+  },
+  {
+    "index": 145,
+    "title": "Section 4 - MAGI Income and Deductions",
+    "published_on": "10/13/2026"
+  }
+]

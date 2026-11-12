@@ -1,0 +1,827 @@
+[
+  {
+    "chapter": "2021",
+    "index": 0,
+    "title": "SN 21-03 Suspected Unemployment Insurance Fraud and Identity Theft Information"
+  },
+  {
+    "chapter": "2021",
+    "index": 1,
+    "title": "SN 21-06 CalWORKs Time-On-Aid Good Cause Time Limit Exemption"
+  },
+  {
+    "chapter": "2021",
+    "index": 2,
+    "title": "SN  21-08 Overpayments Incurred during the COVID-19 Pandemic Emergency"
+  },
+  {
+    "chapter": "2021",
+    "index": 3,
+    "title": "SN 21-15 RMR Ceilings Effective 1-1-2022"
+  },
+  {
+    "chapter": "2022",
+    "index": 4,
+    "title": "SN 22-02 - CalWORKs Time-On-Aid 60-Months Implementation"
+  },
+  {
+    "chapter": "2025",
+    "index": 5,
+    "title": "SN 25-03 Increase to the  IRT Levels - October 2025"
+  },
+  {
+    "chapter": "2025",
+    "index": 6,
+    "title": "SN 25-04 Social Security Administration (SSA) Cost of Living Adjustment (COLA) 2026"
+  },
+  {
+    "chapter": "2025",
+    "index": 7,
+    "title": "SN 25-05 Implementation of the New Statewide Minimum Wage"
+  },
+  {
+    "chapter": "2026",
+    "index": 8,
+    "title": "SN 26-01 - Earned Income Tax Credit (EITC) Outreach"
+  },
+  {
+    "chapter": "2026",
+    "index": 9,
+    "title": "SN 26-02 COLA Increase to MBSAC and IIK Levels - July 2026"
+  },
+  {
+    "chapter": "2026",
+    "index": 10,
+    "title": "SN 26-03 CalWORKs Time Limit Exemption for Recipient Living in Indian County"
+  },
+  {
+    "chapter": "2026",
+    "index": 11,
+    "title": "SN 26-04 Increase to MAP - October 2026"
+  },
+  {
+    "chapter": "10-001Background",
+    "index": 12,
+    "title": "A. CalWORKs and Employment Services Overview"
+  },
+  {
+    "chapter": "10-002Federal Work Participation Rate (WPR)",
+    "index": 13,
+    "title": "A. Federal Work Participation Rate (WPR) Data Reporting"
+  },
+  {
+    "chapter": "10-005Welfare-to-Work",
+    "index": 14,
+    "title": "A. Welfare-to-Work Sequence Overview"
+  },
+  {
+    "chapter": "10-005Welfare-to-Work",
+    "index": 15,
+    "title": "C.  Summary of Employment Staff Responsibility"
+  },
+  {
+    "chapter": "10-005Welfare-to-Work",
+    "index": 16,
+    "title": "D. Employment Services Orientation and Appraisal"
+  },
+  {
+    "chapter": "10-005Welfare-to-Work",
+    "index": 17,
+    "title": "E. Initial Engagement Activities"
+  },
+  {
+    "chapter": "10-005Welfare-to-Work",
+    "index": 18,
+    "title": "F. Assessment or Reassessment"
+  },
+  {
+    "chapter": "10-005Welfare-to-Work",
+    "index": 19,
+    "title": "G. Employment Services Plan"
+  },
+  {
+    "chapter": "10-005Welfare-to-Work",
+    "index": 20,
+    "title": "H. Employment Services Activities"
+  },
+  {
+    "chapter": "10-005Welfare-to-Work",
+    "index": 21,
+    "title": "I. Case Transfers and Returns Between Regions"
+  },
+  {
+    "chapter": "10-005Welfare-to-Work",
+    "index": 22,
+    "title": "K. Employment Services Participation for Teens"
+  },
+  {
+    "chapter": "10-006Learning Disabilities",
+    "index": 23,
+    "title": "A. Learning Disabilities"
+  },
+  {
+    "chapter": "10-007Family Stabilization",
+    "index": 24,
+    "title": "A. Family Stabilization"
+  },
+  {
+    "chapter": "10-008CalWORKs Housing Support Program",
+    "index": 25,
+    "title": "A. CalWORKs Housing Support Program (HSP)"
+  },
+  {
+    "chapter": "10-009Home Visiting Program",
+    "index": 26,
+    "title": "A. CalWORKs Home Visiting Program"
+  },
+  {
+    "chapter": "10-010Child Care",
+    "index": 27,
+    "title": "A. Child Care Overview"
+  },
+  {
+    "chapter": "10-010Child Care",
+    "index": 28,
+    "title": "B. Child Care Eligibility"
+  },
+  {
+    "chapter": "10-010Child Care",
+    "index": 29,
+    "title": "C. Child Care Provider Requirements"
+  },
+  {
+    "chapter": "10-010Child Care",
+    "index": 30,
+    "title": "D. Child Care Approval or Denial"
+  },
+  {
+    "chapter": "10-010Child Care",
+    "index": 31,
+    "title": "E. Child Care Payments"
+  },
+  {
+    "chapter": "10-010Child Care",
+    "index": 32,
+    "title": "F. Child Care Notices of Action"
+  },
+  {
+    "chapter": "10-010Child Care",
+    "index": 33,
+    "title": "G. General Child Care Administration"
+  },
+  {
+    "chapter": "10-011Supportive Services",
+    "index": 34,
+    "title": "A. Employment Services Supportive Services"
+  },
+  {
+    "chapter": "10-011Supportive Services",
+    "index": 35,
+    "title": "B. Behavioral Health Services"
+  },
+  {
+    "chapter": "10-020Exemptions & Good Cause",
+    "index": 36,
+    "title": "A. Employment Services Exemptions"
+  },
+  {
+    "chapter": "10-020Exemptions & Good Cause",
+    "index": 37,
+    "title": "B. Employment Services Good Cause"
+  },
+  {
+    "chapter": "10-025Compliance Process",
+    "index": 38,
+    "title": "A. Employment Services Noncompliance and Sanctions"
+  },
+  {
+    "chapter": "10-030Participants Rights",
+    "index": 39,
+    "title": "H. Employment Services Grievances"
+  },
+  {
+    "chapter": "10-030Participants Rights",
+    "index": 40,
+    "title": "I. Sanctions and State Hearings"
+  },
+  {
+    "chapter": "10-050Community Service",
+    "index": 41,
+    "title": "A. Community Service-Work Experience"
+  },
+  {
+    "chapter": "10-150Subsidized Employment Programs",
+    "index": 42,
+    "title": "A. Expanded Subsidized Employment Program"
+  },
+  {
+    "chapter": "10-150Subsidized Employment Programs",
+    "index": 43,
+    "title": "B. Expanded Work Experience Program"
+  },
+  {
+    "chapter": "10-160Wrap Around",
+    "index": 44,
+    "title": "A. Wrap Around"
+  },
+  {
+    "chapter": "10-170CalWORKs Outcomes and Accountability Review (Cal-OAR)",
+    "index": 45,
+    "title": "CalWORKs Outcomes and Accountability Review (Cal-OAR)"
+  },
+  {
+    "chapter": "10-200Refugee Services",
+    "index": 46,
+    "title": "A. Refugee Employment Services"
+  },
+  {
+    "chapter": "10-260Document Capture Procedures for Employment Services Contractors",
+    "index": 47,
+    "title": "A. Document Capture Procedures for Employment Services Contractors"
+  },
+  {
+    "chapter": "10-300WTW Activity Documentation and Reporting Requirements",
+    "index": 48,
+    "title": "A. Employment Services Activity Documentation and Reporting Requirements"
+  },
+  {
+    "chapter": "15-000Cal-Learn",
+    "index": 49,
+    "title": "A. Introduction to the Cal-Learn Program"
+  },
+  {
+    "chapter": "15-000Cal-Learn",
+    "index": 50,
+    "title": "B. Cal-Learn Program Eligibility and Participation Requirements"
+  },
+  {
+    "chapter": "15-000Cal-Learn",
+    "index": 51,
+    "title": "C. Cal-Learn Referral and Orientation"
+  },
+  {
+    "chapter": "15-000Cal-Learn",
+    "index": 52,
+    "title": "E. Cal-Learn Supportive Services"
+  },
+  {
+    "chapter": "15-000Cal-Learn",
+    "index": 53,
+    "title": "E. Cal-Learn Case Management Services"
+  },
+  {
+    "chapter": "15-000Cal-Learn",
+    "index": 54,
+    "title": "H. Cal-Learn Good Cause Determination"
+  },
+  {
+    "chapter": "15-000Cal-Learn",
+    "index": 55,
+    "title": "I. Application of Cal-Learn Bonuses and Sanctions"
+  },
+  {
+    "chapter": "15-100TIME ON AID",
+    "index": 56,
+    "title": "A. Time On Aid"
+  },
+  {
+    "chapter": "19-000Confidentiality of Information & Records",
+    "index": 57,
+    "title": "A. Confidentiality of Records and Release of Information"
+  },
+  {
+    "chapter": "19-000Confidentiality of Information & Records",
+    "index": 58,
+    "title": "B. Customer Request for Information"
+  },
+  {
+    "chapter": "20-000Integrity",
+    "index": 59,
+    "title": "A. Integrity Fraud Detection And Prevention"
+  },
+  {
+    "chapter": "20-000Integrity",
+    "index": 60,
+    "title": "K. Child Care Program Integrity"
+  },
+  {
+    "chapter": "22-000Notifications",
+    "index": 61,
+    "title": "A. Notice of Action (NOA) Requirements"
+  },
+  {
+    "chapter": "22-000Notifications",
+    "index": 62,
+    "title": "B. Request for Verification"
+  },
+  {
+    "chapter": "40-100Application and Redetermination",
+    "index": 63,
+    "title": "A. Application Process"
+  },
+  {
+    "chapter": "40-100Application and Redetermination",
+    "index": 64,
+    "title": "B. Immediate Need"
+  },
+  {
+    "chapter": "40-100Application and Redetermination",
+    "index": 65,
+    "title": "C. Social Security Number"
+  },
+  {
+    "chapter": "40-100Application and Redetermination",
+    "index": 66,
+    "title": "D. Diversion Program"
+  },
+  {
+    "chapter": "40-100Application and Redetermination",
+    "index": 67,
+    "title": "E. Family Violence Regulations"
+  },
+  {
+    "chapter": "40-100Application and Redetermination",
+    "index": 68,
+    "title": "F. Continuing benefits when CalWORKs ceases"
+  },
+  {
+    "chapter": "40-100Application and Redetermination",
+    "index": 69,
+    "title": "G. Redetermination of CalWORKs Eligibility"
+  },
+  {
+    "chapter": "40-100Application and Redetermination",
+    "index": 70,
+    "title": "H. Intercounty Transfer (ICT)"
+  },
+  {
+    "chapter": "40-125Restoration of Aid",
+    "index": 71,
+    "title": "A. Restoration of Aid"
+  },
+  {
+    "chapter": "40-183CalWORKs Special Programs",
+    "index": 72,
+    "title": "A. Intra-Program Transfer (IPT)"
+  },
+  {
+    "chapter": "40-183CalWORKs Special Programs",
+    "index": 73,
+    "title": "B. Extended CalWORKs for Non-Minor Dependents (NMD)"
+  },
+  {
+    "chapter": "40-183CalWORKs Special Programs",
+    "index": 74,
+    "title": "C. Approved Relative Caregiver (ARC) Program"
+  },
+  {
+    "chapter": "40-183CalWORKs Special Programs",
+    "index": 75,
+    "title": "D. CalWORKs Reunification Families"
+  },
+  {
+    "chapter": "40-183CalWORKs Special Programs",
+    "index": 76,
+    "title": "E. Community Prisoner Adult Program"
+  },
+  {
+    "chapter": "41-400Deprivation",
+    "index": 77,
+    "title": "A. Deprivation"
+  },
+  {
+    "chapter": "41-400Deprivation",
+    "index": 78,
+    "title": "B. Deprivation Due to Death"
+  },
+  {
+    "chapter": "41-400Deprivation",
+    "index": 79,
+    "title": "C. Deprivation Due to Incapacity"
+  },
+  {
+    "chapter": "41-400Deprivation",
+    "index": 80,
+    "title": "D. Deprivation Due to Unemployment"
+  },
+  {
+    "chapter": "41-400Deprivation",
+    "index": 81,
+    "title": "E. Deprivation Due to Absence"
+  },
+  {
+    "chapter": "41-500Assistance Unit",
+    "index": 82,
+    "title": "A. Assistance Unit"
+  },
+  {
+    "chapter": "41-500Assistance Unit",
+    "index": 83,
+    "title": "B. Caretaker Relative Requirements"
+  },
+  {
+    "chapter": "41-500Assistance Unit",
+    "index": 84,
+    "title": "C. Temporary Absence"
+  },
+  {
+    "chapter": "41-500Assistance Unit",
+    "index": 85,
+    "title": "D. Persons Included in the Assistance Unit"
+  },
+  {
+    "chapter": "41-500Assistance Unit",
+    "index": 86,
+    "title": "E. Persons Excluded from the Assistance Unit"
+  },
+  {
+    "chapter": "41-500Assistance Unit",
+    "index": 87,
+    "title": "F. Pregnancy Based Assistance Unit"
+  },
+  {
+    "chapter": "41-500Assistance Unit",
+    "index": 88,
+    "title": "G. Identification of Persons for Claiming Financial Participation"
+  },
+  {
+    "chapter": "41-500Assistance Unit",
+    "index": 89,
+    "title": "H. Minor Parent Assistance Unit"
+  },
+  {
+    "chapter": "41-500Assistance Unit",
+    "index": 90,
+    "title": "I. Senior Parent Income"
+  },
+  {
+    "chapter": "42-100Age-Immunization-School Attendance",
+    "index": 91,
+    "title": "A. Age Requirements and Pregnant-Parenting Teens"
+  },
+  {
+    "chapter": "42-100Age-Immunization-School Attendance",
+    "index": 92,
+    "title": "B. School Attendance Requirement"
+  },
+  {
+    "chapter": "42-100Age-Immunization-School Attendance",
+    "index": 93,
+    "title": "C. Immunization"
+  },
+  {
+    "chapter": "42-200Property",
+    "index": 94,
+    "title": "A. Property"
+  },
+  {
+    "chapter": "42-200Property",
+    "index": 95,
+    "title": "B. Determining of Real and Personal Property"
+  },
+  {
+    "chapter": "42-200Property",
+    "index": 96,
+    "title": "C. Property Items to Be Included In Evaluating Property"
+  },
+  {
+    "chapter": "42-200Property",
+    "index": 97,
+    "title": "D. Resources To Be Excluded in Evaluation of Property"
+  },
+  {
+    "chapter": "42-200Property",
+    "index": 98,
+    "title": "E. Real Property Temporary Exemption"
+  },
+  {
+    "chapter": "42-200Property",
+    "index": 99,
+    "title": "F. Net Market Value"
+  },
+  {
+    "chapter": "42-200Property",
+    "index": 100,
+    "title": "G. Restricted Account"
+  },
+  {
+    "chapter": "42-200Property",
+    "index": 101,
+    "title": "H. Home Exclusion"
+  },
+  {
+    "chapter": "42-200Property",
+    "index": 102,
+    "title": "I. Motor Vehicles"
+  },
+  {
+    "chapter": "42-400Residence",
+    "index": 103,
+    "title": "A. Residence"
+  },
+  {
+    "chapter": "42-400Residence",
+    "index": 104,
+    "title": "B. Residence Intention/Change of Residence"
+  },
+  {
+    "chapter": "42-400Residence",
+    "index": 105,
+    "title": "C. Citizenship"
+  },
+  {
+    "chapter": "42-400Residence",
+    "index": 106,
+    "title": "D. Eligible Non-Citizen Status"
+  },
+  {
+    "chapter": "42-400Residence",
+    "index": 107,
+    "title": "E. Battered Non-Citizen"
+  },
+  {
+    "chapter": "42-400Residence",
+    "index": 108,
+    "title": "F. Sponsored Non-Citizens"
+  },
+  {
+    "chapter": "43-100Responsible Relatives",
+    "index": 109,
+    "title": "A. Relationship Definitions and Child Support Responsibility"
+  },
+  {
+    "chapter": "43-100Responsible Relatives",
+    "index": 110,
+    "title": "B. Unrelated Adult In The Home"
+  },
+  {
+    "chapter": "43-200Child Support",
+    "index": 111,
+    "title": "A. Child Support/Referrals and Assignment of Rights & Cooperation Requirements"
+  },
+  {
+    "chapter": "43-200Child Support",
+    "index": 112,
+    "title": "B. Child Support Non-Cooperation"
+  },
+  {
+    "chapter": "43-200Child Support",
+    "index": 113,
+    "title": "C. Good Cause for Non-Cooperation"
+  },
+  {
+    "chapter": "43-200Child Support",
+    "index": 114,
+    "title": "D. Child Support Payments"
+  },
+  {
+    "chapter": "44-100Income",
+    "index": 115,
+    "title": "A. Income Eligibility"
+  },
+  {
+    "chapter": "44-100Income",
+    "index": 116,
+    "title": "B. Income-General"
+  },
+  {
+    "chapter": "44-100Income",
+    "index": 117,
+    "title": "C. Excluded Exempt Income and Countable Income"
+  },
+  {
+    "chapter": "44-100Income",
+    "index": 118,
+    "title": "D. Unemployment Insurance Benefit"
+  },
+  {
+    "chapter": "44-100Income",
+    "index": 119,
+    "title": "E. Unrelated Adult Contribution"
+  },
+  {
+    "chapter": "44-100Income",
+    "index": 120,
+    "title": "F. Income In-Kind"
+  },
+  {
+    "chapter": "44-100Income",
+    "index": 121,
+    "title": "G. Income and Eligibility Verifcation System (IEVS)"
+  },
+  {
+    "chapter": "44-200Special Needs",
+    "index": 122,
+    "title": "A. Recurring Special Needs"
+  },
+  {
+    "chapter": "44-200Special Needs",
+    "index": 123,
+    "title": "B. Nonrecurring Special Needs"
+  },
+  {
+    "chapter": "44-200Special Needs",
+    "index": 124,
+    "title": "C. Pregnancy Special Need"
+  },
+  {
+    "chapter": "44-200Special Needs",
+    "index": 125,
+    "title": "D. Homeless Assistance"
+  },
+  {
+    "chapter": "44-200Special Needs",
+    "index": 126,
+    "title": "E. Temporary Homeless Assistance"
+  },
+  {
+    "chapter": "44-200Special Needs",
+    "index": 127,
+    "title": "F. Permanent Homeless Assistance"
+  },
+  {
+    "chapter": "44-200Special Needs",
+    "index": 128,
+    "title": "G. Expanded Temporary Homeless Assistance"
+  },
+  {
+    "chapter": "44-260Annual Reporting (Child Only Cases)",
+    "index": 129,
+    "title": "A. Annual Reporting (AR)"
+  },
+  {
+    "chapter": "44-270Semi-Annual Reporting (SAR)",
+    "index": 130,
+    "title": "A. Semi-Annual Reporting (SAR)"
+  },
+  {
+    "chapter": "44-270Semi-Annual Reporting (SAR)",
+    "index": 131,
+    "title": "B. Income Eligibility and Budgeting"
+  },
+  {
+    "chapter": "44-270Semi-Annual Reporting (SAR)",
+    "index": 132,
+    "title": "C. Mandatory Mid-Period Reports"
+  },
+  {
+    "chapter": "44-270Semi-Annual Reporting (SAR)",
+    "index": 133,
+    "title": "H. Voluntary Mid-Period Reports"
+  },
+  {
+    "chapter": "44-270Semi-Annual Reporting (SAR)",
+    "index": 134,
+    "title": "I. County-Initiated Actions and Third Party Information"
+  },
+  {
+    "chapter": "44-300Benefit Payments",
+    "index": 135,
+    "title": "A. Vendor Payments"
+  },
+  {
+    "chapter": "44-300Benefit Payments",
+    "index": 136,
+    "title": "B. Benefit Issuance"
+  },
+  {
+    "chapter": "44-300Benefit Payments",
+    "index": 137,
+    "title": "C. Beginning Date of Aid"
+  },
+  {
+    "chapter": "44-300Benefit Payments",
+    "index": 138,
+    "title": "D. Amount of Aid"
+  },
+  {
+    "chapter": "44-300Benefit Payments",
+    "index": 139,
+    "title": "E. Voluntary Maximum Aid Payment (MAP) Exclusion"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 140,
+    "title": "A. Overpayment"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 141,
+    "title": "B. Definitions"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 142,
+    "title": "C. Investigation of Overpayment"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 143,
+    "title": "D. Aid Paid Pending"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 144,
+    "title": "E. Method of Recovery"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 145,
+    "title": "F. Overpayment Calculation"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 146,
+    "title": "G. Overpayment Recovery"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 147,
+    "title": "H. Mandatory Inclusion"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 148,
+    "title": "I. Overpayment Recomputation Method"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 149,
+    "title": "J. Intentional Program Violation"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 150,
+    "title": "K. Underpayment"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 151,
+    "title": "L. Employment Services - Supportive Service Overpayments and Underpayments"
+  },
+  {
+    "chapter": "44-350Overpayment-IPV-Underpayment",
+    "index": 152,
+    "title": "M. Overpayment Discharge Process"
+  },
+  {
+    "chapter": "45-000CalWORKs Questions and Answers",
+    "index": 153,
+    "title": "A. CalWORKs Non-Minor Dependents (NMDs) Q&A"
+  },
+  {
+    "chapter": "45-000CalWORKs Questions and Answers",
+    "index": 154,
+    "title": "B. Annual Reporting/Child Only (AR/CO) Q&A"
+  },
+  {
+    "chapter": "45-200Resources and Desk Aids",
+    "index": 155,
+    "title": "CalWORKs Aid Types"
+  },
+  {
+    "chapter": "45-200Resources and Desk Aids",
+    "index": 156,
+    "title": "CalWORKs Assistance Standards Chart"
+  },
+  {
+    "chapter": "45-200Resources and Desk Aids",
+    "index": 157,
+    "title": "CalWORKs Property and Motor Vehicle Equity Value Limits Chart"
+  },
+  {
+    "chapter": "45-200Resources and Desk Aids",
+    "index": 158,
+    "title": "CalWORKs Proration Chart"
+  },
+  {
+    "chapter": "45-200Resources and Desk Aids",
+    "index": 159,
+    "title": "Foster Care Rates Desk Aid"
+  },
+  {
+    "chapter": "45-200Resources and Desk Aids",
+    "index": 160,
+    "title": "Income: Reception and Placement (R&P)"
+  },
+  {
+    "chapter": "45-200Resources and Desk Aids",
+    "index": 161,
+    "title": "SAR Cycles Chart"
+  },
+  {
+    "chapter": "45-200Resources and Desk Aids",
+    "index": 162,
+    "title": "Student Loans and Grants Desk Aid"
+  },
+  {
+    "chapter": "69-205Refugee Cash Assistance (RCA)",
+    "index": 163,
+    "title": "A. Refugee Cash Assistance"
+  },
+  {
+    "chapter": "70-100Trafficking and Crime Victims Assistance Program (TCVAP)",
+    "index": 164,
+    "title": "A. Trafficking and Crime Victims Assistance Program"
+  }
+]
