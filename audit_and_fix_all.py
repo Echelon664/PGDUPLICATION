@@ -8,8 +8,8 @@ Comprehensive Audit and Fix Script for SDCounty HHSA Program Guide:
 import os, sys, json, urllib.parse, re
 from pdf_utils import generate_pdf_file
 
-PDF_DIR = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/pdfs"
-DOCS_PATH = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json"
+PDF_DIR = "/Users/echelon619/Desktop/ChrisPG/data/pdfs"
+DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
 
 # 1. Create dedicated PDF for cw-157
 CW_157_CONTENT = """COUNTY OF SAN DIEGO HEALTH AND HUMAN SERVICES AGENCY

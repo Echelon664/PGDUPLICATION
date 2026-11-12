@@ -1,6 +1,6 @@
 import json, re, os, zlib, urllib.parse
 
-pdf_dir = '/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/pdfs'
+pdf_dir = '/Users/echelon619/Desktop/ChrisPG/data/pdfs'
 
 def extract_pdf_bt_text(filepath):
     try:
@@ -323,7 +323,7 @@ medical_docs = [
 documents.extend(calworks_docs)
 documents.extend(medical_docs)
 
-out_path = '/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json'
+out_path = '/Users/echelon619/Desktop/ChrisPG/data/documents.json'
 with open(out_path, 'w') as f:
     json.dump(documents, f, indent=2)
 

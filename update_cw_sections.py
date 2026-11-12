@@ -50,7 +50,7 @@ OFFICIAL_CW_SECTIONS = [
 SECTIONS_BY_CODE = {s[0]: s for s in OFFICIAL_CW_SECTIONS}
 
 def update():
-    docs_path = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json"
+    docs_path = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
     with open(docs_path, "r", encoding="utf-8") as f:
         docs = json.load(f)
 

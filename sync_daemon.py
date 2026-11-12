@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os, glob, json, time, re, shutil, urllib.parse, zlib
 
-DATA_DIR = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data"
+DATA_DIR = "/Users/echelon619/Desktop/ChrisPG/data"
 PDF_DIR = os.path.join(DATA_DIR, "pdfs")
 DL_DIR = "/Users/echelon619/.gemini/antigravity/brain/df70e671-e6fb-4e6d-b828-18340155569b/browser_sandbox/downloads"
 DOCS_FILE = os.path.join(DATA_DIR, "documents.json")

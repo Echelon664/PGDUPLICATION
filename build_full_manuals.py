@@ -314,7 +314,7 @@ for d in DOCS:
         "sections": d["sections"]
     })
 
-data_dir = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data"
+data_dir = "/Users/echelon619/Desktop/ChrisPG/data"
 with open(os.path.join(data_dir, "documents.json"), "w") as f:
     json.dump(docs_json, f, indent=2)
 

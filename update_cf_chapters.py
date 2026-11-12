@@ -2,7 +2,7 @@
 import json
 import re
 
-DOCS_PATH = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json"
+DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
 CF_JSON_PATH = "/Users/echelon619/.gemini/antigravity/brain/853be71c-f4b9-4dc7-ac35-825758b66374/browser_sandbox/outputs/step_11.json"
 
 CHAPTER_METADATA = {

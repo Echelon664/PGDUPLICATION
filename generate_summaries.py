@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json, re, os
 
-DOCS_PATH = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json"
+DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
 
 def clean_title(title):
     t = title.strip()

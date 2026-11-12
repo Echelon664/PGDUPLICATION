@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json, re, hashlib, os, shutil
 
-DATA_DIR = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data"
+DATA_DIR = "/Users/echelon619/Desktop/ChrisPG/data"
 DOCS_PATH = os.path.join(DATA_DIR, "documents.json")
 BACKUP_PATH = os.path.join(DATA_DIR, "documents.backup.json")
 

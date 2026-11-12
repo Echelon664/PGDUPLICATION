@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json
 
-DOCS_PATH = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json"
+DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
 
 with open(DOCS_PATH, "r") as f:
     docs = json.load(f)

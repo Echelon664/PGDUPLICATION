@@ -2,8 +2,8 @@
 import json, os, urllib.parse, zlib, re
 from pdf_utils import generate_pdf_file
 
-PDF_DIR = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/pdfs"
-DOCS_PATH = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json"
+PDF_DIR = "/Users/echelon619/Desktop/ChrisPG/data/pdfs"
+DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
 
 # 1. Create dedicated, authentic, complete PDFs for CalWORKs documents that were missing or sharing wrong PDFs
 CALWORKS_DEDICATED_PDFS = {

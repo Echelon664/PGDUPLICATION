@@ -3,7 +3,7 @@ import json
 import re
 import os
 
-DOCS_PATH = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json"
+DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
 PART1_PATH = "/Users/echelon619/.gemini/antigravity/brain/cecb2a45-dbe4-4639-bcf4-7ffbb562b7ad/browser_sandbox/outputs/step_29.json"
 PART2_PATH = "/Users/echelon619/.gemini/antigravity/brain/cecb2a45-dbe4-4639-bcf4-7ffbb562b7ad/browser_sandbox/outputs/step_27.json"
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json
 
-DOCS_PATH = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json"
+DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
 
 ENRICHED_MC_SUMMARIES = {
     # --- Special Notices & Policy Bulletins (mc-288 to mc-327) ---

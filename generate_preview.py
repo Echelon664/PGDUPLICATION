@@ -2,8 +2,8 @@
 import json, html, os, re
 
 ARTIFACT_PATH = "/Users/echelon619/.gemini/antigravity/brain/df70e671-e6fb-4e6d-b828-18340155569b/web_preview.html"
-TEMPLATE_PATH = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/templates/index.html"
-DOCS_PATH = "/Users/echelon619/.gemini/antigravity/scratch/sd-benefits-search/data/documents.json"
+TEMPLATE_PATH = "/Users/echelon619/Desktop/ChrisPG/templates/index.html"
+DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
 
 with open(DOCS_PATH, 'r', encoding='utf-8') as f:
     full_docs = json.load(f)
