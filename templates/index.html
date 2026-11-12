@@ -8,7 +8,7 @@
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
     .gradient-header {
-      background: linear-gradient(135deg, #0b2545 0%, #134074 50%, #001e3d 100%);
+      background: #000000;
     }
     ::-webkit-scrollbar {
       width: 6px;
@@ -26,12 +26,12 @@
     }
   </style>
 </head>
-<body class="bg-transparent text-[var(--foreground)] antialiased p-3 sm:p-5">
+<body class="bg-black text-slate-900 antialiased p-3 sm:p-5 min-h-screen">
 
-  <div class="max-w-5xl mx-auto bg-[var(--card)] text-[var(--foreground)] border border-[var(--border)] rounded-2xl shadow-xl overflow-hidden flex flex-col">
+  <div class="max-w-5xl mx-auto bg-black text-slate-900 border border-slate-800 rounded-2xl shadow-xl overflow-hidden flex flex-col">
     
     <!-- Top Official Notice Bar -->
-    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap justify-between items-center gap-2">
+    <div class="bg-black text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-2">
         <svg class="w-4 h-4 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20">
           <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
@@ -48,8 +48,8 @@
     </div>
 
     <!-- Official Notice & Disclaimer Banner -->
-    <div class="bg-amber-50 border-b border-amber-200 px-4 py-3 text-amber-900 text-xs flex items-start gap-3">
-      <svg class="w-5 h-5 text-amber-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="bg-black border-b border-slate-800 px-4 py-3 text-amber-200 text-xs flex items-start gap-3">
+      <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
       </svg>
       <div>
@@ -57,9 +57,9 @@
         This tool searches official County of San Diego Health and Human Services Agency (HHSA) Policy &amp; Procedure Guides. 
         It does not provide legal advice or make casework determinations. 
         To apply for benefits or report case changes, please visit 
-        <a href="https://benefitscal.com/" target="_blank" class="text-blue-700 underline font-semibold hover:text-blue-900">BenefitsCal.com ↗</a> 
+        <a href="https://benefitscal.com/" target="_blank" class="text-amber-300 underline font-semibold hover:text-amber-100">BenefitsCal.com ↗</a> 
         or the 
-        <a href="https://www.sandiegocounty.gov/hhsa/" target="_blank" class="text-blue-700 underline font-semibold hover:text-blue-900">County of San Diego HHSA Portal ↗</a>.
+        <a href="https://www.sandiegocounty.gov/hhsa/" target="_blank" class="text-amber-300 underline font-semibold hover:text-amber-100">County of San Diego HHSA Portal ↗</a>.
       </div>
     </div>
 
@@ -158,7 +158,7 @@
     </div>
 
     <!-- Main Content Body -->
-    <div class="p-4 sm:p-6 flex-1 flex flex-col gap-5">
+    <div class="bg-white p-4 sm:p-6 flex-1 flex flex-col gap-5">
       
       <!-- VIEW 1: Manual Chapter & Section Dropdowns View (Default View) -->
       <div id="manualDropdownsView" class="flex flex-col gap-5">
@@ -268,13 +268,13 @@
     </div>
 
     <!-- Official Portal Footnotes -->
-    <div class="bg-slate-100 border-t border-slate-200 p-4 text-xs text-slate-500 flex flex-wrap justify-between items-center gap-2">
+    <div class="bg-black border-t border-slate-800 p-4 text-xs text-slate-400 flex flex-wrap justify-between items-center gap-2">
       <div>
         SDCounty HHSA Program Guide • <strong>100% Original %PDF-1.7 Documents Locally Indexed</strong>
       </div>
       <div class="flex items-center gap-3">
-        <a href="http://localhost:8000" target="_blank" class="hover:text-blue-600 font-semibold underline">Local Server: http://localhost:8000 ↗</a>
-        <a href="https://benefitscal.com" target="_blank" class="hover:text-blue-600 underline">BenefitsCal.com ↗</a>
+        <a href="http://localhost:8000" target="_blank" class="hover:text-amber-300 font-semibold underline">Local Server: http://localhost:8000 ↗</a>
+        <a href="https://benefitscal.com" target="_blank" class="hover:text-amber-300 underline">BenefitsCal.com ↗</a>
       </div>
     </div>
 
