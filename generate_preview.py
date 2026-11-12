@@ -18,17 +18,30 @@ all_count = len(full_docs)
 print(f"Counts: CalFresh={cf_count}, CalWORKs={cw_count}, Medi-Cal={mc_count}, All={all_count}")
 
 CHAPTER_DESCRIPTIONS = {
-    # CalFresh
-    'Chapter 63-100: Application Process & General Provisions': 'Household concept, application filing, expedited 3-day service, interviews, verification, and IRT',
-    'Chapter 63-150: Students & Non-Financial Rules': 'Student 20-hr work exemptions, residency, citizenship, CFAP, SSN requirements, fraud, and Restaurant Meals Program (RMP)',
-    'Chapter 63-200: Resources, Income & Deductions': 'Standard Utility Allowance (SUA), 20% earned income deduction, medical deductions, and shelter costs',
-    'Chapter 63-270 / 63-300: SAR 7 & Recertification': 'Semi-Annual Reporting (SAR 7), IRT reporting, recertification timeframes, and SSI/SSP expansion',
-    'Chapter 63-350: Case Administration & Pilots': 'Elderly Simplified Application Project (ESAP), confidentiality, inter-county transfers, and pilots',
-    'Chapter 63-450 / 63-500: Claims, Fraud & Disaster': 'Overissuances, IPV penalties, Disaster CalFresh, and replacement benefits',
-    'Chapter 63-600: Policy Questions & Answers': 'Official County eligibility, budgeting, deduction, and claim policy Q&A handbooks',
-    'Chapter 63-900: Work Registration & ABAWD': 'CalFresh Employment & Training (CFET), work registration exemptions, and ABAWD rules',
-    'Chapter 63-1100: Standards & Benefit Tables': 'Gross 130% FPL, Net 100% FPL, Maximum Allotments, and budgeting formulas',
-    'Special Notices & Policy Updates': 'County Policy Bulletins, COLA notices, emergency directives, and annual adjustments',
+    # CalFresh (Folder 542) - 22 Official County Chapters & Special Notices
+    '63-100 Application Process': 'Household concept, application filing, expedited service, interviews, and verification',
+    '63-150 Non-Financial': 'Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit',
+    '63-200 Resources': 'Resource eligibility determination, liquid assets, and excluded resources',
+    '63-220 Income': 'Earned income, unearned income, income exclusions, and self-employment',
+    '63-230 Income Deductions': 'Standard deduction, earned income deduction, excess medical, dependent care, and shelter costs',
+    '63-240 Households with Special Circumstances': 'Substantial lottery or gambling winnings and specialized eligibility',
+    '63-250 Budgeting and Benefit Calculation': 'Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables',
+    '63-270 Semi-Annual Reporting': 'Semi-Annual Reporting (SAR), SAR cycle, and mandatory SAR 7 report processing',
+    '63-280 Mid-Period Reporting': 'Voluntary and mandatory mid-period changes, IRT reporting, overissuances, and underissuances',
+    '63-300 Certification': 'Certification periods, household classification, Notices of Action (NOA), and recertification',
+    '63-320 Transitional CalFresh': 'Transitional CalFresh (TCF) benefits following CalWORKs cash aid discontinuance',
+    '63-330 CalFresh Expansion for SSI-SSP Recipients': 'SSI/SSP expansion, Supplemental Nutrition Benefit (SNB), and Transitional Nutrition Benefit (TNB)',
+    '63-350 Case Management': 'Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers',
+    '63-360 Elderly Simplified Application Project': 'ESAP streamlined certification and 36-month certification periods for elderly/disabled units',
+    '63-370 Minimum Nutrition Benefit (MNB) Pilot Program': 'Minimum Nutrition Benefit state pilot program guidelines and supplemental allotments',
+    '63-380 Prepared Meal Programs': 'Authorized restaurant meals, communal dining, and prepared meal purchases for eligible households',
+    '63-420 Work Incentive Nutrition Supplement (WINS)': 'WINS monthly food supplement for working families receiving CalFresh',
+    '63-450 Claims & Adjustments': 'Establishment of claims, non-fraud, Intentional Program Violation (IPV), and claim recoupment',
+    '63-500 Disaster CalFresh and Household Misfortune': 'Disaster CalFresh (D-CalFresh) operations and food replacement for household misfortune',
+    '63-600 Questions and Answers': 'Official County eligibility clarification questions and administrative answers',
+    '63-900 CalFresh Work-Related Policy Areas': 'General work registration, CFET employment & training, and ABAWD work requirements',
+    '63-1100 Handbook / Eligibility Tables': 'CalFresh eligibility standards tables, income thresholds, and reference definitions',
+    'Special Notices & Policy Bulletins': 'County Policy Bulletins, COLA notices, emergency directives, and annual adjustments',
 
     # CalWORKs (Folder 448) - 44 Official County Chapters & Special Notices
     '10-001 Background': 'CalWORKs and Employment Services legal authority, program goals, and administrative framework',
@@ -107,25 +120,14 @@ def categorize_doc(doc):
     t = f"{title} {chapter}".lower()
     
     if 'CalFresh' in programs:
+        cat = doc.get('category')
+        if cat:
+            order = doc.get('order', 50)
+            cat_id = doc.get('category_id') or ('cf-' + cat.replace(' ', '-').lower())
+            return cat, cat_id, order
         if 'sn ' in t or 'special notice' in t:
-            return 'Special Notices & Policy Updates', 'cf-sn', 99
-        if '63-1101' in t or '63-1103' in t:
-            return 'Chapter 63-1100: Standards & Benefit Tables', 'cf-63-1100', 90
-        if '63-9' in t:
-            return 'Chapter 63-900: Work Registration & ABAWD', 'cf-63-900', 80
-        if '63-6' in t:
-            return 'Chapter 63-600: Policy Questions & Answers', 'cf-63-600', 70
-        if '63-45' in t or '63-5' in t:
-            return 'Chapter 63-450 / 63-500: Claims, Fraud & Disaster', 'cf-63-450', 60
-        if any(k in t for k in ['63-35', '63-36', '63-37', '63-38', '63-42']):
-            return 'Chapter 63-350: Case Administration & Pilots', 'cf-63-350', 50
-        if any(k in t for k in ['63-27', '63-28', '63-30', '63-32', '63-33', 'sar 7', 'recertification']):
-            return 'Chapter 63-270 / 63-300: SAR 7 & Recertification', 'cf-63-270', 40
-        if '63-2' in t:
-            return 'Chapter 63-200: Resources, Income & Deductions', 'cf-63-200', 30
-        if any(k in t for k in ['63-15', '63-16', 'student', 'citizenship', 'noncitizen', 'ssn', 'cfap']):
-            return 'Chapter 63-150: Students & Non-Financial Rules', 'cf-63-150', 20
-        return 'Chapter 63-100: Application Process & General Provisions', 'cf-63-100', 10
+            return 'Special Notices & Policy Bulletins', 'cf-sn', 99
+        return '63-100 Application Process', 'cf-63-100', 1
 
     elif 'CalWORKs' in programs:
         cat = doc.get('category')
@@ -1193,10 +1195,18 @@ html_template = f"""<!DOCTYPE html>
         }}`;
         headerBtn.onclick = () => toggleChapterDropdown(gId);
 
-        const cwMatch = catName.match(/^(\d{2}-\d{3})\s+(.*)$/);
+        const cfMatch = catName.match(/^(63-\d+)\s+(.*)$/);
+        const cwMatch = catName.match(/^([0-5]\d-\d{3}|69-\d{3}|70-\d{3})\s+(.*)$/);
         const mcMatch = catName.match(/^(ARTICLE\s+\d+)\s*[-–:]*\s*(.*)$/i);
         let titleBlock = '';
-        if (cwMatch) {{
+        if (cfMatch) {{
+          titleBlock = `
+            <div class="flex items-center gap-2">
+              <span class="bg-emerald-700 text-white font-mono font-extrabold text-xs px-2.5 py-0.5 rounded shadow-2xs shrink-0">${{cfMatch[1]}}</span>
+              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(cfMatch[2])}}</h4>
+            </div>
+          `;
+        }} else if (cwMatch) {{
           titleBlock = `
             <div class="flex items-center gap-2">
               <span class="bg-purple-700 text-white font-mono font-extrabold text-xs px-2.5 py-0.5 rounded shadow-2xs shrink-0">${{cwMatch[1]}}</span>
