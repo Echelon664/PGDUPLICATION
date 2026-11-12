@@ -383,6 +383,75 @@ html_template = f"""<!DOCTYPE html>
 
   </div>
 
+  <!-- In-Page PDF Viewer Modal Overlay -->
+  <div id="pdfViewerModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 backdrop-blur-xs p-2 sm:p-4 md:p-6 transition-all duration-200">
+    <div class="relative flex flex-col w-full h-[95vh] max-w-7xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-slate-700/30">
+      
+      <!-- Top Modal Header Bar -->
+      <div class="bg-slate-900 text-white px-4 py-3 flex items-center justify-between gap-3 shrink-0 shadow-md">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="p-1.5 bg-red-600 rounded-lg text-white shrink-0">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path></svg>
+          </div>
+          <div class="min-w-0">
+            <div class="flex items-center gap-2">
+              <span id="pdfModalProgramBadge" class="text-[10px] uppercase tracking-wider font-extrabold px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-400/30 shrink-0">CalFresh</span>
+              <h3 id="pdfModalTitle" class="text-xs sm:text-sm font-bold text-slate-100 truncate">Policy Document Title</h3>
+            </div>
+            <div id="pdfModalMeta" class="text-[11px] text-slate-400 truncate mt-0.5">Section • Official Document</div>
+          </div>
+        </div>
+
+        <!-- Controls: Toggle Summary, Open in New Tab, Download, Close -->
+        <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          <button type="button" onclick="toggleModalSummary()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-2.5 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-700 flex items-center gap-1 cursor-pointer" title="Toggle Quick Summary visibility">
+            <svg class="w-3.5 h-3.5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+            <span class="hidden md:inline">Summary</span>
+          </button>
+          <a id="pdfModalNewTabBtn" href="#" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-700 flex items-center gap-1" title="Open PDF in a new dedicated browser tab">
+            <span class="hidden sm:inline">New Tab</span>
+            <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+          <a id="pdfModalDownloadBtn" href="#" download class="bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-700 hidden lg:flex items-center gap-1" title="Download official PDF copy">
+            <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            <span>Download</span>
+          </a>
+          <button type="button" onclick="closePdfModal()" class="bg-red-600 hover:bg-red-700 text-white px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1 shadow-sm cursor-pointer ml-1" title="Close PDF Viewer (Esc)">
+            <span>Close</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Summary Sub-bar (Dismissible) -->
+      <div id="pdfModalSummaryBar" class="bg-blue-50/95 border-b border-blue-200 px-4 py-2 text-xs text-slate-800 flex items-start justify-between gap-3 shrink-0">
+        <div class="flex items-start gap-2 min-w-0">
+          <span class="font-bold text-blue-900 shrink-0 text-[11px] mt-0.5 flex items-center gap-1">
+            <svg class="w-3.5 h-3.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+            Quick Summary:
+          </span>
+          <span id="pdfModalSummaryText" class="text-slate-700 line-clamp-2 leading-relaxed">Official policy summary...</span>
+        </div>
+        <button type="button" onclick="toggleModalSummary()" class="text-slate-400 hover:text-slate-600 p-0.5 rounded cursor-pointer shrink-0" title="Hide Summary Bar">
+          ✕
+        </button>
+      </div>
+
+      <!-- PDF Viewer Body (iframe) -->
+      <div class="relative flex-1 bg-slate-100 w-full h-full overflow-hidden">
+        <!-- Loading spinner -->
+        <div id="pdfModalLoading" class="absolute inset-0 flex flex-col items-center justify-center bg-slate-100/90 backdrop-blur-2xs z-10 text-slate-500">
+          <div class="w-9 h-9 border-3 border-blue-600 border-t-transparent rounded-full animate-spin mb-3"></div>
+          <span class="text-xs font-semibold text-slate-700">Loading Official County PDF Document...</span>
+          <span class="text-[11px] text-slate-400 mt-1">Rendered via Browser Native PDF Viewer</span>
+        </div>
+        
+        <iframe id="pdfViewerFrame" src="" class="w-full h-full border-0" onload="document.getElementById('pdfModalLoading').classList.add('hidden')" title="PDF Viewer"></iframe>
+      </div>
+
+    </div>
+  </div>
+
   <script>
     // Essential HTML Escaping Function Defined at Top
     function escapeHtml(str) {{
@@ -407,6 +476,8 @@ html_template = f"""<!DOCTYPE html>
 
     // Embedded catalog containing all deduplicated documents
     const EMBEDDED_DOCS = {embedded_json_str};
+    const DOCS_BY_ID = {{}};
+    EMBEDDED_DOCS.forEach(d => {{ DOCS_BY_ID[d.id] = d; }});
 
     let activeProgram = 'CalFresh';
     const LOCAL_SERVER_BASE = '__SERVER_BASE__';
@@ -720,10 +791,15 @@ html_template = f"""<!DOCTYPE html>
             </div>
             <div class="flex items-center justify-between pt-1 border-t border-slate-100 text-xs">
               <span class="font-semibold text-blue-600">${{(s.programs || []).join(', ')}}</span>
-              <a href="${{localPdf}}" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-2.5 py-1 rounded font-bold transition inline-flex items-center gap-1 shadow-2xs">
-                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path></svg>
-                <span>Open Whole PDF</span>
-              </a>
+              <div class="flex items-center gap-1.5">
+                <button type="button" onclick="viewDocPdf('${{s.id}}')" class="bg-red-600 hover:bg-red-700 text-white px-2.5 py-1 rounded font-bold transition inline-flex items-center gap-1 shadow-2xs cursor-pointer">
+                  <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+                  <span>View in Page</span>
+                </button>
+                <a href="${{localPdf}}" target="_blank" class="p-1 text-slate-400 hover:text-slate-700 transition" title="Open in dedicated tab">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+              </div>
             </div>
           `;
           sourcesList.appendChild(el);
@@ -756,6 +832,92 @@ html_template = f"""<!DOCTYPE html>
       }}
       return (LOCAL_SERVER_BASE || '') + '/pdfs/' + encodeURIComponent(docId) + '.pdf';
     }}
+
+    // In-Page PDF Viewer Modal Functions
+    function openPdfModal(pdfUrl, title, program, summary, section) {{
+      const modal = document.getElementById('pdfViewerModal');
+      const iframe = document.getElementById('pdfViewerFrame');
+      const titleEl = document.getElementById('pdfModalTitle');
+      const badgeEl = document.getElementById('pdfModalProgramBadge');
+      const metaEl = document.getElementById('pdfModalMeta');
+      const summaryBar = document.getElementById('pdfModalSummaryBar');
+      const summaryEl = document.getElementById('pdfModalSummaryText');
+      const newTabBtn = document.getElementById('pdfModalNewTabBtn');
+      const downloadBtn = document.getElementById('pdfModalDownloadBtn');
+      const loading = document.getElementById('pdfModalLoading');
+
+      if (!modal || !iframe) return;
+
+      titleEl.textContent = title || 'Policy Document';
+      badgeEl.textContent = program || 'HHSA';
+      metaEl.textContent = (section ? ('Section: ' + section + ' • ') : '') + 'Official County of San Diego Policy PDF';
+      
+      if (summary && summary.trim()) {{
+        summaryEl.textContent = summary;
+        summaryBar.classList.remove('hidden');
+      }} else {{
+        summaryBar.classList.add('hidden');
+      }}
+
+      newTabBtn.href = pdfUrl;
+      if (downloadBtn) {{
+        downloadBtn.href = pdfUrl;
+        downloadBtn.setAttribute('download', (section ? (section + ' - ') : '') + (title || 'document') + '.pdf');
+      }}
+
+      loading.classList.remove('hidden');
+      iframe.src = pdfUrl;
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+    }}
+
+    function closePdfModal() {{
+      const modal = document.getElementById('pdfViewerModal');
+      const iframe = document.getElementById('pdfViewerFrame');
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      if (iframe) iframe.src = 'about:blank';
+      document.body.classList.remove('overflow-hidden');
+    }}
+
+    function toggleModalSummary() {{
+      const summaryBar = document.getElementById('pdfModalSummaryBar');
+      if (summaryBar) {{
+        summaryBar.classList.toggle('hidden');
+      }}
+    }}
+
+    function viewDocPdf(docId, fallbackUrl, fallbackTitle, fallbackProg, fallbackSummary) {{
+      let doc = DOCS_BY_ID[docId];
+      if (!doc) {{
+        doc = {{
+          id: docId,
+          title: fallbackTitle || docId,
+          programs: fallbackProg ? [fallbackProg] : ['HHSA'],
+          summary: fallbackSummary || '',
+          local_pdf_url: fallbackUrl || ''
+        }};
+      }}
+      const pdfUrl = resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
+      openPdfModal(pdfUrl, doc.title, (doc.programs || []).join(' / '), doc.summary || doc.snippet || '', doc.chapter || doc.id);
+    }}
+
+    // Close modal on Escape key or outside backdrop click
+    document.addEventListener('keydown', (e) => {{
+      if (e.key === 'Escape') {{
+        closePdfModal();
+      }}
+    }});
+
+    document.addEventListener('click', (e) => {{
+      const modal = document.getElementById('pdfViewerModal');
+      if (modal && !modal.classList.contains('hidden') && e.target === modal) {{
+        closePdfModal();
+      }}
+    }});
 
     // Interactive Dropdown Toggle Function for Each Chapter
     function toggleChapterDropdown(groupId) {{
@@ -904,9 +1066,9 @@ html_template = f"""<!DOCTYPE html>
             <div class="flex-1 min-w-0">
               <div class="flex flex-wrap items-center gap-2 mb-1.5">
                 <span class="px-2 py-0.5 rounded text-xs font-bold border ${{progBadgeColor}}">${{(doc.programs || []).join(' / ')}}</span>
-                <a href="${{localPdfLink}}" target="_blank" class="font-bold text-slate-800 text-xs sm:text-sm hover:text-blue-600 transition inline-flex items-center gap-1">
+                <a href="${{localPdfLink}}" onclick="event.preventDefault(); viewDocPdf('${{doc.id}}')" class="font-bold text-slate-800 text-xs sm:text-sm hover:text-blue-600 transition inline-flex items-center gap-1.5 cursor-pointer">
                   <span>${{escapeHtml(doc.title)}}</span>
-                  <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  <span class="text-[10px] text-blue-600 font-semibold bg-blue-50 px-1.5 py-0.5 rounded border border-blue-200">View in Page 👁</span>
                 </a>
                 <span class="text-xs bg-slate-100 text-slate-600 px-1.5 py-0.5 rounded font-mono font-medium">Original PDF</span>
               </div>
@@ -947,9 +1109,13 @@ html_template = f"""<!DOCTYPE html>
               </div>
             </div>
             <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
-              <a href="${{localPdfLink}}" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center gap-1.5 shadow-2xs">
-                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"></path></svg>
-                <span>Open Whole PDF</span>
+              <button type="button" onclick="viewDocPdf('${{doc.id}}')" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center gap-1.5 shadow-2xs cursor-pointer">
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
+                <span>View PDF in Page</span>
+              </button>
+              <a href="${{localPdfLink}}" target="_blank" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 text-xs font-semibold px-2.5 py-2 rounded-lg transition inline-flex items-center gap-1 shadow-2xs" title="Open in new window or tab">
+                <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                <span class="hidden md:inline">New Tab</span>
               </a>
             </div>
           `;
