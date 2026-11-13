@@ -2,52 +2,56 @@
     .cn-layout { display: flex; flex-direction: column; gap: 10px; }
     .cn-toolbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 8px; padding: 10px 0;
       background: #fff; border-bottom: 1px solid #e2e8f0; }
-    .cn-jump { flex: 1 1 auto; max-width: 380px; min-width: 0; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #fff; color: #0f172a; }
-    .cn-collapse { flex: none; margin-left: auto; border: 1px solid #cbd5e1; background: #fff; color: #334155; font-size: 13px; font-weight: 600; padding: 8px 12px;
+    .cn-jump { flex: 1 1 auto; max-width: 380px; min-width: 0; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 16px; background: #fff; color: #0f172a; }
+    .cn-collapse { flex: none; margin-left: auto; border: 1px solid #cbd5e1; background: #fff; color: #334155; font-size: 15px; font-weight: 600; padding: 9px 14px;
       border-radius: 8px; cursor: pointer; white-space: nowrap; }
     .cn-collapse:hover { background: #f1f5f9; }
-    .cn-program-heading { font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #64748b; padding: 10px 8px 4px; }
-    .cn-program-title { padding: 18px 0 6px; font-size: 13px; color: #0f172a; margin: 0; }
+    .cn-program-heading { font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #64748b; padding: 10px 8px 4px; }
+    .cn-program-title { padding: 18px 0 6px; font-size: 15px; color: #0f172a; margin: 0; }
     .cn-main { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 
     .cn-chapter { border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; scroll-margin-top: 64px; }
     .cn-chapter.is-open { border-color: #cbd5e1; }
     .cn-head-wrap { margin: 0; font: inherit; }
     .cn-chapter.is-open > .cn-head-wrap { position: sticky; top: 58px; z-index: 5; }
-    .cn-head { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 10px 12px; border: 0; background: #fff;
-      border-radius: 10px; cursor: pointer; color: #0f172a; font-size: 14px; }
+    .cn-head { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 14px 16px; border: 0; background: #fff;
+      border-radius: 10px; cursor: pointer; color: #0f172a; font-size: 17px; }
     .cn-head:hover { background: #f8fafc; }
     .cn-chapter.is-open > .cn-head-wrap > .cn-head { background: #f1f5f9; border-radius: 10px 10px 0 0; border-bottom: 1px solid #e2e8f0; }
-    .cn-chevron { width: 16px; height: 16px; flex: none; color: #94a3b8; transition: transform .15s ease; }
+    .cn-chevron { width: 18px; height: 18px; flex: none; color: #94a3b8; transition: transform .15s ease; }
     [aria-expanded="true"] > .cn-chevron { transform: rotate(90deg); color: #475569; }
-    .cn-code { flex: none; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; padding: 2px 8px;
+    .cn-code { flex: none; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; font-weight: 700; padding: 3px 9px;
       border-radius: 6px; color: #fff; background: #475569; white-space: nowrap; }
     [data-program="CalFresh"] .cn-code { background: #047857; }
     [data-program="CalWORKs"] .cn-code { background: #7e22ce; }
     [data-program="Medi-Cal"] .cn-code { background: #0f766e; }
     .cn-code.cn-code-notices { background: #b45309; font-family: inherit; }
-    .cn-head-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+    .cn-head-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
     .cn-head-name { font-weight: 700; line-height: 1.3; }
-    .cn-head-desc { font-size: 12px; color: #64748b; line-height: 1.35; }
-    .cn-count { flex: none; font-size: 12px; color: #64748b; white-space: nowrap; }
+    .cn-head-desc { font-size: 15px; color: #475569; line-height: 1.45; }
+    .cn-head-includes { font-size: 14px; color: #64748b; line-height: 1.45; }
+    /* Once open, the chapter lists its documents, so the summary line would repeat them. */
+    .cn-chapter.is-open .cn-head-includes { display: none; }
+    .cn-count { flex: none; font-size: 14px; color: #64748b; white-space: nowrap; }
 
-    .cn-year { padding: 8px 16px 4px; font-size: 12px; font-weight: 700; color: #92400e; background: #fffbeb; border-top: 1px solid #f1f5f9; }
+    .cn-year { padding: 8px 18px 4px; font-size: 14px; font-weight: 700; color: #92400e; background: #fffbeb; border-top: 1px solid #f1f5f9; }
     .cn-doc { border-top: 1px solid #e2e8f0; }
     .cn-body > .cn-doc:first-child { border-top: 0; }
     .cn-doc { scroll-margin-top: 116px; }
-    .cn-flag { flex: none; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 999px; background: #fef3c7; color: #92400e; }
-    .cn-detail { display: flex; align-items: center; gap: 20px; padding: 14px 16px; background: #fff; transition: background .4s; }
+    .cn-flag { flex: none; font-size: 12.5px; font-weight: 700; padding: 1px 6px; border-radius: 999px; background: #fef3c7; color: #92400e; }
+    .cn-detail { display: flex; align-items: center; gap: 20px; padding: 16px 18px; background: #fff; transition: background .4s; }
     .cn-detail-text { flex: 1; min-width: 0; }
     .cn-detail.is-target { background: #fefce8; }
     .cn-detail-solo { border-radius: 0 0 10px 10px; }
-    .cn-doc-title { margin: 0 0 4px; font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-    .cn-meta { margin: 0 0 6px; font-size: 12px; color: #475569; }
+    .cn-doc-title { margin: 0 0 6px; font-size: 17px; font-weight: 700; color: #0f172a; line-height: 1.35; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .cn-meta { margin: 0 0 8px; font-size: 14px; color: #475569; }
     .cn-meta strong { color: #065f46; font-weight: 700; }
-    .cn-summary { margin: 0; font-size: 13.5px; line-height: 1.6; color: #334155; max-width: 72ch; }
+    .cn-summary { margin: 0; font-size: 16px; line-height: 1.6; color: #1e293b; max-width: 75ch;
+      border: 1.5px solid #000; border-radius: 8px; padding: 10px 14px; background: #fff; }
     .cn-actions { flex: none; display: flex; gap: 8px; }
     .cn-btn { white-space: nowrap; }
-    .cn-btn { display: inline-flex; align-items: center; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;
-      color: #1e293b; font-size: 12.5px; font-weight: 600; cursor: pointer; text-decoration: none; }
+    .cn-btn { display: inline-flex; align-items: center; padding: 8px 14px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;
+      color: #1e293b; font-size: 14.5px; font-weight: 600; cursor: pointer; text-decoration: none; }
     .cn-btn:hover { background: #f1f5f9; border-color: #94a3b8; }
     .cn-btn-primary { background: #047857; border-color: #047857; color: #fff; }
     .cn-btn-primary:hover { background: #065f46; border-color: #065f46; }
@@ -58,9 +62,10 @@
 
     @media (max-width: 699px) {
       .cn-head { align-items: flex-start; flex-wrap: wrap; }
-      .cn-head-text { flex-basis: calc(100% - 110px); }
-      .cn-head-desc { display: none; }
-      .cn-detail { flex-direction: column; align-items: stretch; gap: 10px; padding: 12px; }
+      .cn-head-text { flex-basis: 100%; }
+      .cn-head { padding: 12px; }
+      .cn-detail { flex-direction: column; align-items: stretch; gap: 10px; padding: 14px 12px; }
+      .cn-summary { padding: 10px 12px; }
       .cn-actions { flex-wrap: wrap; }
       .cn-year { padding-left: 12px; padding-right: 12px; }
     }
