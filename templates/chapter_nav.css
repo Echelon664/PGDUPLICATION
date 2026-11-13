@@ -2,9 +2,8 @@
     .cn-layout { display: flex; flex-direction: column; gap: 10px; }
     .cn-toolbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 8px; padding: 10px 0;
       background: #fff; border-bottom: 1px solid #e2e8f0; }
-    .cn-filter { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #fff; color: #0f172a; }
-    .cn-jump { flex: 0 1 260px; min-width: 0; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #fff; color: #0f172a; }
-    .cn-collapse { flex: none; border: 1px solid #cbd5e1; background: #fff; color: #334155; font-size: 13px; font-weight: 600; padding: 8px 12px;
+    .cn-jump { flex: 1 1 auto; max-width: 380px; min-width: 0; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #fff; color: #0f172a; }
+    .cn-collapse { flex: none; margin-left: auto; border: 1px solid #cbd5e1; background: #fff; color: #334155; font-size: 13px; font-weight: 600; padding: 8px 12px;
       border-radius: 8px; cursor: pointer; white-space: nowrap; }
     .cn-collapse:hover { background: #f1f5f9; }
     .cn-program-heading { font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #64748b; padding: 10px 8px 4px; }
@@ -59,17 +58,10 @@
     .cn-btn-primary:hover { background: #065f46; border-color: #065f46; }
     .cn-btn-newtab { background: #b91c1c; border-color: #b91c1c; color: #fff; }
     .cn-btn-newtab:hover { background: #991b1b; border-color: #991b1b; }
-    .cn-empty { padding: 20px; text-align: center; color: #64748b; font-size: 13px; }
     .cn-layout button:focus-visible, .cn-layout a:focus-visible, .cn-layout input:focus-visible, .cn-layout select:focus-visible {
       outline: 2px solid #2563eb; outline-offset: 1px; }
 
     @media (max-width: 699px) {
-      .cn-toolbar { flex-wrap: wrap; }
-      .cn-filter { flex-basis: 100%; }
-      .cn-jump { flex: 1 1 0; }
-      .cn-chapter { scroll-margin-top: 108px; }
-      .cn-chapter.is-open > .cn-head-wrap { top: 102px; }
-      .cn-doc { scroll-margin-top: 170px; }
       .cn-head { align-items: flex-start; flex-wrap: wrap; }
       .cn-head-text { flex-basis: calc(100% - 110px); }
       .cn-head-desc { display: none; }

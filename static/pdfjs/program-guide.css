@@ -1,0 +1,8 @@
+/* Local additions to the bundled PDF.js viewer. The site shows County policy
+   documents read-only, so the drawing, text, signature and open-file controls
+   are hidden. Re-add the <link> to this file in web/viewer.html after
+   upgrading PDF.js. */
+#editorModeButtons,
+#secondaryOpenFile {
+  display: none !important;
+}

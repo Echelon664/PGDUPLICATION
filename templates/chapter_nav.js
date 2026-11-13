@@ -2,7 +2,7 @@
     // Chapter browser: a sticky toolbar above compact, expandable document rows.
     // Inlined into index.html by generate_preview.py (edit this file, then
     // regenerate). Uses DOCS_BY_ID, activeProgram, escapeHtml, viewDocPdf,
-    // docOpenUrl, isSourceMissing, docDateLine and formatLongDate from the page.
+    // docOpenUrl, pdfViewerUrl, isSourceMissing, docDateLine and formatLongDate from the page.
     // ---------------------------------------------------------------------
     const CN_PROGRAMS = ['CalFresh', 'CalWORKs', 'Medi-Cal'];
     const CN_PROGRAM_TITLES = { 'CalFresh': 'CalFresh (SNAP)', 'CalWORKs': 'CalWORKs (TANF)', 'Medi-Cal': 'Medi-Cal (Medicaid)' };
@@ -141,7 +141,7 @@
 
       if (!missing) {
         const tab = cnEl('a', 'cn-btn cn-btn-newtab');
-        tab.href = docOpenUrl(doc);
+        tab.href = pdfViewerUrl(docOpenUrl(doc));
         tab.target = '_blank';
         tab.rel = 'noopener';
         tab.append(cnEl('span', '', 'Open in new tab'));
@@ -237,38 +237,6 @@
       cnWriteHash({});
     }
 
-    function cnApplyFilter(text) {
-      const needle = text.trim().toLowerCase();
-      let shown = 0;
-      cnChapters.forEach(ch => {
-        const section = document.getElementById('ch-' + ch.id);
-        if (!section) return;
-        const nameHit = !needle || (ch.code + ' ' + ch.name + ' ' + ch.desc).toLowerCase().includes(needle);
-        const docHits = needle ? ch.docs.filter(d => (d.title || '').toLowerCase().includes(needle)) : [];
-        const hit = nameHit || docHits.length > 0;
-        section.hidden = !hit;
-        if (hit) shown += 1;
-        // A match on document titles opens the chapter and shows only those documents.
-        const narrow = !!needle && !nameHit && docHits.length > 0 && ch.docs.length > 1;
-        if (narrow) cnSetChapterOpen(ch, true);
-        const keep = narrow ? new Set(docHits.map(d => d.id)) : null;
-        section.querySelectorAll('.cn-doc').forEach(row => {
-          row.hidden = !!keep && !keep.has(row.id.replace(/^doc-/, ''));
-        });
-        section.querySelectorAll('.cn-year').forEach(year => { year.hidden = !!keep; });
-      });
-      document.querySelectorAll('.cn-program-heading').forEach(h => {
-        let next = h.nextElementSibling;
-        let any = false;
-        while (next && !next.classList.contains('cn-program-heading')) {
-          if (!next.hidden && next.classList.contains('cn-chapter')) any = true;
-          next = next.nextElementSibling;
-        }
-        h.hidden = !any;
-      });
-      document.querySelectorAll('.cn-empty').forEach(n => { n.hidden = shown > 0; });
-    }
-
     function cnOpenFromHash() {
       const state = cnReadHash();
       if (state.doc && DOCS_BY_ID[state.doc]) {
@@ -302,13 +270,8 @@
       cnChapters = cnBuildChapters(docs);
       const showPrograms = activeProgram === 'All';
 
-      // Toolbar: filter, jump menu, collapse all. Stays at the top while scrolling.
+      // Toolbar: jump menu and collapse all. Stays at the top while scrolling.
       const toolbar = cnEl('div', 'cn-toolbar');
-      const filter = cnEl('input', 'cn-filter');
-      filter.type = 'search';
-      filter.placeholder = 'Filter chapters and documents';
-      filter.setAttribute('aria-label', 'Filter chapters and documents');
-      filter.addEventListener('input', () => cnApplyFilter(filter.value));
       const jump = cnEl('select', 'cn-jump');
       jump.setAttribute('aria-label', 'Jump to chapter');
       jump.append(new Option('Jump to chapter…', ''));
@@ -316,7 +279,7 @@
       const collapse = cnEl('button', 'cn-collapse', 'Collapse all');
       collapse.type = 'button';
       collapse.addEventListener('click', cnCollapseAll);
-      toolbar.append(filter, jump, collapse);
+      toolbar.append(jump, collapse);
 
       const main = cnEl('div', 'cn-main');
 
@@ -378,9 +341,6 @@
         main.append(section);
       });
 
-      const empty = cnEl('p', 'cn-empty', 'No chapters or documents match that filter.');
-      empty.hidden = true;
-      main.append(empty);
       container.append(toolbar, main);
       cnOpenFromHash();
     }

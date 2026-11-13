@@ -8,6 +8,24 @@ from ai_backend import answer_question
 from search_engine import get_engine
 
 PORT = int(os.environ.get("PORT", "8000"))
+
+# PDF.js viewer files served from static/pdfjs under /pdfjs/.
+PDFJS_DIR = os.path.realpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "static", "pdfjs"))
+STATIC_TYPES = {
+    ".html": "text/html; charset=utf-8", ".mjs": "text/javascript; charset=utf-8",
+    ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8",
+    ".json": "application/json", ".ftl": "text/plain; charset=utf-8", ".svg": "image/svg+xml",
+    ".png": "image/png", ".gif": "image/gif", ".wasm": "application/wasm", ".ttf": "font/ttf",
+}
+
+
+def resolve_pdfjs(url_path):
+    """Absolute path of a file under static/pdfjs, or None (missing, a directory, or outside it)."""
+    relative = urllib.parse.unquote(url_path[len("/pdfjs/"):])
+    full = os.path.realpath(os.path.join(PDFJS_DIR, relative))
+    if not full.startswith(PDFJS_DIR + os.sep) or not os.path.isfile(full):
+        return None
+    return full
 ENGINE = get_engine()
 
 def get_index():
@@ -81,6 +99,7 @@ class BenefitsHandler(BaseHTTPRequestHandler):
                 with open(pdf_path, "rb") as f:
                     self.send_response(200)
                     self.send_header("Content-Type", "application/pdf")
+                    self.send_header("Content-Length", str(os.path.getsize(pdf_path)))
                     self.send_header("Content-Disposition", f"inline; filename=\"{filename}\"")
                     self.send_header("Access-Control-Allow-Origin", "*")
                     self.end_headers()
@@ -100,6 +119,22 @@ class BenefitsHandler(BaseHTTPRequestHandler):
             else:
                 self._set_headers(404, "text/plain")
                 self.wfile.write(b"templates/index.html not found.")
+            return
+
+        if path.startswith("/pdfjs/"):
+            full = resolve_pdfjs(path)
+            if not full:
+                self._set_headers(404, "text/plain")
+                self.wfile.write(b"Not Found")
+                return
+            with open(full, "rb") as f:
+                data = f.read()
+            self.send_response(200)
+            self.send_header("Content-Type", STATIC_TYPES.get(os.path.splitext(full)[1].lower(), "application/octet-stream"))
+            self.send_header("Content-Length", str(len(data)))
+            self.send_header("Cache-Control", "public, max-age=86400")
+            self.end_headers()
+            self.wfile.write(data)
             return
 
         if path == "/sync":
