@@ -1,5 +1,6 @@
     // ---------------------------------------------------------------------
-    // Chapter browser: a sticky toolbar above compact, expandable document rows.
+    // Chapter browser: a sticky toolbar above chapters that open to show their
+    // documents, each with its date, summary and PDF buttons.
     // Inlined into index.html by generate_preview.py (edit this file, then
     // regenerate). Uses DOCS_BY_ID, activeProgram, escapeHtml, viewDocPdf,
     // docOpenUrl, pdfViewerUrl, isSourceMissing, docDateLine and formatLongDate from the page.
@@ -116,9 +117,14 @@
       try { window.history.replaceState(window.history.state, '', url); } catch (err) { /* file:// or sandboxed */ }
     }
 
-    function cnBuildDetail(doc) {
+    function cnBuildDetail(doc, opts) {
       const detail = cnEl('div', 'cn-detail');
       const text = cnEl('div', 'cn-detail-text');
+      if (opts && opts.title) {
+        const title = cnEl('h6', 'cn-doc-title', doc.title || doc.id);
+        if (isSourceMissing(doc)) title.append(cnEl('span', 'cn-flag', 'Not bundled'));
+        text.append(title);
+      }
       const dateLine = docDateLine(doc);
       const posted = formatLongDate(doc.published_on || '');
       if (dateLine || posted) {
@@ -151,42 +157,11 @@
       return detail;
     }
 
-    function cnSetDocOpen(row, doc, open) {
-      const button = row.querySelector('.cn-row');
-      let detail = row.querySelector('.cn-detail');
-      if (open && !detail) {
-        detail = cnBuildDetail(doc);
-        detail.id = 'cn-detail-' + doc.id;
-        row.append(detail);
-      }
-      if (detail) detail.hidden = !open;
-      button.setAttribute('aria-expanded', open ? 'true' : 'false');
-      row.classList.toggle('is-open', open);
-    }
-
-    function cnBuildDocRow(doc) {
-      const row = cnEl('div', 'cn-doc');
-      row.id = 'doc-' + doc.id;
-      const button = cnEl('button', 'cn-row');
-      button.type = 'button';
-      button.setAttribute('aria-expanded', 'false');
-      button.setAttribute('aria-controls', 'cn-detail-' + doc.id);
-      button.insertAdjacentHTML('beforeend', CN_CHEVRON);
-      button.append(cnEl('span', 'cn-row-title', doc.title || doc.id));
-      if (isSourceMissing(doc)) button.append(cnEl('span', 'cn-flag', 'Not bundled'));
-      const date = cnShortDate(doc);
-      if (date) {
-        const stamp = cnEl('span', 'cn-row-date', date);
-        stamp.title = docDateLine(doc);
-        button.append(stamp);
-      }
-      button.addEventListener('click', () => {
-        const open = button.getAttribute('aria-expanded') !== 'true';
-        cnSetDocOpen(row, doc, open);
-        cnWriteHash(open ? { doc: doc.id } : { ch: row.closest('.cn-chapter').dataset.chapter });
-      });
-      row.append(button);
-      return row;
+    function cnBuildDocBlock(doc) {
+      const block = cnBuildDetail(doc, { title: true });
+      block.classList.add('cn-doc');
+      block.id = 'doc-' + doc.id;
+      return block;
     }
 
     function cnFillBody(chapter, body) {
@@ -208,7 +183,7 @@
             body.append(cnEl('div', 'cn-year', year ? String(year) : 'Undated'));
           }
         }
-        body.append(cnBuildDocRow(doc));
+        body.append(cnBuildDocBlock(doc));
       });
     }
 
@@ -244,9 +219,12 @@
         const chapter = cnChapters.find(ch => ch.docs.some(d => d.id === doc.id));
         if (!chapter) return false;
         cnGoToChapter(chapter.id, { scroll: false, hash: false });
-        const row = document.getElementById('doc-' + doc.id);
-        if (row) cnSetDocOpen(row, doc, true);
-        (row || document.getElementById('ch-' + chapter.id)).scrollIntoView({ block: 'start' });
+        const block = document.getElementById('doc-' + doc.id);
+        if (block) {
+          block.classList.add('is-target');
+          setTimeout(() => block.classList.remove('is-target'), 2500);
+        }
+        (block || document.getElementById('ch-' + chapter.id)).scrollIntoView({ block: 'start' });
         return true;
       }
       if (state.ch && cnChapters.some(ch => ch.id === state.ch)) {
