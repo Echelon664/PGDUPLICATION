@@ -13,3 +13,6 @@ data/search.db.tmp.*
 data/documents.backup.json
 evaluate_search.py
 README.md
+data/crawl/
+test_county_sync.py
+test_api.py

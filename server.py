@@ -3,10 +3,11 @@ import json
 import urllib.parse
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
-from ai_backend import generate_answer, provider_label
+import county_sync
+from ai_backend import answer_question
 from search_engine import get_engine
 
-PORT = 8000
+PORT = int(os.environ.get("PORT", "8000"))
 ENGINE = get_engine()
 
 def get_index():
@@ -43,8 +44,25 @@ class BenefitsHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", content_type)
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-Admin-Token")
         self.end_headers()
+
+    def _send_json(self, status, payload):
+        self._set_headers(status)
+        self.wfile.write(json.dumps(payload).encode("utf-8"))
+
+    def _read_json_body(self):
+        try:
+            length = int(self.headers.get("Content-Length", 0))
+        except ValueError:
+            length = 0
+        if length > 16384:
+            raise ValueError("Request too large")
+        body = self.rfile.read(length).decode("utf-8") if length else ""
+        data = json.loads(body) if body else {}
+        if not isinstance(data, dict):
+            raise ValueError("Body must be a JSON object")
+        return data
 
     def do_OPTIONS(self):
         self._set_headers(200)
@@ -84,11 +102,33 @@ class BenefitsHandler(BaseHTTPRequestHandler):
                 self.wfile.write(b"templates/index.html not found.")
             return
 
+        if path == "/sync":
+            with open(os.path.join(os.path.dirname(__file__), "templates", "sync.html"), "rb") as f:
+                self._set_headers(200, "text/html; charset=utf-8")
+                self.wfile.write(f.read())
+            return
+
+        if path == "/api/sync/status":
+            self._send_json(200, county_sync.status())
+            return
+
+        if path == "/api/sync/report":
+            report = county_sync.load_report()
+            if report is None:
+                self._send_json(404, {"detail": "No scan has been run yet"})
+            else:
+                self._send_json(200, report)
+            return
+
         if path == "/api/search":
             query_params = urllib.parse.parse_qs(parsed.query)
             q = query_params.get("q", [""])[0]
             program = query_params.get("program", ["All"])[0]
-            limit = int(query_params.get("limit", [250])[0])
+            try:
+                limit = max(1, min(int(query_params.get("limit", [250])[0]), 250))
+            except ValueError:
+                limit = 250
+            q = q[:300]
 
             results = get_index().search(q, program_filter=program, top_k=limit)
             self._set_headers(200)
@@ -105,73 +145,52 @@ class BenefitsHandler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         parsed = urllib.parse.urlparse(self.path)
+        if parsed.path == "/api/sync/scan":
+            # A scan downloads hundreds of files from the County, so it is admin-only.
+            try:
+                mode = str(self._read_json_body().get("mode", "quick"))
+            except ValueError as exc:
+                self._send_json(400, {"detail": str(exc)})
+                return
+            if not county_sync.admin_enabled():
+                self._send_json(503, {"detail": "Scans are disabled: set ADMIN_TOKEN on the server"})
+            elif not county_sync.check_admin(self.headers.get("X-Admin-Token")):
+                self._send_json(403, {"detail": "Invalid admin token"})
+            elif mode not in ("quick", "full"):
+                self._send_json(400, {"detail": "mode must be 'quick' or 'full'"})
+            elif not county_sync.start_scan(mode):
+                self._send_json(409, {"detail": "A scan is already running"})
+            else:
+                self._send_json(200, {"started": True, "mode": mode})
+            return
+
         if parsed.path == "/api/ask":
-            content_length = int(self.headers.get("Content-Length", 0))
-            body = self.rfile.read(content_length).decode("utf-8")
-            data = json.loads(body) if body else {}
-
-            question = data.get("question", "").strip()
-            program = data.get("program", "All")
-
-            if not question:
-                self._set_headers(400)
-                self.wfile.write(json.dumps({"error": "Missing question"}).encode("utf-8"))
+            try:
+                content_length = int(self.headers.get("Content-Length", 0))
+            except ValueError:
+                content_length = 0
+            if content_length > 16384:
+                self._set_headers(413)
+                self.wfile.write(json.dumps({"error": "Request too large"}).encode("utf-8"))
                 return
-
-            retrieved = get_index().search(question, program_filter=program, top_k=4)
-            if not retrieved:
-                self._set_headers(200)
-                self.wfile.write(json.dumps({
-                    "answer": "No matching policy sections found in the current index.",
-                    "sources": []
-                }).encode("utf-8"))
-                return
-
-            context_str = "\n\n---\n\n".join([
-                f"Document: {r.get('title', '')}\nProgram: {', '.join(r.get('programs', []))}\nOfficial Link: {r.get('official_url', '')}\nExcerpt:\n{r.get('matched_excerpt') or r.get('text') or r.get('summary', '')}"
-                for r in retrieved
-            ])
-
-            program_name = "All San Diego County Benefits" if program == "All" else f"San Diego County {program} Program (Official Folder)"
-
-            system_prompt = f"""You are a helpful and precise policy navigation assistant for {program_name}.
-Base your answers STRICTLY on the official policy manual excerpts provided below for {program}.
-Do NOT extrapolate or cite regulations from other welfare programs.
-Cite the specific chapter/article and document title for each rule.
-
-OFFICIAL POLICY EXCERPTS ({program}):
-{context_str}
-
-USER QUESTION:
-{question}
-
-ANSWER WITH CITATIONS:"""
-
-            answer = generate_answer(system_prompt)
-            provider = provider_label() if answer else "Direct Manual Evidence"
-
-            if not answer:
-                answer = (
-                    f"Relevant policy rules regarding '{question}':\n\n"
-                    + "\n\n".join([f"• **{r['title']}** ({', '.join(r['programs'])}):\n> {r['text'][:350]}..." for r in retrieved[:3]])
-                    + "\n\n*(Set AI_PROVIDER (and AI_API_KEY for a hosted LLM) to enable full conversational synthesis.)*"
+            try:
+                body = self.rfile.read(content_length).decode("utf-8")
+                data = json.loads(body) if body else {}
+                if not isinstance(data, dict):
+                    raise ValueError("Body must be a JSON object")
+                result = answer_question(
+                    get_index(),
+                    str(data.get("question", "")),
+                    str(data.get("program", "All")),
+                    self.client_address[0],
                 )
+            except ValueError as exc:
+                self._set_headers(400)
+                self.wfile.write(json.dumps({"error": str(exc)}).encode("utf-8"))
+                return
 
             self._set_headers(200)
-            self.wfile.write(json.dumps({
-                "answer": answer,
-                "provider": provider,
-                "sources": [{
-                    "id": r["id"],
-                    "title": r["title"],
-                    "programs": r["programs"],
-                    "local_pdf_url": r.get("local_pdf_url", f"/pdfs/{r['id']}.pdf"),
-                    "official_url": r["official_url"],
-                    "published_on": r.get("published_on", ""),
-                    "summary": r.get("summary", ""),
-                    "snippet": r.get("summary") or (r["text"][:250] + "...")
-                } for r in retrieved]
-            }).encode("utf-8"))
+            self.wfile.write(json.dumps(result).encode("utf-8"))
             return
 
         self._set_headers(404, "text/plain")

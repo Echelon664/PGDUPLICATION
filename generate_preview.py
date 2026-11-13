@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 import json, html, os, re
 
-TEMPLATE_PATH = "/Users/echelon619/Desktop/ChrisPG/templates/index.html"
-DOCS_PATH = "/Users/echelon619/Desktop/ChrisPG/data/documents.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+TEMPLATE_PATH = os.path.join(BASE_DIR, "templates", "index.html")
+DOCS_PATH = os.path.join(BASE_DIR, "data", "documents.json")
 
 with open(DOCS_PATH, 'r', encoding='utf-8') as f:
     full_docs = json.load(f)
@@ -170,6 +171,7 @@ for d in full_docs:
         "local_pdf_url": d.get("local_pdf_url", ""),
         "official_url": d.get("official_url", ""),
         "summary": d.get("summary", ""),
+        "source_missing": bool(d.get("source_missing")),
         "content_text": content_snippet
     })
 
@@ -280,6 +282,7 @@ html_template = f"""<!DOCTYPE html>
         <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=542" target="_blank" class="hover:text-amber-300 underline transition">CalFresh Official (542) ↗</a>
         <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=448" target="_blank" class="hover:text-amber-300 underline transition">CalWORKs Official (448) ↗</a>
         <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=599" target="_blank" class="hover:text-amber-300 underline transition">Medi-Cal Official (599) ↗</a>
+        <a href="/sync" class="hover:text-amber-300 underline transition">County Source Check</a>
       </div>
     </div>
 
@@ -830,7 +833,7 @@ html_template = f"""<!DOCTYPE html>
       if (words.length === 0) return escapeHtml(text);
       let escaped = escapeHtml(text);
       words.forEach(w => {{
-        const safeW = w.replace(/[.*+?^${{}}()|[\]\\]/g, '\\$&');
+        const safeW = w.replace(/[.*+?^${{}}()|[\\]\\\\]/g, '\\\\$&');
         const reg = new RegExp('(' + safeW + ')', 'gi');
         escaped = escaped.replace(reg, '<mark class="bg-amber-200 text-amber-950 font-bold px-0.5 rounded">$1</mark>');
       }});
@@ -1064,7 +1067,7 @@ html_template = f"""<!DOCTYPE html>
              <span>Cross-Program Search (All 3 County Benefit Guides)</span>
            </div>`;
 
-      document.getElementById('aiAnswerText').innerHTML = scopeBadge + '<div class="leading-relaxed">' + escapeHtml(answerText).replace(/\n/g, '<br>') + '</div>';
+      document.getElementById('aiAnswerText').innerHTML = scopeBadge + '<div class="leading-relaxed">' + escapeHtml(answerText).replace(/\\n/g, '<br>') + '</div>';
 
       const sourcesList = document.getElementById('aiSourcesList');
       sourcesList.innerHTML = '';
@@ -1072,7 +1075,7 @@ html_template = f"""<!DOCTYPE html>
         sources.forEach(s => {{
           const el = document.createElement('div');
           el.className = 'bg-white border border-blue-200 rounded-lg p-2.5 text-xs shadow-2xs flex flex-col justify-between';
-          const localPdf = resolveLocalPdfUrl(s.local_pdf_url, s.id);
+          const localPdf = escapeHtml(docOpenUrl(s));
           el.innerHTML = `
             <div class="mb-2">
               <div class="font-bold text-slate-800 line-clamp-1">${{escapeHtml(s.title)}}</div>
@@ -1086,7 +1089,7 @@ html_template = f"""<!DOCTYPE html>
               <div class="flex items-center gap-1.5">
                 <button type="button" onclick="viewDocPdf('${{s.id}}')" class="bg-emerald-600 hover:bg-emerald-700 text-white px-2.5 py-1 rounded font-bold transition inline-flex items-center gap-1 shadow-2xs cursor-pointer">
                   <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
-                  <span>View in Page</span>
+                  <span>${{isSourceMissing(s) ? 'County Site' : 'View in Page'}}</span>
                 </button>
                 <a href="${{localPdf}}" target="_blank" class="bg-red-600 hover:bg-red-700 text-white p-1 rounded transition" title="Open in dedicated tab">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
@@ -1108,8 +1111,8 @@ html_template = f"""<!DOCTYPE html>
         return;
       }}
       const topMatch = matches[0];
-      const answer = `Based on County of San Diego **${{topMatch.programs.join('/')}}** policy manual (**${{topMatch.title}}**):\n\n` +
-        `• **Quick Policy Summary**: ${{topMatch.summary || topMatch.snippet.slice(0, 300)}}\n\n` +
+      const answer = `Based on County of San Diego **${{topMatch.programs.join('/')}}** policy manual (**${{topMatch.title}}**):\\n\\n` +
+        `• **Quick Policy Summary**: ${{topMatch.summary || topMatch.snippet.slice(0, 300)}}\\n\\n` +
         `This policy rule applies strictly under ${{topMatch.programs.join('/')}} guidelines. For full administrative regulations, open the complete official PDF linked below.`;
 
       renderAIAnswer(answer, matches.slice(0, 4));
@@ -1123,6 +1126,20 @@ html_template = f"""<!DOCTYPE html>
         return pdfUrl;
       }}
       return (LOCAL_SERVER_BASE || '') + '/pdfs/' + encodeURIComponent(docId) + '.pdf';
+    }}
+
+    // Entries without a bundled County document link out to the County site.
+    function isSourceMissing(doc) {{
+      const base = (doc && DOCS_BY_ID[doc.id]) || doc || {{}};
+      return !!(base.source_missing || (doc && doc.source_missing));
+    }}
+
+    function docOpenUrl(doc) {{
+      if (isSourceMissing(doc)) {{
+        const base = DOCS_BY_ID[doc.id] || doc;
+        return base.official_url || doc.official_url || '#';
+      }}
+      return resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
     }}
 
     // In-Page PDF Viewer Modal Functions
@@ -1192,6 +1209,10 @@ html_template = f"""<!DOCTYPE html>
           summary: fallbackSummary || '',
           local_pdf_url: fallbackUrl || ''
         }};
+      }}
+      if (isSourceMissing(doc)) {{
+        window.open(docOpenUrl(doc), '_blank', 'noopener');
+        return;
       }}
       const pdfUrl = resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
       openPdfModal(pdfUrl, doc.title, (doc.programs || []).join(' / '), doc.summary || doc.snippet || '', doc.chapter || doc.id);
@@ -1264,8 +1285,9 @@ html_template = f"""<!DOCTYPE html>
           ? 'bg-purple-100 text-purple-800 border-purple-200' 
           : 'bg-teal-100 text-teal-800 border-teal-200';
 
-      const localPdfLink = resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
-      const revisionStr = doc.published_on ? doc.published_on.slice(0, 10) : 'Active';
+      const localPdfLink = escapeHtml(docOpenUrl(doc));
+      const missing = isSourceMissing(doc);
+      const revisionStr = doc.published_on ? doc.published_on.slice(0, 10) : 'Not available';
 
       let secBadgeHtml = '';
       if (doc.section_num) {{
@@ -1290,6 +1312,7 @@ html_template = f"""<!DOCTYPE html>
             <span class="px-2 py-0.5 rounded text-xs font-bold border ${{progBadgeColor}}">${{(doc.programs || []).join(' / ')}}</span>
             ${{secBadgeHtml}}
             <span class="font-bold text-slate-800 text-xs sm:text-sm">${{escapeHtml(doc.title)}}</span>
+            ${{missing ? '<span class="px-2 py-0.5 rounded text-xs font-bold border bg-amber-100 text-amber-900 border-amber-300">County document not bundled</span>' : ''}}
           </div>
           
           <!-- Quick PDF Summary Everywhere -->
@@ -1324,13 +1347,13 @@ html_template = f"""<!DOCTYPE html>
           <div class="flex items-center gap-3 text-xs text-slate-400 mt-1">
             <span>Section: <strong class="text-slate-600">${{escapeHtml(doc.section_num ? (doc.section_num + (doc.section_title ? (' • ' + doc.section_title) : '')) : (doc.chapter || doc.id))}}</strong></span>
             <span>•</span>
-            <span>Revised: ${{revisionStr}}</span>
+            <span>Published by County: ${{revisionStr}}</span>
           </div>
         </div>
         <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
           <button type="button" onclick="viewDocPdf('${{doc.id}}')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center gap-1.5 shadow-2xs cursor-pointer">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
-            <span>View PDF in Page</span>
+            <span>${{missing ? 'Open County Site' : 'View PDF in Page'}}</span>
           </button>
           <a href="${{localPdfLink}}" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-2.5 py-2 rounded-lg transition inline-flex items-center gap-1 shadow-2xs" title="Open in new window or tab">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>

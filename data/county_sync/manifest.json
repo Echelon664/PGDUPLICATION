@@ -1,0 +1,5173 @@
+{
+ "verified_at": "2026-11-13T06:29:11Z",
+ "files": {
+  "282479": {
+   "title": "SN 18-02 Treatment Of Child Support Payments Issued In Error",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2018"
+   ],
+   "published_on": "2018-02-05T08:00:00Z",
+   "hash": "6ddbe32551b573cf3dfa99ad979d3e39f43f2bd821ec73a08e8cb76c4ef66448",
+   "size": 30500,
+   "doc_id": "cf-107"
+  },
+  "282483": {
+   "title": "SN 20-01_CalFresh_COLA_for_FFY_2021",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2020"
+   ],
+   "published_on": "2020-09-16T07:00:00Z",
+   "hash": "871fef88f25478dea8eddc469dd6bb24fdfd25b966f09ccab2d89bd0b5e0919a",
+   "size": 518202,
+   "doc_id": "cf-109"
+  },
+  "282484": {
+   "title": "SN 20-02 Disaster COLA for FFY 2021",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2020"
+   ],
+   "published_on": "2020-10-06T07:00:00Z",
+   "hash": "994bb7bd98031cdf5e537c985f55b17c8ccf071fc257c7b8e9e2e8c6b986cd10",
+   "size": 67595,
+   "doc_id": "cf-111"
+  },
+  "282485": {
+   "title": "SN_20-03_Implementation_of_the_New_Statewide_Minimum_Wage",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2020"
+   ],
+   "published_on": "2020-11-03T08:00:00Z",
+   "hash": "d6473a2741ded6984c2cb3c2be9355e29fdd4fa76f587ba6eb268df2db194f4a",
+   "size": 140785,
+   "doc_id": "cf-112"
+  },
+  "282498": {
+   "title": "SN 22-01 Earned Income Tax Credit Outreach",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2022"
+   ],
+   "published_on": "2022-03-22T07:00:00Z",
+   "hash": "fbf76c52b0904c811e30e14971b8f058e0f7ae85d976812c4beb75d2b9b5172d",
+   "size": 681501,
+   "doc_id": "cf-119"
+  },
+  "282497": {
+   "title": "SN 22-02 \u2013 Supplemental Security Income (SSI) and State Supplementary Payment (SSP) Cost of Living Adjustment (COLA)",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2022"
+   ],
+   "published_on": "2022-02-11T08:00:00Z",
+   "hash": "4b0168196548acaf85547e2c59b93098b3c52a60bf713f3d1b1a2d65453d5116",
+   "size": 150472,
+   "doc_id": "cf-122"
+  },
+  "282499": {
+   "title": "SN 22-03 Skimming and Scamming",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2022"
+   ],
+   "published_on": "2022-07-25T17:54:03Z",
+   "hash": "5e0e9ecbb739317613b4bf3aab877515c9482ef4dec80a857ca5cf1f89c81f21",
+   "size": 64204,
+   "doc_id": "cf-123"
+  },
+  "282501": {
+   "title": "SN 22-04 Wildfires in Siskiyou Placer El Dorado Riverside Madera and Madoc",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2022"
+   ],
+   "published_on": "2022-09-28T07:00:00Z",
+   "hash": "41d13a308f37b6d666daa11940f7f090a6345c468db12ef9888000bdf586f422",
+   "size": 87988,
+   "doc_id": "cf-124"
+  },
+  "282502": {
+   "title": "SN 22-05 CalFresh COLA for FFY 2023",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2022"
+   ],
+   "published_on": "2022-11-18T21:57:23Z",
+   "hash": "7f5f9e877f1fa9873e18c1b53e458ecab09650b545b2e7a57104fe6a7b65f9cd",
+   "size": 163222,
+   "doc_id": "cf-125"
+  },
+  "282500": {
+   "title": "SN 22-05 CalFresh Cost of Living Adjustment (COLA) for Federal Fiscal Year (FFY) 2023",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2022"
+   ],
+   "published_on": "2022-09-21T21:52:42Z",
+   "hash": "d4a14405cf5d53c8734f6cff458e23bcaef79ebfaaabb0034a0076b7cd17c776",
+   "size": 96964,
+   "doc_id": "cf-126"
+  },
+  "282503": {
+   "title": "SN_22-06_Implementation_of_the_New_Statewide_Minimum_Wage",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2022"
+   ],
+   "published_on": "2022-11-28T21:56:09Z",
+   "hash": "94b9cb81580aa59044c1b5b1a38c0f48e0905308ac7b578ee3f37143936e1582",
+   "size": 148872,
+   "doc_id": "cf-127"
+  },
+  "282504": {
+   "title": "SN 22-07 Social Security Administration - Cost of Living Adjustment",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2022"
+   ],
+   "published_on": "2022-12-08T08:00:00Z",
+   "hash": "48d500da0b0b9e8e09d7645b4af338f28f288064d9c993fcfb4e1a0132ea0291",
+   "size": 96263,
+   "doc_id": "cf-128"
+  },
+  "282505": {
+   "title": "SN 23-01 Supplemental Security Income (SSI) and State Supplementary Payment (SSP) Cost of Living Adjustment (COLA)",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2023"
+   ],
+   "published_on": "2023-01-13T21:57:28Z",
+   "hash": "ae58652515828562f43848f0ecb10fa6cb200de9094c71a284059d568341de87",
+   "size": 87056,
+   "doc_id": "cf-129"
+  },
+  "282506": {
+   "title": "SN 23-02 Victims Affected by the Earthquake in Humboldt County",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2023"
+   ],
+   "published_on": "2023-01-31T16:29:59Z",
+   "hash": "df05dc5afb9e819130e5582ffb208adaaa10c356c48545a848d0615212e6ffc6",
+   "size": 88639,
+   "doc_id": "cf-130"
+  },
+  "282507": {
+   "title": "SN 23-03 Earned Income Tax Credit Outreach",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2023"
+   ],
+   "published_on": "2023-03-01T19:54:55Z",
+   "hash": "0c67a43d7131c3fec629cd700274dde12f1890b02c7619d53ed9251023c806d4",
+   "size": 416120,
+   "doc_id": "cf-131"
+  },
+  "282508": {
+   "title": "SN 23-04 CalFresh Cost of Living Adjustment (COLA) for Federal Fiscal Year (FFY) 2024",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2023"
+   ],
+   "published_on": "2023-09-25T22:13:42Z",
+   "hash": "55932e92b7b4e2477582c2f70dd729005a3180bd0833b46d3634802bcdc4511b",
+   "size": 181152,
+   "doc_id": "cf-132"
+  },
+  "282509": {
+   "title": "SN 23-05 Social Security Administration - COLA FFY 2024",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2023"
+   ],
+   "published_on": "2023-12-01T08:00:00Z",
+   "hash": "42e8e54560a3dbc1d1e73c29388bcd5490e5953cae082db3d347e067562e8ae7",
+   "size": 25137,
+   "doc_id": "cf-133"
+  },
+  "282810": {
+   "title": "SN 23-06 Implementation of the New Statewide Minimum Wage",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2023"
+   ],
+   "published_on": "2024-01-09T22:19:11Z",
+   "hash": "0c597b5baef842228821e8a2d21a917a98cf3683397f7f5d649bec1ccecd00b8",
+   "size": 28625,
+   "doc_id": "cf-134"
+  },
+  "436357": {
+   "title": "SN 24-01 Supplemental Security Income (SSI) and State Supplementary Payment (SSP) Cost of Living Adjustment (COLA)",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2024"
+   ],
+   "published_on": "2024-01-19T23:57:51Z",
+   "hash": "1bde70ddad55ac60f00433a822f5543e871c1e0a8e5fe5cde2ce5efcf2e11adc",
+   "size": 85212,
+   "doc_id": "cf-135"
+  },
+  "1208354": {
+   "title": "SN 24-02 EITC- Earned Income Tax Credit Outreach",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2024"
+   ],
+   "published_on": "2024-02-28T18:52:02Z",
+   "hash": "9fc147fea2331193f0f80a0ed8df872966959d35e258e119620f7341bef5ad79",
+   "size": 350952,
+   "doc_id": "cf-136"
+  },
+  "27870165": {
+   "title": "SN 24-03 CalFresh Cost-of-Living Adjustment (COLA) for Federal Fiscal Year (FFY) 2025",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2024"
+   ],
+   "published_on": "2024-09-30T16:45:59Z",
+   "hash": "b180c3c0fa03800da8c16c54f45fcfbdc665901db8161fc6cf436c4bb9c42043",
+   "size": 300544,
+   "doc_id": "cf-137"
+  },
+  "38492278": {
+   "title": "SN 24-04_Implementation_of_the_New_Statewide_Minimum_Wage",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2024"
+   ],
+   "published_on": "2024-12-10T22:57:41Z",
+   "hash": "7c1dda963ab1d5abfadf674eb1070d80b3989958b459f1d1e6471d5e8d8d96a4",
+   "size": 169555,
+   "doc_id": "cf-138"
+  },
+  "39747204": {
+   "title": "SN 24-05 Social Security Administration - COLA FFY 2025",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2024"
+   ],
+   "published_on": "2024-12-12T18:14:19Z",
+   "hash": "a976d0a40892158aba0bd23e0ef0faaebb0270460f2f729a0c40609ff98323e3",
+   "size": 36701,
+   "doc_id": "cf-139"
+  },
+  "39928581": {
+   "title": "25-01 Supplemental Security Income (SSI) and State Supplementary Payment (SSP) Cost of Living Adjustment (COLA)",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2025"
+   ],
+   "published_on": "2025-01-23T20:02:04Z",
+   "hash": "041413dfcd6e79699b59ec41fd4c0875adcabf3e3f78fcf8f5617aab42baf178",
+   "size": 118337,
+   "doc_id": "cf-140"
+  },
+  "40938808": {
+   "title": "SN 25-02 CalFresh Cost of Living Adjustment (COLA) for Federal Fiscal Year (FFY) 2026",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2025"
+   ],
+   "published_on": "2025-09-30T22:03:02Z",
+   "hash": "46b1e679b35bbb46209a5a74036249161f46fc4b3f6fd00f0c879d720970562f",
+   "size": 84263,
+   "doc_id": "cf-141"
+  },
+  "41195989": {
+   "title": "SN 25-03 -Social Security Administration (SSA) Cost of Living Adjustment (COLA) -2026",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2025"
+   ],
+   "published_on": "2025-12-23T23:00:55Z",
+   "hash": "f6379736175cd4624d13a414494cddde9a03b555ece007a69f59a000d4d090bf",
+   "size": 149254,
+   "doc_id": "cf-142"
+  },
+  "41192279": {
+   "title": "SN 25-04 Joint SN Implementation of the New Statewide Minimum Wage",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2025"
+   ],
+   "published_on": "2025-12-23T00:03:39Z",
+   "hash": "5008d533ff8a6a6bd3b5099479c197704d08f7509c208554927f386174877b26",
+   "size": 149751,
+   "doc_id": "cf-143"
+  },
+  "41359619": {
+   "title": "SN 26-01 Supplemental Security Income (SSI) and State Supplementary Payment (SSP) Cost of Living Adjustment",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2026"
+   ],
+   "published_on": "2026-02-24T16:45:07Z",
+   "hash": "4704b62d1d22e068ea326f6cc4a3b2f8e74329ec31675c032507b7093f091af9",
+   "size": 137632,
+   "doc_id": "cf-144"
+  },
+  "41459432": {
+   "title": "SN 26-02 Joint Special Notice - Earned Income Tax Credit (EITC) Outreach 2026",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2026"
+   ],
+   "published_on": "2026-03-25T20:42:11Z",
+   "hash": "a8bc5deb862739a9789e80b06c85cfed9285b96f1274f026b56be6d6c574dca2",
+   "size": 741410,
+   "doc_id": "cf-145"
+  },
+  "42023785": {
+   "title": "SN 26-03 CalFresh Cost of Living Adjustment (COLA) for Federal Fiscal Year (FFY) 2027",
+   "program": "CalFresh",
+   "path": [
+    "Special Notices",
+    "2026"
+   ],
+   "published_on": "2026-10-02T14:22:48Z",
+   "hash": "217d4bbb74ba6bf28cd3ec59ea2f536498f183f70d7d5c6bf149d1801baae145",
+   "size": 236812,
+   "doc_id": "cf-146"
+  },
+  "282455": {
+   "title": "63-101 Household Concept",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2023-04-04T07:00:00Z",
+   "hash": "01dbf3b200ac72e11954c1e4418cf6f7fc023f66ac0766902b76b69925a1dbde",
+   "size": 100171,
+   "doc_id": "cf-000"
+  },
+  "282452": {
+   "title": "63-103 Filing an Application",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2022-06-06T07:00:00Z",
+   "hash": "b105a20fdeb9561a5b0147a18548de95f69128b65b61b6e7634425ce1e41e672",
+   "size": 126737,
+   "doc_id": "cf-002"
+  },
+  "282450": {
+   "title": "63-105 Expedited Services",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2020-08-01T14:00:00Z",
+   "hash": "00c7417f7286f1a9d8729a75d8d5639eb45443a63c2ebafbbfa61895ad2bd478",
+   "size": 77346,
+   "doc_id": "cf-003"
+  },
+  "282447": {
+   "title": "63-107 Household Cooperation",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2019-12-12T08:00:00Z",
+   "hash": "8335c6dc1761a637f261d655090479c1b700626fd38296b5d6ce0fe10b498628",
+   "size": 87218,
+   "doc_id": "cf-004"
+  },
+  "36044955": {
+   "title": "63-109 Time Limits and Delays",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2024-11-22T23:54:56Z",
+   "hash": "1477ae5fcac37a24f6ffb61a24eb19919809f5edd7b26b5a31118e6f7830513a",
+   "size": 146618,
+   "doc_id": "cf-005"
+  },
+  "282453": {
+   "title": "63-113_Authorized_Representatives",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2023-03-07T22:31:05Z",
+   "hash": "ed004e131e22b2569392960598b176ba340eebde0194101b467adc9d397f6d9c",
+   "size": 101226,
+   "doc_id": "cf-008"
+  },
+  "282448": {
+   "title": "63-115 Interview Requirements",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2020-08-31T07:00:00Z",
+   "hash": "544eb2e7163f4f46b891d08ec27cca79f869e3a1bd1209a571ad65f337b3757d",
+   "size": 65124,
+   "doc_id": "cf-009"
+  },
+  "282446": {
+   "title": "63-117 Verification and Documentation",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2021-09-29T08:00:00Z",
+   "hash": "3df5a0b5e1f37d0e764ce069486f53eb5c4498c7b1dfd214ef7ee6f275a35207",
+   "size": 114275,
+   "doc_id": "cf-010"
+  },
+  "41832992": {
+   "title": "63-118 Income and Eligibility Verification System",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2026-07-27T22:23:00Z",
+   "hash": "2d7d7565754086af93958241d5222807b7c55cac4f5942b622a6cddeb338f892",
+   "size": 161988,
+   "doc_id": "cf-011"
+  },
+  "282445": {
+   "title": "63-120 Categorical Eligibility",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2019-06-18T07:00:00Z",
+   "hash": "54e0d0ec505598dfe08aa30c794e806d253d652ddad80227b753f56ad2243554",
+   "size": 98734,
+   "doc_id": "cf-012"
+  },
+  "40166007": {
+   "title": "63-121 Denial Withdrawal Granting",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2025-03-18T21:04:39Z",
+   "hash": "bf160433e3f9e556c2c0685113ce0aa17072fc54e52b33268c2c5fa174291ec6",
+   "size": 122166,
+   "doc_id": "cf-013"
+  },
+  "2179592": {
+   "title": "63-123_Residents of Drug Alcohol Treatment Center and Group Living Arrangement",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2024-04-23T15:07:44Z",
+   "hash": "cd5066d76d046b04a54894ff1bcc3e90cbbc023c38b407b82e77ab9dcd91f6d8",
+   "size": 176050,
+   "doc_id": "cf-015"
+  },
+  "7588231": {
+   "title": "63-124_Domestic_Violence_Shelters",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2024-06-27T22:10:51Z",
+   "hash": "fa2f5e675fa21ea873bd794fa2dc9a906071a609aae7e4d2a5959bfa0ac66316",
+   "size": 122994,
+   "doc_id": "cf-016"
+  },
+  "282451": {
+   "title": "63-125 Income Reporting Threshold (IRT)",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-100 Application Process"
+   ],
+   "published_on": "2022-04-11T18:40:57Z",
+   "hash": "f70c82ea4081d66649c921a46ae00e51647a4e777262a3a579eaad89285c52e7",
+   "size": 106443,
+   "doc_id": "cf-018"
+  },
+  "42010833": {
+   "title": "63-1101 CalFresh Eligibility Standards Table",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-1100 Handbook"
+   ],
+   "published_on": "2026-09-28T22:31:45Z",
+   "hash": "7883acbc9fe976305d2f9e5117b01846e255ac2e1ada8db17c5989538b702e14",
+   "size": 189272,
+   "doc_id": "cf-006"
+  },
+  "282396": {
+   "title": "63-1103 Definitions and Examples",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-1100 Handbook"
+   ],
+   "published_on": "2026-09-28T22:28:48Z",
+   "hash": "6af7fbaee0a60cbcad4eb6dc83a873630c7ee3340149b4811d38c489e2482128",
+   "size": 235763,
+   "doc_id": "cf-007"
+  },
+  "40490508": {
+   "title": "63-151 Non Financial Criteria",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2025-06-05T16:31:07Z",
+   "hash": "0731340250456f750b8d646d9552eb28ccbe792011f7460550ccadaa1122bc9c",
+   "size": 75875,
+   "doc_id": "cf-019"
+  },
+  "282429": {
+   "title": "63-152 Identity and Residency",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2020-11-01T15:00:00Z",
+   "hash": "d909c27a8b57b733647517925e7d8f5df40927e3c4a4d4d0dbfd56416f2aef20",
+   "size": 70205,
+   "doc_id": "cf-020"
+  },
+  "41473882": {
+   "title": "63-153 Citizenship Status and Eligibility for CalFresh",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2026-04-01T15:06:14Z",
+   "hash": "09535c46516ab6f6360ae8cbd7babb987560ebe468b1a31c01faf2cfed19989c",
+   "size": 141057,
+   "doc_id": "cf-021"
+  },
+  "41473884": {
+   "title": "63-154 Non Citizen Status",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2026-04-01T15:07:14Z",
+   "hash": "60e724d16211c121217080a78f5e9038cba4c64fefac79bf4cb127201556d731",
+   "size": 183199,
+   "doc_id": "cf-022"
+  },
+  "41691635": {
+   "title": "63-156 California Food Assistance Program",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2026-06-05T21:38:16Z",
+   "hash": "c9b7bc0dd4766a5b217bde6406b578815baa4254cacf3651e3ec6ee7c254e72b",
+   "size": 200264,
+   "doc_id": "cf-023"
+  },
+  "39868109": {
+   "title": "63-157 Sponsored Noncitizens",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2025-01-08T16:32:25Z",
+   "hash": "cd233623690d8fd018d1479820ed9913443ff4571fa2356670aa9b3f7118aa12",
+   "size": 162891,
+   "doc_id": "cf-024"
+  },
+  "7135238": {
+   "title": "63-159 Voluntary Quit and Reduction of Work Hours",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2024-05-20T21:56:54Z",
+   "hash": "76e84a99e2f4525ee5aa5eed01b7d2217d779331ed64571f40a7988eaf501c3d",
+   "size": 156923,
+   "doc_id": "cf-025"
+  },
+  "12999108": {
+   "title": "63-161 Social Security Number Requirement",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2024-08-16T17:43:35Z",
+   "hash": "72fc4e387282e480751130ef66d8f765681b5674b48c982052abb0c49c42db46",
+   "size": 147965,
+   "doc_id": "cf-026"
+  },
+  "41691512": {
+   "title": "63-162 Students",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2026-06-05T21:28:26Z",
+   "hash": "a9b5a4f49f29238bf4738f65b1ad772e8f115f784a4c0a480472eea8fe47910a",
+   "size": 169965,
+   "doc_id": "cf-027"
+  },
+  "282425": {
+   "title": "63-166 Food Distribution Program on Indian Reservations",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2020-01-24T08:00:00Z",
+   "hash": "2e8116071b6c7ab314681b3c7e4ecbbed19f69e429f78d78232fc47636fe65fa",
+   "size": 73154,
+   "doc_id": "cf-028"
+  },
+  "282431": {
+   "title": "63-167_Fraud_Prevention",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2022-08-10T20:33:18Z",
+   "hash": "c42415f0781a52d64e00e54fae8fc4eb0027ef8cc456a1c4e125d04fe8c30dbb",
+   "size": 86903,
+   "doc_id": "cf-029"
+  },
+  "40130299": {
+   "title": "63-168 Electronic Theft",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2025-03-10T20:32:00Z",
+   "hash": "f8a783a771d41b1dbb4fe4179918f5c29c3f349f773c1b92f0dbb1e38742be4a",
+   "size": 143639,
+   "doc_id": "cf-031"
+  },
+  "40738572": {
+   "title": "63-169 Restaurant Meals Program (RMP)",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-150 Non-Financial"
+   ],
+   "published_on": "2025-08-08T15:02:07Z",
+   "hash": "9768bdc5b7f12b7cd011962d75ec8409caf9e5c93d7fcb37c3650919dc4268ab",
+   "size": 121152,
+   "doc_id": "cf-032"
+  },
+  "41945058": {
+   "title": "63-201 Resource Eligibility Determination",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-200 Resources"
+   ],
+   "published_on": "2026-09-03T20:31:43Z",
+   "hash": "c4339fc57e7883dd49ab619e1ecf9de9e992d16a78570373b614bdc7a08f1b23",
+   "size": 184413,
+   "doc_id": "cf-033"
+  },
+  "41945068": {
+   "title": "63-203 Excluded Resources",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-200 Resources"
+   ],
+   "published_on": "2026-09-03T20:32:59Z",
+   "hash": "266e087bc1c509ba7c53dcba2698ab75e392f071a67746701ca890ff85a63aa5",
+   "size": 149852,
+   "doc_id": "cf-034"
+  },
+  "282512": {
+   "title": "63-222 Earned Income",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-220 Income"
+   ],
+   "published_on": "2022-07-13T19:13:42Z",
+   "hash": "b6e077a843c71b76905c280a2dc72ea64b1ea29a9a41b95ac8660971b3eec0e4",
+   "size": 72658,
+   "doc_id": "cf-035"
+  },
+  "282513": {
+   "title": "63-223_Unearned_Income",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-220 Income"
+   ],
+   "published_on": "2022-07-08T07:00:00Z",
+   "hash": "c460f86f3655b6b559f91b7c03465f9245c9d1feb0577d1970ba0639c673e39a",
+   "size": 89465,
+   "doc_id": "cf-036"
+  },
+  "282511": {
+   "title": "63-224 Income Exclusions",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-220 Income"
+   ],
+   "published_on": "2022-05-16T17:35:41Z",
+   "hash": "4901bea8c976900f11de38decb5064c7c363cb664f41b00d57000c4a99507b5a",
+   "size": 124116,
+   "doc_id": "cf-038"
+  },
+  "282514": {
+   "title": "63-225 Self-Employment Income",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-220 Income"
+   ],
+   "published_on": "2023-05-10T07:00:00Z",
+   "hash": "51af430f67da2b5579bdc72f7c93c5cee17e7dc2dd36eedf1705f5d9f11768da",
+   "size": 81648,
+   "doc_id": "cf-039"
+  },
+  "282459": {
+   "title": "63-231 Standard and Earned Income Deductions",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-230 Income Deductions"
+   ],
+   "published_on": "2023-12-15T08:00:00Z",
+   "hash": "60a3361b2cac756721341294e7bf20ea82356d17d76bafc115b86dea972905e8",
+   "size": 91787,
+   "doc_id": "cf-040"
+  },
+  "36044943": {
+   "title": "63-232 Medical Expenses and Deductions",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-230 Income Deductions"
+   ],
+   "published_on": "2024-11-22T23:53:29Z",
+   "hash": "e10528c29bc542e92051d9db489aba49f141df49ca4b82730fd99260586f7885",
+   "size": 169699,
+   "doc_id": "cf-041"
+  },
+  "282458": {
+   "title": "63-233 Dependent Care Deduction",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-230 Income Deductions"
+   ],
+   "published_on": "2023-01-31T08:00:00Z",
+   "hash": "095ef0d169a7992fa5ca96b54ca9ce81c56c2ef3cd98b13944ae68fc958629de",
+   "size": 71070,
+   "doc_id": "cf-042"
+  },
+  "41263620": {
+   "title": "63-234 Shelter Deductions and Utility Allowances for Unhoused Households",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-230 Income Deductions"
+   ],
+   "published_on": "2026-01-21T20:11:10Z",
+   "hash": "7b74f37a48295b5323ba74ef64e16e07436ddb9b137e587477dcda5aa33d0cf7",
+   "size": 144352,
+   "doc_id": "cf-043"
+  },
+  "41263678": {
+   "title": "63-235 Shelter Costs and Utility Allowances",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-230 Income Deductions"
+   ],
+   "published_on": "2026-01-21T20:13:14Z",
+   "hash": "1a4fcf825469a36bb1b9e0579eac71f10e988b94f458b4e390813bb4848c2fc6",
+   "size": 210423,
+   "doc_id": "cf-044"
+  },
+  "282461": {
+   "title": "63-247 Substantial Lottery or Gambling Winnings",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-240 Households with Special Circumstances"
+   ],
+   "published_on": "2022-04-11T18:45:51Z",
+   "hash": "2190a80c5e298bcaed2dd0b5f7dc0189147b8fe162c1226277e5e0a73484ec73",
+   "size": 76226,
+   "doc_id": "cf-045"
+  },
+  "7176285": {
+   "title": "63-251 Prospective Budgeting and Reasonably Anticipated Income",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-250 Budgeting and Benefit Calculation"
+   ],
+   "published_on": "2024-05-23T16:10:51Z",
+   "hash": "5f26bc4eff5557ff89513503d946680405b36249bbd9159972fe8f5615b550e3",
+   "size": 102771,
+   "doc_id": "cf-046"
+  },
+  "282400": {
+   "title": "63-252 Households with Migrant or Seasonal Farmworkers",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-250 Budgeting and Benefit Calculation"
+   ],
+   "published_on": "2022-07-13T07:00:00Z",
+   "hash": "18f2da4462805e7044dbbf4731d0242b1e5be5d0e4044a234e545ea206e43f37",
+   "size": 81078,
+   "doc_id": "cf-047"
+  },
+  "7176133": {
+   "title": "63-254 Gross and Net Income Calculations and Benefit Allotment",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-250 Budgeting and Benefit Calculation"
+   ],
+   "published_on": "2024-05-22T22:16:47Z",
+   "hash": "9f97d8a792354222531a2be01e562c147933c38b025922a1a24fc106251d1ffc",
+   "size": 176860,
+   "doc_id": "cf-048"
+  },
+  "7176123": {
+   "title": "63-255 Treatment of Income and Expenses of Ineligible and Non-Household Members",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-250 Budgeting and Benefit Calculation"
+   ],
+   "published_on": "2024-05-22T21:46:46Z",
+   "hash": "2e862040497a11df4074cb875bb0b61057bd440d51927d705f21765b68247657",
+   "size": 175347,
+   "doc_id": "cf-049"
+  },
+  "282393": {
+   "title": "63-271 Semi Annual Report (SAR)",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-270 Semi-Annual Reporting"
+   ],
+   "published_on": "2021-06-01T07:00:00Z",
+   "hash": "2fd83894f1931d244f0106e1feaa0510fcd7a507c99f31fe89fdc03dae9b63f8",
+   "size": 122066,
+   "doc_id": "cf-050"
+  },
+  "282395": {
+   "title": "63-272 Semi Annual Report (SAR) Cycle",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-270 Semi-Annual Reporting"
+   ],
+   "published_on": "2022-04-25T18:08:42Z",
+   "hash": "c94198e14e50fb9ec66e771914c0f4809805354c4e90dcb525135b721f40b6c2",
+   "size": 88445,
+   "doc_id": "cf-051"
+  },
+  "282394": {
+   "title": "63-274 SAR 7 Processing",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-270 Semi-Annual Reporting"
+   ],
+   "published_on": "2021-09-29T06:00:00Z",
+   "hash": "2370b5971bb2bed06dac6e38c815130449eb5bbc87214a41dc43e7ea6a693fc8",
+   "size": 131334,
+   "doc_id": "cf-052"
+  },
+  "41944678": {
+   "title": "63-283 Mid-Period Reports",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-280 Mid-Period Reporting"
+   ],
+   "published_on": "2026-09-03T19:12:53Z",
+   "hash": "cb95ea4454b171b18f058c69f858564e69187562c5e54515a0cc7942012614a3",
+   "size": 314989,
+   "doc_id": "cf-053"
+  },
+  "282533": {
+   "title": "63-287 Overissuances and Underissuances",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-280 Mid-Period Reporting"
+   ],
+   "published_on": "2014-01-15T23:00:00Z",
+   "hash": "4ee059cf8e64cb6233e9eea09516794b195a102a8902b3239ac853632aeb1997",
+   "size": 156616,
+   "doc_id": "cf-054"
+  },
+  "282463": {
+   "title": "63-301 Certification Periods",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-300 Certification"
+   ],
+   "published_on": "2021-03-01T08:00:00Z",
+   "hash": "544ba4379479618833d439c26f769115ade83c41910514f95377c73459b99d71",
+   "size": 92127,
+   "doc_id": "cf-055"
+  },
+  "282464": {
+   "title": "63-302 Household Classification",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-300 Certification"
+   ],
+   "published_on": "2021-03-01T08:00:00Z",
+   "hash": "69246ffeb1647ccf8d31ab1dbb30486380fc093484fb918b59aab981e2ffff04",
+   "size": 120335,
+   "doc_id": "cf-056"
+  },
+  "282465": {
+   "title": "63-303 Notice of Action",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-300 Certification"
+   ],
+   "published_on": "2021-10-01T07:00:00Z",
+   "hash": "c2b3566e949a51b20ceeb4f90b39c32d68d46b067a8d1d9c6a7bc114a2f88358",
+   "size": 115080,
+   "doc_id": "cf-057"
+  },
+  "7603230": {
+   "title": "63-304 Recertification",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-300 Certification"
+   ],
+   "published_on": "2024-07-09T19:56:27Z",
+   "hash": "c9d8455dc2c81d43d7ca5021d85229f151acded70eba71c3186cca6b9bc2a33f",
+   "size": 132330,
+   "doc_id": "cf-058"
+  },
+  "7587228": {
+   "title": "63-306_Restoration_of_Eligibility",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-300 Certification"
+   ],
+   "published_on": "2024-06-27T16:42:28Z",
+   "hash": "a022370f00dd3b464d670802245b509b780804af440b67474f12581217afde94",
+   "size": 128475,
+   "doc_id": "cf-059"
+  },
+  "282515": {
+   "title": "63-321 Transitional CalFresh",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-320 Transitional CalFresh"
+   ],
+   "published_on": "2023-12-15T08:01:00Z",
+   "hash": "3cbde2e9cf76bd45a4dfaff8c07ddfe37b45f5f5eaf1183349009399274a43c0",
+   "size": 155665,
+   "doc_id": "cf-061"
+  },
+  "282536": {
+   "title": "63-330_CalFresh Expansion for SSI-SSP Recipients",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-330 CalFresh Expansion for SSI-SSP Recipients"
+   ],
+   "published_on": "2019-05-15T07:00:00Z",
+   "hash": "31e5d2bd61fe6549a4436814fe4068f3c8b9da4618d2be5e2bda76437c44c6ff",
+   "size": 74573,
+   "doc_id": "cf-062"
+  },
+  "282537": {
+   "title": "63-331_Supplemental Nutrition Benefit Program",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-330 CalFresh Expansion for SSI-SSP Recipients"
+   ],
+   "published_on": "2019-05-15T07:00:00Z",
+   "hash": "3e7130343d0f83bfced1482a1310814dea6743fe9aabf493d3a491080f318069",
+   "size": 124658,
+   "doc_id": "cf-064"
+  },
+  "282539": {
+   "title": "63-332 Transitional Nutrition Benefit (TNB) Program",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-330 CalFresh Expansion for SSI-SSP Recipients"
+   ],
+   "published_on": "2022-01-01T08:00:00Z",
+   "hash": "98b4b30eb63dd7a653a3a75697d3f4af7bdca7231974b1eeaf28f16bed36dddf",
+   "size": 171881,
+   "doc_id": "cf-066"
+  },
+  "40034712": {
+   "title": "63-333 Social Security Administration (SSA) Joint Processing of CalFresh Applicaiton",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-330 CalFresh Expansion for SSI-SSP Recipients"
+   ],
+   "published_on": "2025-02-19T18:13:50Z",
+   "hash": "347f2e4ce7dc2e933bd4310a6760018e7486cda532f06808930ec38cf5d30042",
+   "size": 107045,
+   "doc_id": "cf-068"
+  },
+  "282522": {
+   "title": "63-351 General Responsibilities",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-350 Case Management"
+   ],
+   "published_on": "2013-01-29T17:30:00Z",
+   "hash": "141a54bc6ee0f5ba15bdef1047a49798ec78bfda2f1b92090fc342a725a6b29d",
+   "size": 65858,
+   "doc_id": "cf-069"
+  },
+  "282520": {
+   "title": "63-352 Case Assignment",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-350 Case Management"
+   ],
+   "published_on": "2013-02-14T18:27:00Z",
+   "hash": "275e933319aba255c8719c47bcebba0dd17a30d699675236099e94c552cf29be",
+   "size": 81567,
+   "doc_id": "cf-070"
+  },
+  "282405": {
+   "title": "63-353_Confidentiality",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-350 Case Management"
+   ],
+   "published_on": "2021-03-23T07:00:00Z",
+   "hash": "e28184aab349adc7aeebfbab99ab3ecdd65f59ea71be930ae04f844603864583",
+   "size": 90461,
+   "doc_id": "cf-071"
+  },
+  "282406": {
+   "title": "63-354_Release_of_Information",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-350 Case Management"
+   ],
+   "published_on": "2021-03-23T07:00:00Z",
+   "hash": "b59534111cc78f7019c237953b62677750bae0c3f3d8b31accf6dc48b303aa7d",
+   "size": 80717,
+   "doc_id": "cf-073"
+  },
+  "282530": {
+   "title": "63-355 Request for Information",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-350 Case Management"
+   ],
+   "published_on": "2008-04-08T07:00:00Z",
+   "hash": "62427e258cee956ee6942ca25c7a9fbe68bd65df671836564b903541d2dcefec",
+   "size": 76276,
+   "doc_id": "cf-075"
+  },
+  "282523": {
+   "title": "63-356 Applicant Recipient Request for Information",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-350 Case Management"
+   ],
+   "published_on": "2008-04-08T07:00:00Z",
+   "hash": "40894319eccd625293a83b1205a7f1c760b831a03e68bfbb32da01bc1b581065",
+   "size": 67182,
+   "doc_id": "cf-076"
+  },
+  "282524": {
+   "title": "63-357 Inspection of Case Records",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-350 Case Management"
+   ],
+   "published_on": "2013-02-14T18:42:00Z",
+   "hash": "a79fdf236adc8c7064a1b17cfdd061f41491655b6832883669ce4e6262156bef",
+   "size": 84182,
+   "doc_id": "cf-077"
+  },
+  "282531": {
+   "title": "63-358 Court Appearances and Subpoenas",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-350 Case Management"
+   ],
+   "published_on": "2008-04-08T07:00:00Z",
+   "hash": "4c04d1069f9260d79bfdf41178cc70906c3680fb6b0acee38887898f535a9e9d",
+   "size": 79270,
+   "doc_id": "cf-078"
+  },
+  "282407": {
+   "title": "63-359 Inter-County Transfer",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-350 Case Management"
+   ],
+   "published_on": "2023-11-20T17:18:02Z",
+   "hash": "84ec4b8ab9095e661d499741458db396c4aa5530a3c63376e23bafc6206a2c16",
+   "size": 92220,
+   "doc_id": "cf-079"
+  },
+  "40941229": {
+   "title": "63-360 Elderly Simplified Application Project (ESAP)",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-360 Elderly Simplified Application Project"
+   ],
+   "published_on": "2025-10-01T16:25:43Z",
+   "hash": "7955651393448dc27aced4954b87f844adcc8788ae469241d05200f9c2543eed",
+   "size": 287727,
+   "doc_id": "cf-080"
+  },
+  "41240749": {
+   "title": "63-370 Minimum Nutrition Benefit (MNB) Pilot Program Guide",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-370 Minimum Nutrition Benefit (MNB) Pilot Program"
+   ],
+   "published_on": "2026-01-13T01:02:43Z",
+   "hash": "8868d2ca17cac667a3d24f51d27fa709ddfc7d4e9a80583cb3c1d3f6f61297e6",
+   "size": 160982,
+   "doc_id": "cf-081"
+  },
+  "40941559": {
+   "title": "63-380 Prepared Meal Programs",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-380 Prepared Meal Programs"
+   ],
+   "published_on": "2025-10-01T17:00:47Z",
+   "hash": "60653c82d91b887bb4fd72e2f0d8355eeafe069d200b23af9d2b43625440186d",
+   "size": 285327,
+   "doc_id": "cf-082"
+  },
+  "40941499": {
+   "title": "63-420 Work Incentive Nutrition Supplement (WINS)",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-420 Work Incentive Nutrition Supplement (WINS)"
+   ],
+   "published_on": "2025-10-01T16:50:31Z",
+   "hash": "aa15ae8335f38464ccaa08dca742b9212e3852d6d59359f5911c76a417efc3c3",
+   "size": 347910,
+   "doc_id": "cf-083"
+  },
+  "282472": {
+   "title": "63-451 Establishment of CalFresh Claim",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-450 Claims & Adjustments"
+   ],
+   "published_on": "2022-09-06T21:44:47Z",
+   "hash": "b5bb501d511e5694778ec99324a8654ad213e87435e99f71326be886ac1fd183",
+   "size": 106295,
+   "doc_id": "cf-084"
+  },
+  "282467": {
+   "title": "63-452 Non-Fraud Claim Determination",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-450 Claims & Adjustments"
+   ],
+   "published_on": "2019-04-09T07:00:00Z",
+   "hash": "aa935126d1c4d4c01d3d77ee2c8fb088e04a18c7de01de8bf32d76f7ad611d02",
+   "size": 90914,
+   "doc_id": "cf-085"
+  },
+  "9389283": {
+   "title": "63-453 Intentional Program Violation",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-450 Claims & Adjustments"
+   ],
+   "published_on": "2024-08-01T23:14:36Z",
+   "hash": "26c7618890e74490a3ada6e30d52ea9843b2f4c5764317971dd53821ad45c823",
+   "size": 132261,
+   "doc_id": "cf-086"
+  },
+  "610558": {
+   "title": "63-454_Recoupment_of_Claims",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-450 Claims & Adjustments"
+   ],
+   "published_on": "2024-01-31T19:32:27Z",
+   "hash": "e11774db1090ea50386c828c6b98413431426eb128ca4eedb71b79e6f4b05f01",
+   "size": 155291,
+   "doc_id": "cf-087"
+  },
+  "282470": {
+   "title": "63-455 Management of Claims",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-450 Claims & Adjustments"
+   ],
+   "published_on": "2020-06-17T07:00:00Z",
+   "hash": "2dd3483e0b984796a8bce079251d42a6f6ba07259919777aa434e5e83601e45d",
+   "size": 93418,
+   "doc_id": "cf-088"
+  },
+  "282469": {
+   "title": "63-456 Restoration of Benefits",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-450 Claims & Adjustments"
+   ],
+   "published_on": "2020-03-02T08:00:00Z",
+   "hash": "65fc808dd782c411f76e3bcd0caca43b8fa2a949d753578b8eb80e4523d66aa2",
+   "size": 126708,
+   "doc_id": "cf-089"
+  },
+  "7600994": {
+   "title": "63-501 Disaster CalFresh",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-500 Disaster CalFresh and Household Misfortune"
+   ],
+   "published_on": "2024-07-08T17:36:04Z",
+   "hash": "023375e4547efcbc7824b9c3957a4db5d1a88ea92b214fff486cfa0ff2fb411b",
+   "size": 156789,
+   "doc_id": "cf-090"
+  },
+  "1462358": {
+   "title": "63-509 Replacement Benefits",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-500 Disaster CalFresh and Household Misfortune"
+   ],
+   "published_on": "2024-03-28T16:37:04Z",
+   "hash": "52e5df1ec8acdbf0682d0ff1a3e2741d97aaa033e336cf4f70f6f3e0b028f5b8",
+   "size": 128938,
+   "doc_id": "cf-091"
+  },
+  "282435": {
+   "title": "63-601 Application Q&A",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-600 Questions and Answers"
+   ],
+   "published_on": "2011-08-30T22:00:00Z",
+   "hash": "9155ff0e824e4df6f6d413b47a6226a3833c1a043c20c5eb1e9af4edf9dc469b",
+   "size": 79402,
+   "doc_id": "cf-092"
+  },
+  "282526": {
+   "title": "63-602 Non-Financial Eligibility Q&A",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-600 Questions and Answers"
+   ],
+   "published_on": "2012-12-21T00:00:00Z",
+   "hash": "af310b94c9b6d4785e2c368aa34bd54b4807317c52bb6678b30e1df60ffeaa80",
+   "size": 95077,
+   "doc_id": "cf-093"
+  },
+  "282528": {
+   "title": "63-604 Income Q&A",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-600 Questions and Answers"
+   ],
+   "published_on": "2012-12-21T00:00:00Z",
+   "hash": "f5aa0cfeee5e9d72ba5f9f5ad23cd6b21c8f97c3c684920d25fd61ac34e49cca",
+   "size": 111578,
+   "doc_id": "cf-094"
+  },
+  "282434": {
+   "title": "63-605 Income Deductions/Exclusions Q&A",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-600 Questions and Answers"
+   ],
+   "published_on": "2011-08-30T22:00:00Z",
+   "hash": "d38c58f465038a3933dec8cd548a7e8c36d55bc05d0a7d2109e3bb61efe767c4",
+   "size": 68790,
+   "doc_id": "cf-095"
+  },
+  "282527": {
+   "title": "63-608 Transitional CalFresh Q&A",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-600 Questions and Answers"
+   ],
+   "published_on": "2011-08-30T22:00:00Z",
+   "hash": "e8b11d5bf57b9db38afb9b2fc2593b3f9252b3d2520e20c4b6f81999c7fad927",
+   "size": 88270,
+   "doc_id": "cf-096"
+  },
+  "282529": {
+   "title": "63-609 Claims and Adjustments Q&A",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-600 Questions and Answers"
+   ],
+   "published_on": "2012-12-21T00:00:00Z",
+   "hash": "3020922c86d46d6ca2e98265a96f2bc1013c6d38e4881b059708a463df58c17a",
+   "size": 101239,
+   "doc_id": "cf-097"
+  },
+  "282525": {
+   "title": "63-610 Other Q&A",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-600 Questions and Answers"
+   ],
+   "published_on": "2011-08-30T22:00:00Z",
+   "hash": "c840c43b26256deda9f6de1329a4a25653d15ec692380b7558773231950cb2d7",
+   "size": 59372,
+   "doc_id": "cf-098"
+  },
+  "41179552": {
+   "title": "63-901 Work Registration",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-900 CalFresh Work-Related Policy Areas"
+   ],
+   "published_on": "2025-12-17T22:21:10Z",
+   "hash": "d73ce2316c3555d095a068b17e8a1da7b916f586dfe0a4038abc1e8b9b5cc1b5",
+   "size": 180649,
+   "doc_id": "cf-099"
+  },
+  "282474": {
+   "title": "63-902 Deferrals and Substitute Programs",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-900 CalFresh Work-Related Policy Areas"
+   ],
+   "published_on": "2017-06-26T07:00:00Z",
+   "hash": "b3ea20f623df9c934a89bac7a3e57ae604250e7ac1d93bcfa8d3b2313055ca67",
+   "size": 99687,
+   "doc_id": "cf-100"
+  },
+  "282478": {
+   "title": "63-903 CalFresh Employment and Training (CFET) Components and Transportation Payments",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-900 CalFresh Work-Related Policy Areas"
+   ],
+   "published_on": "2023-04-06T07:00:00Z",
+   "hash": "45b4043976884c434fe9fd27906c0625d0f90bd62d47f8d3661c4701ad5f07a9",
+   "size": 243793,
+   "doc_id": "cf-101"
+  },
+  "41663117": {
+   "title": "63-904 Able-Bodied Adults Without Dependents Time Limit",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-900 CalFresh Work-Related Policy Areas"
+   ],
+   "published_on": "2026-05-28T18:46:10Z",
+   "hash": "c27647dbbbfb06886ec4fc4284dd8912fc378499cdc64633884b811d40859670",
+   "size": 196780,
+   "doc_id": "cf-103"
+  },
+  "282475": {
+   "title": "63-905 Non-Compliance.docx",
+   "program": "CalFresh",
+   "path": [
+    "Chapters and Sections",
+    "63-900 CalFresh Work-Related Policy Areas"
+   ],
+   "published_on": "2019-12-23T08:00:00Z",
+   "hash": "0d3856cf95a273699891057440e5a00fc11fd54ce6c46c799d50f660ed3299f0",
+   "size": 86571,
+   "doc_id": "cf-104"
+  },
+  "282153": {
+   "title": "A. CalWORKs and Employment Services Overview",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-001 Background"
+   ],
+   "published_on": "2022-07-12T07:00:00Z",
+   "hash": "507bbf4da286ef41319f5955701700e0915a2e3f7f394bc6c555d545554db93a",
+   "size": 82247,
+   "doc_id": "cw-135"
+  },
+  "282090": {
+   "title": "A. Federal Work Participation Rate (WPR) Data Reporting",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-002 Federal Work Participation Rate (WPR)"
+   ],
+   "published_on": "2026-10-05T19:36:46Z",
+   "hash": "2e078638a5706d2e4985ca97c43c1eb4a4a98591231c3380b9c3dfacbb7d6318",
+   "size": 155309,
+   "doc_id": "cw-136"
+  },
+  "282076": {
+   "title": "A. Welfare-to-Work Sequence Overview",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-005 Welfare-to-Work"
+   ],
+   "published_on": "2016-11-30T08:00:00Z",
+   "hash": "3fcb6df8875479475dfb8a6057d964c609d62dae74f3ac119e33b5c0c1c4d12b",
+   "size": 60988,
+   "doc_id": "cw-137"
+  },
+  "282075": {
+   "title": "C.  Summary of Employment Staff Responsibility",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-005 Welfare-to-Work"
+   ],
+   "published_on": "2016-10-27T07:00:00Z",
+   "hash": "764187c7fbaa15ef2dfecd1ffccac75b6777df8a3ee7f44abda999a26f552ca0",
+   "size": 106139,
+   "doc_id": "cw-138"
+  },
+  "282077": {
+   "title": "D. Employment Services Orientation and Appraisal",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-005 Welfare-to-Work"
+   ],
+   "published_on": "2022-02-24T08:00:00Z",
+   "hash": "19c97f2fa0adda1d8800cda91c21bda548c8a24dbee08de756dea8e7c12d2d9a",
+   "size": 88666,
+   "doc_id": "cw-139"
+  },
+  "282079": {
+   "title": "E. Initial Engagement Activities",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-005 Welfare-to-Work"
+   ],
+   "published_on": "2018-10-01T07:00:00Z",
+   "hash": "1a3740a7e32f705e9f645714e18c62018a5bbd339b37b40bb995a4c4cf0db7df",
+   "size": 111467,
+   "doc_id": "cw-140"
+  },
+  "282080": {
+   "title": "F. Assessment or Reassessment",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-005 Welfare-to-Work"
+   ],
+   "published_on": "2021-05-10T07:00:00Z",
+   "hash": "c58af703c56bc566ce98f183bc8d86e121307d1453a073268d47be13c06b40b1",
+   "size": 116221,
+   "doc_id": "cw-141"
+  },
+  "41049382": {
+   "title": "G. Employment Services Plan",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-005 Welfare-to-Work"
+   ],
+   "published_on": "2025-10-31T18:58:15Z",
+   "hash": "9a57cb7eb6fd4333896fdb44d198ecaa337ee74efbc71caa03fb5ebcc971715d",
+   "size": 476286,
+   "doc_id": "cw-142"
+  },
+  "282082": {
+   "title": "H. Employment Services Activities",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-005 Welfare-to-Work"
+   ],
+   "published_on": "2022-05-06T07:00:00Z",
+   "hash": "3239972dd67a8e949494608179e0cec6a931a7b42bbe49a5a3228c3b000e7785",
+   "size": 129593,
+   "doc_id": "cw-143"
+  },
+  "282074": {
+   "title": "I. Case Transfers and Returns Between Regions",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-005 Welfare-to-Work"
+   ],
+   "published_on": "2017-08-01T07:00:00Z",
+   "hash": "c8883cd0644576622090a051c28e86f20c218266f8ade3225ebbeb9813988e08",
+   "size": 82459,
+   "doc_id": "cw-144"
+  },
+  "41056498": {
+   "title": "K. Employment Services Participation for Teens",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-005 Welfare-to-Work"
+   ],
+   "published_on": "2025-11-04T00:17:02Z",
+   "hash": "997447ea98bae3f329e3627cb9f50ab5eab3456f224f7841dfa1dbbe544a47da",
+   "size": 168091,
+   "doc_id": "cw-145"
+  },
+  "41773538": {
+   "title": "A. Learning Disabilities",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-006 Learning Disabilities"
+   ],
+   "published_on": "2026-07-06T20:22:24Z",
+   "hash": "39fe4f056fa8dd7eeeadaa6a095bb8f0354ba39dd9d77fa49640817a82fed35c",
+   "size": 179045,
+   "doc_id": "cw-146"
+  },
+  "282073": {
+   "title": "A. Family Stabilization",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-007 Family Stabilization"
+   ],
+   "published_on": "2025-08-21T22:33:04Z",
+   "hash": "1316a0fcf99b85b2127933f92af28ffe36115cd2ced472e4031fe149ff33a795",
+   "size": 259134,
+   "doc_id": "cw-147"
+  },
+  "36813743": {
+   "title": "A. CalWORKs Housing Support Program (HSP)",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-008 CalWORKs Housing Support Program"
+   ],
+   "published_on": "2025-10-20T16:48:37Z",
+   "hash": "5cba08c726c3b1e27f301d8c6bbd4f971132f75c445e3161b6922258067801f2",
+   "size": 348032,
+   "doc_id": "cw-148"
+  },
+  "1209613": {
+   "title": "A. CalWORKs Home Visiting Program",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-009 Home Visiting Program"
+   ],
+   "published_on": "2025-06-09T18:52:06Z",
+   "hash": "ff2948fe9ea9c27a2a93b873f62ffc4bc98fd8fe0c2b36e9d6658ebfa2f893d6",
+   "size": 124785,
+   "doc_id": "cw-149"
+  },
+  "282159": {
+   "title": "A. Child Care Overview",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-010 Child Care"
+   ],
+   "published_on": "2023-04-13T07:00:00Z",
+   "hash": "008d093438910565205128ee7c46885387424e3e27f970273e086815d288e733",
+   "size": 93990,
+   "doc_id": "cw-150"
+  },
+  "41051173": {
+   "title": "B. Child Care Eligibility",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-010 Child Care"
+   ],
+   "published_on": "2025-11-01T00:22:37Z",
+   "hash": "1b589f66f044761132f9ac666f6b133127f9d06f0ecd2de92dbdef176c3912b8",
+   "size": 160632,
+   "doc_id": "cw-151"
+  },
+  "40200506": {
+   "title": "C. Child Care Provider Requirements",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-010 Child Care"
+   ],
+   "published_on": "2025-03-26T18:04:20Z",
+   "hash": "528804eae2158b5d0748efbd8e3d65579da280910be03ebb4fbfd8572081ea74",
+   "size": 144792,
+   "doc_id": "cw-152"
+  },
+  "282158": {
+   "title": "D. Child Care Approval or Denial",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-010 Child Care"
+   ],
+   "published_on": "2022-05-26T07:00:00Z",
+   "hash": "a769a6b92e9912799a3e87cfd9c763b6ff70f462fb18125f9641ca2157500c68",
+   "size": 84392,
+   "doc_id": "cw-153"
+  },
+  "282156": {
+   "title": "E. Child Care Payments",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-010 Child Care"
+   ],
+   "published_on": "2015-09-23T07:00:00Z",
+   "hash": "9dd89dc1ad28afab50c4077c906677341999dd354f18d2a87b487c25d7010648",
+   "size": 152084,
+   "doc_id": "cw-154"
+  },
+  "282157": {
+   "title": "F. Child Care Notices of Action",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-010 Child Care"
+   ],
+   "published_on": "2021-08-09T07:00:00Z",
+   "hash": "4aae8215c237626df29fd66cca85d4e07fc0831fe89f8a054384161567fa26b2",
+   "size": 132016,
+   "doc_id": "cw-155"
+  },
+  "282154": {
+   "title": "G. General Child Care Administration",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-010 Child Care"
+   ],
+   "published_on": "2015-06-30T07:00:00Z",
+   "hash": "601289dad39ca73c9b4bde26f4d99b41d327308c142cef2ffe3334ad66dcd843",
+   "size": 143477,
+   "doc_id": "cw-156"
+  },
+  "7594717": {
+   "title": "A. Employment Services Supportive Services",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-011 Supportive Services"
+   ],
+   "published_on": "2024-07-08T18:35:18Z",
+   "hash": "6cf0fc10d5f01322d21c24d269421204ed0a195650fa288f197ad10463b22fbe",
+   "size": 115738,
+   "doc_id": "cw-157"
+  },
+  "282088": {
+   "title": "B. Behavioral Health Services",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-011 Supportive Services"
+   ],
+   "published_on": "2020-07-23T07:00:00Z",
+   "hash": "ce2b226cecd067dea3791c600bf3954ae3db7e5bf38a56349713cabd8c218b96",
+   "size": 95409,
+   "doc_id": "cw-158"
+  },
+  "40564677": {
+   "title": "A. Employment Services Exemptions",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-020 Exemptions & Good Cause"
+   ],
+   "published_on": "2025-06-25T19:03:55Z",
+   "hash": "bafc0648e53798ec0a3f29abfe2b47cc9bf6ae07bf6f3df0f767ba9fe121c9a1",
+   "size": 150144,
+   "doc_id": "cw-159"
+  },
+  "32028257": {
+   "title": "B. Employment Services Good Cause",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-020 Exemptions & Good Cause"
+   ],
+   "published_on": "2024-11-08T23:18:10Z",
+   "hash": "6c58d79c18034e1226fb355b5a0a5e5d2a7fc67eddc94168fc32f7fdcfddee7b",
+   "size": 113531,
+   "doc_id": "cw-160"
+  },
+  "41845310": {
+   "title": "A. Employment Services Noncompliance and Sanctions",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-025 Compliance Process"
+   ],
+   "published_on": "2026-07-30T22:54:40Z",
+   "hash": "2f0f91beaf07de852532f2c8c24c7b91bc2e62d03b6065066567f655b2a12ed4",
+   "size": 153471,
+   "doc_id": "cw-161"
+  },
+  "282085": {
+   "title": "H. Employment Services Grievances",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-030 Participants Rights"
+   ],
+   "published_on": "2020-09-15T07:00:00Z",
+   "hash": "60fdcd13b723e86adcbf6a25cf33abf771c8d15ae83a73b46d1a79f1e753ded0",
+   "size": 98122,
+   "doc_id": "cw-162"
+  },
+  "282202": {
+   "title": "I. Sanctions and State Hearings",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-030 Participants Rights"
+   ],
+   "published_on": "2008-12-23T08:00:00Z",
+   "hash": "62c2f4774e091e68f239f693a47db265a27083edf55ff042738a2c82983c8d07",
+   "size": 65964,
+   "doc_id": "cw-163"
+  },
+  "282221": {
+   "title": "A. Community Service-Work Experience",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-050 Community Service"
+   ],
+   "published_on": "2021-01-14T08:00:00Z",
+   "hash": "08635ccce0e8b0a852b0de07887a83db83e735b591da492a182cf05b906249fc",
+   "size": 253859,
+   "doc_id": "cw-164"
+  },
+  "609639": {
+   "title": "A. Expanded Subsidized Employment Program",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-150 Subsidized Employment Programs"
+   ],
+   "published_on": "2024-01-22T18:38:02Z",
+   "hash": "eb46f951ce53be25dfbb3eb2575d9bb3bd449bfaa157c0a6ab9bf3b578170145",
+   "size": 82777,
+   "doc_id": "cw-165"
+  },
+  "610118": {
+   "title": "B. Expanded Work Experience Program",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-150 Subsidized Employment Programs"
+   ],
+   "published_on": "2024-01-23T15:03:43Z",
+   "hash": "237422b8f4da9e95b7a40dd0160bcf01a9ca7e79d32d14423550d5c66a73193e",
+   "size": 78769,
+   "doc_id": "cw-166"
+  },
+  "40187559": {
+   "title": "A. Wrap Around",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-160 Wrap Around"
+   ],
+   "published_on": "2025-03-24T17:43:55Z",
+   "hash": "3417d7d23c41c4d441e98f99e65eff439d130b37618f8fcb24545136817c208e",
+   "size": 29132,
+   "doc_id": "cw-167"
+  },
+  "282226": {
+   "title": "CalWORKs Outcomes and Accountability Review (Cal-OAR)",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-170 CalWORKs Outcomes and Accountability Review (Cal-OAR)"
+   ],
+   "published_on": "2023-10-03T07:00:00Z",
+   "hash": "b069bab020e975ad7bf4b2ead2ecf3b6365a709aadf2c3ecd003e581d1e46ba2",
+   "size": 105407,
+   "doc_id": "cw-168"
+  },
+  "41863958": {
+   "title": "A. Refugee Employment Services",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-200 Refugee Services"
+   ],
+   "published_on": "2026-08-06T20:33:42Z",
+   "hash": "6ca52c28a39fbf3c53c3196e4f2dcd65ffb7dd60ea825170e24d9c91e35ccf48",
+   "size": 168327,
+   "doc_id": "cw-169"
+  },
+  "282191": {
+   "title": "A. Document Capture Procedures for Employment Services Contractors",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-260 Document Capture Procedures for Employment Services Contractors"
+   ],
+   "published_on": "2013-04-12T07:00:00Z",
+   "hash": "5f06fff9ea73d59911dd5a71b7605bd32774ad6f6707e20c3d1c70e6da01f5be",
+   "size": 152821,
+   "doc_id": "cw-170"
+  },
+  "282048": {
+   "title": "A. Employment Services Activity Documentation and Reporting Requirements",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "10-300 WTW Activity Documentation and Reporting Requirements"
+   ],
+   "published_on": "2021-05-01T07:00:00Z",
+   "hash": "33a10fbc52d9e5438f2053181a509490e18b70980ef3439adf33f89e6c92659e",
+   "size": 100809,
+   "doc_id": "cw-171"
+  },
+  "282185": {
+   "title": "A. Introduction to the Cal-Learn Program",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "15-000 Cal-Learn"
+   ],
+   "published_on": "2021-04-07T07:00:00Z",
+   "hash": "0699d7827c8dce0658f8ee6609fa09a7bd47cb852dc03f1326aca3cdb2019913",
+   "size": 138134,
+   "doc_id": "cw-172"
+  },
+  "282186": {
+   "title": "B. Cal-Learn Program Eligibility and Participation Requirements",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "15-000 Cal-Learn"
+   ],
+   "published_on": "2021-05-19T07:00:00Z",
+   "hash": "427cd3898e3c6bb293bfc489a37981f2c4b794af96edb1cb95244bd607b0e5f4",
+   "size": 420977,
+   "doc_id": "cw-173"
+  },
+  "282187": {
+   "title": "C. Cal-Learn Referral and Orientation",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "15-000 Cal-Learn"
+   ],
+   "published_on": "2021-08-31T07:00:00Z",
+   "hash": "606aee20217519058cf0ace9bf40fa56a87cce0a41e4d169fd16b496e1506e17",
+   "size": 151588,
+   "doc_id": "cw-174"
+  },
+  "282184": {
+   "title": "E. Cal-Learn Supportive Services",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "15-000 Cal-Learn"
+   ],
+   "published_on": "2018-05-15T07:00:00Z",
+   "hash": "4bfc02be3bd97298f937b8e19c7cdb1399ce50842112548d14d7f82fbc7c6cab",
+   "size": 215361,
+   "doc_id": "cw-175"
+  },
+  "282188": {
+   "title": "E. Cal-Learn Case Management Services",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "15-000 Cal-Learn"
+   ],
+   "published_on": "2022-07-20T07:00:00Z",
+   "hash": "32b55a144276ebbc6191e616d3b05c03fd2ca5bcf01417ae0ad318220c256b0f",
+   "size": 2715297,
+   "doc_id": "cw-176"
+  },
+  "282182": {
+   "title": "H. Cal-Learn Good Cause Determination",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "15-000 Cal-Learn"
+   ],
+   "published_on": "2013-04-23T07:00:00Z",
+   "hash": "d715e9ace5145d595092d4d22740dae5646e54b41245063b48d4251295454f81",
+   "size": 98526,
+   "doc_id": "cw-177"
+  },
+  "282183": {
+   "title": "I. Application of Cal-Learn Bonuses and Sanctions",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "15-000 Cal-Learn"
+   ],
+   "published_on": "2013-04-23T07:00:00Z",
+   "hash": "9482662979de37beefb5411ce9b3d44ca9044dc933f2762e1e43c9579ddffa4b",
+   "size": 92750,
+   "doc_id": "cw-178"
+  },
+  "38312052": {
+   "title": "A. Time On Aid",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "15-100 TIME ON AID"
+   ],
+   "published_on": "2024-12-04T00:29:55Z",
+   "hash": "385eeceebab321c43a044c450675d5621201c60852f30ceec0ff32568689ebb5",
+   "size": 167223,
+   "doc_id": "cw-179"
+  },
+  "282190": {
+   "title": "A. Confidentiality of Records and Release of Information",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "19-000 Confidentiality of Information & Records"
+   ],
+   "published_on": "2023-11-20T08:00:00Z",
+   "hash": "2f9895e8f16ac9d7b1dd782fbe66ba545a0e6e73811ac91a58bff6d254aececb",
+   "size": 140176,
+   "doc_id": "cw-180"
+  },
+  "282189": {
+   "title": "B. Customer Request for Information",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "19-000 Confidentiality of Information & Records"
+   ],
+   "published_on": "2023-11-20T08:00:00Z",
+   "hash": "f4e921ec89ad01cd47d5a6a41a93ea1b59e570b5046869aa199dccac894131c1",
+   "size": 96811,
+   "doc_id": "cw-181"
+  },
+  "282164": {
+   "title": "A. Integrity Fraud Detection And Prevention",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "20-000 Integrity"
+   ],
+   "published_on": "2021-01-13T08:00:00Z",
+   "hash": "025b56a65c73ffb94e4a8b5f00bfd362a51d00646ed8a41d3b90871772af426c",
+   "size": 82115,
+   "doc_id": "cw-182"
+  },
+  "41531350": {
+   "title": "K. Child Care Program Integrity",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "20-000 Integrity"
+   ],
+   "published_on": "2026-04-20T15:57:05Z",
+   "hash": "34bd18e7217d88540ba63dc2f4d5b9aa92da103772bb61deed6b6e64427327e9",
+   "size": 115338,
+   "doc_id": "cw-183"
+  },
+  "7560705": {
+   "title": "A. Notice of Action (NOA) Requirements",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "22-000 Notifications"
+   ],
+   "published_on": "2024-06-06T18:41:12Z",
+   "hash": "c7a362fe664118540e22cda1e6629cd1ae54a33819dcd163673dbe7e791d7157",
+   "size": 152892,
+   "doc_id": "cw-184"
+  },
+  "7560706": {
+   "title": "B. Request for Verification",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "22-000 Notifications"
+   ],
+   "published_on": "2024-06-06T18:41:56Z",
+   "hash": "969d76145c1240d1fc820beba3b1d4c71c114c34303250ebcfb0398d74beddd0",
+   "size": 154691,
+   "doc_id": "cw-185"
+  },
+  "282096": {
+   "title": "A. Application Process",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-100 Application and Redetermination"
+   ],
+   "published_on": "2022-03-21T07:00:00Z",
+   "hash": "7881ad5dc4551178b49344be4b6fdd9d952a35d62cb0efb47995bc5befffacd7",
+   "size": 289178,
+   "doc_id": "cw-186"
+  },
+  "41101885": {
+   "title": "B. Immediate Need",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-100 Application and Redetermination"
+   ],
+   "published_on": "2025-11-18T22:46:43Z",
+   "hash": "3340e96ca22a4d55d45f7c9a7551b43980d5603d9b1746ba3bc03a76d4f0802d",
+   "size": 188261,
+   "doc_id": "cw-187"
+  },
+  "40049611": {
+   "title": "C. Social Security Number",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-100 Application and Redetermination"
+   ],
+   "published_on": "2025-02-21T19:23:41Z",
+   "hash": "b1836facd9fe67ea59759d642fee434acdca4907383e7a757068ce01913fec5b",
+   "size": 142919,
+   "doc_id": "cw-188"
+  },
+  "41604325": {
+   "title": "D. Diversion Program",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-100 Application and Redetermination"
+   ],
+   "published_on": "2026-05-12T22:06:17Z",
+   "hash": "9a3bb1c9daeec5c42c9fdf7fda35d589a1616c00549659ed359a2665a987df32",
+   "size": 168990,
+   "doc_id": "cw-189"
+  },
+  "282099": {
+   "title": "E. Family Violence Regulations",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-100 Application and Redetermination"
+   ],
+   "published_on": "2025-01-07T19:05:59Z",
+   "hash": "62b3457ad664f74e5c131045a2e452e75972707f4e77b387498f2e548f31225b",
+   "size": 219294,
+   "doc_id": "cw-190"
+  },
+  "282095": {
+   "title": "F. Continuing benefits when CalWORKs ceases",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-100 Application and Redetermination"
+   ],
+   "published_on": "2022-02-02T08:00:00Z",
+   "hash": "9f60b91b1314dec137dfcdc7a9c1b24bdd3feeadc936f115ab0d016d73627d02",
+   "size": 169392,
+   "doc_id": "cw-191"
+  },
+  "282100": {
+   "title": "G. Redetermination of CalWORKs Eligibility",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-100 Application and Redetermination"
+   ],
+   "published_on": "2022-07-28T07:00:00Z",
+   "hash": "48bac6639edb1b0cea879b9b8460e6ead0af3880c930d0de8d394d7184659c35",
+   "size": 166328,
+   "doc_id": "cw-192"
+  },
+  "40383946": {
+   "title": "H. Intercounty Transfer (ICT)",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-100 Application and Redetermination"
+   ],
+   "published_on": "2025-05-07T22:59:07Z",
+   "hash": "6cdd3039fa5611f83beb15f16e22a54b5d294dce5864256e0ab05b172670c96b",
+   "size": 168184,
+   "doc_id": "cw-193"
+  },
+  "282146": {
+   "title": "A. Restoration of Aid",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-125 Restoration of Aid"
+   ],
+   "published_on": "2024-06-21T22:02:07Z",
+   "hash": "c7320e5516d1a8fceeacc5faff64f15a3a134bf117948b268e008c88bcb4484f",
+   "size": 144759,
+   "doc_id": "cw-194"
+  },
+  "282216": {
+   "title": "A. Intra-Program Transfer (IPT)",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-183 CalWORKs Special Programs"
+   ],
+   "published_on": "2016-11-30T08:00:00Z",
+   "hash": "ad7b926ed0eef532770c3f18c0846f8d4ecb25080aa028c47e971ac36cedbb01",
+   "size": 73580,
+   "doc_id": "cw-195"
+  },
+  "282215": {
+   "title": "B. Extended CalWORKs for Non-Minor Dependents (NMD)",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-183 CalWORKs Special Programs"
+   ],
+   "published_on": "2016-11-30T08:00:00Z",
+   "hash": "a89232c1297d3783e38e1064f9a1c881649b6994b612372d0cf03df1cfc521c5",
+   "size": 88881,
+   "doc_id": "cw-196"
+  },
+  "282218": {
+   "title": "C. Approved Relative Caregiver (ARC) Program",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-183 CalWORKs Special Programs"
+   ],
+   "published_on": "2022-02-07T08:00:00Z",
+   "hash": "e5e681457032cdf007da20a2da40794ca63860e7bd88cd2ad0a4ebdbbb12ae49",
+   "size": 179399,
+   "doc_id": "cw-197"
+  },
+  "282217": {
+   "title": "D. CalWORKs Reunification Families",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-183 CalWORKs Special Programs"
+   ],
+   "published_on": "2018-08-09T07:00:00Z",
+   "hash": "c5221f70bdda2a3c7e9adeba7840a684588a7b209f06e93e5598fc6dacd1a7f6",
+   "size": 74897,
+   "doc_id": "cw-198"
+  },
+  "8979135": {
+   "title": "E. Community Prisoner Adult Program",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "40-183 CalWORKs Special Programs"
+   ],
+   "published_on": "2024-07-24T20:17:55Z",
+   "hash": "89d3c55effc25f93dff3c51dd8ab7d23803cb313354ff4ad4e48cd12d4871b03",
+   "size": 124211,
+   "doc_id": "cw-199"
+  },
+  "11220550": {
+   "title": "A. Deprivation",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-400 Deprivation"
+   ],
+   "published_on": "2024-08-06T23:41:45Z",
+   "hash": "3883ab2eb7550cb3b85defcb9762c782508e18794595a39da360d567f01c54ad",
+   "size": 99962,
+   "doc_id": "cw-200"
+  },
+  "11221658": {
+   "title": "B. Deprivation Due to Death",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-400 Deprivation"
+   ],
+   "published_on": "2024-08-06T23:42:50Z",
+   "hash": "557d76b48df14e688138edf26270fc63ff10793d5604af5af5e4f08644a14ccf",
+   "size": 88824,
+   "doc_id": "cw-201"
+  },
+  "11222667": {
+   "title": "C. Deprivation Due to Incapacity",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-400 Deprivation"
+   ],
+   "published_on": "2024-08-06T23:43:57Z",
+   "hash": "f157af2c1b76605cb70595cc7a5c9d1094e389b08ed0025c540597baabc2c756",
+   "size": 128871,
+   "doc_id": "cw-202"
+  },
+  "11223321": {
+   "title": "D. Deprivation Due to Unemployment",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-400 Deprivation"
+   ],
+   "published_on": "2024-08-06T23:44:40Z",
+   "hash": "0a8ce1f817bb1c77aaa57655e1732fcda16e3557ffe7e73f0dd12d45fddfc26f",
+   "size": 130513,
+   "doc_id": "cw-203"
+  },
+  "11224201": {
+   "title": "E. Deprivation Due to Absence",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-400 Deprivation"
+   ],
+   "published_on": "2024-08-06T23:45:51Z",
+   "hash": "f5733293881ea19ce1281c728d0388a4efc43d547392000062b7a814da7586e2",
+   "size": 142692,
+   "doc_id": "cw-204"
+  },
+  "39861294": {
+   "title": "A. Assistance Unit",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-500 Assistance Unit"
+   ],
+   "published_on": "2025-01-07T00:10:07Z",
+   "hash": "8e142fe5f3c72b28ed36601a5fd401d9ef324853a081b175f363a12bc7b109a4",
+   "size": 193785,
+   "doc_id": "cw-205"
+  },
+  "39862433": {
+   "title": "B. Caretaker Relative Requirements",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-500 Assistance Unit"
+   ],
+   "published_on": "2025-01-07T16:31:18Z",
+   "hash": "237c0a24eb251babe822c3c8154a26a638513c9975be8ea37b0bba9160f96f63",
+   "size": 219797,
+   "doc_id": "cw-206"
+  },
+  "39862447": {
+   "title": "C. Temporary Absence",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-500 Assistance Unit"
+   ],
+   "published_on": "2025-01-07T16:34:15Z",
+   "hash": "adba3a02f4867809da23adc7085a5419779f6a9123569466663f0e3361d0a499",
+   "size": 194940,
+   "doc_id": "cw-207"
+  },
+  "39862466": {
+   "title": "D. Persons Included in the Assistance Unit",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-500 Assistance Unit"
+   ],
+   "published_on": "2025-01-07T17:12:11Z",
+   "hash": "31031f4deff3ffc2d7b67220be7f45807272df0e99444a23cc8a3cc4686e71ed",
+   "size": 193838,
+   "doc_id": "cw-208"
+  },
+  "39862769": {
+   "title": "E. Persons Excluded from the Assistance Unit",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-500 Assistance Unit"
+   ],
+   "published_on": "2025-01-07T17:11:21Z",
+   "hash": "0491eb311cd576e522eaa8a6a2d973e6ff2adcc88f8ef32bd81e04ac1d0cfa85",
+   "size": 185668,
+   "doc_id": "cw-209"
+  },
+  "282173": {
+   "title": "F. Pregnancy Based Assistance Unit",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-500 Assistance Unit"
+   ],
+   "published_on": "2025-06-09T18:55:10Z",
+   "hash": "91109a033b6581b55a4f0ef30b1afd2d7788c8c369214985fbe224a51442e3da",
+   "size": 123925,
+   "doc_id": "cw-210"
+  },
+  "39862931": {
+   "title": "G. Identification of Persons for Claiming Financial Participation",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-500 Assistance Unit"
+   ],
+   "published_on": "2025-01-07T17:14:27Z",
+   "hash": "09ebebc2b4cfa688e4ff4dd8e725e24d894e8bb866b4d13906cbb8c037adb49d",
+   "size": 177989,
+   "doc_id": "cw-211"
+  },
+  "39862941": {
+   "title": "H. Minor Parent Assistance Unit",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-500 Assistance Unit"
+   ],
+   "published_on": "2025-01-07T17:15:58Z",
+   "hash": "c5214b398e900c05c92e9d9bc17160426e66238dd300386ccdd5deed010b8c6c",
+   "size": 154880,
+   "doc_id": "cw-212"
+  },
+  "39862944": {
+   "title": "I. Senior Parent Income",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "41-500 Assistance Unit"
+   ],
+   "published_on": "2025-01-07T17:17:42Z",
+   "hash": "45d8340f726d2d388456067e19a41263fe68e7e5b5ebe0168e6dfd7ea811c1ce",
+   "size": 185301,
+   "doc_id": "cw-213"
+  },
+  "282043": {
+   "title": "A. Age Requirements and Pregnant-Parenting Teens",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-100 Age-Immunization-School Attendance"
+   ],
+   "published_on": "2023-04-03T07:00:00Z",
+   "hash": "be0aeb1eb0a499872516d6cbdbba90c5fe236f9088de3d8412a28bc8ff651646",
+   "size": 225970,
+   "doc_id": "cw-214"
+  },
+  "282044": {
+   "title": "B. School Attendance Requirement",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-100 Age-Immunization-School Attendance"
+   ],
+   "published_on": "2023-11-27T08:00:00Z",
+   "hash": "0c1eb5d82ea0bbefeb72976060469495f72c4dedabbf0e2bedc1f16deeede2d0",
+   "size": 200220,
+   "doc_id": "cw-215"
+  },
+  "7574721": {
+   "title": "C. Immunization",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-100 Age-Immunization-School Attendance"
+   ],
+   "published_on": "2024-06-17T22:30:17Z",
+   "hash": "e1f7c7b5c547b52e95ed52460bb9fcb0885e2930cdfd1733ead58e0f6b235c0d",
+   "size": 253343,
+   "doc_id": "cw-216"
+  },
+  "610988": {
+   "title": "A. Property",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-200 Property"
+   ],
+   "published_on": "2026-02-12T19:43:18Z",
+   "hash": "321652de7fb9a3cb17340e99d38dc7f20625e6ac39d108100308f779322033e7",
+   "size": 4060560,
+   "doc_id": "cw-217"
+  },
+  "282051": {
+   "title": "B. Determining of Real and Personal Property",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-200 Property"
+   ],
+   "published_on": "2026-08-27T23:07:05Z",
+   "hash": "ae4e9aadbfb10341e2020bf9a311cd62c4e6f6983cb14172fa39adb98bcd3789",
+   "size": 134795,
+   "doc_id": "cw-218"
+  },
+  "282052": {
+   "title": "C. Property Items to Be Included In Evaluating Property",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-200 Property"
+   ],
+   "published_on": "2026-08-27T23:08:35Z",
+   "hash": "dc54dce2d3db923506d7f82b01c69c778b6205f47777b9a114320fe0432b18e8",
+   "size": 113464,
+   "doc_id": "cw-219"
+  },
+  "7574213": {
+   "title": "D. Resources To Be Excluded in Evaluation of Property",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-200 Property"
+   ],
+   "published_on": "2024-06-17T18:28:43Z",
+   "hash": "e0e0b7556fcfbe795493a97abe9740f7d1f87ce991547b565bff48acbb82bb1d",
+   "size": 276808,
+   "doc_id": "cw-220"
+  },
+  "282049": {
+   "title": "E. Real Property Temporary Exemption",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-200 Property"
+   ],
+   "published_on": "2026-08-27T23:08:41Z",
+   "hash": "c874216cb861ae74b97987d5d306bc7e2dff2b949810b4eee3837e95ee7d43c1",
+   "size": 166383,
+   "doc_id": "cw-221"
+  },
+  "282054": {
+   "title": "F. Net Market Value",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-200 Property"
+   ],
+   "published_on": "2026-08-27T23:09:59Z",
+   "hash": "2c5998efb3529192caae4addcf309ff6e8fc50067c02f6f49b2ef694166ced84",
+   "size": 121825,
+   "doc_id": "cw-222"
+  },
+  "282055": {
+   "title": "G. Restricted Account",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-200 Property"
+   ],
+   "published_on": "2026-08-27T23:11:20Z",
+   "hash": "93d58bfe7b7b4fc1e41c62bb9e8e65c3bf1b9daf7630a81d088b486e1305db1d",
+   "size": 171689,
+   "doc_id": "cw-223"
+  },
+  "282056": {
+   "title": "H. Home Exclusion",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-200 Property"
+   ],
+   "published_on": "2026-08-27T23:11:57Z",
+   "hash": "d04576e3bb5664d522164419fac1105827124e4a918faedf5a16cb507e858f44",
+   "size": 129075,
+   "doc_id": "cw-224"
+  },
+  "282057": {
+   "title": "I. Motor Vehicles",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-200 Property"
+   ],
+   "published_on": "2026-10-02T17:43:10Z",
+   "hash": "5359e600b2036e734e3189069f0dc80da8d981b980b6be6ed3769fb9bb5ac7ac",
+   "size": 214006,
+   "doc_id": "cw-225"
+  },
+  "282101": {
+   "title": "A. Residence",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-400 Residence"
+   ],
+   "published_on": "2019-11-04T08:00:00Z",
+   "hash": "a9986053004bc07c39e34a45ebe9850c5fdbb7745cd1d6da804ad1578b552dd8",
+   "size": 100546,
+   "doc_id": "cw-226"
+  },
+  "282102": {
+   "title": "B. Residence Intention/Change of Residence",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-400 Residence"
+   ],
+   "published_on": "2019-11-04T08:00:00Z",
+   "hash": "c5271c2b759c19fbe6cffe621efa7f2d8bf72529abb6fe22fad80a5416f5fcf2",
+   "size": 48341,
+   "doc_id": "cw-227"
+  },
+  "282103": {
+   "title": "C. Citizenship",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-400 Residence"
+   ],
+   "published_on": "2021-03-09T08:00:00Z",
+   "hash": "41581fbb867e6e2004f75c4bef794d18a7a0202be1c6333d1c853abe8d6f4706",
+   "size": 167863,
+   "doc_id": "cw-228"
+  },
+  "40446742": {
+   "title": "D. Eligible Non-Citizen Status",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-400 Residence"
+   ],
+   "published_on": "2025-05-23T20:38:11Z",
+   "hash": "b995f2328903cfde357b1683de05498eebbeecb5b3c024fdb4e04ca10ccbd124",
+   "size": 125451,
+   "doc_id": "cw-229"
+  },
+  "282105": {
+   "title": "E. Battered Non-Citizen",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-400 Residence"
+   ],
+   "published_on": "2021-03-09T08:00:00Z",
+   "hash": "8af4824e6dbb3f89f348b2e06cf207b97ce05bc08b284aca646c0353bcfcae26",
+   "size": 177228,
+   "doc_id": "cw-230"
+  },
+  "282106": {
+   "title": "F. Sponsored Non-Citizens",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "42-400 Residence"
+   ],
+   "published_on": "2024-12-26T19:05:33Z",
+   "hash": "8d77b669cae559bd6002258ad62769ebf09883b54be038b8f8a1f89bb237447e",
+   "size": 183378,
+   "doc_id": "cw-231"
+  },
+  "282107": {
+   "title": "A. Relationship Definitions and Child Support Responsibility",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "43-100 Responsible Relatives"
+   ],
+   "published_on": "2022-05-23T07:00:00Z",
+   "hash": "6e25d737f859118edb2e86c81a0de0fbfa81b43668936a08d02f5440df92ff2d",
+   "size": 133807,
+   "doc_id": "cw-232"
+  },
+  "282108": {
+   "title": "B. Unrelated Adult In The Home",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "43-100 Responsible Relatives"
+   ],
+   "published_on": "2022-05-23T07:00:00Z",
+   "hash": "64a5a07d17fed5b5241973a50d4018ed453a07d747f2f858b2d6b34fa94afeaa",
+   "size": 147584,
+   "doc_id": "cw-233"
+  },
+  "282137": {
+   "title": "A. Child Support/Referrals and Assignment of Rights & Cooperation Requirements",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "43-200 Child Support"
+   ],
+   "published_on": "2022-02-03T08:00:00Z",
+   "hash": "b78cb25c57b84224c9b4ba6075e341d20f99590c5caf3217452bcd9666147bed",
+   "size": 228153,
+   "doc_id": "cw-234"
+  },
+  "282138": {
+   "title": "B. Child Support Non-Cooperation",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "43-200 Child Support"
+   ],
+   "published_on": "2022-02-03T08:00:00Z",
+   "hash": "f5d16d88822f0cf21ce9f96d1ecfd58672c9157b60f4527d7f8eaff6fd606a00",
+   "size": 111106,
+   "doc_id": "cw-235"
+  },
+  "282139": {
+   "title": "C. Good Cause for Non-Cooperation",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "43-200 Child Support"
+   ],
+   "published_on": "2022-02-03T08:00:00Z",
+   "hash": "600378c286c345c69b24f399f897916c89076c08ed809da848da63a486245303",
+   "size": 173139,
+   "doc_id": "cw-236"
+  },
+  "40800078": {
+   "title": "D. Child Support Payments",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "43-200 Child Support"
+   ],
+   "published_on": "2025-08-25T20:37:51Z",
+   "hash": "fd2d530eedd6a661662c29f2a73a2f73744a7f5cc59c1784452776152802cc80",
+   "size": 168175,
+   "doc_id": "cw-237"
+  },
+  "282174": {
+   "title": "A. Income Eligibility",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-100 Income"
+   ],
+   "published_on": "2024-07-29T17:35:01Z",
+   "hash": "bb65fd0eba945680384915e99601112b437910bb96959e5341f561fbd7934b44",
+   "size": 262102,
+   "doc_id": "cw-238"
+  },
+  "282175": {
+   "title": "B. Income-General",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-100 Income"
+   ],
+   "published_on": "2025-01-21T19:25:22Z",
+   "hash": "184a65c5201b53cefd2ff778c000e9ca15bf0a727c7773d029c32c2a9ccbef44",
+   "size": 145216,
+   "doc_id": "cw-239"
+  },
+  "7574222": {
+   "title": "C. Excluded Exempt Income and Countable Income",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-100 Income"
+   ],
+   "published_on": "2024-06-17T18:31:24Z",
+   "hash": "8f0c1a2cc0a0a093ed700bbf66d0621dccb3ea84c244c69ee778868d9fcbc6b2",
+   "size": 325088,
+   "doc_id": "cw-240"
+  },
+  "282177": {
+   "title": "D. Unemployment Insurance Benefit",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-100 Income"
+   ],
+   "published_on": "2023-11-16T08:00:00Z",
+   "hash": "5cf90703eeb4256bbe5be1195b0cfc88ec329f6a98eb15524baff44c5f0c6039",
+   "size": 139229,
+   "doc_id": "cw-241"
+  },
+  "282178": {
+   "title": "E. Unrelated Adult Contribution",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-100 Income"
+   ],
+   "published_on": "2023-11-16T08:00:00Z",
+   "hash": "669d29753cbdaea1aa2e981d51df29343c1b49dd3fea8654d021827d01288bab",
+   "size": 122314,
+   "doc_id": "cw-242"
+  },
+  "282179": {
+   "title": "F. Income In-Kind",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-100 Income"
+   ],
+   "published_on": "2023-11-16T08:00:00Z",
+   "hash": "82dfd7ee5c08760ac3f6d1c9426e41addbba210c1da1646cf50a4e52139fcfab",
+   "size": 163376,
+   "doc_id": "cw-243"
+  },
+  "41531567": {
+   "title": "G. Income and Eligibility Verifcation System (IEVS)",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-100 Income"
+   ],
+   "published_on": "2026-04-20T16:45:54Z",
+   "hash": "ba7f5bf1cdc34a75c15f613d0d21cc2c0f2df7103accf6c5fdce0d8b15807e06",
+   "size": 159779,
+   "doc_id": "cw-244"
+  },
+  "282109": {
+   "title": "A. Recurring Special Needs",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-200 Special Needs"
+   ],
+   "published_on": "2021-02-01T08:00:00Z",
+   "hash": "210a738dc829959565ecae9ac2358f0e38ceee474b894145e7ef075710ef68c2",
+   "size": 167890,
+   "doc_id": "cw-245"
+  },
+  "282110": {
+   "title": "B. Nonrecurring Special Needs",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-200 Special Needs"
+   ],
+   "published_on": "2021-02-01T08:00:00Z",
+   "hash": "ef60767f53e745b48c934f3b973e57da8485b83bd6dc9299a9845ad461e57ef7",
+   "size": 159249,
+   "doc_id": "cw-246"
+  },
+  "282111": {
+   "title": "C. Pregnancy Special Need",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-200 Special Needs"
+   ],
+   "published_on": "2025-06-09T18:57:06Z",
+   "hash": "3eefe7ff35b583668dad5c15afc30a00c459e258383a03e1a6c38c94642b83d8",
+   "size": 101350,
+   "doc_id": "cw-247"
+  },
+  "7582237": {
+   "title": "D. Homeless Assistance",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-200 Special Needs"
+   ],
+   "published_on": "2024-06-28T16:14:41Z",
+   "hash": "5282c59b79c35533650dd14bb2dc7368513f92660d29150f7f19881313550d6c",
+   "size": 186130,
+   "doc_id": "cw-248"
+  },
+  "282113": {
+   "title": "E. Temporary Homeless Assistance",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-200 Special Needs"
+   ],
+   "published_on": "2025-08-21T22:39:50Z",
+   "hash": "5a045b923eaea63d378403ba115cfc75d80ee1f1c72c4687d5cf32ca79292b60",
+   "size": 366716,
+   "doc_id": "cw-249"
+  },
+  "282114": {
+   "title": "F. Permanent Homeless Assistance",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-200 Special Needs"
+   ],
+   "published_on": "2023-04-20T07:00:00Z",
+   "hash": "01872349a425a6699e3daa16b7e1e2e1a1420910301414469f6e113a327820d7",
+   "size": 307683,
+   "doc_id": "cw-250"
+  },
+  "282115": {
+   "title": "G. Expanded Temporary Homeless Assistance",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-200 Special Needs"
+   ],
+   "published_on": "2023-04-20T07:00:00Z",
+   "hash": "b4736ad05cd7c0224a68e8946dc261ec85d8643d7265171dc5478efd18afe91f",
+   "size": 196275,
+   "doc_id": "cw-251"
+  },
+  "282147": {
+   "title": "A. Annual Reporting (AR)",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-260 Annual Reporting (Child Only Cases)"
+   ],
+   "published_on": "2022-12-09T08:00:00Z",
+   "hash": "c8a28bc930d9c8527f0caea407b9965769e4e1ef76c78d11488d2b813b58218d",
+   "size": 156793,
+   "doc_id": "cw-252"
+  },
+  "282150": {
+   "title": "A. Semi-Annual Reporting (SAR)",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-270 Semi-Annual Reporting (SAR)"
+   ],
+   "published_on": "2021-08-10T07:00:00Z",
+   "hash": "ee6cc8716a8614513a5c13e64f2849400e8702b229269eac5f9a88c5a19cd6fa",
+   "size": 160974,
+   "doc_id": "cw-253"
+  },
+  "40465154": {
+   "title": "B. Income Eligibility and Budgeting",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-270 Semi-Annual Reporting (SAR)"
+   ],
+   "published_on": "2025-05-29T21:04:20Z",
+   "hash": "d5d25c12bb505924dcfa8fba5fa525098ae2ef450f992dfd270848c306309fcb",
+   "size": 133646,
+   "doc_id": "cw-254"
+  },
+  "9331011": {
+   "title": "C. Mandatory Mid-Period Reports",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-270 Semi-Annual Reporting (SAR)"
+   ],
+   "published_on": "2024-07-29T17:41:44Z",
+   "hash": "56a3cbda5e297f802307eb474350d2301edd56b47e939fca472686fa318d4697",
+   "size": 220628,
+   "doc_id": "cw-255"
+  },
+  "282149": {
+   "title": "H. Voluntary Mid-Period Reports",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-270 Semi-Annual Reporting (SAR)"
+   ],
+   "published_on": "2020-07-20T07:00:00Z",
+   "hash": "50073b1d931b8a9ef9c2a05e764653720bbf8e52acf076d2462a0aeaeb5cb75b",
+   "size": 166724,
+   "doc_id": "cw-256"
+  },
+  "282148": {
+   "title": "I. County-Initiated Actions and Third Party Information",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-270 Semi-Annual Reporting (SAR)"
+   ],
+   "published_on": "2016-04-27T07:00:00Z",
+   "hash": "6cdb56ecc00c3dcba85fc936bba0e220460a6f1ae7bd1efe901277a818ea5e47",
+   "size": 73151,
+   "doc_id": "cw-257"
+  },
+  "282145": {
+   "title": "A. Vendor Payments",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-300 Benefit Payments"
+   ],
+   "published_on": "2023-11-28T08:00:00Z",
+   "hash": "58b5882a70f9c49579469cfab2deeb22af20842d658387332c70732eec388831",
+   "size": 126196,
+   "doc_id": "cw-258"
+  },
+  "282142": {
+   "title": "B. Benefit Issuance",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-300 Benefit Payments"
+   ],
+   "published_on": "2023-03-22T07:00:00Z",
+   "hash": "37038e298fa7036adb8cf73d61aecebb57905c1acf8ab3cb95f518e4bc0f8007",
+   "size": 167767,
+   "doc_id": "cw-259"
+  },
+  "282144": {
+   "title": "C. Beginning Date of Aid",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-300 Benefit Payments"
+   ],
+   "published_on": "2023-11-27T08:00:00Z",
+   "hash": "2c1dbd35232ed207546894f6ffab60a6bff9942db2d31d2debba145f42079d46",
+   "size": 153977,
+   "doc_id": "cw-260"
+  },
+  "40171874": {
+   "title": "D. Amount of Aid",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-300 Benefit Payments"
+   ],
+   "published_on": "2025-03-19T21:00:54Z",
+   "hash": "74c58e5e7409737d80d6fe904d5641a0542c2f67a3baa4cfb0ea8a757d49983d",
+   "size": 163703,
+   "doc_id": "cw-261"
+  },
+  "41010233": {
+   "title": "E. Voluntary Maximum Aid Payment (MAP) Exclusion",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-300 Benefit Payments"
+   ],
+   "published_on": "2025-10-21T15:39:17Z",
+   "hash": "c44567dc0f92b92b04c1e23ba2c9c713c4ff2036202b496e06123aaf93092213",
+   "size": 229140,
+   "doc_id": "cw-262"
+  },
+  "7601953": {
+   "title": "A. Overpayment",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-10-27T22:31:18Z",
+   "hash": "b2835ad305f523f19c0358bf86149eef644c1908409c2da3a81fee37be1f58d6",
+   "size": 258350,
+   "doc_id": "cw-263"
+  },
+  "7601955": {
+   "title": "B. Definitions",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-10-27T22:33:10Z",
+   "hash": "f78aeae19ef044689034356490d1f0418ad4a4c5f5d3b1795d878ee8cb6fe117",
+   "size": 192218,
+   "doc_id": "cw-264"
+  },
+  "40029238": {
+   "title": "C. Investigation of Overpayment",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-02-18T19:17:14Z",
+   "hash": "705dbae5df6522f3e96c782d104f2cd4171ee911f3b14cbb33a95850dd202347",
+   "size": 74990,
+   "doc_id": "cw-265"
+  },
+  "40029258": {
+   "title": "D. Aid Paid Pending",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-02-18T19:19:12Z",
+   "hash": "4a5b8be2751ccde94aa35e899cce7e4de69ead251cfd357cef5af6c173b673c0",
+   "size": 66916,
+   "doc_id": "cw-266"
+  },
+  "40029287": {
+   "title": "E. Method of Recovery",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-02-18T19:34:39Z",
+   "hash": "863324addf564c511a672410060c196b522a28e7f81c0a82e0203dadb4231528",
+   "size": 123666,
+   "doc_id": "cw-267"
+  },
+  "40174170": {
+   "title": "F. Overpayment Calculation",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-03-20T05:57:15Z",
+   "hash": "f91936f3851bf49ec50fa04425cef30c0974c1a682c919751f5500f85f000ef7",
+   "size": 108817,
+   "doc_id": "cw-268"
+  },
+  "40029305": {
+   "title": "G. Overpayment Recovery",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-02-18T19:24:41Z",
+   "hash": "f0c5d15b3f2f69f525aca9235461b09cdcecfd0960888f38f2603ee292341716",
+   "size": 158784,
+   "doc_id": "cw-269"
+  },
+  "40029319": {
+   "title": "H. Mandatory Inclusion",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-02-18T19:26:40Z",
+   "hash": "62989e51372fe8806fdcdf98c2cadb53c23dbad662da5e81b4636f1b648cb920",
+   "size": 80042,
+   "doc_id": "cw-270"
+  },
+  "40029337": {
+   "title": "I. Overpayment Recomputation Method",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-02-18T19:28:48Z",
+   "hash": "b1a805ff3a6be2a308b282662bd9912b62561eff1c19919ceab349e2a00a25ab",
+   "size": 41085,
+   "doc_id": "cw-271"
+  },
+  "40029367": {
+   "title": "J. Intentional Program Violation",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-02-18T19:31:21Z",
+   "hash": "a2f0010f6da9edba63e22f528615e351e839502b3a0febf5609b42a92f2747fc",
+   "size": 165513,
+   "doc_id": "cw-272"
+  },
+  "40029383": {
+   "title": "K. Underpayment",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-02-18T19:32:55Z",
+   "hash": "b10f38e2574748eaf6c24b54019216e32eb3d82d614f1529565a16c93ebefb58",
+   "size": 124901,
+   "doc_id": "cw-273"
+  },
+  "282060": {
+   "title": "L. Employment Services - Supportive Service Overpayments and Underpayments",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2016-07-22T07:00:00Z",
+   "hash": "f223e9d6c75bbc5f4bd727dd25cdc7c4c4c80271b5ca2e2a13bf094243e191ee",
+   "size": 78555,
+   "doc_id": "cw-274"
+  },
+  "7574643": {
+   "title": "M. Overpayment Discharge Process",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "44-350 Overpayment-IPV-Underpayment"
+   ],
+   "published_on": "2025-02-21T17:39:41Z",
+   "hash": "9ab3d965c1bbb974d145fb10e52169e30f9861af524789b6ada2e58bd3c53b8d",
+   "size": 126513,
+   "doc_id": "cw-275"
+  },
+  "282192": {
+   "title": "A. CalWORKs Non-Minor Dependents (NMDs) Q&A",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-000 CalWORKs Questions and Answers"
+   ],
+   "published_on": "2014-06-06T07:00:00Z",
+   "hash": "5067aa71c4c491198a94c729b49919638e538c8496ba12ebcc4251eab8610beb",
+   "size": 147417,
+   "doc_id": "cw-276"
+  },
+  "282196": {
+   "title": "B. Annual Reporting/Child Only (AR/CO) Q&A",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-000 CalWORKs Questions and Answers"
+   ],
+   "published_on": "2014-01-28T08:00:00Z",
+   "hash": "6e65741e1482cefceb17cb6b0c253ccbbfadfc59d827385138794baabeb10767",
+   "size": 129326,
+   "doc_id": "cw-277"
+  },
+  "282118": {
+   "title": "CalWORKs Aid Types",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-200 Resources and Desk Aids"
+   ],
+   "published_on": "2016-07-26T07:00:00Z",
+   "hash": "16f9af1808e730d5ff021c894d273fc3d65d1b511f1f81cddd4263f0018f77da",
+   "size": 77957,
+   "doc_id": "cw-278"
+  },
+  "282120": {
+   "title": "CalWORKs Assistance Standards Chart",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-200 Resources and Desk Aids"
+   ],
+   "published_on": "2026-09-29T16:15:35Z",
+   "hash": "71018e3b1808da011f11257ca8a91a73d8a29bc578a37152afc30b57bacf85b3",
+   "size": 211094,
+   "doc_id": "cw-279"
+  },
+  "42024770": {
+   "title": "CalWORKs Property and Motor Vehicle Equity Value Limits Chart",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-200 Resources and Desk Aids"
+   ],
+   "published_on": "2026-10-02T17:42:07Z",
+   "hash": "eda8d99db52e2ff0e9ed24129a12b52de330c25af7c1e734e59125fe40bfbc93",
+   "size": 105686,
+   "doc_id": "cw-280"
+  },
+  "282209": {
+   "title": "CalWORKs Proration Chart",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-200 Resources and Desk Aids"
+   ],
+   "published_on": "2013-11-26T08:00:00Z",
+   "hash": "3bc1afb1d8563c8989148438aee7b037eeb938e2f189260d7789d21ddf6e4439",
+   "size": 58882,
+   "doc_id": "cw-281"
+  },
+  "282119": {
+   "title": "Foster Care Rates Desk Aid",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-200 Resources and Desk Aids"
+   ],
+   "published_on": "2016-12-14T08:00:00Z",
+   "hash": "547d7312756b7d314f9617e140babf4aba926675d05a7797b15b9c934b2eee61",
+   "size": 41157,
+   "doc_id": "cw-282"
+  },
+  "282214": {
+   "title": "Income: Reception and Placement (R&P)",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-200 Resources and Desk Aids"
+   ],
+   "published_on": "2011-06-01T07:00:00Z",
+   "hash": "00f1c3c2807865dc16c4aaa8ebfff85cd4211015aedecf0467c502740381dc88",
+   "size": 509928,
+   "doc_id": "cw-283"
+  },
+  "282208": {
+   "title": "SAR Cycles Chart",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-200 Resources and Desk Aids"
+   ],
+   "published_on": "2013-08-09T07:00:00Z",
+   "hash": "3e1f9fb876e96d8bc60afcc07842aa65392e0687c39c4c4c7b71f443244eafec",
+   "size": 43481,
+   "doc_id": "cw-284"
+  },
+  "282207": {
+   "title": "Student Loans and Grants Desk Aid",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "45-200 Resources and Desk Aids"
+   ],
+   "published_on": "2013-05-02T07:00:00Z",
+   "hash": "9aa903a3d49a48902ad7eec55ea1f20c4dc968aafd7553ff8cc0f034887d7af6",
+   "size": 138501,
+   "doc_id": "cw-285"
+  },
+  "38355976": {
+   "title": "A. Refugee Cash Assistance",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "69-205 Refugee Cash Assistance (RCA)"
+   ],
+   "published_on": "2025-11-03T19:21:50Z",
+   "hash": "371b89a4c7d2c52bb299fe4f48740c27a208bd77049cd91209d56bf04b13e26e",
+   "size": 206315,
+   "doc_id": "cw-286"
+  },
+  "282180": {
+   "title": "A. Trafficking and Crime Victims Assistance Program",
+   "program": "CalWORKs",
+   "path": [
+    "Chapters and Sections",
+    "70-100 Trafficking and Crime Victims Assistance Program (TCVAP)"
+   ],
+   "published_on": "2025-11-03T19:17:18Z",
+   "hash": "0445f78c3d6ab24265ce10dc7568e7937eb9a27c528ec4a83d67d7716d3f4e2e",
+   "size": 221656,
+   "doc_id": "cw-287"
+  },
+  "282124": {
+   "title": "SN 21-03 Suspected Unemployment Insurance Fraud and Identity Theft Information",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2021"
+   ],
+   "published_on": "2021-02-12T08:00:00Z",
+   "hash": "d7bf2c846890269ccb635abb7d44be28703dbdfdbcff3da1aa588fd1aea0969a",
+   "size": 237752,
+   "doc_id": "cw-123"
+  },
+  "282125": {
+   "title": "SN 21-06 CalWORKs Time-On-Aid Good Cause Time Limit Exemption",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2021"
+   ],
+   "published_on": "2021-07-30T07:00:00Z",
+   "hash": "fac4fe6078a1181a761ea48df92e2b1beea45877175bad2cabd6f8e2024412c7",
+   "size": 96995,
+   "doc_id": "cw-124"
+  },
+  "282126": {
+   "title": "SN  21-08 Overpayments Incurred during the COVID-19 Pandemic Emergency",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2021"
+   ],
+   "published_on": "2021-09-09T07:00:00Z",
+   "hash": "fca472a9842d98027c450c3be0bbda8b1dc652982fbcac2ce2905043a30da917",
+   "size": 135206,
+   "doc_id": "cw-125"
+  },
+  "282127": {
+   "title": "SN 21-15 RMR Ceilings Effective 1-1-2022",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2021"
+   ],
+   "published_on": "2021-12-20T08:00:00Z",
+   "hash": "ff48e0bdfe102cd96195c67c5cbabb2d0f0cf4bb28668e4e7423a946328f13cd",
+   "size": 228948,
+   "doc_id": "cw-126"
+  },
+  "282128": {
+   "title": "SN 22-02 - CalWORKs Time-On-Aid 60-Months Implementation",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2022"
+   ],
+   "published_on": "2022-04-06T07:00:00Z",
+   "hash": "f26fff7b81f9e9d31b9408c463771db67e95368d6fb0d091c8745b7c1417e97b",
+   "size": 368875,
+   "doc_id": "cw-127"
+  },
+  "40949627": {
+   "title": "SN 25-03 Increase to the  IRT Levels - October 2025",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2025"
+   ],
+   "published_on": "2025-10-02T21:13:36Z",
+   "hash": "194cc499cd217b663862f6e0b6f7c83e114d5b7ae791b8cf66f916cac410628e",
+   "size": 133528,
+   "doc_id": "cw-128"
+  },
+  "41196009": {
+   "title": "SN 25-04 Social Security Administration (SSA) Cost of Living Adjustment (COLA) 2026",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2025"
+   ],
+   "published_on": "2025-12-23T23:00:44Z",
+   "hash": "f6379736175cd4624d13a414494cddde9a03b555ece007a69f59a000d4d090bf",
+   "size": 149254,
+   "doc_id": "cw-129"
+  },
+  "41192323": {
+   "title": "SN 25-05 Implementation of the New Statewide Minimum Wage",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2025"
+   ],
+   "published_on": "2025-12-23T00:09:06Z",
+   "hash": "5008d533ff8a6a6bd3b5099479c197704d08f7509c208554927f386174877b26",
+   "size": 149751,
+   "doc_id": "cw-130"
+  },
+  "41440847": {
+   "title": "SN 26-01 - Earned Income Tax Credit (EITC) Outreach",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2026"
+   ],
+   "published_on": "2026-03-19T17:13:02Z",
+   "hash": "a8bc5deb862739a9789e80b06c85cfed9285b96f1274f026b56be6d6c574dca2",
+   "size": 741410,
+   "doc_id": "cw-131"
+  },
+  "42008536": {
+   "title": "SN 26-02 COLA Increase to MBSAC and IIK Levels - July 2026",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2026"
+   ],
+   "published_on": "2026-09-28T15:00:44Z",
+   "hash": "3f4b208d591055786f7636a44aad2b4a1dfb681e88ffedc83537fe59b1a34b9b",
+   "size": 108424,
+   "doc_id": "cw-132"
+  },
+  "41921759": {
+   "title": "SN 26-03 CalWORKs Time Limit Exemption for Recipient Living in Indian County",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2026"
+   ],
+   "published_on": "2026-08-27T16:11:57Z",
+   "hash": "576ee19e6859a2cd1c62ef8f5e5c2dca864debc7610ab14572ab0d10771f50ef",
+   "size": 253911,
+   "doc_id": "cw-133"
+  },
+  "42014822": {
+   "title": "SN 26-04 Increase to MAP - October 2026",
+   "program": "CalWORKs",
+   "path": [
+    "Special Notices",
+    "2026"
+   ],
+   "published_on": "2026-09-30T00:06:10Z",
+   "hash": "6e2236e3f3d4453141acc2b10570690ea7000d86bbb9d5baf36cc19bb9948549",
+   "size": 481006,
+   "doc_id": "cw-134"
+  },
+  "282676": {
+   "title": "Section 1 - Definitions",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 01 DEFINITIONS"
+   ],
+   "published_on": "2020-07-17T07:00:00Z",
+   "hash": "1c441ab8fd15defe7517c4b72ec0572bdfa2e99f528684140e0f839175131280",
+   "size": 198252,
+   "doc_id": "mc-328"
+  },
+  "282674": {
+   "title": "Section_1_Confidentiality.doc",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 02 CONFIDENTIALITY"
+   ],
+   "published_on": "2019-09-19T07:00:00Z",
+   "hash": "c11ae14fad69810c6ca2b836e04db89189ff2ee3c13e86c4a1f2e7150b56bee7",
+   "size": 156691,
+   "doc_id": "mc-329"
+  },
+  "282761": {
+   "title": "Section 01 - County of Responsibility",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 03 COUNTY OF RESPONSIBILITY"
+   ],
+   "published_on": "1996-05-01T07:00:00Z",
+   "hash": "a0ffa8ee95c8ee8078757879f48692d5811bbe7392c8814417679a43af1d8368",
+   "size": 103385,
+   "doc_id": "mc-330"
+  },
+  "282762": {
+   "title": "Section 02 - Intercounty Transfers.doc",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 03 COUNTY OF RESPONSIBILITY"
+   ],
+   "published_on": "2021-04-26T07:00:00Z",
+   "hash": "37dbfdad087d3e3ac9a4c858c09900c91b384bf7fa99deb553e6df446099deb4",
+   "size": 157955,
+   "doc_id": "mc-331"
+  },
+  "282738": {
+   "title": "Section 01 - Conditions of Eligibility",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2021-08-06T07:00:00Z",
+   "hash": "dd2c2db0217c63572dd1ac8bcfb9e9c6208215afa2ab2702063f8a16a4103e4e",
+   "size": 78504,
+   "doc_id": "mc-332"
+  },
+  "41046681": {
+   "title": "Section_02 - Application_Processing_Requirements",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2025-10-31T17:14:19Z",
+   "hash": "97f09d78e50f377ff129d9a308dcb4bc7e00cdaaf0ec93d379b1c10d1c423c65",
+   "size": 640309,
+   "doc_id": "mc-333"
+  },
+  "282739": {
+   "title": "Section 03 - Hospital Referral System",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2019-11-18T08:00:00Z",
+   "hash": "777417903cf2487167e13ae9527a9c9180d1df8aadb995cf6982f26b8156d316",
+   "size": 67253,
+   "doc_id": "mc-334"
+  },
+  "41287049": {
+   "title": "Section_04 - Minor_Consent_Services",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2026-01-29T16:38:28Z",
+   "hash": "107f5c30ee3031fe0280e4af0dbfd0081f0962a8ac69cf72f4326312ffb5836a",
+   "size": 170534,
+   "doc_id": "mc-335"
+  },
+  "610659": {
+   "title": "Section 05 - Immediate Medical Need",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2024-02-01T18:33:28Z",
+   "hash": "8a8cc50d2b483f9655b4e2cf5597e9e2c6f3e6d62b011d84fa7a89b269183387",
+   "size": 70087,
+   "doc_id": "mc-336"
+  },
+  "282741": {
+   "title": "Section 06 - Interviews",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2019-12-18T08:00:00Z",
+   "hash": "f90a61b279354e2f9aba7093f6251cf47c8a87c869e7da3338ddecbf33a80fb2",
+   "size": 64648,
+   "doc_id": "mc-337"
+  },
+  "40017351": {
+   "title": "Section_07 - Verification_and_Documentation_Procedures",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2026-07-30T21:07:07Z",
+   "hash": "c0ed1bc793eb24393d71b5237c046ed5c7a65ba0ec77059d6d9f7d377ecdfe06",
+   "size": 759908,
+   "doc_id": "mc-338"
+  },
+  "41844448": {
+   "title": "Section 08 - Residency_Requirements",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2026-07-30T21:15:13Z",
+   "hash": "3ef1e496bf5686a6d1ce733bd2a76bd100a0dce0665639ef72588fd49d2f38b2",
+   "size": 182873,
+   "doc_id": "mc-339"
+  },
+  "42091774": {
+   "title": "Section_09 - Diligent Search",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2026-10-27T22:07:16Z",
+   "hash": "7a3424986160459b0bd3143427b4c2f181000c337982c0ba5c8ca92541dde7d8",
+   "size": 160708,
+   "doc_id": "mc-340"
+  },
+  "282743": {
+   "title": "Section 10 - Child Health and Disability Prevention Program",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2019-12-24T08:00:00Z",
+   "hash": "c1008763c470850da2e7a45ea59bbef6277a0ebb3384bcd2aa6aeabbb8aa7f74",
+   "size": 103839,
+   "doc_id": "mc-341"
+  },
+  "282744": {
+   "title": "Section 11 - Social Security Number Requirements",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2020-06-24T07:00:00Z",
+   "hash": "7d52ffa35767c40a89a2901c1b7fb3f68b370ced5734b81ad5cda48706926186",
+   "size": 164376,
+   "doc_id": "mc-342"
+  },
+  "41091455": {
+   "title": "Section 12-Unconditionally Available Income",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2025-11-14T17:49:27Z",
+   "hash": "196f0347b03a8f763f1c7874e9deaf5db5b5fd3e20218dfb50b0bf65091e7198",
+   "size": 73515,
+   "doc_id": "mc-343"
+  },
+  "282736": {
+   "title": "Section 13 - Denial/Discontinuance Requirements",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2009-09-09T07:00:00Z",
+   "hash": "58b32e704b93b730ab6d8be8b180857134895faaeb9b3e0763c1c124b034ebfb",
+   "size": 204871,
+   "doc_id": "mc-344"
+  },
+  "41974728": {
+   "title": "Section 15 - Renewal",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2026-09-15T21:15:00Z",
+   "hash": "b7dc91e2ced304b3e3632d3dd68c29120dc31ac15fa73c30a208158b5fb88c16",
+   "size": 145436,
+   "doc_id": "mc-345"
+  },
+  "282746": {
+   "title": "Section 16 - Inter/Intra Program Transfer",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2024-02-09T18:52:26Z",
+   "hash": "633b4873b3bb336471c55ca0e488527034d524c60c90616d6ef8d296cd4ae9c2",
+   "size": 260054,
+   "doc_id": "mc-346"
+  },
+  "40983960": {
+   "title": "Section 17 - Notice of Action",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2025-10-13T21:19:24Z",
+   "hash": "78bf72545785b2d9926fe113f1d25cf6c6abe1ecb9f0ca6968c2de305737c8a3",
+   "size": 256731,
+   "doc_id": "mc-347"
+  },
+  "282737": {
+   "title": "Section 18 - Medical Support Enforcement Program",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2018-11-19T08:00:00Z",
+   "hash": "63b0946d0f95ef9299229a869c21bdc08169908978ed8a8eba4b3d845c180b90",
+   "size": 143500,
+   "doc_id": "mc-348"
+  },
+  "282735": {
+   "title": "Section 19 - Long-Term Care and Incompetent Applicants",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2020-11-12T08:00:00Z",
+   "hash": "3cde9a4d559b752b4dd41be1f1764a20cc9bccac2219ccb46bde667d12969470",
+   "size": 89347,
+   "doc_id": "mc-349"
+  },
+  "41571586": {
+   "title": "Section 20 - Accelerated Enrollment",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2026-05-01T15:54:44Z",
+   "hash": "f8306ae9c613333f44f2363f7a0e81408b567ba8738d7fb232390e33f06fe174",
+   "size": 121540,
+   "doc_id": "mc-350"
+  },
+  "282747": {
+   "title": "Section 21 - Good Cause",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2020-04-01T07:00:00Z",
+   "hash": "b321a7c2ff82cb2380aada1ee121b601459d845872727d46cf5a9766bf84b941",
+   "size": 94625,
+   "doc_id": "mc-351"
+  },
+  "282748": {
+   "title": "Section 22 - Medi-Cal Hierarchy",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2017-06-21T07:00:00Z",
+   "hash": "c69f3e503fe6a637378a721c998ab43471ee735a7da574554c0f601f2bd8161a",
+   "size": 84541,
+   "doc_id": "mc-352"
+  },
+  "282752": {
+   "title": "Section 23 - Tax Form 1095 for Minimum Essential Coverage Beneficiary",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 04 APPLICATION PROCESS"
+   ],
+   "published_on": "2022-05-11T07:00:00Z",
+   "hash": "5e1532ac2bbb87fa9da57d5308c2d58ed2dcb97350b16f82da8847fbb63786ca",
+   "size": 150342,
+   "doc_id": "mc-353"
+  },
+  "282707": {
+   "title": "Section 01 - Medi-Cal Categories",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2020-03-02T08:00:00Z",
+   "hash": "b2a7c365e8355ff78a23c774b976b5f53594123d99601a8ee0c2c2829acda1fb",
+   "size": 112502,
+   "doc_id": "mc-354"
+  },
+  "282706": {
+   "title": "Section 02-Medi-Cal Linkage",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2019-11-01T07:00:00Z",
+   "hash": "1bdc92d8d059adb7045e665b0439741755aaa31969e974680ea4249432febb32",
+   "size": 76760,
+   "doc_id": "mc-355"
+  },
+  "282716": {
+   "title": "Section 03 - Aged, Blind, or Disabled (ABD) Linkage",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2020-09-24T07:00:00Z",
+   "hash": "c9b99c77b4a66f1ede0369718ee5a8a55e1bcdb2838df4915685ec0ec81a28de",
+   "size": 131268,
+   "doc_id": "mc-356"
+  },
+  "282720": {
+   "title": "Section 04 - DDSD Referrals",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2018-04-25T07:00:00Z",
+   "hash": "be9edfc5b78724fbee9f8c7eb615fdf7b08bed9e65a3adfceaf4e2a255c2e8a5",
+   "size": 227635,
+   "doc_id": "mc-357"
+  },
+  "282717": {
+   "title": "Section 05 - Medically Indigent Linkage",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2020-09-24T07:00:00Z",
+   "hash": "228322c15a46a2d9c842ea615093803ec284bb476c54b77415273e47a015ed3c",
+   "size": 110703,
+   "doc_id": "mc-358"
+  },
+  "282718": {
+   "title": "Section 06 - Postpartum Benefits",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2022-03-02T08:00:00Z",
+   "hash": "bf3c72dc0d2dd7a1612c7d73db09aa788c9c2b6bbf4c39d521018f63131a8123",
+   "size": 107287,
+   "doc_id": "mc-359"
+  },
+  "282708": {
+   "title": "Section 07 - Transitional Medi-Cal (TMC) and Four-Month Continuing Medi-Cal (FMC)",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2022-06-22T07:00:00Z",
+   "hash": "8ceedd7b5dd40a71b342def7f7fcc2d2e4adb85ff0b66c108b3d67128a741a38",
+   "size": 120700,
+   "doc_id": "mc-360"
+  },
+  "41693869": {
+   "title": "Section 08 - Non-Citizen Special Programs",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2026-06-08T17:12:23Z",
+   "hash": "446d4661355e4c085a8ce49cd1a39df949fe66d3e94b0aaa00b0070d860ce1aa",
+   "size": 365158,
+   "doc_id": "mc-361"
+  },
+  "282713": {
+   "title": "Section 10 - Pickle Benefits",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2019-12-03T08:00:00Z",
+   "hash": "0d49f87c2b652bf63032a27b759b3d0ff0e8d217d199e31f3be9af2c0f0bdd6e",
+   "size": 135339,
+   "doc_id": "mc-362"
+  },
+  "282721": {
+   "title": "Section 11 - Medi-Cal  Coverage Foster Care and AAP-AAC",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2020-09-10T07:00:00Z",
+   "hash": "c357646fa7ab55d185043448c84acc9a1e415bc3758a0a63afcff34e6d41b377",
+   "size": 246124,
+   "doc_id": "mc-363"
+  },
+  "282711": {
+   "title": "Section 12 - Special No-Cost Programs for Pregnant Women and Children",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2012-12-31T08:00:00Z",
+   "hash": "301593edf7852843fac601c2154db9a21d0336828538ecde4e95d68045b1b6c0",
+   "size": 138512,
+   "doc_id": "mc-364"
+  },
+  "40474186": {
+   "title": "Section 13 - Medicare Savings Programs (MSP)",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2025-06-02T18:19:48Z",
+   "hash": "df15b377f72433815fc43470592bfeffb596d836a63b9e6ebd7212cd3376ff95",
+   "size": 206288,
+   "doc_id": "mc-365"
+  },
+  "282709": {
+   "title": "Section 14 - Sneede v. Kizer",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2007-10-25T07:00:00Z",
+   "hash": "0cfce09fcece4cce8adf5526497e3481df569d294603a457a5085c37b1392965",
+   "size": 163659,
+   "doc_id": "mc-366"
+  },
+  "282705": {
+   "title": "Section 15 - Miscellaneous Continuing Eligibility Programs",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2026-05-19T18:52:13Z",
+   "hash": "4af809df88c11c0ac1b3db54e6465d71e739c985cf353e20249781aa0157a4c4",
+   "size": 323886,
+   "doc_id": "mc-367"
+  },
+  "282722": {
+   "title": "Section 16 Presumptive Eligibility for Pregnant Women",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2017-05-09T07:00:00Z",
+   "hash": "b625062bfa6578d97bca790ecad86a9bd525c9a05ee002409354e13b6b14e9ed",
+   "size": 101829,
+   "doc_id": "mc-368"
+  },
+  "282714": {
+   "title": "Section 17 - Tuberculosis Program",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2003-12-12T08:00:00Z",
+   "hash": "05b4c8d9bb342c41c45319a02e31075738b6589fcfd4e0d9fb049ae3597a5083",
+   "size": 282494,
+   "doc_id": "mc-369"
+  },
+  "40498799": {
+   "title": "Section 18 - Waiver Programs for Medi-Cal Home and Community-Based Services",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2026-03-13T21:24:26Z",
+   "hash": "9bbb6945b4da84d2c3eccb5b0b8b3ae154bdf8288ecfb17204caf82f95fe585b",
+   "size": 425080,
+   "doc_id": "mc-370"
+  },
+  "282723": {
+   "title": "Section 19 Miscellaneous Programs for Aged and Disabled Individuals",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2020-12-04T08:00:00Z",
+   "hash": "67e9a8faa09dcfac64611d596db410e3c6f7d57a319ad1438a4a817782f70db0",
+   "size": 148142,
+   "doc_id": "mc-371"
+  },
+  "282715": {
+   "title": "Section 20 - Safe Arms for Newborns",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2018-05-22T07:00:00Z",
+   "hash": "38e24ef3d775fd99032575ab72c7cc211807319d5b15e370d846a389669aa2c0",
+   "size": 90460,
+   "doc_id": "mc-372"
+  },
+  "282725": {
+   "title": "Section 21 - In-Home Supportive Services",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2021-05-28T07:00:00Z",
+   "hash": "46ffa8e7d2a39325d317574d7181f0e13b75b71c3867f14f43482fdb6b79d409",
+   "size": 78607,
+   "doc_id": "mc-373"
+  },
+  "282719": {
+   "title": "Section 22 - Hospital Presumptive Eligibility",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 05 Medi-Cal Programs"
+   ],
+   "published_on": "2016-05-23T07:00:00Z",
+   "hash": "8be536a5f25b72ded0573d000ff20898870dcb8dc86d17c3c50907450934410f",
+   "size": 265111,
+   "doc_id": "mc-374"
+  },
+  "282772": {
+   "title": "Section 1 - Institutional Status",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 06 Institutional Status"
+   ],
+   "published_on": "2018-10-16T07:00:00Z",
+   "hash": "30d4ac0e9ee238718621bcf32efa93c87ed10aa0e08cc50bc3b2c64463f2fa68",
+   "size": 87593,
+   "doc_id": "mc-375"
+  },
+  "41860195": {
+   "title": "Section_2_Inmates_of_a_Public_Institution",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 06 Institutional Status"
+   ],
+   "published_on": "2026-08-05T20:47:59Z",
+   "hash": "6f7a7a385760d15e2146ce07185ea885a2d74f0b3a99c1f6f72a56480c4da907",
+   "size": 242194,
+   "doc_id": "mc-376"
+  },
+  "282769": {
+   "title": "Section 3 - Institution for Mental Diseases",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 06 Institutional Status"
+   ],
+   "published_on": "2020-04-09T07:00:00Z",
+   "hash": "a1814b9de87d8f9a94da3c2c04ffefbb22d478f01ac9f56101150c0ceb264ddf",
+   "size": 100803,
+   "doc_id": "mc-377"
+  },
+  "282770": {
+   "title": "Section 4 - Fleeing Felons",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 06 Institutional Status"
+   ],
+   "published_on": "2020-08-05T07:00:00Z",
+   "hash": "b1ea93b152fba1d72b25d29b9d638f98463edce1b60f398f7d0db6ccd61baa14",
+   "size": 99096,
+   "doc_id": "mc-378"
+  },
+  "282771": {
+   "title": "Section 5 - Juveniles in Public Institutions",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 06 Institutional Status"
+   ],
+   "published_on": "2024-08-07T18:38:12Z",
+   "hash": "0453a9e49e16fdc4568d0167094c71952c1d07f7a957f895217513866335e71e",
+   "size": 104706,
+   "doc_id": "mc-379"
+  },
+  "41184555": {
+   "title": "Section 1 - Citizenship",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 07  Citizenship/Immigration Status"
+   ],
+   "published_on": "2025-12-19T01:14:23Z",
+   "hash": "56d3b7bda959f8cc5b9cd3c2c09e54d5d871502ab3e46d07515366143bafe144",
+   "size": 275879,
+   "doc_id": "mc-380"
+  },
+  "41184853": {
+   "title": "Section 2 - Non-Citizens",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 07  Citizenship/Immigration Status"
+   ],
+   "published_on": "2025-12-19T01:46:26Z",
+   "hash": "2cbfd90409dbbec0d630573ca835c922e198c8afec66bbffcb2d430d04dcc787",
+   "size": 133691,
+   "doc_id": "mc-381"
+  },
+  "282782": {
+   "title": "Section 1 - Medi-Cal Family Budget Unit",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 08 Responsible Relatives & Unit Determination"
+   ],
+   "published_on": "2012-09-19T07:00:00Z",
+   "hash": "214b5ffbee0c00a7ea1dee7985e6b54ab516ebe0001afe99ab84f73de118871d",
+   "size": 124048,
+   "doc_id": "mc-382"
+  },
+  "282791": {
+   "title": "Section 2 - Tax Dependency",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 08 Responsible Relatives & Unit Determination"
+   ],
+   "published_on": "2012-09-19T07:00:00Z",
+   "hash": "03705d23a157db4be57e6353b266a5fb965a69f514e2041022a948aa1916b3f1",
+   "size": 65570,
+   "doc_id": "mc-383"
+  },
+  "282783": {
+   "title": "Section 4 - Long-Term Care/Board & Care and PACE",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 08 Responsible Relatives & Unit Determination"
+   ],
+   "published_on": "2018-01-21T08:00:00Z",
+   "hash": "c16d140fcc9f1e4840db015ca6f6442b2b8917425ef81c63651921598f400a64",
+   "size": 111236,
+   "doc_id": "mc-384"
+  },
+  "282799": {
+   "title": "Section 5 - Caretaker Relatives",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 08 Responsible Relatives & Unit Determination"
+   ],
+   "published_on": "2012-09-19T07:00:00Z",
+   "hash": "a0ba1632bce4af62a4c52bb3794aa98d3c32bcfd26fd698555eee910398f2d6f",
+   "size": 94663,
+   "doc_id": "mc-385"
+  },
+  "282784": {
+   "title": "Section 6 - Registered Domestic Partnerships",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 08 Responsible Relatives & Unit Determination"
+   ],
+   "published_on": "2019-09-09T07:00:00Z",
+   "hash": "432f665b5d2c3120445898855a0ea6576932d45dffb13283f3cdbd137030fe88",
+   "size": 105926,
+   "doc_id": "mc-386"
+  },
+  "282785": {
+   "title": "Section 7 - Same-Sex Marriages",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 08 Responsible Relatives & Unit Determination"
+   ],
+   "published_on": "2017-10-16T07:00:00Z",
+   "hash": "80a0acccb8e46eaf6fcb808de3c6ac33ba9f97fc3d04c56ccd3aa6337a0aa229",
+   "size": 95609,
+   "doc_id": "mc-387"
+  },
+  "282754": {
+   "title": "Section 01 - Types of Property, Property Reserve, and Reduction of Property",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "2022-06-10T07:00:00Z",
+   "hash": "6ed89d4cc5ecaae3f623afc9d1a3a518c9f4ca21567c82dc4ba396c9e473c743",
+   "size": 117564,
+   "doc_id": "mc-388"
+  },
+  "282793": {
+   "title": "Section 02 - Ownership and Availability",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "2013-06-10T07:00:00Z",
+   "hash": "4ead4f297f04938a9ebd8f5c791a11ad26b019d943a93621a4e9f1396c91fdf1",
+   "size": 96523,
+   "doc_id": "mc-389"
+  },
+  "282794": {
+   "title": "Section 03 - Community/Separate Property",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "1990-09-10T07:00:00Z",
+   "hash": "92cb4b5acd7e3e55a926f5d7bed1b016abf2569fd49ca5cf5e8cc054b092a790",
+   "size": 91851,
+   "doc_id": "mc-390"
+  },
+  "282790": {
+   "title": "Section 04 - Principal Residence",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "2003-05-03T07:00:00Z",
+   "hash": "64dc3965cd612ed15d0b898cc40366ecd7223d81bd08e4fc3201e47205480953",
+   "size": 171800,
+   "doc_id": "mc-391"
+  },
+  "282800": {
+   "title": "Section 05 - Real Property",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "1988-06-27T07:00:00Z",
+   "hash": "ad44993fb2c034107cf3fdd65bfe5ade0a80c25e2b628188ad9e01930a358bc8",
+   "size": 112621,
+   "doc_id": "mc-392"
+  },
+  "282759": {
+   "title": "Section 06 - Personal Property",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "2022-03-09T08:00:00Z",
+   "hash": "aab2f36813f39b852c837e8140daf281e0b0ce243ca78ba99bcaf4ccbaae5964",
+   "size": 203628,
+   "doc_id": "mc-393"
+  },
+  "282755": {
+   "title": "Section 07 - Conversions and Transfers",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "2002-03-04T08:00:00Z",
+   "hash": "226602ca1824622b1507dc0d8b8587322d30c633f55d221adfe97a66d45d8000",
+   "size": 81314,
+   "doc_id": "mc-394"
+  },
+  "282792": {
+   "title": "Section 08 - Business Property",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "1995-04-21T07:00:00Z",
+   "hash": "20f1b36ec2f49812bf3cd8d9fefb0863acfeaeca948edeeca3b3b3aa121e19f4",
+   "size": 44240,
+   "doc_id": "mc-395"
+  },
+  "282758": {
+   "title": "Section 09 - Deeds of Trust, Mortgages, and Life Estates",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "2020-03-11T07:00:00Z",
+   "hash": "8c999de2624e77afa01e15f481f6c49ad916a5a46038e4740fa2f24bc7262561",
+   "size": 112987,
+   "doc_id": "mc-396"
+  },
+  "282760": {
+   "title": "Section 10 - Loans",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "2021-02-08T08:00:00Z",
+   "hash": "e9b8e51e46797e83ffc81839af372c4b7358646e66824f20765b2b4d3b21c6fe",
+   "size": 110156,
+   "doc_id": "mc-397"
+  },
+  "282787": {
+   "title": "Section 11 - Life Insurance, Burial Plots/Crypts/Vaults, Burial Trusts",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "1994-03-09T08:00:00Z",
+   "hash": "e721b0b5ca58206a193c5bee0b83410a41a93d4536a03d572ab0e339055233a4",
+   "size": 97571,
+   "doc_id": "mc-398"
+  },
+  "282756": {
+   "title": "Section 12 - Voluntary Repayment of Excess Property-People in Long-Term Care",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "2020-09-22T07:00:00Z",
+   "hash": "9d32c8353bb5ecf5f9dc03faad416e601bce6c19811b92353d5ce0cb0f58a706",
+   "size": 106713,
+   "doc_id": "mc-399"
+  },
+  "282757": {
+   "title": "Section 13 - Treatment of Property of Insitutionalized and Community Spouses and LTC Property Exemption",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "2019-05-07T07:00:00Z",
+   "hash": "273fe774785d1bc35a3b76b7bc148a3055ddf5a2d8c3dfc878d3306b9a85b70c",
+   "size": 109288,
+   "doc_id": "mc-400"
+  },
+  "282788": {
+   "title": "Section 14 - Trusts and Annuities",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 09 Property"
+   ],
+   "published_on": "1996-07-23T07:00:00Z",
+   "hash": "641fa872261d0a31fec367867ec4a244b88f0b429466ef3766351e8332228730",
+   "size": 359631,
+   "doc_id": "mc-401"
+  },
+  "282726": {
+   "title": "Section 1 - Income Ownership/Availability",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 10 NON-MAGI INCOME"
+   ],
+   "published_on": "2013-04-24T07:00:00Z",
+   "hash": "da62ccdd239bb7eb32340b6128ed43ed8684d66ebe1a303e94d9290bf7a26a38",
+   "size": 77568,
+   "doc_id": "mc-402"
+  },
+  "282732": {
+   "title": "Section 2 - Earned/Unearned Income",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 10 NON-MAGI INCOME"
+   ],
+   "published_on": "2021-07-20T07:00:00Z",
+   "hash": "27fe34620faee4c6c382f7c60560ed0b4b363fc74f0667d9988834a6eed7724f",
+   "size": 94319,
+   "doc_id": "mc-403"
+  },
+  "282730": {
+   "title": "Section 3 - Exempt Income",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 10 NON-MAGI INCOME"
+   ],
+   "published_on": "2017-12-20T08:00:00Z",
+   "hash": "e7a55b02a1beec75b661283dac904027d416de566094075119f45507bb1687e7",
+   "size": 174101,
+   "doc_id": "mc-404"
+  },
+  "282727": {
+   "title": "Section 4 - Determining Monthly Income Amounts",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 10 NON-MAGI INCOME"
+   ],
+   "published_on": "2013-04-24T07:00:00Z",
+   "hash": "12f03af9ffe15e6a2da859f2506223d21874f2514ace7e2cff280857e3443761",
+   "size": 102289,
+   "doc_id": "mc-405"
+  },
+  "282728": {
+   "title": "Section 5 - Treatment of Income",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 10 NON-MAGI INCOME"
+   ],
+   "published_on": "2013-07-03T07:00:00Z",
+   "hash": "a0609f536b218a4ebec6956b6b77c35796a59378b057ab98e3902caaedee895d",
+   "size": 147313,
+   "doc_id": "mc-406"
+  },
+  "41839510": {
+   "title": "Section_6 - Deductions",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 10 NON-MAGI INCOME"
+   ],
+   "published_on": "2026-07-29T18:40:10Z",
+   "hash": "8b0de1dbb5df5896a9491f16a7a8044b23fb952d4593b58221923dfa78215beb",
+   "size": 193436,
+   "doc_id": "mc-407"
+  },
+  "282731": {
+   "title": "Section 7 - TMC Income",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 10 NON-MAGI INCOME"
+   ],
+   "published_on": "2020-09-22T07:00:00Z",
+   "hash": "6e93405c0b4ba14812d0cd65ffc7fa4ed3c37eed148481bfb9b0890aeb571ab2",
+   "size": 113862,
+   "doc_id": "mc-408"
+  },
+  "282763": {
+   "title": "Section 1 - Maintenance Needs",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 11 Maintenance Needs"
+   ],
+   "published_on": "2009-09-16T07:00:00Z",
+   "hash": "eed8e1aeeb79740d53b6c0ad524fda87ecd537b15d6e639d81d41ca46d59ef1d",
+   "size": 76270,
+   "doc_id": "mc-409"
+  },
+  "41902697": {
+   "title": "Section_1A_Appendix_A_Assistance_Standards",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 11 Maintenance Needs"
+   ],
+   "published_on": "2026-08-20T18:53:05Z",
+   "hash": "be99f4d7b73d2d9b14bb05e5d92afe4b8063d06e62a0febd6bc5c376a6e1ddbc",
+   "size": 563962,
+   "doc_id": "mc-410"
+  },
+  "282733": {
+   "title": "Section 1 - Share of Cost Determinations",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 12 Share-of-Cost"
+   ],
+   "published_on": "2020-11-09T08:00:00Z",
+   "hash": "b5784a9f9d160662f357c68a3583d1913ced24d5c4651b224bedcf711c11af01",
+   "size": 84221,
+   "doc_id": "mc-411"
+  },
+  "282786": {
+   "title": "Section 2 - Processing of Forms and Adjustments",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 12 Share-of-Cost"
+   ],
+   "published_on": "2001-10-31T09:00:00Z",
+   "hash": "c17b896e0949c9955192a416205fb9e7ffcc46fab6b9cc745fd2eaa9bf3a172c",
+   "size": 89536,
+   "doc_id": "mc-412"
+  },
+  "282677": {
+   "title": "Section 1 - Period of Eligibility",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 13 PERIOD OF ELIGIBILITY"
+   ],
+   "published_on": "2013-04-24T07:00:00Z",
+   "hash": "0bef9bcdd96e6cfc594973666886dd1d125196ce6db31f2951d74c5773e999ad",
+   "size": 84850,
+   "doc_id": "mc-413"
+  },
+  "41286859": {
+   "title": "Section_1_Card_Use",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 14 MEDI-CAL CARD USE AND ISSUANCE"
+   ],
+   "published_on": "2026-01-29T16:05:47Z",
+   "hash": "dfb47e08b8c23a8a1336e7cc326a0acbe6d6e0d8984a7541b9c326de88560573",
+   "size": 145766,
+   "doc_id": "mc-414"
+  },
+  "41286975": {
+   "title": "Section_2_Benefits_Identification_Card_(BIC)_Issuance",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 14 MEDI-CAL CARD USE AND ISSUANCE"
+   ],
+   "published_on": "2026-01-29T16:22:26Z",
+   "hash": "6a5464046fc135bd2ba84cb6daf072b72d40ef52b6e3279c70522af448b8d7aa",
+   "size": 146290,
+   "doc_id": "mc-415"
+  },
+  "282767": {
+   "title": "Section 3 - Medi-Cal Eligibility Verification and Letter of Authorization",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 14 MEDI-CAL CARD USE AND ISSUANCE"
+   ],
+   "published_on": "2020-09-22T07:00:00Z",
+   "hash": "37d1c235b95afef329f6264915a8bf763116181e8300f16bdc53ca9332ae095b",
+   "size": 115671,
+   "doc_id": "mc-416"
+  },
+  "282768": {
+   "title": "Section 4 - Proof of Medi-Cal Eligibility and the Provider's Responsibility",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 14 MEDI-CAL CARD USE AND ISSUANCE"
+   ],
+   "published_on": "2019-11-18T08:00:00Z",
+   "hash": "22209005c5f7aa627db81fb50c9d085fcf24c26ddee1ecb31e2aa238d68f0f1f",
+   "size": 72132,
+   "doc_id": "mc-417"
+  },
+  "282780": {
+   "title": "Section 1 - Other Health Coverage",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 15 OTHER HEALTH CARE COVERAGE AND MEDICARE BUY-IN COVERAGE"
+   ],
+   "published_on": "2018-09-19T07:00:00Z",
+   "hash": "e4723cd74a157e88c604cdc7a40b54bfcc806c446bfb13004051671b43f2a8f3",
+   "size": 112870,
+   "doc_id": "mc-418"
+  },
+  "282779": {
+   "title": "Section 3 - Third Party Liability Claims",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 15 OTHER HEALTH CARE COVERAGE AND MEDICARE BUY-IN COVERAGE"
+   ],
+   "published_on": "2017-06-23T07:00:00Z",
+   "hash": "303dfe8f52c8455bde56dabc1b87573dc4364e376dbd58c9f53ab4e7cf315d33",
+   "size": 118779,
+   "doc_id": "mc-419"
+  },
+  "7535371": {
+   "title": "Section_4_Medicare",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 15 OTHER HEALTH CARE COVERAGE AND MEDICARE BUY-IN COVERAGE"
+   ],
+   "published_on": "2024-06-03T19:11:51Z",
+   "hash": "2c96038af8232c585b233af649708f0ad0b431755c186bb2cdf8a9067bc0b3fe",
+   "size": 94646,
+   "doc_id": "mc-420"
+  },
+  "282682": {
+   "title": "Section 1 - Fraud Prevention and Referral",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 16 OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION"
+   ],
+   "published_on": "2023-06-28T07:00:00Z",
+   "hash": "3f16e1cd8615553b08f63330721b0449199f5c6d657ffdd29e8f80e07c0e2aca",
+   "size": 132255,
+   "doc_id": "mc-421"
+  },
+  "282681": {
+   "title": "Section 2 - Overpayments",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 16 OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION"
+   ],
+   "published_on": "2015-03-18T07:00:00Z",
+   "hash": "b3ad6e31870bf69414dfcfc29132a3cbba9cbc356db68916fb047b6dd0ebd38a",
+   "size": 69465,
+   "doc_id": "mc-422"
+  },
+  "282678": {
+   "title": "Section 3 - Medi-Cal Estate Recovery",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 16 OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION"
+   ],
+   "published_on": "2015-03-18T07:00:00Z",
+   "hash": "15cad566e69ceb7df050d2254d08ad16b036fa1203ab520fdd7b10b2c208d8f8",
+   "size": 84365,
+   "doc_id": "mc-423"
+  },
+  "282679": {
+   "title": "Section 4 - Employee Integrity/Conflict of Interest Issues",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 16 OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION"
+   ],
+   "published_on": "2015-03-15T07:00:00Z",
+   "hash": "38ed925b806989534b07777a90427aebd34019f5b6ce42e5ed4e55e4957ce16b",
+   "size": 57333,
+   "doc_id": "mc-424"
+  },
+  "282680": {
+   "title": "Section 5 - Fraudulent/Altered Documents",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 16 OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION"
+   ],
+   "published_on": "2015-03-18T07:00:00Z",
+   "hash": "d1d16bae0a1b7e44739732bb5af870bd75518bb79db63e03b5b1bd92a0caa330",
+   "size": 63622,
+   "doc_id": "mc-425"
+  },
+  "282801": {
+   "title": "Section 1 - Medi-Cal Special Treatment Benefits",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 17 MEDI-CAL SPECIAL TREATMENT PROGRAMS"
+   ],
+   "published_on": "2001-01-10T08:00:00Z",
+   "hash": "987e315529536abdb62f8623dd546e9402f465ee7572098049b72707c60dc06c",
+   "size": 135351,
+   "doc_id": "mc-426"
+  },
+  "41693956": {
+   "title": "Section 2 - Organ Transplant Anti-Rejection Medications Program",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 17 MEDI-CAL SPECIAL TREATMENT PROGRAMS"
+   ],
+   "published_on": "2026-06-08T17:23:00Z",
+   "hash": "f8bf91d92a4f8d490b5e99cc47b9d25f56245c63241d0126db89d3340cb5d610",
+   "size": 114916,
+   "doc_id": "mc-427"
+  },
+  "40417420": {
+   "title": "Section_1_Performance_Standards_Overview",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 20 PERFORMANCE STANDARDS"
+   ],
+   "published_on": "2025-05-15T19:45:05Z",
+   "hash": "3ef0c5cc69b15c47ea7c122fd224b5b12e21073b9d0ff1ff6dfdce94f25f7271",
+   "size": 122841,
+   "doc_id": "mc-428"
+  },
+  "40417424": {
+   "title": "Section_2_Eligibility_Determinations_and_Redeterminations",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 20 PERFORMANCE STANDARDS"
+   ],
+   "published_on": "2025-05-15T19:45:17Z",
+   "hash": "41fb6fc0209eaa2b9c4f8d6cfe12c75ea491a333babc9782438a74e136ac8ac1",
+   "size": 83232,
+   "doc_id": "mc-429"
+  },
+  "40433593": {
+   "title": "Section_3_MEDS_Alerts",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 20 PERFORMANCE STANDARDS"
+   ],
+   "published_on": "2025-05-20T21:17:13Z",
+   "hash": "2c400bd54a90663bc416f31cdb64ec49e5cc4ddf466ab13f11f353456d330c72",
+   "size": 178611,
+   "doc_id": "mc-430"
+  },
+  "282802": {
+   "title": "Section 1 - MAGI APTC and Health Care Reform",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 21 MAGI APTC and Health Care Reform"
+   ],
+   "published_on": "2015-03-16T07:00:00Z",
+   "hash": "658a5fa9909e6989ae51d4f9ee94a374f09015c6a56b4e206475b2d0699660e6",
+   "size": 85754,
+   "doc_id": "mc-431"
+  },
+  "282803": {
+   "title": "Section 3 - MAGI Medi-Cal Tax Household Composition",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 21 MAGI APTC and Health Care Reform"
+   ],
+   "published_on": "2021-06-29T07:00:00Z",
+   "hash": "fc4595de9230190fadf990c3c6d9157b5838baaf72c6cc4ddf58413cf81c1b5f",
+   "size": 100636,
+   "doc_id": "mc-432"
+  },
+  "42053054": {
+   "title": "Section 4 - MAGI Income and Deductions",
+   "program": "Medi-Cal",
+   "path": [
+    "Chapters and Sections",
+    "ARTICLE 21 MAGI APTC and Health Care Reform"
+   ],
+   "published_on": "2026-10-13T20:21:45Z",
+   "hash": "d1da989426528c89dda48160d1a10eae358620042323d841a0c1a958bd58dab2",
+   "size": 176061,
+   "doc_id": "mc-433"
+  },
+  "282795": {
+   "title": "SN 13-09 Health Care Reform Medi-Cal and Low Income Health Program Addendum A - MAGI Eligibility Requirements",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2013-12-06T08:00:00Z",
+   "hash": "e18a02cb61c2f434fbbdef77465493f1e414f690c3653fe81054c5b8950bbe7f",
+   "size": 237917,
+   "doc_id": "mc-327"
+  },
+  "282796": {
+   "title": "SN 13-09 Health Care Reform Medi-Cal Addendum E - Citizenship/Immigration Status, Unconditionally Available Income, MAGI Countable Income and Income Deductions, American Indian/Alaskan Native Exemptions from Premium Payments, LTC",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2014-04-23T07:00:00Z",
+   "hash": "1d125f9cf2fd0daa3ba31db80e4c6b4b20882900d38f91b08031f18997dbe6ea",
+   "size": 112593,
+   "doc_id": "mc-326"
+  },
+  "282683": {
+   "title": "SN 13-09 Health Care Reform Medi-Cal Addendum I - MAGI Order of Evaluation, Interim Process for Pregnancy Reported, Children's Aid Codes, HH Composition, E-Verified Income, Reasonable Compatibility Standard",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2014-11-13T08:00:00Z",
+   "hash": "a82ea133ab16e795d910e26c035535db3fce8782e6cb077933a7a5f1bac8f49c",
+   "size": 195583,
+   "doc_id": "mc-325"
+  },
+  "282685": {
+   "title": "SN 13-09 Health Care Reform Medi-Cal Addendum Q- Whose Income Counts and How to Count Income for MAGI",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2015-05-19T07:00:00Z",
+   "hash": "fef465077452b4168904bf2ae37575df3410a6e0a21c29d11f97f78780ab57fd",
+   "size": 178078,
+   "doc_id": "mc-323"
+  },
+  "282684": {
+   "title": "SN 15-02 - Medi-Cal Eligibility for Deferred Action for Childhood Arrivals",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2015-03-05T08:00:00Z",
+   "hash": "a71ef8d5457ecc139e24c57a0af7a2e302e45425496d9980b5f97ccd9513893e",
+   "size": 113558,
+   "doc_id": "mc-324"
+  },
+  "282686": {
+   "title": "SN_18-07_Obsolete_and_Transitional_Pre-ACA_Aid_Code_Clean-Up",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2018-11-19T08:00:00Z",
+   "hash": "d5a68ddae8351ef6459cbceca7f501954700dc59b88550a19822f48f6870081f",
+   "size": 31844,
+   "doc_id": "mc-322"
+  },
+  "282687": {
+   "title": "SN 18-07 Addendum A - Pre-ACA and Transitional Aid Code Clean-Up",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2019-03-18T07:00:00Z",
+   "hash": "128d724483a45823522a856950ca9991abc1c048b07af9ad351a636c1a005bf2",
+   "size": 885227,
+   "doc_id": "mc-321"
+  },
+  "282688": {
+   "title": "SN_20-04_2020_Tuberculosis_(TB)_Income_Limit",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2020-09-22T07:00:00Z",
+   "hash": "d49cff83fbf042b34f2c49298124f954ab7e2635cc6b5039626aded2d260529c",
+   "size": 97000,
+   "doc_id": "mc-320"
+  },
+  "282689": {
+   "title": "SN 21-03 - Suspected Unemployment Insurance Fraud and Identity Theft Information",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2021-02-12T08:00:00Z",
+   "hash": "546f56c23341de216142529de52322f93d6954fbe49142c19d9d650f19f2c3cd",
+   "size": 238465,
+   "doc_id": "mc-319"
+  },
+  "282690": {
+   "title": "SN 21-04 2021-2022 Family Member Base Allocation Amount",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2021-09-20T07:00:00Z",
+   "hash": "2c377104a8dc647aaa54ffb8ff51eccd2624f2d00a3cd0c8825ffb140f81ebb6",
+   "size": 22217,
+   "doc_id": "mc-318"
+  },
+  "282691": {
+   "title": "SN 21-05 \u2013 2022 Federal Poverty Level Increases",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2021-12-14T08:00:00Z",
+   "hash": "26cb941989fa9f0cba40a791790667e7d80cb5cc927220891da7c877e1e55cc1",
+   "size": 128250,
+   "doc_id": "mc-317"
+  },
+  "282693": {
+   "title": "SN 22-01 Medicare Catastrophic Coverage Act Spousal Impoverishment Caps and substantial Gainful Activity",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2022-02-10T08:00:00Z",
+   "hash": "ddbc552c10d4dea729b1c3f6d44e84776e9ddc1622ae040d4eb609bf263ac2d9",
+   "size": 71477,
+   "doc_id": "mc-315"
+  },
+  "282694": {
+   "title": "SN 22-02 Earned Income Tax Credit Outreach",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2022-03-17T07:00:00Z",
+   "hash": "daf2a09e5e1809b45c73c890d82914721488f453a4f98ddc512e99f290bb1b9d",
+   "size": 681484,
+   "doc_id": "mc-313"
+  },
+  "282692": {
+   "title": "SN_22-03_Temporary_Directions_for_Collecting_Gender_Information",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2022-02-03T19:44:00Z",
+   "hash": "af4470d22f3394989f088d8a80489ae09d2ddedf8061908bd8243ad1bc51eafe",
+   "size": 127193,
+   "doc_id": "mc-316"
+  },
+  "282695": {
+   "title": "SN_22-04_2022_FPL_Increase_and_APPR",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2022-03-01T08:00:00Z",
+   "hash": "0a3e7fe23d6f3afd00fd6a9d8f22162f4c5c8cf8f2969bea1d0ffc15b132b937",
+   "size": 83339,
+   "doc_id": "mc-314"
+  },
+  "282698": {
+   "title": "SN 22-05 2022 Medicare Savings Programs Property Limit",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2022-07-01T07:00:00Z",
+   "hash": "49d2812f5f842579a7b8a9074b48ce346ed00e671fd3f3198d7955af1dc1df7d",
+   "size": 83932,
+   "doc_id": "mc-311"
+  },
+  "282696": {
+   "title": "SN_22-06_2022-2023_Family_Members_Base_Allocation_Amount",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2022-06-22T07:00:00Z",
+   "hash": "65d57c75e5b7a379c2f3c2ebf7be9ed994f2dc69576fce1d6a7b5943c79433ee",
+   "size": 58409,
+   "doc_id": "mc-312"
+  },
+  "282697": {
+   "title": "SN 22-07 Increase to the Reasonable Compatibility Threshold in CalHEERS",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2022-07-01T07:00:00Z",
+   "hash": "5cd3bc67df79f6724684a559fdf215375c76877e4b3d8ae58b4688a5544da9e5",
+   "size": 134196,
+   "doc_id": "mc-310"
+  },
+  "282699": {
+   "title": "SN 22-09 - TB Program Income Limit",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2022-08-23T23:07:21Z",
+   "hash": "251719706af7748c9e08eaca3ba04757a59c89ca8fca8ff2f28715a7e41d0c3b",
+   "size": 121861,
+   "doc_id": "mc-309"
+  },
+  "282700": {
+   "title": "SN_22-10_January_2023_Social_Security_Administration_Cost_of_Living_Adjustment_and_Related_Changes",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2022-12-30T08:00:00Z",
+   "hash": "efac4817705b46b5532379c5fdef929973c844eef4f3b4c81d5812650102b10f",
+   "size": 258502,
+   "doc_id": "mc-308"
+  },
+  "282702": {
+   "title": "SN 23-01 Earned Income Tax Credit Outreach",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2023-03-13T07:00:00Z",
+   "hash": "bcb62fb3f019978efb92e804475e3943c56c2b2c7f0e343d5326677f83aeff02",
+   "size": 1032428,
+   "doc_id": "mc-307"
+  },
+  "282701": {
+   "title": "SN 23-02 2023 Medicare Catastrophic Coverage Act Spousal Impoverishment Caps and Federal Poverty Levels23",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2023-03-13T07:00:00Z",
+   "hash": "8484c8d90f0c72cb38b30717ce84f9f9d14a27408cea82de97c9b2dec65f25bd",
+   "size": 107046,
+   "doc_id": "mc-306"
+  },
+  "282703": {
+   "title": "SN 23-03 2023 Statewide Average Private Pay Rate for Nursing Facility Services",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2023-04-15T06:22:40Z",
+   "hash": "bbb7110ba56159e72a24c03b1e659960a5bd5e0f54b329e84bceb67f59302e66",
+   "size": 161506,
+   "doc_id": "mc-305"
+  },
+  "282813": {
+   "title": "SN 23-05 Adult Expansion for Individuals Ages 26 to 49",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2024-01-10T17:18:49Z",
+   "hash": "971de8374e5ccf7bfe051e6d1c8ef4e19674fc9e0b67b33a3280a41713e34ea6",
+   "size": 255199,
+   "doc_id": "mc-302"
+  },
+  "282812": {
+   "title": "SN 23-06 Asset Elimination",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2024-01-10T00:31:41Z",
+   "hash": "4273454e8041186d0d070493cecaae8c516ca71a2ee6e8fa2c2382e58c80e169",
+   "size": 157746,
+   "doc_id": "mc-303"
+  },
+  "282704": {
+   "title": "SN 23-07 January 2024 Social Security Cost of Living Adjustment and Related Changes",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2023-12-14T21:40:54Z",
+   "hash": "c5ac691009a160bf727c13a94d85e8f193127193fa4ecd3b8631737692475698",
+   "size": 88925,
+   "doc_id": "mc-304"
+  },
+  "1208355": {
+   "title": "SN_24-01_Earned_Income_Tax_Credit_Outreach",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2024-02-28T18:51:03Z",
+   "hash": "9fc147fea2331193f0f80a0ed8df872966959d35e258e119620f7341bef5ad79",
+   "size": 350952,
+   "doc_id": "mc-301"
+  },
+  "1461884": {
+   "title": "SN 24-02 - 2024 Federal Poverty Level and Statewide Average Private Pay Rate for Nursing Facilities",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2024-03-26T17:12:19Z",
+   "hash": "f5afdac68035d9249f3a7ec8fe411cb5765a1ee2fce6f1e181389a56ddef28c4",
+   "size": 134141,
+   "doc_id": "mc-300"
+  },
+  "11132387": {
+   "title": "SN 24-03 - 2024/2025 Family Member Base Allocation Amount",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2024-08-06T21:58:15Z",
+   "hash": "b60df77cf9f856df26f933040716da5221be0be0c2fe11a33fc2e14283ba7038",
+   "size": 167559,
+   "doc_id": "mc-299"
+  },
+  "39792816": {
+   "title": "SN_24-04_January 2025_Social_Security_Administration (SSA)_Cost_of_Living_Adjustment_(COLA) and Related Changes",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2024-12-18T20:10:17Z",
+   "hash": "1c183c7ae3093117bf788371f566a8a8182dcaf63502ce927fdea4ce9bc8d589",
+   "size": 121618,
+   "doc_id": "mc-298"
+  },
+  "40027780": {
+   "title": "SN_25-01_Earned_Income_Tax_Credit_(EITC)_Outreach",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2025-02-18T16:21:24Z",
+   "hash": "ad0862427ef896aa27d9316bd785944f4737f5a8307f0b98a1e31757e5075ec5",
+   "size": 592338,
+   "doc_id": "mc-297"
+  },
+  "40107588": {
+   "title": "SN_25-02_2025_Federal_Poverty_Level_and_Statewide_Average_Private_Pay",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2025-03-05T21:14:32Z",
+   "hash": "17f195ce642c2df97d3a210285a04992026bb0adbe58c7940053f157f9ab0a49",
+   "size": 120542,
+   "doc_id": "mc-296"
+  },
+  "40554471": {
+   "title": "SN_25-03_2025-2026_Family_Members_Base_Allocation_Amount",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2025-06-24T17:00:31Z",
+   "hash": "ab3ee41cf04e9cbc62f0b2a00b857fc244eeb322b999d87e059b447b63d35d80",
+   "size": 124513,
+   "doc_id": "mc-295"
+  },
+  "40984831": {
+   "title": "SN 25-04 2025 Tuberculosis (TB) Program Income Limit",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2025-10-13T22:48:34Z",
+   "hash": "7671a6cfa70dfc9f1108c35b5a3cdc7c9de2f7bc9517765b1bc7b2f4fddd6289",
+   "size": 155090,
+   "doc_id": "mc-294"
+  },
+  "41060229": {
+   "title": "SN_25-06_2025_Covered California (CA) Renewal for Advanced Premium Tax Credit (APTC) to Modified Adjusted Gross Income (MAGI)",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2025-11-04T22:08:54Z",
+   "hash": "e92c816756f2026cfa2d94914627865c2f06c8c3dc9f9c284a403672a5d56531",
+   "size": 745159,
+   "doc_id": "mc-293"
+  },
+  "41196417": {
+   "title": "SN_25-07_Social_Security_Administration_(SSA)_Cost_of_Living_Adjustment_(COLA)_2026",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2025-12-23T23:53:24Z",
+   "hash": "2058d11ce62897f01117d86338f3e714ac44b7b7b5e3be19b64dc05b404779f5",
+   "size": 149260,
+   "doc_id": "mc-292"
+  },
+  "41470445": {
+   "title": "SN_26_01_2026_Federal_Poverty_Levels_(FPL)_and_Maintenance_Need_Standards",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2026-04-06T15:20:22Z",
+   "hash": "6a72b7fecb6f113a0c2483d85906d713b6bb44fab9a83b85fe7930701c6e3431",
+   "size": 148044,
+   "doc_id": "mc-290"
+  },
+  "41459999": {
+   "title": "SN_26-02_Earned_Income_Tax_Credit_(EITC)_Outreach",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2026-03-25T21:41:44Z",
+   "hash": "1fb37c753dbaab3605c964a38c6a85f9267e027a45006571733c028f546b1b64",
+   "size": 737313,
+   "doc_id": "mc-291"
+  },
+  "42048280": {
+   "title": "SN_26-04_2026_Covered_California_(CA)_Renewal_for_Advanced_Premium_Tax_Credit_(APTC)_to_Modified_Adjusted_Gross_Income_(MAGI)",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2026-10-12T17:35:57Z",
+   "hash": "d91edebf3d9a2f9b4647259c688b344b5232824c1190c88997d9715be7f53d38",
+   "size": 912112,
+   "doc_id": "mc-288"
+  },
+  "41902601": {
+   "title": "SN_26-03_Family_Members_Base_Allocation_Amount_for_2026-2027",
+   "program": "Medi-Cal",
+   "path": [
+    "Special Notices"
+   ],
+   "published_on": "2026-08-20T18:36:45Z",
+   "hash": "59b73cc2785fcbff35735c02bede308dd9eb4db16f4f040dd50141a696550b65",
+   "size": 119474,
+   "doc_id": "mc-289"
+  }
+ }
+}

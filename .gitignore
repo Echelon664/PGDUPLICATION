@@ -3,3 +3,6 @@ data/search.db.tmp.*
 __pycache__/
 *.pyc
 .DS_Store
+
+# Raw crawler output, for review only
+data/crawl/
