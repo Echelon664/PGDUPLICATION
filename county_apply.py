@@ -30,6 +30,7 @@ import urllib.parse
 from typing import Any, Dict, List, Optional
 
 import county_sync as cs
+import pdf_dates
 
 SECTION_TEXT_CHARS = 4000
 SUMMARY_CHARS = 420
@@ -124,6 +125,7 @@ class Applier:
         doc["content"] = text
         doc["sections"] = [{"heading": heading, "text": text[:SECTION_TEXT_CHARS]}]
         doc["summary"] = extractive_summary(text) if text else "No text could be extracted from this PDF."
+        pdf_dates.stamp(doc)
         self.review.append(f"{doc['id']} | {doc['title']}\n      {doc['summary']}")
 
     @staticmethod

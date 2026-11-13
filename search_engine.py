@@ -24,7 +24,7 @@ DEFAULT_DB_PATH = os.path.join(BASE_DIR, "data", "search.db")
 FTS_WEIGHTS = (0.0, 20.0, 10.0, 4.0, 1.0)
 
 # Bump when the tables in _build change so existing search.db files rebuild.
-SCHEMA_VERSION = "2"
+SCHEMA_VERSION = "3"
 
 # Longest text returned for a section-code hit that has no matching chunk.
 CODE_HIT_TEXT_CHARS = 1500
@@ -236,7 +236,9 @@ class SearchEngine:
                     cw INTEGER,
                     mc INTEGER,
                     content TEXT,
-                    source_missing INTEGER
+                    source_missing INTEGER,
+                    pdf_date TEXT,
+                    pdf_date_label TEXT
                 );
 
                 CREATE VIRTUAL TABLE chunks USING fts5(
@@ -278,9 +280,11 @@ class SearchEngine:
                     1 if "Medi-Cal" in programs else 0,
                     doc.get("content", ""),
                     1 if doc.get("source_missing") else 0,
+                    doc.get("pdf_date", ""),
+                    doc.get("pdf_date_label", ""),
                 ))
             con.executemany(
-                "INSERT INTO docs VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                "INSERT INTO docs VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 doc_rows,
             )
 
@@ -507,6 +511,8 @@ class SearchEngine:
             "category_desc": row["category_desc"],
             "category_id": row["category_id"],
             "source_missing": bool(row["source_missing"]),
+            "pdf_date": row["pdf_date"] or "",
+            "pdf_date_label": row["pdf_date_label"] or "",
             "score": score,
             "matched_excerpt": row["excerpt"] or "",
             "matched_terms": [],

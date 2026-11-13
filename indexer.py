@@ -148,6 +148,8 @@ class BM25Index:
                     "local_pdf_url": r.get("local_pdf_url", ""),
                     "official_url": r.get("official_url", ""),
                     "source_missing": bool(r.get("source_missing")),
+                    "pdf_date": r.get("pdf_date", ""),
+                    "pdf_date_label": r.get("pdf_date_label", ""),
                     "summary": r.get("summary", ""),
                     "section_num": r.get("section_num", ""),
                     "section_title": r.get("section_title", ""),
@@ -186,6 +188,8 @@ def chunk_documents(docs_path: str = None, chunk_size: int = 700, chunk_overlap:
             "section_title": doc.get("section_title", ""),
             "category": doc.get("category", ""),
             "source_missing": bool(doc.get("source_missing")),
+            "pdf_date": doc.get("pdf_date", ""),
+            "pdf_date_label": doc.get("pdf_date_label", ""),
             "text": f"[{' / '.join(doc['programs'])} - {sec_prefix}{doc['title']}]\n{body}",
         }
 

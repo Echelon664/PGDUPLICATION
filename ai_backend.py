@@ -180,7 +180,8 @@ def answer_question(engine, question: str, program: str = "All",
 
     context_str = "\n\n---\n\n".join(
         f"Document: {r['title']}\nProgram: {', '.join(r['programs'])}\n"
-        f"Official Link: {r['official_url']}\nExcerpt:\n{r['text']}"
+        + (f"{r['pdf_date_label']}: {r['pdf_date']}\n" if r.get("pdf_date") else "")
+        + f"Official Link: {r['official_url']}\nExcerpt:\n{r['text']}"
         for r in retrieved
     )
     program_name = (
@@ -235,6 +236,8 @@ ANSWER WITH CITATIONS:"""
             "local_pdf_url": r.get("local_pdf_url", ""),
             "official_url": r["official_url"],
             "published_on": r.get("published_on", ""),
+            "pdf_date": r.get("pdf_date", ""),
+            "pdf_date_label": r.get("pdf_date_label", ""),
             "summary": r.get("summary", ""),
             "snippet": r.get("summary") or (r["text"][:250] + "..."),
         } for r in retrieved],
