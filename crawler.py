@@ -1,11 +1,16 @@
+"""Discovery crawler for the County portal.
+
+Writes raw search hits to data/crawl/documents.raw.json for review. It never
+touches data/documents.json (the curated catalog the app serves) and does not
+create PDFs: merge reviewed entries into the catalog by hand.
+"""
+
 import os
 import json
 import time
 import urllib.request
 import http.cookiejar
 from typing import Dict, List, Any
-
-from pdf_utils import generate_pdf_file
 
 BASE_URL = "https://file.sandiegocounty.gov/HHSAPublicSite"
 MODULE_VERSION = "zxF+S8oCjmRatPW60zkGuw"
@@ -18,7 +23,7 @@ PROGRAMS = {
 }
 
 class SDBenefitsCrawler:
-    def __init__(self, output_dir: str = "data"):
+    def __init__(self, output_dir: str = os.path.join("data", "crawl")):
         self.output_dir = output_dir
         os.makedirs(self.output_dir, exist_ok=True)
         self.cj = http.cookiejar.CookieJar()
@@ -129,16 +134,13 @@ class SDBenefitsCrawler:
                             if not programs:
                                 programs = ["General / Multiple"]
 
-                            pdf_path = os.path.join(self.output_dir, "pdfs", f"{doc_id}.pdf")
-                            generate_pdf_file(title, programs, published_on, content, pdf_path)
-
                             all_docs[doc_id] = {
                                 "id": doc_id,
                                 "title": title,
                                 "programs": programs,
                                 "published_on": published_on,
                                 "file_type": file_type,
-                                "local_pdf_url": f"/pdfs/{doc_id}.pdf",
+                                "local_pdf_url": "",
                                 "official_url": f"{BASE_URL}/View?FileId={doc_id}",
                                 "content": content
                             }
@@ -154,10 +156,10 @@ class SDBenefitsCrawler:
         print(f"\n[✓] Crawling complete! Total unique policy documents collected: {len(all_docs)}")
         
         # Save aggregated documents
-        out_path = os.path.join(self.output_dir, "documents.json")
+        out_path = os.path.join(self.output_dir, "documents.raw.json")
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump(list(all_docs.values()), f, indent=2, ensure_ascii=False)
-        print(f"[✓] Saved to {out_path}")
+        print(f"[✓] Saved to {out_path} (data/documents.json was not modified)")
 
 if __name__ == "__main__":
     crawler = SDBenefitsCrawler()

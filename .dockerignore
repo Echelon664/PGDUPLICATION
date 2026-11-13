@@ -13,3 +13,4 @@ data/search.db.tmp.*
 data/documents.backup.json
 evaluate_search.py
 README.md
+data/crawl/

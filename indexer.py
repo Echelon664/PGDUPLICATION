@@ -145,8 +145,9 @@ class BM25Index:
                     "chapter": r.get("chapter", ""),
                     "programs": r.get("programs", []),
                     "published_on": r.get("published_on", ""),
-                    "local_pdf_url": r.get("local_pdf_url", f"/pdfs/{r['id']}.pdf"),
+                    "local_pdf_url": r.get("local_pdf_url", ""),
                     "official_url": r.get("official_url", ""),
+                    "source_missing": bool(r.get("source_missing")),
                     "summary": r.get("summary", ""),
                     "section_num": r.get("section_num", ""),
                     "section_title": r.get("section_title", ""),
@@ -170,10 +171,31 @@ def chunk_documents(docs_path: str = None, chunk_size: int = 700, chunk_overlap:
     with open(docs_path, "r", encoding="utf-8") as f:
         docs = json.load(f)
 
+    def make_chunk(doc: Dict[str, Any], body: str) -> Dict[str, Any]:
+        sec_prefix = f"{doc.get('section_num', '')} " if doc.get('section_num') else ""
+        return {
+            "id": doc["id"],
+            "title": doc["title"],
+            "chapter": doc.get("chapter", ""),
+            "programs": doc["programs"],
+            "published_on": doc.get("published_on", ""),
+            "local_pdf_url": doc.get("local_pdf_url", ""),
+            "official_url": doc["official_url"],
+            "summary": doc.get("summary", ""),
+            "section_num": doc.get("section_num", ""),
+            "section_title": doc.get("section_title", ""),
+            "category": doc.get("category", ""),
+            "source_missing": bool(doc.get("source_missing")),
+            "text": f"[{' / '.join(doc['programs'])} - {sec_prefix}{doc['title']}]\n{body}",
+        }
+
     chunks = []
     for doc in docs:
         text = doc.get("content", "")
         if not text:
+            # No source text (e.g. the County document is not bundled). Keep one
+            # body-less chunk so the entry is still findable by title and section.
+            chunks.append(make_chunk(doc, ""))
             continue
 
         # Split by sentence boundaries, double newlines, or single newlines
@@ -189,40 +211,12 @@ def chunk_documents(docs_path: str = None, chunk_size: int = 700, chunk_overlap:
                 current_chunk = (current_chunk + " " + p).strip() if current_chunk else p
             else:
                 if current_chunk:
-                    sec_prefix = f"{doc.get('section_num', '')} " if doc.get('section_num') else ""
-                    chunks.append({
-                        "id": doc["id"],
-                        "title": doc["title"],
-                        "chapter": doc.get("chapter", ""),
-                        "programs": doc["programs"],
-                        "published_on": doc.get("published_on", ""),
-                        "local_pdf_url": doc.get("local_pdf_url", f"/pdfs/{doc['id']}.pdf"),
-                        "official_url": doc["official_url"],
-                        "summary": doc.get("summary", ""),
-                        "section_num": doc.get("section_num", ""),
-                        "section_title": doc.get("section_title", ""),
-                        "category": doc.get("category", ""),
-                        "text": f"[{' / '.join(doc['programs'])} - {sec_prefix}{doc['title']}]\n{current_chunk}"
-                    })
+                    chunks.append(make_chunk(doc, current_chunk))
                 # Overlap
                 current_chunk = (current_chunk[-chunk_overlap:] + " " + p).strip() if len(current_chunk) > chunk_overlap else p
 
         if current_chunk:
-            sec_prefix = f"{doc.get('section_num', '')} " if doc.get('section_num') else ""
-            chunks.append({
-                "id": doc["id"],
-                "title": doc["title"],
-                "chapter": doc.get("chapter", ""),
-                "programs": doc["programs"],
-                "published_on": doc.get("published_on", ""),
-                "local_pdf_url": doc.get("local_pdf_url", f"/pdfs/{doc['id']}.pdf"),
-                "official_url": doc["official_url"],
-                "summary": doc.get("summary", ""),
-                "section_num": doc.get("section_num", ""),
-                "section_title": doc.get("section_title", ""),
-                "category": doc.get("category", ""),
-                "text": f"[{' / '.join(doc['programs'])} - {sec_prefix}{doc['title']}]\n{current_chunk}"
-            })
+            chunks.append(make_chunk(doc, current_chunk))
 
     return chunks
 

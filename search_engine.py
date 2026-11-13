@@ -23,6 +23,12 @@ DEFAULT_DB_PATH = os.path.join(BASE_DIR, "data", "search.db")
 # FTS5 column weights: doc_id (unindexed), section_num, title, summary, body.
 FTS_WEIGHTS = (0.0, 20.0, 10.0, 4.0, 1.0)
 
+# Bump when the tables in _build change so existing search.db files rebuild.
+SCHEMA_VERSION = "2"
+
+# Longest text returned for a section-code hit that has no matching chunk.
+CODE_HIT_TEXT_CHARS = 1500
+
 STOPWORDS = {
     "a", "an", "and", "are", "as", "at", "be", "been", "but", "by", "can",
     "could", "did", "do", "does", "for", "from", "had", "has", "have", "how",
@@ -169,11 +175,12 @@ class SearchEngine:
             return True
         try:
             con = sqlite3.connect(self.db_path)
-            row = con.execute(
-                "SELECT value FROM index_meta WHERE key = 'docs_mtime'"
-            ).fetchone()
+            meta = dict(con.execute("SELECT key, value FROM index_meta").fetchall())
             con.close()
-            if not row:
+            if meta.get("schema_version") != SCHEMA_VERSION:
+                return True
+            row = (meta.get("docs_mtime"),)
+            if not row[0]:
                 return True
             return abs(float(row[0]) - os.path.getmtime(self.docs_path)) > 1e-6
         except Exception:
@@ -228,7 +235,8 @@ class SearchEngine:
                     cf INTEGER,
                     cw INTEGER,
                     mc INTEGER,
-                    content TEXT
+                    content TEXT,
+                    source_missing INTEGER
                 );
 
                 CREATE VIRTUAL TABLE chunks USING fts5(
@@ -269,9 +277,10 @@ class SearchEngine:
                     1 if "CalWORKs" in programs else 0,
                     1 if "Medi-Cal" in programs else 0,
                     doc.get("content", ""),
+                    1 if doc.get("source_missing") else 0,
                 ))
             con.executemany(
-                "INSERT INTO docs VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                "INSERT INTO docs VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 doc_rows,
             )
 
@@ -293,6 +302,7 @@ class SearchEngine:
             con.executemany(
                 "INSERT INTO index_meta(key, value) VALUES (?, ?)",
                 [
+                    ("schema_version", SCHEMA_VERSION),
                     ("docs_mtime", str(os.path.getmtime(self.docs_path))),
                     ("chunk_count", str(len(chunks))),
                     ("doc_count", str(len(docs))),
@@ -363,7 +373,12 @@ class SearchEngine:
                     fts_rows = self._fts_search(con, or_expr, program_filter, candidate_limit)
 
             ranked = self._rerank(fts_rows, query)
-            merged: List[Tuple[float, sqlite3.Row]] = [(100.0, row) for row in exact_rows]
+            # When a section-code hit also matched the other query terms, use
+            # that matching passage instead of the start of the document.
+            fts_by_id = {row["id"]: row for row in fts_rows}
+            merged: List[Tuple[float, sqlite3.Row]] = [
+                (100.0, fts_by_id.get(row["id"], row)) for row in exact_rows
+            ]
             merged.extend(ranked)
 
             seen = set()
@@ -408,9 +423,11 @@ class SearchEngine:
         where = " OR ".join(clauses)
         prog = _program_clause(program, "docs")
         sql = (
-            "SELECT docs.*, 0.0 AS fts_rank, '' AS excerpt, docs.content AS text "
+            "SELECT docs.*, 0.0 AS fts_rank, '' AS excerpt, "
+            "substr(docs.content, 1, ?) AS text "
             f"FROM docs WHERE ({where}) {prog} ORDER BY doc_order LIMIT ?"
         )
+        params.insert(0, CODE_HIT_TEXT_CHARS)
         params.append(limit)
         return con.execute(sql, params).fetchall()
 
@@ -474,7 +491,7 @@ class SearchEngine:
             score = round(-float(rank or 0.0), 3)
         text = ""
         if not no_query:
-            text = row["text"] or row["content"] or ""
+            text = row["text"] or ""
         return {
             "id": row["id"],
             "title": row["title"],
@@ -489,6 +506,7 @@ class SearchEngine:
             "category": row["category"],
             "category_desc": row["category_desc"],
             "category_id": row["category_id"],
+            "source_missing": bool(row["source_missing"]),
             "score": score,
             "matched_excerpt": row["excerpt"] or "",
             "matched_terms": [],
