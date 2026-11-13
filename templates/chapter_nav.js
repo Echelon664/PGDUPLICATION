@@ -258,7 +258,16 @@
       return false;
     }
 
+    // True once the chapter list has been built. Only that first build follows a
+    // link in the URL (#ch=... or #doc=...) and scrolls to it; later rebuilds, such
+    // as clicking the program button again, keep the reader where they are.
+    let cnRendered = false;
+
     function renderDropdownsView(docs) {
+      const wasOpen = new Set(cnChapters.filter(ch => {
+        const section = document.getElementById('ch-' + ch.id);
+        return section && section.classList.contains('is-open');
+      }).map(ch => ch.id));
       const meta = PROGRAM_METADATA[activeProgram];
       const heading = document.getElementById('listHeading');
       if (heading) {
@@ -346,7 +355,12 @@
       });
 
       container.append(toolbar, main);
-      cnOpenFromHash();
+      if (!cnRendered) {
+        cnRendered = true;
+        cnOpenFromHash();
+      } else {
+        cnChapters.forEach(ch => { if (wasOpen.has(ch.id)) cnSetChapterOpen(ch, true); });
+      }
     }
 
     // Kept for older bookmarks and inline handlers.
@@ -359,8 +373,7 @@
       const doc = state.doc && DOCS_BY_ID[state.doc];
       if (doc && activeProgram !== 'All' && cnProgramOf(doc) !== activeProgram) {
         switchProgram(cnProgramOf(doc));
-      } else {
-        cnOpenFromHash();
       }
+      cnOpenFromHash();
     }
     window.addEventListener('hashchange', cnHandleDeepLink);
