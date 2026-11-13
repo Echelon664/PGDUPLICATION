@@ -1,5 +1,5 @@
     // ---------------------------------------------------------------------
-    // Chapter browser: a chapter rail plus compact, expandable document rows.
+    // Chapter browser: a sticky toolbar above compact, expandable document rows.
     // Inlined into index.html by generate_preview.py (edit this file, then
     // regenerate). Uses DOCS_BY_ID, activeProgram, escapeHtml, viewDocPdf,
     // docOpenUrl, isSourceMissing, docDateLine and formatLongDate from the page.
@@ -254,8 +254,6 @@
       body.hidden = !open;
       head.setAttribute('aria-expanded', open ? 'true' : 'false');
       section.classList.toggle('is-open', open);
-      const railItem = document.querySelector('.cn-rail-item[data-chapter="' + chapter.id + '"]');
-      if (railItem) railItem.classList.toggle('is-open', open);
     }
 
     function cnGoToChapter(chapterId, opts) {
@@ -263,16 +261,12 @@
       if (!chapter) return;
       cnSetChapterOpen(chapter, true);
       const section = document.getElementById('ch-' + chapter.id);
-      document.querySelectorAll('.cn-rail-item.is-current').forEach(n => n.classList.remove('is-current'));
-      const railItem = document.querySelector('.cn-rail-item[data-chapter="' + chapter.id + '"]');
-      if (railItem) railItem.classList.add('is-current');
       if (!opts || opts.scroll !== false) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
       if (!opts || opts.hash !== false) cnWriteHash({ ch: chapter.id });
     }
 
     function cnCollapseAll() {
       cnChapters.forEach(ch => cnSetChapterOpen(ch, false));
-      document.querySelectorAll('.cn-rail-item.is-current').forEach(n => n.classList.remove('is-current'));
       cnWriteHash({});
     }
 
@@ -280,20 +274,27 @@
       const needle = text.trim().toLowerCase();
       let shown = 0;
       cnChapters.forEach(ch => {
-        const hit = !needle
-          || (ch.code + ' ' + ch.name + ' ' + ch.desc).toLowerCase().includes(needle)
-          || ch.docs.some(d => (d.title || '').toLowerCase().includes(needle));
-        if (hit) shown += 1;
         const section = document.getElementById('ch-' + ch.id);
-        if (section) section.hidden = !hit;
-        const railItem = document.querySelector('.cn-rail-item[data-chapter="' + ch.id + '"]');
-        if (railItem) railItem.hidden = !hit;
+        if (!section) return;
+        const nameHit = !needle || (ch.code + ' ' + ch.name + ' ' + ch.desc).toLowerCase().includes(needle);
+        const docHits = needle ? ch.docs.filter(d => (d.title || '').toLowerCase().includes(needle)) : [];
+        const hit = nameHit || docHits.length > 0;
+        section.hidden = !hit;
+        if (hit) shown += 1;
+        // A match on document titles opens the chapter and shows only those documents.
+        const narrow = !!needle && !nameHit && docHits.length > 0 && ch.docs.length > 1;
+        if (narrow) cnSetChapterOpen(ch, true);
+        const keep = narrow ? new Set(docHits.map(d => d.id)) : null;
+        section.querySelectorAll('.cn-doc').forEach(row => {
+          row.hidden = !!keep && !keep.has(row.id.replace(/^doc-/, ''));
+        });
+        section.querySelectorAll('.cn-year').forEach(year => { year.hidden = !!keep; });
       });
       document.querySelectorAll('.cn-program-heading').forEach(h => {
         let next = h.nextElementSibling;
         let any = false;
         while (next && !next.classList.contains('cn-program-heading')) {
-          if (!next.hidden && !next.classList.contains('cn-empty')) any = true;
+          if (!next.hidden && next.classList.contains('cn-chapter')) any = true;
           next = next.nextElementSibling;
         }
         h.hidden = !any;
@@ -334,27 +335,23 @@
       cnChapters = cnBuildChapters(docs);
       const showPrograms = activeProgram === 'All';
 
-      // Rail (desktop) and jump menu (phones)
-      const rail = cnEl('nav', 'cn-rail');
-      rail.setAttribute('aria-label', 'Chapters');
+      // Toolbar: filter, jump menu, collapse all. Stays at the top while scrolling.
+      const toolbar = cnEl('div', 'cn-toolbar');
       const filter = cnEl('input', 'cn-filter');
       filter.type = 'search';
-      filter.placeholder = 'Filter chapters';
-      filter.setAttribute('aria-label', 'Filter chapters');
+      filter.placeholder = 'Filter chapters and documents';
+      filter.setAttribute('aria-label', 'Filter chapters and documents');
       filter.addEventListener('input', () => cnApplyFilter(filter.value));
-      const railList = cnEl('div', 'cn-rail-list');
-      const collapse = cnEl('button', 'cn-collapse', 'Collapse all');
-      collapse.type = 'button';
-      collapse.addEventListener('click', cnCollapseAll);
-      rail.append(filter, railList, collapse);
-
       const jump = cnEl('select', 'cn-jump');
       jump.setAttribute('aria-label', 'Jump to chapter');
       jump.append(new Option('Jump to chapter…', ''));
       jump.addEventListener('change', () => { if (jump.value) cnGoToChapter(jump.value); jump.value = ''; });
+      const collapse = cnEl('button', 'cn-collapse', 'Collapse all');
+      collapse.type = 'button';
+      collapse.addEventListener('click', cnCollapseAll);
+      toolbar.append(filter, jump, collapse);
 
       const main = cnEl('div', 'cn-main');
-      main.append(jump);
 
       let lastProgram = null;
       let jumpGroup = jump;
@@ -362,7 +359,6 @@
         if (showPrograms && chapter.program !== lastProgram) {
           lastProgram = chapter.program;
           const title = CN_PROGRAM_TITLES[chapter.program] || chapter.program;
-          railList.append(cnEl('div', 'cn-program-heading', title));
           main.append(cnEl('h4', 'cn-program-heading cn-program-title', title));
           jumpGroup = document.createElement('optgroup');
           jumpGroup.label = title;
@@ -370,15 +366,6 @@
         }
         const count = chapter.docs.length;
         const label = (chapter.code ? chapter.code + ' ' : '') + chapter.name;
-
-        const railItem = cnEl('button', 'cn-rail-item');
-        railItem.type = 'button';
-        railItem.dataset.chapter = chapter.id;
-        railItem.dataset.program = chapter.program;
-        if (chapter.code) railItem.append(cnEl('span', 'cn-rail-code', chapter.code));
-        railItem.append(cnEl('span', 'cn-rail-name', chapter.name), cnEl('span', 'cn-rail-count', String(count)));
-        railItem.addEventListener('click', () => cnGoToChapter(chapter.id));
-        railList.append(railItem);
 
         jumpGroup.append(new Option(label + ' (' + count + ')', chapter.id));
 
@@ -424,10 +411,10 @@
         main.append(section);
       });
 
-      const empty = cnEl('p', 'cn-empty', 'No chapters match that filter.');
+      const empty = cnEl('p', 'cn-empty', 'No chapters or documents match that filter.');
       empty.hidden = true;
       main.append(empty);
-      container.append(rail, main);
+      container.append(toolbar, main);
       cnOpenFromHash();
     }
 

@@ -1,30 +1,20 @@
     /* Chapter browser (see templates/chapter_nav.js). Inlined by generate_preview.py. */
-    .cn-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 20px; align-items: start; }
-    .cn-rail { position: sticky; top: 12px; max-height: calc(100vh - 24px); display: flex; flex-direction: column; gap: 8px;
-      border: 1px solid #e2e8f0; border-radius: 12px; padding: 10px; background: #f8fafc; }
-    .cn-filter { width: 100%; padding: 7px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 13px; background: #fff; color: #0f172a; }
-    .cn-rail-list { overflow-y: auto; display: flex; flex-direction: column; gap: 1px; min-height: 0; }
-    .cn-rail-item { display: flex; align-items: baseline; gap: 6px; width: 100%; text-align: left; padding: 5px 8px; border: 0; border-radius: 6px;
-      background: transparent; font-size: 12.5px; line-height: 1.35; color: #334155; cursor: pointer; }
-    .cn-rail-item:hover { background: #e2e8f0; }
-    .cn-rail-item.is-open { color: #0f172a; font-weight: 600; }
-    .cn-rail-item.is-current { background: #dbeafe; color: #1e3a8a; }
-    .cn-rail-code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; color: #64748b; white-space: nowrap; }
-    .cn-rail-name { flex: 1; min-width: 0; }
-    .cn-rail-count { font-size: 11px; color: #94a3b8; }
-    .cn-collapse { align-self: flex-start; border: 0; background: transparent; color: #475569; font-size: 12px; font-weight: 600; padding: 4px 8px;
-      border-radius: 6px; cursor: pointer; }
-    .cn-collapse:hover { background: #e2e8f0; }
+    .cn-layout { display: flex; flex-direction: column; gap: 10px; }
+    .cn-toolbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 8px; padding: 10px 0;
+      background: #fff; border-bottom: 1px solid #e2e8f0; }
+    .cn-filter { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #fff; color: #0f172a; }
+    .cn-jump { flex: 0 1 260px; min-width: 0; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #fff; color: #0f172a; }
+    .cn-collapse { flex: none; border: 1px solid #cbd5e1; background: #fff; color: #334155; font-size: 13px; font-weight: 600; padding: 8px 12px;
+      border-radius: 8px; cursor: pointer; white-space: nowrap; }
+    .cn-collapse:hover { background: #f1f5f9; }
     .cn-program-heading { font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #64748b; padding: 10px 8px 4px; }
     .cn-program-title { padding: 18px 0 6px; font-size: 13px; color: #0f172a; margin: 0; }
     .cn-main { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
-    .cn-jump { display: none; width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 10px; font-size: 14px; background: #fff;
-      color: #0f172a; margin-bottom: 6px; }
 
-    .cn-chapter { border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; scroll-margin-top: 8px; }
+    .cn-chapter { border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; scroll-margin-top: 64px; }
     .cn-chapter.is-open { border-color: #cbd5e1; }
     .cn-head-wrap { margin: 0; font: inherit; }
-    .cn-chapter.is-open > .cn-head-wrap { position: sticky; top: 0; z-index: 5; }
+    .cn-chapter.is-open > .cn-head-wrap { position: sticky; top: 58px; z-index: 5; }
     .cn-head { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 10px 12px; border: 0; background: #fff;
       border-radius: 10px; cursor: pointer; color: #0f172a; font-size: 14px; }
     .cn-head:hover { background: #f8fafc; }
@@ -45,7 +35,7 @@
     .cn-year { padding: 8px 12px 4px 38px; font-size: 12px; font-weight: 700; color: #92400e; background: #fffbeb; border-top: 1px solid #f1f5f9; }
     .cn-doc { border-top: 1px solid #f1f5f9; }
     .cn-body > .cn-doc:first-child { border-top: 0; }
-    .cn-doc { scroll-margin-top: 56px; }
+    .cn-doc { scroll-margin-top: 116px; }
     .cn-row { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 9px 12px; border: 0; background: transparent;
       cursor: pointer; font-size: 13.5px; color: #1e293b; }
     .cn-row:hover { background: #f8fafc; }
@@ -68,10 +58,13 @@
     .cn-layout button:focus-visible, .cn-layout a:focus-visible, .cn-layout input:focus-visible, .cn-layout select:focus-visible {
       outline: 2px solid #2563eb; outline-offset: 1px; }
 
-    @media (max-width: 899px) {
-      .cn-layout { grid-template-columns: minmax(0, 1fr); }
-      .cn-rail { display: none; }
-      .cn-jump { display: block; }
+    @media (max-width: 699px) {
+      .cn-toolbar { flex-wrap: wrap; }
+      .cn-filter { flex-basis: 100%; }
+      .cn-jump { flex: 1 1 0; }
+      .cn-chapter { scroll-margin-top: 108px; }
+      .cn-chapter.is-open > .cn-head-wrap { top: 102px; }
+      .cn-doc { scroll-margin-top: 170px; }
       .cn-head { align-items: flex-start; flex-wrap: wrap; }
       .cn-head-text { flex-basis: calc(100% - 110px); }
       .cn-head-desc { display: none; }
