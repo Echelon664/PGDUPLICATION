@@ -116,21 +116,16 @@
     .cn-head-desc { font-size: 12px; color: #64748b; line-height: 1.35; }
     .cn-count { flex: none; font-size: 12px; color: #64748b; white-space: nowrap; }
 
-    .cn-year { padding: 8px 12px 4px 38px; font-size: 12px; font-weight: 700; color: #92400e; background: #fffbeb; border-top: 1px solid #f1f5f9; }
-    .cn-doc { border-top: 1px solid #f1f5f9; }
+    .cn-year { padding: 8px 16px 4px; font-size: 12px; font-weight: 700; color: #92400e; background: #fffbeb; border-top: 1px solid #f1f5f9; }
+    .cn-doc { border-top: 1px solid #e2e8f0; }
     .cn-body > .cn-doc:first-child { border-top: 0; }
     .cn-doc { scroll-margin-top: 116px; }
-    .cn-row { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 9px 12px; border: 0; background: transparent;
-      cursor: pointer; font-size: 13.5px; color: #1e293b; }
-    .cn-row:hover { background: #f8fafc; }
-    .cn-doc.is-open > .cn-row { background: #f8fafc; font-weight: 600; }
-    .cn-row-title { flex: 1; min-width: 0; line-height: 1.35; }
-    .cn-row-date { flex: none; font-size: 12px; color: #64748b; white-space: nowrap; font-weight: 400; }
     .cn-flag { flex: none; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 999px; background: #fef3c7; color: #92400e; }
-    .cn-detail { display: flex; align-items: center; gap: 20px; padding: 4px 12px 14px 38px; background: #f8fafc; }
+    .cn-detail { display: flex; align-items: center; gap: 20px; padding: 14px 16px; background: #fff; transition: background .4s; }
     .cn-detail-text { flex: 1; min-width: 0; }
-    .cn-detail[hidden] { display: none; }
-    .cn-detail-solo { padding-top: 12px; border-radius: 0 0 10px 10px; }
+    .cn-detail.is-target { background: #fefce8; }
+    .cn-detail-solo { border-radius: 0 0 10px 10px; }
+    .cn-doc-title { margin: 0 0 4px; font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .cn-meta { margin: 0 0 6px; font-size: 12px; color: #475569; }
     .cn-meta strong { color: #065f46; font-weight: 700; }
     .cn-summary { margin: 0; font-size: 13.5px; line-height: 1.6; color: #334155; max-width: 72ch; }
@@ -150,12 +145,9 @@
       .cn-head { align-items: flex-start; flex-wrap: wrap; }
       .cn-head-text { flex-basis: calc(100% - 110px); }
       .cn-head-desc { display: none; }
-      .cn-row { align-items: flex-start; flex-wrap: wrap; row-gap: 2px; }
-      .cn-row-title { flex-basis: calc(100% - 30px); }
-      .cn-row-date { margin-left: 26px; }
-      .cn-detail { flex-direction: column; align-items: stretch; gap: 10px; padding-left: 12px; }
+      .cn-detail { flex-direction: column; align-items: stretch; gap: 10px; padding: 12px; }
       .cn-actions { flex-wrap: wrap; }
-      .cn-year { padding-left: 12px; }
+      .cn-year { padding-left: 12px; padding-right: 12px; }
     }
     @media (prefers-reduced-motion: reduce) { .cn-chevron { transition: none; } }
   </style>
@@ -1272,7 +1264,8 @@
     }
 
     // ---------------------------------------------------------------------
-    // Chapter browser: a sticky toolbar above compact, expandable document rows.
+    // Chapter browser: a sticky toolbar above chapters that open to show their
+    // documents, each with its date, summary and PDF buttons.
     // Inlined into index.html by generate_preview.py (edit this file, then
     // regenerate). Uses DOCS_BY_ID, activeProgram, escapeHtml, viewDocPdf,
     // docOpenUrl, pdfViewerUrl, isSourceMissing, docDateLine and formatLongDate from the page.
@@ -1389,9 +1382,14 @@
       try { window.history.replaceState(window.history.state, '', url); } catch (err) { /* file:// or sandboxed */ }
     }
 
-    function cnBuildDetail(doc) {
+    function cnBuildDetail(doc, opts) {
       const detail = cnEl('div', 'cn-detail');
       const text = cnEl('div', 'cn-detail-text');
+      if (opts && opts.title) {
+        const title = cnEl('h6', 'cn-doc-title', doc.title || doc.id);
+        if (isSourceMissing(doc)) title.append(cnEl('span', 'cn-flag', 'Not bundled'));
+        text.append(title);
+      }
       const dateLine = docDateLine(doc);
       const posted = formatLongDate(doc.published_on || '');
       if (dateLine || posted) {
@@ -1424,42 +1422,11 @@
       return detail;
     }
 
-    function cnSetDocOpen(row, doc, open) {
-      const button = row.querySelector('.cn-row');
-      let detail = row.querySelector('.cn-detail');
-      if (open && !detail) {
-        detail = cnBuildDetail(doc);
-        detail.id = 'cn-detail-' + doc.id;
-        row.append(detail);
-      }
-      if (detail) detail.hidden = !open;
-      button.setAttribute('aria-expanded', open ? 'true' : 'false');
-      row.classList.toggle('is-open', open);
-    }
-
-    function cnBuildDocRow(doc) {
-      const row = cnEl('div', 'cn-doc');
-      row.id = 'doc-' + doc.id;
-      const button = cnEl('button', 'cn-row');
-      button.type = 'button';
-      button.setAttribute('aria-expanded', 'false');
-      button.setAttribute('aria-controls', 'cn-detail-' + doc.id);
-      button.insertAdjacentHTML('beforeend', CN_CHEVRON);
-      button.append(cnEl('span', 'cn-row-title', doc.title || doc.id));
-      if (isSourceMissing(doc)) button.append(cnEl('span', 'cn-flag', 'Not bundled'));
-      const date = cnShortDate(doc);
-      if (date) {
-        const stamp = cnEl('span', 'cn-row-date', date);
-        stamp.title = docDateLine(doc);
-        button.append(stamp);
-      }
-      button.addEventListener('click', () => {
-        const open = button.getAttribute('aria-expanded') !== 'true';
-        cnSetDocOpen(row, doc, open);
-        cnWriteHash(open ? { doc: doc.id } : { ch: row.closest('.cn-chapter').dataset.chapter });
-      });
-      row.append(button);
-      return row;
+    function cnBuildDocBlock(doc) {
+      const block = cnBuildDetail(doc, { title: true });
+      block.classList.add('cn-doc');
+      block.id = 'doc-' + doc.id;
+      return block;
     }
 
     function cnFillBody(chapter, body) {
@@ -1481,7 +1448,7 @@
             body.append(cnEl('div', 'cn-year', year ? String(year) : 'Undated'));
           }
         }
-        body.append(cnBuildDocRow(doc));
+        body.append(cnBuildDocBlock(doc));
       });
     }
 
@@ -1517,9 +1484,12 @@
         const chapter = cnChapters.find(ch => ch.docs.some(d => d.id === doc.id));
         if (!chapter) return false;
         cnGoToChapter(chapter.id, { scroll: false, hash: false });
-        const row = document.getElementById('doc-' + doc.id);
-        if (row) cnSetDocOpen(row, doc, true);
-        (row || document.getElementById('ch-' + chapter.id)).scrollIntoView({ block: 'start' });
+        const block = document.getElementById('doc-' + doc.id);
+        if (block) {
+          block.classList.add('is-target');
+          setTimeout(() => block.classList.remove('is-target'), 2500);
+        }
+        (block || document.getElementById('ch-' + chapter.id)).scrollIntoView({ block: 'start' });
         return true;
       }
       if (state.ch && cnChapters.some(ch => ch.id === state.ch)) {
