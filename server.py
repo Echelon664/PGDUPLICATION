@@ -3,6 +3,7 @@ import json
 import urllib.parse
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
+import county_sync
 from ai_backend import answer_question
 from search_engine import get_engine
 
@@ -43,8 +44,25 @@ class BenefitsHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", content_type)
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-Admin-Token")
         self.end_headers()
+
+    def _send_json(self, status, payload):
+        self._set_headers(status)
+        self.wfile.write(json.dumps(payload).encode("utf-8"))
+
+    def _read_json_body(self):
+        try:
+            length = int(self.headers.get("Content-Length", 0))
+        except ValueError:
+            length = 0
+        if length > 16384:
+            raise ValueError("Request too large")
+        body = self.rfile.read(length).decode("utf-8") if length else ""
+        data = json.loads(body) if body else {}
+        if not isinstance(data, dict):
+            raise ValueError("Body must be a JSON object")
+        return data
 
     def do_OPTIONS(self):
         self._set_headers(200)
@@ -84,6 +102,24 @@ class BenefitsHandler(BaseHTTPRequestHandler):
                 self.wfile.write(b"templates/index.html not found.")
             return
 
+        if path == "/sync":
+            with open(os.path.join(os.path.dirname(__file__), "templates", "sync.html"), "rb") as f:
+                self._set_headers(200, "text/html; charset=utf-8")
+                self.wfile.write(f.read())
+            return
+
+        if path == "/api/sync/status":
+            self._send_json(200, county_sync.status())
+            return
+
+        if path == "/api/sync/report":
+            report = county_sync.load_report()
+            if report is None:
+                self._send_json(404, {"detail": "No scan has been run yet"})
+            else:
+                self._send_json(200, report)
+            return
+
         if path == "/api/search":
             query_params = urllib.parse.parse_qs(parsed.query)
             q = query_params.get("q", [""])[0]
@@ -109,6 +145,25 @@ class BenefitsHandler(BaseHTTPRequestHandler):
 
     def do_POST(self):
         parsed = urllib.parse.urlparse(self.path)
+        if parsed.path == "/api/sync/scan":
+            # A scan downloads hundreds of files from the County, so it is admin-only.
+            try:
+                mode = str(self._read_json_body().get("mode", "quick"))
+            except ValueError as exc:
+                self._send_json(400, {"detail": str(exc)})
+                return
+            if not county_sync.admin_enabled():
+                self._send_json(503, {"detail": "Scans are disabled: set ADMIN_TOKEN on the server"})
+            elif not county_sync.check_admin(self.headers.get("X-Admin-Token")):
+                self._send_json(403, {"detail": "Invalid admin token"})
+            elif mode not in ("quick", "full"):
+                self._send_json(400, {"detail": "mode must be 'quick' or 'full'"})
+            elif not county_sync.start_scan(mode):
+                self._send_json(409, {"detail": "A scan is already running"})
+            else:
+                self._send_json(200, {"started": True, "mode": mode})
+            return
+
         if parsed.path == "/api/ask":
             try:
                 content_length = int(self.headers.get("Content-Length", 0))

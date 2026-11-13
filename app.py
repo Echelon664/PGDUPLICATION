@@ -1,12 +1,13 @@
 import os
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi import FastAPI, Header, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+import county_sync
 from ai_backend import answer_question
 from search_engine import get_engine
 
@@ -55,6 +56,43 @@ def ask_question(req: AskRequest, request: Request):
         return answer_question(ENGINE, req.question, req.program or "All", client_id)
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc))
+
+
+class ScanRequest(BaseModel):
+    mode: str = "quick"
+
+
+@app.get("/api/sync/status")
+def sync_status():
+    return county_sync.status()
+
+
+@app.get("/api/sync/report")
+def sync_report():
+    report = county_sync.load_report()
+    if report is None:
+        raise HTTPException(status_code=404, detail="No scan has been run yet")
+    return report
+
+
+@app.post("/api/sync/scan")
+def sync_scan(req: ScanRequest, x_admin_token: Optional[str] = Header(None)):
+    # A scan downloads hundreds of files from the County, so it is admin-only.
+    if not county_sync.admin_enabled():
+        raise HTTPException(status_code=503, detail="Scans are disabled: set ADMIN_TOKEN on the server")
+    if not county_sync.check_admin(x_admin_token):
+        raise HTTPException(status_code=403, detail="Invalid admin token")
+    if req.mode not in ("quick", "full"):
+        raise HTTPException(status_code=400, detail="mode must be 'quick' or 'full'")
+    if not county_sync.start_scan(req.mode):
+        raise HTTPException(status_code=409, detail="A scan is already running")
+    return {"started": True, "mode": req.mode}
+
+
+@app.get("/sync", response_class=HTMLResponse)
+def sync_page():
+    with open(os.path.join(os.path.dirname(__file__), "templates", "sync.html"), "r", encoding="utf-8") as f:
+        return f.read()
 
 
 @app.get("/health")

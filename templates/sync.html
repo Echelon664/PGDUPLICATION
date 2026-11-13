@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>County Source Check - SDCounty HHSA Program Guide</title>
+  <style>
+    :root {
+      --navy: #0b2545; --ink: #1e293b; --muted: #64748b; --line: #e2e8f0; --bg: #f1f5f9;
+      --ok: #047857; --ok-bg: #d1fae5; --warn: #92400e; --warn-bg: #fef3c7;
+      --bad: #b91c1c; --bad-bg: #fee2e2; --info: #1d4ed8; --info-bg: #dbeafe;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
+    header { background: var(--navy); color: #fff; padding: 18px 16px; }
+    header .wrap { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; }
+    header h1 { margin: 0; font-size: 20px; }
+    header a { color: #fcd34d; }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    main { padding: 20px 16px 48px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+    h2 { margin: 0 0 8px; font-size: 16px; }
+    p { margin: 0 0 8px; }
+    .muted { color: var(--muted); }
+    .verdict { font-size: 16px; font-weight: 700; padding: 10px 14px; border-radius: 10px; margin-bottom: 12px; }
+    .verdict.ok { background: var(--ok-bg); color: var(--ok); }
+    .verdict.bad { background: var(--bad-bg); color: var(--bad); }
+    .verdict.warn { background: var(--warn-bg); color: var(--warn); }
+    .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+    .tile { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #fff; cursor: pointer; text-align: left; font: inherit; color: inherit; }
+    .tile:hover, .tile:focus-visible { border-color: var(--info); outline: none; }
+    .tile .n { font-size: 26px; font-weight: 800; line-height: 1.1; }
+    .tile .l { font-size: 12px; color: var(--muted); }
+    .tile.ok .n { color: var(--ok); } .tile.bad .n { color: var(--bad); } .tile.warn .n { color: var(--warn); }
+    .tile.zero .n { color: var(--muted); }
+    details { border: 1px solid var(--line); border-radius: 10px; background: #fff; margin-bottom: 10px; }
+    summary { cursor: pointer; padding: 12px 14px; font-weight: 700; }
+    summary .count { font-weight: 800; margin-right: 6px; }
+    .explain { padding: 0 14px 10px; color: var(--muted); }
+    .table-scroll { overflow-x: auto; border-top: 1px solid var(--line); }
+    table { border-collapse: collapse; width: 100%; min-width: 720px; }
+    th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-size: 12px; text-transform: uppercase; letter-spacing: .03em; color: var(--muted); background: #f8fafc; }
+    td.small { font-size: 12px; color: var(--muted); }
+    .badge { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; background: var(--info-bg); color: var(--info); white-space: nowrap; }
+    .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    input[type=password] { padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; min-width: 220px; }
+    button.act { padding: 8px 14px; border: 0; border-radius: 8px; font: inherit; font-weight: 700; color: #fff; background: var(--navy); cursor: pointer; }
+    button.act.secondary { background: #475569; }
+    button.act:disabled { opacity: .5; cursor: not-allowed; }
+    progress { width: 100%; height: 10px; margin-top: 8px; }
+    #msg { margin-top: 8px; font-weight: 600; }
+    #msg.err { color: var(--bad); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>County Source Check</h1>
+      <a href="/">&larr; Back to the Program Guide</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Are the stored PDFs the same as the County's?</h2>
+      <p class="muted">
+        This compares every file the County publishes under CalFresh, CalWORKs and Medi-Cal at
+        <a href="https://file.sandiegocounty.gov/HHSAPublicSite/" target="_blank" rel="noopener">file.sandiegocounty.gov/HHSAPublicSite</a>
+        with the copy stored on this site. A full scan downloads each County file and compares its contents exactly.
+        A quick scan only checks the County's file list and publish dates against the last full scan.
+      </p>
+      <div id="verdict" class="verdict warn">Loading the last report&hellip;</div>
+      <p id="meta" class="muted"></p>
+      <div id="tiles" class="tiles"></div>
+    </section>
+
+    <section class="card">
+      <h2>Run a scan</h2>
+      <p class="muted" id="adminNote">Scans are limited to the site administrator because a full scan downloads several hundred files from the County.</p>
+      <div class="row">
+        <input type="password" id="token" placeholder="Admin token" autocomplete="off" aria-label="Admin token">
+        <button class="act" id="btnQuick" type="button">Quick scan (about a minute)</button>
+        <button class="act secondary" id="btnFull" type="button">Full scan (10&ndash;20 minutes)</button>
+      </div>
+      <div id="running" hidden>
+        <progress id="bar" max="1" value="0"></progress>
+        <div id="stage" class="muted"></div>
+      </div>
+      <div id="msg" role="status"></div>
+    </section>
+
+    <section id="groups"></section>
+  </main>
+
+  <script>
+    const GROUPS = [
+      { key: 'changed', label: 'Changed at the County', tone: 'bad',
+        explain: 'The County now serves a different file under this title. The stored PDF is out of date.' },
+      { key: 'missing', label: 'On the County site, not stored here', tone: 'bad',
+        explain: 'The County publishes this file but this site has no PDF for it.' },
+      { key: 'mislabelled', label: 'Stored under the wrong entry', tone: 'bad',
+        explain: 'This site has the County file, but attached to a different catalog entry than the one with its title.' },
+      { key: 'not_on_county', label: 'Stored here, not on the County site', tone: 'bad',
+        explain: 'No current County file matches this entry by title or by contents. It may have been removed or renamed.' },
+      { key: 'errors', label: 'Could not be checked', tone: 'warn',
+        explain: 'The County file could not be downloaded during the scan.' },
+      { key: 'unverified', label: 'Needs a full scan', tone: 'warn',
+        explain: 'A quick scan cannot confirm these. Run a full scan to compare the contents.' },
+      { key: 'identical', label: 'Identical', tone: 'ok',
+        explain: 'The stored PDF has exactly the same contents as the County file.' }
+    ];
+
+    const el = (tag, cls, text) => {
+      const node = document.createElement(tag);
+      if (cls) node.className = cls;
+      if (text !== undefined && text !== null) node.textContent = text;
+      return node;
+    };
+    const fmtDate = (iso) => {
+      if (!iso) return '';
+      const d = new Date(iso);
+      return isNaN(d) ? iso : d.toLocaleString();
+    };
+    const fmtDay = (iso) => (iso && !iso.startsWith('1900') ? iso.slice(0, 10) : '');
+
+    function renderReport(report) {
+      const verdict = document.getElementById('verdict');
+      const meta = document.getElementById('meta');
+      const tiles = document.getElementById('tiles');
+      const groupsEl = document.getElementById('groups');
+      tiles.replaceChildren();
+      groupsEl.replaceChildren();
+
+      if (!report) {
+        verdict.className = 'verdict warn';
+        verdict.textContent = 'No scan has been run yet.';
+        meta.textContent = '';
+        return;
+      }
+
+      const s = report.summary || {};
+      const problems = (s.changed || 0) + (s.missing || 0) + (s.mislabelled || 0) + (s.not_on_county || 0);
+      if (report.in_sync) {
+        verdict.className = 'verdict ok';
+        verdict.textContent = 'In sync: every County file matches a stored PDF exactly.';
+      } else if (problems > 0) {
+        verdict.className = 'verdict bad';
+        verdict.textContent = 'Not in sync: ' + problems + ' difference' + (problems === 1 ? '' : 's') + ' found.';
+      } else {
+        verdict.className = 'verdict warn';
+        verdict.textContent = 'No differences found, but ' + ((s.unverified || 0) + (s.errors || 0)) + ' file(s) were not fully checked.';
+      }
+      meta.textContent = (report.mode === 'full' ? 'Full scan' : 'Quick scan') + ' finished ' + fmtDate(report.finished_at)
+        + ' (' + Math.round((report.duration_seconds || 0) / 6) / 10 + ' min). '
+        + (s.county_files || 0) + ' County files, ' + (s.stored_documents || 0) + ' catalog entries.'
+        + (report.mode === 'quick' ? ' Last full scan: ' + (report.last_full_scan ? fmtDate(report.last_full_scan) : 'never') + '.' : '');
+
+      GROUPS.forEach(g => {
+        const rows = (report.groups && report.groups[g.key]) || [];
+        const tile = el('button', 'tile ' + (rows.length ? g.tone : 'zero'));
+        tile.type = 'button';
+        tile.append(el('div', 'n', String(rows.length)), el('div', 'l', g.label));
+        tiles.append(tile);
+        if (!rows.length) { tile.disabled = true; tile.style.cursor = 'default'; return; }
+
+        const details = el('details');
+        details.id = 'group-' + g.key;
+        if (g.tone === 'bad') details.open = true;
+        const summary = el('summary');
+        summary.append(el('span', 'count', String(rows.length)), document.createTextNode(g.label));
+        details.append(summary, el('div', 'explain', g.explain));
+
+        const wrap = el('div', 'table-scroll');
+        const table = el('table');
+        const head = el('tr');
+        ['Program', 'County file', 'Published', 'Catalog entry', 'Note'].forEach(h => head.append(el('th', '', h)));
+        const thead = el('thead'); thead.append(head);
+        const tbody = el('tbody');
+        rows.forEach(r => {
+          const tr = el('tr');
+          const prog = el('td'); prog.append(el('span', 'badge', r.program || ''));
+          const county = el('td');
+          if (r.county_url) {
+            const a = el('a', '', r.county_title || r.county_file_id);
+            a.href = r.county_url; a.target = '_blank'; a.rel = 'noopener';
+            county.append(a);
+            if (r.county_path) county.append(el('div', 'small', r.county_path));
+          } else {
+            county.textContent = '—';
+          }
+          const entry = el('td');
+          if (r.doc_id) {
+            entry.append(el('div', '', r.doc_title || ''), el('div', 'small', r.doc_id + (r.stored_file ? ' · ' + r.stored_file : ' · no PDF stored')));
+          } else {
+            entry.textContent = '—';
+          }
+          const published = el('td', 'small', fmtDay(r.county_published_on));
+          const note = el('td', 'small', r.note || '');
+          tr.append(prog, county, published, entry, note);
+          tbody.append(tr);
+        });
+        table.append(thead, tbody);
+        wrap.append(table);
+        details.append(wrap);
+        groupsEl.append(details);
+        tile.addEventListener('click', () => { details.open = true; details.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+      });
+    }
+
+    let wasRunning = false;
+    let pollTimer = null;
+
+    function renderStatus(st) {
+      const running = document.getElementById('running');
+      const quick = document.getElementById('btnQuick');
+      const full = document.getElementById('btnFull');
+      const token = document.getElementById('token');
+      const note = document.getElementById('adminNote');
+      const msg = document.getElementById('msg');
+
+      if (!st.admin_enabled) {
+        note.textContent = 'Scans from this page are turned off. Set the ADMIN_TOKEN environment variable on the server to enable them, or run "python3 county_sync.py full" on the server.';
+      }
+      quick.disabled = full.disabled = token.disabled = !st.admin_enabled || st.running;
+
+      running.hidden = !st.running;
+      if (st.running) {
+        const bar = document.getElementById('bar');
+        if (st.total > 1) { bar.max = st.total; bar.value = st.done; } else { bar.removeAttribute('value'); }
+        document.getElementById('stage').textContent = (st.mode === 'full' ? 'Full scan: ' : 'Quick scan: ')
+          + st.stage + (st.total > 1 ? ' (' + st.done + ' of ' + st.total + ')' : '');
+      }
+      if (wasRunning && !st.running) {
+        msg.className = st.error ? 'err' : '';
+        msg.textContent = st.error ? 'Scan failed: ' + st.error : 'Scan finished.';
+        loadReport();
+      }
+      wasRunning = st.running;
+      clearTimeout(pollTimer);
+      if (st.running) pollTimer = setTimeout(pollStatus, 2000);
+    }
+
+    async function pollStatus() {
+      try {
+        const st = await fetch('/api/sync/status').then(r => r.json());
+        renderStatus(st);
+      } catch (err) {
+        pollTimer = setTimeout(pollStatus, 5000);
+      }
+    }
+
+    async function loadReport() {
+      try {
+        const resp = await fetch('/api/sync/report');
+        renderReport(resp.ok ? await resp.json() : null);
+      } catch (err) {
+        renderReport(null);
+      }
+    }
+
+    async function startScan(mode) {
+      const msg = document.getElementById('msg');
+      const token = document.getElementById('token').value;
+      msg.className = '';
+      if (!token) { msg.className = 'err'; msg.textContent = 'Enter the admin token first.'; return; }
+      msg.textContent = 'Starting…';
+      try {
+        const resp = await fetch('/api/sync/scan', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'X-Admin-Token': token },
+          body: JSON.stringify({ mode })
+        });
+        const data = await resp.json().catch(() => ({}));
+        if (!resp.ok) {
+          msg.className = 'err';
+          msg.textContent = data.detail || ('Could not start the scan (HTTP ' + resp.status + ').');
+          return;
+        }
+        msg.textContent = '';
+        wasRunning = true;
+        pollStatus();
+      } catch (err) {
+        msg.className = 'err';
+        msg.textContent = 'Could not reach the server.';
+      }
+    }
+
+    document.getElementById('btnQuick').addEventListener('click', () => startScan('quick'));
+    document.getElementById('btnFull').addEventListener('click', () => startScan('full'));
+    loadReport();
+    pollStatus();
+  </script>
+</body>
+</html>

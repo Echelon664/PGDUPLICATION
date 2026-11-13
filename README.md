@@ -9,7 +9,7 @@ A fast, searchable policy engine and AI assistant for the County of San Diego He
 
 ## Features
 
-1. **Local PDF Serving**: County PDFs are stored in `data/pdfs/` and served by the app (`/pdfs/<file name>.pdf`), so users view documents in their browser without leaving the site. Sixteen CalWORKs sections have no County PDF in this repo; they are listed as "County document not bundled", link to the County site, and are never used as AI sources (`"source_missing": true` in `data/documents.json`).
+1. **Local PDF Serving**: County PDFs are stored in `data/pdfs/` and served by the app (`/pdfs/<file name>.pdf`), so users view documents in their browser without leaving the site. An entry without a stored County PDF (`"source_missing": true` in `data/documents.json`) is shown as "County document not bundled", links to the County site, and is never used as an AI source.
 2. **Dual Search Modes**:
    * **Ask AI (RAG)**: Natural language question-answering with citations to official manual chapters and documents.
    * **Policy Search (SQLite FTS5 BM25)**: Instant keyword, phrase, and code lookup (e.g. `63-151`, `SAR 7`, `IRT`) with Porter stemming, section-number matching, and acronym expansion (`WTW`, `ABAD`, `SUA`, `SNAP`, `Medicaid`).
@@ -26,6 +26,8 @@ ChrisPG/
 ├── app.py                # FastAPI server (Search API, AI Ask API, Web Frontend)
 ├── ai_backend.py         # /api/ask logic, LLM providers, rate limits
 ├── crawler.py            # Discovery crawler (writes data/crawl/, never the catalog)
+├── county_sync.py        # County Source Check: compare stored PDFs with the County site
+├── county_apply.py       # Apply a full scan: fetch changed/missing County files, update the catalog
 ├── generate_preview.py   # Regenerates templates/index.html from documents.json
 ├── indexer.py            # Text chunker and legacy in-memory BM25 fallback
 ├── search_engine.py      # SQLite FTS5 index, query layer, and ranking
@@ -88,6 +90,51 @@ documents file changes. The query layer adds:
 * Phrase queries, per-document deduplication, and title phrase boosts
 
 No extra services or Python packages are required.
+
+---
+
+## County Source Check
+
+`county_sync.py` compares the stored PDFs with what the County currently
+publishes under CalFresh, CalWORKs and Medi-Cal at
+<https://file.sandiegocounty.gov/HHSAPublicSite/>. The report is shown at
+`/sync` on the site.
+
+| Scan | What it does | Time |
+|---|---|---|
+| `quick` | Reads the County's file list and compares file IDs and publish dates with the last full scan | about a minute |
+| `full` | Also downloads every County file and compares its SHA-256 with the stored PDF | 10-20 minutes |
+
+```bash
+python3 county_sync.py full     # or: quick
+python3 -m unittest test_county_sync
+```
+
+Each County file lands in one group: identical, changed at the County, on the
+County site but not stored here, stored under the wrong catalog entry, or could
+not be checked. Catalog entries no County file matches are listed as "stored
+here, not on the County site". Only a full scan with no differences reports
+"in sync".
+
+Things to know:
+
+* The scan is report-only. It never changes `data/documents.json` or `data/pdfs/`.
+* To apply a full scan's findings, run `python3 county_apply.py --dry-run`, then
+  `python3 county_apply.py [--remove-stale]` and `python3 generate_preview.py`.
+  It downloads changed and missing County files, adds or fills catalog entries,
+  records each entry's County file ID, direct link and publish date, and (with
+  `--remove-stale`) drops entries the County no longer publishes. Summaries of
+  new or replaced documents are copied from the document's own Purpose or
+  Background paragraph; review them afterwards. Needs `pypdf` and `cryptography`.
+* The County re-stamps the PDF trailer `/ID` on some downloads, so that field is
+  ignored when hashing. Everything else in the file must match byte for byte.
+* Scans can be started from `/sync` only when the `ADMIN_TOKEN` environment
+  variable is set, and only with that token. Without it the page is read-only.
+  A full scan makes about 900 requests to the County, so it is not public.
+* Results are saved in `data/county_sync/` (`report.json`, `manifest.json`).
+  On hosts with an ephemeral disk, a scan run from the page is lost on redeploy;
+  commit the files from a local run to ship a report with the image.
+* `COUNTY_SYNC_DELAY` sets the pause between County requests (default 0.15 s).
 
 ---
 

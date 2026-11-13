@@ -282,6 +282,7 @@ html_template = f"""<!DOCTYPE html>
         <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=542" target="_blank" class="hover:text-amber-300 underline transition">CalFresh Official (542) ↗</a>
         <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=448" target="_blank" class="hover:text-amber-300 underline transition">CalWORKs Official (448) ↗</a>
         <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=599" target="_blank" class="hover:text-amber-300 underline transition">Medi-Cal Official (599) ↗</a>
+        <a href="/sync" class="hover:text-amber-300 underline transition">County Source Check</a>
       </div>
     </div>
 
@@ -1346,7 +1347,7 @@ html_template = f"""<!DOCTYPE html>
           <div class="flex items-center gap-3 text-xs text-slate-400 mt-1">
             <span>Section: <strong class="text-slate-600">${{escapeHtml(doc.section_num ? (doc.section_num + (doc.section_title ? (' • ' + doc.section_title) : '')) : (doc.chapter || doc.id))}}</strong></span>
             <span>•</span>
-            <span>Revised: ${{revisionStr}}</span>
+            <span>Published by County: ${{revisionStr}}</span>
           </div>
         </div>
         <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
