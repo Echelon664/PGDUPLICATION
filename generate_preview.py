@@ -202,7 +202,7 @@ html_template = f"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SDCounty HHSA Program Guide</title>
+  <title>Personal SDCounty HHSA PG</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <style>
     .gradient-header {{
@@ -332,7 +332,7 @@ __CHAPTER_NAV_CSS__
           </svg>
           Direct Policy Guide Search &amp; Grounded AI
         </div>
-        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight mb-2">SDCounty HHSA Program Guide</h1>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight mb-2">Personal SDCounty HHSA PG</h1>
         <p class="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto mb-5">
           Select a program to browse its policy chapters. Open a chapter, then a document, to see its date, summary and PDF.
         </p>
@@ -408,11 +408,6 @@ __CHAPTER_NAV_CSS__
           <div class="text-right text-blue-200/70 hidden sm:block">
             {all_count:,} documents &bull; {chunk_count:,} indexed passages
           </div>
-        </div>
-
-        <!-- Suggested Quick Topic Chips -->
-        <div id="topicChipsContainer" class="flex flex-wrap items-center justify-center gap-1.5 mt-3">
-          <!-- Populated dynamically -->
         </div>
 
       </div>
@@ -519,16 +514,6 @@ __CHAPTER_NAV_CSS__
 
     </div>
 
-    <!-- Official Portal Footnotes -->
-    <div class="bg-[#0b2545] border-t border-slate-800 p-4 text-xs text-slate-400 flex flex-wrap justify-between items-center gap-2">
-      <div>
-        SDCounty HHSA Program Guide • <strong>100% Original %PDF-1.7 Documents Locally Indexed</strong>
-      </div>
-      <div class="flex items-center gap-3">
-        <a href="http://localhost:8000" target="_blank" class="hover:text-amber-300 font-semibold underline">Local Server: http://localhost:8000 ↗</a>
-        <a href="https://benefitscal.com" target="_blank" class="hover:text-amber-300 underline">BenefitsCal.com ↗</a>
-      </div>
-    </div>
 
   </div>
 
@@ -773,9 +758,6 @@ __CHAPTER_NAV_CSS__
       const scopeDesc = document.getElementById('searchScope');
       if (scopeDesc) scopeDesc.textContent = prog === 'All' ? 'Searching all program guides.' : 'Searching the ' + meta.title + ' guide.';
 
-      // Render suggested quick topic chips
-      renderTopicChips(meta.chips);
-
       if (opts.skipSearch) {{
         updateClearButtonVisibility();
         return;
@@ -788,23 +770,6 @@ __CHAPTER_NAV_CSS__
       }} else {{
         cancelSearchToDropdowns();
       }}
-    }}
-
-    function renderTopicChips(chips) {{
-      const container = document.getElementById('topicChipsContainer');
-      if (!container) return;
-      container.innerHTML = '';
-      chips.forEach(c => {{
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'text-xs bg-white/10 hover:bg-white/20 text-blue-100 hover:text-white px-2.5 py-1 rounded-full border border-white/20 transition flex items-center gap-1 cursor-pointer';
-        btn.innerHTML = '<span>' + escapeHtml(c.label) + '</span>';
-        btn.onclick = () => {{
-          setSearchQuery(c.query);
-          handleSearchMode('search');
-        }};
-        container.appendChild(btn);
-      }});
     }}
 
     function clearSearch() {{
