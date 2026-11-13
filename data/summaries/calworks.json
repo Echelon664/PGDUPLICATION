@@ -1,625 +1,625 @@
 {
   "cw-123": {
-    "summary": "To provide guidance on information to be provided to customers when it is suspected someone else has used their personal identifying information to collect UIB.",
-    "status": "draft",
+    "summary": "SN 21-03 (a joint notice for CalWORKs, CalFresh, Medi-Cal, General Relief, CAPI and CMS) gives guidance when customers report that Unemployment Insurance Benefits were claimed using their identity without consent. Defines EDD benefit fraud for Disability Insurance, Paid Family Leave and UIB with examples, and provides a County information notice with resources for reporting identity theft, which may be sent with verification requests about UIB shown in the customer's name.",
+    "status": "verified",
     "pdf_sha256": "0a112a2ad21288962f7a82a078184023d308996060072d1bc6e6dca655a87113",
     "updated": "2026-11-13"
   },
   "cw-124": {
-    "summary": "The purpose of this material is to provide guidance to implement the provision in Assembly Bill (AB) 128 that extends the COVID-19 Good Cause time limit exemption to aided CalWORKs adults. The time limit exemption is effective July 1, 2021 through the implementation of the 60-month CalWORKs time limit.",
-    "status": "draft",
+    "summary": "SN 21-06 implements Assembly Bill 128: effective July 1, 2021, aided CalWORKs adults who have not reached the 48-month CalWORKs time limit receive the COVID-19 time limit exemption regardless of their TANF time clock. Customers who already reached 48 months are timed out and not eligible unless they meet a time limit extender, and those with an extender do not get the exemption. CalWIN updates cases monthly with the exemption.",
+    "status": "verified",
     "pdf_sha256": "260754783cdf8f596d7695e68a85f28175d8697fb0dd020df27f7f97710f07e5",
     "updated": "2026-11-13"
   },
   "cw-125": {
     "summary": "SN 21-08 (effective September 1, 2021) implements Assembly Bill (AB) 135. All nonfraudulent CalWORKs overpayments established on or after August 1, 2021 for benefit months from April 2020 through the end of the COVID-19 pandemic emergency or June 30, 2022, whichever is sooner, must be classified as administrative error (AE) and cannot be reclassified to client error. AE overpayments are recouped by reducing the Maximum Aid Payment by five percent. Also reviews current overpayment and mandatory mid-period reporting rules.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "ef39ed9d96c58032b7573a09f09951c5339cdbe053677531eacba4dfae067f09",
     "updated": "2026-11-13"
   },
   "cw-126": {
     "summary": "SN 21-15 (revised 12/01/2021) raises Regional Market Rate (RMR) ceilings for subsidized CalWORKs child care under Assembly Bill 131. Effective January 1, 2022, ceilings for licensed providers are set at the 75th percentile of the 2018 RMR survey or the ceilings as of December 31, 2021, whichever is greater, and license-exempt care is reimbursed at 70% of the Family Child Care Home rate. Child Care Case Managers apply the new rates to care on or after 01/01/2022 and send families a timely Child Care Change Notice of Action (NA 833).",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "316d32056b3ee45908b87eb985fc3ab3883fe536bf02149f3cd3a8e7d5f4e385",
     "updated": "2026-11-13"
   },
   "cw-127": {
     "summary": "SN 22-02 implements Assembly Bill (AB) 79, extending the CalWORKs time limit from 48 months to 60 months effective May 1, 2022. Formerly timed-out household members living with an existing Assistance Unit who are mandatorily included and have not exhausted 60 months are added automatically as a county-initiated mid-period change; optional and new household members must request to be added using the CW 8. AB 135 temporarily waives the Statement of Facts requirement, and child support cooperation for 60 days, for these additions.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "781c52453f1f94430ab65247ca3e29373c781860d0c58ffaf10165fbbdb6d31b",
     "updated": "2026-11-13"
   },
   "cw-128": {
     "summary": "SN 25-03 announces updated Income Reporting Threshold (IRT) tiers across assistance unit sizes effective October 2025. Directs caseworkers on mandatory mid-period income reporting rules when gross income exceeds the assigned IRT, and outlines effective dates for grant changes.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "dcb33a3553412161772249780611e475481e4dec19dc1634122345d703cf7775",
     "updated": "2026-11-13"
   },
   "cw-129": {
     "summary": "SN 25-04 addresses the 2.8 percent Social Security Cost-of-Living Adjustment payable January 1, 2026, and the increase in the Medicare Part B premium to $202.90 per month. For new applicants the actual benefit including the COLA is used beginning January 2026. For ongoing Semi-Annual Reporting cases the COLA is a county-initiated mid-period action that may decrease CalWORKs or CalFresh benefits with timely and adequate notice. Customers must report if the increase puts income over the Income Reporting Threshold. A mass update on December 6, 2025 adjusts benefit amounts automatically.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "0861aed6a270e0267833992664b402bd5eb63a36a8d2246192011c964d478f31",
     "updated": "2026-11-13"
   },
   "cw-130": {
     "summary": "SN 25-05 announces that the California minimum wage increases from $16.50 to $16.90 per hour effective January 1, 2026. CalWORKs and CalFresh customers are expected to report the increased income beginning with the January 2026 SAR 7 data month or the February 2026 redetermination, and mid-period if income exceeds the Income Reporting Threshold. Employment Case Managers use the minimum wage to calculate the maximum Work Experience or Community Service hours. Also covers CalFresh Employment & Training and General Relief Work Project assignments and credit.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "34deff72f518b14741990c038e9fe28472eff3df020ee37e868174fa5d8ad4c0",
     "updated": "2026-11-13"
   },
   "cw-131": {
     "summary": "SN 26-01 details annual mandatory client notification and outreach regarding the federal Earned Income Tax Credit (EITC), California Earned Income Tax Credit (CalEITC), and Young Child Tax Credit cash refunds, confirming that tax refunds are fully exempt from property and income budgeting.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "2bc480b24bb074fccccf9e92607a9c55060d1115556ba6dc2c66e234fc681de6",
     "updated": "2026-11-13"
   },
   "cw-132": {
-    "summary": "SN 26-02 publishes annual Cost-of-Living Adjustments (COLA) increasing the Minimum Basic Standard of Adequate Care (MBSAC) and Income-In-Kind (IIK) levels effective July 2026. Outlines applicant financial eligibility gross income test thresholds across family sizes.",
-    "status": "draft",
+    "summary": "SN 26-02 raises the CalWORKs Minimum Basic Standards of Adequate Care (MBSAC) and Income In-Kind (IIK) levels by 3.59% effective July 1, 2026. The new MBSAC is used for the applicant test on applications from July 1, 2026, and applications denied on or after that date only because of the old amounts must be reviewed and corrected. For recipients the change is a county-initiated mid-period action, with the new IIK amounts used prospectively with timely notice.",
+    "status": "verified",
     "pdf_sha256": "cef0b7e3031de38b56da8af737a7d0bfc98b09ed2f6adffbc5f85e0dabde424c",
     "updated": "2026-11-13"
   },
   "cw-133": {
     "summary": "SN 26-03 (effective 08/01/2026) provides the updated list of Indian Country areas in California with an unemployment rate of 50% or higher during calendar year 2025. Individuals who lived in these areas during 2025 qualify for the CalWORKs Time on Aid exemption for the months they received CalWORKs. Documentation must be provided to verify residence during the reported time frame. A desk aid lists qualifying areas in San Diego County from 1998 to 2025.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "a2fe2db74f576e89439ba9bc8e76d85fda29b93935caf39422107c7d9e37de08",
     "updated": "2026-11-13"
   },
   "cw-134": {
     "summary": "SN 26-04 announces the annual statutory increase to the CalWORKs Maximum Aid Payment (MAP) levels effective October 2026 for both exempt and non-exempt assistance units across San Diego County (Region 1). Details automated payment adjustments and client notice mailings.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "71acf3b3ff052dbf29636e8fe55166394ac6f72a6e353e7a1b33f215afcda933",
     "updated": "2026-11-13"
   },
   "cw-135": {
-    "summary": "Provides a comprehensive operational overview of CalWORKs eligibility and Welfare-to-Work (WTW) employment services under Assembly Bill 79. Details the repeal of the 48-month time limit in favor of the 60-month cumulative lifetime cash aid clock, the repeal of the WTW 24-month time clock, and core program goals centered on family stabilization, barrier removal, and career pathways toward permanent self-sufficiency.",
-    "status": "draft",
+    "summary": "Overview of CalWORKs and Employment Services under Assembly Bill 79. Effective May 1, 2022, adults may receive CalWORKs for up to 60 months, replacing the 48-month limit, with months not counting when an exemption applies and extensions in some situations; the Welfare-to-Work 24-Month Time Clock is repealed, and the CalWORKs minimum participation standards are the only hourly requirement. Employment Services help participants find and keep jobs, move to higher-paying work and become self-sufficient.",
+    "status": "verified",
     "pdf_sha256": "46d8cb89c0103619959cc9d4ff9a6e5d9cfa38060c752a29facdadcbe35a28d9",
     "updated": "2026-11-13"
   },
   "cw-136": {
     "summary": "Outlines federal Work Participation Rate (WPR) policy. Data is now pulled directly from CalSAWS, replacing the RADEP and E2Lite systems, and counties are no longer subject to a WPR penalty passthrough. For the All Families rate, fifty percent of families must have a work-eligible individual participating an average of thirty hours per week (twenty for a single custodial parent with a child under six), with at least twenty hours in core activities. For the Two-Parent rate, ninety percent must participate a combined thirty five hours, thirty in core activities. Lists the nine core activities.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "b2efbb03134b4fe435ac5f12c7ce039cfc9382bfeb13112fdd610df2b2e7aa02",
     "updated": "2026-11-13"
   },
   "cw-137": {
     "summary": "Welfare-to-Work (WTW) is the employment and training aspect of CalWORKs. Recipients must participate as a condition of eligibility unless exempt; exempt recipients may volunteer. Outlines the sequence: the eligibility worker refers non-exempt recipients, the Employment Case Manager (ECM) provides activities and supportive services, and the ECM starts the noncompliance process and schedules a cause determination when a participant fails to meet requirements. The Overpayment Specialist Unit imposes a financial sanction if good cause does not exist, and aid is restored the first day of the month after the individual cures the sanction.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "a638a0a9e8769b36c45bc0c146e9f47c437b71d6ec652d341f3ac6eaa8f9d20d",
     "updated": "2026-11-13"
   },
   "cw-138": {
     "summary": "Summarizes employment staff responsibilities: assisting Welfare-to-Work (WTW) participants in achieving self-sufficiency through participation in employment and employment related activities. Employment Case Managers, or other designated staff, ensure WTW referrals are processed daily by checking alerts for WTW referrals in CalWIN, where the alert Orientation Needed for WTW is displayed.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "bab69235eeb7bd0a5863e316271785dbf71a5ec82e02d87b749153bc4a46e508",
     "updated": "2026-11-13"
   },
   "cw-139": {
-    "summary": "Governs the mandatory Welfare-to-Work orientation and appraisal process. Evaluates client work history, educational attainment, vocational skills, and immediate supportive service needs (child care, transportation). Mandates screening for domestic violence, mental health, substance use, and learning disabilities during initial engagement.",
-    "status": "draft",
+    "summary": "Employment Services Orientation (ORE) comes before Appraisal (APR), and both must be completed within 15 business days of the referral for new participants, exempt volunteers, people re-referred after a break in aid or exemption of 30 days or more, and sanctioned participants curing a sanction. The Online CalWORKs Appraisal Tool (OCAT) documents the appraisal of abilities, skills, education, work history and potential barriers, including mental health, substance use and domestic abuse, unless the participant declines or translation is not appropriate.",
+    "status": "verified",
     "pdf_sha256": "9f299f3c55afa7dba9b9a6d7ffb504a2b4c459bd47be20b26cb850376c5881ab",
     "updated": "2026-11-13"
   },
   "cw-140": {
-    "summary": "Details CalWORKs WTW initial engagement activities, orientation attendance scheduling, barrier screening, and sequencing toward formal appraisal. Outlines caseworker actions when an individual fails to attend scheduled engagement appointments, ensuring good cause is evaluated before issuing noncompliance notices.",
-    "status": "draft",
+    "summary": "Newly referred Welfare-to-Work participants, approved for the first time or after a break in aid over 30 days, must do Initial Job Search after Appraisal unless excluded or better served by other initial engagement activities: Family Stabilization, Mental Health/Substance Abuse Services, or Domestic Violence Services. These may be assigned in sequence or together before the first WTW plan is signed. Initial Job Search includes looking for openings, contacting employers, applying, interviewing, networking and Job Clubs.",
+    "status": "verified",
     "pdf_sha256": "422e4617d8e6b8cd735e2af46aacdaa5696473955381f5b062ac3061cbc224a3",
     "updated": "2026-11-13"
   },
   "cw-141": {
-    "summary": "Governs comprehensive vocational assessment and reassessment for WTW participants not readily employable. Evaluates employment history, educational aptitude, career interests, local labor market conditions, and supportive service needs to formulate a realistic, structured pathway to family-supporting wages.",
-    "status": "draft",
+    "summary": "The Assessment (ASMT) evaluates a participant's employability: personal and family needs, work and education history, career goals, strengths, skills and supportive service needs. The Employment Case Manager completes it before the first ES plan after Initial Job Search, after a valid exclusion from initial engagement, or after more than four consecutive weeks of mental health, substance abuse or family violence services; it is not needed for Family Reunification plan activities. Covers participants in publicly funded postsecondary education under SB 1232.",
+    "status": "verified",
     "pdf_sha256": "d6b670845e12cd0e1a1836ab6feb94cde5931e7dcee583ef373797a5ef9fb8c0",
     "updated": "2026-11-13"
   },
   "cw-142": {
-    "summary": "Details the development of the individualized Welfare-to-Work Employment Services Plan (Form WTW 2). Outlines allowable assigned activities, weekly scheduled hours, supportive service authorizations (child care, mileage, transit passes), participant rights, and mandatory 30-day reassessment criteria.",
-    "status": "draft",
+    "summary": "Explains the Employment Services plan, signed on the WTW 2. Development assesses work history, education and goals, learning disabilities, mental health, substance use and domestic violence, basic skills, English, local labor market conditions, and needs such as family stabilization and housing. Non-exempt customers must sign a plan within 90 calendar days of finishing initial engagement, being found eligible, or being required to participate, not counting good cause, compliance or sanction processes. Updated for STEP students under SB 768.",
+    "status": "verified",
     "pdf_sha256": "9a57cb7eb6fd4333896fdb44d198ecaa337ee74efbc71caa03fb5ebcc971715d",
     "updated": "2026-11-13"
   },
   "cw-143": {
     "summary": "Specifies approved Welfare-to-Work activities: unsubsidized employment, subsidized private/public sector jobs, work experience, on-the-job training, job search and readiness, vocational education, community service, and education directly related to employment. Defines hourly participation limits and tracking protocols.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "ef46f8844f333bd235e73c5e017daddd0e4ed95f8c088154aadb1710e6bfd5ac",
     "updated": "2026-11-13"
   },
   "cw-144": {
     "summary": "When a Welfare-to-Work participant moves from one county region to another, the Employment Case Manager transfers the case to the new region. Active cases can be transferred; sanctioned, noncompliant or compliance plan cases only by mutual agreement between regions, using the WTW Case Transfer/Closing Checklist (27-313). Companion cases transfer together. Cases may not be transferred after the 20th of the month unless next month's supportive service payments have been approved and issued. A case may be returned only for listed reasons, such as a missing required form or a required referral not made.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "ceec8716f2eeb54288822231c4b144992418e0ab489d210ac51bcdc9f18f72dc",
     "updated": "2026-11-13"
   },
   "cw-145": {
     "summary": "Teens ages 16 and 17 receiving CalWORKs are referred to Employment Services (ES) as mandatory participants when they do not meet the school attendance exemption. Teens ages 16 to 18 attending grade 12 or below, or a vocational or technical school full-time, are exempt. Chronic truants and graduates not in post-secondary education must participate, attending Orientation, Appraisal and Assessment. A 16- or 17-year-old may requalify for the student exemption by resuming full-time school, but chronic truants cannot. Required participation may not exceed 20 average hours per week, and teens are not subject to Time on Aid.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "65203b7dc2ee71a895b133194b3e14729d1482683233d4af35fee2ff5f78d26f",
     "updated": "2026-11-13"
   },
   "cw-146": {
-    "summary": "Governs learning disabilities screening and formal evaluation (EVA) for Welfare-to-Work participants. Screening is offered at appraisal, assessment, or upon participant request. Clients with identified learning disabilities receive workplace accommodations, specialized vocational training modifications, and reduced hourly participation targets tailored to their evaluation.",
-    "status": "draft",
+    "summary": "Information about learning disability (LD) screening must be given verbally and in writing at the first Employment Services contact, with an offer of screening in the participant's primary language when a validated tool exists (otherwise a direct referral for evaluation may be requested). Participants may decline screening and evaluation without being sanctioned, and may request it later. Participants with a learning disability receive reasonable accommodations to help them complete their activities.",
+    "status": "verified",
     "pdf_sha256": "f5a813e8160eec9711eaf3f9f604f25becd859c007150b9a1284c645943e70ca",
     "updated": "2026-11-13"
   },
   "cw-147": {
-    "summary": "Details the CalWORKs Family Stabilization (FS) program providing intensive case management and specialized barrier removal funds for families in immediate crisis. Authorizes flexible barrier removal funds for emergency housing, utility arrears, domestic violence safety, mental health crisis support, and substance use stabilization.",
-    "status": "draft",
+    "summary": "Family Stabilization (FS) is for CalWORKs families facing an emergency that interferes with employment and Employment Services participation, such as domestic violence, behavioral health needs, housing and utility needs, or essential vehicle repairs. The Assistance Unit must include an aided person affected by the emergency, and requests are not approved when eligibility is not determined or not expected to continue. Participants sign the FS2 Family Stabilization Plan; noncompliant or sanctioned people with a cure plan and certain non-aided parents may also take part.",
+    "status": "verified",
     "pdf_sha256": "05994516ceacc2370f6df268362786ca8174ba8a2e2e76bea4ecc43c946d18d3",
     "updated": "2026-11-13"
   },
   "cw-148": {
-    "summary": "Governs the CalWORKs Housing Support Program (HSP) assisting homeless families or families at imminent risk of homelessness. Authorizes evidence-based rapid re-housing services, including housing identification, move-in assistance, security deposits, temporary rental subsidies, and intensive housing case management.",
-    "status": "draft",
+    "summary": "The CalWORKs Housing Support Program (HSP) helps families with an active CalWORKs case who are homeless under the federal definition in 24 CFR 91.5 (for example, living in a car, shelter or place not meant for sleeping) or otherwise housing unstable. HSP is not an entitlement and depends on funding and slots. Services include move-in and rental assistance and housing case management, and the revision adds a required individualized housing plan and an updated Homeless Programs Payment Grid.",
+    "status": "verified",
     "pdf_sha256": "508f840b7cf10e5f829486ae044759b2a271363c132efc9da24f09b26b676d73",
     "updated": "2026-11-13"
   },
   "cw-149": {
-    "summary": "Details the voluntary CalWORKs Home Visiting Program (HVP) connecting pregnant individuals and families with children under age 24 months to registered nurses or trained home visitors. Outlines child health screenings, developmental milestones, positive parenting guidance, and family wellness support.",
-    "status": "draft",
+    "summary": "The CalWORKs Home Visiting Program (HVP) is a voluntary program pairing pregnant people and new parents with a nurse or other trained professional for regular home visits. Customers must be pregnant or the parent or caretaker of a child under 24 months at enrollment, and be in the Assistance Unit, the parent of a child-only case, apparently eligible, a denied or withdrawn applicant already receiving services, or in Cal-Learn. Services last up to 24 months or until the child's second birthday, whichever is later; re-enrollment rules apply.",
+    "status": "verified",
     "pdf_sha256": "8963d4256760ad00c6df3095934d4c3424fd855de8578d610535709a9a1f334f",
     "updated": "2026-11-13"
   },
   "cw-150": {
-    "summary": "Provides a comprehensive overview of CalWORKs Stage One child care administered by County HHSA and child care contractors. Assists current and former CalWORKs recipients with child care payments while participating in approved WTW activities, employment, or Cal-Learn education.",
-    "status": "draft",
+    "summary": "The CalWORKs Child Care Program helps current and former CalWORKs families pay a provider of their choice while working or in approved activities, in three stages supervised by CDSS since July 1, 2021. Stage One, run by the County's Employment Services program, serves recipients in ES activities or working, Cal-Learn teens, sanctioned people curing a sanction, and families who can't yet move to Stage Two, up to 24 months after aid. Stage Two serves stable recipients and former recipients during their first 24 months off aid.",
+    "status": "verified",
     "pdf_sha256": "20072d2f9e30890705cbb6a79cd352d49be7e5f1f1c8ceed9ff7aa316f0dec80",
     "updated": "2026-11-13"
   },
   "cw-151": {
     "summary": "CalWORKs customers who meet child care criteria are authorized for 24 months of Stage One Child Care once eligible for CalWORKs (extended from 12 months). Eligible adults include mandatory Employment Services and Cal-Learn participants, exempt volunteers, and sanctioned participants who intend to cure. Families with no aided adults are not eligible. Children are eligible up to and through age 12, up to age 18 if under court supervision, and up to age 21 with exceptional needs or severe disability. Timed-out and former customers aided within the past 24 months are generally referred to Stage Two.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "4dc94c342b684d46daa9ae1aa725580bdbbf8d010894b7cb8d467c0b719c5bf9",
     "updated": "2026-11-13"
   },
   "cw-152": {
-    "summary": "This section provides instructions for enrolling a child care provider into the Stage One Program. The purpose of this revision is to complete a sunset review and provide clarification of some of the policies regarding child care provider requirements. Additionally, all procedures have been removed from this section and moved to the new Processing Guide 10-010.C1 Provider Enrollment.",
-    "status": "draft",
+    "summary": "Active and former CalWORKs families in Stage One choose their child care provider: a licensed family child care home (up to 8 children, or 14 with an assistant), a licensed center, a license-exempt relative, friend or neighbor, or a license-exempt school or public recreation program. Explains the requirements each type must meet to enroll and be paid. Procedures moved to Processing Guide 10-010.C1 Provider Enrollment.",
+    "status": "verified",
     "pdf_sha256": "b205cdec79f17d159fee8df0576c8fa163517a0e2a11f3094cedf80816bfaaed",
     "updated": "2026-11-13"
   },
   "cw-153": {
-    "summary": "This revision incorporates policies from All County Letter (ACL) 19-99 Immediate and Continuous Child Care, that provides a new service model for child care authorization and approval. Child care services are to be authorized for any county approved activity, and a customer’s child care services are no longer directly tied to the days and hours of the activity, or even to continued participation in the activity.",
-    "status": "draft",
+    "summary": "The Child Care Case Manager must decide eligibility for a Stage One child care request within ten calendar days of receiving the required information from the customer and provider, and may deny the request if the information isn't received within 30 calendar days. Requests are documented on the CCP7. A request counts as a new application when the parent never had Stage One care in San Diego County or a previous denial is more than 60 days old. Under ACL 19-99, care is authorized for any approved activity, not tied to its days and hours.",
+    "status": "verified",
     "pdf_sha256": "572106d63ae4b0527585a5bc3cba3ec390225242cdda6d614ce234b4b5421e1c",
     "updated": "2026-11-13"
   },
   "cw-154": {
     "summary": "Details child care payment methodologies and Regional Market Rate (RMR) ceilings. Covers provider reimbursement processing, monthly child care attendance invoices, payment calculation for full-time and part-time care, and handling registration fee reimbursements.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "368a734e81377e69b9366a89a522cfe489e7244dd57f596ddc2ef5e3d728f039",
     "updated": "2026-11-13"
   },
   "cw-155": {
-    "summary": "The purpose of this revision is to include the required NOAs per Assembly Bill (AB) 121 relating to the CalWORKs Stage One Child Care program and to reflect the policy implementation of Immediate and Continuous Child Care eligibility.",
-    "status": "draft",
+    "summary": "A Notice of Action must be issued for Stage One child care approvals, denials, discontinuances and changes in the County's subsidy, using only State or County approved forms with the NA Back 9 appeal information. An adequate notice gives the action, the reasons, the supporting regulations, the right to a state hearing, and when aid continues pending a hearing (which must be repaid if the County is upheld). Updated for the notices required by AB 121 and Immediate and Continuous Child Care.",
+    "status": "verified",
     "pdf_sha256": "cc9a3459a1c6fce2c66703865d27311a997a5f5866d5b77b64a0a3ee2bcdb9cb",
     "updated": "2026-11-13"
   },
   "cw-156": {
-    "summary": "Governs general child care program administration, provider payment reconciliation, resolving child care attendance discrepancies, and managing child care contractor operational coordination across San Diego County.",
-    "status": "draft",
+    "summary": "Covers administration of Stage One child care by contractors: the program handbook (approved by HHSA), the complaint resolution policy, including complaints to Community Care Licensing about licensed providers, the informing notice, confidentiality, compliance with regulations, inter-county transfers, appeals, case transfers between sites, client inquiries, closed provider and payment files, and required reports.",
+    "status": "verified",
     "pdf_sha256": "c00c9b17119c31fa6e9d61443bf10c4aecb0f269c457e4c61ce59abacc101c72",
     "updated": "2026-11-13"
   },
   "cw-157": {
-    "summary": "The purpose of this revision is to add eligibility factors for ancillary payments for qualifying ES participants enrolled in Self-Employment.",
-    "status": "draft",
+    "summary": "Supportive services (ancillary, transportation and child care) must be available to every CalWORKs recipient in approved Employment Services activities, and participants have good cause for not participating if they aren't. Payments other than child care are advanced so participants don't use their own money. Transportation is paid to and from ES and Family Stabilization activities and child care providers. Covers child care for sanctioned individuals and adds ancillary payments for participants in self-employment.",
+    "status": "verified",
     "pdf_sha256": "0b1080e0191052d5124b71474ea79714af57ce1074f158a096b18a6bacf169c7",
     "updated": "2026-11-13"
   },
   "cw-158": {
-    "summary": "The purpose of this material is to streamline and consolidate policies and procedures for Mental Health Services (MHS) and Substance Abuse Services (SAS), previously outlined in CPG 10-011.D and 10-011.E, under a new section entitled Behavioral Health Services (BHS).",
-    "status": "draft",
+    "summary": "Behavioral Health Services (BHS) combine Mental Health Services and Substance Abuse Services, with Family Violence Services under their own sections. Participants may be referred when concerns impair participation; BHS may be an initial engagement activity at Appraisal for four consecutive weeks, and longer needs lead to an Assessment and BHS activities on the ES plan. The plan includes activities from the BHS assessment, such as treatment, employment accommodations or restrictions, and supportive services.",
+    "status": "verified",
     "pdf_sha256": "e6cc36f3cf220dbac851cb8e473b5dce5da5639e085816ec7a036d6c49e6a2fa",
     "updated": "2026-11-13"
   },
   "cw-159": {
-    "summary": "The purpose of this revision is to update policy to remove the once-in-a-lifetime ES exemption for truant teens per All County Letter (ACL) 23-30. ACL 23 -30 indicates that individuals who lose this exemption due to truancy and are required to participate in ES may receive this exemption again by resuming full-time school attendance if otherwise eligible.",
-    "status": "draft",
+    "summary": "Lists who is excused or exempt from Employment Services. Excused: Cal-Learn teens, a second parent or optional stepparent when the other parent meets the hours, and non-minor dependents. Exemptions include age (under 16 or 60 and older) and full-time school attendance at ages 16 to 18, among others. Exempt customers may volunteer. Per ACL 23-30, a truant teen who loses the school exemption can get it back by resuming full-time attendance.",
+    "status": "verified",
     "pdf_sha256": "1c380d2f898db0f67ef086b766098d982f7b68b5b31561a8b37bca63c10f5104",
     "updated": "2026-11-13"
   },
   "cw-160": {
-    "summary": "The purpose of this revision is to complete a sunset review, streamline policies, and remove GC procedures from the CalWORKs Program Guide (CPG). A corresponding Processing Guide (PG) has been created for this purpose. This update also adds additional employment related GC reasons outlined in All County Letter (ACL) 23-30.",
-    "status": "draft",
+    "summary": "Good cause (GC) temporarily excuses Employment Services participation when a condition or circumstance prevents or significantly impairs a participant's ability to work or take part in activities. Participants must provide information to support it; staff evaluate and document GC and review it monthly or as needed. If GC exists, staff keep helping the participant meet requirements; if not, the noncompliance process in CPG 10-025.A begins. Adds employment-related GC reasons from ACL 23-30.",
+    "status": "verified",
     "pdf_sha256": "4f96f0083ecfe7fc7b6e131a297c71f01ea9570414be34a9ff8676a743becef2",
     "updated": "2026-11-13"
   },
   "cw-161": {
-    "summary": "The purpose of this revision is to update noncompliance and sanction policies from changes introduced by Senate Bill (SB) 119 and All County Letter (ACL) 26- 28.",
-    "status": "draft",
+    "summary": "Effective July 1, 2026 (SB 119, ACL 26-28), mandatory Employment Services participants cannot be found noncompliant or sanctioned during the first 90 calendar days after each CalWORKs approval, and still get supportive services. After that, a participant who fails or refuses program requirements without good cause, then fails or refuses a compliance plan, is sanctioned; assignments must be in writing. Noncompliance includes failing to sign a plan, participate, or provide proof of progress. Also allows multiple rescheduled cause determinations and secured child care.",
+    "status": "verified",
     "pdf_sha256": "6347cd831ccaa854d369b7d778a8b1b84b95de614b4aff59024c3a0882c09313",
     "updated": "2026-11-13"
   },
   "cw-162": {
-    "summary": "The purpose of this material is to update policies for ES Grievances by requiring a review by ES Contractors and Eligibility Operations, instead of the Appeals section, and creating a Processing Guide.",
-    "status": "draft",
+    "summary": "Employment Services complaints should first be handled by the Employment Case Manager and supervisor; if that fails, participants are told they may file a formal grievance or request a state hearing, which can also appeal a grievance outcome. The grievance process decides whether a requirement or assignment violates the ES plan or program rules, and participants must keep taking part in their activities meanwhile. Grievances are reviewed by ES contractors and Eligibility Operations rather than the Appeals section.",
+    "status": "verified",
     "pdf_sha256": "ad3d0d20d8bdb5b212931c5776a8882c07989f4c9c073536edb4d1c48564c84c",
     "updated": "2026-11-13"
   },
   "cw-163": {
     "summary": "States the regulation that when a participant believes a program requirement or assignment violates or is inconsistent with state law and regulations governing the Welfare to Work (WTW) program, the County must inform the participant of the right either to request a state hearing or to file a formal grievance. The attached PDF contains only this statement.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "fbfaf61b8181d844af6b8565e37a6b04be85f784d062b8d270de48e38f09b963",
     "updated": "2026-11-13"
   },
   "cw-164": {
-    "summary": "The purpose of this revision is to consolidate CS and WEX in this section, remove all procedures from CalWIN Program Guide (CPG) and include them in the corresponding processing guide.",
-    "status": "draft",
+    "summary": "Community Service (CS) is a temporary Employment Services training activity in the public or nonprofit sector under close supervision, at sites such as faith-based organizations, nonprofit agencies, shelters and schools, to build basic job skills while meeting a community need; participants may choose a self-initiated CS that meets the criteria. Work Experience (WEX) is unpaid training in a public or private setting for participants who need experience before employment. Procedures are in the processing guide.",
+    "status": "verified",
     "pdf_sha256": "7dbcf14a81a8d5917b2b60abd8a925a97791fe9d0d253485d48ff6fbde6121ab",
     "updated": "2026-11-13"
   },
   "cw-165": {
-    "summary": "This section has been updated to add new policies for the reinstatement of subsidies in certain situations and to incorporate clarification for sanctioned participants and timed -out Safety Net adults previously issued via CalWORKs Policy Inquiry 2017-05.",
-    "status": "draft",
+    "summary": "The Expanded Subsidized Employment (ESE) program places job-ready CalWORKs Employment Services participants, and sanctioned individuals curing their sanction, in subsidized jobs whose wages count as earned income. Participants must keep CalWORKs eligibility and meet ES requirements, except that those who lose CalWORKs because of ESE income, or timed-out adults receiving Safety Net benefits for their children, may stay until the placement or benefits end. Adds rules for reinstating subsidies.",
+    "status": "verified",
     "pdf_sha256": "2cbc6e16a9983a87d55c55d7250048255d3d133278d3e71256718eae2903a009",
     "updated": "2026-11-13"
   },
   "cw-166": {
-    "summary": "This section has been updated due to sunset review. Updates include n ew policies for the reinstatement of subsidies in certain situations and clarification t hat participants receive subsidized wages for the duration of their EWE assignment, but are not employees of the worksite.",
-    "status": "draft",
+    "summary": "The Expanded Work Experience (EWE) program gives paid on-the-job training to CalWORKs Employment Services participants who already have basic job skills and need to become job ready for Expanded Subsidized Employment. Participants receive subsidized wages, counted as earned income, but are not employees of the worksite. They must stay CalWORKs eligible and in ES; otherwise the subsidy ends, though participation may resume if eligibility is reinstated within 30 days.",
+    "status": "verified",
     "pdf_sha256": "7b07c6f497ac9852067cb2971b3d507edc710f8462c6a4ab9be3910547be9d77",
     "updated": "2026-11-13"
   },
   "cw-167": {
-    "summary": "The purpose of the Wrap Around program is to remove barriers that are preventing the customer(s) from participation in ES activities, by providing intensive and supportive relationships between the family, Employment Case Manager (ECM) and other support systems such as schools and employers. Because the entire family is mentored, participants learn how to develop contingency plans for working parent issues.",
-    "status": "draft",
+    "summary": "Wrap Around is intensive case management from a team of professionals for Employment Services participants with barriers, such as people sanctioned in the last six months, returning from behavioral health treatment, Cal-Learn families moving to ES, and families with known barriers. Services include family assessment, an action plan, coordination of resources with schools, employers and community partners, and follow-up six months after leaving; they last up to 90 days, with exceptions.",
+    "status": "verified",
     "pdf_sha256": "6e284a865285ff972d6547b95a74d5617d0ef76697a65b443077a81fbf7df88d",
     "updated": "2026-11-13"
   },
   "cw-168": {
-    "summary": "The purpose of this new section is to add Cal-OAR policies to the CalWORKs Program Guide.",
-    "status": "draft",
+    "summary": "The CalWORKs Outcomes and Accountability Review (Cal-OAR), established by SB 89 in 2017, is a data-based continuous quality improvement system for county CalWORKs programs, run in five-year cycles (the first from July 1, 2021 to June 30, 2026). It has three parts: performance measures, a county CalWORKs Self-Assessment, and a CalWORKs System Improvement Plan, with a CDSS stakeholder workgroup advising on measures and standards.",
+    "status": "verified",
     "pdf_sha256": "abc1b91a29137a05d8b3655cfca9a49a09d3c277e3455252fa295c73fe958817",
     "updated": "2026-11-13"
   },
   "cw-169": {
-    "summary": "The purpose of this revision is to update the requirements for the Family Self-Sufficiency Plan (FSSP) and provide clarification on RES eligibility factors.",
-    "status": "draft",
+    "summary": "Refugee Employment Services (RES) give case management and supportive services to help CalWORKs refugees get or keep jobs; those not employment-ready use regular Employment Services. Participants must have a designated immigration status, have lived in the U.S. 60 months or less, be sixteen or older and not a full-time elementary or secondary student, and be employed or employment-ready and job seeking. Qualifying refugees can receive RES for up to 60 months; the table gives each status's start date. Updates the Family Self-Sufficiency Plan.",
+    "status": "verified",
     "pdf_sha256": "3ec26955036ffd0d009f70eed0ae73b68929464982dccae4ff4dca0213055ba9",
     "updated": "2026-11-13"
   },
   "cw-170": {
     "summary": "Establishes electronic document imaging and capture standards for Employment Services contractors, detailing secure uploading, mandatory metadata indexing, case record retention, and quality assurance protocols.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "dec77d2246d1bba236c5cff84764b0ad1edd668cd121d5ec58607749532d10d3",
     "updated": "2026-11-13"
   },
   "cw-171": {
     "summary": "Employment Services participants' hours and activity status must be monitored, verified and documented monthly. Participants submit documentation of participation hours to the Employment Case Manager by the 5th of the following month. Acceptable documentation includes timesheets, attendance reports and school printouts showing the participant's name, hours and dates, and the participation site. Participants in publicly funded postsecondary education programs must verify enrollment. Lists which forms require a verifier's signature. Satisfactory progress and supportive services are reviewed monthly.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "0ddeed3864ff6d738e7728e671046c1e1a3e7962bd08126e401a620e30133686",
     "updated": "2026-11-13"
   },
   "cw-172": {
     "summary": "Cal-Learn serves CalWORKs recipients under 20 years of age who are pregnant or custodial parents and have not received a high school diploma or equivalent. Pregnant and parenting teens under the age of 19 are mandated to participate; a 19-year-old attending school full-time may stay voluntarily until graduating or reaching 20 years of age. Teens must enroll full-time in a program leading to a diploma or equivalent. The Assistance Unit receives a $100 bonus up to four times in 12 months for satisfactory progress and a one-time $500 bonus for graduation; failing to make adequate progress brings a $100 sanction.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "ce429e5606a7974ec16060f411e8fe7edd6bb12714e24e173619db5fe6c4990e",
     "updated": "2026-11-13"
   },
   "cw-173": {
     "summary": "Unverified: the attached PDF is a scan with no searchable text, so the summary below could not be checked against it. Establishes Cal-Learn eligibility, mandatory participation criteria, and exemption rules (illness, lack of child care). Teens must remain enrolled in an accredited secondary education program, maintain regular attendance, and submit quarterly report cards.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "26d795f2a7b3c70e56ba119ab516b6650da3afc37156e2fea62d10debfbcae31",
     "updated": "2026-11-13"
   },
   "cw-174": {
     "summary": "Unverified: the attached PDF is a scan with no searchable text, so the summary below could not be checked against it. Governs Cal-Learn orientation and referral workflows from CalWORKs eligibility workers to specialized adolescent case managers. Details explaining rights, responsibilities, report card bonus/sanction rules, and supportive service entitlements.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "26239dd3677c061e541edda46052b69858ebe49112e97963396e1c506a5818cb",
     "updated": "2026-11-13"
   },
   "cw-175": {
-    "summary": "Details Cal-Learn supportive services, providing guaranteed child care assistance, transportation reimbursements (transit passes, mileage), and educational expenses (textbooks, lab fees, graduation cap and gown costs).",
-    "status": "draft",
+    "summary": "Cal-Learn supportive services cover child care, transportation and ancillary costs needed for school attendance and employment, now including help with diaper costs. The Cal-Learn case manager and participant decide what is needed, and the case manager authorizes payments by the 25th of each month so they are advanced. Payments go by EBT when the participant has their own CalWORKs case, or by warrant when they are in another Assistance Unit's case. Participants have good cause for not participating if services aren't available.",
+    "status": "verified",
     "pdf_sha256": "c89e922504995813027a44b439f9a9bc1ed157c03ddcb989224c827802f47324",
     "updated": "2026-11-13"
   },
   "cw-176": {
-    "summary": "The purpose of this revision is to incorporate guidance from All County Letter (ACL) 20-21, add clarifying language, update numbering, and for sunset review purposes.",
-    "status": "draft",
+    "summary": "Cal-Learn teen parents get intensive case management under the Adolescent Family Life Program standards or another approved model through the CalWORKs Home Visiting Program, to help them earn a high school diploma or equivalent. Case managers refer teens to services, contact them monthly, issue attendance forms, act as advocate and role model, explain program rules and progress requirements, arrange supportive services, develop case plans, and handle exemptions, deferrals and good cause. Updated for ACL 20-21.",
+    "status": "verified",
     "pdf_sha256": "a8a708e271c83cd6aa507275c2352a6ee0cc53344ba64b139d1700773d7deff2",
     "updated": "2026-11-13"
   },
   "cw-177": {
     "summary": "Teen parents may request a good cause determination for failure to demonstrate adequate progress or for late submittal of report cards or progress reports. Good cause is considered when the event was beyond the teen's control and substantially deprived them of the ability to make adequate progress. Reasons include temporary illness, a court appearance or incarceration, a transportation breakdown, a family crisis, summer break, and a breakdown in child care arrangements. The case manager submits the CL Compliance Tracking Tool (27-360) and issues the CL-9 notice within 15 working days when no good cause is found.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "c1cb6d1dce8804b2abb2b44a94b8bc96da8978e01f2d4b942936db58522e3a02",
     "updated": "2026-11-13"
   },
   "cw-178": {
     "summary": "Lists staff actions when a Cal-Learn bonus or sanction is approved or denied. The Cal-Learn Liaison returns the CL Compliance Tracking Tool (27-360) and prepares the monthly batch of bonus payment requests. For an approved sanction, the Human Services Specialist processes it within 2 working days of receiving the 27-360, sends a timely Notice of Action to the CalWORKs payee, and applies the sanction for two consecutive months. Sanctions follow the teen parent to whichever Assistance Unit they belong to when the sanction is applied, even if they are no longer in Cal-Learn.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "3cad4b3be6e54516884a0353b74937a554424a833093ad9971aa034dd31a6d11",
     "updated": "2026-11-13"
   },
   "cw-179": {
     "summary": "Explains CalWORKs and TANF time limits. The federal TANF limit is 60 months in a lifetime for adults and aided minor heads of household. The CalWORKs time-on-aid limit was 60 months, changed to 48 months on July 1, 2011, and returned to 60 months effective May 1, 2022; it applies only to aid received as an adult age 18 or older. Months before January 1, 1998 do not count. Lists months exempt from the TANF limit, such as living in Indian Country with 50% or more unemployment. Effective October 1, 2024, months in which Paid Family Leave is received are exempt from the CalWORKs limit.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f206399b83e5195b42903735ddd5748a0975a4c0bd1b3594515e2438666dd41b",
     "updated": "2026-11-13"
   },
   "cw-180": {
     "summary": "Confidential information, including names, addresses and all eligibility information, may not be disclosed for purposes not directly related to administering CalWORKs, including Employment Services. Customers must be allowed to provide verifications in a way that does not identify them as applicants, and written consent is required before collateral contacts except with BPAI. Unauthorized disclosure violates Welfare and Institutions Code 10850. Lists agencies that may receive information without customer consent, such as County Counsel, the District Attorney, EDD, the Social Security Administration and the Local Child Support Agency.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "d59c2e09fa30369a211fe3a465c3a8dbd0d89eed276fe1964df9f7c34c1b4351",
     "updated": "2026-11-13"
   },
   "cw-181": {
     "summary": "Eligibility information provided solely by the customer may be inspected by the customer or their authorized representative, except privileged communications (physician-patient, lawyer-client and confidential marital communications). Information given confidentially by a third party is not disclosed, including BPAI investigation reports, absent parent information, child abuse reports, informant identity and IEVS data. Staff may photocopy a specific document the customer provided; requests to review the case record are documented on the CW 2213 and referred to Program Support staff.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "713346565080ff75fb7139d3a23e4cceba98f26694b960b97589986d3e1757b4",
     "updated": "2026-11-13"
   },
   "cw-182": {
     "summary": "Defines fraud as knowingly, and with intent to deceive, making a false statement, failing to disclose a fact, or accepting benefits to which one is not entitled. Fraud-related allegations that may require a referral to the Bureau of Public Assistance Investigations (BPAI) include questionable residency, a child out of the home, unreported income or property, expenses exceeding income, altered documents, duplicate aid, and an absent parent suspected to be in the home. Allegations such as child abuse, drug or alcohol abuse, non-payment of rent and paternity are not fraud-related and are not referred to BPAI.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "e1799c4a3795754a237c9be5f20ae271c463a53573dfdd680205f8e30ff21d91",
     "updated": "2026-11-13"
   },
   "cw-183": {
     "summary": "Staff must initiate an investigation when there is suspicion or an allegation of Stage One Child Care fraud or misuse of funds. Child care fraud includes a customer receiving services knowing they are not eligible, a provider knowingly receiving payments they are not eligible for, collusion between the customer and the provider, and misuse of funds. Indicators may appear during the application process, when reviewing attendance sheets, or in a report from a member of the public. Fraud referrals are submitted to the Bureau of Public Assistance Investigations (BPAI) through the B-Link Portal and are not entered in CalSAWS.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "ac7ed6c0b413491526c207f0808d3cd1e0924726acb9cd05e6d49b37ca6fb5c4",
     "updated": "2026-11-13"
   },
   "cw-184": {
     "summary": "Establishes legal standards for CalWORKs Notices of Action (NOA), requiring that adverse action notices provide 10-day advance notice, state the specific factual and legal basis, include grant calculation worksheets, and explain hearing rights.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "2a2d62747848b733407ff1b82dff73fe89d3b698f7fd615803e5d705f1f7cca2",
     "updated": "2026-11-13"
   },
   "cw-185": {
     "summary": "Governs Form CW 2200 verification request protocols. When additional documentation is needed, caseworkers must issue Form CW 2200 providing the customer at least 10 calendar days to comply, and must offer agency assistance to obtain required third-party records.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "06aad80f2dfd3649dc2f46ebd5c35817b144091b53e167e3fd0cc4b907c69530",
     "updated": "2026-11-13"
   },
   "cw-186": {
     "summary": "Details CalWORKs application intake, filing rights, acceptable written, electronic, and telephonic signatures, and the mandatory 45-day processing standard from application submission to final approval or denial.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "d60c52c0f6157367fe6e4bf2b5f4543e8080982d11306dfdac24bb6baf07b559",
     "updated": "2026-11-13"
   },
   "cw-187": {
     "summary": "Immediate Need (IN) is a cash payment made in advance of a completed eligibility determination to applicants who are apparently eligible, have an emergency situation, and lack funds to meet it. The determination must be completed no later than the next working day after the request. The payment is the cash aid the family is entitled to for the month of application or $200, whichever is less. Emergencies include lack of housing, pending eviction, lack of food for three calendar days, and utility shutoff. Liquid resources above the listed amounts result in denial.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "d73acd7062187d87dbd3ba6de57d54709cb128e945f0a8190be3797b33b41271",
     "updated": "2026-11-13"
   },
   "cw-188": {
     "summary": "Each member of the Assistance Unit must provide a Social Security Number (SSN) or proof of application for one within 30 days following the application date. Cuban/Haitian Entrants and noncitizen victims of trafficking, domestic violence or other serious crimes may be aided without one. An SSN may be verified with the SSN card, an SSA award letter, IEVS, or MEDS. For newborns, Form SSA-2853 is acceptable proof of application. A customer who refuses to provide or apply for an SSN is ineligible, and a child is ineligible when the parent or caretaker refuses on the child's behalf.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "00e656223aa275140c3731a33b639fdcb531ea467542d3f313cc99211012995a",
     "updated": "2026-11-13"
   },
   "cw-189": {
     "summary": "Every CalWORKs applicant must be informed of the Diversion Program, a one-time payment or services intended to resolve the circumstances behind the application and avoid long-term aid. To qualify, the customer must be apparently eligible, have a job offer or current employment, be able to avoid the need for extended assistance, and sign the CW 88 Diversion Services Agreement. The customer may accept or decline; if a diversion payment is authorized, the CalWORKs application is denied. Payments are limited to the equivalent of three months of the Maximum Aid Payment.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "4fa5f3900be3caf3680eabeb0a9a6a92dfe0558d75526a690254a9478a348212",
     "updated": "2026-11-13"
   },
   "cw-190": {
     "summary": "CalWORKs requirements must not place past or present victims of domestic violence at further risk or unfairly penalize them. Defines domestic violence, including physical acts, sexual abuse, psychological abuse, economic control, isolation and stalking, and defines domestic relationships. Information about victims and their dependents, including address and workplace, is confidential and may not be released unless required by law or authorized in writing by the customer. Victims decide how they receive communications from the county. Describes allowable waivers of program requirements.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "51fb506b5f0d98e2e982bce03618ce9ea3d342d5b6d2bbf1053a10cb3beee4b0",
     "updated": "2026-11-13"
   },
   "cw-191": {
     "summary": "Whenever eligibility for CalWORKs, Refugee Cash Assistance, or the Cuban Haitian Entrant Program ceases, all Assistance Unit members are evaluated for continuing Medi-Cal and Transitional CalFresh. Most cash cases convert automatically to the appropriate Medi-Cal aid code, and staff complete an ex-parte review. Exceptions include death, residence in a public institution, loss of California residence, and receipt of SSI/SSP. Families discontinued for increased earnings may receive Transitional Medi-Cal for up to 12 months; Four Month Continuing Medi-Cal applies when child or spousal support increases.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "efb37c901acb3a85a5250e97b34fe23e17b064cd7b3fcee13c005f03f98a91dc",
     "updated": "2026-11-13"
   },
   "cw-192": {
     "summary": "The County must complete an annual redetermination of CalWORKs eligibility. It is complete when the customer finishes the interview by telephone or face-to-face, signs the SAWS 2 Plus, and complies with all conditions of eligibility; otherwise aid does not continue beyond the redetermination month. In two-parent, stepparent and caretaker relative cases both adults must be interviewed and sign. Family Reunification cases are redetermined at six-month intervals. Income from the prior 30 days must be verified. A discontinuance notice is issued if the redetermination is not completed by the 15th of the month.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "1d3ebb670c7c0dd811f06384e8cc54b1d745b11ee5be84b8d8911abb04fc627f",
     "updated": "2026-11-13"
   },
   "cw-193": {
     "summary": "An Intercounty Transfer (ICT) is initiated when an entire Assistance Unit moves to another California county without a break in aid. Customers must report the move to either county within 10 days. The notified county initiates the ICT within 7 business days, and benefits transfer no later than the first day of the benefit month following 30 days after notification. The customer is not required to complete a new application or interview or to re-provide verifications. Sanctions and penalties transfer, and the county where the customer is physically located determines Homeless Assistance.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "239aa06c2edc5618615d1937d14a3699d805fb1be23e7f8cc135049f2b2f546f",
     "updated": "2026-11-13"
   },
   "cw-194": {
     "summary": "Under Assembly Bill 959, CalWORKs benefits are restored when a complete SAR 7 is received in the month after a SAR 7-related discontinuance. If good cause does not exist, benefits are prorated from the date the complete SAR 7 was received, without a new application or interview; if good cause exists, the discontinuance is rescinded with no break in aid. For excess property or income, the discontinuance is rescinded if verification is provided before the discontinuance date; afterward the Assistance Unit must reapply. Restoration also refers to reapplying in the same county within 12 months of a discontinuance.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "73fa0044dad4e221c1748c4ebe044d8e8ebc48f7103ce40c6cbb5a1905c26eeb",
     "updated": "2026-11-13"
   },
   "cw-195": {
     "summary": "Covers Intra-Program Transfer (IPT) referrals from Foster Care. Foster care dependent children placed with relatives who cannot receive foster care payments may qualify for other cash benefits, and caretaker relatives may choose CalWORKs instead of Foster Care payments. IPT referrals go to the Family Resource Center for the caretaker relative's zip code; placements outside San Diego County go to the North Central FRC. Caretaker relatives with a Child Welfare Services placement are exempt from a fraud referral unless there is an actual basis to suspect fraud.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "6386bf5574a374fb360934247a56b6fbd604f78d402b279e6b3ae56f68d59c05",
     "updated": "2026-11-13"
   },
   "cw-196": {
     "summary": "Under Assembly Bill 12, youth in foster care at age 18 may remain as non-minor dependents (NMDs) until age 21. CalWORKs NMDs must live with an approved relative caregiver who is not eligible for foster care payments and meet Extended Foster Care requirements, such as completing high school, attending post-secondary or vocational school at least half-time, or working at least 80 hours per month, with a Six-Month Certification. NMDs are not subject to CalWORKs requirements such as redetermination, Semi-Annual Reporting, income and property limits, or time on aid. The payment equals the non-exempt Maximum Aid Payment for one.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "386b39d05f8d2aee869c4fb3bef75107e40b796bb285540c0c0a4febc43d48a4",
     "updated": "2026-11-13"
   },
   "cw-197": {
     "summary": "The Approved Relative Caregiver (ARC) Program pays an amount equal to the basic Foster Care rate to approved relative caregivers with whom a non-federally eligible foster child is placed. CalWORKs eligibility is not required, but each child is assessed for it to determine funding, and participation is not mandatory. The child must be placed with an approved relative, reside in California, be a dependent or ward of the juvenile court, not be federally eligible under Title IV-E, and have a completed ARC 1 application. The Assistance Unit consists of the child only. Foster Care staff issue the payments.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "85a0debb647c9d390ec793d4b5a50118922f744fde7afef952ba23e8b7e10a93",
     "updated": "2026-11-13"
   },
   "cw-198": {
     "summary": "Details CalWORKs cash assistance and supportive services for parents participating in court-ordered Child Welfare Family Reunification plans, allowing ongoing grant payments for up to 180 days while children are temporarily placed in foster care.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "bedadfb9517b9dfecf6d39dfb189ca8b5f914988628f4e6e137dc9ecbc4280f1",
     "updated": "2026-11-13"
   },
   "cw-199": {
     "summary": "The California Department of Corrections operates the Community Prisoner Adult Program, placing low-risk adult inmates in community residential facilities where they may live with their pre-school age children. Incarcerated individuals are not entitled to CalWORKs and are treated as excluded household members whose income and resources are excluded. Their children are potentially eligible for CalWORKs and Medi-Cal, and for CalFresh as a separate household, with normal eligibility determinations. No in-kind income is attributed to the child's Assistance Unit, and the prisoner adult is the case payee.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "58bfbf99aaad8e02d848cca739d5d97f4283e2ae1c6b50511dffdbcd074230f4",
     "updated": "2026-11-13"
   },
   "cw-200": {
     "summary": "Deprivation of parental support or care is a required eligibility factor for CalWORKs, based on the status of the child's natural or adoptive parents. A child is deprived if either parent is deceased, physically or mentally incapacitated, or continually absent, or if the principal earner is unemployed. The basis is determined at application and when processing Semi-Annual Reporting, and must be verified before aid is authorized, except for an Immediate Need request. When a basis ends mid-period for Semi-Annual Reporting households, no negative action is taken until the next payment period.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "8bde1a3076dda5299c1b003cf789ca3c60bea3100357f9a8989e99ae76259b9c",
     "updated": "2026-11-13"
   },
   "cw-201": {
     "summary": "Deprivation due to death exists if either parent of a child is deceased; the Assistance Unit is then not subject to child support enforcement requirements. Acceptable verification includes a copy of the death certificate, a Social Security Administration award letter based on the parent's death, a newspaper obituary, or other reliable documentation; a sworn statement is acceptable when no other evidence can be obtained. If credible evidence is unobtainable, staff evaluate deprivation based on absence and complete a referral to the Local Child Support Agency.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "4bf12adcc0f3aae4cf8246927c080948cc646b54e9b053a4d38379103613f47e",
     "updated": "2026-11-13"
   },
   "cw-202": {
     "summary": "Deprivation due to incapacity exists when a parent has a physical or mental illness, defect, or impairment that substantially reduces or eliminates the ability to support or care for the child and is expected to last at least 30 days. Criteria include being prevented from working full-time or being employed only in rehabilitative or sheltered work. Verification includes disability-based benefit awards (Social Security, State Disability Insurance, Worker's Compensation, SSI/SSP) or medical forms such as the CW 61A and CW 61B. A verbal statement from the provider is accepted for up to 60 days pending written verification.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "11e08519c7775eb26cfe5474178947822a74c9d074b300096bb9a7ebc495456f",
     "updated": "2026-11-13"
   },
   "cw-203": {
     "summary": "Deprivation due to unemployment exists in a two-parent case when the Principal Earner (PE) is unemployed or underemployed. The PE is the parent who earned the greater amount in the 24-month period before the date of eligibility. An unemployed parent is not employed or is employed less than 100 hours during the four-week period before the date of eligibility; the 100-hour policy applies only to the PE. A PE apparently eligible for Unemployment Insurance Benefits must apply for and accept them. A PE is not considered unemployed due to participation in a strike.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "8a14971ab4955b3dbd60bd612a34505fc4cba8681671916a88e2890ff1fc9ede",
     "updated": "2026-11-13"
   },
   "cw-204": {
     "summary": "Deprivation due to absence exists when a natural or adoptive parent is physically absent from the child's home and the absence interrupts or terminates the parent's functioning as a provider of maintenance, physical care, or guidance. Circumstances include parents who never maintained a home together, confinement in a correctional institution, deportation, a filing for dissolution or legal separation, and whereabouts unknown. Continued absence may exist even with frequent visits or alternating custody. It does not exist for temporary absences such as trips or active duty in the uniformed services.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "6685a3f5cf53edb4812455c6e0597aa236f114e8cbcfa4843d8edd44ea8618af",
     "updated": "2026-11-13"
   },
   "cw-205": {
     "summary": "Defines the Assistance Unit (AU) as a group of related persons living in the same home who have been determined eligible for CalWORKs. The Filing Unit includes all AU members plus certain non-AU members in the home, such as the spouse of an aided child, ineligible undocumented noncitizens and fleeing felons. Lists persons mandatorily included (the applicant child, siblings and half-siblings, and parents) and optional persons such as a nonparent caretaker relative. An eligible child is deprived, income eligible, and under 18 years of age or an 18-year-old who meets the age requirements.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "35686250e89153c540f4b2bd2ec313433fe9bdd8d4ce9a81fadad0b0338d99b4",
     "updated": "2026-11-13"
   },
   "cw-206": {
     "summary": "A caretaker relative must be related to the applicant or eligible child by blood, marriage or adoption within the fifth degree of kinship and exercise responsibility for the child's day-to-day care and control. The caretaker may be a parent or a non-parent age 18 or older, and the child must be living in the caretaker's home. A legal guardian must meet this definition to receive CalWORKs. Generally a parent living with the child is the caretaker relative; if the parent lives in the home but is not the caretaker, the parent must still be included in the Assistance Unit.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "ec4644c42edd2b64e017daa21f691f04ae3289cdd70a8a0d73cddfe06dc28ed1",
     "updated": "2026-11-13"
   },
   "cw-207": {
     "summary": "Any Assistance Unit member may be considered temporarily absent when away from the home for one full calendar month or less; a child can still be considered living in the caretaker relative's home. A person confined in a correctional facility on the first of a month and expected to remain one calendar month or more is permanently absent. Exceptions to the one-month limit require third-party verification and include a hospital stay, absence for employment, and attendance at school. Staff consider whether the caretaker keeps responsibility for care and control and whether the absent person intends to return.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "5ef488bb4eff4bcdc15d0c294787ee2421ad9fc5f8be2f772fdfecca71f535da",
     "updated": "2026-11-13"
   },
   "cw-208": {
     "summary": "The Assistance Unit (AU), also called the Little MAP, is the group of related persons living in the same home who are eligible for CalWORKs and for whom cash aid is authorized. It must have at least an eligible child, a non-minor dependent, a pregnant person, or a needy caretaker relative of an SSI/SSP, Foster Care or Kin-GAP child. Mandatory inclusion requires the applicant child, eligible siblings and half-siblings, and their parents to be in the AU; the case is denied or discontinued if a mandatorily included person refuses. Optional persons such as a non-parent caretaker relative may be included on request.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "172bce058e289af482ff1238db369e4c72128d4129d46cf1f0e582dca917548e",
     "updated": "2026-11-13"
   },
   "cw-209": {
     "summary": "Lists persons not included in the Assistance Unit. Excluded by law: persons not meeting citizenship or qualified non-citizen requirements, recipients of SSI/SSP, Foster Care or Kin-GAP, persons fleeing felony prosecution, persons violating probation or parole, and non-minor dependents (who form their own AU of one). Excluded by sanction: persons who refuse to assign support rights or cooperate with child support, fail to cooperate in verifying citizenship, fail Employment Services requirements without good cause, or refuse to furnish a Social Security Number. Timed-out adults are also excluded.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f6ffadf5dae0c1aa91125c22b2a65c8eae0b5de047b9b9d5e3eb4a98905c5e6c",
     "updated": "2026-11-13"
   },
   "cw-210": {
     "summary": "A pregnant person with no other eligible child may be aided as an Assistance Unit of one, called Pregnant Person Only (PPO). Deprivation for the unborn child must be established and the pregnancy medically verified; a sworn statement is accepted, with medical verification due within 30 business days. The PPO remains eligible until the pregnancy ends or they become ineligible, and may receive the Pregnancy Special Need payment. If the pregnancy ends without a live birth, the PPO must report within 30 days, and aid ends at the end of the month following the month the loss was reported.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "df8096e14b712b4b5d2ffecfdcfe2c15ca8f6430d504fb16bfc05d12d2449ec0",
     "updated": "2026-11-13"
   },
   "cw-211": {
     "summary": "Once financial eligibility is determined, staff identify whether Federal Financial Participation (FFP) is available for each person in the Assistance Unit, categorizing them as federally eligible persons or essential persons. Federally eligible persons include children deprived by a parent's death, incapacity, continued absence or unemployment, their caretaker relatives and second parents, and certain pregnant persons. An essential person is a stepparent, California domestic partner of a parent, or Alternately Sentenced Prisoner who is not otherwise federally eligible.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "9a9ae0b7a922f0cd4c99bfc8701fd25eacf36ab115a5e3c18b2501d0456dfcc1",
     "updated": "2026-11-13"
   },
   "cw-212": {
     "summary": "A minor parent is a pregnant or parenting minor under age 18 who has never been married, and must live in an adult-supervised setting: with a senior parent, a legal guardian, an adult relative, or in a licensed home. Otherwise the minor parent's Assistance Unit is ineligible unless an exemption applies, such as the senior parent being deceased or whereabouts unknown, not being allowed to live in the home, a health or safety risk, living apart for 12 months, or emancipation. Minor parents complete the CW 25 and SAR 23, and those claiming an exemption are referred to the Department of Child and Family Well Being.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "98fb08af186fd720cc7d2b836aef9049f3948aecc9ac7552983b2c37cc3be517",
     "updated": "2026-11-13"
   },
   "cw-213": {
     "summary": "When a minor parent lives with their parent(s), the senior parent's income and needs must be counted in determining eligibility and the aid payment for the minor parent's Assistance Unit. If the senior parent's income makes the minor parent's AU ineligible, the case is denied or discontinued. When the minor is eligible, the grant is the lesser of the potential grant or the minor parent's AU Maximum Aid Payment. Worked examples apply the $600 income disregard and the 50% earned income disregard.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "cfa350d3b4c66fa9ec1b743e6693fa07d8d30df9b720c17b81e9e48a35ca1d22",
     "updated": "2026-11-13"
   },
   "cw-214": {
     "summary": "Establishes age eligibility limits: children are eligible through age 17, or through age 18 if enrolled full-time in high school and expected to graduate before age 19. Details Non-Minor Dependent extensions through age 20.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "38cd8adf357fa52757344257a99f3acbb283cfcb59ae1db93e87d18a49d8a956",
     "updated": "2026-11-13"
   },
   "cw-215": {
     "summary": "Children in the Assistance Unit age 16 and above for whom school attendance is mandatory must regularly attend school. Since January 1, 2015, a child is presumed to be attending unless deemed a chronic truant, and attendance verification is not required at application or redetermination. Cal-Learn teens, high school graduates and children not in the AU are exempt. A chronically truant child age 16 or older is referred to Employment Services; the school attendance penalty, which removes the child's needs from the grant, applies only if the child does not cooperate with the ES plan without good cause.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "361dde3963499f7297a27c02b451b74b35af174889bc67694226255b5a2b7746",
     "updated": "2026-11-13"
   },
   "cw-216": {
-    "summary": "The purpose of this section is to provide immunization requirements. This material revision is to renumber this section from CalWORKs Program Guide (CPG) 42-100.J to CPG 42-100.C. This section is also being revised for Sunset Date review. No policy or procedure changes have been made. Section CPG 42-100.J becomes obsolete with the issuance of this revision.",
-    "status": "draft",
+    "summary": "Children under six in the Assistance Unit must have age-appropriate immunizations. At application, redetermination and when a child under six is added, customers are told of this duty and the penalty, the required immunizations, their right to a personal, religious or medical exemption or a good cause evaluation, and where to get immunizations through Medi-Cal or public health clinics, and are given the CW 101 and CW 2209 forms.",
+    "status": "verified",
     "pdf_sha256": "4ed1d5b2cef32e40b28ed23135309cd1e5e6cd3e9516be25ff05d3f57bc377d7",
     "updated": "2026-11-13"
   },
   "cw-217": {
-    "summary": "This section provides basic property definitions and limits on property amounts that the AU can retain and remain eligible for aid. The purpose of this section update is to incorporate a 3.42% increase to the maximum asset limit for an AU.",
-    "status": "draft",
+    "summary": "Defines available property and the resource limits an Assistance Unit can keep and stay eligible, updated for a 3.42% increase to the maximum limit. Real property is land and improvements, including mineral, oil and timber rights; personal property includes liquid resources such as cash, bank accounts, stocks and bonds, trust deeds, non-recurring lump sums and accessible IRAs and Keogh plans. Since June 1, 2020, CalWORKs resource limits no longer follow CalFresh rules.",
+    "status": "verified",
     "pdf_sha256": "24b9a925ff4aa0967c30636fe4a2e78be673bbb96ffdb528f32385593992047d",
     "updated": "2026-11-13"
   },
   "cw-218": {
-    "summary": "Distinguishes between real property (land, buildings, mineral rights) and personal property (bank accounts, vehicles, cash, stocks), detailing evaluation methodologies for liquid and non-liquid assets.",
-    "status": "draft",
+    "summary": "A customer's declaration of the property they or their spouse own is enough proof unless there is information suggesting other property, in which case ownership is checked against records such as recorder's records, bank records, affidavits and people with firsthand knowledge. Explains separate property (owned before marriage, received by gift or inheritance, or bought with separate funds) and how property with title shared with others is treated.",
+    "status": "verified",
     "pdf_sha256": "f073426d721ffd55968dcbce50b8770cd89d03038d026b9d0916b6b5980f209f",
     "updated": "2026-11-13"
   },
   "cw-219": {
     "summary": "Describes countable property. Real property to be included covers cemetery property held for profit, certain water company stock, and real property that secures debts, is being purchased under a contract of sale, is held with retention of life estate or in trust, or is held in escrow. For Individual Retirement Accounts and accessible Keogh plans, the cash value minus any early withdrawal penalty is counted. Nonrecurring lump sum payments, such as retroactive Social Security, insurance settlements and refunds of security deposits, are treated as property in the month of receipt and after.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "207df82361aeae4ee93165c9e8e00eab68e79d5e589386d5dd1ed592fb44fccd",
     "updated": "2026-11-13"
   },
   "cw-220": {
-    "summary": "Details exempt resources excluded from property evaluation: household furnishings, personal effects, tools of a trade necessary for employment, tax-favored retirement accounts, 529 college savings, and EITC tax refunds.",
-    "status": "draft",
+    "summary": "Lists resources excluded when evaluating an Assistance Unit's property. Excluded real property includes property held in a trust the child or parent doesn't control, property bought with excluded Economic Opportunity Act funds, Native American land held in trust by the U.S., and property counted in an SSI/SSP resource evaluation. Also lists excluded personal property such as tools of a trade, retirement accounts, 529 plans and tax refunds, and adds the treatment of Guaranteed Income payments.",
+    "status": "verified",
     "pdf_sha256": "f6ef4b578c51c991637347cfd7b2ecbebd1403f70ef69c46a02d056c2091f8b9",
     "updated": "2026-11-13"
   },
   "cw-221": {
-    "summary": "Governs temporary real property exemptions, allowing families owning non-exempt real property up to 9 months of conditional cash aid while actively attempting to sell the property at market value.",
-    "status": "draft",
+    "summary": "Real property that isn't otherwise excluded can get a one-time, nine-month exemption from the resource limit if the Assistance Unit signs a lien and agrees to make a good faith effort to sell it. The nine months run consecutively whether or not the customer stays on aid, but pause while the property is unavailable, for example in litigation. No lien is attached when encumbrances exceed the assessed value, and the net value must be over the property limit before a lien or exemption period starts.",
+    "status": "verified",
     "pdf_sha256": "7e6822d32595ba98dea97a3e95bab23137183bbfd5dc622de6e6aa928575ed15",
     "updated": "2026-11-13"
   },
   "cw-222": {
     "summary": "Details Net Market Value (NMV) calculation procedures for personal and real property, subtracting verified encumbrances, liens, and outstanding debts from gross fair market value.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "5790933528c64c6ad214f837cb77dea5658d219ba33c70eab76abd2283ea50a6",
     "updated": "2026-11-13"
   },
   "cw-223": {
     "summary": "A CalWORKs Assistance Unit that includes a recipient may keep cash reserves in one or more restricted accounts at a financial institution, with no limit on the amount, in addition to the regular resource limit. A written agreement is required first, and account verification is due within 30 calendar days. Qualifying withdrawals, which must be spent within 30 calendar days, are for the purchase of a home, education or job training, and startup of a new business. Interest deposited directly into the account is exempt. If the AU is discontinued and reapplies, the funds are no longer exempt.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "22ef5f69e4ece85329c35f3ab07242fab214c4a277538a80a92e31e567cd7e2a",
     "updated": "2026-11-13"
   },
   "cw-224": {
     "summary": "Establishes the absolute property exclusion for the family's primary residence, ensuring that the home owned and occupied by the Assistance Unit is completely exempt regardless of fair market value or equity.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "7abc94024ef9801c293e5dd56d9d042845bd7efb1a1eb72711508c9a24fea235",
     "updated": "2026-11-13"
   },
   "cw-225": {
     "summary": "Non-exempt motor vehicles are evaluated toward the resource limit at application, redetermination, and when a vehicle is reported on the SAR 7. Motor vehicles include cars, trucks, RVs, motorcycles, boats and trailers. A vehicle is exempt if used over 50% of the time to produce income, necessary for long-distance travel essential to employment, used as the family's home, necessary to transport a physically disabled family member, used to carry fuel for heating or water, leased, or transferred through a gift, donation, or family transfer (DMV verification required). Equity Value limits are in a separate chart.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "b58902d31e6f9d796cdb9a3370ee89d7b98ad6b1d825f1d69fd60304c397df32",
     "updated": "2026-11-13"
   },
   "cw-226": {
     "summary": "California residence is required for CalWORKs, with no durational period; a written statement of intent to reside is acceptable proof unless there is conflicting information. Residence is established by living in the state voluntarily with the intention of making a home, or by entering with a job commitment or to seek employment. The home county, where the customer physically resides, pays aid, with exceptions such as a home maintained in another county (four months), farm labor families and foster care dependent children. Address changes must be reported within 5 days by applicants and 10 days by recipients.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "7c74332ad87066bad686fab1df262f4ea76c07052e06fcaa3978eff5f7cabf9c",
     "updated": "2026-11-13"
   },
@@ -630,338 +630,338 @@
     "updated": "2026-11-13"
   },
   "cw-228": {
-    "summary": "Specifies mandatory citizenship verification, eligible U.S. citizenship documents, and confirmation that citizen children residing with noncitizen parents remain fully eligible for CalWORKs cash aid.",
-    "status": "draft",
+    "summary": "U.S. citizens must prove citizenship at application and when a person is added to the Assistance Unit, and a customer who refuses to cooperate is ineligible. Citizens include people born in the U.S. or its territories (American Samoa, Guam, the Northern Mariana Islands, Puerto Rico, Swains Island and the Virgin Islands), naturalized citizens, and people who derive citizenship from another person. Lists the primary documents, such as a U.S. birth certificate, and the secondary documents accepted.",
+    "status": "verified",
     "pdf_sha256": "aa91b5d7a10bfb19ffc1d54db7fe3053690f564cd994c0ccc39378cd9f4d4118",
     "updated": "2026-11-13"
   },
   "cw-229": {
-    "summary": "Establishes eligible noncitizen classifications for CalWORKs: Lawful Permanent Residents (LPRs), refugees, asylees, parolees, Cuban/Haitian entrants, and victims of human trafficking holding T-visas.",
-    "status": "draft",
+    "summary": "To get CalWORKs (federal or state), a noncitizen must be a California resident who is lawfully admitted for permanent residence or permanently residing under color of law (PRUCOL), verified through SAVE. Although PRWORA bars many qualified noncitizens from federal benefits for five years, California aids eligible immigrants through state-funded programs. Lists qualified categories, such as lawful permanent residents, refugees, parolees, Cuban/Haitian entrants and trafficking victims, and covers Compact of Free Association (COFA) citizens.",
+    "status": "verified",
     "pdf_sha256": "afb1792729c8c547ed0a903dc275516cfa90138195311d787eb623c1dd6c6c9e",
     "updated": "2026-11-13"
   },
   "cw-230": {
-    "summary": "Governs CalWORKs cash aid eligibility for battered noncitizens under the Violence Against Women Act (VAWA), detailing prima facie determination standards and protection from public charge concerns.",
-    "status": "draft",
+    "summary": "Battered noncitizens may be treated as qualified noncitizens for CalWORKs before getting permanent residence, under the Violence Against Women Act (VAWA), which lets them self-petition USCIS (I-360) without the abuser's knowledge. Verification that the petition was filed, often a prima facie document, is required before approval. Petitions fall into four categories: self-petitioners, widow(er) self-petitions, family-based petitions, and cancellation of removal or suspension of deportation. Battered noncitizens are distinguished from victims of domestic abuse in CalWORKs.",
+    "status": "verified",
     "pdf_sha256": "3f7428e6e8b35acf29c7d925eb26192bda833847e8d2d3aa91d048326c1c17d8",
     "updated": "2026-11-13"
   },
   "cw-231": {
     "summary": "Outlines sponsor deeming rules for sponsored immigrants, calculating countable sponsor income and resources toward the noncitizen's budget, and establishing indigent and domestic battery exemptions.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "0ea5c4f920ac7f907307f9d094dc9574ca1cb69882a74ac304e33e03339ad236",
     "updated": "2026-11-13"
   },
   "cw-232": {
     "summary": "Defines the financial and legal responsibility of parents to support their natural or adopted minor children, and establishes the scope of relative responsibility under California public assistance law.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "9f04856f998ddb85a694fe4f922694b9e2231a4241ce4c407317b456404a6be2",
     "updated": "2026-11-13"
   },
   "cw-233": {
     "summary": "Governs Unrelated Adults in the Home (UAH), evaluating financial contributions for shelter and food, and calculating income-in-kind deductions when an unrelated adult cohabits with a caretaker parent.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "ca79a1d2eefcbf93cce265ef816d1ebb2fcff3c65f4aaf5a0408c1a1cba4410c",
     "updated": "2026-11-13"
   },
   "cw-234": {
     "summary": "Unverified: the attached PDF is a scan with no searchable text, so the summary below could not be checked against it. Governs mandatory assignment of child support rights to the state as a condition of receiving CalWORKs, and outlines cooperation requirements with the Department of Child Support Services (DCSS) to establish paternity and child support orders.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f9f39df0e0e3df4a2c82a400587a4fcb95a8ed6b435de2396ffc5fe4bb379ce2",
     "updated": "2026-11-13"
   },
   "cw-235": {
-    "summary": "Details child support non-cooperation penalties: refusal to cooperate with DCSS without good cause results in removing the non-cooperating parent's financial needs from the CalWORKs cash grant.",
-    "status": "draft",
+    "summary": "A customer who refuses without good cause to assign child or spousal support rights (for example, by not signing the CW 2.1 (Q) at intake or redetermination) is sanctioned: ineligible for cash aid and removed from the Assistance Unit. The Family Resource Center imposes the sanction and removes it effective the first of the month the person cooperates, adding them back the next month. Noncooperation with child support enforcement, as distinct from refusing to assign rights, results in a 25% penalty.",
+    "status": "verified",
     "pdf_sha256": "f456ce19b15c28c3e9b6f5fbda5a547d23448f4d4c3b6f04cf3d361ac33096aa",
     "updated": "2026-11-13"
   },
   "cw-236": {
     "summary": "Customers may claim an exemption (good cause) from cooperating with child support enforcement before referral to the Local Child Support Agency (LCSA). When a claim is made, the LCSA suspends activities while Self-Sufficiency Services evaluates it; the customer must provide supporting evidence. An exemption is found when cooperation is not in the best interest of the child, because it would increase the risk of physical or emotional harm to the child or the risk of abuse to the parent or caretaker relative. If the claim is denied, child support activities are started or resumed immediately.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "805c231dee99a51db59cb79993c88d7a68a13e46d4c2bf12b030f706cecb7268",
     "updated": "2026-11-13"
   },
   "cw-237": {
     "summary": "Governs child support collections and pass-through payments: the family receives the first $100 per month of collected child support for one child ($200 per month for two or more children) without reducing their CalWORKs grant.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "a97dcddb36dcd7027c8a283dbbfa2e809faea31c76f3b72b38867514588cbd16",
     "updated": "2026-11-13"
   },
   "cw-238": {
-    "summary": "Establishes CalWORKs income eligibility tests: gross income is tested against the Minimum Basic Standard of Adequate Care (MBSAC), and net income is compared against the Region 1 Maximum Aid Payment (MAP) level.",
-    "status": "draft",
+    "summary": "Applicants are financially eligible only if family income, after the Applicant Earned Income Disregard, is below the Minimum Basic Standard of Adequate Care (MBSAC), using actual and reasonably anticipated non-exempt income. Once eligible, the Assistance Unit stays eligible for the whole SAR or AR/CO payment period unless its net non-exempt income exceeds the Tier 2 Income Reporting Threshold for more than one consecutive month. Explains MBSAC and treatment of income when people are excluded from the AU.",
+    "status": "verified",
     "pdf_sha256": "bac71ec738afe1d4bcba1f4da3070212b72149afd84c40f8080bdfc9f821dcd5",
     "updated": "2026-11-13"
   },
   "cw-239": {
     "summary": "Details general income budgeting principles, converting weekly and biweekly pay to monthly gross amounts, evaluating earned versus unearned income, and determining reasonably anticipated income.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "5a2108bd47eaf19745e666142a73f421e10fca66566e076563937405a4f9da9b",
     "updated": "2026-11-13"
   },
   "cw-240": {
-    "summary": "Identifies exempt and non-countable income: federal student aid, loans, energy assistance, educational scholarships, foster care payments, and lump-sum tax credits (CalEITC, federal EITC).",
-    "status": "draft",
+    "summary": "Lists income excluded or exempt in CalWORKs and explains computing net non-exempt income. Exclusions include home produce, partial items of need, in-kind income from nonprofits, infrequent income up to $30 a quarter, mileage reimbursement, and the first $100 ($200 for two or more children) of current child or spousal support. Also covers student loans and grants, energy assistance, foster care payments and other exclusions, and adds the treatment of Guaranteed Income payments.",
+    "status": "verified",
     "pdf_sha256": "65f75bc1221ede51269155053148dc99c25a50e65a90e38f2c561c99c32bedad",
     "updated": "2026-11-13"
   },
   "cw-241": {
-    "summary": "Governs the budgeting and verification of Unemployment Insurance Benefits (UIB) as countable unearned income, including automated EDD data cross-matching and grant adjustments.",
-    "status": "draft",
+    "summary": "Aid is denied or discontinued when a mandatorily included person referred to the Employment Development Department fails to apply for or accept Unemployment Insurance Benefits, or fails without good cause to meet UIB eligibility conditions. Good cause includes illness, court appearances or incarceration, family crises, transportation breakdowns, bad weather, lack of child care, and job referrals that don't meet work and training criteria. Also covers deducting overpayments from UIB.",
+    "status": "verified",
     "pdf_sha256": "1afca7917615741bdb31d600b13861c4de3eb7052da53f8104cd91102bd5e4d3",
     "updated": "2026-11-13"
   },
   "cw-242": {
-    "summary": "Details Unrelated Adult Contributions (UAC) and boarder/roomer income budgeting, calculating verified rental contributions toward the Assistance Unit's shelter expenses.",
-    "status": "draft",
+    "summary": "An unrelated adult's net income contribution to the Assistance Unit is cash given for the AU's needs plus the value of full items of need provided in kind. An item isn't in-kind income when the AU gives the unrelated adult a different need in exchange, such as the adult paying rent while the parent pays food and utilities. Cash designated for non-need items or for the unrelated adult's own needs is disregarded. See CPG 43-100.B for when a contribution is required.",
+    "status": "verified",
     "pdf_sha256": "5bc27c5c9dbfeaa787d969da90efc63c235c82139323693a841b2e109b405c94",
     "updated": "2026-11-13"
   },
   "cw-243": {
     "summary": "Governs Income-In-Kind (IIK) budgeting when housing, utilities, or food are provided free of charge by an outside party, applying standardized IIK deduction values against the grant.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f640ec0a597952d2600e95cd06fae0b081487e4d380fedc9dde06c1bf8270ced",
     "updated": "2026-11-13"
   },
   "cw-244": {
     "summary": "Details automated data matches through the Income and Eligibility Verification System (IEVS), resolving wage and benefit discrepancies within 45 days to prevent improper payments.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "48c7badfa8c220fcc4fbaf6f0c3881c57a110dd0c2227501147bb702ce85c0ba",
     "updated": "2026-11-13"
   },
   "cw-245": {
-    "summary": "Governs recurring special needs payments: special dietary allowances for verified medical conditions, transportation for ongoing medical treatment, and non-dietary maintenance allowances.",
-    "status": "draft",
+    "summary": "A recurring special need is an added cost, expected in two or more months a year, for reasons not common to most customers and essential for support, for an Assistance Unit member (not excluded or sanctioned members). The total for all recurring special needs is limited to $10 times the number of aided people in the AU each month. Covers allowable needs such as special diets and medical transportation, and the verification required.",
+    "status": "verified",
     "pdf_sha256": "2e3aa921d199df513ae96b924f3ad69a45d8eb8cc8e216730a4503d5eee4528e",
     "updated": "2026-11-13"
   },
   "cw-246": {
-    "summary": "Details nonrecurring special needs payments for catastrophic emergencies, natural disasters, and urgent domestic crises threatening family health and safety.",
-    "status": "draft",
+    "summary": "An Assistance Unit may get a nonrecurring special need payment to repair or replace clothing or household equipment, repair damage to the home, or pay for interim shelter when the home is destroyed or made uninhabitable or inaccessible, when the loss was caused by sudden and unusual circumstances beyond its control. Only AU members qualify, not excluded or sanctioned members. An AU with more than $100 in nonexempt liquid resources is ineligible.",
+    "status": "verified",
     "pdf_sha256": "c7de0e0a27843a03a8c10a48d6d62f3d65da93a586153be101dedcf78bfe6c6a",
     "updated": "2026-11-13"
   },
   "cw-247": {
     "summary": "The Pregnancy Special Need (PSN) payment is $100 per month in addition to the CalWORKs grant, and is not increased when multiple births are expected. It is issued once pregnancy is verified for a Pregnant Person Only case, a pregnant person in an Assistance Unit, or a needy caretaker relative. Medical verification must include the diagnosis and estimated delivery date; a sworn statement is accepted, with medical verification due within 30 business days. Recipients must be referred to Home Visiting Program perinatal services.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "af2ba62c8695dac3e0e40e29e340b716f9d2a747e8288029fc82a1aec46ee16c",
     "updated": "2026-11-13"
   },
   "cw-248": {
     "summary": "Provides an overview of CalWORKs Homeless Assistance (HA) for eligible families who are homeless or at imminent risk of eviction. Details temporary shelter assistance and permanent housing assistance.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "683e0ab158f20a933cbdd2e1b2120937dcc60dc82e4430fd384f6f52f51a976e",
     "updated": "2026-11-13"
   },
   "cw-249": {
     "summary": "Temporary Homeless Assistance (THA) pays shelter costs for a homeless Assistance Unit seeking permanent housing, generally once every 12 months. Payments cover a total of 16 days, which need not be consecutive if the customer requests fewer than 16 days at once. Under Senate Bill 1065, THA must be issued or denied the same working day it is requested. The daily amount is $85 for an AU of four or fewer plus $15 for each additional member, up to $145. The customer must verify that the funds were spent on shelter; otherwise later payments are issued as vendor payments.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "62bde7b03e5ab1946b2f01f650f059e1ce68e57fc1ee4d1b3f012ce45f56c47e",
     "updated": "2026-11-13"
   },
   "cw-250": {
     "summary": "Permanent Homeless Assistance (PHA) helps a homeless family secure a permanent residence or prevents eviction, including for families who receive a notice to pay rent or quit, generally once every 12 months. The monthly cost of housing must be at or below 80% of the Total Monthly Household Income. Payments to secure housing may cover security deposits, including last month's rent, and utility deposits for gas, electricity, propane and water, but not overdue utility bills or telephone deposits. Senate Bill 1065 removed the financial hardship criteria. Receiving Temporary Homeless Assistance first is not a prerequisite.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "482caefca463afcb4c64f9cf8ca0951cf692b8b3c81b05ee9e72357144de3f8e",
     "updated": "2026-11-13"
   },
   "cw-251": {
     "summary": "Expanded Temporary Homeless Assistance (THA) is available to CalWORKs applicants who are past or present domestic abuse victims fleeing their abuser. The application must be pending when the first payment is issued and the Assistance Unit apparently eligible; the abuser's income and property are not evaluated if unavailable. A sworn statement on the CW 42 is sufficient verification. The customer may receive a total of 32 days in two 16-day lump sum payments, at regular THA daily amounts, in addition to regular Homeless Assistance. Under Senate Bill 1065, the second payment may be issued even if the application has been approved.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "e1052a585bca39598e1736f97619cd08983758272d59fbe4779249420f4fdac3",
     "updated": "2026-11-13"
   },
   "cw-252": {
-    "summary": "Governs the Annual Reporting/Child-Only (AR/CO) system for assistance units where no eligible adult is included in the grant (e.g., undocumented parents, non-needy caretakers), requiring only one redetermination report every 12 months.",
-    "status": "draft",
+    "summary": "Annual Reporting/Child Only (AR/CO) cases, generally those with no aided adult, report changes once a year at the annual redetermination in month 12 of the benefit period, and within 10 days for mandatory mid-year changes; there is no SAR 7. Common AR/CO cases are those where every adult is timed out (Safety Net), a fleeing felon or probation/parole violator, or not qualified because of immigration status. A pregnancy ending before the due date without a birth must be reported within 30 days.",
+    "status": "verified",
     "pdf_sha256": "7ca14e5fb51754a6f1ee1ac55c6b3193bfc6aacb014e63c0776f47bfe1cf10fc",
     "updated": "2026-11-13"
   },
   "cw-253": {
     "summary": "Establishes California's Semi-Annual Reporting (SAR) system for CalWORKs. Outlines household requirements to submit an Eligibility Status Report (Form SAR 7) every 6 months to maintain cash assistance.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "101294f678707be340420e20062a827ba3ad0214376aec9f0c20db7ab12f78c7",
     "updated": "2026-11-13"
   },
   "cw-254": {
     "summary": "Aid payments for a Semi-Annual Reporting (SAR) Payment Period are computed with prospective budgeting, using income the customer reasonably anticipates receiving; income that is uncertain is not used, and the budget is never reconciled with actual income. At application the Assistance Unit must first pass the Applicant Test using the application month's actual income. Applicants report changes within five calendar days. After approval, income changes need not be reported mid-period unless total household income exceeds the Income Reporting Threshold. Staff must document how income was evaluated.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "036edf41843db6cba933f13af5b0ed4d5a84f22af454fdb56ce8192db9fc49ca",
     "updated": "2026-11-13"
   },
   "cw-255": {
-    "summary": "Establishes mandatory mid-period reporting triggers: households must report within 10 calendar days when gross income exceeds the Income Reporting Threshold (IRT), when an adult WTW participant moves, or when an individual joins the home.",
-    "status": "draft",
+    "summary": "All CalWORKs customers must report within 10 calendar days when income exceeds the Income Reporting Threshold, when a member's fleeing felon status changes, probation or parole violations, and address changes; a pregnancy ending without a birth must be reported within 30 days. No mid-period decrease or discontinuance is taken when income is over the IRT only because of a new household member's income. The continuing eligibility test now uses net non-exempt income against the Tier 2 IRT.",
+    "status": "verified",
     "pdf_sha256": "6c25c877fdc1d3fd7c44129bbf5be2efc1ce52ef791142dca7ba49fc7493d248",
     "updated": "2026-11-13"
   },
   "cw-256": {
-    "summary": "Governs voluntary mid-period reporting: households may report decreased income, increased family size, or special needs at any time, and the county must take action to increase the cash grant effective the following month.",
-    "status": "draft",
+    "summary": "Customers may voluntarily report changes at any time; voluntary reports are never late. Staff act mid-period when verification shows benefits should increase, or when discontinuance is requested; otherwise the change is entered for the next SAR 7 or redetermination and a No Change Notice of Action with the budget is sent. The effective date of an increase depends on when the change is reported, not when it occurred. Clarifies adding a newborn and second parent to a Pregnant Person Only case.",
+    "status": "verified",
     "pdf_sha256": "362a6c232cb4d5f97c47f1a8a40da6f81c64ab7e23554cc5b5c847a3912a78b1",
     "updated": "2026-11-13"
   },
   "cw-257": {
     "summary": "Governs county-initiated actions and third-party information updates during the SAR payment period, outlining specific criteria where the county is legally permitted to adjust grants without a client report.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "e1459889afe1fd9f2a1cc652d6f1dec61e914e239c287904a182fa5c26a0e0f0",
     "updated": "2026-11-13"
   },
   "cw-258": {
     "summary": "Governs vendor payments, authorizing direct county payment of rent or utility subsidies to third-party landlords or utility providers when adult recipients demonstrate financial mismanagement.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "7056b69d4020647fbeb2f6080186b6cee259aa4f9abee20a87e10057a0855821",
     "updated": "2026-11-13"
   },
   "cw-259": {
-    "summary": "Details benefit issuance methods: direct electronic funds transfer into client bank accounts, Electronic Benefit Transfer (EBT) card access, and emergency warrant issuance.",
-    "status": "draft",
+    "summary": "CalWORKs benefits, including Employment Services supportive service payments, are issued to the Assistance Unit's EBT cash account, and direct deposit is encouraged to deter skimming and scamming. A warrant may be approved case by case when the payee can't use EBT because of a verified physical or mental condition or other barrier and there is no alternative. Covers qualifying accounts for direct deposit; payments to third parties are vendor payments (CPG 44-300.A).",
+    "status": "verified",
     "pdf_sha256": "fa86339138a1e27dd8db8d9ff67a094c9e0585da20a4e38032574c355ee5cf4f",
     "updated": "2026-11-13"
   },
   "cw-260": {
     "summary": "Establishes the Beginning Date of Aid (BDA) calculation, determining the exact calendar day cash assistance commences based on application filing and eligibility completion.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "17d3a634e6707758efbb49638efe6e2bc7dcc5a78f122c74688ba8e5de6d3319",
     "updated": "2026-11-13"
   },
   "cw-261": {
-    "summary": "Details grant calculation worksheets and payment determination, subtracting net countable income from the Region 1 Maximum Aid Payment (MAP) to calculate monthly cash benefits.",
-    "status": "draft",
+    "summary": "The amount of aid is the Assistance Unit's Maximum Aid Payment (MAP) minus its net non-exempt income, computed at application, redetermination and when income or other factors change. There are two MAP levels: higher for exempt AUs (for example, a non-needy caretaker relative or disabled parents) and lower for non-exempt AUs. Aid under $10 is not issued but the case can stay open, and an AU with income above the MAP but net income below the Tier 2 IRT may get a Zero Basic Grant (AB 172).",
+    "status": "verified",
     "pdf_sha256": "1a01df84752eef0b18257a1c38cb6520da695ae8bb60ca456ef9d65cf3a0aabe",
     "updated": "2026-11-13"
   },
   "cw-262": {
     "summary": "Under Senate Bill 380, effective November 1, 2018, an Assistance Unit may opt to exclude a step- or half-sibling from the Maximum Aid Payment (MAP) in order to keep the full child support paid for that child. The child must live with at least one eligible child, and the monthly child support must be greater than the CalWORKs grant amount for that child (the Child MAP). The request must be made in writing on the CW 52. The child remains part of the AU for other programs and services. The exclusion is evaluated at application, periodic report and annual redetermination.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "51ecab882da682c37c0f1035674ca636f69a2f943bbd250baedfede9aa38c60a",
     "updated": "2026-11-13"
   },
   "cw-263": {
     "summary": "Defines CalWORKs overpayments, establishing county responsibilities to identify, calculate, and establish claims for cash aid received in excess of the amount the assistance unit was legally entitled to receive.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "15957a1975ab23a295faf67b624c3d7f4407af2acb481f06f574dcddcb6eb1f0",
     "updated": "2026-11-13"
   },
   "cw-264": {
-    "summary": "Provides regulatory definitions distinguishing Administrative Error (AE), Inadvertent Household Error (IHE), and Intentional Program Violation (IPV) overpayments.",
-    "status": "draft",
+    "summary": "Defines overpayment terms, including action for civil judgment, administrative (agency) error overpayment (caused by the county when it had all the information needed), aid, balancing against an underpayment, claim ID, client error overpayment (one that isn't administrative, fraudulent or an Intentional Program Violation), and the new Potential Intentional Program Violation definition.",
+    "status": "verified",
     "pdf_sha256": "a619e4b36a722605e8d859a249efae7b9cfdcc4e3ab0505d274736df298b2781",
     "updated": "2026-11-13"
   },
   "cw-265": {
-    "summary": "Governs overpayment investigation procedures, reviewing case files, reconciling historical payroll records, and documenting overissuance calculations.",
-    "status": "draft",
+    "summary": "Explains how overpayments are investigated. For Immediate Need or Homeless Assistance paid on apparent eligibility, an overpayment exists depending on whether the Assistance Unit was eligible when the payment was issued. Income-related overpayments, from failure to report or county error, are determined by the mandatory reporting rules under Semi-Annual Reporting and Annual Reporting/Child Only, such as the SAR 7, income over the Income Reporting Threshold, and redetermination reports.",
+    "status": "verified",
     "pdf_sha256": "153c31a2d62c434295917549ca32c4dd002b16775207928079ad4d16477ea90d",
     "updated": "2026-11-13"
   },
   "cw-266": {
     "summary": "Details Aid Paid Pending rules when a customer files a timely state fair hearing request challenging an adverse grant reduction or termination, ensuring benefits continue until the hearing decision is rendered.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "ec8dde95759f47041e65001a4ad7f80c0629969e81852b7889987fd014cb9076",
     "updated": "2026-11-13"
   },
   "cw-267": {
     "summary": "Overpayments are recovered by grant adjustment or voluntary grant offset. Under Semi-Annual Reporting, grant adjustment is initiated only at the beginning of a payment period; under Annual Reporting/Child Only it may be initiated mid-period. The maximum adjustment is 5% of the Maximum Aid Payment for agency errors and 10% for all other errors. When an overpayment can no longer be adjusted from the grant, it is referred to the Office of Revenue and Recovery, including any Intentional Program Violation and non-fraud overpayments of $250 or more after aid has been discontinued.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "064c6f76c581a30936a2411e5ce64662421273d10ae94091ec694858dda52ad4",
     "updated": "2026-11-13"
   },
   "cw-268": {
     "summary": "Details mathematical overpayment calculation worksheets, comparing aid actually paid against correct prospective grant entitlements for each affected calendar month.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "c4bc78dcc044d398c512d5a73e67888e73004abf895c3da4a7b4bced07921e9b",
     "updated": "2026-11-13"
   },
   "cw-269": {
-    "summary": "Governs overpayment recovery coordination between County HHSA, revenue collection units, and state agencies, ensuring statutory collection limits are respected.",
-    "status": "draft",
+    "summary": "Covers overpayment recovery: state income tax refunds are intercepted and applied to outstanding overpayments, with questions referred to the Office of Revenue and Recovery. When a case has several overpayments, the oldest fraudulent overpayment is recovered first, then the oldest non-fraudulent one; recovery of a non-fraudulent overpayment stops when a new fraudulent overpayment occurs.",
+    "status": "verified",
     "pdf_sha256": "28fa96c588935cb6cca629d43d45e2cbb7b9f1613b350720872d0227e055c2f3",
     "updated": "2026-11-13"
   },
   "cw-270": {
     "summary": "Establishes mandatory inclusion rules and overpayment debt liability for adult members who were part of the Assistance Unit when the overissuance occurred.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f74dda8c0a06141fe9328d9d1188402702bda77f1d88a515ec95e9a7bad5e3b4",
     "updated": "2026-11-13"
   },
   "cw-271": {
-    "summary": "Details the overpayment recomputation method, recalculating net claims after accounting for allowable earned income disregards that would have applied had the income been timely reported.",
-    "status": "draft",
+    "summary": "Administrative error overpayments are computed by entering the corrected income, the corrected non-entitlement amounts and discontinuing ineligible people, so the budget for each month shows the overpayment. Grant adjustments to recover it start only at the beginning of a payment period and stop mid-period when it's repaid, though a following overpayment's recovery may then begin mid-period if benefits are not decreased.",
+    "status": "verified",
     "pdf_sha256": "b0c1ab3a79cd49e69d911e3159eccd3d7036d940d15e998b2fb23f5ba83e9f8d",
     "updated": "2026-11-13"
   },
   "cw-272": {
-    "summary": "Governs Intentional Program Violation (IPV) determinations: requires formal administrative disqualification hearings or court convictions, imposing mandatory 6-month, 12-month, or permanent individual cash aid disqualifications.",
-    "status": "draft",
+    "summary": "An Intentional Program Violation (IPV), such as a false statement or concealing facts to get or keep CalWORKs or increase the grant, disqualifies a customer for a limited time or permanently. IPVs are established by a welfare fraud conviction (including a guilty or no-contest plea), an Administrative Disqualification Hearing decision, or a Disqualification Consent Agreement; IPVs from another state or county also count. Disqualification periods increase with each IPV, up to permanent.",
+    "status": "verified",
     "pdf_sha256": "931e2efbb82de42b9b53e14148eb2d331c008fb496b4a3be77fea53e226cb7b5",
     "updated": "2026-11-13"
   },
   "cw-273": {
-    "summary": "Governs underpayments: when the county underpays an Assistance Unit due to administrative error or delayed action, the county must issue a corrective retroactive supplemental payment immediately.",
-    "status": "draft",
+    "summary": "When an underpayment is suspected, staff investigate by calculating the correct grant for each month and comparing it with what was paid. All underpayments are corrected under the rules in effect when discovered, with no minimum amount as long as there is eligibility, and must be corrected as soon as possible and no later than the next annual redetermination or termination, whichever comes first.",
+    "status": "verified",
     "pdf_sha256": "738d93b8f53cde14254e7ae11e2f95cbf40561852b2e58df10c1bc13697a4208",
     "updated": "2026-11-13"
   },
   "cw-274": {
     "summary": "Details overpayments and underpayments in Employment Services supportive services (child care, mileage, transportation passes), outlining recovery and adjustment workflows.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "370878e932ba98fcb55e6cd25493ba3c49eac5722b3454fcf56c02f95dbb7041",
     "updated": "2026-11-13"
   },
   "cw-275": {
-    "summary": "Governs the debt discharge process, establishing criteria for writing off and terminating collection efforts on uncollectible, cost-ineffective, or delinquent overpayment debts after 3 years.",
-    "status": "draft",
+    "summary": "Under SB 726 and SB 80, effective July 1, 2019, a non-fraudulent overpayment, including Employment Services supportive service claims, is discharged as uncollectible once the case is closed and the responsible people have been off CalWORKs in California for 36 consecutive months. Discharge ends collection in all systems, including tax intercepts. Explains what happens when a former customer with an outstanding claim reapplies, and adds the M44-350O and M44-352I notices and a flowchart.",
+    "status": "verified",
     "pdf_sha256": "ce3ee6da99e108b2ba7c3fab05b9fd0e2cc32be23a5e442581b47f3b00064200",
     "updated": "2026-11-13"
   },
   "cw-276": {
     "summary": "Official County HHSA handbook resolving caseworker policy questions regarding Non-Minor Dependents (NMDs age 18-20), school attendance verifications, and benefit budgeting.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "2443f6e2b6a7d0ee510068b1d7f0c758aab3c66d2b9c621f910a65b494bb18d3",
     "updated": "2026-11-13"
   },
   "cw-277": {
     "summary": "Official County HHSA handbook resolving policy questions on Annual Reporting/Child-Only (AR/CO) cases, simplified redetermination workflows, and non-parent caretaker grant calculations.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "bed2c163fb6f127853140f02fe866564d8aa2aadf877cc303c63cdfaf0003724",
     "updated": "2026-11-13"
   },
   "cw-278": {
-    "summary": "Comprehensive desk aid listing all CalWORKs state and federal aid codes (TANF, Safety Net, Child-Only, Special Medical) and automated system charging codes in CalSAWS.",
-    "status": "draft",
+    "summary": "Desk aid (May 2015) listing CalWORKs aid codes with their funding (federal, state or mixed), exempt MAP status and family type, such as 01 Refugee Cash Assistance, 08 Entrant Cash Assistance, 1V TCVAP, the Approved Relative Caregiver codes, 30 federal All Other Families, 32 TANF time-out families, and 33 zero-parent child-only cases.",
+    "status": "verified",
     "pdf_sha256": "657a78998b4c2834beaf1eb0307832dc72d6ddbdd394d717621e1bafdc2030d2",
     "updated": "2026-11-13"
   },
   "cw-279": {
-    "summary": "Official CalWORKs Assistance Standards Chart publishing Region 1 Maximum Aid Payment (MAP) levels for exempt and non-exempt units, MBSAC income levels, and standard disregards.",
-    "status": "draft",
+    "summary": "CalWORKs Assistance Standards chart: Minimum Basic Standard of Adequate Care (MBSAC) and Income In-Kind amounts by Assistance Unit size (dated 07/26; for example, MBSAC $963 for one person and $1,960 for three), and Maximum Aid Payment levels (dated 10/26) for exempt and non-exempt units (for example, $1,338 exempt and $1,196 non-exempt for three). Defines when an AU is exempt.",
+    "status": "verified",
     "pdf_sha256": "0578a0a5ee0b4a7ca49e860abd242cbe863f77f77180ad1016d6bab3e1a225ec",
     "updated": "2026-11-13"
   },
   "cw-280": {
     "summary": "Chart of CalWORKs resource limits. Property limits rise each year with the California Necessities Index: effective January 1, 2026 the limit is $12,552 for most Assistance Units and $18,829 for those with a member age 60 or older or disabled (previously $12,137 and $18,206 in 2025). The motor vehicle Equity Value limit rises with the transportation Consumer Price Index and is $33,626 effective July 1, 2026.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "039887d1774a204b27e41d5240d6f9b268f652841f1c155af7ea52f5d41cad53",
     "updated": "2026-11-13"
   },
   "cw-281": {
     "summary": "Official CalWORKs Proration Chart providing daily proration factors for calculating partial-month cash aid grants based on the Beginning Date of Aid.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "e41a0e584d507dd4c99ed968f33876805115d27445e1116a9c2af614ef47fb43",
     "updated": "2026-11-13"
   },
   "cw-282": {
-    "summary": "Desk aid listing state Foster Care and Approved Relative Caregiver (ARC) basic monthly reimbursement rates across child age tiers.",
-    "status": "draft",
+    "summary": "Desk aid (December 2016) listing basic foster care rates for licensed foster homes, relatives, non-relative extended family members, SILPs and certain Kin-GAP cases, by child age group (0-4, 5-8, 9-11, 12-14 and 15-20), for July 2014 through 2017; for example, $671 to $838 a month in 2014-2015.",
+    "status": "verified",
     "pdf_sha256": "0a03a531d71f35ccbdb72b5b87de4a1a575958fb3731a47629fe9dd4ba5e6060",
     "updated": "2026-11-13"
   },
   "cw-283": {
     "summary": "Desk aid detailing the treatment of Reception and Placement (R&P) cash grants provided to newly arrived refugees, detailing income exclusions and CalWORKs coordination.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "cedacf3e98a9b8f6cc151a72549be7b8e2ee2f426cfe63a0352df96b7ad0e26e",
     "updated": "2026-11-13"
   },
@@ -972,20 +972,20 @@
     "updated": "2026-11-13"
   },
   "cw-285": {
-    "summary": "Desk aid detailing the evaluation and exclusion of federal, state, and private student loans, educational grants, and work-study earnings from CalWORKs income and property tests.",
-    "status": "draft",
+    "summary": "Desk aid on student loans and grants. Loans and grants under Title IV of the Higher Education Act or from the Bureau of Indian Affairs, such as Pell Grants, Cal Grants, Perkins and Stafford loans, are excluded; other student loans and grants are excluded with listed exceptions; and College Work Study is excluded. Gives examples of each type.",
+    "status": "verified",
     "pdf_sha256": "7d1bc5679d9bf96027d0243d16f070251df9bef1d64e4617bc6b2b80915ed1e2",
     "updated": "2026-11-13"
   },
   "cw-286": {
     "summary": "Refugee Cash Assistance (RCA) provides cash aid to refugees who are ineligible for CalWORKs or SSI/SSP and are within the federal eligibility time period; in San Diego County it is administered by Catholic Charities. The eligibility period was reduced from 12 to 4 months for individuals whose eligibility start date is on or after May 5, 2025. Eligibility requires documentation of a Refugee Eligible Population status and is determined within 30 days of application. RCA customers are not subject to CalWORKs deprivation or minor-child requirements and receive cash-linked Medi-Cal.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "2c3b0517525f76aae2f2053b7ac07f00a6a7034b2829f16b02eb5f3cf768e88d",
     "updated": "2026-11-13"
   },
   "cw-287": {
     "summary": "The state-funded Trafficking and Crime Victims Assistance Program (TCVAP) provides benefits to noncitizen victims of human trafficking, domestic violence and other serious crimes to the same extent as refugees (Senate Bill 1569). Families with minor children receive TCVAP CalWORKs, subject to the 60-month time limit; single adults and families without children receive TCVAP Cash Assistance, limited to 4 months for those who applied on or after May 5, 2025 (previously up to 12 months). A Social Security Number is not required. A sworn statement plus one item of additional evidence verifies trafficking status.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "e3b03c0f58655d87dac33cabad8b4e6773c6a9621633bd7eb1d42d89b7d8e470",
     "updated": "2026-11-13"
   }
