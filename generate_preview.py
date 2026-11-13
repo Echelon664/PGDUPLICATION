@@ -15,6 +15,22 @@ cw_count = sum(1 for d in full_docs if 'CalWORKs' in d.get('programs', []))
 mc_count = sum(1 for d in full_docs if 'Medi-Cal' in d.get('programs', []))
 all_count = len(full_docs)
 
+# Live index size and the date of the last full County comparison, for the page header.
+from indexer import chunk_documents
+chunk_count = len(chunk_documents(DOCS_PATH))
+verified_html = ""
+try:
+    with open(os.path.join(BASE_DIR, "data", "county_sync", "manifest.json"), "r", encoding="utf-8") as f:
+        import datetime
+        _verified = datetime.datetime.strptime(json.load(f)["verified_at"], "%Y-%m-%dT%H:%M:%SZ")
+        verified_html = (
+            '<p class="text-xs text-emerald-700 font-semibold mt-1">'
+            f'Every PDF matched the County site on {_verified.strftime("%B %-d, %Y")}. '
+            '<a href="/sync" class="underline">See the check</a></p>'
+        )
+except (OSError, ValueError, KeyError):
+    pass
+
 print(f"Counts: CalFresh={cf_count}, CalWORKs={cw_count}, Medi-Cal={mc_count}, All={all_count}")
 
 CHAPTER_DESCRIPTIONS = {
@@ -110,7 +126,7 @@ CHAPTER_DESCRIPTIONS = {
     'ARTICLE 17 - MEDI-CAL SPECIAL TREATMENT PROGRAMS': 'Kidney transplant, organ anti-rejection, dialysis, and parenteral nutrition programs',
     'ARTICLE 20 - PERFORMANCE STANDARDS': 'Casework processing standards, redetermination timelines, and MEDS alerts',
     'ARTICLE 21 - MAGI APTC and Health Care Reform': 'Modified Adjusted Gross Income (MAGI), Covered CA, tax households, and ACA rules',
-    'Special Notices & Policy Bulletins': 'County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments'
+    'Special Notices & Policy Bulletins': 'County special notices: COLA updates, emergency directives, and annual adjustments'
 }
 
 def categorize_doc(doc):
@@ -172,6 +188,8 @@ for d in full_docs:
         "official_url": d.get("official_url", ""),
         "summary": d.get("summary", ""),
         "source_missing": bool(d.get("source_missing")),
+        "pdf_date": d.get("pdf_date", ""),
+        "pdf_date_label": d.get("pdf_date_label", ""),
         "content_text": content_snippet
     })
 
@@ -262,11 +280,12 @@ html_template = f"""<!DOCTYPE html>
     @media (max-width: 400px) {{
       .search-scope {{ display: none; }}
     }}
+__CHAPTER_NAV_CSS__
   </style>
 </head>
 <body class="bg-[#0b2545] text-slate-900 antialiased p-3 sm:p-5 min-h-screen">
 
-  <div class="max-w-5xl mx-auto bg-[#0b2545] text-slate-900 border border-slate-800 rounded-2xl shadow-xl overflow-hidden flex flex-col">
+  <div class="max-w-5xl mx-auto bg-[#0b2545] text-slate-900 border border-slate-800 rounded-2xl shadow-xl overflow-clip flex flex-col">
     
     <!-- Top Official Notice Bar -->
     <div class="bg-[#0b2545] text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap justify-between items-center gap-2">
@@ -385,7 +404,7 @@ html_template = f"""<!DOCTYPE html>
             <span><strong>Scope:</strong> <span id="searchScopeLabel">CalFresh (SNAP)</span> &bull; <strong>SQLite FTS5</strong> searches 100% of PDF contents, regulations, tables & citations</span>
           </div>
           <div class="text-right text-blue-200/70 hidden sm:block">
-            413 documents &bull; 8,636 indexed passages
+            {all_count:,} documents &bull; {chunk_count:,} indexed passages
           </div>
         </div>
 
@@ -409,23 +428,14 @@ html_template = f"""<!DOCTYPE html>
               CalFresh Policy Manual Sections &amp; Chapters ({cf_count})
             </h3>
             <p id="resultMeta" class="text-xs text-slate-500 mt-0.5">
-              Click any chapter or section dropdown below to view official regulations and subchapters.
+              Pick a chapter, then a document to see its date, summary and PDF.
             </p>
-          </div>
-          <div class="flex items-center gap-2">
-            <button type="button" onclick="expandAllChapters()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-2.5 py-1.5 rounded-lg border border-slate-300 transition flex items-center gap-1 cursor-pointer">
-              <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-              <span>Expand All</span>
-            </button>
-            <button type="button" onclick="collapseAllChapters()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold px-2.5 py-1.5 rounded-lg border border-slate-300 transition flex items-center gap-1 cursor-pointer">
-              <svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
-              <span>Collapse All</span>
-            </button>
+            {verified_html}
           </div>
         </div>
 
         <!-- List of Documents Grouped by Chapter Dropdowns -->
-        <div id="documentsList" class="flex flex-col gap-3.5">
+        <div id="documentsList" class="cn-layout">
           <!-- Populated dynamically when in dropdowns mode -->
         </div>
       </div>
@@ -1081,6 +1091,7 @@ html_template = f"""<!DOCTYPE html>
               <div class="font-bold text-slate-800 line-clamp-1">${{escapeHtml(s.title)}}</div>
               <div class="mt-2 p-3.5 bg-blue-50/70 border border-blue-100 rounded-lg text-xs sm:text-[13px] text-slate-700 leading-relaxed">
                 <span class="font-bold text-blue-900 block text-xs mb-1">Quick PDF Summary:</span>
+                ${{docDateHtml(s)}}
                 ${{escapeHtml(s.summary || s.snippet || '')}}
               </div>
             </div>
@@ -1112,7 +1123,7 @@ html_template = f"""<!DOCTYPE html>
       }}
       const topMatch = matches[0];
       const answer = `Based on County of San Diego **${{topMatch.programs.join('/')}}** policy manual (**${{topMatch.title}}**):\\n\\n` +
-        `• **Quick Policy Summary**: ${{topMatch.summary || topMatch.snippet.slice(0, 300)}}\\n\\n` +
+        `• **Quick Policy Summary**: ${{docDateLine(topMatch) ? docDateLine(topMatch) + '. ' : ''}}${{topMatch.summary || topMatch.snippet.slice(0, 300)}}\\n\\n` +
         `This policy rule applies strictly under ${{topMatch.programs.join('/')}} guidelines. For full administrative regulations, open the complete official PDF linked below.`;
 
       renderAIAnswer(answer, matches.slice(0, 4));
@@ -1126,6 +1137,32 @@ html_template = f"""<!DOCTYPE html>
         return pdfUrl;
       }}
       return (LOCAL_SERVER_BASE || '') + '/pdfs/' + encodeURIComponent(docId) + '.pdf';
+    }}
+
+    // "Revision date: April 1, 2023" - the date taken from the document's own PDF.
+    function formatLongDate(iso) {{
+      const m = /^(\d{{4}})-(\d{{2}})-(\d{{2}})/.exec(iso || '');
+      if (!m) return '';
+      const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
+      return d.toLocaleDateString('en-US', {{ year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }});
+    }}
+
+    function docDateLine(doc) {{
+      const base = (doc && DOCS_BY_ID[doc.id]) || {{}};
+      const iso = (doc && doc.pdf_date) || base.pdf_date;
+      const label = (doc && doc.pdf_date_label) || base.pdf_date_label;
+      const text = formatLongDate(iso);
+      return text ? (label || 'PDF date') + ': ' + text : '';
+    }}
+
+    function docDateHtml(doc) {{
+      const line = docDateLine(doc);
+      if (!line) return '';
+      const base = (doc && DOCS_BY_ID[doc.id]) || doc || {{}};
+      const hint = (base.pdf_date_label === 'PDF file date')
+        ? 'No date is printed in this document, so this is the date stored in the PDF file.'
+        : 'Printed in the document.';
+      return `<div class="mb-1.5 text-xs font-bold text-emerald-800" title="${{hint}}">${{escapeHtml(line)}}</div>`;
     }}
 
     // Entries without a bundled County document link out to the County site.
@@ -1215,7 +1252,8 @@ html_template = f"""<!DOCTYPE html>
         return;
       }}
       const pdfUrl = resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
-      openPdfModal(pdfUrl, doc.title, (doc.programs || []).join(' / '), doc.summary || doc.snippet || '', doc.chapter || doc.id);
+      const dateLine = docDateLine(doc);
+      openPdfModal(pdfUrl, doc.title, (doc.programs || []).join(' / '), (dateLine ? dateLine + '. ' : '') + (doc.summary || doc.snippet || ''), doc.chapter || doc.id);
     }}
 
     // Close modal or return from search results page on Escape key
@@ -1239,41 +1277,6 @@ html_template = f"""<!DOCTYPE html>
         closePdfModal();
       }}
     }});
-
-    // Interactive Dropdown Toggle Function for Each Chapter
-    function toggleChapterDropdown(groupId) {{
-      const content = document.getElementById('chapter-content-' + groupId);
-      const chevron = document.getElementById('chapter-chevron-' + groupId);
-      const headerBtn = document.getElementById('chapter-header-' + groupId);
-      if (!content) return;
-
-      const isHidden = content.classList.contains('hidden');
-      if (isHidden) {{
-        content.classList.remove('hidden');
-        if (chevron) chevron.classList.add('rotate-180');
-        if (headerBtn) {{
-          headerBtn.classList.add('bg-blue-50/70', 'border-b', 'border-slate-200');
-        }}
-      }} else {{
-        content.classList.add('hidden');
-        if (chevron) chevron.classList.remove('rotate-180');
-        if (headerBtn) {{
-          headerBtn.classList.remove('bg-blue-50/70', 'border-b', 'border-slate-200');
-        }}
-      }}
-    }}
-
-    function expandAllChapters() {{
-      document.querySelectorAll('.chapter-content-panel').forEach(el => el.classList.remove('hidden'));
-      document.querySelectorAll('.chapter-chevron-icon').forEach(el => el.classList.add('rotate-180'));
-      document.querySelectorAll('.chapter-header-btn').forEach(el => el.classList.add('bg-blue-50/70', 'border-b', 'border-slate-200'));
-    }}
-
-    function collapseAllChapters() {{
-      document.querySelectorAll('.chapter-content-panel').forEach(el => el.classList.add('hidden'));
-      document.querySelectorAll('.chapter-chevron-icon').forEach(el => el.classList.remove('rotate-180'));
-      document.querySelectorAll('.chapter-header-btn').forEach(el => el.classList.remove('bg-blue-50/70', 'border-b', 'border-slate-200'));
-    }}
 
     function createDocumentCard(doc, query) {{
       const card = document.createElement('div');
@@ -1321,6 +1324,7 @@ html_template = f"""<!DOCTYPE html>
               <svg class="w-4 h-4 sm:w-4.5 sm:h-4.5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
               <span>Quick Policy Summary:</span>
             </div>
+            ${{docDateHtml(doc)}}
             <div class="text-slate-800 font-normal leading-relaxed text-[13px] sm:text-sm">
               ${{escapeHtml(doc.summary || doc.snippet || 'Official County of San Diego Health and Human Services Agency Policy Document.')}}
             </div>
@@ -1347,7 +1351,7 @@ html_template = f"""<!DOCTYPE html>
           <div class="flex items-center gap-3 text-xs text-slate-400 mt-1">
             <span>Section: <strong class="text-slate-600">${{escapeHtml(doc.section_num ? (doc.section_num + (doc.section_title ? (' • ' + doc.section_title) : '')) : (doc.chapter || doc.id))}}</strong></span>
             <span>•</span>
-            <span>Published by County: ${{revisionStr}}</span>
+            <span>Posted on County site: ${{revisionStr}}</span>
           </div>
         </div>
         <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
@@ -1364,129 +1368,7 @@ html_template = f"""<!DOCTYPE html>
       return card;
     }}
 
-    function renderDropdownsView(docs) {{
-      const meta = PROGRAM_METADATA[activeProgram];
-      const heading = document.getElementById('listHeading');
-      if (heading) {{
-        heading.innerText = `${{activeProgram === 'All' ? 'All County Benefits Policy Manual Sections & Chapters' : meta.title + ' Policy Manual Sections & Chapters'}} (${{docs.length}})`;
-      }}
-
-      const container = document.getElementById('documentsList');
-      if (!container) return;
-      container.innerHTML = '';
-
-      // Group documents by Category / Chapter preserving ordering
-      const groups = {{}};
-      const groupOrders = {{}};
-      const groupDescs = {{}};
-      const groupIds = {{}};
-
-      docs.forEach(doc => {{
-        const cat = doc.category || 'General Sections';
-        if (!groups[cat]) {{
-          groups[cat] = [];
-          groupOrders[cat] = doc.order || 50;
-          groupDescs[cat] = doc.category_desc || 'County Policy and Procedure Sections';
-          groupIds[cat] = doc.category_id || cat.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
-        }}
-        groups[cat].push(doc);
-      }});
-
-      const sortedGroupNames = Object.keys(groups).sort((a, b) => groupOrders[a] - groupOrders[b]);
-
-      // Render each Chapter as an interactive Dropdown Card
-      sortedGroupNames.forEach((catName, groupIdx) => {{
-        const groupDocs = groups[catName];
-        const gId = groupIds[catName] || ('ch-' + groupIdx);
-        const gDesc = groupDescs[catName];
-        const isInitiallyOpen = (groupIdx === 0);
-
-        const chapterCard = document.createElement('div');
-        chapterCard.className = 'chapter-dropdown-card bg-white border border-slate-200/90 hover:border-slate-300 rounded-xl overflow-hidden shadow-2xs transition';
-
-        // Dropdown Header Button
-        const headerBtn = document.createElement('button');
-        headerBtn.type = 'button';
-        headerBtn.id = 'chapter-header-' + gId;
-        headerBtn.className = `chapter-header-btn w-full flex items-center justify-between p-3.5 sm:p-4 text-left cursor-pointer transition select-none ${{
-          isInitiallyOpen ? 'bg-blue-50/70 border-b border-slate-200' : 'bg-slate-50 hover:bg-slate-100'
-        }}`;
-        headerBtn.onclick = () => toggleChapterDropdown(gId);
-
-        const cfMatch = catName.match(/^(63-\d+)\s+(.*)$/);
-        const cwMatch = catName.match(/^([0-5]\d-\d3|69-\d3|70-\d3)\s+(.*)$/);
-        const mcMatch = catName.match(/^(ARTICLE\s+\d+)\s*[-–:]*\s*(.*)$/i);
-        let titleBlock = '';
-        if (cfMatch) {{
-          titleBlock = `
-            <div class="flex items-center gap-2">
-              <span class="bg-emerald-700 text-white font-mono font-extrabold text-xs px-2.5 py-0.5 rounded shadow-2xs shrink-0">${{cfMatch[1]}}</span>
-              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(cfMatch[2])}}</h4>
-            </div>
-          `;
-        }} else if (cwMatch) {{
-          titleBlock = `
-            <div class="flex items-center gap-2">
-              <span class="bg-purple-700 text-white font-mono font-extrabold text-xs px-2.5 py-0.5 rounded shadow-2xs shrink-0">${{cwMatch[1]}}</span>
-              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(cwMatch[2])}}</h4>
-            </div>
-          `;
-        }} else if (mcMatch) {{
-          titleBlock = `
-            <div class="flex items-center gap-2">
-              <span class="bg-teal-700 text-white font-mono font-extrabold text-xs px-2.5 py-0.5 rounded shadow-2xs shrink-0">${{mcMatch[1]}}</span>
-              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(mcMatch[2])}}</h4>
-            </div>
-          `;
-        }} else if (catName.includes('Special Notices')) {{
-          titleBlock = `
-            <div class="flex items-center gap-2">
-              <span class="bg-amber-600 text-white font-mono font-extrabold text-[11px] px-2 py-0.5 rounded shadow-2xs shrink-0">NOTICES</span>
-              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(catName)}}</h4>
-            </div>
-          `;
-        }} else {{
-          titleBlock = `
-            <div class="flex items-center gap-2">
-              <h4 class="font-extrabold text-slate-800 text-xs sm:text-sm tracking-tight truncate">${{escapeHtml(catName)}}</h4>
-            </div>
-          `;
-        }}
-
-        headerBtn.innerHTML = `
-          <div class="flex items-center gap-3 min-w-0 pr-2">
-            <div class="w-8 h-8 rounded-lg ${{isInitiallyOpen ? 'bg-blue-600 text-white' : 'bg-slate-200 text-slate-700'}} flex items-center justify-center font-extrabold text-xs shrink-0 shadow-2xs">
-              ${{groupIdx + 1}}
-            </div>
-            <div class="min-w-0">
-              ${{titleBlock}}
-              <p class="text-xs text-slate-500 mt-0.5 line-clamp-1">${{escapeHtml(gDesc)}}</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-2.5 shrink-0">
-            <span class="bg-white border border-slate-200 text-slate-700 font-bold text-xs px-2.5 py-1 rounded-full shadow-2xs">
-              ${{groupDocs.length}} ${{groupDocs.length === 1 ? 'subchapter' : 'subchapters'}}
-            </span>
-            <svg id="chapter-chevron-${{gId}}" class="chapter-chevron-icon chapter-chevron w-5 h-5 text-slate-400 ${{isInitiallyOpen ? 'rotate-180' : ''}}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </div>
-        `;
-        chapterCard.appendChild(headerBtn);
-
-        // Subchapters / Sections Content Container
-        const contentPanel = document.createElement('div');
-        contentPanel.id = 'chapter-content-' + gId;
-        contentPanel.className = `chapter-content-panel p-3 sm:p-4 flex flex-col gap-2.5 bg-slate-50/40 ${{isInitiallyOpen ? '' : 'hidden'}}`;
-
-        groupDocs.forEach(doc => {{
-          contentPanel.appendChild(createDocumentCard(doc, ''));
-        }});
-
-        chapterCard.appendChild(contentPanel);
-        container.appendChild(chapterCard);
-      }});
-    }}
+__CHAPTER_NAV_JS__
 
     function renderSearchResultsView(docs, query) {{
       const container = document.getElementById('searchResultsList');
@@ -1610,7 +1492,14 @@ html_template = f"""<!DOCTYPE html>
 </html>"""
 
 # Generate templates/index.html for server.py
-web_html = html_template.replace('__SERVER_BASE__', '')
+def _read_template(name):
+    with open(os.path.join(BASE_DIR, "templates", name), "r", encoding="utf-8") as f:
+        return f.read().rstrip("\n")
+
+web_html = (html_template
+            .replace('__SERVER_BASE__', '')
+            .replace('__CHAPTER_NAV_CSS__', _read_template("chapter_nav.css"))
+            .replace('__CHAPTER_NAV_JS__', _read_template("chapter_nav.js")))
 with open(TEMPLATE_PATH, 'w', encoding='utf-8') as f:
     f.write(web_html)
 
