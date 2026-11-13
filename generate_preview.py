@@ -551,7 +551,7 @@ __CHAPTER_NAV_CSS__
 
         <!-- Controls: Toggle Summary, Open in New Tab, Download, Close -->
         <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
-          <button type="button" onclick="toggleModalSummary()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-2.5 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-700 flex items-center gap-1 cursor-pointer" title="Toggle Quick Summary visibility">
+          <button type="button" id="pdfModalSummaryBtn" aria-expanded="false" aria-controls="pdfModalSummaryBar" onclick="toggleModalSummary()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-2.5 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-700 flex items-center gap-1 cursor-pointer" title="Toggle Quick Summary visibility">
             <svg class="w-3.5 h-3.5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
             <span class="hidden md:inline">Summary</span>
           </button>
@@ -571,7 +571,7 @@ __CHAPTER_NAV_CSS__
       </div>
 
       <!-- Quick Summary Sub-bar (Dismissible) -->
-      <div id="pdfModalSummaryBar" class="bg-blue-50/95 border-b border-blue-200 px-4 py-3 text-xs sm:text-sm text-slate-800 flex items-start justify-between gap-3 shrink-0">
+      <div id="pdfModalSummaryBar" class="hidden bg-blue-50/95 border-b border-blue-200 px-4 py-3 text-xs sm:text-sm text-slate-800 flex items-start justify-between gap-3 shrink-0">
         <div class="flex items-start gap-2 min-w-0">
           <span class="font-bold text-blue-900 shrink-0 text-xs mt-0.5 flex items-center gap-1">
             <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
@@ -1182,7 +1182,8 @@ __CHAPTER_NAV_CSS__
     // PDFs open in the bundled PDF.js viewer (static/pdfjs), which has its own
     // find bar. When a site search is showing, its words are passed along so
     // the matches are highlighted as the document opens.
-    const PDF_VIEWER_URL = (LOCAL_SERVER_BASE || '') + '/pdfjs/web/viewer.html';
+    // Bump the v= value after changing static/pdfjs so browsers fetch the new viewer page.
+    const PDF_VIEWER_URL = (LOCAL_SERVER_BASE || '') + '/pdfjs/web/viewer.html?v=6.5.438-2';
     const PDF_SEARCH_SKIP = new Set(['a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'can', 'do', 'does', 'for', 'from',
       'how', 'i', 'if', 'in', 'is', 'it', 'my', 'of', 'on', 'or', 'the', 'to', 'what', 'when', 'who', 'with']);
 
@@ -1198,7 +1199,7 @@ __CHAPTER_NAV_CSS__
       // Only stored PDFs go through the viewer; County links open as they are.
       if (!pdfUrl || !pdfUrl.startsWith((LOCAL_SERVER_BASE || '') + '/pdfs/')) return pdfUrl;
       const terms = pdfSearchTerms();
-      return PDF_VIEWER_URL + '?file=' + encodeURIComponent(pdfUrl) + (terms ? '#search=' + encodeURIComponent(terms) : '');
+      return PDF_VIEWER_URL + '&file=' + encodeURIComponent(pdfUrl) + (terms ? '#search=' + encodeURIComponent(terms) : '');
     }}
 
     // In-Page PDF Viewer Modal Functions
@@ -1220,12 +1221,10 @@ __CHAPTER_NAV_CSS__
       badgeEl.textContent = program || 'HHSA';
       metaEl.textContent = (section ? ('Section: ' + section + ' • ') : '') + 'Official County of San Diego Policy PDF';
       
-      if (summary && summary.trim()) {{
-        summaryEl.textContent = summary;
-        summaryBar.classList.remove('hidden');
-      }} else {{
-        summaryBar.classList.add('hidden');
-      }}
+      // The summary starts collapsed so the document gets the full height;
+      // the "Summary" button opens it.
+      summaryEl.textContent = (summary && summary.trim()) ? summary : 'No summary is available for this document.';
+      setModalSummaryOpen(false);
 
       newTabBtn.href = pdfViewerUrl(pdfUrl);
       if (downloadBtn) {{
@@ -1251,11 +1250,16 @@ __CHAPTER_NAV_CSS__
       document.body.classList.remove('overflow-hidden');
     }}
 
+    function setModalSummaryOpen(open) {{
+      const summaryBar = document.getElementById('pdfModalSummaryBar');
+      const summaryBtn = document.getElementById('pdfModalSummaryBtn');
+      if (summaryBar) summaryBar.classList.toggle('hidden', !open);
+      if (summaryBtn) summaryBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }}
+
     function toggleModalSummary() {{
       const summaryBar = document.getElementById('pdfModalSummaryBar');
-      if (summaryBar) {{
-        summaryBar.classList.toggle('hidden');
-      }}
+      if (summaryBar) setModalSummaryOpen(summaryBar.classList.contains('hidden'));
     }}
 
     function viewDocPdf(docId, fallbackUrl, fallbackTitle, fallbackProg, fallbackSummary) {{
