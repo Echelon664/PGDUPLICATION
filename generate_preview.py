@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 import json, html, os, re
 
+import catalog
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_PATH = os.path.join(BASE_DIR, "templates", "index.html")
 DOCS_PATH = os.path.join(BASE_DIR, "data", "documents.json")
 
-with open(DOCS_PATH, 'r', encoding='utf-8') as f:
-    full_docs = json.load(f)
+full_docs = catalog.load_documents(DOCS_PATH)
 
 print(f"Loaded {len(full_docs)} unique documents.")
 
@@ -187,6 +188,7 @@ for d in full_docs:
         "local_pdf_url": d.get("local_pdf_url", ""),
         "official_url": d.get("official_url", ""),
         "summary": d.get("summary", ""),
+        "summary_status": d.get("summary_status", ""),
         "source_missing": bool(d.get("source_missing")),
         "pdf_date": d.get("pdf_date", ""),
         "pdf_date_label": d.get("pdf_date_label", ""),
@@ -1165,6 +1167,12 @@ __CHAPTER_NAV_CSS__
       return `<div class="mb-1.5 text-xs font-bold text-emerald-800" title="${{hint}}">${{escapeHtml(line)}}</div>`;
     }}
 
+    // The County changed this PDF after its summary was written (summaries.py marks it stale).
+    function summaryStale(doc) {{
+      const base = (doc && DOCS_BY_ID[doc.id]) || doc || {{}};
+      return base.summary_status === 'stale';
+    }}
+
     // Entries without a bundled County document link out to the County site.
     function isSourceMissing(doc) {{
       const base = (doc && DOCS_BY_ID[doc.id]) || doc || {{}};
@@ -1342,8 +1350,9 @@ __CHAPTER_NAV_CSS__
             ${{secBadgeHtml}}
             <span class="font-bold text-slate-800 text-xs sm:text-sm">${{escapeHtml(doc.title)}}</span>
             ${{missing ? '<span class="px-2 py-0.5 rounded text-xs font-bold border bg-amber-100 text-amber-900 border-amber-300">County document not bundled</span>' : ''}}
+            ${{summaryStale(doc) ? '<span class="px-2 py-0.5 rounded text-xs font-bold border bg-amber-100 text-amber-900 border-amber-300" title="The County updated this PDF after the summary was written. Check the PDF.">Summary under review</span>' : ''}}
           </div>
-          
+
           <!-- Quick PDF Summary Everywhere -->
           <div class="my-3 p-4 sm:p-5 bg-slate-50/95 border border-slate-300/80 rounded-2xl text-[13px] sm:text-sm text-slate-800 leading-relaxed shadow-xs">
             <div class="flex items-center gap-2 text-blue-900 font-bold mb-2 text-xs sm:text-sm tracking-wide">

@@ -4,6 +4,8 @@ import json
 import math
 from typing import List, Dict, Any
 
+import catalog
+
 class BM25Index:
     """Lightweight, zero-external-dependency BM25 full-text indexer."""
     def __init__(self, k1: float = 1.5, b: float = 0.75):
@@ -170,8 +172,7 @@ def chunk_documents(docs_path: str = None, chunk_size: int = 700, chunk_overlap:
     if not os.path.exists(docs_path):
         return []
 
-    with open(docs_path, "r", encoding="utf-8") as f:
-        docs = json.load(f)
+    docs = catalog.load_documents(docs_path)
 
     def make_chunk(doc: Dict[str, Any], body: str) -> Dict[str, Any]:
         sec_prefix = f"{doc.get('section_num', '')} " if doc.get('section_num') else ""

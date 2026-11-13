@@ -14,6 +14,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # and is built automatically on first request.
 COPY . .
 
+# The page embeds the catalog and its summaries, so build it from the data
+# being deployed (templates/index.html is not committed).
+RUN python generate_preview.py
+
 # Run as an unprivileged user; /app/data must stay writable for the index.
 RUN useradd --create-home appuser && chown -R appuser:appuser /app
 USER appuser

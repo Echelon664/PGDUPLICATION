@@ -3,6 +3,7 @@ import json
 import urllib.parse
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
+import catalog
 import county_sync
 from ai_backend import answer_question
 from search_engine import get_engine
@@ -29,7 +30,7 @@ def resolve_pdfjs(url_path):
 ENGINE = get_engine()
 
 def get_index():
-    # The engine rebuilds data/search.db automatically when documents.json changes.
+    # The engine rebuilds data/search.db automatically when documents.json or data/summaries/ change.
     return ENGINE
 
 class BenefitsHandler(BaseHTTPRequestHandler):
@@ -111,6 +112,7 @@ class BenefitsHandler(BaseHTTPRequestHandler):
                 return
 
         if path == "/" or path == "/index.html":
+            catalog.ensure_page()
             html_path = os.path.join(os.path.dirname(__file__), "templates", "index.html")
             if os.path.exists(html_path):
                 with open(html_path, "rb") as f:

@@ -1,7 +1,7 @@
 """SQLite FTS5 search engine for the SDCounty HHSA policy guides.
 
 The index lives in data/search.db and is rebuilt automatically when
-data/documents.json changes.  A small query layer handles section codes,
+data/documents.json or data/summaries/ changes.  A small query layer handles section codes,
 acronyms, legacy program names, and phrase queries on top of FTS5's BM25
 ranking.
 """
@@ -14,6 +14,7 @@ import threading
 import time
 from typing import Any, Dict, List, Optional, Tuple
 
+import catalog
 from indexer import BM25Index, chunk_documents
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -167,7 +168,7 @@ class SearchEngine:
     def _build_bm25(self):
         self._bm25 = BM25Index()
         self._bm25.build(chunk_documents(self.docs_path))
-        self._bm25_mtime = os.path.getmtime(self.docs_path)
+        self._bm25_mtime = catalog.source_mtime(self.docs_path)
         print(f"[search] FTS5 unavailable; using BM25 fallback ({len(self._bm25.docs)} chunks)")
 
     def _needs_rebuild(self) -> bool:
@@ -182,13 +183,13 @@ class SearchEngine:
             row = (meta.get("docs_mtime"),)
             if not row[0]:
                 return True
-            return abs(float(row[0]) - os.path.getmtime(self.docs_path)) > 1e-6
+            return abs(float(row[0]) - catalog.source_mtime(self.docs_path)) > 1e-6
         except Exception:
             return True
 
     def ensure_index(self, force: bool = False):
         if not FTS5_AVAILABLE:
-            if force or not self._bm25 or abs(os.path.getmtime(self.docs_path) - self._bm25_mtime) > 1e-6:
+            if force or not self._bm25 or abs(catalog.source_mtime(self.docs_path) - self._bm25_mtime) > 1e-6:
                 self._build_bm25()
             return
         if not force and not self._needs_rebuild():
@@ -202,8 +203,7 @@ class SearchEngine:
 
     def _build(self):
         started = time.time()
-        with open(self.docs_path, "r", encoding="utf-8") as f:
-            docs = json.load(f)
+        docs = catalog.load_documents(self.docs_path)
 
         chunks = chunk_documents(self.docs_path)
         tmp_path = f"{self.db_path}.tmp.{os.getpid()}"
@@ -307,7 +307,7 @@ class SearchEngine:
                 "INSERT INTO index_meta(key, value) VALUES (?, ?)",
                 [
                     ("schema_version", SCHEMA_VERSION),
-                    ("docs_mtime", str(os.path.getmtime(self.docs_path))),
+                    ("docs_mtime", str(catalog.source_mtime(self.docs_path))),
                     ("chunk_count", str(len(chunks))),
                     ("doc_count", str(len(docs))),
                     ("built_at", time.strftime("%Y-%m-%dT%H:%M:%S")),
