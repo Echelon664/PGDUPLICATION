@@ -6,3 +6,6 @@ __pycache__/
 
 # Raw crawler output, for review only
 data/crawl/
+
+# Generated from data/documents.json and data/summaries/ by generate_preview.py
+templates/index.html

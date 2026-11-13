@@ -8,6 +8,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+import catalog
 import county_sync
 from ai_backend import answer_question
 from search_engine import get_engine
@@ -36,6 +37,7 @@ app.add_middleware(
 )
 
 ENGINE = get_engine()
+catalog.ensure_page()
 print(f"[✓] Search engine ready: {ENGINE.stats()}")
 
 

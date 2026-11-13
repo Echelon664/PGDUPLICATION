@@ -17,3 +17,6 @@ data/crawl/
 test_county_sync.py
 test_api.py
 test_pdf_dates.py
+test_summaries.py
+tools/
+templates/index.html
