@@ -139,7 +139,13 @@
       const detail = cnEl('div', 'cn-detail');
       const text = cnEl('div', 'cn-detail-text');
       if (opts && opts.title) {
-        const title = cnEl('h6', 'cn-doc-title', doc.title || doc.id);
+        // The title opens the PDF too, the same as the View PDF button.
+        const title = cnEl('h6', 'cn-doc-title');
+        const link = cnEl('button', 'cn-doc-link', doc.title || doc.id);
+        link.type = 'button';
+        link.title = isSourceMissing(doc) ? 'Open on the County site' : 'View PDF';
+        link.addEventListener('click', () => viewDocPdf(doc.id));
+        title.append(link);
         if (isSourceMissing(doc)) title.append(cnEl('span', 'cn-flag', 'Not bundled'));
         text.append(title);
       }
