@@ -9,18 +9,21 @@ data/documents.json and data/pdfs/:
     not_on_county  remove the entry (only with --remove-stale)
     identical      record the County file ID, direct link and publish date
 
-Text is re-extracted from each new PDF. Summaries of new or replaced documents
-are taken verbatim from the document's own Purpose/Background paragraph, so
-nothing is paraphrased; they are listed at the end for review.
+Text is re-extracted from each new PDF. Summaries live in data/summaries/ and
+are never overwritten here: a replaced PDF marks its summary "stale" and stores
+a draft from the document's own Purpose/Background paragraph beside it, and a
+new document gets that paragraph as a "draft" summary. Review them with
+summaries.py; they are listed at the end.
 
 Usage:
     python3 county_sync.py full                   # fresh report first
     python3 county_apply.py --dry-run             # show what would change
     python3 county_apply.py [--remove-stale]
-    python3 generate_preview.py                   # rebuild the page
+    python3 summaries.py check                    # list summaries to review
     python3 county_sync.py full                   # confirm
 """
 
+import datetime
 import json
 import logging
 import os
@@ -29,13 +32,12 @@ import sys
 import urllib.parse
 from typing import Any, Dict, List, Optional
 
+import catalog
 import county_sync as cs
 import pdf_dates
+from summaries import extractive_summary
 
 SECTION_TEXT_CHARS = 4000
-SUMMARY_CHARS = 420
-_HEADINGS = (r"Background|Purpose|Policy|Procedures?|Program Impacts?|References?|Sunset Date|"
-             r"Approval for Release|Required Action|Impacts?|Forms?|Automation|ACCESS|Quality Control|Summary of Changes")
 
 
 def extract_text(pdf_path: str) -> str:
@@ -45,22 +47,6 @@ def extract_text(pdf_path: str) -> str:
     text = "\n".join((page.extract_text() or "") for page in reader.pages)
     text = re.sub(r"(?<=[a-z])-\n(?=[a-z])", "", text)
     return re.sub(r"\s+", " ", text).strip()
-
-
-def extractive_summary(text: str) -> str:
-    """The document's own Purpose (else Background) paragraph, cut at a sentence end."""
-    for label in ("Purpose", "Background"):
-        match = re.search(rf"\b{label}\s*:\s*(.+?)(?=\s(?:{_HEADINGS})\s*:|$)", text, re.S)
-        if match and len(match.group(1).strip()) >= 40:
-            passage = match.group(1).strip()
-            break
-    else:
-        passage = text
-    if len(passage) <= SUMMARY_CHARS:
-        return passage
-    cut = passage[:SUMMARY_CHARS]
-    end = max(cut.rfind(". "), cut.rfind("; "))
-    return cut[:end + 1].strip() if end > 120 else cut.rsplit(" ", 1)[0] + "…"
 
 
 def safe_filename(title: str, file_id: str) -> str:
@@ -88,6 +74,7 @@ class Applier:
         with open(cs.DOCS_PATH, "r", encoding="utf-8") as f:
             self.docs: List[Dict[str, Any]] = json.load(f)
         self.by_id = {d["id"]: d for d in self.docs}
+        self.summaries = catalog.load_summaries()
         self.stored = cs.hash_stored_files()
         manifest = cs._read_json(cs.MANIFEST_PATH) or {}
         self.manifest: Dict[str, Dict[str, Any]] = manifest.get("files", {})
@@ -124,9 +111,20 @@ class Applier:
             self.log.append(f"NO TEXT for {doc['id']}: {str(exc)[:90]}")
         doc["content"] = text
         doc["sections"] = [{"heading": heading, "text": text[:SECTION_TEXT_CHARS]}]
-        doc["summary"] = extractive_summary(text) if text else "No text could be extracted from this PDF."
         pdf_dates.stamp(doc)
-        self.review.append(f"{doc['id']} | {doc['title']}\n      {doc['summary']}")
+        self.update_summary(doc, extractive_summary(text) if text else "No text could be extracted from this PDF.")
+
+    def update_summary(self, doc: Dict[str, Any], draft: str) -> None:
+        """New document: draft summary. Replaced PDF: keep the summary, mark it stale."""
+        record = self.summaries.get(doc["id"])
+        digest = catalog.pdf_sha256(doc)
+        if record and record.get("summary") and record.get("pdf_sha256") != digest:
+            record.update(status="stale", draft_summary=draft)
+            self.review.append(f"{doc['id']} | {doc['title']} (PDF changed; summary marked stale)\n      draft: {draft}")
+        elif not record or not record.get("summary"):
+            self.summaries[doc["id"]] = {"summary": draft, "status": "draft", "pdf_sha256": digest,
+                                         "updated": datetime.date.today().isoformat()}
+            self.review.append(f"{doc['id']} | {doc['title']} (new; draft summary)\n      {draft}")
 
     @staticmethod
     def stamp(doc: Dict[str, Any], row: Dict[str, Any]) -> None:
@@ -170,7 +168,6 @@ class Applier:
             "official_url": row["county_url"],
             "content": "",
             "sections": [],
-            "summary": "",
             "section_num": section_num,
             "section_title": section_title,
             "category": sibling.get("category", "") if sibling else folder[-1].strip(),
@@ -220,6 +217,7 @@ class Applier:
             doc = self.by_id.pop(row["doc_id"], None)
             if doc:
                 self.docs.remove(doc)
+                self.summaries.pop(doc["id"], None)
                 self.log.append(f"REMOVED {row['doc_id']} {row['doc_title']} (not on the County site)")
 
         if groups.get("mislabelled"):
@@ -230,6 +228,7 @@ class Applier:
             with open(tmp, "w", encoding="utf-8") as f:
                 json.dump(self.docs, f, indent=2)
             os.replace(tmp, cs.DOCS_PATH)
+            catalog.save_summaries(self.summaries)
 
 
 def main() -> int:
@@ -248,7 +247,7 @@ def main() -> int:
         for item in applier.review:
             print("  " + item)
     print("\nDry run: nothing written." if dry_run
-          else "\nDone. Now run: python3 generate_preview.py && python3 county_sync.py full")
+          else "\nDone. Now run: python3 summaries.py check && python3 county_sync.py full")
     return 0
 
 
