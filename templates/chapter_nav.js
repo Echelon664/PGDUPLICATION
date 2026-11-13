@@ -116,27 +116,6 @@
       try { window.history.replaceState(window.history.state, '', url); } catch (err) { /* file:// or sandboxed */ }
     }
 
-    function cnDocLink(doc) {
-      const program = cnProgramOf(doc);
-      const query = program === 'CalFresh' ? '' : '?program=' + encodeURIComponent(program);
-      return window.location.origin + window.location.pathname + query + '#doc=' + encodeURIComponent(doc.id);
-    }
-
-    function cnCopyLink(doc, button) {
-      const link = cnDocLink(doc);
-      const done = () => {
-        const label = button.querySelector('span');
-        const before = label.textContent;
-        label.textContent = 'Link copied';
-        setTimeout(() => { label.textContent = before; }, 1800);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(link).then(done, () => window.prompt('Copy this link', link));
-      } else {
-        window.prompt('Copy this link', link);
-      }
-    }
-
     function cnBuildDetail(doc) {
       const detail = cnEl('div', 'cn-detail');
       const dateLine = docDateLine(doc);
@@ -159,27 +138,13 @@
       actions.append(view);
 
       if (!missing) {
-        const tab = cnEl('a', 'cn-btn');
+        const tab = cnEl('a', 'cn-btn cn-btn-newtab');
         tab.href = docOpenUrl(doc);
         tab.target = '_blank';
         tab.rel = 'noopener';
         tab.append(cnEl('span', '', 'Open in new tab'));
         actions.append(tab);
       }
-      if (doc.official_url && !missing) {
-        const county = cnEl('a', 'cn-btn');
-        county.href = doc.official_url;
-        county.target = '_blank';
-        county.rel = 'noopener';
-        county.append(cnEl('span', '', 'County copy'));
-        actions.append(county);
-      }
-      const copy = cnEl('button', 'cn-btn');
-      copy.type = 'button';
-      copy.append(cnEl('span', '', 'Copy link'));
-      copy.addEventListener('click', () => cnCopyLink(doc, copy));
-      actions.append(copy);
-
       detail.append(actions);
       return detail;
     }

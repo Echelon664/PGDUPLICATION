@@ -796,7 +796,7 @@ __CHAPTER_NAV_CSS__
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'text-xs bg-white/10 hover:bg-white/20 text-blue-100 hover:text-white px-2.5 py-1 rounded-full border border-white/20 transition flex items-center gap-1 cursor-pointer';
-        btn.innerHTML = '<span>💡</span> <span>' + escapeHtml(c.label) + '</span>';
+        btn.innerHTML = '<span>' + escapeHtml(c.label) + '</span>';
         btn.onclick = () => {{
           setSearchQuery(c.query);
           handleSearchMode('search');

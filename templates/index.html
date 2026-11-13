@@ -137,8 +137,10 @@
     .cn-btn { display: inline-flex; align-items: center; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;
       color: #1e293b; font-size: 12.5px; font-weight: 600; cursor: pointer; text-decoration: none; }
     .cn-btn:hover { background: #f1f5f9; border-color: #94a3b8; }
-    .cn-btn-primary { background: #0b2545; border-color: #0b2545; color: #fff; }
-    .cn-btn-primary:hover { background: #13315c; border-color: #13315c; }
+    .cn-btn-primary { background: #047857; border-color: #047857; color: #fff; }
+    .cn-btn-primary:hover { background: #065f46; border-color: #065f46; }
+    .cn-btn-newtab { background: #b91c1c; border-color: #b91c1c; color: #fff; }
+    .cn-btn-newtab:hover { background: #991b1b; border-color: #991b1b; }
     .cn-empty { padding: 20px; text-align: center; color: #64748b; font-size: 13px; }
     .cn-layout button:focus-visible, .cn-layout a:focus-visible, .cn-layout input:focus-visible, .cn-layout select:focus-visible {
       outline: 2px solid #2563eb; outline-offset: 1px; }
@@ -675,7 +677,7 @@
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'text-xs bg-white/10 hover:bg-white/20 text-blue-100 hover:text-white px-2.5 py-1 rounded-full border border-white/20 transition flex items-center gap-1 cursor-pointer';
-        btn.innerHTML = '<span>💡</span> <span>' + escapeHtml(c.label) + '</span>';
+        btn.innerHTML = '<span>' + escapeHtml(c.label) + '</span>';
         btn.onclick = () => {
           setSearchQuery(c.query);
           handleSearchMode('search');
@@ -1365,27 +1367,6 @@
       try { window.history.replaceState(window.history.state, '', url); } catch (err) { /* file:// or sandboxed */ }
     }
 
-    function cnDocLink(doc) {
-      const program = cnProgramOf(doc);
-      const query = program === 'CalFresh' ? '' : '?program=' + encodeURIComponent(program);
-      return window.location.origin + window.location.pathname + query + '#doc=' + encodeURIComponent(doc.id);
-    }
-
-    function cnCopyLink(doc, button) {
-      const link = cnDocLink(doc);
-      const done = () => {
-        const label = button.querySelector('span');
-        const before = label.textContent;
-        label.textContent = 'Link copied';
-        setTimeout(() => { label.textContent = before; }, 1800);
-      };
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(link).then(done, () => window.prompt('Copy this link', link));
-      } else {
-        window.prompt('Copy this link', link);
-      }
-    }
-
     function cnBuildDetail(doc) {
       const detail = cnEl('div', 'cn-detail');
       const dateLine = docDateLine(doc);
@@ -1408,27 +1389,13 @@
       actions.append(view);
 
       if (!missing) {
-        const tab = cnEl('a', 'cn-btn');
+        const tab = cnEl('a', 'cn-btn cn-btn-newtab');
         tab.href = docOpenUrl(doc);
         tab.target = '_blank';
         tab.rel = 'noopener';
         tab.append(cnEl('span', '', 'Open in new tab'));
         actions.append(tab);
       }
-      if (doc.official_url && !missing) {
-        const county = cnEl('a', 'cn-btn');
-        county.href = doc.official_url;
-        county.target = '_blank';
-        county.rel = 'noopener';
-        county.append(cnEl('span', '', 'County copy'));
-        actions.append(county);
-      }
-      const copy = cnEl('button', 'cn-btn');
-      copy.type = 'button';
-      copy.append(cnEl('span', '', 'Copy link'));
-      copy.addEventListener('click', () => cnCopyLink(doc, copy));
-      actions.append(copy);
-
       detail.append(actions);
       return detail;
     }

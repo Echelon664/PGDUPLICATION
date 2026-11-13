@@ -52,8 +52,10 @@
     .cn-btn { display: inline-flex; align-items: center; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;
       color: #1e293b; font-size: 12.5px; font-weight: 600; cursor: pointer; text-decoration: none; }
     .cn-btn:hover { background: #f1f5f9; border-color: #94a3b8; }
-    .cn-btn-primary { background: #0b2545; border-color: #0b2545; color: #fff; }
-    .cn-btn-primary:hover { background: #13315c; border-color: #13315c; }
+    .cn-btn-primary { background: #047857; border-color: #047857; color: #fff; }
+    .cn-btn-primary:hover { background: #065f46; border-color: #065f46; }
+    .cn-btn-newtab { background: #b91c1c; border-color: #b91c1c; color: #fff; }
+    .cn-btn-newtab:hover { background: #991b1b; border-color: #991b1b; }
     .cn-empty { padding: 20px; text-align: center; color: #64748b; font-size: 13px; }
     .cn-layout button:focus-visible, .cn-layout a:focus-visible, .cn-layout input:focus-visible, .cn-layout select:focus-visible {
       outline: 2px solid #2563eb; outline-offset: 1px; }
