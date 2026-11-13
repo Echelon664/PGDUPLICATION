@@ -1,0 +1,84 @@
+    /* Chapter browser (see templates/chapter_nav.js). Inlined by generate_preview.py. */
+    .cn-layout { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 20px; align-items: start; }
+    .cn-rail { position: sticky; top: 12px; max-height: calc(100vh - 24px); display: flex; flex-direction: column; gap: 8px;
+      border: 1px solid #e2e8f0; border-radius: 12px; padding: 10px; background: #f8fafc; }
+    .cn-filter { width: 100%; padding: 7px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 13px; background: #fff; color: #0f172a; }
+    .cn-rail-list { overflow-y: auto; display: flex; flex-direction: column; gap: 1px; min-height: 0; }
+    .cn-rail-item { display: flex; align-items: baseline; gap: 6px; width: 100%; text-align: left; padding: 5px 8px; border: 0; border-radius: 6px;
+      background: transparent; font-size: 12.5px; line-height: 1.35; color: #334155; cursor: pointer; }
+    .cn-rail-item:hover { background: #e2e8f0; }
+    .cn-rail-item.is-open { color: #0f172a; font-weight: 600; }
+    .cn-rail-item.is-current { background: #dbeafe; color: #1e3a8a; }
+    .cn-rail-code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; color: #64748b; white-space: nowrap; }
+    .cn-rail-name { flex: 1; min-width: 0; }
+    .cn-rail-count { font-size: 11px; color: #94a3b8; }
+    .cn-collapse { align-self: flex-start; border: 0; background: transparent; color: #475569; font-size: 12px; font-weight: 600; padding: 4px 8px;
+      border-radius: 6px; cursor: pointer; }
+    .cn-collapse:hover { background: #e2e8f0; }
+    .cn-program-heading { font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #64748b; padding: 10px 8px 4px; }
+    .cn-program-title { padding: 18px 0 6px; font-size: 13px; color: #0f172a; margin: 0; }
+    .cn-main { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+    .cn-jump { display: none; width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 10px; font-size: 14px; background: #fff;
+      color: #0f172a; margin-bottom: 6px; }
+
+    .cn-chapter { border: 1px solid #e2e8f0; border-radius: 10px; background: #fff; scroll-margin-top: 8px; }
+    .cn-chapter.is-open { border-color: #cbd5e1; }
+    .cn-head-wrap { margin: 0; font: inherit; }
+    .cn-chapter.is-open > .cn-head-wrap { position: sticky; top: 0; z-index: 5; }
+    .cn-head { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 10px 12px; border: 0; background: #fff;
+      border-radius: 10px; cursor: pointer; color: #0f172a; font-size: 14px; }
+    .cn-head:hover { background: #f8fafc; }
+    .cn-chapter.is-open > .cn-head-wrap > .cn-head { background: #f1f5f9; border-radius: 10px 10px 0 0; border-bottom: 1px solid #e2e8f0; }
+    .cn-chevron { width: 16px; height: 16px; flex: none; color: #94a3b8; transition: transform .15s ease; }
+    [aria-expanded="true"] > .cn-chevron { transform: rotate(90deg); color: #475569; }
+    .cn-code { flex: none; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; font-weight: 700; padding: 2px 8px;
+      border-radius: 6px; color: #fff; background: #475569; white-space: nowrap; }
+    [data-program="CalFresh"] .cn-code { background: #047857; }
+    [data-program="CalWORKs"] .cn-code { background: #7e22ce; }
+    [data-program="Medi-Cal"] .cn-code { background: #0f766e; }
+    .cn-code.cn-code-notices { background: #b45309; font-family: inherit; }
+    .cn-head-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+    .cn-head-name { font-weight: 700; line-height: 1.3; }
+    .cn-head-desc { font-size: 12px; color: #64748b; line-height: 1.35; }
+    .cn-count { flex: none; font-size: 12px; color: #64748b; white-space: nowrap; }
+
+    .cn-year { padding: 8px 12px 4px 38px; font-size: 12px; font-weight: 700; color: #92400e; background: #fffbeb; border-top: 1px solid #f1f5f9; }
+    .cn-doc { border-top: 1px solid #f1f5f9; }
+    .cn-body > .cn-doc:first-child { border-top: 0; }
+    .cn-doc { scroll-margin-top: 56px; }
+    .cn-row { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 9px 12px; border: 0; background: transparent;
+      cursor: pointer; font-size: 13.5px; color: #1e293b; }
+    .cn-row:hover { background: #f8fafc; }
+    .cn-doc.is-open > .cn-row { background: #f8fafc; font-weight: 600; }
+    .cn-row-title { flex: 1; min-width: 0; line-height: 1.35; }
+    .cn-row-date { flex: none; font-size: 12px; color: #64748b; white-space: nowrap; font-weight: 400; }
+    .cn-flag { flex: none; font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 999px; background: #fef3c7; color: #92400e; }
+    .cn-detail { padding: 4px 12px 14px 38px; background: #f8fafc; }
+    .cn-detail-solo { padding-top: 12px; border-radius: 0 0 10px 10px; }
+    .cn-meta { margin: 0 0 6px; font-size: 12px; color: #475569; }
+    .cn-meta strong { color: #065f46; font-weight: 700; }
+    .cn-summary { margin: 0 0 10px; font-size: 13.5px; line-height: 1.6; color: #334155; max-width: 72ch; }
+    .cn-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cn-btn { display: inline-flex; align-items: center; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff;
+      color: #1e293b; font-size: 12.5px; font-weight: 600; cursor: pointer; text-decoration: none; }
+    .cn-btn:hover { background: #f1f5f9; border-color: #94a3b8; }
+    .cn-btn-primary { background: #0b2545; border-color: #0b2545; color: #fff; }
+    .cn-btn-primary:hover { background: #13315c; border-color: #13315c; }
+    .cn-empty { padding: 20px; text-align: center; color: #64748b; font-size: 13px; }
+    .cn-layout button:focus-visible, .cn-layout a:focus-visible, .cn-layout input:focus-visible, .cn-layout select:focus-visible {
+      outline: 2px solid #2563eb; outline-offset: 1px; }
+
+    @media (max-width: 899px) {
+      .cn-layout { grid-template-columns: minmax(0, 1fr); }
+      .cn-rail { display: none; }
+      .cn-jump { display: block; }
+      .cn-head { align-items: flex-start; flex-wrap: wrap; }
+      .cn-head-text { flex-basis: calc(100% - 110px); }
+      .cn-head-desc { display: none; }
+      .cn-row { align-items: flex-start; flex-wrap: wrap; row-gap: 2px; }
+      .cn-row-title { flex-basis: calc(100% - 30px); }
+      .cn-row-date { margin-left: 26px; }
+      .cn-detail { padding-left: 12px; }
+      .cn-year { padding-left: 12px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .cn-chevron { transition: none; } }

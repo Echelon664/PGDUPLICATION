@@ -24,7 +24,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "282455"
+    "county_file_id": "282455",
+    "pdf_date": "2023-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-002",
@@ -51,7 +53,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "282452"
+    "county_file_id": "282452",
+    "pdf_date": "2022-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-003",
@@ -78,7 +82,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "282450"
+    "county_file_id": "282450",
+    "pdf_date": "2020-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-004",
@@ -105,7 +111,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "282447"
+    "county_file_id": "282447",
+    "pdf_date": "2019-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-005",
@@ -132,7 +140,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "36044955"
+    "county_file_id": "36044955",
+    "pdf_date": "2024-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-006",
@@ -159,7 +169,9 @@
     "category_desc": "CalFresh eligibility standards tables, income thresholds, and reference definitions",
     "category_id": "cf-63-1100",
     "order": 22,
-    "county_file_id": "42010833"
+    "county_file_id": "42010833",
+    "pdf_date": "2026-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-007",
@@ -186,7 +198,9 @@
     "category_desc": "CalFresh eligibility standards tables, income thresholds, and reference definitions",
     "category_id": "cf-63-1100",
     "order": 22,
-    "county_file_id": "282396"
+    "county_file_id": "282396",
+    "pdf_date": "2022-06-06",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-008",
@@ -213,7 +227,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "282453"
+    "county_file_id": "282453",
+    "pdf_date": "2023-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-009",
@@ -240,7 +256,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "282448"
+    "county_file_id": "282448",
+    "pdf_date": "2020-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-010",
@@ -267,7 +285,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "282446"
+    "county_file_id": "282446",
+    "pdf_date": "2021-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-011",
@@ -294,7 +314,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "41832992"
+    "county_file_id": "41832992",
+    "pdf_date": "2026-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-012",
@@ -321,7 +343,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "282445"
+    "county_file_id": "282445",
+    "pdf_date": "2019-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-013",
@@ -348,7 +372,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "40166007"
+    "county_file_id": "40166007",
+    "pdf_date": "2025-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-015",
@@ -375,7 +401,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "2179592"
+    "county_file_id": "2179592",
+    "pdf_date": "2023-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-016",
@@ -402,7 +430,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "7588231"
+    "county_file_id": "7588231",
+    "pdf_date": "2024-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-018",
@@ -429,7 +459,9 @@
     "category_desc": "Household concept, application filing, expedited service, interviews, and verification",
     "category_id": "cf-63-100",
     "order": 1,
-    "county_file_id": "282451"
+    "county_file_id": "282451",
+    "pdf_date": "2022-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-019",
@@ -456,7 +488,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "40490508"
+    "county_file_id": "40490508",
+    "pdf_date": "2025-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-020",
@@ -483,7 +517,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "282429"
+    "county_file_id": "282429",
+    "pdf_date": "2020-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-021",
@@ -510,7 +546,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "41473882"
+    "county_file_id": "41473882",
+    "pdf_date": "2026-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-022",
@@ -537,7 +575,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "41473884"
+    "county_file_id": "41473884",
+    "pdf_date": "2026-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-023",
@@ -564,7 +604,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "41691635"
+    "county_file_id": "41691635",
+    "pdf_date": "2026-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-024",
@@ -591,7 +633,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "39868109"
+    "county_file_id": "39868109",
+    "pdf_date": "2025-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-025",
@@ -618,7 +662,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "7135238"
+    "county_file_id": "7135238",
+    "pdf_date": "2024-05-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-026",
@@ -645,7 +691,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "12999108"
+    "county_file_id": "12999108",
+    "pdf_date": "2024-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-027",
@@ -672,7 +720,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "41691512"
+    "county_file_id": "41691512",
+    "pdf_date": "2026-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-028",
@@ -699,7 +749,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "282425"
+    "county_file_id": "282425",
+    "pdf_date": "2020-01-24",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-029",
@@ -726,7 +778,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "282431"
+    "county_file_id": "282431",
+    "pdf_date": "2022-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-031",
@@ -753,7 +807,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "40130299"
+    "county_file_id": "40130299",
+    "pdf_date": "2025-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-032",
@@ -780,7 +836,9 @@
     "category_desc": "Identity, residency, citizenship, non-citizen status, CFAP, student rules, and work quit",
     "category_id": "cf-63-150",
     "order": 2,
-    "county_file_id": "40738572"
+    "county_file_id": "40738572",
+    "pdf_date": "2025-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-033",
@@ -807,7 +865,9 @@
     "category_desc": "Resource eligibility determination, liquid assets, and excluded resources",
     "category_id": "cf-63-200",
     "order": 3,
-    "county_file_id": "41945058"
+    "county_file_id": "41945058",
+    "pdf_date": "2026-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-034",
@@ -834,7 +894,9 @@
     "category_desc": "Resource eligibility determination, liquid assets, and excluded resources",
     "category_id": "cf-63-200",
     "order": 3,
-    "county_file_id": "41945068"
+    "county_file_id": "41945068",
+    "pdf_date": "2026-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-035",
@@ -861,7 +923,9 @@
     "category_desc": "Earned income, unearned income, income exclusions, and self-employment",
     "category_id": "cf-63-220",
     "order": 4,
-    "county_file_id": "282512"
+    "county_file_id": "282512",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-036",
@@ -888,7 +952,9 @@
     "category_desc": "Earned income, unearned income, income exclusions, and self-employment",
     "category_id": "cf-63-220",
     "order": 4,
-    "county_file_id": "282513"
+    "county_file_id": "282513",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-038",
@@ -915,7 +981,9 @@
     "category_desc": "Earned income, unearned income, income exclusions, and self-employment",
     "category_id": "cf-63-220",
     "order": 4,
-    "county_file_id": "282511"
+    "county_file_id": "282511",
+    "pdf_date": "2022-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-039",
@@ -942,7 +1010,9 @@
     "category_desc": "Earned income, unearned income, income exclusions, and self-employment",
     "category_id": "cf-63-220",
     "order": 4,
-    "county_file_id": "282514"
+    "county_file_id": "282514",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-040",
@@ -969,7 +1039,9 @@
     "category_desc": "Standard deduction, earned income deduction, excess medical, dependent care, and shelter costs",
     "category_id": "cf-63-230",
     "order": 5,
-    "county_file_id": "282459"
+    "county_file_id": "282459",
+    "pdf_date": "2023-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-041",
@@ -996,7 +1068,9 @@
     "category_desc": "Standard deduction, earned income deduction, excess medical, dependent care, and shelter costs",
     "category_id": "cf-63-230",
     "order": 5,
-    "county_file_id": "36044943"
+    "county_file_id": "36044943",
+    "pdf_date": "2024-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-042",
@@ -1023,7 +1097,9 @@
     "category_desc": "Standard deduction, earned income deduction, excess medical, dependent care, and shelter costs",
     "category_id": "cf-63-230",
     "order": 5,
-    "county_file_id": "282458"
+    "county_file_id": "282458",
+    "pdf_date": "2023-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-043",
@@ -1050,7 +1126,9 @@
     "category_desc": "Standard deduction, earned income deduction, excess medical, dependent care, and shelter costs",
     "category_id": "cf-63-230",
     "order": 5,
-    "county_file_id": "41263620"
+    "county_file_id": "41263620",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-044",
@@ -1077,7 +1155,9 @@
     "category_desc": "Standard deduction, earned income deduction, excess medical, dependent care, and shelter costs",
     "category_id": "cf-63-230",
     "order": 5,
-    "county_file_id": "41263678"
+    "county_file_id": "41263678",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-045",
@@ -1104,7 +1184,9 @@
     "category_desc": "Substantial lottery or gambling winnings and specialized eligibility",
     "category_id": "cf-63-240",
     "order": 6,
-    "county_file_id": "282461"
+    "county_file_id": "282461",
+    "pdf_date": "2022-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-046",
@@ -1131,7 +1213,9 @@
     "category_desc": "Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables",
     "category_id": "cf-63-250",
     "order": 7,
-    "county_file_id": "7176285"
+    "county_file_id": "7176285",
+    "pdf_date": "2024-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-047",
@@ -1158,7 +1242,9 @@
     "category_desc": "Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables",
     "category_id": "cf-63-250",
     "order": 7,
-    "county_file_id": "282400"
+    "county_file_id": "282400",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-048",
@@ -1185,7 +1271,9 @@
     "category_desc": "Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables",
     "category_id": "cf-63-250",
     "order": 7,
-    "county_file_id": "7176133"
+    "county_file_id": "7176133",
+    "pdf_date": "2024-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-049",
@@ -1212,7 +1300,9 @@
     "category_desc": "Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables",
     "category_id": "cf-63-250",
     "order": 7,
-    "county_file_id": "7176123"
+    "county_file_id": "7176123",
+    "pdf_date": "2024-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-050",
@@ -1239,7 +1329,9 @@
     "category_desc": "Semi-Annual Reporting (SAR), SAR cycle, and mandatory SAR 7 report processing",
     "category_id": "cf-63-270",
     "order": 8,
-    "county_file_id": "282393"
+    "county_file_id": "282393",
+    "pdf_date": "2021-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-051",
@@ -1266,7 +1358,9 @@
     "category_desc": "Semi-Annual Reporting (SAR), SAR cycle, and mandatory SAR 7 report processing",
     "category_id": "cf-63-270",
     "order": 8,
-    "county_file_id": "282395"
+    "county_file_id": "282395",
+    "pdf_date": "2022-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-052",
@@ -1293,7 +1387,9 @@
     "category_desc": "Semi-Annual Reporting (SAR), SAR cycle, and mandatory SAR 7 report processing",
     "category_id": "cf-63-270",
     "order": 8,
-    "county_file_id": "282394"
+    "county_file_id": "282394",
+    "pdf_date": "2021-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-053",
@@ -1320,7 +1416,9 @@
     "category_desc": "Voluntary and mandatory mid-period changes, IRT reporting, overissuances, and underissuances",
     "category_id": "cf-63-280",
     "order": 9,
-    "county_file_id": "41944678"
+    "county_file_id": "41944678",
+    "pdf_date": "2026-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-054",
@@ -1347,7 +1445,9 @@
     "category_desc": "Voluntary and mandatory mid-period changes, IRT reporting, overissuances, and underissuances",
     "category_id": "cf-63-280",
     "order": 9,
-    "county_file_id": "282533"
+    "county_file_id": "282533",
+    "pdf_date": "2014-07-09",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-055",
@@ -1374,7 +1474,9 @@
     "category_desc": "Certification periods, household classification, Notices of Action (NOA), and recertification",
     "category_id": "cf-63-300",
     "order": 10,
-    "county_file_id": "282463"
+    "county_file_id": "282463",
+    "pdf_date": "2021-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-056",
@@ -1401,7 +1503,9 @@
     "category_desc": "Certification periods, household classification, Notices of Action (NOA), and recertification",
     "category_id": "cf-63-300",
     "order": 10,
-    "county_file_id": "282464"
+    "county_file_id": "282464",
+    "pdf_date": "2021-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-057",
@@ -1428,7 +1532,9 @@
     "category_desc": "Certification periods, household classification, Notices of Action (NOA), and recertification",
     "category_id": "cf-63-300",
     "order": 10,
-    "county_file_id": "282465"
+    "county_file_id": "282465",
+    "pdf_date": "2021-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-058",
@@ -1455,7 +1561,9 @@
     "category_desc": "Certification periods, household classification, Notices of Action (NOA), and recertification",
     "category_id": "cf-63-300",
     "order": 10,
-    "county_file_id": "7603230"
+    "county_file_id": "7603230",
+    "pdf_date": "2024-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-059",
@@ -1482,7 +1590,9 @@
     "category_desc": "Certification periods, household classification, Notices of Action (NOA), and recertification",
     "category_id": "cf-63-300",
     "order": 10,
-    "county_file_id": "7587228"
+    "county_file_id": "7587228",
+    "pdf_date": "2024-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-061",
@@ -1509,7 +1619,9 @@
     "category_desc": "Transitional CalFresh (TCF) benefits following CalWORKs cash aid discontinuance",
     "category_id": "cf-63-320",
     "order": 11,
-    "county_file_id": "282515"
+    "county_file_id": "282515",
+    "pdf_date": "2023-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-062",
@@ -1536,7 +1648,9 @@
     "category_desc": "SSI/SSP expansion, Supplemental Nutrition Benefit (SNB), and Transitional Nutrition Benefit (TNB)",
     "category_id": "cf-63-330",
     "order": 12,
-    "county_file_id": "282536"
+    "county_file_id": "282536",
+    "pdf_date": "2019-06-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-064",
@@ -1563,7 +1677,9 @@
     "category_desc": "SSI/SSP expansion, Supplemental Nutrition Benefit (SNB), and Transitional Nutrition Benefit (TNB)",
     "category_id": "cf-63-330",
     "order": 12,
-    "county_file_id": "282537"
+    "county_file_id": "282537",
+    "pdf_date": "2019-06-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-066",
@@ -1590,7 +1706,9 @@
     "category_desc": "SSI/SSP expansion, Supplemental Nutrition Benefit (SNB), and Transitional Nutrition Benefit (TNB)",
     "category_id": "cf-63-330",
     "order": 12,
-    "county_file_id": "282539"
+    "county_file_id": "282539",
+    "pdf_date": "2022-01-04",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-068",
@@ -1617,7 +1735,9 @@
     "category_desc": "SSI/SSP expansion, Supplemental Nutrition Benefit (SNB), and Transitional Nutrition Benefit (TNB)",
     "category_id": "cf-63-330",
     "order": 12,
-    "county_file_id": "40034712"
+    "county_file_id": "40034712",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-069",
@@ -1644,7 +1764,9 @@
     "category_desc": "Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers",
     "category_id": "cf-63-350",
     "order": 13,
-    "county_file_id": "282522"
+    "county_file_id": "282522",
+    "pdf_date": "2013-02-14",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-070",
@@ -1671,7 +1793,9 @@
     "category_desc": "Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers",
     "category_id": "cf-63-350",
     "order": 13,
-    "county_file_id": "282520"
+    "county_file_id": "282520",
+    "pdf_date": "2013-03-05",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-071",
@@ -1698,7 +1822,9 @@
     "category_desc": "Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers",
     "category_id": "cf-63-350",
     "order": 13,
-    "county_file_id": "282405"
+    "county_file_id": "282405",
+    "pdf_date": "2021-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-073",
@@ -1725,7 +1851,9 @@
     "category_desc": "Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers",
     "category_id": "cf-63-350",
     "order": 13,
-    "county_file_id": "282406"
+    "county_file_id": "282406",
+    "pdf_date": "2021-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-075",
@@ -1752,7 +1880,9 @@
     "category_desc": "Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers",
     "category_id": "cf-63-350",
     "order": 13,
-    "county_file_id": "282530"
+    "county_file_id": "282530",
+    "pdf_date": "2013-01-10",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-076",
@@ -1779,7 +1909,9 @@
     "category_desc": "Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers",
     "category_id": "cf-63-350",
     "order": 13,
-    "county_file_id": "282523"
+    "county_file_id": "282523",
+    "pdf_date": "2014-03-03",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-077",
@@ -1806,7 +1938,9 @@
     "category_desc": "Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers",
     "category_id": "cf-63-350",
     "order": 13,
-    "county_file_id": "282524"
+    "county_file_id": "282524",
+    "pdf_date": "2014-03-03",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-078",
@@ -1833,7 +1967,9 @@
     "category_desc": "Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers",
     "category_id": "cf-63-350",
     "order": 13,
-    "county_file_id": "282531"
+    "county_file_id": "282531",
+    "pdf_date": "2013-01-10",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-079",
@@ -1860,7 +1996,9 @@
     "category_desc": "Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers",
     "category_id": "cf-63-350",
     "order": 13,
-    "county_file_id": "282407"
+    "county_file_id": "282407",
+    "pdf_date": "2023-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-080",
@@ -1887,7 +2025,9 @@
     "category_desc": "ESAP streamlined certification and 36-month certification periods for elderly/disabled units",
     "category_id": "cf-63-360",
     "order": 14,
-    "county_file_id": "40941229"
+    "county_file_id": "40941229",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-081",
@@ -1914,7 +2054,9 @@
     "category_desc": "Minimum Nutrition Benefit state pilot program guidelines and supplemental allotments",
     "category_id": "cf-63-370",
     "order": 15,
-    "county_file_id": "41240749"
+    "county_file_id": "41240749",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-082",
@@ -1941,7 +2083,9 @@
     "category_desc": "Authorized restaurant meals, communal dining, and prepared meal purchases for eligible households",
     "category_id": "cf-63-380",
     "order": 16,
-    "county_file_id": "40941559"
+    "county_file_id": "40941559",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-083",
@@ -1968,7 +2112,9 @@
     "category_desc": "WINS monthly food supplement for working families receiving CalFresh",
     "category_id": "cf-63-420",
     "order": 17,
-    "county_file_id": "40941499"
+    "county_file_id": "40941499",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-084",
@@ -1995,7 +2141,9 @@
     "category_desc": "Establishment of claims, non-fraud, Intentional Program Violation (IPV), and claim recoupment",
     "category_id": "cf-63-450",
     "order": 18,
-    "county_file_id": "282472"
+    "county_file_id": "282472",
+    "pdf_date": "2022-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-085",
@@ -2022,7 +2170,9 @@
     "category_desc": "Establishment of claims, non-fraud, Intentional Program Violation (IPV), and claim recoupment",
     "category_id": "cf-63-450",
     "order": 18,
-    "county_file_id": "282467"
+    "county_file_id": "282467",
+    "pdf_date": "2019-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-086",
@@ -2049,7 +2199,9 @@
     "category_desc": "Establishment of claims, non-fraud, Intentional Program Violation (IPV), and claim recoupment",
     "category_id": "cf-63-450",
     "order": 18,
-    "county_file_id": "9389283"
+    "county_file_id": "9389283",
+    "pdf_date": "2024-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-087",
@@ -2076,7 +2228,9 @@
     "category_desc": "Establishment of claims, non-fraud, Intentional Program Violation (IPV), and claim recoupment",
     "category_id": "cf-63-450",
     "order": 18,
-    "county_file_id": "610558"
+    "county_file_id": "610558",
+    "pdf_date": "2024-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-088",
@@ -2103,7 +2257,9 @@
     "category_desc": "Establishment of claims, non-fraud, Intentional Program Violation (IPV), and claim recoupment",
     "category_id": "cf-63-450",
     "order": 18,
-    "county_file_id": "282470"
+    "county_file_id": "282470",
+    "pdf_date": "2020-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-089",
@@ -2130,7 +2286,9 @@
     "category_desc": "Establishment of claims, non-fraud, Intentional Program Violation (IPV), and claim recoupment",
     "category_id": "cf-63-450",
     "order": 18,
-    "county_file_id": "282469"
+    "county_file_id": "282469",
+    "pdf_date": "2020-03-02",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-090",
@@ -2157,7 +2315,9 @@
     "category_desc": "Disaster CalFresh (D-CalFresh) operations and food replacement for household misfortune",
     "category_id": "cf-63-500",
     "order": 19,
-    "county_file_id": "7600994"
+    "county_file_id": "7600994",
+    "pdf_date": "2024-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-091",
@@ -2184,7 +2344,9 @@
     "category_desc": "Disaster CalFresh (D-CalFresh) operations and food replacement for household misfortune",
     "category_id": "cf-63-500",
     "order": 19,
-    "county_file_id": "1462358"
+    "county_file_id": "1462358",
+    "pdf_date": "2024-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-092",
@@ -2211,7 +2373,9 @@
     "category_desc": "Official County eligibility clarification questions and administrative answers",
     "category_id": "cf-63-600",
     "order": 20,
-    "county_file_id": "282435"
+    "county_file_id": "282435",
+    "pdf_date": "2011-08-30",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-093",
@@ -2238,7 +2402,9 @@
     "category_desc": "Official County eligibility clarification questions and administrative answers",
     "category_id": "cf-63-600",
     "order": 20,
-    "county_file_id": "282526"
+    "county_file_id": "282526",
+    "pdf_date": "2012-12-24",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-094",
@@ -2265,7 +2431,9 @@
     "category_desc": "Official County eligibility clarification questions and administrative answers",
     "category_id": "cf-63-600",
     "order": 20,
-    "county_file_id": "282528"
+    "county_file_id": "282528",
+    "pdf_date": "2013-07-02",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-095",
@@ -2292,7 +2460,9 @@
     "category_desc": "Official County eligibility clarification questions and administrative answers",
     "category_id": "cf-63-600",
     "order": 20,
-    "county_file_id": "282434"
+    "county_file_id": "282434",
+    "pdf_date": "2011-08-30",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-096",
@@ -2319,7 +2489,9 @@
     "category_desc": "Official County eligibility clarification questions and administrative answers",
     "category_id": "cf-63-600",
     "order": 20,
-    "county_file_id": "282527"
+    "county_file_id": "282527",
+    "pdf_date": "2012-02-02",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-097",
@@ -2346,7 +2518,9 @@
     "category_desc": "Official County eligibility clarification questions and administrative answers",
     "category_id": "cf-63-600",
     "order": 20,
-    "county_file_id": "282529"
+    "county_file_id": "282529",
+    "pdf_date": "2012-12-24",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-098",
@@ -2373,7 +2547,9 @@
     "category_desc": "Official County eligibility clarification questions and administrative answers",
     "category_id": "cf-63-600",
     "order": 20,
-    "county_file_id": "282525"
+    "county_file_id": "282525",
+    "pdf_date": "2014-08-04",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-099",
@@ -2400,7 +2576,9 @@
     "category_desc": "General work registration, CFET employment & training, and ABAWD work requirements",
     "category_id": "cf-63-900",
     "order": 21,
-    "county_file_id": "41179552"
+    "county_file_id": "41179552",
+    "pdf_date": "2025-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-100",
@@ -2427,7 +2605,9 @@
     "category_desc": "General work registration, CFET employment & training, and ABAWD work requirements",
     "category_id": "cf-63-900",
     "order": 21,
-    "county_file_id": "282474"
+    "county_file_id": "282474",
+    "pdf_date": "2017-06-12",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-101",
@@ -2454,7 +2634,9 @@
     "category_desc": "General work registration, CFET employment & training, and ABAWD work requirements",
     "category_id": "cf-63-900",
     "order": 21,
-    "county_file_id": "282478"
+    "county_file_id": "282478",
+    "pdf_date": "2023-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-103",
@@ -2481,7 +2663,9 @@
     "category_desc": "General work registration, CFET employment & training, and ABAWD work requirements",
     "category_id": "cf-63-900",
     "order": 21,
-    "county_file_id": "41663117"
+    "county_file_id": "41663117",
+    "pdf_date": "2026-06-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-104",
@@ -2508,7 +2692,9 @@
     "category_desc": "General work registration, CFET employment & training, and ABAWD work requirements",
     "category_id": "cf-63-900",
     "order": 21,
-    "county_file_id": "282475"
+    "county_file_id": "282475",
+    "pdf_date": "2020-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cf-107",
@@ -2535,7 +2721,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "category_id": "cf-sn",
     "order": 99,
-    "county_file_id": "282479"
+    "county_file_id": "282479",
+    "pdf_date": "2018-02-05",
+    "pdf_date_label": "Issue date"
   },
   {
     "id": "cf-109",
@@ -2562,7 +2750,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "category_id": "cf-sn",
     "order": 99,
-    "county_file_id": "282483"
+    "county_file_id": "282483",
+    "pdf_date": "2020-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-111",
@@ -2589,7 +2779,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "category_id": "cf-sn",
     "order": 99,
-    "county_file_id": "282484"
+    "county_file_id": "282484",
+    "pdf_date": "2020-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-112",
@@ -2616,7 +2808,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "category_id": "cf-sn",
     "order": 99,
-    "county_file_id": "282485"
+    "county_file_id": "282485",
+    "pdf_date": "2021-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-119",
@@ -2643,7 +2837,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "category_id": "cf-sn",
     "order": 99,
-    "county_file_id": "282498"
+    "county_file_id": "282498",
+    "pdf_date": "2022-03-01",
+    "pdf_date_label": "Issue date"
   },
   {
     "id": "cf-122",
@@ -2670,7 +2866,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "category_id": "cf-sn",
     "order": 99,
-    "county_file_id": "282497"
+    "county_file_id": "282497",
+    "pdf_date": "2022-02-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-123",
@@ -2697,7 +2895,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282499"
+    "county_file_id": "282499",
+    "pdf_date": "2022-07-22",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-124",
@@ -2724,7 +2924,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282501"
+    "county_file_id": "282501",
+    "pdf_date": "2022-09-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-125",
@@ -2751,7 +2953,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282502"
+    "county_file_id": "282502",
+    "pdf_date": "2022-11-18",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cf-126",
@@ -2778,7 +2982,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282500"
+    "county_file_id": "282500",
+    "pdf_date": "2022-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-127",
@@ -2805,7 +3011,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282503"
+    "county_file_id": "282503",
+    "pdf_date": "2023-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-128",
@@ -2832,7 +3040,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282504"
+    "county_file_id": "282504",
+    "pdf_date": "2023-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-129",
@@ -2859,7 +3069,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282505"
+    "county_file_id": "282505",
+    "pdf_date": "2023-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-130",
@@ -2886,7 +3098,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282506"
+    "county_file_id": "282506",
+    "pdf_date": "2023-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-131",
@@ -2913,7 +3127,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282507"
+    "county_file_id": "282507",
+    "pdf_date": "2023-02-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-132",
@@ -2940,7 +3156,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282508"
+    "county_file_id": "282508",
+    "pdf_date": "2023-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-133",
@@ -2967,7 +3185,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282509"
+    "county_file_id": "282509",
+    "pdf_date": "2024-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-134",
@@ -2994,7 +3214,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "282810"
+    "county_file_id": "282810",
+    "pdf_date": "2024-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-135",
@@ -3021,7 +3243,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "436357"
+    "county_file_id": "436357",
+    "pdf_date": "2024-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-136",
@@ -3048,7 +3272,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "1208354"
+    "county_file_id": "1208354",
+    "pdf_date": "2024-02-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-137",
@@ -3075,7 +3301,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "27870165"
+    "county_file_id": "27870165",
+    "pdf_date": "2024-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-138",
@@ -3102,7 +3330,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "38492278"
+    "county_file_id": "38492278",
+    "pdf_date": "2025-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-139",
@@ -3129,7 +3359,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "39747204"
+    "county_file_id": "39747204",
+    "pdf_date": "2025-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-140",
@@ -3156,7 +3388,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "39928581"
+    "county_file_id": "39928581",
+    "pdf_date": "2025-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-141",
@@ -3183,7 +3417,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "40938808"
+    "county_file_id": "40938808",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-142",
@@ -3210,7 +3446,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "41195989"
+    "county_file_id": "41195989",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-143",
@@ -3237,7 +3475,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "41192279"
+    "county_file_id": "41192279",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-144",
@@ -3264,7 +3504,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "41359619"
+    "county_file_id": "41359619",
+    "pdf_date": "2026-02-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-145",
@@ -3291,7 +3533,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "41459432"
+    "county_file_id": "41459432",
+    "pdf_date": "2026-03-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cf-146",
@@ -3318,7 +3562,9 @@
     "category_desc": "County policy bulletins, COLA adjustments, emergency directives, and annual adjustments",
     "order": 99,
     "category_id": "cf-sn",
-    "county_file_id": "42023785"
+    "county_file_id": "42023785",
+    "pdf_date": "2026-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-123",
@@ -3344,7 +3590,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "282124"
+    "county_file_id": "282124",
+    "pdf_date": "2021-02-12",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-124",
@@ -3370,7 +3618,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "282125"
+    "county_file_id": "282125",
+    "pdf_date": "2021-07-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-125",
@@ -3396,7 +3646,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "282126"
+    "county_file_id": "282126",
+    "pdf_date": "2021-09-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-126",
@@ -3422,7 +3674,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "282127"
+    "county_file_id": "282127",
+    "pdf_date": "2021-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-127",
@@ -3448,7 +3702,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "282128"
+    "county_file_id": "282128",
+    "pdf_date": "2022-05-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-128",
@@ -3474,7 +3730,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "40949627"
+    "county_file_id": "40949627",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-129",
@@ -3500,7 +3758,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "41196009"
+    "county_file_id": "41196009",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-130",
@@ -3526,7 +3786,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "41192323"
+    "county_file_id": "41192323",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-131",
@@ -3552,7 +3814,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "41440847"
+    "county_file_id": "41440847",
+    "pdf_date": "2026-03-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-132",
@@ -3578,7 +3842,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "42008536"
+    "county_file_id": "42008536",
+    "pdf_date": "2026-07-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-133",
@@ -3604,7 +3870,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "41921759"
+    "county_file_id": "41921759",
+    "pdf_date": "2026-08-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-134",
@@ -3630,7 +3898,9 @@
     "category": "Special Notices & Policy Bulletins",
     "category_desc": "County Policy Bulletins, COLA notices, emergency directives, and annual adjustments",
     "order": 99,
-    "county_file_id": "42014822"
+    "county_file_id": "42014822",
+    "pdf_date": "2026-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-135",
@@ -3656,7 +3926,9 @@
     "category": "10-001 Background",
     "category_desc": "CalWORKs and Employment Services overview and legal authority",
     "order": 1,
-    "county_file_id": "282153"
+    "county_file_id": "282153",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-136",
@@ -3682,7 +3954,9 @@
     "category": "10-002 Federal Work Participation Rate (WPR)",
     "category_desc": "Federal work participation rate data reporting and verification",
     "order": 2,
-    "county_file_id": "282090"
+    "county_file_id": "282090",
+    "pdf_date": "2026-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-137",
@@ -3708,7 +3982,9 @@
     "category": "10-005 Welfare-to-Work",
     "category_desc": "WTW sequence, orientation, appraisal, assessments, activities, and teen rules",
     "order": 3,
-    "county_file_id": "282076"
+    "county_file_id": "282076",
+    "pdf_date": "2014-10-08",
+    "pdf_date_label": "Issue date"
   },
   {
     "id": "cw-138",
@@ -3734,7 +4010,9 @@
     "category": "10-005 Welfare-to-Work",
     "category_desc": "WTW sequence, orientation, appraisal, assessments, activities, and teen rules",
     "order": 3,
-    "county_file_id": "282075"
+    "county_file_id": "282075",
+    "pdf_date": "2017-08-04",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-139",
@@ -3760,7 +4038,9 @@
     "category": "10-005 Welfare-to-Work",
     "category_desc": "WTW sequence, orientation, appraisal, assessments, activities, and teen rules",
     "order": 3,
-    "county_file_id": "282077"
+    "county_file_id": "282077",
+    "pdf_date": "2022-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-140",
@@ -3786,7 +4066,9 @@
     "category": "10-005 Welfare-to-Work",
     "category_desc": "WTW sequence, orientation, appraisal, assessments, activities, and teen rules",
     "order": 3,
-    "county_file_id": "282079"
+    "county_file_id": "282079",
+    "pdf_date": "2018-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-141",
@@ -3812,7 +4094,9 @@
     "category": "10-005 Welfare-to-Work",
     "category_desc": "WTW sequence, orientation, appraisal, assessments, activities, and teen rules",
     "order": 3,
-    "county_file_id": "282080"
+    "county_file_id": "282080",
+    "pdf_date": "2021-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-142",
@@ -3838,7 +4122,9 @@
     "category": "10-005 Welfare-to-Work",
     "category_desc": "WTW sequence, orientation, appraisal, assessments, activities, and teen rules",
     "order": 3,
-    "county_file_id": "41049382"
+    "county_file_id": "41049382",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-143",
@@ -3864,7 +4150,9 @@
     "category": "10-005 Welfare-to-Work",
     "category_desc": "WTW sequence, orientation, appraisal, assessments, activities, and teen rules",
     "order": 3,
-    "county_file_id": "282082"
+    "county_file_id": "282082",
+    "pdf_date": "2022-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-144",
@@ -3890,7 +4178,9 @@
     "category": "10-005 Welfare-to-Work",
     "category_desc": "WTW sequence, orientation, appraisal, assessments, activities, and teen rules",
     "order": 3,
-    "county_file_id": "282074"
+    "county_file_id": "282074",
+    "pdf_date": "2017-08-01",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-145",
@@ -3916,7 +4206,9 @@
     "category": "10-005 Welfare-to-Work",
     "category_desc": "WTW sequence, orientation, appraisal, assessments, activities, and teen rules",
     "order": 3,
-    "county_file_id": "41056498"
+    "county_file_id": "41056498",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-146",
@@ -3942,7 +4234,9 @@
     "category": "10-006 Learning Disabilities",
     "category_desc": "Learning disability evaluations and accommodations",
     "order": 4,
-    "county_file_id": "41773538"
+    "county_file_id": "41773538",
+    "pdf_date": "2026-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-147",
@@ -3968,7 +4262,9 @@
     "category": "10-007 Family Stabilization",
     "category_desc": "Intensive case management and stabilization services",
     "order": 5,
-    "county_file_id": "282073"
+    "county_file_id": "282073",
+    "pdf_date": "2022-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-148",
@@ -3994,7 +4290,9 @@
     "category": "10-008 CalWORKs Housing Support Program",
     "category_desc": "Housing identification, rent assistance, and case management",
     "order": 6,
-    "county_file_id": "36813743"
+    "county_file_id": "36813743",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-149",
@@ -4020,7 +4318,9 @@
     "category": "10-009 Home Visiting Program",
     "category_desc": "Voluntary home visiting services for pregnant women and families with young children",
     "order": 7,
-    "county_file_id": "1209613"
+    "county_file_id": "1209613",
+    "pdf_date": "2025-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-150",
@@ -4046,7 +4346,9 @@
     "category": "10-010 Child Care",
     "category_desc": "Stage One child care eligibility, provider rules, and payment processing",
     "order": 8,
-    "county_file_id": "282159"
+    "county_file_id": "282159",
+    "pdf_date": "2023-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-151",
@@ -4072,7 +4374,9 @@
     "category": "10-010 Child Care",
     "category_desc": "Stage One child care eligibility, provider rules, and payment processing",
     "order": 8,
-    "county_file_id": "41051173"
+    "county_file_id": "41051173",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-152",
@@ -4098,7 +4402,9 @@
     "category": "10-010 Child Care",
     "category_desc": "Stage One child care eligibility, provider rules, and payment processing",
     "order": 8,
-    "county_file_id": "40200506"
+    "county_file_id": "40200506",
+    "pdf_date": "2025-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-153",
@@ -4124,7 +4430,9 @@
     "category": "10-010 Child Care",
     "category_desc": "Stage One child care eligibility, provider rules, and payment processing",
     "order": 8,
-    "county_file_id": "282158"
+    "county_file_id": "282158",
+    "pdf_date": "2022-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-154",
@@ -4150,7 +4458,9 @@
     "category": "10-010 Child Care",
     "category_desc": "Stage One child care eligibility, provider rules, and payment processing",
     "order": 8,
-    "county_file_id": "282156"
+    "county_file_id": "282156",
+    "pdf_date": "2015-09-29",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-155",
@@ -4176,7 +4486,9 @@
     "category": "10-010 Child Care",
     "category_desc": "Stage One child care eligibility, provider rules, and payment processing",
     "order": 8,
-    "county_file_id": "282157"
+    "county_file_id": "282157",
+    "pdf_date": "2021-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-156",
@@ -4202,7 +4514,9 @@
     "category": "10-010 Child Care",
     "category_desc": "Stage One child care eligibility, provider rules, and payment processing",
     "order": 8,
-    "county_file_id": "282154"
+    "county_file_id": "282154",
+    "pdf_date": "2015-07-02",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-157",
@@ -4228,7 +4542,9 @@
     "category": "10-011 Supportive Services",
     "category_desc": "Transportation, work-related expenses, and behavioral health support",
     "order": 9,
-    "county_file_id": "7594717"
+    "county_file_id": "7594717",
+    "pdf_date": "2024-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-158",
@@ -4254,7 +4570,9 @@
     "category": "10-011 Supportive Services",
     "category_desc": "Transportation, work-related expenses, and behavioral health support",
     "order": 9,
-    "county_file_id": "282088"
+    "county_file_id": "282088",
+    "pdf_date": "2020-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-159",
@@ -4280,7 +4598,9 @@
     "category": "10-020 Exemptions & Good Cause",
     "category_desc": "WTW participation exemptions and good cause criteria",
     "order": 10,
-    "county_file_id": "40564677"
+    "county_file_id": "40564677",
+    "pdf_date": "2025-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-160",
@@ -4306,7 +4626,9 @@
     "category": "10-020 Exemptions & Good Cause",
     "category_desc": "WTW participation exemptions and good cause criteria",
     "order": 10,
-    "county_file_id": "32028257"
+    "county_file_id": "32028257",
+    "pdf_date": "2024-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-161",
@@ -4332,7 +4654,9 @@
     "category": "10-025 Compliance Process",
     "category_desc": "Noncompliance conciliation and sanction procedures",
     "order": 11,
-    "county_file_id": "41845310"
+    "county_file_id": "41845310",
+    "pdf_date": "2026-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-162",
@@ -4358,7 +4682,9 @@
     "category": "10-030 Participants Rights",
     "category_desc": "Grievance procedures, state hearings, and participant rights",
     "order": 12,
-    "county_file_id": "282085"
+    "county_file_id": "282085",
+    "pdf_date": "2020-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-163",
@@ -4384,7 +4710,9 @@
     "category": "10-030 Participants Rights",
     "category_desc": "Grievance procedures, state hearings, and participant rights",
     "order": 12,
-    "county_file_id": "282202"
+    "county_file_id": "282202",
+    "pdf_date": "2008-12-29",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-164",
@@ -4410,7 +4738,9 @@
     "category": "10-050 Community Service",
     "category_desc": "Community service work experience placements and hours",
     "order": 13,
-    "county_file_id": "282221"
+    "county_file_id": "282221",
+    "pdf_date": "2021-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-165",
@@ -4436,7 +4766,9 @@
     "category": "10-150 Subsidized Employment Programs",
     "category_desc": "Expanded subsidized employment and wage-subsidy work experience",
     "order": 14,
-    "county_file_id": "609639"
+    "county_file_id": "609639",
+    "pdf_date": "2019-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-166",
@@ -4462,7 +4794,9 @@
     "category": "10-150 Subsidized Employment Programs",
     "category_desc": "Expanded subsidized employment and wage-subsidy work experience",
     "order": 14,
-    "county_file_id": "610118"
+    "county_file_id": "610118",
+    "pdf_date": "2019-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-167",
@@ -4488,7 +4822,9 @@
     "category": "10-160 Wrap Around",
     "category_desc": "Coordinated wrap-around multi-agency family support services",
     "order": 15,
-    "county_file_id": "40187559"
+    "county_file_id": "40187559",
+    "pdf_date": "2025-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-168",
@@ -4514,7 +4850,9 @@
     "category": "10-170 CalWORKs Outcomes and Accountability Review (Cal-OAR)",
     "category_desc": "State performance measures and continuous quality improvement",
     "order": 16,
-    "county_file_id": "282226"
+    "county_file_id": "282226",
+    "pdf_date": "2023-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-169",
@@ -4540,7 +4878,9 @@
     "category": "10-200 Refugee Services",
     "category_desc": "Refugee employment services and coordination",
     "order": 17,
-    "county_file_id": "41863958"
+    "county_file_id": "41863958",
+    "pdf_date": "2026-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-170",
@@ -4566,7 +4906,9 @@
     "category": "10-260 Document Capture Procedures for Employment Services Contractors",
     "category_desc": "Electronic document imaging and contractor workflow requirements",
     "order": 18,
-    "county_file_id": "282191"
+    "county_file_id": "282191",
+    "pdf_date": "2013-04-12",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-171",
@@ -4592,7 +4934,9 @@
     "category": "10-300 WTW Activity Documentation and Reporting Requirements",
     "category_desc": "Activity logs, timesheets, and attendance verification",
     "order": 19,
-    "county_file_id": "282048"
+    "county_file_id": "282048",
+    "pdf_date": "2021-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-172",
@@ -4618,7 +4962,9 @@
     "category": "15-000 Cal-Learn",
     "category_desc": "Teen parent education requirements, case management, and bonuses/sanctions",
     "order": 20,
-    "county_file_id": "282185"
+    "county_file_id": "282185",
+    "pdf_date": "2021-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-173",
@@ -4644,7 +4990,9 @@
     "category": "15-000 Cal-Learn",
     "category_desc": "Teen parent education requirements, case management, and bonuses/sanctions",
     "order": 20,
-    "county_file_id": "282186"
+    "county_file_id": "282186",
+    "pdf_date": "2021-05-19",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-174",
@@ -4670,7 +5018,9 @@
     "category": "15-000 Cal-Learn",
     "category_desc": "Teen parent education requirements, case management, and bonuses/sanctions",
     "order": 20,
-    "county_file_id": "282187"
+    "county_file_id": "282187",
+    "pdf_date": "2021-08-31",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-175",
@@ -4696,7 +5046,9 @@
     "category": "15-000 Cal-Learn",
     "category_desc": "Teen parent education requirements, case management, and bonuses/sanctions",
     "order": 20,
-    "county_file_id": "282184"
+    "county_file_id": "282184",
+    "pdf_date": "2018-05-14",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-176",
@@ -4722,7 +5074,9 @@
     "category": "15-000 Cal-Learn",
     "category_desc": "Teen parent education requirements, case management, and bonuses/sanctions",
     "order": 20,
-    "county_file_id": "282188"
+    "county_file_id": "282188",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-177",
@@ -4748,7 +5102,9 @@
     "category": "15-000 Cal-Learn",
     "category_desc": "Teen parent education requirements, case management, and bonuses/sanctions",
     "order": 20,
-    "county_file_id": "282182"
+    "county_file_id": "282182",
+    "pdf_date": "2017-02-01",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-178",
@@ -4774,7 +5130,9 @@
     "category": "15-000 Cal-Learn",
     "category_desc": "Teen parent education requirements, case management, and bonuses/sanctions",
     "order": 20,
-    "county_file_id": "282183"
+    "county_file_id": "282183",
+    "pdf_date": "2017-10-17",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-179",
@@ -4800,7 +5158,9 @@
     "category": "15-100 TIME ON AID",
     "category_desc": "60-month cumulative lifetime cash aid time limit and exemptions",
     "order": 21,
-    "county_file_id": "38312052"
+    "county_file_id": "38312052",
+    "pdf_date": "2024-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-180",
@@ -4826,7 +5186,9 @@
     "category": "19-000 Confidentiality of Information & Records",
     "category_desc": "Case record safeguarding and disclosure authorization",
     "order": 22,
-    "county_file_id": "282190"
+    "county_file_id": "282190",
+    "pdf_date": "2023-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-181",
@@ -4852,7 +5214,9 @@
     "category": "40-100 Application and Redetermination",
     "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
     "order": 25,
-    "county_file_id": "282189"
+    "county_file_id": "282189",
+    "pdf_date": "2023-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-182",
@@ -4878,7 +5242,9 @@
     "category": "20-000 Integrity",
     "category_desc": "Fraud prevention, investigation, and child care program integrity",
     "order": 23,
-    "county_file_id": "282164"
+    "county_file_id": "282164",
+    "pdf_date": "2021-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-183",
@@ -4904,7 +5270,9 @@
     "category": "20-000 Integrity",
     "category_desc": "Fraud prevention, investigation, and child care program integrity",
     "order": 23,
-    "county_file_id": "41531350"
+    "county_file_id": "41531350",
+    "pdf_date": "2026-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-184",
@@ -4930,7 +5298,9 @@
     "category": "22-000 Notifications",
     "category_desc": "Timely and adequate Notices of Action (NOA) and verification requests",
     "order": 24,
-    "county_file_id": "7560705"
+    "county_file_id": "7560705",
+    "pdf_date": "2024-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-185",
@@ -4956,7 +5326,9 @@
     "category": "22-000 Notifications",
     "category_desc": "Timely and adequate Notices of Action (NOA) and verification requests",
     "order": 24,
-    "county_file_id": "7560706"
+    "county_file_id": "7560706",
+    "pdf_date": "2024-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-186",
@@ -4982,7 +5354,9 @@
     "category": "40-100 Application and Redetermination",
     "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
     "order": 25,
-    "county_file_id": "282096"
+    "county_file_id": "282096",
+    "pdf_date": "2022-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-187",
@@ -5008,7 +5382,9 @@
     "category": "40-100 Application and Redetermination",
     "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
     "order": 25,
-    "county_file_id": "41101885"
+    "county_file_id": "41101885",
+    "pdf_date": "2025-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-188",
@@ -5034,7 +5410,9 @@
     "category": "40-100 Application and Redetermination",
     "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
     "order": 25,
-    "county_file_id": "40049611"
+    "county_file_id": "40049611",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-189",
@@ -5060,7 +5438,9 @@
     "category": "40-100 Application and Redetermination",
     "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
     "order": 25,
-    "county_file_id": "41604325"
+    "county_file_id": "41604325",
+    "pdf_date": "2026-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-190",
@@ -5086,7 +5466,9 @@
     "category": "40-100 Application and Redetermination",
     "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
     "order": 25,
-    "county_file_id": "282099"
+    "county_file_id": "282099",
+    "pdf_date": "2025-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-191",
@@ -5112,7 +5494,9 @@
     "category": "40-100 Application and Redetermination",
     "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
     "order": 25,
-    "county_file_id": "282095"
+    "county_file_id": "282095",
+    "pdf_date": "2022-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-192",
@@ -5138,7 +5522,9 @@
     "category": "40-100 Application and Redetermination",
     "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
     "order": 25,
-    "county_file_id": "282100"
+    "county_file_id": "282100",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-193",
@@ -5164,7 +5550,9 @@
     "category": "40-100 Application and Redetermination",
     "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
     "order": 25,
-    "county_file_id": "40383946"
+    "county_file_id": "40383946",
+    "pdf_date": "2025-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-194",
@@ -5190,7 +5578,9 @@
     "category": "40-125 Restoration of Aid",
     "category_desc": "Aid restoration within 12 months following discontinuance",
     "order": 26,
-    "county_file_id": "282146"
+    "county_file_id": "282146",
+    "pdf_date": "2024-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-195",
@@ -5216,7 +5606,9 @@
     "category": "40-183 CalWORKs Special Programs",
     "category_desc": "ARC program, IPT, Extended CalWORKs for NMD, and reunification",
     "order": 27,
-    "county_file_id": "282216"
+    "county_file_id": "282216",
+    "pdf_date": "2016-11-29",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-196",
@@ -5242,7 +5634,9 @@
     "category": "40-183 CalWORKs Special Programs",
     "category_desc": "ARC program, IPT, Extended CalWORKs for NMD, and reunification",
     "order": 27,
-    "county_file_id": "282215"
+    "county_file_id": "282215",
+    "pdf_date": "2016-11-29",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-197",
@@ -5268,7 +5662,9 @@
     "category": "40-183 CalWORKs Special Programs",
     "category_desc": "ARC program, IPT, Extended CalWORKs for NMD, and reunification",
     "order": 27,
-    "county_file_id": "282218"
+    "county_file_id": "282218",
+    "pdf_date": "2022-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-198",
@@ -5294,7 +5690,9 @@
     "category": "40-183 CalWORKs Special Programs",
     "category_desc": "ARC program, IPT, Extended CalWORKs for NMD, and reunification",
     "order": 27,
-    "county_file_id": "282217"
+    "county_file_id": "282217",
+    "pdf_date": "2018-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-199",
@@ -5320,7 +5718,9 @@
     "category": "40-183 CalWORKs Special Programs",
     "category_desc": "ARC program, IPT, Extended CalWORKs for NMD, and reunification",
     "order": 27,
-    "county_file_id": "8979135"
+    "county_file_id": "8979135",
+    "pdf_date": "2024-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-200",
@@ -5346,7 +5746,9 @@
     "category": "41-400 Deprivation",
     "category_desc": "Parental absence, incapacity, unemployment (U-parent), or death",
     "order": 28,
-    "county_file_id": "11220550"
+    "county_file_id": "11220550",
+    "pdf_date": "2024-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-201",
@@ -5372,7 +5774,9 @@
     "category": "41-400 Deprivation",
     "category_desc": "Parental absence, incapacity, unemployment (U-parent), or death",
     "order": 28,
-    "county_file_id": "11221658"
+    "county_file_id": "11221658",
+    "pdf_date": "2024-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-202",
@@ -5398,7 +5802,9 @@
     "category": "41-400 Deprivation",
     "category_desc": "Parental absence, incapacity, unemployment (U-parent), or death",
     "order": 28,
-    "county_file_id": "11222667"
+    "county_file_id": "11222667",
+    "pdf_date": "2024-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-203",
@@ -5424,7 +5830,9 @@
     "category": "41-400 Deprivation",
     "category_desc": "Parental absence, incapacity, unemployment (U-parent), or death",
     "order": 28,
-    "county_file_id": "11223321"
+    "county_file_id": "11223321",
+    "pdf_date": "2024-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-204",
@@ -5450,7 +5858,9 @@
     "category": "41-400 Deprivation",
     "category_desc": "Parental absence, incapacity, unemployment (U-parent), or death",
     "order": 28,
-    "county_file_id": "11224201"
+    "county_file_id": "11224201",
+    "pdf_date": "2024-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-205",
@@ -5476,7 +5886,9 @@
     "category": "44-200 Special Needs",
     "category_desc": "Recurring, nonrecurring, pregnancy, and homeless assistance payments",
     "order": 36,
-    "county_file_id": "39861294"
+    "county_file_id": "39861294",
+    "pdf_date": "2024-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-206",
@@ -5502,7 +5914,9 @@
     "category": "41-500 Assistance Unit",
     "category_desc": "Mandatory AU composition, caretaker relatives, and temporary absence",
     "order": 29,
-    "county_file_id": "39862433"
+    "county_file_id": "39862433",
+    "pdf_date": "2024-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-207",
@@ -5528,7 +5942,9 @@
     "category": "41-500 Assistance Unit",
     "category_desc": "Mandatory AU composition, caretaker relatives, and temporary absence",
     "order": 29,
-    "county_file_id": "39862447"
+    "county_file_id": "39862447",
+    "pdf_date": "2024-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-208",
@@ -5554,7 +5970,9 @@
     "category": "41-500 Assistance Unit",
     "category_desc": "Mandatory AU composition, caretaker relatives, and temporary absence",
     "order": 29,
-    "county_file_id": "39862466"
+    "county_file_id": "39862466",
+    "pdf_date": "2024-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-209",
@@ -5580,7 +5998,9 @@
     "category": "41-500 Assistance Unit",
     "category_desc": "Mandatory AU composition, caretaker relatives, and temporary absence",
     "order": 29,
-    "county_file_id": "39862769"
+    "county_file_id": "39862769",
+    "pdf_date": "2024-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-210",
@@ -5606,7 +6026,9 @@
     "category": "41-500 Assistance Unit",
     "category_desc": "Mandatory AU composition, caretaker relatives, and temporary absence",
     "order": 29,
-    "county_file_id": "282173"
+    "county_file_id": "282173",
+    "pdf_date": "2025-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-211",
@@ -5632,7 +6054,9 @@
     "category": "41-500 Assistance Unit",
     "category_desc": "Mandatory AU composition, caretaker relatives, and temporary absence",
     "order": 29,
-    "county_file_id": "39862931"
+    "county_file_id": "39862931",
+    "pdf_date": "2024-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-212",
@@ -5658,7 +6082,9 @@
     "category": "41-500 Assistance Unit",
     "category_desc": "Mandatory AU composition, caretaker relatives, and temporary absence",
     "order": 29,
-    "county_file_id": "39862941"
+    "county_file_id": "39862941",
+    "pdf_date": "2024-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-213",
@@ -5684,7 +6110,9 @@
     "category": "41-500 Assistance Unit",
     "category_desc": "Mandatory AU composition, caretaker relatives, and temporary absence",
     "order": 29,
-    "county_file_id": "39862944"
+    "county_file_id": "39862944",
+    "pdf_date": "2024-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-214",
@@ -5710,7 +6138,9 @@
     "category": "42-100 Age-Immunization-School Attendance",
     "category_desc": "Age limits, teen parenting, school attendance, and childhood immunization",
     "order": 30,
-    "county_file_id": "282043"
+    "county_file_id": "282043",
+    "pdf_date": "2023-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-215",
@@ -5736,7 +6166,9 @@
     "category": "42-100 Age-Immunization-School Attendance",
     "category_desc": "Age limits, teen parenting, school attendance, and childhood immunization",
     "order": 30,
-    "county_file_id": "282044"
+    "county_file_id": "282044",
+    "pdf_date": "2023-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-216",
@@ -5762,7 +6194,9 @@
     "category": "42-100 Age-Immunization-School Attendance",
     "category_desc": "Age limits, teen parenting, school attendance, and childhood immunization",
     "order": 30,
-    "county_file_id": "7574721"
+    "county_file_id": "7574721",
+    "pdf_date": "2024-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-217",
@@ -5788,7 +6222,9 @@
     "category": "42-200 Property",
     "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
     "order": 31,
-    "county_file_id": "610988"
+    "county_file_id": "610988",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-218",
@@ -5814,7 +6250,9 @@
     "category": "42-200 Property",
     "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
     "order": 31,
-    "county_file_id": "282051"
+    "county_file_id": "282051",
+    "pdf_date": "2026-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-219",
@@ -5840,7 +6278,9 @@
     "category": "42-200 Property",
     "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
     "order": 31,
-    "county_file_id": "282052"
+    "county_file_id": "282052",
+    "pdf_date": "2026-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-220",
@@ -5866,7 +6306,9 @@
     "category": "42-200 Property",
     "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
     "order": 31,
-    "county_file_id": "7574213"
+    "county_file_id": "7574213",
+    "pdf_date": "2024-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-221",
@@ -5892,7 +6334,9 @@
     "category": "42-200 Property",
     "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
     "order": 31,
-    "county_file_id": "282049"
+    "county_file_id": "282049",
+    "pdf_date": "2026-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-222",
@@ -5918,7 +6362,9 @@
     "category": "42-200 Property",
     "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
     "order": 31,
-    "county_file_id": "282054"
+    "county_file_id": "282054",
+    "pdf_date": "2026-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-223",
@@ -5944,7 +6390,9 @@
     "category": "42-200 Property",
     "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
     "order": 31,
-    "county_file_id": "282055"
+    "county_file_id": "282055",
+    "pdf_date": "2026-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-224",
@@ -5970,7 +6418,9 @@
     "category": "42-200 Property",
     "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
     "order": 31,
-    "county_file_id": "282056"
+    "county_file_id": "282056",
+    "pdf_date": "2026-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-225",
@@ -5996,7 +6446,9 @@
     "category": "42-200 Property",
     "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
     "order": 31,
-    "county_file_id": "282057"
+    "county_file_id": "282057",
+    "pdf_date": "2026-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-226",
@@ -6022,7 +6474,9 @@
     "category": "42-400 Residence",
     "category_desc": "County residence, state presence, and citizen/noncitizen status",
     "order": 32,
-    "county_file_id": "282101"
+    "county_file_id": "282101",
+    "pdf_date": "2019-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-227",
@@ -6048,7 +6502,9 @@
     "category": "42-400 Residence",
     "category_desc": "County residence, state presence, and citizen/noncitizen status",
     "order": 32,
-    "county_file_id": "282102"
+    "county_file_id": "282102",
+    "pdf_date": "2019-11-04",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-228",
@@ -6074,7 +6530,9 @@
     "category": "42-400 Residence",
     "category_desc": "County residence, state presence, and citizen/noncitizen status",
     "order": 32,
-    "county_file_id": "282103"
+    "county_file_id": "282103",
+    "pdf_date": "2021-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-229",
@@ -6100,7 +6558,9 @@
     "category": "42-400 Residence",
     "category_desc": "County residence, state presence, and citizen/noncitizen status",
     "order": 32,
-    "county_file_id": "40446742"
+    "county_file_id": "40446742",
+    "pdf_date": "2025-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-230",
@@ -6126,7 +6586,9 @@
     "category": "42-400 Residence",
     "category_desc": "County residence, state presence, and citizen/noncitizen status",
     "order": 32,
-    "county_file_id": "282105"
+    "county_file_id": "282105",
+    "pdf_date": "2021-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-231",
@@ -6152,7 +6614,9 @@
     "category": "42-400 Residence",
     "category_desc": "County residence, state presence, and citizen/noncitizen status",
     "order": 32,
-    "county_file_id": "282106"
+    "county_file_id": "282106",
+    "pdf_date": "2021-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-232",
@@ -6178,7 +6642,9 @@
     "category": "43-100 Responsible Relatives",
     "category_desc": "Parental responsibility and unrelated adults residing in the home",
     "order": 33,
-    "county_file_id": "282107"
+    "county_file_id": "282107",
+    "pdf_date": "2022-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-233",
@@ -6204,7 +6670,9 @@
     "category": "43-100 Responsible Relatives",
     "category_desc": "Parental responsibility and unrelated adults residing in the home",
     "order": 33,
-    "county_file_id": "282108"
+    "county_file_id": "282108",
+    "pdf_date": "2022-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-234",
@@ -6230,7 +6698,9 @@
     "category": "43-200 Child Support",
     "category_desc": "Assignment of support rights and child support cooperation rules",
     "order": 34,
-    "county_file_id": "282137"
+    "county_file_id": "282137",
+    "pdf_date": "2022-02-03",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-235",
@@ -6256,7 +6726,9 @@
     "category": "43-200 Child Support",
     "category_desc": "Assignment of support rights and child support cooperation rules",
     "order": 34,
-    "county_file_id": "282138"
+    "county_file_id": "282138",
+    "pdf_date": "2022-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-236",
@@ -6282,7 +6754,9 @@
     "category": "43-200 Child Support",
     "category_desc": "Assignment of support rights and child support cooperation rules",
     "order": 34,
-    "county_file_id": "282139"
+    "county_file_id": "282139",
+    "pdf_date": "2022-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-237",
@@ -6308,7 +6782,9 @@
     "category": "43-200 Child Support",
     "category_desc": "Assignment of support rights and child support cooperation rules",
     "order": 34,
-    "county_file_id": "40800078"
+    "county_file_id": "40800078",
+    "pdf_date": "2025-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-238",
@@ -6334,7 +6810,9 @@
     "category": "44-100 Income",
     "category_desc": "Earned, unearned, excluded, and exempt income determinations",
     "order": 35,
-    "county_file_id": "282174"
+    "county_file_id": "282174",
+    "pdf_date": "2024-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-239",
@@ -6360,7 +6838,9 @@
     "category": "44-100 Income",
     "category_desc": "Earned, unearned, excluded, and exempt income determinations",
     "order": 35,
-    "county_file_id": "282175"
+    "county_file_id": "282175",
+    "pdf_date": "2025-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-240",
@@ -6386,7 +6866,9 @@
     "category": "44-100 Income",
     "category_desc": "Earned, unearned, excluded, and exempt income determinations",
     "order": 35,
-    "county_file_id": "7574222"
+    "county_file_id": "7574222",
+    "pdf_date": "2024-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-241",
@@ -6412,7 +6894,9 @@
     "category": "44-100 Income",
     "category_desc": "Earned, unearned, excluded, and exempt income determinations",
     "order": 35,
-    "county_file_id": "282177"
+    "county_file_id": "282177",
+    "pdf_date": "2023-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-242",
@@ -6438,7 +6922,9 @@
     "category": "44-100 Income",
     "category_desc": "Earned, unearned, excluded, and exempt income determinations",
     "order": 35,
-    "county_file_id": "282178"
+    "county_file_id": "282178",
+    "pdf_date": "2023-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-243",
@@ -6464,7 +6950,9 @@
     "category": "44-100 Income",
     "category_desc": "Earned, unearned, excluded, and exempt income determinations",
     "order": 35,
-    "county_file_id": "282179"
+    "county_file_id": "282179",
+    "pdf_date": "2023-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-244",
@@ -6490,7 +6978,9 @@
     "category": "44-100 Income",
     "category_desc": "Earned, unearned, excluded, and exempt income determinations",
     "order": 35,
-    "county_file_id": "41531567"
+    "county_file_id": "41531567",
+    "pdf_date": "2026-04-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "cw-245",
@@ -6516,7 +7006,9 @@
     "category": "44-200 Special Needs",
     "category_desc": "Recurring, nonrecurring, pregnancy, and homeless assistance payments",
     "order": 36,
-    "county_file_id": "282109"
+    "county_file_id": "282109",
+    "pdf_date": "2021-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-246",
@@ -6542,7 +7034,9 @@
     "category": "44-200 Special Needs",
     "category_desc": "Recurring, nonrecurring, pregnancy, and homeless assistance payments",
     "order": 36,
-    "county_file_id": "282110"
+    "county_file_id": "282110",
+    "pdf_date": "2021-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-247",
@@ -6568,7 +7062,9 @@
     "category": "44-200 Special Needs",
     "category_desc": "Recurring, nonrecurring, pregnancy, and homeless assistance payments",
     "order": 36,
-    "county_file_id": "282111"
+    "county_file_id": "282111",
+    "pdf_date": "2025-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-248",
@@ -6594,7 +7090,9 @@
     "category": "44-200 Special Needs",
     "category_desc": "Recurring, nonrecurring, pregnancy, and homeless assistance payments",
     "order": 36,
-    "county_file_id": "7582237"
+    "county_file_id": "7582237",
+    "pdf_date": "2024-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-249",
@@ -6620,7 +7118,9 @@
     "category": "44-200 Special Needs",
     "category_desc": "Recurring, nonrecurring, pregnancy, and homeless assistance payments",
     "order": 36,
-    "county_file_id": "282113"
+    "county_file_id": "282113",
+    "pdf_date": "2023-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-250",
@@ -6646,7 +7146,9 @@
     "category": "44-200 Special Needs",
     "category_desc": "Recurring, nonrecurring, pregnancy, and homeless assistance payments",
     "order": 36,
-    "county_file_id": "282114"
+    "county_file_id": "282114",
+    "pdf_date": "2023-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-251",
@@ -6672,7 +7174,9 @@
     "category": "44-200 Special Needs",
     "category_desc": "Recurring, nonrecurring, pregnancy, and homeless assistance payments",
     "order": 36,
-    "county_file_id": "282115"
+    "county_file_id": "282115",
+    "pdf_date": "2023-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-252",
@@ -6698,7 +7202,9 @@
     "category": "44-260 Annual Reporting (Child Only Cases)",
     "category_desc": "AR/CO reporting rules for child-only assistance units",
     "order": 37,
-    "county_file_id": "282147"
+    "county_file_id": "282147",
+    "pdf_date": "2022-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-253",
@@ -6724,7 +7230,9 @@
     "category": "44-270 Semi-Annual Reporting (SAR)",
     "category_desc": "SAR 7 mid-period mandatory and voluntary reporting",
     "order": 38,
-    "county_file_id": "282150"
+    "county_file_id": "282150",
+    "pdf_date": "2021-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-254",
@@ -6750,7 +7258,9 @@
     "category": "44-270 Semi-Annual Reporting (SAR)",
     "category_desc": "SAR 7 mid-period mandatory and voluntary reporting",
     "order": 38,
-    "county_file_id": "40465154"
+    "county_file_id": "40465154",
+    "pdf_date": "2025-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-255",
@@ -6776,7 +7286,9 @@
     "category": "44-270 Semi-Annual Reporting (SAR)",
     "category_desc": "SAR 7 mid-period mandatory and voluntary reporting",
     "order": 38,
-    "county_file_id": "9331011"
+    "county_file_id": "9331011",
+    "pdf_date": "2024-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-256",
@@ -6802,7 +7314,9 @@
     "category": "44-270 Semi-Annual Reporting (SAR)",
     "category_desc": "SAR 7 mid-period mandatory and voluntary reporting",
     "order": 38,
-    "county_file_id": "282149"
+    "county_file_id": "282149",
+    "pdf_date": "2020-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-257",
@@ -6828,7 +7342,9 @@
     "category": "44-270 Semi-Annual Reporting (SAR)",
     "category_desc": "SAR 7 mid-period mandatory and voluntary reporting",
     "order": 38,
-    "county_file_id": "282148"
+    "county_file_id": "282148",
+    "pdf_date": "2016-04-27",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-258",
@@ -6854,7 +7370,9 @@
     "category": "44-300 Benefit Payments",
     "category_desc": "Beginning date of aid, MAP calculation, and issuance methods",
     "order": 39,
-    "county_file_id": "282145"
+    "county_file_id": "282145",
+    "pdf_date": "2023-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-259",
@@ -6880,7 +7398,9 @@
     "category": "44-300 Benefit Payments",
     "category_desc": "Beginning date of aid, MAP calculation, and issuance methods",
     "order": 39,
-    "county_file_id": "282142"
+    "county_file_id": "282142",
+    "pdf_date": "2023-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-260",
@@ -6906,7 +7426,9 @@
     "category": "44-300 Benefit Payments",
     "category_desc": "Beginning date of aid, MAP calculation, and issuance methods",
     "order": 39,
-    "county_file_id": "282144"
+    "county_file_id": "282144",
+    "pdf_date": "2023-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-261",
@@ -6932,7 +7454,9 @@
     "category": "44-300 Benefit Payments",
     "category_desc": "Beginning date of aid, MAP calculation, and issuance methods",
     "order": 39,
-    "county_file_id": "40171874"
+    "county_file_id": "40171874",
+    "pdf_date": "2025-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-262",
@@ -6958,7 +7482,9 @@
     "category": "44-300 Benefit Payments",
     "category_desc": "Beginning date of aid, MAP calculation, and issuance methods",
     "order": 39,
-    "county_file_id": "41010233"
+    "county_file_id": "41010233",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-263",
@@ -6984,7 +7510,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "7601953"
+    "county_file_id": "7601953",
+    "pdf_date": "2024-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-264",
@@ -7010,7 +7538,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "7601955"
+    "county_file_id": "7601955",
+    "pdf_date": "2024-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-265",
@@ -7036,7 +7566,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "40029238"
+    "county_file_id": "40029238",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-266",
@@ -7062,7 +7594,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "40029258"
+    "county_file_id": "40029258",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-267",
@@ -7088,7 +7622,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "40029287"
+    "county_file_id": "40029287",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-268",
@@ -7114,7 +7650,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "40174170"
+    "county_file_id": "40174170",
+    "pdf_date": "2025-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-269",
@@ -7140,7 +7678,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "40029305"
+    "county_file_id": "40029305",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-270",
@@ -7166,7 +7706,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "40029319"
+    "county_file_id": "40029319",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-271",
@@ -7192,7 +7734,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "40029337"
+    "county_file_id": "40029337",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-272",
@@ -7218,7 +7762,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "40029367"
+    "county_file_id": "40029367",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-273",
@@ -7244,7 +7790,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "40029383"
+    "county_file_id": "40029383",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-274",
@@ -7270,7 +7818,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "282060"
+    "county_file_id": "282060",
+    "pdf_date": "2016-07-22",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-275",
@@ -7296,7 +7846,9 @@
     "category": "44-350 Overpayment-IPV-Underpayment",
     "category_desc": "Overpayment budgeting, recoupment, IPV penalties, and corrective underpayments",
     "order": 40,
-    "county_file_id": "7574643"
+    "county_file_id": "7574643",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-276",
@@ -7322,7 +7874,9 @@
     "category": "45-000 CalWORKs Questions and Answers",
     "category_desc": "County eligibility and policy guidance clarification Q&As",
     "order": 41,
-    "county_file_id": "282192"
+    "county_file_id": "282192",
+    "pdf_date": "2014-06-27",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-277",
@@ -7348,7 +7902,9 @@
     "category": "45-000 CalWORKs Questions and Answers",
     "category_desc": "County eligibility and policy guidance clarification Q&As",
     "order": 41,
-    "county_file_id": "282196"
+    "county_file_id": "282196",
+    "pdf_date": "2014-01-29",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-278",
@@ -7374,7 +7930,9 @@
     "category": "45-200 Resources and Desk Aids",
     "category_desc": "Assistance standards, MAP charts, property limits, and desk aids",
     "order": 42,
-    "county_file_id": "282118"
+    "county_file_id": "282118",
+    "pdf_date": "2016-07-26",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-279",
@@ -7400,7 +7958,9 @@
     "category": "45-200 Resources and Desk Aids",
     "category_desc": "Assistance standards, MAP charts, property limits, and desk aids",
     "order": 42,
-    "county_file_id": "282120"
+    "county_file_id": "282120",
+    "pdf_date": "2026-09-18",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-280",
@@ -7426,7 +7986,9 @@
     "category": "45-200 Resources and Desk Aids",
     "category_desc": "Assistance standards, MAP charts, property limits, and desk aids",
     "order": 42,
-    "county_file_id": "42024770"
+    "county_file_id": "42024770",
+    "pdf_date": "2026-10-02",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-281",
@@ -7452,7 +8014,9 @@
     "category": "45-200 Resources and Desk Aids",
     "category_desc": "Assistance standards, MAP charts, property limits, and desk aids",
     "order": 42,
-    "county_file_id": "282209"
+    "county_file_id": "282209",
+    "pdf_date": "2013-11-26",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-282",
@@ -7478,7 +8042,9 @@
     "category": "45-200 Resources and Desk Aids",
     "category_desc": "Assistance standards, MAP charts, property limits, and desk aids",
     "order": 42,
-    "county_file_id": "282119"
+    "county_file_id": "282119",
+    "pdf_date": "2016-12-02",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-283",
@@ -7504,7 +8070,9 @@
     "category": "45-200 Resources and Desk Aids",
     "category_desc": "Assistance standards, MAP charts, property limits, and desk aids",
     "order": 42,
-    "county_file_id": "282214"
+    "county_file_id": "282214",
+    "pdf_date": "2011-08-01",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-284",
@@ -7530,7 +8098,9 @@
     "category": "45-200 Resources and Desk Aids",
     "category_desc": "Assistance standards, MAP charts, property limits, and desk aids",
     "order": 42,
-    "county_file_id": "282208"
+    "county_file_id": "282208",
+    "pdf_date": "2013-07-19",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-285",
@@ -7556,7 +8126,9 @@
     "category": "45-200 Resources and Desk Aids",
     "category_desc": "Assistance standards, MAP charts, property limits, and desk aids",
     "order": 42,
-    "county_file_id": "282207"
+    "county_file_id": "282207",
+    "pdf_date": "2013-05-01",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "cw-286",
@@ -7582,7 +8154,9 @@
     "category": "69-205 Refugee Cash Assistance (RCA)",
     "category_desc": "Federal RCA program eligibility, time limits, and budgeting",
     "order": 43,
-    "county_file_id": "38355976"
+    "county_file_id": "38355976",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "cw-287",
@@ -7608,7 +8182,9 @@
     "category": "70-100 Trafficking and Crime Victims Assistance Program (TCVAP)",
     "category_desc": "State-funded cash and supportive services for eligible victims of crime",
     "order": 44,
-    "county_file_id": "282180"
+    "county_file_id": "282180",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-288",
@@ -7635,7 +8211,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "42048280"
+    "county_file_id": "42048280",
+    "pdf_date": "2026-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-289",
@@ -7662,7 +8240,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "41902601"
+    "county_file_id": "41902601",
+    "pdf_date": "2026-07-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-290",
@@ -7689,7 +8269,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "41470445"
+    "county_file_id": "41470445",
+    "pdf_date": "2026-03-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-291",
@@ -7716,7 +8298,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "41459999"
+    "county_file_id": "41459999",
+    "pdf_date": "2026-03-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-292",
@@ -7743,7 +8327,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "41196417"
+    "county_file_id": "41196417",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-293",
@@ -7770,7 +8356,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "41060229"
+    "county_file_id": "41060229",
+    "pdf_date": "2025-11-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-294",
@@ -7797,7 +8385,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "40984831"
+    "county_file_id": "40984831",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-295",
@@ -7824,7 +8414,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "40554471"
+    "county_file_id": "40554471",
+    "pdf_date": "2025-07-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-296",
@@ -7851,7 +8443,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "40107588"
+    "county_file_id": "40107588",
+    "pdf_date": "2025-03-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-297",
@@ -7878,7 +8472,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "40027780"
+    "county_file_id": "40027780",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-298",
@@ -7905,7 +8501,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "39792816"
+    "county_file_id": "39792816",
+    "pdf_date": "2025-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-299",
@@ -7932,7 +8530,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "11132387"
+    "county_file_id": "11132387",
+    "pdf_date": "2024-08-06",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-300",
@@ -7959,7 +8559,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "1461884"
+    "county_file_id": "1461884",
+    "pdf_date": "2024-03-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-301",
@@ -7986,7 +8588,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "1208355"
+    "county_file_id": "1208355",
+    "pdf_date": "2024-02-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-302",
@@ -8013,7 +8617,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282813"
+    "county_file_id": "282813",
+    "pdf_date": "2024-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-303",
@@ -8040,7 +8646,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282812"
+    "county_file_id": "282812",
+    "pdf_date": "2024-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-304",
@@ -8067,7 +8675,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282704"
+    "county_file_id": "282704",
+    "pdf_date": "2023-12-14",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-305",
@@ -8094,7 +8704,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282703"
+    "county_file_id": "282703",
+    "pdf_date": "2023-04-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-306",
@@ -8121,7 +8733,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282701"
+    "county_file_id": "282701",
+    "pdf_date": "2023-02-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-307",
@@ -8148,7 +8762,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282702"
+    "county_file_id": "282702",
+    "pdf_date": "2023-02-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-308",
@@ -8175,7 +8791,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282700"
+    "county_file_id": "282700",
+    "pdf_date": "2022-12-29",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-309",
@@ -8202,7 +8820,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282699"
+    "county_file_id": "282699",
+    "pdf_date": "2022-08-23",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-310",
@@ -8229,7 +8849,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282697"
+    "county_file_id": "282697",
+    "pdf_date": "2022-07-26",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-311",
@@ -8256,7 +8878,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282698"
+    "county_file_id": "282698",
+    "pdf_date": "2022-07-13",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-312",
@@ -8283,7 +8907,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282696"
+    "county_file_id": "282696",
+    "pdf_date": "2022-06-22",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-313",
@@ -8310,7 +8936,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282694"
+    "county_file_id": "282694",
+    "pdf_date": "2022-03-01",
+    "pdf_date_label": "Issue date"
   },
   {
     "id": "mc-314",
@@ -8337,7 +8965,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282695"
+    "county_file_id": "282695",
+    "pdf_date": "2022-03-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-315",
@@ -8364,7 +8994,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282693"
+    "county_file_id": "282693",
+    "pdf_date": "2022-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-316",
@@ -8391,7 +9023,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282692"
+    "county_file_id": "282692",
+    "pdf_date": "2022-02-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-317",
@@ -8418,7 +9052,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282691"
+    "county_file_id": "282691",
+    "pdf_date": "2022-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-318",
@@ -8445,7 +9081,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282690"
+    "county_file_id": "282690",
+    "pdf_date": "2021-09-21",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-319",
@@ -8472,7 +9110,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282689"
+    "county_file_id": "282689",
+    "pdf_date": "2021-02-12",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-320",
@@ -8499,7 +9139,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282688"
+    "county_file_id": "282688",
+    "pdf_date": "2020-01-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-321",
@@ -8526,7 +9168,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282687"
+    "county_file_id": "282687",
+    "pdf_date": "2019-03-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-322",
@@ -8553,7 +9197,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282686"
+    "county_file_id": "282686",
+    "pdf_date": "2018-11-19",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-323",
@@ -8580,7 +9226,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282685"
+    "county_file_id": "282685",
+    "pdf_date": "2015-05-18",
+    "pdf_date_label": "Issue date"
   },
   {
     "id": "mc-324",
@@ -8607,7 +9255,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282684"
+    "county_file_id": "282684",
+    "pdf_date": "2015-03-05",
+    "pdf_date_label": "Issue date"
   },
   {
     "id": "mc-325",
@@ -8634,7 +9284,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282683"
+    "county_file_id": "282683",
+    "pdf_date": "2014-11-13",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-326",
@@ -8661,7 +9313,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282796"
+    "county_file_id": "282796",
+    "pdf_date": "2014-05-20",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-327",
@@ -8688,7 +9342,9 @@
     "category_desc": "County Medi-Cal Bulletins, COLA notices, emergency directives, and annual adjustments",
     "category_id": "special-notices",
     "order": 99,
-    "county_file_id": "282795"
+    "county_file_id": "282795",
+    "pdf_date": "2013-12-17",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-328",
@@ -8715,7 +9371,9 @@
     "category_desc": "Official Medi-Cal terms, beneficiary definitions, and program concepts",
     "category_id": "article-01",
     "order": 1,
-    "county_file_id": "282676"
+    "county_file_id": "282676",
+    "pdf_date": "2020-07-17",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-329",
@@ -8742,7 +9400,9 @@
     "category_desc": "Safeguarding Medi-Cal case records and confidential health information",
     "category_id": "article-02",
     "order": 2,
-    "county_file_id": "282674"
+    "county_file_id": "282674",
+    "pdf_date": "2019-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-330",
@@ -8769,7 +9429,9 @@
     "category_desc": "County residency, intercounty transfers (ICT), and jurisdictional rules",
     "category_id": "article-03",
     "order": 3,
-    "county_file_id": "282761"
+    "county_file_id": "282761",
+    "pdf_date": "2021-04-26",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-331",
@@ -8796,7 +9458,9 @@
     "category_desc": "County residency, intercounty transfers (ICT), and jurisdictional rules",
     "category_id": "article-03",
     "order": 3,
-    "county_file_id": "282762"
+    "county_file_id": "282762",
+    "pdf_date": "2021-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-332",
@@ -8823,7 +9487,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282738"
+    "county_file_id": "282738",
+    "pdf_date": "2021-08-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-333",
@@ -8850,7 +9516,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "41046681"
+    "county_file_id": "41046681",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-334",
@@ -8877,7 +9545,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282739"
+    "county_file_id": "282739",
+    "pdf_date": "2019-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-335",
@@ -8904,7 +9574,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "41287049"
+    "county_file_id": "41287049",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-336",
@@ -8931,7 +9603,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "610659"
+    "county_file_id": "610659",
+    "pdf_date": "2024-02-01",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-337",
@@ -8958,7 +9632,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282741"
+    "county_file_id": "282741",
+    "pdf_date": "2019-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-338",
@@ -8985,7 +9661,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "40017351"
+    "county_file_id": "40017351",
+    "pdf_date": "2025-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-339",
@@ -9012,7 +9690,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "41844448"
+    "county_file_id": "41844448",
+    "pdf_date": "2026-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-340",
@@ -9039,7 +9719,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "42091774"
+    "county_file_id": "42091774",
+    "pdf_date": "2026-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-341",
@@ -9066,7 +9748,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282743"
+    "county_file_id": "282743",
+    "pdf_date": "2020-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-342",
@@ -9093,7 +9777,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282744"
+    "county_file_id": "282744",
+    "pdf_date": "2020-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-343",
@@ -9120,7 +9806,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "41091455"
+    "county_file_id": "41091455",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-344",
@@ -9147,7 +9835,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282736"
+    "county_file_id": "282736",
+    "pdf_date": "2022-08-22",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-345",
@@ -9174,7 +9864,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "41974728"
+    "county_file_id": "41974728",
+    "pdf_date": "2026-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-346",
@@ -9201,7 +9893,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282746"
+    "county_file_id": "282746",
+    "pdf_date": "2017-07-24",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-347",
@@ -9228,7 +9922,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "40983960"
+    "county_file_id": "40983960",
+    "pdf_date": "2025-10-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-348",
@@ -9255,7 +9951,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282737"
+    "county_file_id": "282737",
+    "pdf_date": "2018-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-349",
@@ -9282,7 +9980,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282735"
+    "county_file_id": "282735",
+    "pdf_date": "2020-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-350",
@@ -9309,7 +10009,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "41571586"
+    "county_file_id": "41571586",
+    "pdf_date": "2026-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-351",
@@ -9336,7 +10038,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282747"
+    "county_file_id": "282747",
+    "pdf_date": "2020-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-352",
@@ -9363,7 +10067,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282748"
+    "county_file_id": "282748",
+    "pdf_date": "2017-01-25",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-353",
@@ -9390,7 +10096,9 @@
     "category_desc": "Intake procedures, verifications, expedited medical need, renewals, and NOAs",
     "category_id": "article-04",
     "order": 4,
-    "county_file_id": "282752"
+    "county_file_id": "282752",
+    "pdf_date": "2022-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-354",
@@ -9417,7 +10125,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282707"
+    "county_file_id": "282707",
+    "pdf_date": "2020-03-02",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-355",
@@ -9444,7 +10154,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282706"
+    "county_file_id": "282706",
+    "pdf_date": "2019-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-356",
@@ -9471,7 +10183,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282716"
+    "county_file_id": "282716",
+    "pdf_date": "2020-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-357",
@@ -9498,7 +10212,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282720"
+    "county_file_id": "282720",
+    "pdf_date": "2018-04-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-358",
@@ -9525,7 +10241,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282717"
+    "county_file_id": "282717",
+    "pdf_date": "2020-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-359",
@@ -9552,7 +10270,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282718"
+    "county_file_id": "282718",
+    "pdf_date": "2022-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-360",
@@ -9579,7 +10299,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282708"
+    "county_file_id": "282708",
+    "pdf_date": "2022-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-361",
@@ -9606,7 +10328,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "41693869"
+    "county_file_id": "41693869",
+    "pdf_date": "2026-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-362",
@@ -9633,7 +10357,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282713"
+    "county_file_id": "282713",
+    "pdf_date": "2019-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-363",
@@ -9660,7 +10386,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282721"
+    "county_file_id": "282721",
+    "pdf_date": "2022-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-364",
@@ -9687,7 +10415,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282711"
+    "county_file_id": "282711",
+    "pdf_date": "2016-03-09",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-365",
@@ -9714,7 +10444,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "40474186"
+    "county_file_id": "40474186",
+    "pdf_date": "2025-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-366",
@@ -9741,7 +10473,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282709"
+    "county_file_id": "282709",
+    "pdf_date": "2015-03-12",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-367",
@@ -9768,7 +10502,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282705"
+    "county_file_id": "282705",
+    "pdf_date": "2018-02-26",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-368",
@@ -9795,7 +10531,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282722"
+    "county_file_id": "282722",
+    "pdf_date": "2017-05-08",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-369",
@@ -9822,7 +10560,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282714"
+    "county_file_id": "282714",
+    "pdf_date": "2018-08-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-370",
@@ -9849,7 +10589,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "40498799"
+    "county_file_id": "40498799",
+    "pdf_date": "2026-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-371",
@@ -9876,7 +10618,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282723"
+    "county_file_id": "282723",
+    "pdf_date": "2020-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-372",
@@ -9903,7 +10647,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282715"
+    "county_file_id": "282715",
+    "pdf_date": "2018-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-373",
@@ -9930,7 +10676,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282725"
+    "county_file_id": "282725",
+    "pdf_date": "2021-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-374",
@@ -9957,7 +10705,9 @@
     "category_desc": "MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs",
     "category_id": "article-05",
     "order": 5,
-    "county_file_id": "282719"
+    "county_file_id": "282719",
+    "pdf_date": "2016-05-23",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-375",
@@ -9984,7 +10734,9 @@
     "category_desc": "Public institutions, mental disease facilities, and inmates medical coverage",
     "category_id": "article-06",
     "order": 6,
-    "county_file_id": "282772"
+    "county_file_id": "282772",
+    "pdf_date": "2023-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-376",
@@ -10011,7 +10763,9 @@
     "category_desc": "Public institutions, mental disease facilities, and inmates medical coverage",
     "category_id": "article-06",
     "order": 6,
-    "county_file_id": "41860195"
+    "county_file_id": "41860195",
+    "pdf_date": "2024-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-377",
@@ -10038,7 +10792,9 @@
     "category_desc": "Public institutions, mental disease facilities, and inmates medical coverage",
     "category_id": "article-06",
     "order": 6,
-    "county_file_id": "282769"
+    "county_file_id": "282769",
+    "pdf_date": "2020-04-09",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-378",
@@ -10065,7 +10821,9 @@
     "category_desc": "Public institutions, mental disease facilities, and inmates medical coverage",
     "category_id": "article-06",
     "order": 6,
-    "county_file_id": "282770"
+    "county_file_id": "282770",
+    "pdf_date": "2020-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-379",
@@ -10092,7 +10850,9 @@
     "category_desc": "Public institutions, mental disease facilities, and inmates medical coverage",
     "category_id": "article-06",
     "order": 6,
-    "county_file_id": "282771"
+    "county_file_id": "282771",
+    "pdf_date": "2024-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-380",
@@ -10119,7 +10879,9 @@
     "category_desc": "Citizenship verification, PRUCOL, and immigrant eligibility rules",
     "category_id": "article-07",
     "order": 7,
-    "county_file_id": "41184555"
+    "county_file_id": "41184555",
+    "pdf_date": "2022-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-381",
@@ -10146,7 +10908,9 @@
     "category_desc": "Citizenship verification, PRUCOL, and immigrant eligibility rules",
     "category_id": "article-07",
     "order": 7,
-    "county_file_id": "41184853"
+    "county_file_id": "41184853",
+    "pdf_date": "2025-12-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-382",
@@ -10173,7 +10937,9 @@
     "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
     "category_id": "article-08",
     "order": 8,
-    "county_file_id": "282782"
+    "county_file_id": "282782",
+    "pdf_date": "2015-03-11",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-383",
@@ -10200,7 +10966,9 @@
     "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
     "category_id": "article-08",
     "order": 8,
-    "county_file_id": "282791"
+    "county_file_id": "282791",
+    "pdf_date": "2012-10-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-384",
@@ -10227,7 +10995,9 @@
     "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
     "category_id": "article-08",
     "order": 8,
-    "county_file_id": "282783"
+    "county_file_id": "282783",
+    "pdf_date": "2018-01-22",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-385",
@@ -10254,7 +11024,9 @@
     "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
     "category_id": "article-08",
     "order": 8,
-    "county_file_id": "282799"
+    "county_file_id": "282799",
+    "pdf_date": "2014-06-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-386",
@@ -10281,7 +11053,9 @@
     "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
     "category_id": "article-08",
     "order": 8,
-    "county_file_id": "282784"
+    "county_file_id": "282784",
+    "pdf_date": "2019-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-387",
@@ -10308,7 +11082,9 @@
     "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
     "category_id": "article-08",
     "order": 8,
-    "county_file_id": "282785"
+    "county_file_id": "282785",
+    "pdf_date": "2017-10-16",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-388",
@@ -10335,7 +11111,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282754"
+    "county_file_id": "282754",
+    "pdf_date": "2022-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-389",
@@ -10362,7 +11140,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282793"
+    "county_file_id": "282793",
+    "pdf_date": "2013-12-12",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-390",
@@ -10389,7 +11169,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282794"
+    "county_file_id": "282794",
+    "pdf_date": "2012-10-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-391",
@@ -10416,7 +11198,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282790"
+    "county_file_id": "282790",
+    "pdf_date": "2012-10-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-392",
@@ -10443,7 +11227,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282800"
+    "county_file_id": "282800",
+    "pdf_date": "2014-06-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-393",
@@ -10470,7 +11256,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282759"
+    "county_file_id": "282759",
+    "pdf_date": "2022-03-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-394",
@@ -10497,7 +11285,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282755"
+    "county_file_id": "282755",
+    "pdf_date": "2019-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-395",
@@ -10524,7 +11314,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282792"
+    "county_file_id": "282792",
+    "pdf_date": "2012-10-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-396",
@@ -10551,7 +11343,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282758"
+    "county_file_id": "282758",
+    "pdf_date": "2020-03-11",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-397",
@@ -10578,7 +11372,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282760"
+    "county_file_id": "282760",
+    "pdf_date": "2021-02-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-398",
@@ -10605,7 +11401,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282787"
+    "county_file_id": "282787",
+    "pdf_date": "2014-06-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-399",
@@ -10632,7 +11430,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282756"
+    "county_file_id": "282756",
+    "pdf_date": "2020-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-400",
@@ -10659,7 +11459,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282757"
+    "county_file_id": "282757",
+    "pdf_date": "2019-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-401",
@@ -10686,7 +11488,9 @@
     "category_desc": "Real and personal property evaluation, principal residence, and transfers",
     "category_id": "article-09",
     "order": 9,
-    "county_file_id": "282788"
+    "county_file_id": "282788",
+    "pdf_date": "2012-10-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-402",
@@ -10713,7 +11517,9 @@
     "category_desc": "Earned/unearned income, deductions, and Non-MAGI budgeting computations",
     "category_id": "article-10",
     "order": 10,
-    "county_file_id": "282726"
+    "county_file_id": "282726",
+    "pdf_date": "2013-05-06",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-403",
@@ -10740,7 +11546,9 @@
     "category_desc": "Earned/unearned income, deductions, and Non-MAGI budgeting computations",
     "category_id": "article-10",
     "order": 10,
-    "county_file_id": "282732"
+    "county_file_id": "282732",
+    "pdf_date": "2021-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-404",
@@ -10767,7 +11575,9 @@
     "category_desc": "Earned/unearned income, deductions, and Non-MAGI budgeting computations",
     "category_id": "article-10",
     "order": 10,
-    "county_file_id": "282730"
+    "county_file_id": "282730",
+    "pdf_date": "2017-12-18",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-405",
@@ -10794,7 +11604,9 @@
     "category_desc": "Earned/unearned income, deductions, and Non-MAGI budgeting computations",
     "category_id": "article-10",
     "order": 10,
-    "county_file_id": "282727"
+    "county_file_id": "282727",
+    "pdf_date": "2015-03-12",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-406",
@@ -10821,7 +11633,9 @@
     "category_desc": "Earned/unearned income, deductions, and Non-MAGI budgeting computations",
     "category_id": "article-10",
     "order": 10,
-    "county_file_id": "282728"
+    "county_file_id": "282728",
+    "pdf_date": "2019-09-13",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-407",
@@ -10848,7 +11662,9 @@
     "category_desc": "Earned/unearned income, deductions, and Non-MAGI budgeting computations",
     "category_id": "article-10",
     "order": 10,
-    "county_file_id": "41839510"
+    "county_file_id": "41839510",
+    "pdf_date": "2026-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-408",
@@ -10875,7 +11691,9 @@
     "category_desc": "Earned/unearned income, deductions, and Non-MAGI budgeting computations",
     "category_id": "article-10",
     "order": 10,
-    "county_file_id": "282731"
+    "county_file_id": "282731",
+    "pdf_date": "2020-09-21",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-409",
@@ -10902,7 +11720,9 @@
     "category_desc": "Maintenance need standards and basic subsistence income levels",
     "category_id": "article-11",
     "order": 11,
-    "county_file_id": "282763"
+    "county_file_id": "282763",
+    "pdf_date": "2016-07-14",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-410",
@@ -10929,7 +11749,9 @@
     "category_desc": "Maintenance need standards and basic subsistence income levels",
     "category_id": "article-11",
     "order": 11,
-    "county_file_id": "41902697"
+    "county_file_id": "41902697",
+    "pdf_date": "2026-08-20",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-411",
@@ -10956,7 +11778,9 @@
     "category_desc": "Share of Cost (SOC) determination, liability computation, and form processing",
     "category_id": "article-12",
     "order": 12,
-    "county_file_id": "282733"
+    "county_file_id": "282733",
+    "pdf_date": "2020-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-412",
@@ -10983,7 +11807,9 @@
     "category_desc": "Share of Cost (SOC) determination, liability computation, and form processing",
     "category_id": "article-12",
     "order": 12,
-    "county_file_id": "282786"
+    "county_file_id": "282786",
+    "pdf_date": "2012-10-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-413",
@@ -11010,7 +11836,9 @@
     "category_desc": "Retroactive coverage, ongoing eligibility periods, and continuous coverage",
     "category_id": "article-13",
     "order": 13,
-    "county_file_id": "282677"
+    "county_file_id": "282677",
+    "pdf_date": "2014-09-02",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-414",
@@ -11037,7 +11865,9 @@
     "category_desc": "Benefits Identification Card (BIC) issuance, replacements, and authorization letters",
     "category_id": "article-14",
     "order": 14,
-    "county_file_id": "41286859"
+    "county_file_id": "41286859",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-415",
@@ -11064,7 +11894,9 @@
     "category_desc": "Benefits Identification Card (BIC) issuance, replacements, and authorization letters",
     "category_id": "article-14",
     "order": 14,
-    "county_file_id": "41286975"
+    "county_file_id": "41286975",
+    "pdf_date": "2026-01-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-416",
@@ -11091,7 +11923,9 @@
     "category_desc": "Benefits Identification Card (BIC) issuance, replacements, and authorization letters",
     "category_id": "article-14",
     "order": 14,
-    "county_file_id": "282767"
+    "county_file_id": "282767",
+    "pdf_date": "2020-09-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-417",
@@ -11118,7 +11952,9 @@
     "category_desc": "Benefits Identification Card (BIC) issuance, replacements, and authorization letters",
     "category_id": "article-14",
     "order": 14,
-    "county_file_id": "282768"
+    "county_file_id": "282768",
+    "pdf_date": "2019-11-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-418",
@@ -11145,7 +11981,9 @@
     "category_desc": "Other Health Coverage (OHC), third-party liability, and Medicare Part A/B buy-in",
     "category_id": "article-15",
     "order": 15,
-    "county_file_id": "282780"
+    "county_file_id": "282780",
+    "pdf_date": "2018-08-15",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-419",
@@ -11172,7 +12010,9 @@
     "category_desc": "Other Health Coverage (OHC), third-party liability, and Medicare Part A/B buy-in",
     "category_id": "article-15",
     "order": 15,
-    "county_file_id": "282779"
+    "county_file_id": "282779",
+    "pdf_date": "2017-06-23",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-420",
@@ -11199,7 +12039,9 @@
     "category_desc": "Other Health Coverage (OHC), third-party liability, and Medicare Part A/B buy-in",
     "category_id": "article-15",
     "order": 15,
-    "county_file_id": "7535371"
+    "county_file_id": "7535371",
+    "pdf_date": "2021-08-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-421",
@@ -11226,7 +12068,9 @@
     "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
     "category_id": "article-16",
     "order": 16,
-    "county_file_id": "282682"
+    "county_file_id": "282682",
+    "pdf_date": "2023-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-422",
@@ -11253,7 +12097,9 @@
     "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
     "category_id": "article-16",
     "order": 16,
-    "county_file_id": "282681"
+    "county_file_id": "282681",
+    "pdf_date": "2015-03-10",
+    "pdf_date_label": "Issue date"
   },
   {
     "id": "mc-423",
@@ -11280,7 +12126,9 @@
     "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
     "category_id": "article-16",
     "order": 16,
-    "county_file_id": "282678"
+    "county_file_id": "282678",
+    "pdf_date": "2017-03-03",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-424",
@@ -11307,7 +12155,9 @@
     "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
     "category_id": "article-16",
     "order": 16,
-    "county_file_id": "282679"
+    "county_file_id": "282679",
+    "pdf_date": "2015-03-10",
+    "pdf_date_label": "Issue date"
   },
   {
     "id": "mc-425",
@@ -11334,7 +12184,9 @@
     "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
     "category_id": "article-16",
     "order": 16,
-    "county_file_id": "282680"
+    "county_file_id": "282680",
+    "pdf_date": "2015-03-10",
+    "pdf_date_label": "Issue date"
   },
   {
     "id": "mc-426",
@@ -11361,7 +12213,9 @@
     "category_desc": "Kidney transplant, organ anti-rejection, dialysis, and parenteral nutrition programs",
     "category_id": "article-17",
     "order": 17,
-    "county_file_id": "282801"
+    "county_file_id": "282801",
+    "pdf_date": "2014-06-16",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-427",
@@ -11388,7 +12242,9 @@
     "category_desc": "Kidney transplant, organ anti-rejection, dialysis, and parenteral nutrition programs",
     "category_id": "article-17",
     "order": 17,
-    "county_file_id": "41693956"
+    "county_file_id": "41693956",
+    "pdf_date": "2026-06-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-428",
@@ -11415,7 +12271,9 @@
     "category_desc": "Casework processing standards, redetermination timelines, and MEDS alerts",
     "category_id": "article-20",
     "order": 18,
-    "county_file_id": "40417420"
+    "county_file_id": "40417420",
+    "pdf_date": "2025-05-01",
+    "pdf_date_label": "Effective date"
   },
   {
     "id": "mc-429",
@@ -11442,7 +12300,9 @@
     "category_desc": "Casework processing standards, redetermination timelines, and MEDS alerts",
     "category_id": "article-20",
     "order": 18,
-    "county_file_id": "40417424"
+    "county_file_id": "40417424",
+    "pdf_date": "2025-05-15",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-430",
@@ -11469,7 +12329,9 @@
     "category_desc": "Casework processing standards, redetermination timelines, and MEDS alerts",
     "category_id": "article-20",
     "order": 18,
-    "county_file_id": "40433593"
+    "county_file_id": "40433593",
+    "pdf_date": "2025-05-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-431",
@@ -11496,7 +12358,9 @@
     "category_desc": "Modified Adjusted Gross Income (MAGI), Covered CA, tax households, and ACA rules",
     "category_id": "article-21",
     "order": 19,
-    "county_file_id": "282802"
+    "county_file_id": "282802",
+    "pdf_date": "2019-09-04",
+    "pdf_date_label": "PDF file date"
   },
   {
     "id": "mc-432",
@@ -11523,7 +12387,9 @@
     "category_desc": "Modified Adjusted Gross Income (MAGI), Covered CA, tax households, and ACA rules",
     "category_id": "article-21",
     "order": 19,
-    "county_file_id": "282803"
+    "county_file_id": "282803",
+    "pdf_date": "2021-07-01",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-433",
@@ -11550,6 +12416,8 @@
     "category_desc": "Modified Adjusted Gross Income (MAGI), Covered CA, tax households, and ACA rules",
     "category_id": "article-21",
     "order": 19,
-    "county_file_id": "42053054"
+    "county_file_id": "42053054",
+    "pdf_date": "2026-10-01",
+    "pdf_date_label": "Revision date"
   }
 ]
