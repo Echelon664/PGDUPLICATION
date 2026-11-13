@@ -132,7 +132,8 @@ class BenefitsHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-Type", STATIC_TYPES.get(os.path.splitext(full)[1].lower(), "application/octet-stream"))
             self.send_header("Content-Length", str(len(data)))
-            self.send_header("Cache-Control", "public, max-age=86400")
+            # viewer.html links local overrides, so it must revalidate; the rest is versioned with PDF.js.
+            self.send_header("Cache-Control", "no-cache" if full.endswith(".html") else "public, max-age=86400")
             self.end_headers()
             self.wfile.write(data)
             return
