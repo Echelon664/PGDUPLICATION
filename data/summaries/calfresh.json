@@ -1,607 +1,607 @@
 {
   "cf-000": {
     "summary": "Defines CalFresh household (HH) composition based on customary purchase and preparation (P&P) of food. Mandates that spouses living together and parents living with their children under age 22 must be certified as one household regardless of separate meal preparation. Authorizes separate household status for elderly (age 60+) or disabled individuals unable to purchase and prepare food separately due to permanent disability, provided the gross income of others in the home does not exceed 165% of the Federal Poverty Level.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f00d0141e7bb227b26c266a982e1f162c6534780b86414c122b281bedd21bba2",
     "updated": "2026-11-13"
   },
   "cf-002": {
     "summary": "Establishes CalFresh application filing procedures and acceptable signature methods, including written, telephonic, and electronic signatures. Confirms that applicants have the right to file an application immediately with only a name, address, and signature on Form CF 285, SAWS 1, or SAWS 2 Plus. Sets the official Beginning Date of Aid (BDA) as the date the signed application is received by the county, and outlines same-day intake screening protocols.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "e13ca72a957cd8bac78a0c9c47ca12a588fb3e19a3ddc0347293105d2d5dd3b5",
     "updated": "2026-11-13"
   },
   "cf-003": {
-    "summary": "Mandates 3 calendar-day expedited CalFresh issuance for households with under $150 gross monthly income and $100 or less in liquid resources, or whose combined monthly gross income and liquid resources are less than their rent/mortgage and utilities, or destitute migrant/seasonal farmworkers. Requires screening at intake and whenever household circumstances change prior to grant. Requires verification of applicant identity only prior to authorization; all other verifications are postponed for 30 days.",
-    "status": "draft",
+    "summary": "Expedited Services (ES) must be screened at the intake interview, even when the ES section of the application is blank, and again whenever the household's situation changes before the case is granted; eligible households get benefits within 3 days. A household qualifies with less than $150 monthly gross income and $100 or less in liquid resources, with combined income and liquid resources below its rent or mortgage and utilities, or as a destitute migrant or seasonal farmworker household with no more than $100 in liquid resources.",
+    "status": "verified",
     "pdf_sha256": "087db603fbd4851bea5229f8fcb07cec2908321466e8d7c4bc486841cebde3df",
     "updated": "2026-11-13"
   },
   "cf-004": {
-    "summary": "Distinguishes between a household's refusal to cooperate and failure to cooperate during initial application processing, recertifications, and Quality Control (QC) reviews. Refusal to cooperate requires demonstrable, willful noncompliance resulting in immediate case denial or discontinuance. Failure to cooperate due to circumstances beyond the household's control requires caseworker assistance to obtain necessary verifications without imposing adverse actions.",
-    "status": "draft",
+    "summary": "To be found eligible, the household or its authorized representative must complete and sign the application, be interviewed, and verify certain information. A household that refuses to cooperate (was able to but clearly chose not to) is denied at the time of refusal, including in later reviews, recertifications and Quality Control reviews; a household that merely fails to cooperate is not denied. Refusing to give a Social Security Number affects only that individual, not the whole household.",
+    "status": "verified",
     "pdf_sha256": "31438d793cef884fd3ba4e69240bffd31287c69416ff68855f85dcd2c9880a38",
     "updated": "2026-11-13"
   },
   "cf-005": {
-    "summary": "Establishes the standard 30-day processing standard from application filing to approval or denial. Distinguishes between agency-caused delays and household-caused delays: agency delays entitle the household to retroactive benefits back to the application date once resolved, whereas household-caused delays hold the case open for an additional 30 days before issuing a denial, preserving the beginning date of aid if cured.",
-    "status": "draft",
+    "summary": "Applications must be processed as soon as possible and no later than the 30th day after the application date; if the 30th day falls on a non-business day, the denial is made the next business day. When processing is delayed, staff decide whether the household or the county caused the delay, based on whether the county took the required steps to help (for example, offering help completing forms), and the required actions differ for each.",
+    "status": "verified",
     "pdf_sha256": "abdae99e04f2e36044d9e940f3352220b9c800ed222a14305268d309e8dbcba0",
     "updated": "2026-11-13"
   },
   "cf-006": {
     "summary": "Official CalFresh eligibility standards tables published annually following federal Cost-of-Living Adjustments (COLA). Lists current Gross Income limits (130% FPL), Net Income limits (100% FPL), Modified Categorical Eligibility limits (200% FPL), standard deduction schedules by household size, Maximum Monthly Allotments, and Standard Utility Allowances.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "480bfcfd668a473432ebff00a2d7a149af20a26ae4ff6bc0998d295a7b90e482",
     "updated": "2026-11-13"
   },
   "cf-007": {
-    "summary": "Comprehensive reference guide providing regulatory definitions, budgeting case examples, and deduction worksheets. Walks caseworkers through step-by-step arithmetic examples of net income calculation, shelter deduction caps, proration formulas, and allotment determinations for complex mixed households.",
-    "status": "draft",
+    "summary": "Worked CalFresh budgeting examples with definitions. The first example computes benefits for a household with an elderly member: it is exempt from the 130% gross income test, then the standard deduction, excess medical expense (costs over $35) and dependent care are subtracted, and the shelter deduction is the shelter cost (rent plus the Standard Utility Allowance) above 50% of adjusted net income.",
+    "status": "verified",
     "pdf_sha256": "e9a0d1b3acf72ae797658b29bc85d6f80649533ba4c28795586fe922eb8bb08e",
     "updated": "2026-11-13"
   },
   "cf-008": {
     "summary": "Customers may designate an adult non-household member as an Authorized Representative (AR) to complete the application and recertification, obtain and use the EBT card, and complete required reporting and forms. Designation is made on the application, a CalFresh AR designation form, or a signed written statement. An AR must be an individual, not an organization; residents of Drug/Alcohol Treatment Centers must use an AR employed by the center. The household is responsible for any overissuance caused by incorrect information from the AR. Eligibility employees, authorized retailers, homeless meal provider employees and persons disqualified for an IPV generally cannot be ARs.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "74fccf5735026ac2f52c82638d75e4289e0863283e0d4e8af1368f0017becc05",
     "updated": "2026-11-13"
   },
   "cf-009": {
     "summary": "Requires an interview at initial certification and at least once every 12 months thereafter. The interview must be completed by phone unless the customer is unable to do so or requests otherwise; customers without a phone or with a hardship may be scheduled for a face-to-face or home visit interview. Staff must resolve unclear information, explain rights, responsibilities and reporting requirements, and inform non-English-speaking customers of their right to an interpreter. When an interview is missed, a Notice of Missed Interview (NOMI) is sent; if the customer does not reschedule or fails to attend, the application is denied on the 30th day.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "4219707a3b1487b227ac990542454932a1acd1e6ece714720f7bfc10b872e86e",
     "updated": "2026-11-13"
   },
   "cf-010": {
     "summary": "Details mandatory and optional verifications. The household has primary responsibility for providing verification, but staff must first attempt electronic verification through the Income Eligibility Verification System (IEVS), Payment Verification System (PVS), MEDS and the Work Number, assist customers as needed, and accept any reasonable verification. Mandatory verifications are gross non-exempt income, non-citizen eligibility, identity, Social Security Numbers and residency. Items such as medical expenses, disability, student exemption and child support payments affect only the benefit amount: if unverified the deduction is not allowed, but the case is not denied. Explains when information is questionable.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "fc61950797ca0fdfb0ffb2625e4403646b29fd9a5f9728cdaf6fbb3e11ad5916",
     "updated": "2026-11-13"
   },
   "cf-011": {
     "summary": "Describes the Income and Eligibility Verification System (IEVS), which matches against state and federal databases and includes Applicant and Recipient IEVS, the Payment Verification System (PVS), New Hire Registry, Fleeing Felon Match and California Lottery Match. Most matches are processed at application and recertification; PVS matches are Verified Upon Receipt. Follow-up must generally be completed within 45 days of receipt, and granting benefits must not be delayed waiting for IEVS data. Information must be independently verified, with the customer given the first opportunity, before case action is taken (except PVS and lottery winnings).",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "ee5664d7c861e9f20a9f2461d4340e6cdb94de7929916fb672342fa172a56594",
     "updated": "2026-11-13"
   },
   "cf-012": {
-    "summary": "Explains Modified Categorical Eligibility (MCE) and Traditional Categorical Eligibility (CE). Under California MCE rules, households receiving or authorized to receive TANF/CalWORKs-funded informational services (such as PUB 275) are exempt from the federal asset/resource test. Establishes the 200% Gross Federal Poverty Level ceiling for MCE eligibility, and specifies that households with disqualified members or IPV sanctions are excluded from categorical eligibility.",
-    "status": "draft",
+    "summary": "A household is traditionally Categorically Eligible (CE) when all its CalFresh-eligible members receive or are authorized to receive cash aid funded under Title IV-A or with state maintenance-of-effort money: CalWORKs (including Immediate Need and Diversion payments), state-funded CalWORKs after the federal time limit, Tribal TANF, General Relief and SSI/SSP. Ineligible noncitizens, ineligible students, SSN-disqualified people and members sanctioned for work rules do not affect CE status. Also covers Modified Categorical Eligibility (MCE) and the households excluded from it.",
+    "status": "verified",
     "pdf_sha256": "ae3498d38ecff458fb8312f35bb7e5afb86edf8639ddac2f89a4b17cfdd9173b",
     "updated": "2026-11-13"
   },
   "cf-013": {
-    "summary": "Establishes caseworker standards and timeliness rules for issuing formal Notices of Action (NOA) when granting, denying, or withdrawing CalFresh applications. Mandates that denial notices specify the precise regulatory citation and missing verifications, and must be mailed no later than the 30th calendar day. Authorizes application restoration without a new application form if the client submits required verifications within 30 days following an eligibility denial.",
-    "status": "draft",
+    "summary": "Applications are denied on the 30th day for a missed intake interview or missing verifications (or on the Verification Check List due date if later), and as soon as possible, no later than the 30th day, when the household doesn't meet eligibility rules or refuses to cooperate. The denial notice must state the reason, the regulation, hearing rights, free legal help and a phone number. A household may withdraw only before eligibility is decided, and staff must not suggest it. Also covers granting, including households that apply after the 15th of the month.",
+    "status": "verified",
     "pdf_sha256": "9329792552d262bfd474068d5cb757705c8802ce710ee6e2b456d836e28e9514",
     "updated": "2026-11-13"
   },
   "cf-015": {
-    "summary": "Governs CalFresh eligibility and meal provision for residents of certified public or private nonprofit drug and alcohol treatment centers (D/ATC) and group living arrangements (GLA). Requires residents to apply through a facility-designated authorized representative. Outlines rules for FNS retailer authorization, EBT card handling, meal provision, and mandatory benefit proration and card return when a resident departs the facility.",
-    "status": "draft",
+    "summary": "Residents of drug/alcohol treatment centers (D/ATC) authorized by FNS must apply through an authorized representative employed by the center, who uses the EBT card to buy food for them; they are certified as one-person households unless their children live with them. Residents of group living arrangements (GLA), nonprofit homes for blind or disabled people with no more than 16 residents certified by CDSS, must be blind or disabled and may apply on their own behalf or through the facility. Lists authorized centers in a desk aid.",
+    "status": "verified",
     "pdf_sha256": "d988e871e7cf698907808e6aeb690b0443a869f3819c7aa61b48fe2c1553369f",
     "updated": "2026-11-13"
   },
   "cf-016": {
     "summary": "Residents of Domestic Violence (DV) shelters are considered separate households and may apply for CalFresh on their own behalf or through an Authorized Representative. A resident who already received benefits for the month as a member of the abuser's household may apply as a separate household and may be eligible for an additional allotment, issued under a new case and EBT card. Only the income, resources and expenses the resident is responsible for are counted; resources held jointly with the former household are not considered available. Describes the actions and notices required on the former case.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "27da06d3401f166ceec8f09b6b4bc8c22161ba0ee4ec532984e00e468f1dc499",
     "updated": "2026-11-13"
   },
   "cf-018": {
-    "summary": "Details mandatory mid-period income reporting rules when a household's total gross monthly income exceeds their assigned Income Reporting Threshold (IRT). For most households, the IRT is set at 130% of the Federal Poverty Level for their household size. Requires the client to report the increase within 10 calendar days of receipt, and directs caseworkers to take action within 10 days to recalculate or discontinue aid effective the first of the following month.",
-    "status": "draft",
+    "summary": "Households with an Income Reporting Threshold (IRT) must report within 10 calendar days when their income goes over it, and staff act on the report mid-period regardless of its effect on benefits; one-time increases such as unexpected overtime need not be reported. A household has an IRT, equal to 130% of the Federal Poverty Level for its size, when its income is at or below 130% FPL; MCE households with income between 131% and 200% FPL have none. The IRT is set at application, SAR 7, recertification or a household composition change.",
+    "status": "verified",
     "pdf_sha256": "80bc61a40530ed068128aeafdd1afea7ea44c196790084c7b0c689fc948153d3",
     "updated": "2026-11-13"
   },
   "cf-019": {
     "summary": "Establishes baseline non-financial criteria for CalFresh and CFAP eligibility, including verification of identity, residency within San Diego County, citizenship/eligible immigration status, household composition, institutional status, and student status. Outlines mandatory screening steps caseworkers must complete during intake before evaluating income and financial eligibility.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "2ae6e99ef11de38323078db2bb34cacc00f73b8b07d33df00b32123a8b5a682b",
     "updated": "2026-11-13"
   },
   "cf-020": {
     "summary": "Identity and residency must be verified. When an Authorized Representative applies, the identity of both the representative and the head of household is verified; customers without identification may use a collateral contact. Any document that reasonably establishes identity or residency must be accepted. Customers must live in the county where they apply, but a permanent dwelling, fixed mailing address or intent to reside permanently is not required. Homeless households meet residency by stating they live in the county. Out-of-county EBT use is not a reason to discontinue benefits, and discontinuance for whereabouts unknown is not permitted.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "eeed530bf792e4e83786a768bdb9407f69b8ceb5365628abfbc2171b9dee4b4d",
     "updated": "2026-11-13"
   },
   "cf-021": {
     "summary": "Limits CalFresh participation to U.S. Citizens and qualified Non Citizens, updated for H.R. 1 (signed July 4, 2025). Qualified Non Citizens are Non Citizen U.S. Nationals, Lawful Permanent Residents (LPRs), individuals residing under a Compact of Free Association (COFA) agreement, and Cuban and Haitian Entrants. U.S. Citizens include those born in the 50 states, the District of Columbia, Puerto Rico, Guam, the U.S. Virgin Islands or the Northern Mariana Islands, and naturalized, acquired or derived citizens. A statement is sufficient verification unless questionable. Certain LPRs face a five-year waiting period; those ineligible may qualify for CFAP.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "5d0e76fafd7b5580961000e8047ff0e4526f50670efa5742e828d8f66f85c5b5",
     "updated": "2026-11-13"
   },
   "cf-022": {
-    "summary": "Establishes qualified noncitizen categories eligible for federally funded CalFresh benefits, including lawful permanent residents (LPRs) with 5 years of qualified status, refugees, asylees, human trafficking victims (T-visa), Cuban/Haitian entrants, and battered immigrants (VAWA). Details exemptions from the 5-year waiting period for children under 18, military veterans, and disabled immigrants, while detailing prorated budget calculations for mixed-status households.",
-    "status": "draft",
+    "summary": "Explains which noncitizens can get federally funded CalFresh and which may get state-funded CFAP instead, updated for H.R. 1 (signed July 4, 2025). Qualified noncitizens include U.S. Nationals, Lawful Permanent Residents and Compact of Free Association (COFA) citizens, who must also meet the noncitizen conditions, such as waiting periods with exemptions for children under 18, veterans and disabled people. Also covers battered noncitizens, refugees, asylees and other categories.",
+    "status": "verified",
     "pdf_sha256": "68fdb66c6d20a5b3e875464845587d9d8990d7a9854e68544c7127cd51bd6326",
     "updated": "2026-11-13"
   },
   "cf-023": {
     "summary": "Governs the state-funded California Food Assistance Program (CFAP) providing food assistance to qualified noncitizens who are ineligible for federal SNAP solely due to their immigration status (such as LPRs subject to the 5-year waiting period). Details eligibility rules, benefit levels identical to federal CalFresh allotments, and state-funded benefit issuances.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "644832d8ca00ddd65647a7b8b96976f7336989d1629e9f5a9b8969849a9637e7",
     "updated": "2026-11-13"
   },
   "cf-024": {
     "summary": "Outlines sponsor deeming requirements for sponsored lawful permanent residents whose sponsors signed an enforceable Affidavit of Support (Form I-864). Details counting a portion of the sponsor's income and resources toward the CalFresh household's budget. Establishes statutory exemptions from sponsor deeming for indigent noncitizens whose household income is below 130% FPL and for victims of domestic violence or battery.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "c5f8c762610d044d02e11267014162c1d442c40b01ebad6946af3f185a8a20b8",
     "updated": "2026-11-13"
   },
   "cf-025": {
-    "summary": "Establishes disqualification penalties for mandatory work registrants who voluntarily quit a job of 30 or more hours per week or reduce work effort below 30 hours per week without good cause within 60 days of application or while receiving aid. Imposes progressive sanction periods: 1 month for the first occurrence, 3 months for the second, and 6 months for the third, and defines good cause exceptions such as unsafe working conditions or lack of child care.",
-    "status": "draft",
+    "summary": "A mandatory work registrant who quits a job of 30 or more hours a week, or cuts hours below 30 a week, without good cause is disqualified from CalFresh. Applicants who did so within 60 days before applying are denied, and recipients who do so during the certification period are discontinued. The disqualification is one month for the first instance, three months for the second and six months for the third. Good cause must be determined, and members exempt from work registration are not subject to these rules.",
+    "status": "verified",
     "pdf_sha256": "8ec06b80fcdae52fc20e34052ba7b815d015b95707fc55311e4ea0420b25eff3",
     "updated": "2026-11-13"
   },
   "cf-026": {
     "summary": "Requires each household member applying for CalFresh to provide a Social Security Number (SSN) or apply for one before certification; failure or refusal without good cause makes that individual ineligible. A Social Security card is not required, since a verbal or written statement is sufficient, and SSNs are validated through IEVS. For an unresolved data mismatch, a Request for Verification (CW 2200) allows 10 days. Expedited Services households need not provide an SSN until after their first allotment. Newborns remain eligible until the next recertification or the sixth month after birth, whichever is later. Staff assist with a Social Security Administration Referral Notice (MC 194).",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "c92a9d3456a96506b7ca3f79fd962db3733fb1f36e5feb62df959ca37744792b",
     "updated": "2026-11-13"
   },
   "cf-027": {
     "summary": "Defines CalFresh eligibility for students enrolled in an institution of higher education, who must meet one exemption. Exemptions include being age 17 or younger or age 50 or older, physically or mentally unfit for employment, enrolled less than half time, receiving disability-based income, receiving a TANF-funded Cal Grant A or B, receiving CalWORKs, working at least 20 hours per week or 80 hours per month, exerting parental care and control of a child under age 6, or participating in a Local Program that Increases Employability (LPIE). Student status is evaluated at intake and recertification; adult education programs are not considered higher education.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "e7c4ce588b3faecaf40d1bd21720a4e87d2a7c5720a6cc5104ade4cc814099dc",
     "updated": "2026-11-13"
   },
   "cf-028": {
     "summary": "Governs the statutory prohibition against dual participation in both CalFresh and the Food Distribution Program on Indian Reservations (FDPIR) during the same calendar month. Details tribal jurisdiction, caseworker screening requirements during intake, and coordination procedures with tribal commodity distribution offices to verify discontinuance before approving CalFresh.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "a6c6f7945a93784164a33632b4f3f471b4361873516bdba121e3947c5eda85cb",
     "updated": "2026-11-13"
   },
   "cf-029": {
     "summary": "A fraud referral is made to the Bureau of Public Assistance Investigation (BPAI) when there are allegations or suspicions of fraud, or questionable information that cannot be resolved. Applicants are referred before benefits are granted; recipients within 5 working days of determining a referral is needed. Lists fraud indicators such as questionable residency, suspected duplicate aid and unreported income. A referral must not cause a denial or discontinuance unless findings change eligibility, and must not delay CalFresh or Expedited Service benefits. Staff must first try to resolve discrepancies using IEVS, MEDS and The Work Number.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "3390a662b236011872ec0b0f62028d429bac59891f50fa5b4894e111a2176a40",
     "updated": "2026-11-13"
   },
   "cf-031": {
     "summary": "Covers replacement of CalFresh benefits stolen electronically by skimming or scamming while the EBT card is in the household's possession. The card is deactivated and replaced, and the household must submit a Report of Electronic Theft of Benefits (EBT 2259) within 90 days of the theft; later requests are denied. Replacement benefits are issued no later than 10 days after the completed form is received. A household may receive two countable replacements per Federal Fiscal Year, each limited to the amount stolen or two times the benefits issued before the first theft, whichever is less. Suspected fraud is referred to the Bureau of Public Assistance Investigations (BPAI), which may delay replacement up to 25 calendar days.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "d5ff355b422bab585a681c70f862801c7e1ee115e305e5cfe7bac5934748d6ea",
     "updated": "2026-11-13"
   },
   "cf-032": {
-    "summary": "Governs the Restaurant Meals Program (RMP) allowing eligible CalFresh recipients to use their Electronic Benefit Transfer (EBT) card to purchase prepared, hot meals at participating contracted restaurants. Restricts RMP eligibility to households where all members are elderly (age 60+), disabled, or homeless, and outlines automated CalSAWS EBT coding for point-of-sale restaurant transactions.",
-    "status": "draft",
+    "summary": "The Restaurant Meals Program (RMP) lets eligible households use their EBT card to buy meals at participating restaurants. Every household member must be aged 60 or older, disabled, the spouse of an aged or disabled person, or experiencing homelessness; examples show which households qualify. RMP eligibility is evaluated at application, recertification, periodic report and mid-period changes, and households are sent the CF 889 approval or termination notice and referred to the CDSS list of approved restaurants.",
+    "status": "verified",
     "pdf_sha256": "8ed319f2e3112bc8f6264d4e9c991902d02ec1e539a0c3cdb4552c025443acb1",
     "updated": "2026-11-13"
   },
   "cf-033": {
     "summary": "Details the CalFresh resource evaluation for households that are not Categorically Eligible (CE) or Modified Categorically Eligible (MCE), whose non-exempt resources must not exceed the limit listed in Section 63-1101. Countable resources include liquid resources (cash on hand, checking and savings accounts, stocks, bonds, IRAs and accessible Keogh plans) and non-liquid resources valued at equity. Explains the treatment of jointly owned resources, resources of excluded household members, sponsor resources deemed to sponsored noncitizens (reduced by $1,500), and residents of battered person shelters. Resources are evaluated at application, SAR 7 and recertification.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "be38b3ad69d3e2e45fc58850bde19cbc9afd865080064ecb95dc79b2438be78b",
     "updated": "2026-11-13"
   },
   "cf-034": {
     "summary": "Lists resources excluded for households that are not Categorically Eligible or MCE. Exclusions include the home and surrounding property, income-producing property, household goods and personal effects, one burial plot per member, the cash value of life insurance, all vehicles, resources with an equity value of $1,500 or less, property essential to employment or self-employment, TANF Individual Development Accounts, disaster loans and grants, and inaccessible resources such as security deposits, property in probate and irrevocable trust funds. Excluded retirement savings and pension plans are listed in a separate desk aid.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "1bac61a45abd5f1e7ec84d69bfd2fe06b410cf199e5fee339bf851482db67863",
     "updated": "2026-11-13"
   },
   "cf-035": {
     "summary": "Defines earned income that must be counted in the CalFresh budget: any monetary compensation received for the performance of work. Lists countable types including wages, salaries, diverted wages, In Home Supportive Services (IHSS) wages, military pay and special allowances such as Basic Allowance for Housing (BAH), pay advances, recurring severance payments, striker's benefits received for picketing, training allowances, AmeriCorps VISTA stipends received by an applicant, and Workforce Investment Act (WIA) on-the-job training earnings. Refers to Section 63-224 for exclusions and Section 63-225 for self-employment.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "4b8d6cf7257da9fbf70043910812b6af39d9fd150093401d537ea9d8b4e9fa24",
     "updated": "2026-11-13"
   },
   "cf-036": {
-    "summary": "Outlines the treatment and budgeting of unearned income, including Social Security (RSDI), Supplemental Security Income (SSI/SSP), disability benefits, pensions, Unemployment Insurance Benefits (UIB), and child support. Directs that court-ordered garnishments remain countable as income, while public assistance grants reduced due to client noncompliance or intentional error are counted at their pre-sanction gross amount.",
-    "status": "draft",
+    "summary": "Lists unearned income counted in the CalFresh budget, including assistance payments (CalWORKs, General Relief, Refugee Cash Assistance), adoption assistance (except earmarked reimbursements), annuities, child support and alimony, deemed sponsor income and disability insurance. Garnished income is counted, and CalWORKs or General Relief grants reduced for failure to comply are counted. Cryptocurrency is a non-liquid resource: a one-time conversion is an excluded lump sum, while recurring conversions to cash are unearned income.",
+    "status": "verified",
     "pdf_sha256": "89ce6cc394eb47dd82270fb2f3e4f8494351e18e12445d319bf31ec1ff53202c",
     "updated": "2026-11-13"
   },
   "cf-038": {
-    "summary": "Identifies statutory income exclusions that are exempt from the CalFresh budget, including federal and state student financial aid, government energy assistance (LIHEAP), California Earned Income Tax Credit (CalEITC) refunds, child tax credits, nonrecurring lump-sum payments, and disaster relief grants. Ensures that one-time emergency relief payments do not reduce monthly food allotment calculations.",
-    "status": "draft",
+    "summary": "Lists income excluded from the CalFresh budget, such as Agent Orange Settlement payments, children's nutrition program benefits (WIC, school meals), Board of Governors fee waivers, California Victims of Crime payments, up to $300 a quarter in charitable cash donations, Title IV-A child care payments, and child support that CalWORKs recipients must turn over. Since December 1, 2021, student loans and grants excluded for CalWORKs are also excluded for CalFresh.",
+    "status": "verified",
     "pdf_sha256": "2821acb749ae59cd963fb9f2bc2482a5e23f9757abdea46e4f2785e9db865f55",
     "updated": "2026-11-13"
   },
   "cf-039": {
-    "summary": "Details budgeting procedures for self-employment income from businesses, independent contracting (1099), gig economy work, and rental property. Outlines the two calculation options: claiming actual verified allowable business operating costs, or electing the California standard 40% deduction off gross business receipts. Explains annualizing seasonal earnings and determining monthly net self-employment profit.",
-    "status": "draft",
+    "summary": "Self-employment income is earned income determined case by case; anyone paid on an IRS 1099 or filing taxes as self-employed is self-employed, and a customer's statement is accepted unless questionable. Covers independent contractors, gig-economy workers (such as Uber, Lyft and DoorDash) and boarders and rental income, and explains how to calculate net self-employment income, including the option of a 40 percent standard deduction for business costs.",
+    "status": "verified",
     "pdf_sha256": "353cf86fefb90c3b2302900f02b695fa8145e32de177a7315b78ea6ae7cdac57",
     "updated": "2026-11-13"
   },
   "cf-040": {
     "summary": "Specifies standard deduction amounts adjusted annually by household size and calculates the statutory 20% earned income disregard applied to gross wages. The standard deduction is subtracted from gross income for all households to account for basic non-shelter living costs, and the 20% earned income deduction serves as a work incentive by exempting one-fifth of earnings from net income calculation.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "57f9b97922b1eb3c82328e97b7c7ba0e8568e1df3f72e6387bd67ea283ca2420",
     "updated": "2026-11-13"
   },
   "cf-041": {
     "summary": "Details the excess medical deduction for household members who are elderly and/or disabled. Members who verify medical expenses of $35.01 to $185 per month receive the Standard Medical Deduction (SMD) of $150 per month; households with verified expenses over $185 may claim actual expenses in excess of $35. Countable expenses include prescription drugs, dentures, eyeglasses, prosthetics, health insurance and Medicare premiums, service animals, transportation to health care, and attendant or home health aide costs; special diets are excluded. Expenses must be verified, but failure to verify must not deny, delay or discontinue eligibility.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "9e2f23575357b1057354a3196b7e4bf4673dfc0b12096c85530d7ece25dd5ddc",
     "updated": "2026-11-13"
   },
   "cf-042": {
     "summary": "Governs the dependent care deduction for out-of-pocket costs incurred for the care of a child under age 18 or an incapacitated adult dependent when necessary for household members to seek, accept, or maintain employment, attend job training, or pursue higher education. Confirms that dependent care deductions are uncapped and include transportation costs to and from the care facility.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "e603fa5cdd2120d299181fa6dee7f77beb5d3e26a4f16dcf8b76ec5338bcc6d1",
     "updated": "2026-11-13"
   },
   "cf-043": {
     "summary": "Covers shelter deductions for unhoused households that do not receive free shelter for the entire month. They may receive the homeless shelter deduction (amount listed in Section 63-1101) or claim actual shelter expenses such as hotel and motel costs, homeless shelter fees, and vehicle expenses when living in a vehicle, whichever is more beneficial. The homeless shelter deduction and a utility allowance cannot be received at the same time. Allowable vehicle expenses include payments, collision and comprehensive insurance, parking and maintenance, but not fuel. Reported shelter expenses are accepted without verification unless questionable.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "b4996daa5e7647694dab0fbce47a81d0ce2ffad602db9e55cc6dbb1b9c94c673",
     "updated": "2026-11-13"
   },
   "cf-044": {
     "summary": "Covers excess shelter expense deductions and utility allowance tiers: Standard Utility Allowance (SUA) for households incurring heating or cooling costs, Limited Utility Allowance (LUA) for non-heating/cooling utilities, and Telephone Utility Allowance (TUA). Excess shelter costs exceeding 50% of net income after all other deductions are subtracted up to the maximum statutory cap, with uncapped deductions for elderly or disabled households.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "dcee6c58bd301d8bdcdfd1645edc3bbdfb583aaf0f60da01cd5d3dc0b073cb01",
     "updated": "2026-11-13"
   },
   "cf-045": {
     "summary": "Substantial lottery or gambling winnings (a cash prize won in a single game, ticket or bet) equal to or greater than the elderly or disabled (E/D) resource limit make the household ineligible, and must be reported within 10 calendar days of receipt as a mandatory mid-period report. The amount is determined before taxes, and each winning is evaluated individually, not combined. The entire household is discontinued with timely notice. Households may reapply at any time but are not Categorically Eligible or MCE the first time they are certified afterward, so the gross income, net income and resource tests apply.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "89bef946d04a8ff05490604971c0e57fbfc00d69a85373f31105c6e7f5ea4c64",
     "updated": "2026-11-13"
   },
   "cf-046": {
     "summary": "Governs prospective budgeting and the determination of reasonably anticipated monthly income for CalFresh semi-annual reporting households. Details caseworker methods for evaluating past wage history, anticipating income changes that are reasonably certain to occur during the 6-month payment period, converting pay frequencies into monthly averages, and resolving fluctuating earnings.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "2307dd73522950c9ef247d1a581f5ea2c0810969fe07f493a6909441094a35e3",
     "updated": "2026-11-13"
   },
   "cf-047": {
-    "summary": "Details specialized prospective budgeting rules and expedited certification for migrant and seasonal farmworker households meeting destitute criteria. Explains prorating or excluding income from terminated sources received prior to application, and allowing travel expense deductions for farmworkers traveling to new agricultural employment, preventing food insecurity during seasonal transitions.",
-    "status": "draft",
+    "summary": "Migrant and seasonal farmworker households are screened at application and recertification for the destitute criteria, which apply only to them. A household is destitute when its only income in the application month is from a terminated source, a new source, or both; tables explain when income counts as terminated based on payment frequency. Destitute households get special income calculations for Expedited Services and the first month's benefits, and travel costs to new employment are considered.",
+    "status": "verified",
     "pdf_sha256": "6a831b335366b4c241d48cf63c0f8f781da8188ab621060a51e03696f55dfa15",
     "updated": "2026-11-13"
   },
   "cf-048": {
     "summary": "Explains the complete step-by-step mathematical calculation of CalFresh net monthly income and allotment determination. Details comparing gross monthly income against the 130% FPL test (waived for MCE households), applying allowable deductions (standard, 20% earned, medical, dependent care, shelter), testing against 100% Net FPL, and multiplying net income by 30% to determine the household's monthly benefit from the Maximum Allotment Table.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "a7b922c93e657fea8b01b22bd8bf0eec9a6733372a67215d0fabbd30b4fc4117",
     "updated": "2026-11-13"
   },
   "cf-049": {
-    "summary": "Governs the treatment of income, resources, and deductible expenses of individuals residing in the home who are ineligible or excluded from the CalFresh unit, including undocumented immigrants, individuals sanctioned for work violations, or fleeing felons. Explains pro-rata income attribution formulas and prorated expense calculations to determine the benefit allotment for remaining eligible household members.",
-    "status": "draft",
+    "summary": "The income and expenses of ineligible household members are evaluated at intake, SAR 7, recertification and mid-period changes, and treated according to why the member is ineligible. Income of SSN-disqualified members, ineligible noncitizens and those failing ABAWD work rules is prorated so only the eligible members' share counts; all income of IPV-disqualified members, fleeing felons, probation or parole violators and work-sanctioned members is counted; income of ineligible students and non-household members is not counted.",
+    "status": "verified",
     "pdf_sha256": "c905a03946f499114958a1687364ce042788889a6e1735b804e2b8e178e12df3",
     "updated": "2026-11-13"
   },
   "cf-050": {
-    "summary": "Details the regulatory framework of California's Semi-Annual Reporting (SAR) system under federal SNAP simplified reporting rules. Outlines household obligations to submit an Eligibility Status Report (Form SAR 7) once every 6 months to maintain benefits. Explains reporting income, household size, shelter cost changes, and job loss, which the county uses to calculate prospective benefits for the subsequent 6-month period.",
-    "status": "draft",
+    "summary": "Under Semi-Annual Reporting, households are told the SAR rules at the application interview and must receive the SAR 7 before the end of the data month; its information sets eligibility and benefits for the next payment period. On the SAR 7 households report household composition, address and shelter costs, medical, child support and dependent care costs, resources, earned income, and changes over $100 in unearned income. Changes reported that were not known in the data month are treated as voluntary mid-period reports.",
+    "status": "verified",
     "pdf_sha256": "38cfd3de2f24ddc87cfcb630f92e42f46a64a7a50f7b059c4d2e9475f4187a5f",
     "updated": "2026-11-13"
   },
   "cf-051": {
     "summary": "Establishes the cyclical structure of the SAR payment period, identifying the 6-month intervals based on the Beginning Date of Aid (BDA). Defines critical operational milestones: the Data Month (month 5), the Submit Month (month 6 when SAR 7 is due), and the Payment Period (the upcoming 6 months). Outlines notice mailing timelines and caseworker processing deadlines.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "6ba62bebfb1e213cca762f81b3a0bbd102d778d731b0fd13b9739fe2204c155f",
     "updated": "2026-11-13"
   },
   "cf-052": {
     "summary": "Covers SAR 7 processing: notices, late and incomplete reports, good cause and restoration. Households are asked to submit the SAR 7 by the 5th day of the submit month; it is late if received after the 11th day. The X NOA (NA 960X SAR) notifies the household that a SAR 7 has not been received, the Y NOA (NA 960Y SAR) that it was received but incomplete, and the SAR 90 lists items still missing. Discontinued cases may provide a completed report on the extended filing date, the first working day after the submit month. Benefit decreases require timely 10-day notice; increases do not. Good cause must be evaluated before restoration.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "760d4eb20741e680b1d83921c50de71be9d4adbc26fef864a01f8a34b53e2a9c",
     "updated": "2026-11-13"
   },
   "cf-053": {
     "summary": "Covers mid-period reports, categorized as mandatory, voluntary, or county-initiated. Households must report within 10 days when gross income exceeds the Income Reporting Threshold (IRT), when an ABAWD's work or training hours drop below 20 hours per week or 80 hours a month, or when they receive substantial lottery or gambling winnings at or above the Elderly or Disabled (E/D) resource limit. Reports that would decrease benefits are generally not acted on mid-period, with listed exceptions; a No-Change NOA is sent and the change is addressed at the next SAR 7 or recertification. County-initiated changes are acted on regardless of impact. Households are informed through the SAR 2 notice.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "8ad4480fc823e574987728bb244e550e8bcd1820ac7ec52e0fe7344a4d1a6df7",
     "updated": "2026-11-13"
   },
   "cf-054": {
-    "summary": "Details procedures for identifying, calculating, and correcting benefit overissuances and underissuances under semi-annual reporting. Distinguishes between household error, agency administrative error, and intentional program violations. Details budgeting corrections, establishing overissuance claims, and issuing mandatory retroactive supplemental payments when county error causes benefit underissuances.",
-    "status": "draft",
+    "summary": "Explains establishing CalFresh overissuances under Semi-Annual Reporting, based on the household's failure to report accurately, completely or timely, or on county error. No overissuance is established when a timely mandatory mid-period report could not be acted on only because of the 10-day notice rule, but one is established when late reporting caused the delay. Also covers late or incomplete SAR 7s, Aid Paid Pending, voluntary reports, budget recomputation, recoupment by allotment reduction, and underissuances.",
+    "status": "verified",
     "pdf_sha256": "718e37fcbaadcf9a90edf6065889e565903a3b6c99a5b6595af250439bc3c434",
     "updated": "2026-11-13"
   },
   "cf-055": {
     "summary": "Explains certification periods, the number of months a household is certified to receive benefits without a new application. All households are assigned a 12-month period unless all adult members are elderly or disabled (24 months), all members are elderly or disabled with no earned income (36 months), or members live on an Indian Reservation (24 months). A period is generally no fewer than 4 months, though one or two months may be assigned if ineligibility appears likely. Certification periods are matched with Semi-Annual Reporting (SAR) cycles and may be shortened only with a timely Notice of Action, or lengthened up to the maximum for the household type.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f4053dac2095664d95037faac467631eaa361493bf5e11dc4186b9fa7b0a3867",
     "updated": "2026-11-13"
   },
   "cf-056": {
     "summary": "Defines CalFresh household classifications, which determine factors such as verification requirements and certification periods. Public Assistance CalFresh (PACF): all members receive federal CalWORKs benefits, SSI, or Tribal TANF. Non-Assistance CalFresh (NACF): at least one member does not receive federal CalWORKs or SSI, or receives State CalWORKs. A mixed household is considered NACF. Non-household members such as a foster care child or an ineligible noncitizen do not affect classification. Other classifications are Categorical Eligibility (CE) and Modified Categorical Eligibility (MCE), covered in Section 63-120.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f13f560851c555c4124960669893ec6f2dcc4fb41ec2ff2f2a115325832c4cab",
     "updated": "2026-11-13"
   },
   "cf-057": {
-    "summary": "Establishes legal standards for Notices of Action (NOA). Adequate NOAs must explain the specific action being taken, the calculation formula, the factual reason, and the governing state regulations. Adverse action notices must be mailed at least 10 calendar days prior to the effective date, detail the household's right to request a state fair hearing, and explain conditions for aid paid pending a hearing.",
-    "status": "draft",
+    "summary": "An adequate Notice of Action (NOA) must give the action, the reason and the supporting state regulation; adverse NOAs must list missing mandatory verifications, hearing rights, Aid Paid Pending and the potential overissuance if the action is upheld, plus a phone number and free legal help. A timely NOA must be mailed at least 10 calendar days before the change takes effect, with exceptions such as mass changes and benefit increases. NOAs are sent in the household's preferred language when available and may be received electronically.",
+    "status": "verified",
     "pdf_sha256": "f4b5488332696daa7f7ec82114c2e68d7c0e65cf6c8a0bf27562eab6a664e997",
     "updated": "2026-11-13"
   },
   "cf-058": {
-    "summary": "Governs annual recertification procedures to ensure uninterrupted CalFresh benefits. Directs the county to send recertification packets (Form CF 37) in the next-to-last month of the certification period, conduct a recertification interview, and process verifications. Households submitting timely applications by the 15th of the expiration month are guaranteed uninterrupted benefit issuance on their normal date.",
-    "status": "draft",
+    "summary": "Benefits cannot continue past the certification period without a new eligibility determination. Households get a Notice of Expiration of Certification (NEC) before the first day of the last month of the period but no more than 60 days before it ends, plus an appointment letter and the CF 37 recertification form. Recertification interviews must be scheduled by the 15th of the final month, with a 15-minute call window. Benefits for the new period use prospective budgeting; ESAP households follow Section 63-360.",
+    "status": "verified",
     "pdf_sha256": "0ba02370b8e20c921951f2a224b153171dd2c38ed33ee2822908df1d6c636a25",
     "updated": "2026-11-13"
   },
   "cf-059": {
     "summary": "Authorizes expedited restoration of CalFresh cases discontinued due to failure to submit a complete SAR 7 report or recertification packet. If the household submits the required report, verifications, and interview within 30 calendar days following the effective date of discontinuance, the county must restore eligibility and issue prorated benefits without requiring a new initial application.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "94a35c67d3c382a98afbe7b31a19675fc6f288a0dd69cb2a39910190e8ce1532",
     "updated": "2026-11-13"
   },
   "cf-061": {
-    "summary": "Governs Transitional CalFresh (TCF) providing 5 consecutive months of guaranteed food benefits to households leaving CalWORKs cash aid. Benefits are frozen at the pre-discontinuance allotment adjusted for the loss of CalWORKs cash grant, with zero reporting requirements during the 5-month period. Excludes cases discontinued from CalWORKs due to failure to cooperate or full-family sanction.",
-    "status": "draft",
+    "summary": "A household receiving Public Assistance CalFresh in the month CalWORKs ends for a qualifying reason automatically gets Transitional CalFresh (TCF) from the next month: five months of unchanged benefits, after which it must recertify for regular CalFresh. Qualifying reasons include exceeding the income or property limit, asking to close CalWORKs, the only eligible parent timing out, the only eligible child aging out or leaving, a rule change, whereabouts unknown, and the only adult being incarcerated. The CF 1239 notice is sent.",
+    "status": "verified",
     "pdf_sha256": "619bd050aab9ca2df09337f24bee694a0d04493223a4b24e6f15ef87d2afdfe0",
     "updated": "2026-11-13"
   },
   "cf-062": {
     "summary": "Explains the reversal of California's SSI/SSP cash-out policy, in place since 1974. Effective June 1, 2019, individuals receiving SSI/SSP are eligible for CalFresh if they meet all other eligibility criteria. Households in which all members are SSI/SSP recipients are potentially eligible from that date; ongoing households with an excluded SSI/SSP member have the change applied at the next periodic report, recertification, or when requested. Previously excluded members' income, resources and deductions are then counted. SSI/SSP income is verified through PVS, IEVS and MEDS before requesting documentation.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "07cd38201a4f46570d04e2e40a456045a97e8a5e37b09386647ea5ba79abb9a4",
     "updated": "2026-11-13"
   },
   "cf-064": {
     "summary": "Establishes the state-funded Supplemental Nutrition Benefit (SNB) program for CalFresh households active prior to June 1, 2019, that experienced a net reduction in monthly benefits when an SSI/SSP recipient was added to the household. Explains automated monthly SNB supplemental benefit allotments and ongoing eligibility conditions.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "6a530986dbd2d573736d94c0b0eed0e679116cf49b9f4cc79af7eac1b0435144",
     "updated": "2026-11-13"
   },
   "cf-066": {
     "summary": "Governs the Transitional Nutrition Benefit (TNB) program providing monthly state-funded nutritional assistance to households active prior to June 1, 2019, that became entirely ineligible for CalFresh when an SSI/SSP recipient was added to their budget. Details benefit levels, annual recertification via Form TNB 4, and restoration procedures.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "4acafcacfe8fcde74a400c07c439da7f4babf52214a6548dd36bc0b8f49c1b97",
     "updated": "2026-11-13"
   },
   "cf-068": {
-    "summary": "Outlines joint application processing between the Social Security Administration (SSA) and County HHSA. Under federal rules, SSI applicants and recipients may apply for CalFresh directly at local SSA field offices. Establishes county procedures for receiving, registering, and processing SSA-forwarded applications and telephonic data transfers within 30 days.",
-    "status": "draft",
+    "summary": "Households made up only of SSI/SSP applicants or recipients may apply for CalFresh through the Social Security Administration (SSA) under joint processing, if they don't currently get CalFresh, got a recertification notice in the last 30 days, or were denied in the last 60 days. The SSA submits the application electronically through BenefitsCal, and the SSA technician's signature is sufficient. Households with non-SSI members are referred to BenefitsCal or a Family Resource Center. Covers the move from GetCalFresh to BenefitsCal.",
+    "status": "verified",
     "pdf_sha256": "467624b10f85655f9709540d63089869df3b9c8e9de5b303e93214fc13c3e4b6",
     "updated": "2026-11-13"
   },
   "cf-069": {
     "summary": "Outlines the worker's general responsibilities: determining eligibility for the assigned case action, explaining program requirements in simple, understandable terms, advising households of their rights and responsibilities during the application and recertification interview, ensuring lost, stolen or underpaid EBT benefits are replaced in the current month, and processing claim determinations under Section 63-450. Notes that benefit availability is staggered over the first ten days of the month and that non-discrimination information is now found in the Eligibility Desk Guide.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "2a1a9ef78cb53e8bab272f724008d05ecabd7d669ea9d9608caffe659fb89999",
     "updated": "2026-11-13"
   },
   "cf-070": {
-    "summary": "Governs internal case assignment, case transfers, and caseload coordination within Family Resource Centers (FRCs). Outlines referral workflows between CalWORKs, Medi-Cal, General Relief, and CalFresh, and details automated case conversions from regular CalFresh to Transitional CalFresh (TCF) upon cash aid closure.",
-    "status": "draft",
+    "summary": "The worker assigned a case action determines eligibility and certification and answers questions. Case handling follows each Family Resource Center's procedures and the No Wrong Door guidelines. For referrals and transfers between cash assistance and CalFresh, staff must prevent issuing CalFresh twice in the same month, the worker who can meet the need most promptly acts, and FRC management resolves disputes. Also covers referrals for cash assistance and conversions from CalWORKs/CalFresh to Transitional CalFresh.",
+    "status": "verified",
     "pdf_sha256": "eca058ace11567aafa98ffd5579bded53f06029f4b8740e57a9179cfd2ebd2d6",
     "updated": "2026-11-13"
   },
   "cf-071": {
-    "summary": "Establishes strict confidentiality standards safeguarding all CalFresh applicant and recipient case records under federal and state privacy statutes. Restricts access to authorized public social service personnel, and prohibits disclosure of names, addresses, Social Security numbers, or benefit amounts to outside parties, landlords, or credit agencies without written customer consent.",
-    "status": "draft",
+    "summary": "Names, addresses and all other eligibility information, including whether someone is an applicant or recipient, may not be disclosed for purposes not directly related to administering public social services. Before a collateral contact the customer must be offered the chance to get the information themselves, and except for BPAI staff, signed consent is required. Unauthorized disclosure by a County employee is a misdemeanor and may bring criminal or civil liability. Case records are confidential and kept for reference and audit.",
+    "status": "verified",
     "pdf_sha256": "45b0f700cc96697ca3d42479a597a0bbc1d3802517174e219b12fab565ea9e85",
     "updated": "2026-11-13"
   },
   "cf-073": {
     "summary": "Confidential information may be released without the customer's consent only for purposes directly connected with the administration of public social services programs, and all requests are recorded in case comments. Provides an Authorized Disclosure List of agencies that most often make authorized inquiries, such as County Counsel, the District Attorney, EDD, the Social Security Administration and Housing Authorities. Research organizations and graduate students must first submit project information. Otherwise release requires customer consent: written authorization must be signed and dated and expires after one year; telephone authorization covers one-time contacts.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "3415a0eba382caac4f6b46c6ea47268a5195060da6d687535d4132106acc31cd",
     "updated": "2026-11-13"
   },
   "cf-075": {
     "summary": "Sets procedures for third-party requests for case information. Questionable requests are forwarded with a written statement to the Family Resource Center (FRC) Manager for approval; inquiries on closed cases go to the Public Assistance Information Unit (PAI). Board of Supervisors inquiries are generally answered without releasing information about a specific applicant/recipient unless consent is given. Release to absent parents, family or friends requires the applicant/recipient's written consent. Defense attorney requests without a release go to the HHSA Subpoena Liaison. Law enforcement requests must be in writing from the head of the agency and specify that an arrest warrant has been issued.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "9b4f10d78eee5e8e49edfdfb56d25f38294bf54a6c3ca6f9a51a522872d54066",
     "updated": "2026-11-13"
   },
   "cf-076": {
     "summary": "Information provided solely by, or authorized by, the applicant/recipient (such as bank, employment and medical verification requests) may be released to them or their authorized representative, and staff may photocopy specific items. Photocopies of the whole case file or of case narratives are not provided. Information given confidentially by a third party, such as PAFD reports and informant identity, is not disclosed. IEVS reports may be released only when they verify previously reported information; mismatched or previously unreported information is withheld until the discrepancy is clarified.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f633351b2a736770a852164832ae213fc5af85e2c66ad5aa4a9e4036c5d88b4c",
     "updated": "2026-11-13"
   },
   "cf-077": {
     "summary": "Sets Family Resource Center (FRC) procedures for inspection of case records by applicants/recipients or their authorized representatives. The complete record is made available after privileged communications and information not provided or authorized by the client are removed. Inspection is permitted only during normal work hours, in a private room with the worker present; reviewers may make notes but may not remove, alter, photocopy or photograph records, though staff may copy specific items. Privileged material includes physician reports, PAFD reports, informer identity, Child Abuse Hotline reports, and lawyer-client and spousal communications.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "0783e320b3fc68e7511dc835124ffdd484b0eac6ede7780d710255731827c212",
     "updated": "2026-11-13"
   },
   "cf-078": {
     "summary": "Explains how staff respond to subpoenas and subpoenas duces tecum. Staff fully cooperate with District Attorney subpoenas on matters directly related to the administration of public social services and appear as directed. Subpoenas from private attorneys, Legal Aid or the Public Defender on unrelated matters such as divorce or child custody go to the Subpoena Liaison, who asks the attorney to withdraw them under W&I Code 10850. Staff must not accept subpoenas addressed to the Custodian of Record. If the attorney refuses to withdraw, the employee appears with County Counsel's Points and Authorities and does not testify until it has been presented to the judge.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "c8911362571ac4b6d149cb3ed4b0f2d553d9b5abe305acdfd5d614597de74a0f",
     "updated": "2026-11-13"
   },
   "cf-079": {
     "summary": "Governs Inter-County Transfers (ICT) when a CalFresh household moves to another California county. The county notified of the move initiates the ICT within seven business days, and the transfer must be completed within 30 days of notification. An ICT does not require the household to complete a new application, recertification, or interview, or to resubmit verifications. The sending county notifies the customer with the NA 1268 and forwards the CF 215 and case documents; the receiving county sends the NA 1267, continues the existing SAR cycle and recertification, and processes Transitional CalFresh cases.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "b520af17806aa7c62a8480f85c7131322b7bb7fce269d56e675fcb3a5d442ff2",
     "updated": "2026-11-13"
   },
   "cf-080": {
     "summary": "Governs the Elderly Simplified Application Project (ESAP) for households where all members are elderly (age 60+) or disabled with no earned income. Assigns a streamlined 36-month certification period, waives semi-annual SAR 7 reporting, eliminates the recertification interview unless requested or pending denial, and relies on automated data matches for income verification.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "7955651393448dc27aced4954b87f844adcc8788ae469241d05200f9c2543eed",
     "updated": "2026-11-13"
   },
   "cf-081": {
     "summary": "Describes the state-funded Minimum Nutrition Benefit (MNB) pilot, operating December 1, 2025 through November 30, 2026. It provides up to 12 months of supplements that bring total benefits up to $60 for households eligible for less than $60 monthly in CalFresh that had Elderly Simplified Application Project (ESAP) status on or before December 1, 2025 and have at least two eligible members. When benefits are reduced by recoupment, MNB is calculated on the full CalFresh amount. Households receiving SNB or a prorated benefit are ineligible. No overissuances are established for MNB, and it is not replaced for disaster, household misfortune or electronic theft.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "0a99e776cf9d09436eba9ba45fbc19de14214009298816f04efb2f901347af3f",
     "updated": "2026-11-13"
   },
   "cf-082": {
-    "summary": "Authorizes eligible CalFresh households (individuals aged 60+, disabled, homeless, or their spouses) to use their CalFresh benefits to purchase prepared meals through home-delivered meal services (Meals on Wheels), authorized communal dining centers, and contracted homeless meal providers.",
-    "status": "draft",
+    "summary": "Eligible households may use CalFresh for prepared meals. Home-delivered meals from FNS-approved nonprofits are available to people 60 or older who cannot leave home or prepare meals because of a disability, medical condition or limited mobility, and to their spouses, if not living in a boarding house or institution. People 60 or older or receiving SSI, and their spouses, may use communal dining facilities, and people experiencing homelessness may buy meals from authorized homeless meal providers. Lists contacts for provider lists.",
+    "status": "verified",
     "pdf_sha256": "60653c82d91b887bb4fd72e2f0d8355eeafe069d200b23af9d2b43625440186d",
     "updated": "2026-11-13"
   },
   "cf-083": {
     "summary": "Governs the Work Incentive Nutrition Supplement (WINS), providing an additional $10 monthly food benefit on the EBT card for CalFresh households with a parent or caretaker relative meeting federal TANF work participation hours (at least 20 or 30 hours per week). Evaluated at initial application, SAR 7, and recertification.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "aa15ae8335f38464ccaa08dca742b9212e3852d6d59359f5911c76a417efc3c3",
     "updated": "2026-11-13"
   },
   "cf-084": {
     "summary": "Explains how overissuance (OI) claims are established and classified as Inadvertent Household Error (IHE), Administrative Error (AE), or Intentional Program Violation (IPV). Effective July 1, 2022, a non-fraud claim may be established only for months within 24 months of the date of discovery. Threshold amounts: no claim is established for an active AE of $35 or less or for a closed AE or IHE of $400 or less; an active IHE of $1 or more is established. All adult household members are responsible. Under the Lomeli v. Saenz settlement, AE claims are recouped at 5% or $10, whichever is greater, for 36 months, after which the remaining balance is compromised.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "062ac8df826c6d8d13129c8416ea5d8c2b58d65bd253e4f2f3e679026461e265",
     "updated": "2026-11-13"
   },
   "cf-085": {
-    "summary": "Governs non-fraud Inadvertent Household Error (IHE) and Administrative Error (AE) claim calculations. Defines the initial month of overissuance as the first month benefits were improperly paid, calculates the net difference between benefits issued and benefits the household was actually eligible to receive, and establishes client notification timeframes.",
-    "status": "draft",
+    "summary": "Covers non-fraud claims. For Inadvertent Household Error (IHE) claims, the first overissuance month is the first month the household got more than it was entitled to, or for an unreported change, the first month the change would have taken effect if reported on time. The 20 percent earned income deduction is not applied to unreported earnings, and the claim is offset against any underissuance for the same month. Lists when IHE claims are established. Since 2019, IHE and Administrative Error claims look back 3 years instead of 6.",
+    "status": "verified",
     "pdf_sha256": "c8c1c6d9dbef689f9953bc9b081154f5942e30976ebb2c8efaf7d5b1581a97dd",
     "updated": "2026-11-13"
   },
   "cf-086": {
-    "summary": "Outlines criteria for Intentional Program Violation (IPV) claims, defined as knowingly making false statements, misrepresenting facts, or committing fraud to obtain CalFresh. Requires formal determination through an Administrative Disqualification Hearing (ADH) or court conviction, imposing mandatory 1-year, 2-year, or permanent disqualification periods.",
-    "status": "draft",
+    "summary": "An Intentional Program Violation (IPV) is established only by an Administrative Disqualification Hearing decision, a signed ADH waiver, a criminal court conviction or a signed Disqualification Consent Agreement, and disqualifies the person for a limited time or permanently. IPVs include false statements, misusing benefits and trafficking. By conviction or ADH, trading benefits for controlled substances brings two years then permanent disqualification; for firearms, permanent; false identity for multiple benefits, ten years; trafficking $500 or more, permanent; other IPVs one year for the first conviction, then longer.",
+    "status": "verified",
     "pdf_sha256": "648798fd2f7f6ee426687bb8298c7d1963e4e5a357aee805ec72a7eb99982d7f",
     "updated": "2026-11-13"
   },
   "cf-087": {
     "summary": "Details recoupment of overissuance (OI) claims. For active cases the household receives an OI notice, repayment agreement and budget computation, and may repay by lump sum, installments, or benefit reduction: 5% or $10, whichever is greater, for Administrative Error (AE) claims and 10% or $10 for Inadvertent Household Error (IHE) claims. Intentional Program Violation (IPV) claims are recouped at 20% or $20, whichever is greater. The household has 90 days to request a hearing. For closed cases the claim establishment threshold is $400.00 for AE and IHE claims. Effective December 31, 2023, AE and IHE claims are compromised for households with an elderly and/or disabled member.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "a3328c30070d2897c07c16a076df15bcd3bcd213c756a7ec2469dbb036835755",
     "updated": "2026-11-13"
   },
   "cf-088": {
     "summary": "Covers management of CalFresh overissuance (OI) claims. Explains which state or county collects when a household moves (inter-state and inter-county claims). Sets the claims establishment threshold at $400.00 for closed cases with an Administrative Error (AE) or Inadvertent Household Error (IHE) effective June 1, 2019; the threshold does not apply to Intentional Program Violation (IPV) or Quality Control claims. Describes when collection may be suspended (household cannot be located or cost exceeds recovery), the number of demand letters required, other collection actions such as tax refund intercept, lottery offsets and wage garnishments, and delinquent claims.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "73f0c5832e12d9c254eb34528866b84071530cd13d8cc281ad6569c5bf5294df",
     "updated": "2026-11-13"
   },
   "cf-089": {
-    "summary": "Governs mandatory restoration of lost benefits when an eligible household was wrongfully underpaid or denied benefits due to agency administrative error, or when an IPV disqualification is overturned. Directs retroactive issuance of benefits for up to 12 months prior to the date the error was discovered, without requiring a formal request from the client.",
-    "status": "draft",
+    "summary": "Lost CalFresh benefits are restored when the loss was caused by administrative error, when an IPV disqualification is reversed, or when regulations require it, for up to 12 months before the customer's request or the county's discovery of the loss. The customer need not be currently eligible, and restored benefits are issued in addition to the regular allotment. Benefits restored because of a state hearing or other judicial action go back 12 months before the action was started.",
+    "status": "verified",
     "pdf_sha256": "eaf73a8d15cd28620b49cbd48879a86accc5c47145386eb323d29637ba872b6a",
     "updated": "2026-11-13"
   },
   "cf-090": {
     "summary": "Governs Disaster CalFresh (DCF), available when a Presidential Major Disaster Declaration with Individual Assistance has been declared and FNS approves the county's request. Provides one month of food benefits at the maximum allotment for the household size to affected households that were not receiving CalFresh; current recipients may receive disaster supplements. Households apply in person, online or by phone using the Application for Disaster CalFresh (CF 385) during an application period that is usually seven days, and must be interviewed. Benefits must be available within 72 hours of application. Eligibility is evaluated over a 30-day benefit period using a net income and resource test.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "9f1955edfe01d14a45355cdbcc4613a5c8ccd322210a37fbe23a6a52b63a52dd",
     "updated": "2026-11-13"
   },
   "cf-091": {
     "summary": "Allows replacement of food purchased with CalFresh that is destroyed in a household misfortune such as a power outage, fire, or disaster. The household has ten days from the date of the loss to request replacement and submit the signed Replacement or Disaster Supplement Affidavit (CF 303); otherwise no replacement benefits are issued. The misfortune is verified, or the customer's statement on the CF 303 is accepted when verification is unavailable. Replacement benefits must be issued within two days of receiving the CF 303 and equal the food lost, up to one month's allotment.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "3021434e5f3eef9c6ec0e035a129bd64ed972688179ecf7a2d4abfda06159910",
     "updated": "2026-11-13"
   },
   "cf-092": {
-    "summary": "Official County HHSA handbook answering practical application processing questions, including acceptable telephonic signature methods, requesting verifications within 30-day standards, resolving conflicting information, and postponed verifications for expedited service cases.",
-    "status": "draft",
+    "summary": "Questions and answers on applications. Covers requesting verification within the 30-day timeframe: when the worker gives 10 days for missing verification near the end of the period, the application cannot be denied on the 30th day without waiting the extra 10 days (Steffens v. McMahon). Also covers Expedited Services and postponed or unavailable verification.",
+    "status": "verified",
     "pdf_sha256": "ce3121d74767655d6685bc1a7d1ea7bc1061909e6bafb2bf69199d614d1ec110",
     "updated": "2026-11-13"
   },
   "cf-093": {
     "summary": "Question-and-answer handbook on non-financial eligibility. Covers residents of drug/alcohol treatment centers that lack FNS certification, drug felon cases (a felony conviction for obtaining a controlled substance, a felony warrant from another state), household composition questions (divorce, foster care children spending time with a parent, a grandmother with guardianship of grandchildren), probation/parole violation information provided by law enforcement, and an adult student exerting parental control.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "8ec99721d3a1a5c4b0bad26de7cdd1bb3b392d19c8fc1cdf3f56d8b0c08851ad",
     "updated": "2026-11-13"
   },
   "cf-094": {
     "summary": "Question-and-answer handbook on income. Covers tribal casino disbursements (the first $2,000 per calendar year is excluded for tribal members when paid from interests in trust or restricted land), disaster relief employment income and disaster unemployment assistance (both excluded), Paid Family Leave, Ross Grant payments, self-employment room rental expenses, transitional youth programs such as THP-Plus, vendor payments and the shelter deduction, and work study grants.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "a26691e32648d8446e2b44824600aa0974911ba588c42026209076a0e6e9d56e",
     "updated": "2026-11-13"
   },
   "cf-095": {
     "summary": "Question-and-answer handbook with one topic: dependent care versus tuition fees. Confirms that dependent care costs are deductible when needed for a household member to accept or continue employment, comply with CalFresh Employment and Training requirements, or attend training or education preparatory to employment, but tuition is not a deductible expense. The worker must differentiate tuition from after-school child care, and the recipient must provide documentation of the child care expense.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "cbac3c6ab38065ab472bb51855d9546f9ac5bfa521865f1de39c5de454f5db14",
     "updated": "2026-11-13"
   },
   "cf-096": {
-    "summary": "Official County HHSA handbook providing operational clarifications on Transitional CalFresh (TCF), resolving consecutive CalWORKs discontinuance transitions, inter-county transfer during TCF, and reapplication rules when household circumstances change.",
-    "status": "draft",
+    "summary": "Questions and answers on Transitional CalFresh (TCF). A new five-month TCF period begins each time CalWORKs ends if the household got CalFresh in the last month of cash aid, with no limit on how many times. Also covers untimely CalWORKs discontinuances, the only child becoming ineligible or getting SSI/SSP, Kin-GAP children, parents sanctioned the month CalWORKs ends, a member granted CalWORKs only, reapplications, changes in household circumstances, and the budget after TCF ends.",
+    "status": "verified",
     "pdf_sha256": "4d81f27e6ff7cb78140ff6cdecd21df32a779f5fb3f7188a810b0415e8dd0090",
     "updated": "2026-11-13"
   },
   "cf-097": {
     "summary": "Question-and-answer handbook on claims. Explains that the reasonably anticipated CalWORKs grant, not a recalculated grant, is used to compute an overissuance or underissuance; that all adult household members, including adult children, are liable for overissuances; that a claim can be collected from two separate households at the same time; that excluded adult members can be required to repay, though not from SSI/SSP benefits; and how to calculate an overissuance when unreported self-employment income is averaged over the year.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "14190513008fc8afc8cfbe2eb7fbb47f58e5ee7a02055a2f6ece5c6a687f6453",
     "updated": "2026-11-13"
   },
   "cf-098": {
     "summary": "Question-and-answer handbook on replacement of food due to a household misfortune. Finds that food lost when a refrigerator stopped working is a household misfortune and can be replaced, while dry goods destroyed by insects would generally not qualify because it is considered a preventable circumstance. The determination is the county's, based on the circumstances of the case, and must be documented in the case record.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "20ccd81524c2f78a90f4c4411637243f8da43ffeef9416e9fbb08ec65b9a3110",
     "updated": "2026-11-13"
   },
   "cf-099": {
-    "summary": "Establishes mandatory CalFresh work registration requirements for non-exempt individuals aged 16 through 59. Details registration at application and annual recertification, defines work registrant rights, and explains mandatory compliance obligations regarding accepting suitable employment and not voluntarily quitting a job.",
-    "status": "draft",
+    "summary": "All CalFresh household members are screened for work registration at application, recertification and changes in exemption status, and all households get the CF 886 Notice of Work Rules with an oral explanation. Non-exempt members ages 16 through 59 are registered; participating in Employment & Training is voluntary. Exemptions include being under 16 or over 59, and 16- or 17-year-olds attending school. Work registrants must meet the general work rules, such as accepting suitable employment and not voluntarily quitting.",
+    "status": "verified",
     "pdf_sha256": "57c2290b31552e670c162807c5735d5588dbde1809435b3a3da7e033b9389bdf",
     "updated": "2026-11-13"
   },
   "cf-100": {
     "summary": "Explains which work registrants are deferred from the Employment & Training (E&T) program: refugees enrolled with Resettlement Agencies (a substitute program), veterans honorably discharged from the United States Armed Forces, and victims of domestic violence. Deferred veterans and domestic violence victims may volunteer for E&T. Veterans verify discharge with a DD 214 or Statement of Service and are temporarily deferred while it is requested; a domestic violence deferral can be verified by the customer's statement. A refugee who fails without good cause to comply with Resettlement Agency requirements loses the deferral.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "2b6a4a8298d01c161a25074ceab6103adb9586d7ff6309ddbd9293ab6c6ad7d2",
     "updated": "2026-11-13"
   },
   "cf-101": {
-    "summary": "Governs the voluntary CalFresh Employment and Training (CFET) program administered with community partners. Outlines allowable work activities, including job search, vocational training, work experience, and educational components, and details participant supportive service payments for transportation and training supplies.",
-    "status": "draft",
+    "summary": "San Diego's CalFresh Employment & Training (CFET) components are Education, Supervised Job Search, Job Retention and Work Experience (Work Activity and Work Based Learning). CFET social workers run some components, with others contracted to the San Diego Workforce Partnership at its six Job Centers and partner organizations, and Fresh Success at community colleges. The section also covers transportation payments for participants.",
+    "status": "verified",
     "pdf_sha256": "3baf098002dc4de12864171620695df0f63aefb243b1de3e2cdb0dc3de2ea314",
     "updated": "2026-11-13"
   },
   "cf-103": {
     "summary": "Details the Able-Bodied Adults Without Dependents (ABAWD) rule, limiting food assistance to 3 months in a 36-month period unless the individual works or participates in qualifying work activities for at least 20 hours per week (80 hours monthly), and outlines geographic waiver criteria and individual exemption rules.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "f1c8ac0359776b1ec5886d6a3571d739a640490317cd868caf14e8d9e4e50090",
     "updated": "2026-11-13"
   },
   "cf-104": {
-    "summary": "Outlines caseworker procedures for non-compliance with work registration or mandatory assignments. Mandates a formal good cause determination before imposing sanctions, and details progressive disqualification periods (1 month, 3 months, 6 months) and cure procedures allowing individuals to regain eligibility upon compliance.",
-    "status": "draft",
+    "summary": "When an Employment & Training participant misses the assessment interview or doesn't complete a component, the social worker makes a cause determination; with no notice or information, the finding is no good cause. Good cause includes circumstances beyond the participant's control such as illness, a household member's illness or a household emergency, becoming exempt, moving out of the program area, and unreimbursed transportation costs over $50 a month. Explains the sanction periods that follow a finding of no good cause.",
+    "status": "verified",
     "pdf_sha256": "97fc2e8862117bc394f4491b644fc4396b7ac55e8d7ddd69133ed80c8e232357",
     "updated": "2026-11-13"
   },
   "cf-107": {
-    "summary": "Special Notice detailing caseworker instructions for adjusting, budgeting, and resolving child support payments issued in error to CalFresh and CalWORKs households, ensuring improper collections do not cause adverse grant reductions or inaccurate overissuance calculations.",
-    "status": "draft",
+    "summary": "SN 18-02 (CalWORKs and CalFresh) addresses child support issued in error after a Maximum Family Grant clean-up overwrote data in the child support system. Payments received in error are not counted against the grant unless the county has reliable information they will continue, and the $50 disregards retained by the State in error since January 1, 2017 will be repaid without counting as income or property. Staff contact the child support agency when more than one payment arrives.",
+    "status": "verified",
     "pdf_sha256": "c39daf47e351de9aaf44b436d3f7c5c32442201127cd5e720cb628d83217c340",
     "updated": "2026-11-13"
   },
   "cf-109": {
     "summary": "Special Notice publishing the annual federal Cost-of-Living Adjustments (COLA) for Federal Fiscal Year 2021, detailing updated CalFresh Maximum Monthly Allotments, revised standard deductions across all household sizes, and updated Gross and Net Income eligibility thresholds.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "a7e855e46fcd1424a8b3a0e4fc554588df04652cdc77afaf6b6a6add51450218",
     "updated": "2026-11-13"
   },
   "cf-111": {
     "summary": "Special Notice detailing disaster income eligibility standards and allotment tables for Federal Fiscal Year 2021, establishing operational benefit tables and emergency issuance criteria in the event of an authorized Disaster CalFresh implementation in San Diego County.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "2622141a2ba2c644039527e54e5f832f4ad297f41ad52046402a5805f97183c0",
     "updated": "2026-11-13"
   },
   "cf-112": {
     "summary": "Special Notice directing caseworkers on implementing California's statutory minimum wage increase ($14.00/hour), detailing procedures for recalculating earned income, budgeting disregards, and re-evaluating work registration and student employment hour thresholds.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "550bb87fee673782ca3c9fa92bece6b29ad84239af192c98c6edfcbaac660858",
     "updated": "2026-11-13"
   },
   "cf-119": {
     "summary": "Special Notice mandating annual client notification and outreach regarding the federal Earned Income Tax Credit (EITC), California Earned Income Tax Credit (CalEITC), and Young Child Tax Credit, detailing client outreach notices and tax refund income exclusions.",
-    "status": "draft",
+    "status": "verified",
     "pdf_sha256": "a60a57952e927927c9b8c131fd8b0412bdb5712d52967aaeac1dca1a85b03ab9",
     "updated": "2026-11-13"
   },
   "cf-122": {
-    "summary": "Special Notice detailing operational case budgeting updates following the annual Supplemental Security Income (SSI) and State Supplementary Payment (SSP) Cost-of-Living Adjustment, outlining automated mass update schedules in CalWIN/CalSAWS.",
-    "status": "draft",
+    "summary": "SN 22-02 explains the SSI and SSP cost-of-living adjustments: SSI income in CalFresh budgets was updated automatically in CalWIN effective March 2022, with SSP updates in an April run. Staff must act on the COLA Exception and Online Correspondence reports, and use the monthly COLA Excluded report to update cases with a Semi-Annual Report or recertification due.",
+    "status": "verified",
     "pdf_sha256": "408bb324a31df3eecaf46bfa70d2a5101099d4430b746d8b2502f75b2ff5cd02",
     "updated": "2026-11-13"
   },
   "cf-123": {
-    "summary": "This Special Notice provides updates to information that is currently in CFPG 63-168. The updates pertain to electronic theft reporting requirements, what constitutes a countable replacement, and the benefit amount that can be replaced for each countable replacement.",
-    "status": "draft",
+    "summary": "SN 22-03 updates the electronic theft rules in CFPG 63-168. Customers must report skimming or scamming to the EBT helpline or the county within 10 days of the theft, and submit the EBT 2259 (and EBT 2259A when applicable) within 90 days. Each reported theft sequence counts as one countable replacement, however many transactions it involved, and customers may receive no more than two countable replacements in six months.",
+    "status": "verified",
     "pdf_sha256": "c0422c9e30a6861232072064ea35511265f92ced179febf51b73de8ba8ed04f7",
     "updated": "2026-11-13"
   },
   "cf-124": {
-    "summary": "The purpose of this joint special notice is to provide Human Services Specialists (HSS) with policy reminders and instructions for CalWORKs and/or CalFresh application processing and continuing case services for wildfire evacuees from federally designated disaster or state declared emergency areas.",
-    "status": "draft",
+    "summary": "SN 22-04 (CalWORKs and CalFresh) covers evacuees from the September 2022 wildfires in Siskiyou, Placer, El Dorado, Riverside, Madera and Modoc counties. CalWORKs applications follow the disaster waivers in Processing Guide 40-100.A6, as evacuees may lack documents; CalFresh applications are evaluated under regular rules even if the household doesn't live in San Diego County, and evacuees with active cases may request replacement benefits or EBT cards here.",
+    "status": "verified",
     "pdf_sha256": "2c0c21ced189927a26ef1b701b16383cf4bab50a02a69351c0868c4dd23b2765",
     "updated": "2026-11-13"
   },
@@ -618,32 +618,32 @@
     "updated": "2026-11-13"
   },
   "cf-127": {
-    "summary": "To inform eligibility staff of the increase in the statewide minimum wage and its impact on CalWORKs, CalFresh, Employment Services (ES), and CalFresh Employment and Training (E&T).",
-    "status": "draft",
+    "summary": "SN 22-06 announces the California minimum wage rising to $15.50 an hour on January 1, 2023, for all employers. CalWORKs and CalFresh customers are expected to report the higher income in the January 2023 SAR 7 data month or the February 2023 redetermination, and mid-period if it puts them over their Income Reporting Threshold. Employment Case Managers use the minimum wage to calculate maximum Work Experience or Community Service hours.",
+    "status": "verified",
     "pdf_sha256": "c37486c4c910c86e788bad254282342c7c67f2c913fd66e35152538563224f84",
     "updated": "2026-11-13"
   },
   "cf-128": {
-    "summary": "Social Security Administration (SSA) recipients will receive an 8.7 percent Cost-of-Living Adjustment (COLA) effective December 30, 2022, and payable January 1, 2023.",
-    "status": "draft",
+    "summary": "SN 22-07 (CalWORKs and CalFresh) covers the 8.7 percent Social Security COLA payable January 1, 2023. A mass update on December 3, 2022 adjusted benefits; cases not included are recalculated by multiplying the old benefit by 1.087 and dropping the cents. For Semi-Annual Reporting cases the COLA is a county-initiated mid-period change that may reduce benefits with timely notice, and CalWORKs customers must report if it puts income over the Income Reporting Threshold.",
+    "status": "verified",
     "pdf_sha256": "421b193ccb456c0504ebdf63ace43e7f95cad80ed3bce84404fc01517c3eb191",
     "updated": "2026-11-13"
   },
   "cf-129": {
-    "summary": "All Supplemental Security Income (SSI) and State Supplementary Payment (SSP) recipients received a Cost-of-Living Adjustment (COLA) effective on January 1st.",
-    "status": "draft",
+    "summary": "SN 23-01 explains the January 2023 SSI and SSP cost-of-living adjustment: SSI/SSP income in CalFresh budgets was updated automatically in CalWIN effective January 1, 2023, with allotment changes from February 2023. Staff must act on the COLA Exception and Online Correspondence reports and use the monthly COLA Excluded report for cases due for a Semi-Annual Report or recertification.",
+    "status": "verified",
     "pdf_sha256": "3b8ad70755f9b462935c231cd0691b11c3b70124b5435aaf835ff86b8d11b368",
     "updated": "2026-11-13"
   },
   "cf-130": {
-    "summary": "The purpose of th is joint special notice is to provide Human Services Specialists (HSS) with policy reminders and instructions for CalWORKs and/or CalFresh application processing and continuing case services for evacuees from federally designated disaster or state declared emergency areas.",
-    "status": "draft",
+    "summary": "SN 23-02 (CalWORKs and CalFresh) covers evacuees from the December 2022 Humboldt County earthquake. CalWORKs applications follow the disaster waivers in Processing Guide 40-100.A6, as evacuees may lack documents; CalFresh applications are evaluated under regular rules even if the household doesn't live in San Diego County, and evacuees with active cases may request replacement benefits or EBT cards here.",
+    "status": "verified",
     "pdf_sha256": "519978ee22fb29b04001e0f9cba439976c36569948d7e94c234f5d446380674e",
     "updated": "2026-11-13"
   },
   "cf-131": {
-    "summary": "The purpose of this Special Notice is to provide revised federal EITC, California EITC (CalEITC) as well as other tax credit income limits, maximum credit amounts, and their impact on self-sufficiency programs. This material also provides resources to assist customers to access tax credits they are potentially eligible for.",
-    "status": "draft",
+    "summary": "SN 23-03 (a joint notice for CalWORKs, CalFresh, Medi-Cal, General Relief, CAPI and CMS) gives the 2023 federal EITC and CalEITC rules, income limits and credit amounts and their effect on self-sufficiency programs. CalEITC is available to filers 18 to 65 without children or any age with children, with an SSN or ITIN and income of at least $1 and under $30,000. Lists the forms and phone numbers for claiming each credit.",
+    "status": "verified",
     "pdf_sha256": "5d421e9d9ecab0f37e6f04484428e8c8a944399817db28ad6ebd2ea88a09cdc6",
     "updated": "2026-11-13"
   },
@@ -654,26 +654,26 @@
     "updated": "2026-11-13"
   },
   "cf-133": {
-    "summary": "Social Security Administration ( SSA) recipients will receive a 3.2 percent Cost-of-Living Adjustment (COLA) effective December 2023, and payable January 1, 2024. In addition, starting January 2024 the Medicare Part B premium will increase to $174.70 per month.",
-    "status": "draft",
+    "summary": "SN 23-05 (CalWORKs and CalFresh) covers the 3.2 percent Social Security COLA payable January 1, 2024 and the Medicare Part B premium rising to $174.70. A December 2, 2023 mass update and December 9 batch run adjusted benefits in CalSAWS; other cases are updated by multiplying the old benefit by 1.032. For Semi-Annual Reporting cases it is a county-initiated mid-period change that may reduce benefits with timely notice, and income over the Income Reporting Threshold must be reported.",
+    "status": "verified",
     "pdf_sha256": "30f651b577246e4f492c68408d55ce289f6f2958b4624b1f32f56d8040c909b7",
     "updated": "2026-11-13"
   },
   "cf-134": {
-    "summary": "To inform eligibility staff of the increase in the statewide minimum wage and its impact on CalWORKs, CalFresh, Employment Services, CalFresh Employment and Training, and General Relief Work Project assignment and credit.",
-    "status": "draft",
+    "summary": "SN 23-06 announces the California minimum wage rising to $16.00 an hour on January 1, 2024. CalWORKs and CalFresh customers are expected to report the higher income in the January 2024 SAR 7 data month or the February 2024 redetermination, and mid-period if it puts them over their Income Reporting Threshold. Employment Case Managers keep using $15.50 for Work Experience and Community Service hour calculations through December 31, 2023; also covers General Relief Work Project credit.",
+    "status": "verified",
     "pdf_sha256": "4c6abce13455f876d09c3b7bd0400b8bf688871072e46424949941aaa4cb8e53",
     "updated": "2026-11-13"
   },
   "cf-135": {
-    "summary": "All Supplemental Security Income (SSI) and State Supplementary Payment (SSP) recipients received a Cost-of-Living Adjustment (COLA) effective on January 1st, 2024.",
-    "status": "draft",
+    "summary": "SN 24-01 explains the January 2024 SSI and SSP cost-of-living adjustment: amounts were updated automatically in CalSAWS on January 6, 2024, with allotment changes from February 2024. Staff must check MEDS and IEVS for cases on the reports of cases discontinued by the batch run, records not updated, and unprocessed cases, correcting cases and sending accurate notices.",
+    "status": "verified",
     "pdf_sha256": "6a8c8c3ce4b417b1e09b2abf5c2ec61d4df7458707c34bf7aead481779dd8a4f",
     "updated": "2026-11-13"
   },
   "cf-136": {
-    "summary": "The purpose of this Special Notice is to provide revised federal EITC, California EITC (CalEITC) as well as other tax credit income limits, maximum credit amounts, and their impact on self -sufficiency programs. This material also provides resources to assist customers to access tax credits for which they are potentially eligible.",
-    "status": "draft",
+    "summary": "SN 24-02 (a joint notice for CalWORKs, CalFresh, Medi-Cal, General Relief, CAPI and CMS) gives the 2024 federal EITC and CalEITC rules, income limits and credit amounts and their effect on self-sufficiency programs. CalEITC is available to filers 18 to 65 without children or any age with children, with an SSN or ITIN and income of at least $1 and under $30,950. Lists the forms and phone numbers for claiming each credit.",
+    "status": "verified",
     "pdf_sha256": "8b054702ea547577eb10f35c9085b0a9ca9e447f8b8ba4d22afda9f589cc9950",
     "updated": "2026-11-13"
   },
@@ -684,20 +684,20 @@
     "updated": "2026-11-13"
   },
   "cf-138": {
-    "summary": "To inform staff of the increase in the statewide minimum wage and its impact on CalWORKs, CalFresh, Employment Services, CalFresh Employment & Training, and General Relief Work Project assignment and credit.",
-    "status": "draft",
+    "summary": "SN 24-04 announces the California minimum wage rising to $16.50 an hour on January 1, 2025. CalWORKs and CalFresh customers are expected to report the higher income in the January 2025 SAR 7 data month or the February 2025 redetermination, and mid-period if it puts them over their Income Reporting Threshold. Employment Case Managers keep using $16.00 for Work Experience and Community Service hour calculations through December 31, 2024; also covers General Relief Work Project credit.",
+    "status": "verified",
     "pdf_sha256": "d17277af85e794c680b60b045bcd1c1148be3bf05b7002effacd43a148f10b64",
     "updated": "2026-11-13"
   },
   "cf-139": {
-    "summary": "Social Security Administration ( SSA) recipients will receive a 2.5 percent Cost-of-Living-Adjustment (COLA) effective December 31, 2024, and payable January 1, 2025. In addition, starting January 2025 the Medicare Part B premium will increase to $185 per month.",
-    "status": "draft",
+    "summary": "SN 24-05 (CalWORKs and CalFresh) covers the 2.5 percent Social Security COLA payable January 1, 2025 and the Medicare Part B premium rising to $185. New applicants' budgets use the actual benefit including the COLA from January 2025. For Semi-Annual Reporting cases it is a county-initiated mid-period change that may reduce benefits with timely notice; income over the Income Reporting Threshold must be reported, and households leaving CalWORKs for that reason get Transitional CalFresh.",
+    "status": "verified",
     "pdf_sha256": "57b6ab6fd149dddd1b68340f06bce0396eb706e1bbe9314be2b1414d2b80ebba",
     "updated": "2026-11-13"
   },
   "cf-140": {
-    "summary": "SSI and SSP recipients received a COLA effective January 1, 2025.",
-    "status": "draft",
+    "summary": "SN 25-01 explains the January 2025 SSI and SSP cost-of-living adjustment. New applicants' budgets use the actual amount including the COLA. For ongoing households the COLA is verified upon receipt: amounts at or below the paid amount were updated automatically in CalSAWS on January 11, 2025, with allotment changes from February; otherwise staff update them at the next SAR 7 or recertification and look into any recoupment.",
+    "status": "verified",
     "pdf_sha256": "6c6cb7b6c7ffdbfb7065cc7d850b3b202015e093ffdb45b9660a5ad758055ec5",
     "updated": "2026-11-13"
   },
@@ -708,26 +708,26 @@
     "updated": "2026-11-13"
   },
   "cf-142": {
-    "summary": "Social Security Administration ( SSA) recipients will receive a 2.8 percent Cost-of-Living Adjustment (COLA) effective December 31, 2025, and payable January 1, 2026. In addition, starting January 2026 the Medicare Part B premium will increase to $202.90 per month.",
-    "status": "draft",
+    "summary": "SN 25-03 (CalWORKs, CalFresh and Medi-Cal) covers the 2.8 percent Social Security COLA payable January 1, 2026 and the Medicare Part B premium rising to $202.90. New applicants' budgets use the actual benefit including the COLA from January 2026. For Semi-Annual Reporting cases it is a county-initiated mid-period change that may reduce benefits with timely notice; income over the Income Reporting Threshold must be reported, and households leaving CalWORKs for that reason get Transitional CalFresh.",
+    "status": "verified",
     "pdf_sha256": "0861aed6a270e0267833992664b402bd5eb63a36a8d2246192011c964d478f31",
     "updated": "2026-11-13"
   },
   "cf-143": {
-    "summary": "To inform staff of the increase in the statewide minimum wage and its impact on CalWORKs, CalFresh, Employment Services, CalFresh Employment & Training (CFET), and General Relief Work Project assignment and credit.",
-    "status": "draft",
+    "summary": "SN 25-04 announces the California minimum wage rising to $16.90 an hour on January 1, 2026. CalWORKs and CalFresh customers are expected to report the higher income in the January 2026 SAR 7 data month or the February 2026 redetermination, and mid-period if it puts them over their Income Reporting Threshold. Employment Case Managers keep using $16.50 for Work Experience and Community Service hour calculations through December 31, 2025; also covers General Relief Work Project credit.",
+    "status": "verified",
     "pdf_sha256": "34deff72f518b14741990c038e9fe28472eff3df020ee37e868174fa5d8ad4c0",
     "updated": "2026-11-13"
   },
   "cf-144": {
-    "summary": "SSI and SSP recipients receive a COLA Adjustment annually. This notice provides update and guidance on applying the 2026 COLA adjustment for initial applications and ongoing cases that failed the batch process.",
-    "status": "draft",
+    "summary": "SN 26-01 explains the January 2026 SSI and SSP cost-of-living adjustment. New applicants' budgets use the actual amount including the COLA. For ongoing households the COLA is verified upon receipt and amounts were updated in a January 8, 2026 batch run; Transitional CalFresh cases count the new amount only after recertifying to regular CalFresh. A monthly report lists records that were not updated, for review at the next SAR 7 or recertification.",
+    "status": "verified",
     "pdf_sha256": "aac017bd5598ded8a810a175fb737c957e3d8a280079e0610dfad3c59172a8a5",
     "updated": "2026-11-13"
   },
   "cf-145": {
-    "summary": "To provide guidance on treatment of EITC payments and credits for SSS programs and outreach resources available for eligibility staff to provide to customers who are potentially eligible to tax credits, free tax preparation, and other filing services and resources.",
-    "status": "draft",
+    "summary": "SN 26-02 (a joint notice for CalWORKs, CalFresh, Medi-Cal, General Relief, CAPI and CMS) explains how EITC payments are treated. EITC, CalEITC, the Foster Youth Tax Credit and the Young Child Tax Credit are exempt income for CalWORKs, CalFresh, CAPI, Medi-Cal and CMS, but counted as unearned income for General Relief. As property, they are exempt for 12 months for CalWORKs and CalFresh; rules for the other programs are listed. Also lists outreach and free tax preparation resources.",
+    "status": "verified",
     "pdf_sha256": "2bc480b24bb074fccccf9e92607a9c55060d1115556ba6dc2c66e234fc681de6",
     "updated": "2026-11-13"
   },
