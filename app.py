@@ -1,3 +1,4 @@
+import mimetypes
 import os
 from typing import Optional
 
@@ -16,6 +17,15 @@ app = FastAPI(title="San Diego County Benefits Policy Search & AI Assistant")
 PDF_DIR = os.path.join(os.path.dirname(__file__), "data", "pdfs")
 os.makedirs(PDF_DIR, exist_ok=True)
 app.mount("/pdfs", StaticFiles(directory=PDF_DIR), name="pdfs")
+
+# PDF.js viewer (static/pdfjs). Its modules, locales and decoders need correct MIME types.
+for _ext, _type in ((".mjs", "text/javascript"), (".ftl", "text/plain"), (".wasm", "application/wasm"),
+                    (".bcmap", "application/octet-stream"), (".pfb", "application/octet-stream"),
+                    (".icc", "application/octet-stream")):
+    mimetypes.add_type(_type, _ext)
+PDFJS_DIR = os.path.join(os.path.dirname(__file__), "static", "pdfjs")
+if os.path.isdir(PDFJS_DIR):
+    app.mount("/pdfjs", StaticFiles(directory=PDFJS_DIR), name="pdfjs")
 
 # Public read-only API: any origin may call it, but no cookies or credentials.
 app.add_middleware(
