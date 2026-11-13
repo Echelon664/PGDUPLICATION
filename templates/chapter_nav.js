@@ -118,6 +118,7 @@
 
     function cnBuildDetail(doc) {
       const detail = cnEl('div', 'cn-detail');
+      const text = cnEl('div', 'cn-detail-text');
       const dateLine = docDateLine(doc);
       const posted = formatLongDate(doc.published_on || '');
       if (dateLine || posted) {
@@ -125,9 +126,10 @@
         if (dateLine) meta.append(cnEl('strong', '', dateLine));
         if (dateLine && posted) meta.append(document.createTextNode(' · '));
         if (posted) meta.append(document.createTextNode('Posted on County site: ' + posted));
-        detail.append(meta);
+        text.append(meta);
       }
-      detail.append(cnEl('p', 'cn-summary', doc.summary || 'County of San Diego Health and Human Services Agency policy document.'));
+      text.append(cnEl('p', 'cn-summary', doc.summary || 'County of San Diego Health and Human Services Agency policy document.'));
+      detail.append(text);
 
       const actions = cnEl('div', 'cn-actions');
       const missing = isSourceMissing(doc);
