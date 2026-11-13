@@ -203,8 +203,19 @@ html_template = f"""<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal SDCounty HHSA PG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <style>
+    /* Atkinson Hyperlegible Next is designed for legibility on screens. The
+       17px root scales every rem-based Tailwind size up from the 16px default. */
+    html {{
+      font-size: 17px;
+    }}
+    html, body, button, input, select, textarea {{
+      font-family: 'Atkinson Hyperlegible Next', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    }}
     .gradient-header {{
       background: #0b2545;
     }}
@@ -247,7 +258,7 @@ html_template = f"""<!DOCTYPE html>
       border-radius: 8px;
       background: transparent;
       color: #cbd5e1;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 800;
       white-space: nowrap;
       cursor: pointer;
@@ -275,7 +286,7 @@ html_template = f"""<!DOCTYPE html>
       background: #eff6ff;
       border: 1px solid #bfdbfe;
       color: #1d4ed8;
-      font-size: 10.5px;
+      font-size: 12.5px;
       font-weight: 800;
       white-space: nowrap;
     }}
@@ -400,7 +411,7 @@ __CHAPTER_NAV_CSS__
         <p id="searchError" class="hidden text-xs font-semibold text-amber-300 mt-2 px-1" role="alert"></p>
 
         <!-- Deep BM25 Search Status Indicator -->
-        <div class="flex items-center justify-between text-[11px] text-blue-200/90 mt-2 px-1">
+        <div class="flex items-center justify-between text-[13px] text-blue-200/90 mt-2 px-1">
           <div class="flex items-center gap-1.5">
             <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
             <span><strong>Scope:</strong> <span id="searchScopeLabel">CalFresh (SNAP)</span> &bull; <strong>SQLite FTS5</strong> searches 100% of PDF contents, regulations, tables & citations</span>
@@ -451,7 +462,7 @@ __CHAPTER_NAV_CSS__
             
             <div class="min-w-0">
               <div class="flex items-center gap-2 flex-wrap">
-                <span id="searchResultScopeBadge" class="bg-blue-600 text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">CalFresh</span>
+                <span id="searchResultScopeBadge" class="bg-blue-600 text-white text-[12px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">CalFresh</span>
                 <h3 id="searchResultsHeading" tabindex="-1" class="font-extrabold text-slate-900 text-sm sm:text-base truncate focus:outline-none">
                   Search Results for: <span id="searchResultQueryText" class="text-blue-700">"..."</span>
                 </h3>
@@ -529,10 +540,10 @@ __CHAPTER_NAV_CSS__
           </div>
           <div class="min-w-0">
             <div class="flex items-center gap-2">
-              <span id="pdfModalProgramBadge" class="text-[10px] uppercase tracking-wider font-extrabold px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-400/30 shrink-0">CalFresh</span>
+              <span id="pdfModalProgramBadge" class="text-[12px] uppercase tracking-wider font-extrabold px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-400/30 shrink-0">CalFresh</span>
               <h3 id="pdfModalTitle" class="text-xs sm:text-sm font-bold text-slate-100 truncate">Policy Document Title</h3>
             </div>
-            <div id="pdfModalMeta" class="text-[11px] text-slate-400 truncate mt-0.5">Section • Official Document</div>
+            <div id="pdfModalMeta" class="text-[13px] text-slate-400 truncate mt-0.5">Section • Official Document</div>
           </div>
         </div>
 
@@ -564,7 +575,7 @@ __CHAPTER_NAV_CSS__
             <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
             Quick Summary:
           </span>
-          <span id="pdfModalSummaryText" class="text-slate-700 line-clamp-4 leading-relaxed text-xs sm:text-[13px]">Official policy summary...</span>
+          <span id="pdfModalSummaryText" class="text-slate-700 line-clamp-4 leading-relaxed text-xs sm:text-[15px]">Official policy summary...</span>
         </div>
         <button type="button" onclick="toggleModalSummary()" class="text-slate-400 hover:text-slate-600 p-0.5 rounded cursor-pointer shrink-0" title="Hide Summary Bar">
           ✕
@@ -577,7 +588,7 @@ __CHAPTER_NAV_CSS__
         <div id="pdfModalLoading" class="absolute inset-0 flex flex-col items-center justify-center bg-slate-100/90 backdrop-blur-2xs z-10 text-slate-500">
           <div class="w-9 h-9 border-3 border-blue-600 border-t-transparent rounded-full animate-spin mb-3"></div>
           <span class="text-xs font-semibold text-slate-700">Loading Official County PDF Document...</span>
-          <span class="text-[11px] text-slate-400 mt-1">Rendered via Browser Native PDF Viewer</span>
+          <span class="text-[13px] text-slate-400 mt-1">Rendered via Browser Native PDF Viewer</span>
         </div>
         
         <iframe id="pdfViewerFrame" src="" class="w-full h-full border-0" onload="document.getElementById('pdfModalLoading').classList.add('hidden')" title="PDF Viewer"></iframe>
@@ -1056,7 +1067,7 @@ __CHAPTER_NAV_CSS__
           el.innerHTML = `
             <div class="mb-2">
               <div class="font-bold text-slate-800 line-clamp-1">${{escapeHtml(s.title)}}</div>
-              <div class="mt-2 p-3.5 bg-blue-50/70 border border-blue-100 rounded-lg text-xs sm:text-[13px] text-slate-700 leading-relaxed">
+              <div class="mt-2 p-3.5 bg-blue-50/70 border border-blue-100 rounded-lg text-xs sm:text-[15px] text-slate-700 leading-relaxed">
                 <span class="font-bold text-blue-900 block text-xs mb-1">Quick PDF Summary:</span>
                 ${{docDateHtml(s)}}
                 ${{escapeHtml(s.summary || s.snippet || '')}}
@@ -1319,13 +1330,13 @@ __CHAPTER_NAV_CSS__
           </div>
 
           <!-- Quick PDF Summary Everywhere -->
-          <div class="my-3 p-4 sm:p-5 bg-slate-50/95 border border-slate-300/80 rounded-2xl text-[13px] sm:text-sm text-slate-800 leading-relaxed shadow-xs">
+          <div class="my-3 p-4 sm:p-5 bg-white border-[1.5px] border-black rounded-2xl text-[15px] sm:text-sm text-slate-800 leading-relaxed shadow-xs">
             <div class="flex items-center gap-2 text-blue-900 font-bold mb-2 text-xs sm:text-sm tracking-wide">
               <svg class="w-4 h-4 sm:w-4.5 sm:h-4.5 text-blue-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
               <span>Quick Policy Summary:</span>
             </div>
             ${{docDateHtml(doc)}}
-            <div class="text-slate-800 font-normal leading-relaxed text-[13px] sm:text-sm">
+            <div class="text-slate-800 font-normal leading-relaxed text-[15px] sm:text-sm">
               ${{escapeHtml(doc.summary || doc.snippet || 'Official County of San Diego Health and Human Services Agency Policy Document.')}}
             </div>
           </div>
@@ -1333,16 +1344,16 @@ __CHAPTER_NAV_CSS__
           <!-- Deep PDF Body Match (if query matched inside PDF) -->
           ${{doc.matched_excerpt ? `
             <div class="my-2 p-2.5 bg-amber-50/90 border border-amber-300 rounded-lg text-xs text-slate-800 leading-relaxed shadow-2xs">
-              <div class="flex items-center justify-between mb-1.5 text-[11px]">
+              <div class="flex items-center justify-between mb-1.5 text-[13px]">
                 <span class="font-bold text-amber-950 flex items-center gap-1.5">
                   <svg class="w-3.5 h-3.5 text-amber-700 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"></path></svg>
                   <span>Matched PDF Body Passage:</span>
                 </span>
-                <span class="bg-amber-200 text-amber-950 font-bold text-[10px] px-1.5 py-0.5 rounded border border-amber-300">
+                <span class="bg-amber-200 text-amber-950 font-bold text-[12px] px-1.5 py-0.5 rounded border border-amber-300">
                   BM25 Score: ${{doc.score || 'Full Text Match'}}
                 </span>
               </div>
-              <div class="font-mono text-[11px] text-slate-800 bg-white/80 p-2 rounded border border-amber-200/80">
+              <div class="font-mono text-[13px] text-slate-800 bg-white/80 p-2 rounded border border-amber-200/80">
                 ${{highlightMatchedText(doc.matched_excerpt, query)}}
               </div>
             </div>

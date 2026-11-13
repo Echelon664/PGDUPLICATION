@@ -84,6 +84,24 @@
       return list;
     }
 
+    // "Includes: Household Concept, Filing an Application, and 12 more." for the chapter header.
+    const CN_INCLUDES_SHOWN = 6;
+    function cnIncludesText(chapter) {
+      if (chapter.notices || chapter.docs.length < 2) return '';
+      const names = [];
+      chapter.docs.forEach(doc => {
+        const name = (doc.section_title || doc.title || '')
+          .replace(/^[A-Z]\.\s+/, '')
+          .replace(/^(Section\s+)?\d[\w.]*\s*[-–:]?\s*/i, '')
+          .trim();
+        if (name && !names.includes(name)) names.push(name);
+      });
+      if (names.length < 2) return '';
+      const shown = names.slice(0, CN_INCLUDES_SHOWN);
+      const more = names.length - shown.length;
+      return 'Includes: ' + shown.join(', ') + (more > 0 ? ', and ' + more + ' more.' : '.');
+    }
+
     function cnShortDate(doc) {
       const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(doc.pdf_date || '');
       if (!m) return '';
@@ -302,6 +320,8 @@
         }
         text.append(cnEl('span', 'cn-head-name', headName));
         if (chapter.desc) text.append(cnEl('span', 'cn-head-desc', chapter.desc));
+        const includes = cnIncludesText(chapter);
+        if (includes) text.append(cnEl('span', 'cn-head-includes', includes));
         head.append(text);
         const single = count === 1 ? cnShortDate(chapter.docs[0]) : '';
         head.append(cnEl('span', 'cn-count', count === 1 ? (single || '1 document') : count + ' documents'));
