@@ -1085,7 +1085,7 @@ __CHAPTER_NAV_CSS__
         sources.forEach(s => {{
           const el = document.createElement('div');
           el.className = 'bg-white border border-blue-200 rounded-lg p-2.5 text-xs shadow-2xs flex flex-col justify-between';
-          const localPdf = escapeHtml(docOpenUrl(s));
+          const localPdf = escapeHtml(pdfViewerUrl(docOpenUrl(s)));
           el.innerHTML = `
             <div class="mb-2">
               <div class="font-bold text-slate-800 line-clamp-1">${{escapeHtml(s.title)}}</div>
@@ -1179,6 +1179,28 @@ __CHAPTER_NAV_CSS__
       return resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
     }}
 
+    // PDFs open in the bundled PDF.js viewer (static/pdfjs), which has its own
+    // find bar. When a site search is showing, its words are passed along so
+    // the matches are highlighted as the document opens.
+    const PDF_VIEWER_URL = (LOCAL_SERVER_BASE || '') + '/pdfjs/web/viewer.html';
+    const PDF_SEARCH_SKIP = new Set(['a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'can', 'do', 'does', 'for', 'from',
+      'how', 'i', 'if', 'in', 'is', 'it', 'my', 'of', 'on', 'or', 'the', 'to', 'what', 'when', 'who', 'with']);
+
+    function pdfSearchTerms() {{
+      const view = document.getElementById('searchResultsPageView');
+      if (!view || view.classList.contains('hidden')) return '';
+      const words = (getSearchQuery() || '').replace(/["“”]/g, ' ').split(/\s+/)
+        .filter(w => w.length > 1 && !PDF_SEARCH_SKIP.has(w.toLowerCase()));
+      return words.slice(0, 8).join(' ');
+    }}
+
+    function pdfViewerUrl(pdfUrl) {{
+      // Only stored PDFs go through the viewer; County links open as they are.
+      if (!pdfUrl || !pdfUrl.startsWith((LOCAL_SERVER_BASE || '') + '/pdfs/')) return pdfUrl;
+      const terms = pdfSearchTerms();
+      return PDF_VIEWER_URL + '?file=' + encodeURIComponent(pdfUrl) + (terms ? '#search=' + encodeURIComponent(terms) : '');
+    }}
+
     // In-Page PDF Viewer Modal Functions
     function openPdfModal(pdfUrl, title, program, summary, section) {{
       const modal = document.getElementById('pdfViewerModal');
@@ -1205,14 +1227,14 @@ __CHAPTER_NAV_CSS__
         summaryBar.classList.add('hidden');
       }}
 
-      newTabBtn.href = pdfUrl;
+      newTabBtn.href = pdfViewerUrl(pdfUrl);
       if (downloadBtn) {{
         downloadBtn.href = pdfUrl;
         downloadBtn.setAttribute('download', (section ? (section + ' - ') : '') + (title || 'document') + '.pdf');
       }}
 
       loading.classList.remove('hidden');
-      iframe.src = pdfUrl;
+      iframe.src = pdfViewerUrl(pdfUrl);
 
       modal.classList.remove('hidden');
       modal.classList.add('flex');
@@ -1288,7 +1310,7 @@ __CHAPTER_NAV_CSS__
           ? 'bg-purple-100 text-purple-800 border-purple-200' 
           : 'bg-teal-100 text-teal-800 border-teal-200';
 
-      const localPdfLink = escapeHtml(docOpenUrl(doc));
+      const localPdfLink = escapeHtml(pdfViewerUrl(docOpenUrl(doc)));
       const missing = isSourceMissing(doc);
       const revisionStr = doc.published_on ? doc.published_on.slice(0, 10) : 'Not available';
 

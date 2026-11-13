@@ -87,9 +87,8 @@
     .cn-layout { display: flex; flex-direction: column; gap: 10px; }
     .cn-toolbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 8px; padding: 10px 0;
       background: #fff; border-bottom: 1px solid #e2e8f0; }
-    .cn-filter { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #fff; color: #0f172a; }
-    .cn-jump { flex: 0 1 260px; min-width: 0; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #fff; color: #0f172a; }
-    .cn-collapse { flex: none; border: 1px solid #cbd5e1; background: #fff; color: #334155; font-size: 13px; font-weight: 600; padding: 8px 12px;
+    .cn-jump { flex: 1 1 auto; max-width: 380px; min-width: 0; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; background: #fff; color: #0f172a; }
+    .cn-collapse { flex: none; margin-left: auto; border: 1px solid #cbd5e1; background: #fff; color: #334155; font-size: 13px; font-weight: 600; padding: 8px 12px;
       border-radius: 8px; cursor: pointer; white-space: nowrap; }
     .cn-collapse:hover { background: #f1f5f9; }
     .cn-program-heading { font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #64748b; padding: 10px 8px 4px; }
@@ -144,17 +143,10 @@
     .cn-btn-primary:hover { background: #065f46; border-color: #065f46; }
     .cn-btn-newtab { background: #b91c1c; border-color: #b91c1c; color: #fff; }
     .cn-btn-newtab:hover { background: #991b1b; border-color: #991b1b; }
-    .cn-empty { padding: 20px; text-align: center; color: #64748b; font-size: 13px; }
     .cn-layout button:focus-visible, .cn-layout a:focus-visible, .cn-layout input:focus-visible, .cn-layout select:focus-visible {
       outline: 2px solid #2563eb; outline-offset: 1px; }
 
     @media (max-width: 699px) {
-      .cn-toolbar { flex-wrap: wrap; }
-      .cn-filter { flex-basis: 100%; }
-      .cn-jump { flex: 1 1 0; }
-      .cn-chapter { scroll-margin-top: 108px; }
-      .cn-chapter.is-open > .cn-head-wrap { top: 102px; }
-      .cn-doc { scroll-margin-top: 170px; }
       .cn-head { align-items: flex-start; flex-wrap: wrap; }
       .cn-head-text { flex-basis: calc(100% - 110px); }
       .cn-head-desc { display: none; }
@@ -970,7 +962,7 @@
         sources.forEach(s => {
           const el = document.createElement('div');
           el.className = 'bg-white border border-blue-200 rounded-lg p-2.5 text-xs shadow-2xs flex flex-col justify-between';
-          const localPdf = escapeHtml(docOpenUrl(s));
+          const localPdf = escapeHtml(pdfViewerUrl(docOpenUrl(s)));
           el.innerHTML = `
             <div class="mb-2">
               <div class="font-bold text-slate-800 line-clamp-1">${escapeHtml(s.title)}</div>
@@ -1064,6 +1056,28 @@
       return resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
     }
 
+    // PDFs open in the bundled PDF.js viewer (static/pdfjs), which has its own
+    // find bar. When a site search is showing, its words are passed along so
+    // the matches are highlighted as the document opens.
+    const PDF_VIEWER_URL = (LOCAL_SERVER_BASE || '') + '/pdfjs/web/viewer.html';
+    const PDF_SEARCH_SKIP = new Set(['a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'can', 'do', 'does', 'for', 'from',
+      'how', 'i', 'if', 'in', 'is', 'it', 'my', 'of', 'on', 'or', 'the', 'to', 'what', 'when', 'who', 'with']);
+
+    function pdfSearchTerms() {
+      const view = document.getElementById('searchResultsPageView');
+      if (!view || view.classList.contains('hidden')) return '';
+      const words = (getSearchQuery() || '').replace(/["“”]/g, ' ').split(/\s+/)
+        .filter(w => w.length > 1 && !PDF_SEARCH_SKIP.has(w.toLowerCase()));
+      return words.slice(0, 8).join(' ');
+    }
+
+    function pdfViewerUrl(pdfUrl) {
+      // Only stored PDFs go through the viewer; County links open as they are.
+      if (!pdfUrl || !pdfUrl.startsWith((LOCAL_SERVER_BASE || '') + '/pdfs/')) return pdfUrl;
+      const terms = pdfSearchTerms();
+      return PDF_VIEWER_URL + '?file=' + encodeURIComponent(pdfUrl) + (terms ? '#search=' + encodeURIComponent(terms) : '');
+    }
+
     // In-Page PDF Viewer Modal Functions
     function openPdfModal(pdfUrl, title, program, summary, section) {
       const modal = document.getElementById('pdfViewerModal');
@@ -1090,14 +1104,14 @@
         summaryBar.classList.add('hidden');
       }
 
-      newTabBtn.href = pdfUrl;
+      newTabBtn.href = pdfViewerUrl(pdfUrl);
       if (downloadBtn) {
         downloadBtn.href = pdfUrl;
         downloadBtn.setAttribute('download', (section ? (section + ' - ') : '') + (title || 'document') + '.pdf');
       }
 
       loading.classList.remove('hidden');
-      iframe.src = pdfUrl;
+      iframe.src = pdfViewerUrl(pdfUrl);
 
       modal.classList.remove('hidden');
       modal.classList.add('flex');
@@ -1173,7 +1187,7 @@
           ? 'bg-purple-100 text-purple-800 border-purple-200' 
           : 'bg-teal-100 text-teal-800 border-teal-200';
 
-      const localPdfLink = escapeHtml(docOpenUrl(doc));
+      const localPdfLink = escapeHtml(pdfViewerUrl(docOpenUrl(doc)));
       const missing = isSourceMissing(doc);
       const revisionStr = doc.published_on ? doc.published_on.slice(0, 10) : 'Not available';
 
@@ -1257,7 +1271,7 @@
     // Chapter browser: a sticky toolbar above compact, expandable document rows.
     // Inlined into index.html by generate_preview.py (edit this file, then
     // regenerate). Uses DOCS_BY_ID, activeProgram, escapeHtml, viewDocPdf,
-    // docOpenUrl, isSourceMissing, docDateLine and formatLongDate from the page.
+    // docOpenUrl, pdfViewerUrl, isSourceMissing, docDateLine and formatLongDate from the page.
     // ---------------------------------------------------------------------
     const CN_PROGRAMS = ['CalFresh', 'CalWORKs', 'Medi-Cal'];
     const CN_PROGRAM_TITLES = { 'CalFresh': 'CalFresh (SNAP)', 'CalWORKs': 'CalWORKs (TANF)', 'Medi-Cal': 'Medi-Cal (Medicaid)' };
@@ -1396,7 +1410,7 @@
 
       if (!missing) {
         const tab = cnEl('a', 'cn-btn cn-btn-newtab');
-        tab.href = docOpenUrl(doc);
+        tab.href = pdfViewerUrl(docOpenUrl(doc));
         tab.target = '_blank';
         tab.rel = 'noopener';
         tab.append(cnEl('span', '', 'Open in new tab'));
@@ -1492,38 +1506,6 @@
       cnWriteHash({});
     }
 
-    function cnApplyFilter(text) {
-      const needle = text.trim().toLowerCase();
-      let shown = 0;
-      cnChapters.forEach(ch => {
-        const section = document.getElementById('ch-' + ch.id);
-        if (!section) return;
-        const nameHit = !needle || (ch.code + ' ' + ch.name + ' ' + ch.desc).toLowerCase().includes(needle);
-        const docHits = needle ? ch.docs.filter(d => (d.title || '').toLowerCase().includes(needle)) : [];
-        const hit = nameHit || docHits.length > 0;
-        section.hidden = !hit;
-        if (hit) shown += 1;
-        // A match on document titles opens the chapter and shows only those documents.
-        const narrow = !!needle && !nameHit && docHits.length > 0 && ch.docs.length > 1;
-        if (narrow) cnSetChapterOpen(ch, true);
-        const keep = narrow ? new Set(docHits.map(d => d.id)) : null;
-        section.querySelectorAll('.cn-doc').forEach(row => {
-          row.hidden = !!keep && !keep.has(row.id.replace(/^doc-/, ''));
-        });
-        section.querySelectorAll('.cn-year').forEach(year => { year.hidden = !!keep; });
-      });
-      document.querySelectorAll('.cn-program-heading').forEach(h => {
-        let next = h.nextElementSibling;
-        let any = false;
-        while (next && !next.classList.contains('cn-program-heading')) {
-          if (!next.hidden && next.classList.contains('cn-chapter')) any = true;
-          next = next.nextElementSibling;
-        }
-        h.hidden = !any;
-      });
-      document.querySelectorAll('.cn-empty').forEach(n => { n.hidden = shown > 0; });
-    }
-
     function cnOpenFromHash() {
       const state = cnReadHash();
       if (state.doc && DOCS_BY_ID[state.doc]) {
@@ -1557,13 +1539,8 @@
       cnChapters = cnBuildChapters(docs);
       const showPrograms = activeProgram === 'All';
 
-      // Toolbar: filter, jump menu, collapse all. Stays at the top while scrolling.
+      // Toolbar: jump menu and collapse all. Stays at the top while scrolling.
       const toolbar = cnEl('div', 'cn-toolbar');
-      const filter = cnEl('input', 'cn-filter');
-      filter.type = 'search';
-      filter.placeholder = 'Filter chapters and documents';
-      filter.setAttribute('aria-label', 'Filter chapters and documents');
-      filter.addEventListener('input', () => cnApplyFilter(filter.value));
       const jump = cnEl('select', 'cn-jump');
       jump.setAttribute('aria-label', 'Jump to chapter');
       jump.append(new Option('Jump to chapter…', ''));
@@ -1571,7 +1548,7 @@
       const collapse = cnEl('button', 'cn-collapse', 'Collapse all');
       collapse.type = 'button';
       collapse.addEventListener('click', cnCollapseAll);
-      toolbar.append(filter, jump, collapse);
+      toolbar.append(jump, collapse);
 
       const main = cnEl('div', 'cn-main');
 
@@ -1633,9 +1610,6 @@
         main.append(section);
       });
 
-      const empty = cnEl('p', 'cn-empty', 'No chapters or documents match that filter.');
-      empty.hidden = true;
-      main.append(empty);
       container.append(toolbar, main);
       cnOpenFromHash();
     }
