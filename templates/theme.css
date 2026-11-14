@@ -84,6 +84,10 @@
     html.dark .cn-doc { border-top-color: #1e293b; }
     html.dark .cn-flag { background: rgba(245, 158, 11, 0.2); color: #fcd34d; }
     html.dark .cn-detail { background: #0f172a; }
+    html.dark .cn-body { --cn-rail: #334155; }
+    html.dark [data-program="CalFresh"] .cn-body { --cn-rail: rgba(52, 211, 153, .4); }
+    html.dark [data-program="CalWORKs"] .cn-body { --cn-rail: rgba(192, 132, 252, .45); }
+    html.dark [data-program="Medi-Cal"] .cn-body { --cn-rail: rgba(45, 212, 191, .4); }
     html.dark .cn-detail.is-target { background: rgba(234, 179, 8, 0.12); }
     html.dark .cn-doc-title { color: #f1f5f9; }
     html.dark .cn-doc-link:hover { color: #93c5fd; }

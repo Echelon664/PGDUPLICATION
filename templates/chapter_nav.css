@@ -40,6 +40,26 @@
     .cn-year { padding: 8px 18px 4px; font-size: 14px; font-weight: 700; color: #92400e; background: #fffbeb; border-top: 1px solid #f1f5f9; }
     .cn-doc { border-top: 1px solid #e2e8f0; }
     .cn-body > .cn-doc:first-child { border-top: 0; }
+    /* Documents inside an opened chapter sit indented, joined to the chapter by a guide line
+       that runs down from under the chevron with a short branch to each document. */
+    .cn-body { --cn-indent: 44px; --cn-rail-x: 25px; --cn-rail: #cbd5e1; padding: 4px 0 6px var(--cn-indent); }
+    [data-program="CalFresh"] .cn-body { --cn-rail: #a7f3d0; }
+    [data-program="CalWORKs"] .cn-body { --cn-rail: #e9d5ff; }
+    [data-program="Medi-Cal"] .cn-body { --cn-rail: #99f6e4; }
+    .cn-body > .cn-doc, .cn-body > .cn-year { position: relative; --cn-branch-y: 29px; }
+    .cn-body > .cn-year { --cn-branch-y: 19px; }
+    .cn-body > .cn-doc::before, .cn-body > .cn-year::before {
+      content: ''; position: absolute; left: calc(var(--cn-rail-x) - var(--cn-indent)); top: 0; bottom: 0; width: 2px;
+      background: var(--cn-rail); pointer-events: none; }
+    .cn-body > :first-child::before { top: -4px; }
+    .cn-body > :last-child::before { bottom: auto; height: calc(var(--cn-branch-y) + 1px); border-radius: 0 0 2px 2px; }
+    .cn-body > :first-child:last-child::before { height: calc(var(--cn-branch-y) + 5px); }
+    .cn-body > .cn-doc::after, .cn-body > .cn-year::after {
+      content: ''; position: absolute; left: calc(var(--cn-rail-x) - var(--cn-indent)); top: var(--cn-branch-y);
+      width: calc(var(--cn-indent) - var(--cn-rail-x) - 6px); height: 2px; border-radius: 0 2px 2px 0;
+      background: var(--cn-rail); pointer-events: none; }
+    /* Less indent where the list is narrow: with the PDF panel open. */
+    body.pdf-docked .cn-body { --cn-indent: 32px; --cn-rail-x: 16px; }
     .cn-doc { scroll-margin-top: 116px; }
     .cn-flag { flex: none; font-size: 12.5px; font-weight: 700; padding: 1px 6px; border-radius: 999px; background: #fef3c7; color: #92400e; }
     .cn-detail { display: flex; align-items: center; gap: 20px; padding: 16px 18px; background: #fff; transition: background .4s; }
@@ -125,5 +145,7 @@
       .cn-summary { padding: 10px 12px; }
       .cn-actions { flex-direction: row; flex-wrap: wrap; }
       .cn-year { padding-left: 12px; padding-right: 12px; }
+      .cn-body { --cn-indent: 34px; --cn-rail-x: 21px; }
+      .cn-body > .cn-doc { --cn-branch-y: 26px; }
     }
     @media (prefers-reduced-motion: reduce) { .cn-chevron, .cn-sum-toggle, .cn-sum-chev { transition: none; } .cn-summary.cn-sum-reveal { animation: none; } }
