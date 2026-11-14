@@ -202,7 +202,7 @@ html_template = f"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal SDCounty HHSA PG</title>
+  <title>Policy Search Engine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -343,7 +343,8 @@ __CHAPTER_NAV_CSS__
           </svg>
           Direct Policy Guide Search &amp; Grounded AI
         </div>
-        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight mb-2">Personal SDCounty HHSA PG</h1>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Policy Search Engine</h1>
+        <p class="text-sm sm:text-base font-semibold text-blue-200 tracking-wide mt-1 mb-3">HHSA SDCounty PG</p>
         <p class="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto mb-5">
           Select a program to browse its policy chapters. Open a chapter, then a document, to see its date, summary and PDF.
         </p>
@@ -1521,6 +1522,25 @@ __CHAPTER_NAV_JS__
       }}
       updateClearButtonVisibility();
     }});
+  </script>
+  <!-- Back to top: appears once the reader has scrolled down. -->
+  <button type="button" id="backToTopBtn" aria-label="Back to top" title="Back to top"
+    class="hidden fixed bottom-5 right-5 z-40 flex items-center gap-1.5 bg-[#0b2545] hover:bg-blue-800 text-white font-semibold text-sm p-3 sm:px-4 sm:py-2.5 rounded-full shadow-lg border border-white/20 cursor-pointer">
+    <svg class="w-5 h-5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path></svg>
+    <span class="hidden sm:inline">Back to top</span>
+  </button>
+  <script>
+    (function () {{
+      const btn = document.getElementById('backToTopBtn');
+      if (!btn) return;
+      const update = () => {{ btn.classList.toggle('hidden', window.scrollY < 600); }};
+      window.addEventListener('scroll', update, {{ passive: true }});
+      btn.addEventListener('click', () => {{
+        const smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({{ top: 0, behavior: smooth ? 'smooth' : 'auto' }});
+      }});
+      update();
+    }})();
   </script>
 </body>
 </html>"""
