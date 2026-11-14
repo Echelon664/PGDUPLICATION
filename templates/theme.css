@@ -89,6 +89,9 @@
     html.dark .cn-doc-link:hover { color: #93c5fd; }
     html.dark .cn-meta { color: #94a3b8; }
     html.dark .cn-meta strong { color: #6ee7b7; }
+    html.dark .cn-sum-toggle { --sum-tint: rgba(16, 185, 129, .12); --sum-tint2: rgba(16, 185, 129, .22); --sum-line: rgba(52, 211, 153, .35); color: #6ee7b7; }
+    html.dark [data-program="CalWORKs"] .cn-sum-toggle { --sum-tint: rgba(168, 85, 247, .14); --sum-tint2: rgba(168, 85, 247, .24); --sum-line: rgba(192, 132, 252, .4); color: #d8b4fe; }
+    html.dark [data-program="Medi-Cal"] .cn-sum-toggle { --sum-tint: rgba(20, 184, 166, .12); --sum-tint2: rgba(20, 184, 166, .22); --sum-line: rgba(45, 212, 191, .35); color: #5eead4; }
     html.dark .cn-summary { background: #0b1222; color: #e2e8f0; border-color: #cbd5e1; }
     html.dark .cn-btn { background: #0f172a; border-color: #334155; color: #e2e8f0; }
     html.dark .cn-btn:hover { background: #1e293b; border-color: #64748b; }
