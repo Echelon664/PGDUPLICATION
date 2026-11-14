@@ -215,11 +215,11 @@ html_template = f"""<!DOCTYPE html>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script>
-    // Apply the saved theme (or the device setting) before the page paints.
+    // Day mode by default; dark mode only when this visitor chose it with the toggle. Applied before the page paints.
     (function () {{
       let saved = null;
       try {{ saved = localStorage.getItem('theme'); }} catch (e) {{}}
-      const dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const dark = saved === 'dark';
       document.documentElement.classList.toggle('dark', dark);
     }})();
   </script>
@@ -865,7 +865,7 @@ __THEME_CSS__
       }}
     }};
 
-    // Day / dark mode. The choice is remembered on this device; without one, the device setting is used.
+    // Day / dark mode. Day mode is the default; a visitor's choice is remembered on their device.
     function syncThemeToggle() {{
       const dark = document.documentElement.classList.contains('dark');
       const btn = document.getElementById('themeToggle');
@@ -880,11 +880,6 @@ __THEME_CSS__
       try {{ localStorage.setItem('theme', dark ? 'dark' : 'light'); }} catch (e) {{}}
       syncThemeToggle();
     }}
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {{
-      let saved = null;
-      try {{ saved = localStorage.getItem('theme'); }} catch (err) {{}}
-      if (!saved) {{ document.documentElement.classList.toggle('dark', e.matches); syncThemeToggle(); }}
-    }});
     document.addEventListener('DOMContentLoaded', syncThemeToggle);
 
     // Close the "County guides" menu on an outside click or Escape.
