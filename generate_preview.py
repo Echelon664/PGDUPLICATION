@@ -1771,7 +1771,7 @@ __THEME_CSS__
           <div class="flex flex-wrap items-center gap-2 mb-1.5">
             <span class="px-2 py-0.5 rounded text-xs font-bold border ${{progBadgeColor}}">${{(doc.programs || []).join(' / ')}}</span>
             ${{secBadgeHtml}}
-            <span class="font-extrabold text-slate-900 text-base sm:text-lg leading-snug">${{escapeHtml(doc.title)}}</span>
+            <button type="button" onclick="viewDocPdf('${{doc.id}}')" class="doc-card-title font-extrabold text-slate-900 text-base sm:text-lg leading-snug" title="${{missing ? 'Open on the County site' : 'View PDF'}}">${{CN_DOC_ICON}}${{escapeHtml(doc.title)}}</button>
             ${{missing ? '<span class="px-2 py-0.5 rounded text-xs font-bold border bg-amber-100 text-amber-900 border-amber-300">County document not bundled</span>' : ''}}
             ${{summaryStale(doc) ? '<span class="px-2 py-0.5 rounded text-xs font-bold border bg-amber-100 text-amber-900 border-amber-300" title="The County updated this PDF after the summary was written. Check the PDF.">Summary under review</span>' : ''}}
           </div>
@@ -1810,9 +1810,10 @@ __THEME_CSS__
             <span>Section: <strong class="text-slate-600">${{escapeHtml(doc.section_num ? (doc.section_num + (doc.section_title ? (' • ' + doc.section_title) : '')) : (doc.chapter || doc.id))}}</strong></span>
             <span>•</span>
             <span>Posted on County site: ${{revisionStr}}</span>
+            ${{missing ? '' : `<span class="desk-only cn-newtab-wrap">•&nbsp;<a class="cn-newtab-link" href="${{localPdfLink}}" target="_blank" rel="noopener">Open in new tab${{CN_EXT_ICON}}</a></span>`}}
           </div>
         </div>
-        <div class="flex flex-col items-stretch gap-2 shrink-0 w-full sm:w-auto pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
+        <div class="mobile-actions flex flex-col items-stretch gap-2 shrink-0 w-full sm:w-auto pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
           <button type="button" data-view-doc="${{escapeHtml(doc.id)}}" onclick="viewDocPdf('${{doc.id}}')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center justify-center gap-1.5 shadow-2xs cursor-pointer">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
             <span>${{missing ? 'Open County Site' : 'View PDF in Page'}}</span>
