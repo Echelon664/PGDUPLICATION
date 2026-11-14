@@ -214,6 +214,15 @@ html_template = f"""<!DOCTYPE html>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    // Apply the saved theme (or the device setting) before the page paints.
+    (function () {{
+      let saved = null;
+      try {{ saved = localStorage.getItem('theme'); }} catch (e) {{}}
+      const dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.classList.toggle('dark', dark);
+    }})();
+  </script>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <style>
     /* Atkinson Hyperlegible Next is designed for legibility on screens. The
@@ -313,6 +322,16 @@ html_template = f"""<!DOCTYPE html>
     .program-btn:hover {{ background: #e2e8f0; color: #0f172a; }}
     .program-btn.is-active {{ background: #fff; color: #0f172a; font-weight: 800; box-shadow: 0 0 0 1px #cbd5e1, 0 1px 2px rgba(15, 23, 42, 0.08); }}
     .program-btn:focus-visible, .search-seg-btn:focus-visible, .guides-menu > summary:focus-visible {{ outline: 2px solid #2563eb; outline-offset: 2px; }}
+    .theme-toggle {{
+      display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 0 10px;
+      border: 1px solid #cbd5e1; border-radius: 999px; background: transparent; color: #334155;
+      font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }}
+    .theme-toggle:hover {{ background: #f1f5f9; }}
+    .theme-toggle:focus-visible {{ outline: 2px solid #2563eb; outline-offset: 2px; }}
+    .theme-icon-sun {{ display: none; }}
+    html.dark .theme-icon-sun {{ display: inline; }}
+    html.dark .theme-icon-moon {{ display: none; }}
     .prog-dot {{ width: 9px; height: 9px; border-radius: 50%; flex: none; }}
     .prog-count {{ font-size: 13px; font-weight: 600; color: #64748b; }}
     @media (max-width: 520px) {{
@@ -335,6 +354,7 @@ html_template = f"""<!DOCTYPE html>
       .search-scope {{ display: none; }}
     }}
 __CHAPTER_NAV_CSS__
+__THEME_CSS__
   </style>
 </head>
 <body class="bg-[#0b2545] text-slate-900 antialiased p-3 sm:p-5 min-h-screen">
@@ -354,6 +374,11 @@ __CHAPTER_NAV_CSS__
       </div>
       <div class="flex items-center gap-4 text-[13px] text-slate-600">
         {verified_top}
+        <button type="button" id="themeToggle" class="theme-toggle" onclick="toggleTheme()" aria-pressed="false" title="Switch to dark mode">
+          <svg class="theme-icon-moon w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="theme-icon-sun w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/></svg>
+          <span class="theme-label">Dark mode</span>
+        </button>
         <details class="guides-menu">
           <summary class="inline-flex items-center gap-1 cursor-pointer select-none hover:text-slate-900">County guides
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
@@ -741,6 +766,28 @@ __CHAPTER_NAV_CSS__
         ]
       }}
     }};
+
+    // Day / dark mode. The choice is remembered on this device; without one, the device setting is used.
+    function syncThemeToggle() {{
+      const dark = document.documentElement.classList.contains('dark');
+      const btn = document.getElementById('themeToggle');
+      if (!btn) return;
+      btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+      btn.title = dark ? 'Switch to day mode' : 'Switch to dark mode';
+      btn.querySelector('.theme-label').textContent = dark ? 'Day mode' : 'Dark mode';
+    }}
+    function toggleTheme() {{
+      const dark = !document.documentElement.classList.contains('dark');
+      document.documentElement.classList.toggle('dark', dark);
+      try {{ localStorage.setItem('theme', dark ? 'dark' : 'light'); }} catch (e) {{}}
+      syncThemeToggle();
+    }}
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {{
+      let saved = null;
+      try {{ saved = localStorage.getItem('theme'); }} catch (err) {{}}
+      if (!saved) {{ document.documentElement.classList.toggle('dark', e.matches); syncThemeToggle(); }}
+    }});
+    document.addEventListener('DOMContentLoaded', syncThemeToggle);
 
     // Close the "County guides" menu on an outside click or Escape.
     document.addEventListener('click', e => {{
@@ -1563,6 +1610,7 @@ def _read_template(name):
 web_html = (html_template
             .replace('__SERVER_BASE__', '')
             .replace('__CHAPTER_NAV_CSS__', _read_template("chapter_nav.css"))
+            .replace('__THEME_CSS__', _read_template("theme.css"))
             .replace('__CHAPTER_NAV_JS__', _read_template("chapter_nav.js")))
 with open(TEMPLATE_PATH, 'w', encoding='utf-8') as f:
     f.write(web_html)
