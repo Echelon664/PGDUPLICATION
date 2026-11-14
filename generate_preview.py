@@ -20,6 +20,7 @@ all_count = len(full_docs)
 from indexer import chunk_documents
 chunk_count = len(chunk_documents(DOCS_PATH))
 verified_html = ""
+verified_top = ""
 try:
     with open(os.path.join(BASE_DIR, "data", "county_sync", "manifest.json"), "r", encoding="utf-8") as f:
         import datetime
@@ -28,6 +29,13 @@ try:
             '<p class="text-xs text-emerald-700 font-semibold mt-1">'
             f'Every PDF matched the County site on {_verified.strftime("%B %-d, %Y")}. '
             '<a href="/sync" class="underline">See the check</a></p>'
+        )
+        verified_top = (
+            '<a href="/sync" class="hidden sm:inline-flex items-center gap-1.5 hover:text-slate-900" '
+            'title="Every PDF matched the County site in the last full check">'
+            '<svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">'
+            '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>'
+            f'Matches County site · {_verified.strftime("%b %-d, %Y")}</a>'
         )
 except (OSError, ValueError, KeyError):
     pass
@@ -241,41 +249,74 @@ html_template = f"""<!DOCTYPE html>
     .search-seg {{
       display: inline-flex;
       align-items: center;
-      gap: 2px;
-      padding: 3px;
-      background: #0f2f57;
-      border: 1px solid #27496f;
-      border-radius: 10px;
+      gap: 4px;
     }}
     .search-seg-btn {{
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 6px;
-      min-height: 38px;
-      padding: 0 14px;
-      border: 0;
-      border-radius: 8px;
-      background: transparent;
-      color: #cbd5e1;
-      font-size: 14px;
-      font-weight: 800;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      background: #fff;
+      color: #334155;
+      font-size: 15px;
+      font-weight: 700;
       white-space: nowrap;
       cursor: pointer;
-      transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+      transition: background 0.15s, color 0.15s, border-color 0.15s;
     }}
     .search-seg-btn:hover {{
-      background: #173d6b;
-      color: #fff;
+      background: #f1f5f9;
+      border-color: #94a3b8;
     }}
     .search-seg-btn.is-active {{
       background: #2563eb;
+      border-color: #2563eb;
       color: #fff;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    }}
+    .search-seg-btn.is-active:hover {{
+      background: #1d4ed8;
+      border-color: #1d4ed8;
     }}
     .search-seg-btn:disabled {{
       opacity: 0.6;
       cursor: not-allowed;
+    }}
+    .site-mark {{
+      width: 32px; height: 32px; flex: none; border-radius: 9px;
+      display: inline-flex; align-items: center; justify-content: center;
+      background: #dbeafe; color: #1d4ed8;
+    }}
+    .guides-menu {{ position: relative; }}
+    .guides-menu > summary {{ list-style: none; }}
+    .guides-menu > summary::-webkit-details-marker {{ display: none; }}
+    .guides-list {{
+      position: absolute; right: 0; top: calc(100% + 8px); z-index: 30; min-width: 280px;
+      display: flex; flex-direction: column; padding: 6px;
+      background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+    }}
+    .guides-list a {{ white-space: nowrap; padding: 8px 10px; border-radius: 6px; color: #1e293b; font-size: 14px; text-decoration: none; }}
+    .guides-list a:hover {{ background: #f1f5f9; }}
+    .prog-seg {{
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px; padding: 4px;
+      background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 14px;
+    }}
+    .program-btn {{
+      display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 42px; padding: 0 8px;
+      border: 0; border-radius: 10px; background: transparent; color: #475569;
+      font-size: 15px; font-weight: 600; cursor: pointer; transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+    }}
+    .program-btn:hover {{ background: #e2e8f0; color: #0f172a; }}
+    .program-btn.is-active {{ background: #fff; color: #0f172a; font-weight: 800; box-shadow: 0 0 0 1px #cbd5e1, 0 1px 2px rgba(15, 23, 42, 0.08); }}
+    .program-btn:focus-visible, .search-seg-btn:focus-visible, .guides-menu > summary:focus-visible {{ outline: 2px solid #2563eb; outline-offset: 2px; }}
+    .prog-dot {{ width: 9px; height: 9px; border-radius: 50%; flex: none; }}
+    .prog-count {{ font-size: 13px; font-weight: 600; color: #64748b; }}
+    @media (max-width: 520px) {{
+      .prog-seg {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
     }}
     .search-scope {{
       flex: none;
@@ -300,90 +341,62 @@ __CHAPTER_NAV_CSS__
 
   <div class="max-w-5xl mx-auto bg-[#0b2545] text-slate-900 border border-slate-800 rounded-2xl shadow-xl overflow-clip flex flex-col">
     
-    <!-- Top Official Notice Bar -->
-    <div class="bg-[#0b2545] text-slate-300 text-xs py-2 px-4 border-b border-slate-800 flex flex-wrap justify-between items-center gap-2">
-      <div class="flex items-center gap-2">
-        <svg class="w-4 h-4 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-        </svg>
-        <span class="font-semibold text-slate-100">County of San Diego HHSA Policy Search Engine</span>
-        <span class="text-slate-600">|</span>
-        <span class="text-slate-400">{all_count} Deduplicated Policy Sections &amp; Handbooks</span>
-      </div>
-      <div class="flex items-center gap-3 text-xs">
-        <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=542" target="_blank" class="hover:text-amber-300 underline transition">CalFresh Official (542) ↗</a>
-        <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=448" target="_blank" class="hover:text-amber-300 underline transition">CalWORKs Official (448) ↗</a>
-        <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=599" target="_blank" class="hover:text-amber-300 underline transition">Medi-Cal Official (599) ↗</a>
-        <a href="/sync" class="hover:text-amber-300 underline transition">County Source Check</a>
-      </div>
-    </div>
-
-    <!-- Official Notice & Disclaimer Banner -->
-    <div class="bg-[#0b2545] border-b border-slate-800 px-4 py-3 text-amber-200 text-xs flex items-start gap-3">
-      <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-      </svg>
-      <div>
-        <strong class="font-bold">Public Notice &amp; Disclaimer:</strong>
-        This tool searches official County of San Diego Health and Human Services Agency (HHSA) Policy &amp; Procedure Guides. 
-        It does not provide legal advice or make casework determinations. 
-        To apply for benefits or report case changes, please visit 
-        <a href="https://benefitscal.com/" target="_blank" class="text-amber-300 underline font-semibold hover:text-amber-100">BenefitsCal.com ↗</a> 
-        or the 
-        <a href="https://www.sandiegocounty.gov/hhsa/" target="_blank" class="text-amber-300 underline font-semibold hover:text-amber-100">County of San Diego HHSA Portal ↗</a>.
-      </div>
-    </div>
-
-    <!-- Hero & Search Controls Section -->
-    <div class="gradient-header text-white p-5 sm:p-7 border-b border-slate-700">
-      <div class="max-w-4xl mx-auto text-center">
-        <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-blue-500/20 text-blue-200 rounded-full text-xs font-medium border border-blue-400/30 mb-3">
-          <svg class="w-3.5 h-3.5 text-blue-300" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
-          </svg>
-          Direct Policy Guide Search &amp; Grounded AI
+    <!-- Top bar: name, County check, County guide links -->
+    <header class="site-top bg-white border-b border-slate-200 px-4 sm:px-5 py-2.5 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+      <div class="flex items-center gap-2.5 min-w-0">
+        <span class="site-mark" aria-hidden="true">
+          <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.25v13m0-13C10.83 5.48 9.25 5 7.5 5S4.17 5.48 3 6.25v13C4.17 18.48 5.75 18 7.5 18s3.33.48 4.5 1.25m0-13C13.17 5.48 14.75 5 16.5 5s3.33.48 4.5 1.25v13C19.83 18.48 18.25 18 16.5 18s-3.33.48-4.5 1.25"/></svg>
+        </span>
+        <div class="leading-tight min-w-0">
+          <div class="text-[15px] font-bold text-slate-900">Policy Search Engine</div>
+          <div class="text-xs text-slate-500">HHSA SDCounty PG</div>
         </div>
-        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Policy Search Engine</h1>
-        <p class="text-sm sm:text-base font-semibold text-blue-200 tracking-wide mt-1 mb-3">HHSA SDCounty PG</p>
-        <p class="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto mb-5">
-          Select a program to browse its policy chapters. Open a chapter, then a document, to see its date, summary and PDF.
+      </div>
+      <div class="flex items-center gap-4 text-[13px] text-slate-600">
+        {verified_top}
+        <details class="guides-menu">
+          <summary class="inline-flex items-center gap-1 cursor-pointer select-none hover:text-slate-900">County guides
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="guides-list">
+            <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=542" target="_blank" rel="noopener">CalFresh guide on the County site ↗</a>
+            <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=448" target="_blank" rel="noopener">CalWORKs guide on the County site ↗</a>
+            <a href="https://file.sandiegocounty.gov/HHSAPublicSite/Section?FolderId=599" target="_blank" rel="noopener">Medi-Cal guide on the County site ↗</a>
+            <a href="/sync">County source check</a>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <!-- Title, program tabs and search -->
+    <div class="site-hero bg-white px-4 sm:px-6 pt-6 sm:pt-8 pb-5 border-b border-slate-200">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-2xl sm:text-[28px] font-extrabold tracking-tight text-slate-900 text-center">Find a policy</h1>
+        <p class="text-sm sm:text-[15px] text-slate-600 text-center mt-1 mb-5">
+          Search {all_count} CalFresh, CalWORKs and Medi-Cal sections, or pick a program to browse its chapters.
         </p>
 
-        <!-- Program Navigation Tabs -->
-        <div class="bg-white/10 backdrop-blur-md p-1.5 rounded-xl border border-white/20 mb-4 flex flex-wrap items-center justify-between gap-2">
-          <!-- Program Specific Buttons -->
-          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
-            <button type="button" id="tab-CalFresh" onclick="switchProgram('CalFresh')" class="program-btn px-3.5 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1.5 shadow-sm bg-blue-600 text-white cursor-pointer">
-              <span>🌾 CalFresh (SNAP)</span>
-              <span class="bg-blue-800 text-blue-100 text-xs px-1.5 py-0.5 rounded-full font-bold">{cf_count}</span>
-            </button>
-            <button type="button" id="tab-CalWORKs" onclick="switchProgram('CalWORKs')" class="program-btn px-3.5 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1.5 bg-slate-800/60 text-slate-200 hover:bg-slate-700/80 cursor-pointer">
-              <span>💼 CalWORKs (TANF)</span>
-              <span class="bg-slate-700 text-slate-200 text-xs px-1.5 py-0.5 rounded-full font-bold">{cw_count}</span>
-            </button>
-            <button type="button" id="tab-Medi-Cal" onclick="switchProgram('Medi-Cal')" class="program-btn px-3.5 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1.5 bg-slate-800/60 text-slate-200 hover:bg-slate-700/80 cursor-pointer">
-              <span>🩺 Medi-Cal (Medicaid)</span>
-              <span class="bg-slate-700 text-slate-200 text-xs px-1.5 py-0.5 rounded-full font-bold">{mc_count}</span>
-            </button>
-          </div>
-          
-          <!-- All Programs Button - Far right, highlighted in RED -->
-          <div>
-            <button type="button" id="tab-All" onclick="switchProgram('All')" class="program-btn px-4 py-2 rounded-lg text-xs font-extrabold transition flex items-center gap-1.5 bg-red-600 hover:bg-red-700 text-white shadow-md border-2 border-red-400 cursor-pointer">
-              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span>All Programs (Search All)</span>
-              <span class="bg-red-800 text-red-100 text-xs px-1.5 py-0.5 rounded-full font-bold">{all_count}</span>
-            </button>
-          </div>
+        <!-- Program tabs (styled by switchProgram) -->
+        <div class="prog-seg" role="group" aria-label="Program">
+          <button type="button" id="tab-All" onclick="switchProgram('All')" class="program-btn" title="All programs">
+            <span class="prog-dot" style="background:#64748b"></span><span>All</span><span class="prog-count">{all_count}</span>
+          </button>
+          <button type="button" id="tab-CalFresh" onclick="switchProgram('CalFresh')" class="program-btn is-active" aria-pressed="true" title="CalFresh (SNAP)">
+            <span class="prog-dot" style="background:#047857"></span><span>CalFresh</span><span class="prog-count">{cf_count}</span>
+          </button>
+          <button type="button" id="tab-CalWORKs" onclick="switchProgram('CalWORKs')" class="program-btn" title="CalWORKs (TANF)">
+            <span class="prog-dot" style="background:#7e22ce"></span><span>CalWORKs</span><span class="prog-count">{cw_count}</span>
+          </button>
+          <button type="button" id="tab-Medi-Cal" onclick="switchProgram('Medi-Cal')" class="program-btn" title="Medi-Cal (Medicaid)">
+            <span class="prog-dot" style="background:#0f766e"></span><span>Medi-Cal</span><span class="prog-count">{mc_count}</span>
+          </button>
         </div>
 
-        <!-- Search Input Box & Submit Buttons -->
-        <form id="searchForm" role="search" onsubmit="handleSearchSubmit(event)" class="flex flex-col sm:flex-row gap-2">
+        <!-- Search box and Search / Ask AI buttons -->
+        <form id="searchForm" role="search" onsubmit="handleSearchSubmit(event)" class="flex flex-col sm:flex-row gap-2 mt-3">
           <label for="searchInput" class="sr-only">Search policy manuals</label>
-          <div class="flex items-center gap-2 flex-1 min-w-0 min-h-[44px] pl-3 pr-1 bg-white border border-slate-300 rounded-lg shadow-inner transition focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500">
-            <svg class="w-4 h-4 text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <div class="flex items-center gap-2 flex-1 min-w-0 min-h-[48px] pl-3.5 pr-1 bg-white border border-slate-300 rounded-xl transition focus-within:border-blue-500 focus-within:ring-2 focus-within:ring-blue-500/40">
+            <svg class="w-[18px] h-[18px] text-slate-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
             <span id="searchScopeChip" class="search-scope">CalFresh</span>
@@ -391,7 +404,7 @@ __CHAPTER_NAV_CSS__
               placeholder="Search CalFresh policy: student eligibility, SUA, SAR 7..."
               aria-describedby="searchScope" aria-controls="searchResultsPageView"
               enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false"
-              class="flex-1 min-w-0 h-11 bg-transparent border-0 outline-none text-slate-900 placeholder:text-slate-500 text-base sm:text-sm font-medium">
+              class="flex-1 min-w-0 h-12 bg-transparent border-0 outline-none text-slate-900 placeholder:text-slate-500 text-base font-medium">
             <button type="button" id="clearSearchBtn" onclick="clearSearch()" class="hidden shrink-0 h-11 w-11 items-center justify-center rounded-md text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition cursor-pointer" aria-label="Clear search" title="Clear search">
               <span aria-hidden="true">✕</span>
             </button>
@@ -401,7 +414,7 @@ __CHAPTER_NAV_CSS__
               <span data-label>Search</span>
             </button>
             <button type="submit" name="searchMode" value="ask" class="search-seg-btn flex-1 sm:flex-none">
-              <svg class="w-3.5 h-3.5 text-amber-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+              <svg class="w-3.5 h-3.5 text-amber-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.477.859h4z"></path>
               </svg>
               <span data-label>Ask AI</span>
@@ -409,19 +422,13 @@ __CHAPTER_NAV_CSS__
           </div>
         </form>
         <p id="searchScope" class="sr-only">Searching the CalFresh (SNAP) guide.</p>
-        <p id="searchError" class="hidden text-xs font-semibold text-amber-300 mt-2 px-1" role="alert"></p>
+        <p id="searchError" class="hidden text-xs font-semibold text-amber-800 mt-2 px-1" role="alert"></p>
 
-        <!-- Deep BM25 Search Status Indicator -->
-        <div class="flex items-center justify-between text-[13px] text-blue-200/90 mt-2 px-1">
-          <div class="flex items-center gap-1.5">
-            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
-            <span><strong>Scope:</strong> <span id="searchScopeLabel">CalFresh (SNAP)</span> &bull; <strong>SQLite FTS5</strong> searches 100% of PDF contents, regulations, tables & citations</span>
-          </div>
-          <div class="text-right text-blue-200/70 hidden sm:block">
-            {all_count:,} documents &bull; {chunk_count:,} indexed passages
-          </div>
-        </div>
-
+        <p class="text-xs text-slate-500 text-center leading-relaxed mt-3">
+          A search tool for County policy guides, not legal advice or a casework decision. To apply or report changes, use
+          <a href="https://benefitscal.com/" target="_blank" rel="noopener" class="underline hover:text-slate-800">BenefitsCal.com</a>
+          or the <a href="https://www.sandiegocounty.gov/hhsa/" target="_blank" rel="noopener" class="underline hover:text-slate-800">County HHSA site</a>.
+        </p>
       </div>
     </div>
 
@@ -735,31 +742,26 @@ __CHAPTER_NAV_CSS__
       }}
     }};
 
+    // Close the "County guides" menu on an outside click or Escape.
+    document.addEventListener('click', e => {{
+      document.querySelectorAll('details.guides-menu[open]').forEach(d => {{ if (!d.contains(e.target)) d.open = false; }});
+    }});
+    document.addEventListener('keydown', e => {{
+      if (e.key === 'Escape') document.querySelectorAll('details.guides-menu[open]').forEach(d => {{ d.open = false; }});
+    }});
+
     function switchProgram(prog, opts = {{}}) {{
       activeProgram = prog;
       const meta = PROGRAM_METADATA[prog];
 
-      // Update program button styles
-      ['CalFresh', 'CalWORKs', 'Medi-Cal'].forEach(p => {{
+      // Update program tab styles
+      ['All', 'CalFresh', 'CalWORKs', 'Medi-Cal'].forEach(p => {{
         const btn = document.getElementById('tab-' + p);
         if (btn) {{
-          if (p === prog) {{
-            btn.className = 'program-btn px-3.5 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1.5 shadow-sm bg-blue-600 text-white cursor-pointer';
-          }} else {{
-            btn.className = 'program-btn px-3.5 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1.5 bg-slate-800/60 text-slate-200 hover:bg-slate-700/80 cursor-pointer';
-          }}
+          btn.classList.toggle('is-active', p === prog);
+          btn.setAttribute('aria-pressed', p === prog ? 'true' : 'false');
         }}
       }});
-
-      // Update All Programs button (Far right, highlighted in red)
-      const allBtn = document.getElementById('tab-All');
-      if (allBtn) {{
-        if (prog === 'All') {{
-          allBtn.className = 'program-btn px-4 py-2 rounded-lg text-xs font-extrabold transition flex items-center gap-1.5 bg-red-600 text-white shadow-lg border-2 border-white ring-2 ring-red-400 cursor-pointer';
-        }} else {{
-          allBtn.className = 'program-btn px-4 py-2 rounded-lg text-xs font-extrabold transition flex items-center gap-1.5 bg-red-600 hover:bg-red-700 text-white shadow-md border-2 border-red-400 cursor-pointer';
-        }}
-      }}
 
       // Update input placeholder and visible / screen-reader scope hints
       const searchInp = document.getElementById('searchInput');
