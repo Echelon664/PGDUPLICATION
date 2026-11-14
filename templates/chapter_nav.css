@@ -54,6 +54,18 @@
     .cn-meta strong { color: #065f46; font-weight: 700; }
     .cn-summary { margin: 0; font-size: 16px; line-height: 1.6; color: #1e293b; max-width: 75ch;
       border: 1.5px solid #000; border-radius: 8px; padding: 10px 14px; background: #fff; }
+    /* "View summary": a quiet pill that shows or hides the summary below it. */
+    .cn-sum-toggle { display: inline-flex; align-items: center; gap: 7px; margin: 0; padding: 5px 12px 5px 10px;
+      border: 1px solid #cbd5e1; border-radius: 999px; background: #f8fafc; color: #334155;
+      font-size: 14px; font-weight: 600; cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+    .cn-sum-toggle:hover { background: #eef2f7; border-color: #94a3b8; color: #0f172a; }
+    .cn-sum-toggle[aria-expanded="true"] { background: #ecfdf5; border-color: #6ee7b7; color: #065f46; margin-bottom: 10px; }
+    .cn-sum-icon { position: relative; width: 10px; height: 10px; flex: none; }
+    .cn-sum-icon::before, .cn-sum-icon::after { content: ''; position: absolute; left: 0; top: 4px; width: 10px; height: 2px;
+      border-radius: 1px; background: currentColor; transition: transform .2s; }
+    .cn-sum-icon::after { transform: rotate(90deg); }
+    .cn-sum-toggle[aria-expanded="true"] .cn-sum-icon::after { transform: rotate(0deg); }
+    .cn-summary[hidden] { display: none; }
     /* Desktop: the two buttons stack, same width. Phones lay them out in a row (media query below). */
     .cn-actions { flex: none; display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
     .cn-actions .cn-btn { justify-content: center; }
@@ -81,4 +93,4 @@
       .cn-actions { flex-direction: row; flex-wrap: wrap; }
       .cn-year { padding-left: 12px; padding-right: 12px; }
     }
-    @media (prefers-reduced-motion: reduce) { .cn-chevron { transition: none; } }
+    @media (prefers-reduced-motion: reduce) { .cn-chevron, .cn-sum-icon::before, .cn-sum-icon::after { transition: none; } }
