@@ -332,6 +332,33 @@ html_template = f"""<!DOCTYPE html>
     .theme-icon-sun {{ display: none; }}
     html.dark .theme-icon-sun {{ display: inline; }}
     html.dark .theme-icon-moon {{ display: none; }}
+    /* Docked PDF panel. Only used on wide screens; the page widens so the list keeps a readable width. */
+    body.pdf-docked #siteShell {{ max-width: 1560px; }}
+    .content-row {{ display: flex; align-items: flex-start; }}
+    body.pdf-docked #mainContent {{ flex: 0 0 42%; }}
+    .pdf-side {{ flex: 1 1 0; min-width: 0; position: sticky; top: 12px; height: calc(100vh - 24px); margin: 12px 12px 12px 0;
+      display: flex; flex-direction: column; border: 1px solid #cbd5e1; border-radius: 12px; overflow: hidden; background: #e2e8f0; }}
+    .pdf-side[hidden] {{ display: none; }}
+    .pdf-side-bar {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 10px 8px 14px;
+      background: #0f172a; color: #f1f5f9; flex: none; }}
+    .pdf-side-badge {{ flex: none; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; padding: 2px 6px;
+      border-radius: 4px; background: rgba(59,130,246,.2); color: #93c5fd; border: 1px solid rgba(96,165,250,.3); }}
+    .pdf-side-title {{ margin: 0; font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+    .pdf-side-actions {{ display: flex; align-items: center; gap: 6px; flex: none; }}
+    .pdf-side-btn {{ display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px; border: 1px solid #334155; border-radius: 8px;
+      background: #1e293b; color: #e2e8f0; font-size: 12.5px; font-weight: 600; cursor: pointer; text-decoration: none; transition: background .15s; }}
+    .pdf-side-btn:hover {{ background: #334155; color: #fff; }}
+    .pdf-side-btn:focus-visible {{ outline: 2px solid #60a5fa; outline-offset: 1px; }}
+    .pdf-side-close {{ padding: 5px 7px; }}
+    .pdf-side-body {{ position: relative; flex: 1; min-height: 0; }}
+    .pdf-side-body iframe {{ width: 100%; height: 100%; border: 0; display: block; }}
+    .pdf-side-loading {{ position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: #f1f5f9; color: #334155; font-size: 13px; font-weight: 600; z-index: 1; }}
+    html.dark .pdf-side {{ border-color: #334155; background: #020617; }}
+    html.dark .pdf-side-loading {{ background: #0f172a; color: #cbd5e1; }}
+    /* The section whose PDF is open in the panel. */
+    .is-viewing {{ box-shadow: inset 4px 0 0 #047857; background: #ecfdf5 !important; }}
+    html.dark .is-viewing {{ background: rgba(4,120,87,.18) !important; }}
     .prog-dot {{ width: 9px; height: 9px; border-radius: 50%; flex: none; }}
     .prog-count {{ font-size: 13px; font-weight: 600; color: #64748b; }}
     @media (max-width: 520px) {{
@@ -359,7 +386,7 @@ __THEME_CSS__
 </head>
 <body class="bg-[#0b2545] text-slate-900 antialiased p-3 sm:p-5 min-h-screen">
 
-  <div class="max-w-5xl mx-auto bg-[#0b2545] text-slate-900 border border-slate-800 rounded-2xl shadow-xl overflow-clip flex flex-col">
+  <div id="siteShell" class="max-w-5xl mx-auto bg-[#0b2545] text-slate-900 border border-slate-800 rounded-2xl shadow-xl overflow-clip flex flex-col">
     
     <!-- Top bar: name, County check, County guide links -->
     <header class="site-top bg-white border-b border-slate-200 px-4 sm:px-5 py-2.5 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
@@ -457,8 +484,9 @@ __THEME_CSS__
       </div>
     </div>
 
-    <!-- Main Content Body -->
-    <div class="bg-white p-4 sm:p-6 flex-1 flex flex-col gap-5">
+    <!-- Main content, plus the docked PDF panel on wide screens -->
+    <div id="contentRow" class="content-row bg-white flex-1">
+    <div id="mainContent" class="bg-white p-4 sm:p-6 flex-1 min-w-0 flex flex-col gap-5">
       
       <!-- VIEW 1: Manual Chapter & Section Dropdowns View (Default View) -->
       <div id="manualDropdownsView" class="flex flex-col gap-5">
@@ -559,6 +587,38 @@ __THEME_CSS__
 
     </div>
 
+    <!-- Docked PDF panel: View PDF opens here on wide screens; "Pop out" moves it to the full-screen viewer. -->
+    <aside id="pdfSidePanel" class="pdf-side" aria-label="PDF viewer" hidden>
+      <div class="pdf-side-bar">
+        <div class="min-w-0">
+          <div class="flex items-center gap-2 min-w-0">
+            <span id="pdfSideProgram" class="pdf-side-badge">CalFresh</span>
+            <h3 id="pdfSideTitle" class="pdf-side-title">Policy document</h3>
+          </div>
+        </div>
+        <div class="pdf-side-actions">
+          <button type="button" class="pdf-side-btn" onclick="popOutPdf()" title="Open in the full-screen viewer">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+            <span>Pop out</span>
+          </button>
+          <a id="pdfSideNewTab" href="#" target="_blank" rel="noopener" class="pdf-side-btn" title="Open the PDF in a new tab">
+            <span>New tab</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+          <button type="button" class="pdf-side-btn pdf-side-close" onclick="closeSidePanel()" title="Close the PDF (Esc)" aria-label="Close the PDF">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="pdf-side-body">
+        <div id="pdfSideLoading" class="pdf-side-loading">
+          <div class="w-8 h-8 border-3 border-blue-600 border-t-transparent rounded-full animate-spin mb-3"></div>
+          <span>Loading PDF...</span>
+        </div>
+        <iframe id="pdfSideFrame" src="about:blank" title="PDF viewer" onload="if (this.src !== 'about:blank') document.getElementById('pdfSideLoading').classList.add('hidden')"></iframe>
+      </div>
+    </aside>
+    </div>
 
   </div>
 
@@ -583,6 +643,10 @@ __THEME_CSS__
 
         <!-- Controls: Toggle Summary, Open in New Tab, Download, Close -->
         <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+          <button type="button" id="pdfModalDockBtn" onclick="dockPdfToSide()" class="hidden bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white px-2.5 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-700 items-center gap-1 cursor-pointer" title="Show the PDF beside the list">
+            <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M14 4v16"/></svg>
+            <span>Dock to side</span>
+          </button>
           <button type="button" id="pdfModalSummaryBtn" aria-expanded="false" aria-controls="pdfModalSummaryBar" onclick="toggleModalSummary()" class="bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-2.5 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-700 flex items-center gap-1 cursor-pointer" title="Toggle Quick Summary visibility">
             <svg class="w-3.5 h-3.5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
             <span class="hidden md:inline">Summary</span>
@@ -1303,6 +1367,7 @@ __THEME_CSS__
       modal.classList.remove('hidden');
       modal.classList.add('flex');
       document.body.classList.add('overflow-hidden');
+      updateDockButton();
     }}
 
     function closePdfModal() {{
@@ -1344,8 +1409,133 @@ __THEME_CSS__
       }}
       const pdfUrl = resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
       const dateLine = docDateLine(doc);
-      openPdfModal(pdfUrl, doc.title, (doc.programs || []).join(' / '), (dateLine ? dateLine + '. ' : '') + (doc.summary || doc.snippet || ''), doc.chapter || doc.id);
+      currentPdf = {{
+        docId: doc.id,
+        pdfUrl,
+        title: doc.title,
+        program: (doc.programs || []).join(' / '),
+        summary: (dateLine ? dateLine + '. ' : '') + (doc.summary || doc.snippet || ''),
+        section: doc.chapter || doc.id
+      }};
+      if (canDockPdf()) openSidePanel(currentPdf);
+      else openPdfFromState(currentPdf);
     }}
+
+    // ---- Docked PDF panel ----
+    // Wide screens show the PDF beside the list; "Pop out" / "Dock to side" move it between the panel and the full-screen viewer.
+    let currentPdf = null;
+    const DOCK_QUERY = window.matchMedia('(min-width: 1100px)');
+
+    function canDockPdf() {{
+      return DOCK_QUERY.matches;
+    }}
+
+    function isSidePanelOpen() {{
+      const panel = document.getElementById('pdfSidePanel');
+      return !!panel && !panel.hidden;
+    }}
+
+    function openPdfFromState(p) {{
+      if (p) openPdfModal(p.pdfUrl, p.title, p.program, p.summary, p.section);
+    }}
+
+    function viewingRow(docId) {{
+      if (!docId) return null;
+      const btn = document.querySelector('[data-view-doc="' + CSS.escape(docId) + '"]');
+      return btn ? btn.closest('.cn-detail, .doc-card') : null;
+    }}
+
+    function markViewing(docId) {{
+      document.querySelectorAll('.is-viewing').forEach(el => el.classList.remove('is-viewing'));
+      document.querySelectorAll('[data-view-doc][data-label]').forEach(btn => {{
+        const label = btn.querySelector('span:last-of-type');
+        if (label) label.textContent = btn.dataset.label;
+        btn.removeAttribute('data-label');
+        btn.removeAttribute('aria-current');
+      }});
+      if (!docId) return;
+      document.querySelectorAll('[data-view-doc="' + CSS.escape(docId) + '"]').forEach(btn => {{
+        const row = btn.closest('.cn-detail, .doc-card');
+        if (row) row.classList.add('is-viewing');
+        const label = btn.querySelector('span:last-of-type');
+        if (label) {{
+          btn.dataset.label = label.textContent;
+          label.textContent = 'Viewing';
+        }}
+        btn.setAttribute('aria-current', 'true');
+      }});
+    }}
+
+    // Widening or narrowing the list moves rows around; keep the given row where it was on screen.
+    function keepRowInPlace(row, change) {{
+      const before = row && row.isConnected ? row.getBoundingClientRect().top : null;
+      change();
+      if (before !== null && row.isConnected) {{
+        window.scrollBy(0, row.getBoundingClientRect().top - before);
+      }}
+    }}
+
+    function openSidePanel(p) {{
+      const panel = document.getElementById('pdfSidePanel');
+      const frame = document.getElementById('pdfSideFrame');
+      if (!panel || !frame || !p) return;
+      const row = viewingRow(p.docId);
+      keepRowInPlace(row, () => {{
+        document.getElementById('pdfSideTitle').textContent = p.title || 'Policy document';
+        document.getElementById('pdfSideProgram').textContent = p.program || 'HHSA';
+        document.getElementById('pdfSideNewTab').href = pdfViewerUrl(p.pdfUrl);
+        const src = pdfViewerUrl(p.pdfUrl);
+        if (frame.getAttribute('src') !== src) {{
+          document.getElementById('pdfSideLoading').classList.remove('hidden');
+          frame.setAttribute('src', src);
+        }}
+        panel.hidden = false;
+        document.body.classList.add('pdf-docked');
+        markViewing(p.docId);
+      }});
+    }}
+
+    function closeSidePanel() {{
+      const panel = document.getElementById('pdfSidePanel');
+      const frame = document.getElementById('pdfSideFrame');
+      if (!panel || panel.hidden) return;
+      const row = viewingRow(currentPdf && currentPdf.docId);
+      keepRowInPlace(row, () => {{
+        panel.hidden = true;
+        document.body.classList.remove('pdf-docked');
+        if (frame) frame.setAttribute('src', 'about:blank');
+        markViewing(null);
+      }});
+      const btn = currentPdf && document.querySelector('[data-view-doc="' + CSS.escape(currentPdf.docId) + '"]');
+      if (btn) btn.focus({{ preventScroll: true }});
+    }}
+
+    function popOutPdf() {{
+      const p = currentPdf;
+      closeSidePanel();
+      openPdfFromState(p);
+    }}
+
+    function dockPdfToSide() {{
+      const p = currentPdf;
+      if (!p || !canDockPdf()) return;
+      closePdfModal();
+      openSidePanel(p);
+    }}
+
+    function updateDockButton() {{
+      const btn = document.getElementById('pdfModalDockBtn');
+      if (!btn) return;
+      const show = canDockPdf() && !!currentPdf;
+      btn.classList.toggle('hidden', !show);
+      btn.classList.toggle('flex', show);
+    }}
+
+    // Too narrow for two columns: move an open panel into the full-screen viewer.
+    DOCK_QUERY.addEventListener('change', () => {{
+      if (!canDockPdf() && isSidePanelOpen()) popOutPdf();
+      updateDockButton();
+    }});
 
     // Close modal or return from search results page on Escape key
     document.addEventListener('keydown', (e) => {{
@@ -1353,6 +1543,10 @@ __THEME_CSS__
         const modal = document.getElementById('pdfViewerModal');
         if (modal && !modal.classList.contains('hidden')) {{
           closePdfModal();
+          return;
+        }}
+        if (isSidePanelOpen()) {{
+          closeSidePanel();
           return;
         }}
         const searchView = document.getElementById('searchResultsPageView');
@@ -1371,7 +1565,7 @@ __THEME_CSS__
 
     function createDocumentCard(doc, query) {{
       const card = document.createElement('div');
-      card.className = 'border border-slate-200 hover:border-blue-400 rounded-xl p-3.5 sm:p-4.5 shadow-2xs hover:shadow-xs transition flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white';
+      card.className = 'doc-card border border-slate-200 hover:border-blue-400 rounded-xl p-3.5 sm:p-4.5 shadow-2xs hover:shadow-xs transition flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-white';
       
       const progBadgeColor = doc.programs.includes('CalFresh') 
         ? 'bg-emerald-100 text-emerald-800 border-emerald-200' 
@@ -1447,7 +1641,7 @@ __THEME_CSS__
           </div>
         </div>
         <div class="flex flex-col items-stretch gap-2 shrink-0 w-full sm:w-auto pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
-          <button type="button" onclick="viewDocPdf('${{doc.id}}')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center justify-center gap-1.5 shadow-2xs cursor-pointer">
+          <button type="button" data-view-doc="${{escapeHtml(doc.id)}}" onclick="viewDocPdf('${{doc.id}}')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center justify-center gap-1.5 shadow-2xs cursor-pointer">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
             <span>${{missing ? 'Open County Site' : 'View PDF in Page'}}</span>
           </button>
@@ -1498,6 +1692,7 @@ __CHAPTER_NAV_JS__
       docs.forEach(doc => {{
         container.appendChild(createDocumentCard(doc, query));
       }});
+      if (isSidePanelOpen() && currentPdf) markViewing(currentPdf.docId);
     }}
 
     function cancelSearchToDropdowns(opts = {{}}) {{
