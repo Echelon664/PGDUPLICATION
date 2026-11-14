@@ -168,7 +168,25 @@
         if (posted) meta.append(document.createTextNode('Posted on County site: ' + posted));
         text.append(meta);
       }
-      text.append(cnEl('p', 'cn-summary', doc.summary || 'County of San Diego Health and Human Services Agency policy document.'));
+      // The summary starts hidden; a small button shows it, so long chapters stay easy to scan.
+      const summary = cnEl('p', 'cn-summary', doc.summary || 'County of San Diego Health and Human Services Agency policy document.');
+      summary.id = 'cn-sum-' + doc.id;
+      summary.hidden = true;
+      const toggle = cnEl('button', 'cn-sum-toggle');
+      toggle.type = 'button';
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-controls', summary.id);
+      const icon = cnEl('span', 'cn-sum-icon');
+      icon.setAttribute('aria-hidden', 'true');
+      const label = cnEl('span', '', 'Summary of this section');
+      toggle.append(icon, label);
+      toggle.addEventListener('click', () => {
+        const open = summary.hidden;
+        summary.hidden = !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        label.textContent = open ? 'Hide summary' : 'Summary of this section';
+      });
+      text.append(toggle, summary);
       detail.append(text);
 
       const actions = cnEl('div', 'cn-actions');
