@@ -175,6 +175,7 @@
       const missing = isSourceMissing(doc);
       const view = cnEl('button', 'cn-btn cn-btn-primary');
       view.type = 'button';
+      view.dataset.viewDoc = doc.id;
       view.append(cnEl('span', '', missing ? 'Open County site' : 'View PDF'));
       view.addEventListener('click', () => viewDocPdf(doc.id));
       actions.append(view);
@@ -379,6 +380,7 @@
       } else {
         cnChapters.forEach(ch => { if (wasOpen.has(ch.id)) cnSetChapterOpen(ch, true); });
       }
+      if (isSidePanelOpen() && currentPdf) markViewing(currentPdf.docId);
     }
 
     // Kept for older bookmarks and inline handlers.
