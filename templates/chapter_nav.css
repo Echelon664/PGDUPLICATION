@@ -50,6 +50,30 @@
     .cn-doc-link { padding: 0; border: 0; background: none; font: inherit; color: inherit; text-align: left; cursor: pointer;
       text-decoration: underline; text-decoration-color: #94a3b8; text-underline-offset: 3px; }
     .cn-doc-link:hover { color: #1d4ed8; text-decoration-color: currentColor; }
+    .cn-doc-icon { display: inline-block; width: 1em; height: 1em; margin-right: .35em; vertical-align: -0.12em; color: #64748b; }
+    .cn-doc-link:hover .cn-doc-icon, .doc-card-title:hover .cn-doc-icon { color: currentColor; }
+    /* Search result titles open the PDF too. */
+    .doc-card-title { padding: 0; border: 0; background: none; font-family: inherit; text-align: left; cursor: pointer;
+      text-decoration: underline; text-decoration-color: #94a3b8; text-underline-offset: 3px; }
+    .doc-card-title:hover { color: #1d4ed8; text-decoration-color: currentColor; }
+    /* Small "Open in new tab" link on the date line (desktop only). */
+    .cn-newtab-link { display: inline-flex; align-items: center; gap: 3px; color: #1d4ed8; font-weight: 600; text-decoration: underline;
+      text-underline-offset: 2px; white-space: nowrap; }
+    .cn-newtab-link:hover { color: #1e40af; }
+    .cn-ext-icon { width: 12px; height: 12px; flex: none; }
+    /* Desktop (where the PDF side panel is available): titles open PDFs and the big buttons go away. */
+    .desk-only { display: none; }
+    @media (min-width: 1100px) {
+      .desk-only { display: inline; }
+      .mobile-actions { display: none !important; }
+      /* With the buttons gone, the tag beside the title says which PDFs are open in the panel. */
+      .is-viewing .cn-doc-title::after, .is-viewing .doc-card-title::after,
+      .is-open-tab .cn-doc-title::after, .is-open-tab .doc-card-title::after {
+        display: inline-block; margin-left: 8px; padding: 1px 9px; border-radius: 999px; font-size: 12px; font-weight: 700;
+        line-height: 1.6; vertical-align: 0.15em; text-decoration: none; }
+      .is-viewing .cn-doc-title::after, .is-viewing .doc-card-title::after { content: 'Viewing'; background: #047857; color: #fff; }
+      .is-open-tab .cn-doc-title::after, .is-open-tab .doc-card-title::after { content: 'Open in a tab'; border: 1px solid #6ee7b7; color: #047857; }
+    }
     .cn-meta { margin: 0 0 8px; font-size: 14px; color: #475569; }
     .cn-meta strong { color: #065f46; font-weight: 700; }
     .cn-summary { margin: 0; font-size: 16px; line-height: 1.6; color: #1e293b; max-width: 75ch;

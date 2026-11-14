@@ -122,6 +122,8 @@
       return node;
     }
 
+    const CN_DOC_ICON = '<svg class="cn-doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 3v5h5M9 13h6M9 17h4"/></svg>';
+    const CN_EXT_ICON = '<svg class="cn-ext-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>';
     const CN_CHEVRON = '<svg class="cn-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>';
 
     function cnReadHash() {
@@ -145,9 +147,11 @@
       const detail = cnEl('div', 'cn-detail');
       const text = cnEl('div', 'cn-detail-text');
       if (opts && opts.title) {
-        // The title opens the PDF too, the same as the View PDF button.
+        // The title opens the PDF (on desktop it's the only way; phones also get the View PDF button).
         const title = cnEl('h6', 'cn-doc-title');
-        const link = cnEl('button', 'cn-doc-link', doc.title || doc.id);
+        const link = cnEl('button', 'cn-doc-link');
+        link.innerHTML = CN_DOC_ICON;
+        link.append(document.createTextNode(doc.title || doc.id));
         link.type = 'button';
         link.title = isSourceMissing(doc) ? 'Open on the County site' : 'View PDF';
         link.addEventListener('click', () => viewDocPdf(doc.id));
@@ -157,7 +161,8 @@
       }
       const dateLine = docDateLine(doc);
       const posted = formatLongDate(doc.published_on || '');
-      if (dateLine || posted) {
+      const missing = isSourceMissing(doc);
+      if (dateLine || posted || !missing) {
         const meta = cnEl('p', 'cn-meta');
         if (dateLine) {
           const strong = cnEl('strong', '', dateLine);
@@ -166,6 +171,18 @@
         }
         if (dateLine && posted) meta.append(document.createTextNode(' · '));
         if (posted) meta.append(document.createTextNode('Posted on County site: ' + posted));
+        if (!missing) {
+          // Desktop only: a small link replaces the "Open in new tab" button.
+          const wrap = cnEl('span', 'desk-only cn-newtab-wrap');
+          if (dateLine || posted) wrap.append(document.createTextNode(' · '));
+          const nt = cnEl('a', 'cn-newtab-link', 'Open in new tab');
+          nt.href = pdfViewerUrl(docOpenUrl(doc));
+          nt.target = '_blank';
+          nt.rel = 'noopener';
+          nt.insertAdjacentHTML('beforeend', CN_EXT_ICON);
+          wrap.append(nt);
+          meta.append(wrap);
+        }
         text.append(meta);
       }
       // The summary starts hidden; a small button above it shows it (and hides it again).
@@ -195,8 +212,8 @@
       text.append(toggle, summary);
       detail.append(text);
 
-      const actions = cnEl('div', 'cn-actions');
-      const missing = isSourceMissing(doc);
+      // Phones and tablets: View PDF / Open in new tab buttons (hidden on desktop).
+      const actions = cnEl('div', 'cn-actions mobile-actions');
       const view = cnEl('button', 'cn-btn cn-btn-primary');
       view.type = 'button';
       view.dataset.viewDoc = doc.id;

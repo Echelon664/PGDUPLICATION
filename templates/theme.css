@@ -87,6 +87,10 @@
     html.dark .cn-detail.is-target { background: rgba(234, 179, 8, 0.12); }
     html.dark .cn-doc-title { color: #f1f5f9; }
     html.dark .cn-doc-link:hover { color: #93c5fd; }
+    html.dark .doc-card-title:hover, html.dark .cn-newtab-link { color: #93c5fd; }
+    html.dark .cn-newtab-link:hover { color: #bfdbfe; }
+    html.dark .cn-doc-icon { color: #94a3b8; }
+    html.dark .is-open-tab .cn-doc-title::after, html.dark .is-open-tab .doc-card-title::after { border-color: rgba(110,231,183,.5); color: #6ee7b7; }
     html.dark .cn-meta { color: #94a3b8; }
     html.dark .cn-meta strong { color: #6ee7b7; }
     html.dark .cn-sum-toggle { --sum-tint: rgba(16, 185, 129, .12); --sum-tint2: rgba(16, 185, 129, .22); --sum-line: rgba(52, 211, 153, .35); color: #6ee7b7; }
