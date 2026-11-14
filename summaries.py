@@ -28,14 +28,18 @@ checks, such as a dollar amount, percentage, form number or date that does not
 appear in the PDF.
 """
 import datetime
+import json
+import os
 import re
 import sys
 from collections import Counter, defaultdict
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 import catalog
 
 MIN_CHARS = 60
+# Leftovers from old scripts that describe the summary instead of the policy.
+BANNED_PHRASES = ("unverified:", "could not be checked", "no searchable text", "no text could be extracted")
 MAX_CHARS = 900
 SUMMARY_CHARS = 420
 _HEADINGS = (r"Background|Purpose|Policy|Procedures?|Program Impacts?|References?|Sunset Date|"
@@ -100,6 +104,9 @@ def problems_for(doc_id: str, record: Dict[str, Any], doc: Dict[str, Any]) -> Li
         found.append(f"too short ({len(text)} characters)")
     if len(text) > MAX_CHARS:
         found.append(f"too long ({len(text)} characters)")
+    for phrase in BANNED_PHRASES:
+        if phrase in text.lower():
+            found.append(f"contains placeholder text: {phrase!r}")
     if (doc.get("content") or "").strip():
         missing = unsupported_facts(text, doc)
         if missing:
@@ -108,6 +115,35 @@ def problems_for(doc_id: str, record: Dict[str, Any], doc: Dict[str, Any]) -> Li
         current = catalog.pdf_sha256(doc)
         if current and record.get("pdf_sha256") != current:
             found.append("PDF changed since the summary was verified")
+    return found
+
+
+# ---------------------------------------------------------------- chapters
+MANIFEST_PATH = os.path.join(catalog.BASE_DIR, "data", "county_sync", "manifest.json")
+_CHAPTER_KEY = re.compile(r"\s*(ARTICLE\s*\d+|\d{2,3}-\d{3,4})", re.I)
+
+
+def _chapter_key(name: str) -> Optional[str]:
+    match = _CHAPTER_KEY.match(name or "")
+    return re.sub(r"\s+", " ", match.group(1)).upper() if match else None
+
+
+def chapter_problems(docs: Dict[str, Any], manifest: Dict[str, Any]) -> List[str]:
+    """Documents filed under a different chapter than the County site uses.
+
+    Compares each document's category (e.g. "41-500 Assistance Unit" or
+    "ARTICLE 04 - APPLICATION PROCESS") with the County folder recorded by
+    the last full County Source Check scan.
+    """
+    found = []
+    for entry in (manifest.get("files") or {}).values():
+        doc = docs.get(entry.get("doc_id"))
+        path = entry.get("path") or []
+        if not doc or len(path) < 2 or path[0] != "Chapters and Sections":
+            continue
+        if _chapter_key(path[1]) != _chapter_key(doc.get("category", "")):
+            found.append(f"{doc['id']}: filed under {doc.get('category')!r}, "
+                         f"but the County site has it under {path[1]!r}")
     return found
 
 
@@ -123,6 +159,10 @@ def run_check(strict: bool) -> int:
     for doc_id in records:
         if doc_id not in docs:
             errors.append(f"{doc_id}: summary record for a document that does not exist")
+
+    if os.path.exists(MANIFEST_PATH):
+        with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
+            errors.extend(chapter_problems(docs, json.load(f)))
 
     seen = defaultdict(list)
     for doc_id, record in records.items():

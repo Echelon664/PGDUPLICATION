@@ -66,7 +66,7 @@
     "updated": "2026-11-13"
   },
   "cw-134": {
-    "summary": "SN 26-04 announces the annual statutory increase to the CalWORKs Maximum Aid Payment (MAP) levels effective October 2026 for both exempt and non-exempt assistance units across San Diego County (Region 1). Details automated payment adjustments and client notice mailings.",
+    "summary": "SN 26-04 announces a 1.8% increase to the CalWORKs Maximum Aid Payment (MAP) levels and higher Income Reporting Threshold (IRT) levels, both effective October 1, 2026. MAP changes are a county-initiated mid-period action for all CalWORKs cases, and customers had to be notified of the increase and its effect on their CalFresh benefits by September 20, 2026 to meet 10-day notice rules.",
     "status": "verified",
     "pdf_sha256": "71acf3b3ff052dbf29636e8fe55166394ac6f72a6e353e7a1b33f215afcda933",
     "updated": "2026-11-13"
@@ -300,13 +300,13 @@
     "updated": "2026-11-13"
   },
   "cw-173": {
-    "summary": "Unverified: the attached PDF is a scan with no searchable text, so the summary below could not be checked against it. Establishes Cal-Learn eligibility, mandatory participation criteria, and exemption rules (illness, lack of child care). Teens must remain enrolled in an accredited secondary education program, maintain regular attendance, and submit quarterly report cards.",
+    "summary": "A CalWORKs recipient under 20 is a mandatory Cal-Learn participant when pregnant or a custodial parent living with their child in the Assistance Unit, under 19, and without a high school diploma or GED; 19- and 20-year-olds who took part before turning 19 may continue voluntarily. Lists the exemptions, such as serious illness, injury or incapacity, with the verification each requires, and the program's participation requirements.",
     "status": "verified",
     "pdf_sha256": "26d795f2a7b3c70e56ba119ab516b6650da3afc37156e2fea62d10debfbcae31",
     "updated": "2026-11-13"
   },
   "cw-174": {
-    "summary": "Unverified: the attached PDF is a scan with no searchable text, so the summary below could not be checked against it. Governs Cal-Learn orientation and referral workflows from CalWORKs eligibility workers to specialized adolescent case managers. Details explaining rights, responsibilities, report card bonus/sanction rules, and supportive service entitlements.",
+    "summary": "Eligibility staff refer all non-exempt CalWORKs recipients who are pregnant or parenting teens under 19 without a high school diploma or equivalent to Cal-Learn. Each teen is scheduled for a Cal-Learn orientation within 5 workdays of the referral, where staff explain the requirements, including full-time school enrollment and attendance and mandatory participation until graduation or age 19, along with the bonuses, sanctions and supportive services.",
     "status": "verified",
     "pdf_sha256": "26239dd3677c061e541edda46052b69858ebe49112e97963396e1c506a5818cb",
     "updated": "2026-11-13"
@@ -372,7 +372,7 @@
     "updated": "2026-11-13"
   },
   "cw-185": {
-    "summary": "Governs Form CW 2200 verification request protocols. When additional documentation is needed, caseworkers must issue Form CW 2200 providing the customer at least 10 calendar days to comply, and must offer agency assistance to obtain required third-party records.",
+    "summary": "Customers must provide the information needed to determine eligibility and the grant amount, but verification already in the case record is not requested again. When verification doesn't exist or can't be obtained after all efforts, the customer's sworn statement may be accepted as a last resort, except for citizenship or noncitizen status; a sworn statement of pregnancy must be followed by medical verification within 30 business days. Also covers what a written request for verification must include.",
     "status": "verified",
     "pdf_sha256": "06aad80f2dfd3649dc2f46ebd5c35817b144091b53e167e3fd0cc4b907c69530",
     "updated": "2026-11-13"
@@ -450,7 +450,7 @@
     "updated": "2026-11-13"
   },
   "cw-198": {
-    "summary": "Details CalWORKs cash assistance and supportive services for parents participating in court-ordered Child Welfare Family Reunification plans, allowing ongoing grant payments for up to 180 days while children are temporarily placed in foster care.",
+    "summary": "Family Reunification (FR) lets CalWORKs parents whose children were removed by Child Welfare Services keep receiving Welfare-to-Work activities and supportive services, for up to 180 days from the removal (with possible good cause extensions), when a CWS social worker or the court finds FR services necessary. The Assistance Unit must have been receiving CalWORKs at removal; SSI recipients, undocumented noncitizens and timed-out parents are ineligible. FR families may also get Temporary Homeless Assistance if needed for reunification.",
     "status": "verified",
     "pdf_sha256": "bedadfb9517b9dfecf6d39dfb189ca8b5f914988628f4e6e137dc9ecbc4280f1",
     "updated": "2026-11-13"
@@ -546,7 +546,7 @@
     "updated": "2026-11-13"
   },
   "cw-214": {
-    "summary": "Establishes age eligibility limits: children are eligible through age 17, or through age 18 if enrolled full-time in high school and expected to graduate before age 19. Details Non-Minor Dependent extensions through age 20.",
+    "summary": "A child meets the CalWORKs age requirement until their 18th birthday, with exceptions that extend eligibility into the 18th year, such as finishing high school or equivalent training before age 19. The age of every eligible child must be verified, with acceptable proofs listed (birth or hospital certificate, baptismal or church records, adoption decree, passport, immigration records and others). Also covers continuing eligibility for pregnant and parenting teens who turn 18.",
     "status": "verified",
     "pdf_sha256": "38cd8adf357fa52757344257a99f3acbb283cfcb59ae1db93e87d18a49d8a956",
     "updated": "2026-11-13"
@@ -594,7 +594,7 @@
     "updated": "2026-11-13"
   },
   "cw-222": {
-    "summary": "Details Net Market Value (NMV) calculation procedures for personal and real property, subtracting verified encumbrances, liens, and outstanding debts from gross fair market value.",
+    "summary": "Net market value of real property is the market value (land plus improvements) from the current property tax statement minus allowable encumbrances; homeowner exemptions are not deducted. When no current tax statement is available, market value can be verified through the County Assessor, the Assessor's property system, the Tax Collector, or other listed sources.",
     "status": "verified",
     "pdf_sha256": "5790933528c64c6ad214f837cb77dea5658d219ba33c70eab76abd2283ea50a6",
     "updated": "2026-11-13"
@@ -606,7 +606,7 @@
     "updated": "2026-11-13"
   },
   "cw-224": {
-    "summary": "Establishes the absolute property exclusion for the family's primary residence, ensuring that the home owned and occupied by the Assistance Unit is completely exempt regardless of fair market value or equity.",
+    "summary": "A home occupied by the Assistance Unit is excluded from the resource limit regardless of its value, whether it is a house, mobile home, camper, trailer, houseboat or other dwelling. It stays excluded during temporary absences (illness, seasonal work, visits, extreme weather) if the customer plans to and can return. Explains how the exclusion applies to multiple-unit dwellings and separate units next to the home.",
     "status": "verified",
     "pdf_sha256": "7abc94024ef9801c293e5dd56d9d042845bd7efb1a1eb72711508c9a24fea235",
     "updated": "2026-11-13"
@@ -660,13 +660,13 @@
     "updated": "2026-11-13"
   },
   "cw-233": {
-    "summary": "Governs Unrelated Adults in the Home (UAH), evaluating financial contributions for shelter and food, and calculating income-in-kind deductions when an unrelated adult cohabits with a caretaker parent.",
+    "summary": "An unrelated adult (UA) is someone 18 or older not related by blood or marriage to anyone in the Assistance Unit. A UA living with a CalWORKs family, other than a bona fide lodger, roomer or boarder, must contribute at least what an independent living arrangement would cost. Being a lodger, roomer or boarder is shown by the recipient's written statement plus evidence such as reported rental income, a rooming-house license, separate living quarters or rent receipts, and the UA and recipient sign the CW 71.",
     "status": "verified",
     "pdf_sha256": "ca79a1d2eefcbf93cce265ef816d1ebb2fcff3c65f4aaf5a0408c1a1cba4410c",
     "updated": "2026-11-13"
   },
   "cw-234": {
-    "summary": "Unverified: the attached PDF is a scan with no searchable text, so the summary below could not be checked against it. Governs mandatory assignment of child support rights to the state as a condition of receiving CalWORKs, and outlines cooperation requirements with the Department of Child Support Services (DCSS) to establish paternity and child support orders.",
+    "summary": "As a condition of CalWORKs eligibility, customers (aided or unaided, including caretaker relatives) must assign all child and spousal support rights for Assistance Unit members to the county and cooperate with the Local Child Support Agency to establish paternity and secure support. Exceptions include both married parents living in the home, a deceased parent, unmarried parents in the home with paternity established, and Non-Minor Dependents who have reached 19. Explains customers' right to refuse and the evidence needed for good cause.",
     "status": "verified",
     "pdf_sha256": "f9f39df0e0e3df4a2c82a400587a4fcb95a8ed6b435de2396ffc5fe4bb379ce2",
     "updated": "2026-11-13"
@@ -726,7 +726,7 @@
     "updated": "2026-11-13"
   },
   "cw-244": {
-    "summary": "Details automated data matches through the Income and Eligibility Verification System (IEVS), resolving wage and benefit discrepancies within 45 days to prevent improper payments.",
+    "summary": "IEVS matches customers' names and Social Security Numbers against state and federal databases to verify income and eligibility, through Applicant IEVS (requested within 5 days of the initial interview, at least 15 days before redetermination, and when a person is added) and Recipient IEVS. Matches must be processed within 45 days of receipt, with listed exceptions; matches on closed cases have 12 months, and older ones are marked no impact. All actions are documented in the case record.",
     "status": "verified",
     "pdf_sha256": "48c7badfa8c220fcc4fbaf6f0c3881c57a110dd0c2227501147bb702ce85c0ba",
     "updated": "2026-11-13"
@@ -750,7 +750,7 @@
     "updated": "2026-11-13"
   },
   "cw-248": {
-    "summary": "Provides an overview of CalWORKs Homeless Assistance (HA) for eligible families who are homeless or at imminent risk of eviction. Details temporary shelter assistance and permanent housing assistance.",
+    "summary": "To receive Homeless Assistance (HA), an Assistance Unit must be eligible or apparently eligible for CalWORKs; there is no separate liquid resource limit for HA. A family qualifies when it lacks a fixed and regular nighttime residence (including temporarily staying with another family while seeking housing), has a primary nighttime residence not meant for sleeping, or meets the other listed criteria. Covers the types of HA payments and how often they can be received.",
     "status": "verified",
     "pdf_sha256": "683e0ab158f20a933cbdd2e1b2120937dcc60dc82e4430fd384f6f52f51a976e",
     "updated": "2026-11-13"
@@ -804,13 +804,13 @@
     "updated": "2026-11-13"
   },
   "cw-257": {
-    "summary": "Governs county-initiated actions and third-party information updates during the SAR payment period, outlining specific criteria where the county is legally permitted to adjust grants without a client report.",
+    "summary": "Lists changes that require county-initiated mid-period action under Semi-Annual Reporting and Annual Reporting/Child Only rules, even if aid decreases or ends: an adult reaching the time limit, sanctions or penalties imposed or removed, Cal-Learn bonuses or sanctions, a child reaching the age limit or entering foster care, a Refugee Cash Assistance recipient reaching the RCA time limit, and others. Also explains when third-party information requires action.",
     "status": "verified",
     "pdf_sha256": "e1459889afe1fd9f2a1cc652d6f1dec61e914e239c287904a182fa5c26a0e0f0",
     "updated": "2026-11-13"
   },
   "cw-258": {
-    "summary": "Governs vendor payments, authorizing direct county payment of rent or utility subsidies to third-party landlords or utility providers when adult recipients demonstrate financial mismanagement.",
+    "summary": "Benefits must be paid by vendor payment, as a warrant to the vendor at no charge, for home repairs under special shelter provisions, rent or utilities when a parent or caretaker has been sanctioned for Employment Services for three or more consecutive months, and Homeless Assistance when funds have been mismanaged. Mandatory vendor payments start after timely notice and need no Vendor Payment Agreement; the section also covers voluntary vendor payments.",
     "status": "verified",
     "pdf_sha256": "7056b69d4020647fbeb2f6080186b6cee259aa4f9abee20a87e10057a0855821",
     "updated": "2026-11-13"
@@ -822,7 +822,7 @@
     "updated": "2026-11-13"
   },
   "cw-260": {
-    "summary": "Establishes the Beginning Date of Aid (BDA) calculation, determining the exact calendar day cash assistance commences based on application filing and eligibility completion.",
+    "summary": "For a new application, the Beginning Date of Aid is the date the county receives a signed and dated application or the date all conditions of eligibility are met, whichever is later. Conditions are met when all linking and non-linking factors (such as deprivation, age, citizenship, residence, property and income) exist, even if verification arrives later; technical conditions completed later count as met on the application date. Covers other situations such as restorations and adding people.",
     "status": "verified",
     "pdf_sha256": "17d3a634e6707758efbb49638efe6e2bc7dcc5a78f122c74688ba8e5de6d3319",
     "updated": "2026-11-13"
@@ -858,7 +858,7 @@
     "updated": "2026-11-13"
   },
   "cw-266": {
-    "summary": "Details Aid Paid Pending rules when a customer files a timely state fair hearing request challenging an adverse grant reduction or termination, ensuring benefits continue until the hearing decision is rendered.",
+    "summary": "Aid Paid Pending (APP) received while awaiting a state hearing decision is a recoverable overpayment unless the hearing claim is granted, but an overpayment adjustment stopped by a timely hearing request is not. Collection on disputed overpayments is suspended while a timely hearing is pending. If the customer loses the hearing mid-period, APP ends and aid decreases mid-period, and APP received without eligibility becomes a customer error overpayment.",
     "status": "verified",
     "pdf_sha256": "ec8dde95759f47041e65001a4ad7f80c0629969e81852b7889987fd014cb9076",
     "updated": "2026-11-13"
@@ -870,7 +870,7 @@
     "updated": "2026-11-13"
   },
   "cw-268": {
-    "summary": "Details mathematical overpayment calculation worksheets, comparing aid actually paid against correct prospective grant entitlements for each affected calendar month.",
+    "summary": "Explains how to calculate overpayments. When a customer held property over the limit, staff determine the period of excess property (every month the same items' total value exceeded the limit on the first day, even with months below it in between, ignoring value fluctuations) and compute the overpayment for that period. Also covers calculating overpayments from other causes.",
     "status": "verified",
     "pdf_sha256": "c4bc78dcc044d398c512d5a73e67888e73004abf895c3da4a7b4bced07921e9b",
     "updated": "2026-11-13"
@@ -882,7 +882,7 @@
     "updated": "2026-11-13"
   },
   "cw-270": {
-    "summary": "Establishes mandatory inclusion rules and overpayment debt liability for adult members who were part of the Assistance Unit when the overissuance occurred.",
+    "summary": "When a person is found living with the Assistance Unit, staff decide whether they must be included. SAR households report household changes on the next SAR 7 or redetermination, and AR/CO households report them mid-period. The family is sent the CW 87 Reinforming Letter/Add A Person with the Statement of Facts (CW 8 or CW 8A) to determine ongoing eligibility, and the section explains the retroactive period used to compute any overpayment or underpayment.",
     "status": "verified",
     "pdf_sha256": "f74dda8c0a06141fe9328d9d1188402702bda77f1d88a515ec95e9a7bad5e3b4",
     "updated": "2026-11-13"
@@ -906,7 +906,7 @@
     "updated": "2026-11-13"
   },
   "cw-274": {
-    "summary": "Details overpayments and underpayments in Employment Services supportive services (child care, mileage, transportation passes), outlining recovery and adjustment workflows.",
+    "summary": "A supportive service overpayment occurs when payments are issued to an ineligible customer, for months after satisfactory participation ended, through fraud, without required documentation for an advance, for child care outside approved dates and hours, or for child care not provided. Suspected fraud is coordinated with the eligibility worker for a fraud referral. Also covers supportive service underpayments and how they are corrected.",
     "status": "verified",
     "pdf_sha256": "370878e932ba98fcb55e6cd25493ba3c49eac5722b3454fcf56c02f95dbb7041",
     "updated": "2026-11-13"
@@ -924,7 +924,7 @@
     "updated": "2026-11-13"
   },
   "cw-277": {
-    "summary": "Official County HHSA handbook resolving policy questions on Annual Reporting/Child-Only (AR/CO) cases, simplified redetermination workflows, and non-parent caretaker grant calculations.",
+    "summary": "Questions and answers on Annual Reporting/Child Only (AR/CO) cases: held changes and associated CalFresh households, sponsored noncitizens, redetermination appointments, mid-year reports (immigration status changes, SSI approval, the AR 3 signature, using the CalFresh DFA 377.5, property changes), and budgeting and Income Reporting Thresholds (gross or net income for Tier 1, earned and unearned income and the family MAP for Tier 2, child support disregards, self-employment income).",
     "status": "verified",
     "pdf_sha256": "bed2c163fb6f127853140f02fe866564d8aa2aadf877cc303c63cdfaf0003724",
     "updated": "2026-11-13"

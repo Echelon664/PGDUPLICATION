@@ -51,6 +51,26 @@ class ProblemsTest(unittest.TestCase):
                           summaries.problems_for("mc-999", self.record(summary="Short"), DOC))
 
 
+class PlaceholderAndChapterTest(unittest.TestCase):
+    def test_placeholder_text_is_a_problem(self):
+        record = {"summary": "Unverified: the attached PDF is a scan with no searchable text, so the "
+                             "summary below could not be checked.", "status": "draft"}
+        problems = summaries.problems_for("mc-999", record, DOC)
+        self.assertTrue(any("placeholder" in p for p in problems))
+
+    def test_misfiled_chapter_is_reported(self):
+        docs = {"cw-205": {"id": "cw-205", "category": "44-200 Special Needs"},
+                "mc-001": {"id": "mc-001", "category": "ARTICLE 04 - APPLICATION PROCESS"}}
+        manifest = {"files": {
+            "1": {"doc_id": "cw-205", "path": ["Chapters and Sections", "41-500 Assistance Unit"]},
+            "2": {"doc_id": "mc-001", "path": ["Chapters and Sections", "ARTICLE 04 APPLICATION PROCESS"]},
+            "3": {"doc_id": "cw-205", "path": ["Special Notices", "2024"]},
+        }}
+        problems = summaries.chapter_problems(docs, manifest)
+        self.assertEqual(len(problems), 1)
+        self.assertIn("41-500 Assistance Unit", problems[0])
+
+
 class CountyApplySummaryTest(unittest.TestCase):
     def applier(self, records):
         applier = object.__new__(county_apply.Applier)
