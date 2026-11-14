@@ -89,6 +89,9 @@
     html.dark .cn-doc-link:hover { color: #93c5fd; }
     html.dark .cn-meta { color: #94a3b8; }
     html.dark .cn-meta strong { color: #6ee7b7; }
+    html.dark .cn-sum-toggle { background: #0f172a; border-color: #334155; color: #cbd5e1; }
+    html.dark .cn-sum-toggle:hover { background: #1e293b; border-color: #64748b; color: #f1f5f9; }
+    html.dark .cn-sum-toggle[aria-expanded="true"] { background: #052e22; border-color: #047857; color: #6ee7b7; }
     html.dark .cn-summary { background: #0b1222; color: #e2e8f0; border-color: #cbd5e1; }
     html.dark .cn-btn { background: #0f172a; border-color: #334155; color: #e2e8f0; }
     html.dark .cn-btn:hover { background: #1e293b; border-color: #64748b; }
