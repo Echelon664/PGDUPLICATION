@@ -227,8 +227,8 @@
       if (body.dataset.filled) return;
       body.dataset.filled = '1';
       if (chapter.docs.length === 1) {
-        // A one-document chapter opens straight to the document.
-        const only = cnBuildDetail(chapter.docs[0]);
+        // A one-document chapter opens straight to the document, with its clickable title like any other section.
+        const only = cnBuildDocBlock(chapter.docs[0]);
         only.classList.add('cn-detail-solo');
         body.append(only);
         return;
@@ -365,18 +365,8 @@
         if (chapter.code) head.append(cnEl('span', 'cn-code', chapter.code));
         else if (chapter.notices) head.append(cnEl('span', 'cn-code cn-code-notices', 'Notices'));
         const text = cnEl('span', 'cn-head-text');
-        let headName = chapter.name;
-        if (count === 1 && !chapter.notices) {
-          // "Learning Disabilities: A. Learning Disabilities" would say the same thing twice.
-          const docTitle = chapter.docs[0].title || '';
-          const bare = docTitle.replace(/^[A-Z]\.\s+/, '').replace(/^(Section\s+)?[\d.]+\s*[-–]?\s*/i, '');
-          const a = cnSlug(bare);
-          const b = cnSlug(chapter.name);
-          if (a === b || b.includes(a)) headName = chapter.name;
-          else if (a.includes(b)) headName = bare;
-          else headName = chapter.name + ': ' + docTitle;
-        }
-        text.append(cnEl('span', 'cn-head-name', headName));
+        // The document's own title shows inside the chapter (even for one-document chapters), so the heading is just the chapter name.
+        text.append(cnEl('span', 'cn-head-name', chapter.name));
         if (chapter.desc) text.append(cnEl('span', 'cn-head-desc', chapter.desc));
         const includes = cnIncludesText(chapter);
         if (includes) text.append(cnEl('span', 'cn-head-includes', includes));
