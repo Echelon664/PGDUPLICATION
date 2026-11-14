@@ -231,6 +231,11 @@
       if (!opts || opts.hash !== false) cnWriteHash({ ch: chapter.id });
     }
 
+    function cnExpandAll() {
+      cnChapters.forEach(ch => cnSetChapterOpen(ch, true));
+      cnWriteHash({});
+    }
+
     function cnCollapseAll() {
       cnChapters.forEach(ch => cnSetChapterOpen(ch, false));
       cnWriteHash({});
@@ -281,16 +286,19 @@
       cnChapters = cnBuildChapters(docs);
       const showPrograms = activeProgram === 'All';
 
-      // Toolbar: jump menu and collapse all. Stays at the top while scrolling.
+      // Toolbar: jump menu, expand all and collapse all. Stays at the top while scrolling.
       const toolbar = cnEl('div', 'cn-toolbar');
       const jump = cnEl('select', 'cn-jump');
       jump.setAttribute('aria-label', 'Jump to chapter');
       jump.append(new Option('Jump to chapter…', ''));
       jump.addEventListener('change', () => { if (jump.value) cnGoToChapter(jump.value); jump.value = ''; });
+      const expand = cnEl('button', 'cn-collapse cn-expand', 'Expand all');
+      expand.type = 'button';
+      expand.addEventListener('click', cnExpandAll);
       const collapse = cnEl('button', 'cn-collapse', 'Collapse all');
       collapse.type = 'button';
       collapse.addEventListener('click', cnCollapseAll);
-      toolbar.append(jump, collapse);
+      toolbar.append(jump, expand, collapse);
 
       const main = cnEl('div', 'cn-main');
 
@@ -364,7 +372,7 @@
     }
 
     // Kept for older bookmarks and inline handlers.
-    function expandAllChapters() { cnChapters.forEach(ch => cnSetChapterOpen(ch, true)); }
+    function expandAllChapters() { cnExpandAll(); }
     function collapseAllChapters() { cnCollapseAll(); }
 
     // A shared link to a document in another program switches to that program first.

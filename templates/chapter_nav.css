@@ -6,6 +6,9 @@
     .cn-collapse { flex: none; margin-left: auto; border: 1px solid #cbd5e1; background: #fff; color: #334155; font-size: 15px; font-weight: 600; padding: 9px 14px;
       border-radius: 8px; cursor: pointer; white-space: nowrap; }
     .cn-collapse:hover { background: #f1f5f9; }
+    /* Expand all sits on the right, just before Collapse all. */
+    .cn-expand { margin-left: auto; }
+    .cn-expand + .cn-collapse { margin-left: 0; }
     .cn-program-heading { font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: #64748b; padding: 10px 8px 4px; }
     .cn-program-title { padding: 18px 0 6px; font-size: 15px; color: #0f172a; margin: 0; }
     .cn-main { min-width: 0; display: flex; flex-direction: column; gap: 6px; }
@@ -66,6 +69,10 @@
       outline: 2px solid #2563eb; outline-offset: 1px; }
 
     @media (max-width: 699px) {
+      .cn-toolbar { flex-wrap: wrap; }
+      .cn-jump { flex-basis: 100%; max-width: none; }
+      .cn-expand, .cn-collapse { flex: 1 1 0; }
+      .cn-expand { margin-left: 0; }
       .cn-head { align-items: flex-start; flex-wrap: wrap; }
       .cn-head-text { flex-basis: 100%; }
       .cn-head { padding: 12px; }
