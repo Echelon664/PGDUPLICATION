@@ -403,9 +403,6 @@ __THEME_CSS__
 
         <!-- Program tabs (styled by switchProgram) -->
         <div class="prog-seg" role="group" aria-label="Program">
-          <button type="button" id="tab-All" onclick="switchProgram('All')" class="program-btn" title="All programs">
-            <span class="prog-dot" style="background:#64748b"></span><span>All</span><span class="prog-count">{all_count}</span>
-          </button>
           <button type="button" id="tab-CalFresh" onclick="switchProgram('CalFresh')" class="program-btn is-active" aria-pressed="true" title="CalFresh (SNAP)">
             <span class="prog-dot" style="background:#047857"></span><span>CalFresh</span><span class="prog-count">{cf_count}</span>
           </button>
@@ -414,6 +411,9 @@ __THEME_CSS__
           </button>
           <button type="button" id="tab-Medi-Cal" onclick="switchProgram('Medi-Cal')" class="program-btn" title="Medi-Cal (Medicaid)">
             <span class="prog-dot" style="background:#0f766e"></span><span>Medi-Cal</span><span class="prog-count">{mc_count}</span>
+          </button>
+          <button type="button" id="tab-All" onclick="switchProgram('All')" class="program-btn" title="All programs">
+            <span class="prog-dot" style="background:#64748b"></span><span>All</span><span class="prog-count">{all_count}</span>
           </button>
         </div>
 
@@ -1405,7 +1405,7 @@ __THEME_CSS__
           <div class="flex flex-wrap items-center gap-2 mb-1.5">
             <span class="px-2 py-0.5 rounded text-xs font-bold border ${{progBadgeColor}}">${{(doc.programs || []).join(' / ')}}</span>
             ${{secBadgeHtml}}
-            <span class="font-bold text-slate-800 text-xs sm:text-sm">${{escapeHtml(doc.title)}}</span>
+            <span class="font-extrabold text-slate-900 text-base sm:text-lg leading-snug">${{escapeHtml(doc.title)}}</span>
             ${{missing ? '<span class="px-2 py-0.5 rounded text-xs font-bold border bg-amber-100 text-amber-900 border-amber-300">County document not bundled</span>' : ''}}
             ${{summaryStale(doc) ? '<span class="px-2 py-0.5 rounded text-xs font-bold border bg-amber-100 text-amber-900 border-amber-300" title="The County updated this PDF after the summary was written. Check the PDF.">Summary under review</span>' : ''}}
           </div>
@@ -1446,14 +1446,14 @@ __THEME_CSS__
             <span>Posted on County site: ${{revisionStr}}</span>
           </div>
         </div>
-        <div class="flex items-center gap-2 shrink-0 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
-          <button type="button" onclick="viewDocPdf('${{doc.id}}')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center gap-1.5 shadow-2xs cursor-pointer">
+        <div class="flex flex-col items-stretch gap-2 shrink-0 w-full sm:w-auto pt-2 sm:pt-0 border-t sm:border-t-0 border-slate-100">
+          <button type="button" onclick="viewDocPdf('${{doc.id}}')" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center justify-center gap-1.5 shadow-2xs cursor-pointer">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/></svg>
             <span>${{missing ? 'Open County Site' : 'View PDF in Page'}}</span>
           </button>
-          <a href="${{localPdfLink}}" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-2.5 py-2 rounded-lg transition inline-flex items-center gap-1 shadow-2xs" title="Open in new window or tab">
+          <a href="${{localPdfLink}}" target="_blank" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-3.5 py-2 rounded-lg transition inline-flex items-center justify-center gap-1.5 shadow-2xs" title="Open in new window or tab">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            <span class="hidden md:inline">New Tab</span>
+            <span>Open in New Tab</span>
           </a>
         </div>
       `;
