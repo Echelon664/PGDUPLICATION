@@ -1168,7 +1168,7 @@
     "section_num": "63-251",
     "section_title": "Prospective Budgeting and Reasonably Anticipated Income",
     "category": "63-250 Budgeting and Benefit Calculation",
-    "category_desc": "Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables",
+    "category_desc": "Prospective budgeting, reasonably anticipated income, migrant and seasonal farmworkers, income and benefit calculations, and income of ineligible or non-household members",
     "category_id": "cf-63-250",
     "order": 7,
     "county_file_id": "7176285",
@@ -1196,7 +1196,7 @@
     "section_num": "63-252",
     "section_title": "Households with Migrant or Seasonal Farmworkers",
     "category": "63-250 Budgeting and Benefit Calculation",
-    "category_desc": "Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables",
+    "category_desc": "Prospective budgeting, reasonably anticipated income, migrant and seasonal farmworkers, income and benefit calculations, and income of ineligible or non-household members",
     "category_id": "cf-63-250",
     "order": 7,
     "county_file_id": "282400",
@@ -1224,7 +1224,7 @@
     "section_num": "63-254",
     "section_title": "Gross and Net Income Calculations and Benefit Allotment",
     "category": "63-250 Budgeting and Benefit Calculation",
-    "category_desc": "Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables",
+    "category_desc": "Prospective budgeting, reasonably anticipated income, migrant and seasonal farmworkers, income and benefit calculations, and income of ineligible or non-household members",
     "category_id": "cf-63-250",
     "order": 7,
     "county_file_id": "7176133",
@@ -1252,7 +1252,7 @@
     "section_num": "63-255",
     "section_title": "Treatment of Income and Expenses of Ineligible and Non-Household Members",
     "category": "63-250 Budgeting and Benefit Calculation",
-    "category_desc": "Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables",
+    "category_desc": "Prospective budgeting, reasonably anticipated income, migrant and seasonal farmworkers, income and benefit calculations, and income of ineligible or non-household members",
     "category_id": "cf-63-250",
     "order": 7,
     "county_file_id": "7176123",
@@ -1648,8 +1648,8 @@
     "category_id": "cf-63-330",
     "order": 12,
     "county_file_id": "282539",
-    "pdf_date": "2022-01-04",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2022-01-01",
+    "pdf_date_label": "Revision date",
     "text_source": "ocr"
   },
   {
@@ -2009,7 +2009,7 @@
     "section_num": "63-380",
     "section_title": "Prepared Meal Programs",
     "category": "63-380 Prepared Meal Programs",
-    "category_desc": "Authorized restaurant meals, communal dining, and prepared meal purchases for eligible households",
+    "category_desc": "Using CalFresh for home-delivered meals, communal dining facilities, and authorized homeless meal providers",
     "category_id": "cf-63-380",
     "order": 16,
     "county_file_id": "40941559",
@@ -2853,8 +2853,8 @@
     "order": 99,
     "category_id": "cf-sn",
     "county_file_id": "282502",
-    "pdf_date": "2022-11-18",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2022-10-01",
+    "pdf_date_label": "Effective date",
     "text_source": "ocr"
   },
   {
@@ -4168,7 +4168,7 @@
     "section_num": "10-009",
     "section_title": "Home Visiting Program",
     "category": "10-009 Home Visiting Program",
-    "category_desc": "Voluntary home visiting services for pregnant women and families with young children",
+    "category_desc": "Voluntary home visits by a nurse or other trained professional for pregnant people and parents of young children",
     "order": 7,
     "county_file_id": "1209613",
     "pdf_date": "2025-06-01",
@@ -4492,7 +4492,7 @@
     "section_num": "10-025",
     "section_title": "Compliance Process",
     "category": "10-025 Compliance Process",
-    "category_desc": "Noncompliance conciliation and sanction procedures",
+    "category_desc": "Employment Services noncompliance, cause determinations, compliance plans, and sanctions",
     "order": 11,
     "county_file_id": "41845310",
     "pdf_date": "2026-07-01",
@@ -4819,8 +4819,8 @@
     "category_desc": "Teen parent education requirements, case management, and bonuses/sanctions",
     "order": 20,
     "county_file_id": "282186",
-    "pdf_date": "2021-05-19",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2021-05-01",
+    "pdf_date_label": "Revision date",
     "text_source": "ocr"
   },
   {
@@ -4847,8 +4847,8 @@
     "category_desc": "Teen parent education requirements, case management, and bonuses/sanctions",
     "order": 20,
     "county_file_id": "282187",
-    "pdf_date": "2021-08-31",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2021-09-01",
+    "pdf_date_label": "Revision date",
     "text_source": "ocr"
   },
   {
@@ -5170,7 +5170,7 @@
     "section_num": "40-100",
     "section_title": "Application and Redetermination",
     "category": "40-100 Application and Redetermination",
-    "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
+    "category_desc": "Applications, Immediate Need, Social Security Numbers, Diversion, family violence, continuing benefits, redeterminations, and intercounty transfers",
     "order": 25,
     "county_file_id": "282096",
     "pdf_date": "2022-03-01",
@@ -5197,7 +5197,7 @@
     "section_num": "40-100",
     "section_title": "Application and Redetermination",
     "category": "40-100 Application and Redetermination",
-    "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
+    "category_desc": "Applications, Immediate Need, Social Security Numbers, Diversion, family violence, continuing benefits, redeterminations, and intercounty transfers",
     "order": 25,
     "county_file_id": "41101885",
     "pdf_date": "2025-11-01",
@@ -5224,7 +5224,7 @@
     "section_num": "40-100",
     "section_title": "Application and Redetermination",
     "category": "40-100 Application and Redetermination",
-    "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
+    "category_desc": "Applications, Immediate Need, Social Security Numbers, Diversion, family violence, continuing benefits, redeterminations, and intercounty transfers",
     "order": 25,
     "county_file_id": "40049611",
     "pdf_date": "2025-02-01",
@@ -5251,7 +5251,7 @@
     "section_num": "40-100",
     "section_title": "Application and Redetermination",
     "category": "40-100 Application and Redetermination",
-    "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
+    "category_desc": "Applications, Immediate Need, Social Security Numbers, Diversion, family violence, continuing benefits, redeterminations, and intercounty transfers",
     "order": 25,
     "county_file_id": "41604325",
     "pdf_date": "2026-05-01",
@@ -5278,7 +5278,7 @@
     "section_num": "40-100",
     "section_title": "Application and Redetermination",
     "category": "40-100 Application and Redetermination",
-    "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
+    "category_desc": "Applications, Immediate Need, Social Security Numbers, Diversion, family violence, continuing benefits, redeterminations, and intercounty transfers",
     "order": 25,
     "county_file_id": "282099",
     "pdf_date": "2025-01-01",
@@ -5305,7 +5305,7 @@
     "section_num": "40-100",
     "section_title": "Application and Redetermination",
     "category": "40-100 Application and Redetermination",
-    "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
+    "category_desc": "Applications, Immediate Need, Social Security Numbers, Diversion, family violence, continuing benefits, redeterminations, and intercounty transfers",
     "order": 25,
     "county_file_id": "282095",
     "pdf_date": "2022-02-01",
@@ -5332,7 +5332,7 @@
     "section_num": "40-100",
     "section_title": "Application and Redetermination",
     "category": "40-100 Application and Redetermination",
-    "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
+    "category_desc": "Applications, Immediate Need, Social Security Numbers, Diversion, family violence, continuing benefits, redeterminations, and intercounty transfers",
     "order": 25,
     "county_file_id": "282100",
     "pdf_date": "2022-07-01",
@@ -5359,7 +5359,7 @@
     "section_num": "40-100",
     "section_title": "Application and Redetermination",
     "category": "40-100 Application and Redetermination",
-    "category_desc": "Intake, immediate need cash, SAR 7 recertification, and ICT",
+    "category_desc": "Applications, Immediate Need, Social Security Numbers, Diversion, family violence, continuing benefits, redeterminations, and intercounty transfers",
     "order": 25,
     "county_file_id": "40383946",
     "pdf_date": "2025-05-01",
@@ -6008,7 +6008,7 @@
     "section_num": "42-200",
     "section_title": "Property",
     "category": "42-200 Property",
-    "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
+    "category_desc": "Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles",
     "order": 31,
     "county_file_id": "610988",
     "pdf_date": "2026-01-01",
@@ -6035,7 +6035,7 @@
     "section_num": "42-200",
     "section_title": "Property",
     "category": "42-200 Property",
-    "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
+    "category_desc": "Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles",
     "order": 31,
     "county_file_id": "282051",
     "pdf_date": "2026-08-01",
@@ -6062,7 +6062,7 @@
     "section_num": "42-200",
     "section_title": "Property",
     "category": "42-200 Property",
-    "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
+    "category_desc": "Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles",
     "order": 31,
     "county_file_id": "282052",
     "pdf_date": "2026-08-01",
@@ -6089,7 +6089,7 @@
     "section_num": "42-200",
     "section_title": "Property",
     "category": "42-200 Property",
-    "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
+    "category_desc": "Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles",
     "order": 31,
     "county_file_id": "7574213",
     "pdf_date": "2024-06-01",
@@ -6116,7 +6116,7 @@
     "section_num": "42-200",
     "section_title": "Property",
     "category": "42-200 Property",
-    "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
+    "category_desc": "Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles",
     "order": 31,
     "county_file_id": "282049",
     "pdf_date": "2026-08-01",
@@ -6143,7 +6143,7 @@
     "section_num": "42-200",
     "section_title": "Property",
     "category": "42-200 Property",
-    "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
+    "category_desc": "Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles",
     "order": 31,
     "county_file_id": "282054",
     "pdf_date": "2026-08-01",
@@ -6170,7 +6170,7 @@
     "section_num": "42-200",
     "section_title": "Property",
     "category": "42-200 Property",
-    "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
+    "category_desc": "Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles",
     "order": 31,
     "county_file_id": "282055",
     "pdf_date": "2026-08-01",
@@ -6197,7 +6197,7 @@
     "section_num": "42-200",
     "section_title": "Property",
     "category": "42-200 Property",
-    "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
+    "category_desc": "Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles",
     "order": 31,
     "county_file_id": "282056",
     "pdf_date": "2026-08-01",
@@ -6224,7 +6224,7 @@
     "section_num": "42-200",
     "section_title": "Property",
     "category": "42-200 Property",
-    "category_desc": "Real and personal property limitations, motor vehicles, and exclusions",
+    "category_desc": "Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles",
     "order": 31,
     "county_file_id": "282057",
     "pdf_date": "2026-07-01",
@@ -6470,8 +6470,8 @@
     "category_desc": "Assignment of support rights and child support cooperation rules",
     "order": 34,
     "county_file_id": "282137",
-    "pdf_date": "2022-02-03",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2022-02-01",
+    "pdf_date_label": "Revision date",
     "text_source": "ocr"
   },
   {
@@ -8238,8 +8238,8 @@
     "category_id": "special-notices",
     "order": 99,
     "county_file_id": "11132387",
-    "pdf_date": "2024-08-06",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2024-08-01",
+    "pdf_date_label": "Effective date",
     "text_source": "ocr"
   },
   {
@@ -8379,8 +8379,8 @@
     "category_id": "special-notices",
     "order": 99,
     "county_file_id": "282704",
-    "pdf_date": "2023-12-14",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2024-01-01",
+    "pdf_date_label": "Effective date",
     "text_source": "ocr"
   },
   {
@@ -8492,8 +8492,8 @@
     "category_id": "special-notices",
     "order": 99,
     "county_file_id": "282700",
-    "pdf_date": "2022-12-29",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2023-01-01",
+    "pdf_date_label": "Effective date",
     "text_source": "ocr"
   },
   {
@@ -8521,8 +8521,8 @@
     "category_id": "special-notices",
     "order": 99,
     "county_file_id": "282699",
-    "pdf_date": "2022-08-23",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2022-01-01",
+    "pdf_date_label": "Effective date",
     "text_source": "ocr"
   },
   {
@@ -8550,8 +8550,8 @@
     "category_id": "special-notices",
     "order": 99,
     "county_file_id": "282697",
-    "pdf_date": "2022-07-26",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Effective date",
     "text_source": "ocr"
   },
   {
@@ -8579,8 +8579,8 @@
     "category_id": "special-notices",
     "order": 99,
     "county_file_id": "282698",
-    "pdf_date": "2022-07-13",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Effective date",
     "text_source": "ocr"
   },
   {
@@ -8608,8 +8608,8 @@
     "category_id": "special-notices",
     "order": 99,
     "county_file_id": "282696",
-    "pdf_date": "2022-06-22",
-    "pdf_date_label": "PDF file date",
+    "pdf_date": "2022-07-01",
+    "pdf_date_label": "Effective date",
     "text_source": "ocr"
   },
   {
@@ -9281,8 +9281,8 @@
     "category_id": "article-04",
     "order": 4,
     "county_file_id": "610659",
-    "pdf_date": "2024-02-01",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2013-07",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-337",
@@ -9505,8 +9505,8 @@
     "category_id": "article-04",
     "order": 4,
     "county_file_id": "282736",
-    "pdf_date": "2022-08-22",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2022-08-01",
+    "pdf_date_label": "Latest revision date"
   },
   {
     "id": "mc-345",
@@ -9561,8 +9561,8 @@
     "category_id": "article-04",
     "order": 4,
     "county_file_id": "282746",
-    "pdf_date": "2017-07-24",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2017-07-17",
+    "pdf_date_label": "Latest revision date"
   },
   {
     "id": "mc-347",
@@ -10065,8 +10065,8 @@
     "category_id": "article-05",
     "order": 5,
     "county_file_id": "282711",
-    "pdf_date": "2016-03-09",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2015-04-23",
+    "pdf_date_label": "Latest issue date"
   },
   {
     "id": "mc-365",
@@ -10121,8 +10121,8 @@
     "category_id": "article-05",
     "order": 5,
     "county_file_id": "282709",
-    "pdf_date": "2015-03-12",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2007-10",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-367",
@@ -10149,8 +10149,8 @@
     "category_id": "article-05",
     "order": 5,
     "county_file_id": "282705",
-    "pdf_date": "2018-02-26",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2018-02-23",
+    "pdf_date_label": "Latest revision date"
   },
   {
     "id": "mc-368",
@@ -10205,8 +10205,8 @@
     "category_id": "article-05",
     "order": 5,
     "county_file_id": "282714",
-    "pdf_date": "2018-08-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2003-12",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-370",
@@ -10565,12 +10565,12 @@
     "section_num": "Section 1",
     "section_title": "Medi-Cal Family Budget Unit",
     "category": "ARTICLE 08 - Responsible Relatives & Unit Determination",
-    "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
+    "category_desc": "Medi-Cal Family Budget Units, responsible relatives, tax dependency, long-term care and PACE, caretaker relatives, domestic partners, and same-sex marriages",
     "category_id": "article-08",
     "order": 8,
     "county_file_id": "282782",
-    "pdf_date": "2015-03-11",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2004-09",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-383",
@@ -10593,12 +10593,12 @@
     "section_num": "Section 2",
     "section_title": "Tax Dependency",
     "category": "ARTICLE 08 - Responsible Relatives & Unit Determination",
-    "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
+    "category_desc": "Medi-Cal Family Budget Units, responsible relatives, tax dependency, long-term care and PACE, caretaker relatives, domestic partners, and same-sex marriages",
     "category_id": "article-08",
     "order": 8,
     "county_file_id": "282791",
-    "pdf_date": "2012-10-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "1988-05",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-384",
@@ -10621,7 +10621,7 @@
     "section_num": "Section 4",
     "section_title": "Long-Term Care/Board & Care and PACE",
     "category": "ARTICLE 08 - Responsible Relatives & Unit Determination",
-    "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
+    "category_desc": "Medi-Cal Family Budget Units, responsible relatives, tax dependency, long-term care and PACE, caretaker relatives, domestic partners, and same-sex marriages",
     "category_id": "article-08",
     "order": 8,
     "county_file_id": "282783",
@@ -10649,12 +10649,12 @@
     "section_num": "Section 5",
     "section_title": "Caretaker Relatives",
     "category": "ARTICLE 08 - Responsible Relatives & Unit Determination",
-    "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
+    "category_desc": "Medi-Cal Family Budget Units, responsible relatives, tax dependency, long-term care and PACE, caretaker relatives, domestic partners, and same-sex marriages",
     "category_id": "article-08",
     "order": 8,
     "county_file_id": "282799",
-    "pdf_date": "2014-06-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "1991-12",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-386",
@@ -10677,7 +10677,7 @@
     "section_num": "Section 6",
     "section_title": "Registered Domestic Partnerships",
     "category": "ARTICLE 08 - Responsible Relatives & Unit Determination",
-    "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
+    "category_desc": "Medi-Cal Family Budget Units, responsible relatives, tax dependency, long-term care and PACE, caretaker relatives, domestic partners, and same-sex marriages",
     "category_id": "article-08",
     "order": 8,
     "county_file_id": "282784",
@@ -10705,7 +10705,7 @@
     "section_num": "Section 7",
     "section_title": "Same-Sex Marriages",
     "category": "ARTICLE 08 - Responsible Relatives & Unit Determination",
-    "category_desc": "Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations",
+    "category_desc": "Medi-Cal Family Budget Units, responsible relatives, tax dependency, long-term care and PACE, caretaker relatives, domestic partners, and same-sex marriages",
     "category_id": "article-08",
     "order": 8,
     "county_file_id": "282785",
@@ -10765,8 +10765,8 @@
     "category_id": "article-09",
     "order": 9,
     "county_file_id": "282793",
-    "pdf_date": "2013-12-12",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2013-05",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-390",
@@ -10793,8 +10793,8 @@
     "category_id": "article-09",
     "order": 9,
     "county_file_id": "282794",
-    "pdf_date": "2012-10-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "1990-09",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-391",
@@ -10821,8 +10821,8 @@
     "category_id": "article-09",
     "order": 9,
     "county_file_id": "282790",
-    "pdf_date": "2012-10-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2004-05",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-392",
@@ -10849,8 +10849,8 @@
     "category_id": "article-09",
     "order": 9,
     "county_file_id": "282800",
-    "pdf_date": "2014-06-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2010-01",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-393",
@@ -10933,8 +10933,8 @@
     "category_id": "article-09",
     "order": 9,
     "county_file_id": "282792",
-    "pdf_date": "2012-10-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "1995-04",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-396",
@@ -11017,8 +11017,8 @@
     "category_id": "article-09",
     "order": 9,
     "county_file_id": "282787",
-    "pdf_date": "2014-06-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2010-06",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-399",
@@ -11101,8 +11101,8 @@
     "category_id": "article-09",
     "order": 9,
     "county_file_id": "282788",
-    "pdf_date": "2012-10-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2005-12",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-402",
@@ -11129,8 +11129,8 @@
     "category_id": "article-10",
     "order": 10,
     "county_file_id": "282726",
-    "pdf_date": "2013-05-06",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "1992-06",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-403",
@@ -11213,8 +11213,8 @@
     "category_id": "article-10",
     "order": 10,
     "county_file_id": "282727",
-    "pdf_date": "2015-03-12",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2004-10",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-406",
@@ -11241,8 +11241,8 @@
     "category_id": "article-10",
     "order": 10,
     "county_file_id": "282728",
-    "pdf_date": "2019-09-13",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2013-06",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-407",
@@ -11409,8 +11409,8 @@
     "category_id": "article-12",
     "order": 12,
     "county_file_id": "282786",
-    "pdf_date": "2012-10-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2001-11",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-413",
@@ -11433,12 +11433,12 @@
     "section_num": "Section 1",
     "section_title": "Period of Eligibility",
     "category": "ARTICLE 13 - PERIOD OF ELIGIBILITY",
-    "category_desc": "Retroactive coverage, ongoing eligibility periods, and continuous coverage",
+    "category_desc": "Beginning date, period and final date of eligibility, and retroactive coverage",
     "category_id": "article-13",
     "order": 13,
     "county_file_id": "282677",
-    "pdf_date": "2014-09-02",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2001-01",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-414",
@@ -11573,12 +11573,12 @@
     "section_num": "Section 1",
     "section_title": "Other Health Coverage",
     "category": "ARTICLE 15 - OTHER HEALTH CARE COVERAGE AND MEDICARE BUY-IN COVERAGE",
-    "category_desc": "Other Health Coverage (OHC), third-party liability, and Medicare Part A/B buy-in",
+    "category_desc": "Other Health Coverage, third party liability claims, Medicare, and Medicare Part B Buy-In",
     "category_id": "article-15",
     "order": 15,
     "county_file_id": "282780",
-    "pdf_date": "2018-08-15",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2013-07",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-419",
@@ -11601,7 +11601,7 @@
     "section_num": "Section 3",
     "section_title": "Third Party Liability Claims",
     "category": "ARTICLE 15 - OTHER HEALTH CARE COVERAGE AND MEDICARE BUY-IN COVERAGE",
-    "category_desc": "Other Health Coverage (OHC), third-party liability, and Medicare Part A/B buy-in",
+    "category_desc": "Other Health Coverage, third party liability claims, Medicare, and Medicare Part B Buy-In",
     "category_id": "article-15",
     "order": 15,
     "county_file_id": "282779",
@@ -11629,7 +11629,7 @@
     "section_num": "Section 4",
     "section_title": "Medicare",
     "category": "ARTICLE 15 - OTHER HEALTH CARE COVERAGE AND MEDICARE BUY-IN COVERAGE",
-    "category_desc": "Other Health Coverage (OHC), third-party liability, and Medicare Part A/B buy-in",
+    "category_desc": "Other Health Coverage, third party liability claims, Medicare, and Medicare Part B Buy-In",
     "category_id": "article-15",
     "order": 15,
     "county_file_id": "7535371",
@@ -11657,7 +11657,7 @@
     "section_num": "Section 1",
     "section_title": "Fraud Prevention and Referral",
     "category": "ARTICLE 16 - OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION",
-    "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
+    "category_desc": "Fraud prevention and referrals, overpayments, estate recovery, employee conflicts of interest, and altered documents",
     "category_id": "article-16",
     "order": 16,
     "county_file_id": "282682",
@@ -11685,7 +11685,7 @@
     "section_num": "Section 2",
     "section_title": "Overpayments",
     "category": "ARTICLE 16 - OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION",
-    "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
+    "category_desc": "Fraud prevention and referrals, overpayments, estate recovery, employee conflicts of interest, and altered documents",
     "category_id": "article-16",
     "order": 16,
     "county_file_id": "282681",
@@ -11713,12 +11713,12 @@
     "section_num": "Section 3",
     "section_title": "Medi-Cal Estate Recovery",
     "category": "ARTICLE 16 - OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION",
-    "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
+    "category_desc": "Fraud prevention and referrals, overpayments, estate recovery, employee conflicts of interest, and altered documents",
     "category_id": "article-16",
     "order": 16,
     "county_file_id": "282678",
-    "pdf_date": "2017-03-03",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2017-02-27",
+    "pdf_date_label": "Revision date"
   },
   {
     "id": "mc-424",
@@ -11741,7 +11741,7 @@
     "section_num": "Section 4",
     "section_title": "Employee Integrity/Conflict of Interest Issues",
     "category": "ARTICLE 16 - OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION",
-    "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
+    "category_desc": "Fraud prevention and referrals, overpayments, estate recovery, employee conflicts of interest, and altered documents",
     "category_id": "article-16",
     "order": 16,
     "county_file_id": "282679",
@@ -11769,7 +11769,7 @@
     "section_num": "Section 5",
     "section_title": "Fraudulent/Altered Documents",
     "category": "ARTICLE 16 - OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION",
-    "category_desc": "Fraud prevention, estate recovery, administrative disqualification, and overpayments",
+    "category_desc": "Fraud prevention and referrals, overpayments, estate recovery, employee conflicts of interest, and altered documents",
     "category_id": "article-16",
     "order": 16,
     "county_file_id": "282680",
@@ -11797,12 +11797,12 @@
     "section_num": "Section 1",
     "section_title": "Medi-Cal Special Treatment Benefits",
     "category": "ARTICLE 17 - MEDI-CAL SPECIAL TREATMENT PROGRAMS",
-    "category_desc": "Kidney transplant, organ anti-rejection, dialysis, and parenteral nutrition programs",
+    "category_desc": "Special treatment coverage for kidney dialysis and total parenteral nutrition, and anti-rejection medications after an organ transplant",
     "category_id": "article-17",
     "order": 17,
     "county_file_id": "282801",
-    "pdf_date": "2014-06-16",
-    "pdf_date_label": "PDF file date"
+    "pdf_date": "2012-05",
+    "pdf_date_label": "Latest MPG letter"
   },
   {
     "id": "mc-427",
@@ -11825,7 +11825,7 @@
     "section_num": "Section 2",
     "section_title": "Organ Transplant Anti-Rejection Medications Program",
     "category": "ARTICLE 17 - MEDI-CAL SPECIAL TREATMENT PROGRAMS",
-    "category_desc": "Kidney transplant, organ anti-rejection, dialysis, and parenteral nutrition programs",
+    "category_desc": "Special treatment coverage for kidney dialysis and total parenteral nutrition, and anti-rejection medications after an organ transplant",
     "category_id": "article-17",
     "order": 17,
     "county_file_id": "41693956",
