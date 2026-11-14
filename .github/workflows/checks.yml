@@ -18,6 +18,6 @@ jobs:
       - name: Check summaries against their PDFs
         run: python summaries.py check
       - name: Unit tests
-        run: python -m unittest test_summaries test_county_sync test_pdf_dates
+        run: python -m unittest test_summaries test_search_spelling test_county_sync test_pdf_dates
       - name: Build the page
         run: python generate_preview.py

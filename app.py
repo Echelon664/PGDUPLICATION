@@ -51,10 +51,14 @@ def search_documents(
     q: Optional[str] = Query("", max_length=300),
     program: str = "All",
     limit: int = Query(50, ge=1, le=250),
+    exact: bool = False,
 ):
-    results = ENGINE.search(q or "", program_filter=program, top_k=limit)
+    # exact=1 searches the words as typed, skipping spelling correction.
+    found = ENGINE.search_with_correction(q or "", program_filter=program, top_k=limit, correct=not exact)
+    results = found["results"]
     return {
         "query": q,
+        "corrected_query": found["corrected_query"],
         "program": program,
         "total": len(results),
         "results": results,

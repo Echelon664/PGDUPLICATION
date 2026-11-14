@@ -470,6 +470,7 @@ __CHAPTER_NAV_CSS__
               <p id="searchResultCountText" class="text-xs text-slate-600 mt-0.5" aria-live="polite" aria-atomic="true">
                 Searching 100% of internal PDF text with BM25 engine...
               </p>
+              <p id="searchCorrection" class="hidden text-sm text-slate-800 mt-1"></p>
             </div>
           </div>
 
@@ -902,6 +903,26 @@ __CHAPTER_NAV_CSS__
       }}
     }}
 
+    // "Showing results for eligibility. Search instead for eligibilty" when the
+    // server fixed a misspelled word (see correct_query in search_engine.py).
+    function showSearchCorrection(info) {{
+      const box = document.getElementById('searchCorrection');
+      if (!box) return;
+      box.replaceChildren();
+      box.classList.toggle('hidden', !info);
+      if (!info) return;
+      box.append('Showing results for ');
+      const fixed = document.createElement('strong');
+      fixed.textContent = info.corrected;
+      box.append(fixed, '. ');
+      const instead = document.createElement('button');
+      instead.type = 'button';
+      instead.className = 'underline text-blue-700 hover:text-blue-900 cursor-pointer';
+      instead.textContent = 'Search instead for "' + info.original + '"';
+      instead.addEventListener('click', () => executeSearch(info.original, info.mode, {{ exact: true, skipHistory: true }}));
+      box.append(instead);
+    }}
+
     async function executeSearch(query, mode, opts = {{}}) {{
       const prog = activeProgram;
 
@@ -945,7 +966,8 @@ __CHAPTER_NAV_CSS__
       }}
 
       // Start both requests at once so the AI answer never delays the document list.
-      const searchPromise = fetch(LOCAL_SERVER_BASE + '/api/search?q=' + encodeURIComponent(query) + '&program=' + encodeURIComponent(prog) + '&limit=150', {{ signal: controller.signal }})
+      showSearchCorrection(null);
+      const searchPromise = fetch(LOCAL_SERVER_BASE + '/api/search?q=' + encodeURIComponent(query) + '&program=' + encodeURIComponent(prog) + '&limit=150' + (opts.exact ? '&exact=1' : ''), {{ signal: controller.signal }})
         .then(resp => resp.ok ? resp.json() : null)
         .catch(err => {{
           if (err && err.name === 'AbortError') throw err;
@@ -973,6 +995,7 @@ __CHAPTER_NAV_CSS__
         let apiDocs = null;
         const data = await searchPromise;
         if (controller.signal.aborted) return;
+        showSearchCorrection(data && data.corrected_query ? {{ corrected: data.corrected_query, original: query, mode }} : null);
 
         if (data && data.results && data.results.length > 0) {{
           const docMap = {{}};
