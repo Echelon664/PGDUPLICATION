@@ -42,7 +42,7 @@ CHAPTER_DESCRIPTIONS = {
     '63-220 Income': 'Earned income, unearned income, income exclusions, and self-employment',
     '63-230 Income Deductions': 'Standard deduction, earned income deduction, excess medical, dependent care, and shelter costs',
     '63-240 Households with Special Circumstances': 'Substantial lottery or gambling winnings and specialized eligibility',
-    '63-250 Budgeting and Benefit Calculation': 'Prospective budgeting, reasonably anticipated income, migrant farmworkers, and allotment tables',
+    '63-250 Budgeting and Benefit Calculation': 'Prospective budgeting, reasonably anticipated income, migrant and seasonal farmworkers, income and benefit calculations, and income of ineligible or non-household members',
     '63-270 Semi-Annual Reporting': 'Semi-Annual Reporting (SAR), SAR cycle, and mandatory SAR 7 report processing',
     '63-280 Mid-Period Reporting': 'Voluntary and mandatory mid-period changes, IRT reporting, overissuances, and underissuances',
     '63-300 Certification': 'Certification periods, household classification, Notices of Action (NOA), and recertification',
@@ -51,7 +51,7 @@ CHAPTER_DESCRIPTIONS = {
     '63-350 Case Management': 'Case assignment, confidentiality, client requests, case record inspections, and intercounty transfers',
     '63-360 Elderly Simplified Application Project': 'ESAP streamlined certification and 36-month certification periods for elderly/disabled units',
     '63-370 Minimum Nutrition Benefit (MNB) Pilot Program': 'Minimum Nutrition Benefit state pilot program guidelines and supplemental allotments',
-    '63-380 Prepared Meal Programs': 'Authorized restaurant meals, communal dining, and prepared meal purchases for eligible households',
+    '63-380 Prepared Meal Programs': 'Using CalFresh for home-delivered meals, communal dining facilities, and authorized homeless meal providers',
     '63-420 Work Incentive Nutrition Supplement (WINS)': 'WINS monthly food supplement for working families receiving CalFresh',
     '63-450 Claims & Adjustments': 'Establishment of claims, non-fraud, Intentional Program Violation (IPV), and claim recoupment',
     '63-500 Disaster CalFresh and Household Misfortune': 'Disaster CalFresh (D-CalFresh) operations and food replacement for household misfortune',
@@ -67,11 +67,11 @@ CHAPTER_DESCRIPTIONS = {
     '10-006 Learning Disabilities': 'Learning disability screening, evaluation protocols, and workplace accommodations',
     '10-007 Family Stabilization': 'Intensive case management, barrier removal, and family stabilization support services',
     '10-008 CalWORKs Housing Support Program': 'Housing identification, rent assistance, rapid re-housing, and housing case management',
-    '10-009 Home Visiting Program': 'Voluntary nurse home visits, early childhood development, and prenatal/parenting support',
+    '10-009 Home Visiting Program': 'Voluntary home visits by a nurse or other trained professional for pregnant people and parents of young children',
     '10-010 Child Care': 'Stage One child care eligibility, provider authorization, payment rules, and NOA requirements',
     '10-011 Supportive Services': 'Transportation reimbursement, work-related expenses, tools/uniforms, and mental health/substance abuse support',
     '10-020 Exemptions & Good Cause': 'Welfare-to-Work participation exemptions and good cause criteria',
-    '10-025 Compliance Process': 'Noncompliance conciliation, cause determinations, compliance plans, and sanction cure procedures',
+    '10-025 Compliance Process': 'Employment Services noncompliance, cause determinations, compliance plans, and sanctions',
     '10-030 Participants Rights': 'Participant rights, formal grievance procedures, and state fair hearing rules',
     '10-050 Community Service': 'Community service work experience placements, activities, and hour requirements',
     '10-150 Subsidized Employment Programs': 'Expanded Subsidized Employment (ESE) and work experience wage subsidy programs',
@@ -85,13 +85,13 @@ CHAPTER_DESCRIPTIONS = {
     '19-000 Confidentiality of Information & Records': 'Case confidentiality, safeguarding public assistance records, and release authorizations',
     '20-000 Integrity': 'Early fraud prevention, Special Investigations Unit (SIU), and child care program integrity',
     '22-000 Notifications': 'Adequate and timely Notice of Action (NOA) standards and verification requests',
-    '40-100 Application and Redetermination': 'Application intake, 45-day processing, Immediate Need cash ($200), redeterminations, and ICT',
+    '40-100 Application and Redetermination': 'Applications, Immediate Need, Social Security Numbers, Diversion, family violence, continuing benefits, redeterminations, and intercounty transfers',
     '40-125 Restoration of Aid': 'Expedited restoration of aid following discontinuance within 12 months',
     '40-183 CalWORKs Special Programs': 'Approved Relative Caregiver (ARC), extended CalWORKs for non-minor dependents (NMD), and family reunification',
     '41-400 Deprivation': 'Parental deprivation factors: unemployment (U-parent), absence, physical/mental incapacity, or death',
     '41-500 Assistance Unit': 'Assistance unit (AU) composition, mandatory inclusion rules, caretaker relatives, and temporary absence',
     '42-100 Age-Immunization-School Attendance': 'Age limits, school attendance mandates for children under 16, and preschool immunization requirements',
-    '42-200 Property': 'Real and personal property limitations ($11,634 / $15,873), vehicle exemptions, and resource evaluation',
+    '42-200 Property': 'Property limits, real and personal property, items included and excluded, net market value, restricted accounts, the home exclusion, and motor vehicles',
     '42-400 Residence': 'State residency, county jurisdiction, citizenship verification, and qualified immigrant eligibility',
     '43-100 Responsible Relatives': 'Legal responsibility of parents and financial contributions of unrelated adults in the home',
     '43-200 Child Support': 'Child support assignment of rights, cooperation with Department of Child Support Services (DCSS), and good cause',
@@ -115,16 +115,16 @@ CHAPTER_DESCRIPTIONS = {
     'ARTICLE 05 - Medi-Cal Programs': 'MAGI, Non-MAGI, ABD, Foster Care, MSP, Pickle Amendment, and specialized aid programs',
     'ARTICLE 06 - Institutional Status': 'Public institutions, mental disease facilities, and inmates medical coverage',
     'ARTICLE 07 - Citizenship/Immigration Status': 'Citizenship verification, PRUCOL, and immigrant eligibility rules',
-    'ARTICLE 08 - Responsible Relatives & Unit Determination': 'Medi-Cal family budget units (MFBU), tax dependency, and spousal allocations',
+    'ARTICLE 08 - Responsible Relatives & Unit Determination': 'Medi-Cal Family Budget Units, responsible relatives, tax dependency, long-term care and PACE, caretaker relatives, domestic partners, and same-sex marriages',
     'ARTICLE 09 - Property': 'Real and personal property evaluation, principal residence, and transfers',
     'ARTICLE 10 - NON-MAGI INCOME': 'Earned/unearned income, deductions, and Non-MAGI budgeting computations',
     'ARTICLE 11 - Maintenance Needs': 'Maintenance need standards and basic subsistence income levels',
     'ARTICLE 12 - Share-of-Cost': 'Share of Cost (SOC) determination, liability computation, and form processing',
-    'ARTICLE 13 - PERIOD OF ELIGIBILITY': 'Retroactive coverage, ongoing eligibility periods, and continuous coverage',
+    'ARTICLE 13 - PERIOD OF ELIGIBILITY': 'Beginning date, period and final date of eligibility, and retroactive coverage',
     'ARTICLE 14 - MEDI-CAL CARD USE AND ISSUANCE': 'Benefits Identification Card (BIC) issuance, replacements, and authorization letters',
-    'ARTICLE 15 - OTHER HEALTH CARE COVERAGE AND MEDICARE BUY-IN COVERAGE': 'Other Health Coverage (OHC), third-party liability, and Medicare Part A/B buy-in',
-    'ARTICLE 16 - OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION': 'Fraud prevention, estate recovery, administrative disqualification, and overpayments',
-    'ARTICLE 17 - MEDI-CAL SPECIAL TREATMENT PROGRAMS': 'Kidney transplant, organ anti-rejection, dialysis, and parenteral nutrition programs',
+    'ARTICLE 15 - OTHER HEALTH CARE COVERAGE AND MEDICARE BUY-IN COVERAGE': 'Other Health Coverage, third party liability claims, Medicare, and Medicare Part B Buy-In',
+    'ARTICLE 16 - OVERPAYMENTS, FRAUD AND IMPROPER UTILIZATION': 'Fraud prevention and referrals, overpayments, estate recovery, employee conflicts of interest, and altered documents',
+    'ARTICLE 17 - MEDI-CAL SPECIAL TREATMENT PROGRAMS': 'Special treatment coverage for kidney dialysis and total parenteral nutrition, and anti-rejection medications after an organ transplant',
     'ARTICLE 20 - PERFORMANCE STANDARDS': 'Casework processing standards, redetermination timelines, and MEDS alerts',
     'ARTICLE 21 - MAGI APTC and Health Care Reform': 'Modified Adjusted Gross Income (MAGI), Covered CA, tax households, and ACA rules',
     'Special Notices & Policy Bulletins': 'County special notices: COLA updates, emergency directives, and annual adjustments'
@@ -1142,11 +1142,13 @@ __CHAPTER_NAV_CSS__
     }}
 
     // "Revision date: April 1, 2023" - the date taken from the document's own PDF.
+    // Old Medi-Cal sections are dated to the month only ("2001-01" -> "January 2001").
     function formatLongDate(iso) {{
-      const m = /^(\d{{4}})-(\d{{2}})-(\d{{2}})/.exec(iso || '');
+      const m = /^(\d{{4}})-(\d{{2}})(?:-(\d{{2}}))?/.exec(iso || '');
       if (!m) return '';
-      const d = new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]));
-      return d.toLocaleDateString('en-US', {{ year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }});
+      const d = new Date(Date.UTC(+m[1], +m[2] - 1, m[3] ? +m[3] : 1));
+      const parts = m[3] ? {{ year: 'numeric', month: 'long', day: 'numeric' }} : {{ year: 'numeric', month: 'long' }};
+      return d.toLocaleDateString('en-US', Object.assign(parts, {{ timeZone: 'UTC' }}));
     }}
 
     function docDateLine(doc) {{
@@ -1157,14 +1159,20 @@ __CHAPTER_NAV_CSS__
       return text ? (label || 'PDF date') + ': ' + text : '';
     }}
 
+    // Where the date came from, shown on hover.
+    function docDateHint(doc) {{
+      const base = (doc && DOCS_BY_ID[doc.id]) || doc || {{}};
+      const label = base.pdf_date_label || '';
+      if (label === 'PDF file date') return 'No date is printed in this document, so this is the date stored in the PDF file.';
+      if (label === 'Latest MPG letter') return 'No revision date is printed in this section, so this is the newest MPG letter printed on its pages.';
+      if (label.startsWith('Latest ')) return 'This document combines several sections; this is the newest date printed in any of them.';
+      return 'Printed in the document.';
+    }}
+
     function docDateHtml(doc) {{
       const line = docDateLine(doc);
       if (!line) return '';
-      const base = (doc && DOCS_BY_ID[doc.id]) || doc || {{}};
-      const hint = (base.pdf_date_label === 'PDF file date')
-        ? 'No date is printed in this document, so this is the date stored in the PDF file.'
-        : 'Printed in the document.';
-      return `<div class="mb-1.5 text-xs font-bold text-emerald-800" title="${{hint}}">${{escapeHtml(line)}}</div>`;
+      return `<div class="mb-1.5 text-xs font-bold text-emerald-800" title="${{docDateHint(doc)}}">${{escapeHtml(line)}}</div>`;
     }}
 
     // The County changed this PDF after its summary was written (summaries.py marks it stale).

@@ -30,7 +30,7 @@
     "updated": "2026-11-13"
   },
   "cw-128": {
-    "summary": "SN 25-03 announces updated Income Reporting Threshold (IRT) tiers across assistance unit sizes effective October 2025. Directs caseworkers on mandatory mid-period income reporting rules when gross income exceeds the assigned IRT, and outlines effective dates for grant changes.",
+    "summary": "SN 25-03 (effective October 1, 2025) raises the Income Reporting Threshold (IRT) levels. Under Semi-Annual and Annual Reporting/Child-Only rules, an Assistance Unit must report mid-period when its earned income, or combined earned and unearned income, exceeds its IRT, which is the lower of 55% of the Federal Poverty Level for a family of three plus the income last used for the grant (Tier 1), or 130% of the FPL (Tier 2). Customers are told their IRT on the SAR 2, AR 2 or AR 2 SAR at least once per payment period, and a new level applies only after they are notified. Income expected to stay above Tier 2 leads to discontinuance with timely and adequate notice; below it the case may stay open.",
     "status": "verified",
     "pdf_sha256": "dcb33a3553412161772249780611e475481e4dec19dc1634122345d703cf7775",
     "updated": "2026-11-13"
@@ -48,7 +48,7 @@
     "updated": "2026-11-13"
   },
   "cw-131": {
-    "summary": "SN 26-01 details annual mandatory client notification and outreach regarding the federal Earned Income Tax Credit (EITC), California Earned Income Tax Credit (CalEITC), and Young Child Tax Credit cash refunds, confirming that tax refunds are fully exempt from property and income budgeting.",
+    "summary": "SN 26-01 (effective March 1, 2026), issued jointly for CalWORKs, CalFresh, Medi-Cal, General Relief, CAPI and CMS, explains how Earned Income Tax Credit payments are treated. EITC, CalEITC, Foster Youth Tax Credit and Expanded Young Child Tax Credit payments are exempt as income for CalWORKs, CalFresh, CAPI, Medi-Cal and CMS, but count as unearned income for General Relief. As property, they are exempt for 12 months in CalWORKs and CalFresh and in the month after receipt for Medi-Cal and CAPI. Staff give customers EITC postcards at every contact and refer them to 2-1-1 for free tax filing help.",
     "status": "verified",
     "pdf_sha256": "2bc480b24bb074fccccf9e92607a9c55060d1115556ba6dc2c66e234fc681de6",
     "updated": "2026-11-13"
@@ -120,7 +120,7 @@
     "updated": "2026-11-13"
   },
   "cw-143": {
-    "summary": "Specifies approved Welfare-to-Work activities: unsubsidized employment, subsidized private/public sector jobs, work experience, on-the-job training, job search and readiness, vocational education, community service, and education directly related to employment. Defines hourly participation limits and tracking protocols.",
+    "summary": "Employment Services participants are assigned employment, education, training and barrier removal activities based on their work history, education, career goals, English and basic skills, destabilizing factors such as homelessness or domestic violence, learning disabilities, and remaining months on the 60-month time limit. Describes each activity, including Adult Basic Education, Behavioral Health Services, Family Stabilization, job search and job readiness, work experience, subsidized and unsubsidized employment, vocational education and training, Self-Initiated Programs and postsecondary education (three hours of study time per academic unit). This revision removes the 24-Month Time Clock, which Assembly Bill 79 repealed.",
     "status": "verified",
     "pdf_sha256": "ef46f8844f333bd235e73c5e017daddd0e4ed95f8c088154aadb1710e6bfd5ac",
     "updated": "2026-11-13"
@@ -282,7 +282,7 @@
     "updated": "2026-11-13"
   },
   "cw-170": {
-    "summary": "Establishes electronic document imaging and capture standards for Employment Services contractors, detailing secure uploading, mandatory metadata indexing, case record retention, and quality assurance protocols.",
+    "summary": "Employment Services contractors must capture (scan) the documents of all active Welfare-to-Work cases into the Document Retrieval System (DoReS), where eligibility case documents are already stored, so information can be shared between Employment Services and Eligibility sites. Covers document capture guidelines and exceptions to the 12-month limit for existing documents, document preparation and capture templates, approved workarounds, training for case preparation and KOFAX Batch Manager staff, document retention, editing or deleting documents in DoReS, transferring captured cases to the Record Library, and monthly monitoring of progress.",
     "status": "verified",
     "pdf_sha256": "dec77d2246d1bba236c5cff84764b0ad1edd668cd121d5ec58607749532d10d3",
     "updated": "2026-11-13"
@@ -366,7 +366,7 @@
     "updated": "2026-11-13"
   },
   "cw-184": {
-    "summary": "Establishes legal standards for CalWORKs Notices of Action (NOA), requiring that adverse action notices provide 10-day advance notice, state the specific factual and legal basis, include grant calculation worksheets, and explain hearing rights.",
+    "summary": "Explains what CalWORKs Notices of Action (NOAs) must contain: the facts used in the determination, a budget showing how the payment was calculated when applicable, and the NA Back 9 hearing-rights page. NOAs must be written in clear language at a 6th grade level (Turner v. McMahon) and in the customer's primary language when available, otherwise with the GEN 1365. Lists when adequate notice is required, such as when aid is granted, denied, changed or discontinued. Timely notice is mailed at least 10 calendar days before an action that discontinues, suspends, cancels or decreases aid (30 days before an Employment Services sanction), with listed exceptions such as a customer's death or written request to stop aid.",
     "status": "verified",
     "pdf_sha256": "2a2d62747848b733407ff1b82dff73fe89d3b698f7fd615803e5d705f1f7cca2",
     "updated": "2026-11-13"
@@ -654,7 +654,7 @@
     "updated": "2026-11-13"
   },
   "cw-232": {
-    "summary": "Defines the financial and legal responsibility of parents to support their natural or adopted minor children, and establishes the scope of relative responsibility under California public assistance law.",
+    "summary": "All parents, regardless of age or marital status, are responsible for supporting their natural or adopted children, even when they do not live with the child, are divorced or never married, or a court has removed the child; responsibility ends only with a relinquishment for adoption or when a minor parent is married and living with their spouse. Defines stepparents and registered domestic partners (treated like spouses) and explains recognition of common-law and same-sex marriages. Parents of minor parents must support the minor parent but not the grandchildren. A stepparent's income after deductions is deemed available to aided stepchildren, and aid is denied if the parent or stepparent will not provide the needed income information.",
     "status": "verified",
     "pdf_sha256": "9f04856f998ddb85a694fe4f922694b9e2231a4241ce4c407317b456404a6be2",
     "updated": "2026-11-13"
@@ -684,7 +684,7 @@
     "updated": "2026-11-13"
   },
   "cw-237": {
-    "summary": "Governs child support collections and pass-through payments: the family receives the first $100 per month of collected child support for one child ($200 per month for two or more children) without reducing their CalWORKs grant.",
+    "summary": "CalWORKs customers usually assign their child support rights to the County, and support collected repays their aid, but the family receives a pass-through that is also disregarded as income: since January 1, 2022, the first $100 a month for one child and the first $200 for two or more. Under Assembly Bill 207, effective July 1, 2024, all support for safety net and child-only cases (aid codes K1 and 3F) is exempt as income and resources, and the Local Child Support Agency passes through all support collected for former CalWORKs customers, including arrears. Also covers families using the SB 380 option to exclude a child who receives support.",
     "status": "verified",
     "pdf_sha256": "a97dcddb36dcd7027c8a283dbbfa2e809faea31c76f3b72b38867514588cbd16",
     "updated": "2026-11-13"
@@ -696,7 +696,7 @@
     "updated": "2026-11-13"
   },
   "cw-239": {
-    "summary": "Details general income budgeting principles, converting weekly and biweekly pay to monthly gross amounts, evaluating earned versus unearned income, and determining reasonably anticipated income.",
+    "summary": "Defines income for CalWORKs: any cash or in-kind benefit reasonably anticipated to be available to the Assistance Unit from current or past work, business activities, interests in property, or contributions. All income is counted unless exempt or excluded. Explains separate and community income, current income, earned income (such as wages, tips, sick leave, self-employment profit, on-the-job training and paid work experience), and disability-based unearned income such as State Disability Insurance and temporary workers' compensation. This revision adds Paid Family Leave to disability-based unearned income. Also covers payments from the conversion of property.",
     "status": "verified",
     "pdf_sha256": "5a2108bd47eaf19745e666142a73f421e10fca66566e076563937405a4f9da9b",
     "updated": "2026-11-13"
@@ -918,7 +918,7 @@
     "updated": "2026-11-13"
   },
   "cw-276": {
-    "summary": "Official County HHSA handbook resolving caseworker policy questions regarding Non-Minor Dependents (NMDs age 18-20), school attendance verifications, and benefit budgeting.",
+    "summary": "Questions and answers on Extended CalWORKs for Non-Minor Dependents (NMDs): eligibility after high school graduation or when enrolling in post-secondary or vocational school, leaving and re-entering foster care, and the caretaker relative, the NMD's child and MFG rules. Also covers treatment of THP+FC payments and SSI/SSA benefits, out-of-county cases, reporting changes, the Beginning Date of Aid, issuing payments and overpayments, program rules such as interviews, income and property limits, time on aid and child support referrals, Welfare-to-Work, and CalFresh.",
     "status": "verified",
     "pdf_sha256": "2443f6e2b6a7d0ee510068b1d7f0c758aab3c66d2b9c621f910a65b494bb18d3",
     "updated": "2026-11-13"
@@ -948,7 +948,7 @@
     "updated": "2026-11-13"
   },
   "cw-281": {
-    "summary": "Official CalWORKs Proration Chart providing daily proration factors for calculating partial-month cash aid grants based on the Beginning Date of Aid.",
+    "summary": "Chart of proration factors by the day of the month aid begins, for 28-, 29-, 30- and 31-day months. It is used to figure the prorated grant for the first month of aid and for the first month of restoration after a SAR 7-related discontinuance: the monthly grant is multiplied by the factor and rounded down. For example, a $150 grant starting March 17 is $150 x .4839 = $72.585, or $72.",
     "status": "verified",
     "pdf_sha256": "e41a0e584d507dd4c99ed968f33876805115d27445e1116a9c2af614ef47fb43",
     "updated": "2026-11-13"
@@ -960,7 +960,7 @@
     "updated": "2026-11-13"
   },
   "cw-283": {
-    "summary": "Desk aid detailing the treatment of Reception and Placement (R&P) cash grants provided to newly arrived refugees, detailing income exclusions and CalWORKs coordination.",
+    "summary": "Desk aid on how Reception and Placement (R&P) funds, $1,100 per person given to refugees within their first 90 days in the U.S., are treated. R&P is not counted as income or resources for Refugee Cash Assistance. For CalWORKs, a lump sum paid in one month counts only as a resource in that month, while payments spread over more than one month are unearned income, and a family made ineligible by R&P is evaluated for RCA. For CalFresh, R&P is a lump sum that is not income and is an exempt resource, and vendor payments are excluded income. For Medi-Cal, R&P is exempt and not used to compute share of cost.",
     "status": "verified",
     "pdf_sha256": "cedacf3e98a9b8f6cc151a72549be7b8e2ee2f426cfe63a0352df96b7ad0e26e",
     "updated": "2026-11-13"

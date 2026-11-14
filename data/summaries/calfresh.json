@@ -6,7 +6,7 @@
     "updated": "2026-11-13"
   },
   "cf-002": {
-    "summary": "Establishes CalFresh application filing procedures and acceptable signature methods, including written, telephonic, and electronic signatures. Confirms that applicants have the right to file an application immediately with only a name, address, and signature on Form CF 285, SAWS 1, or SAWS 2 Plus. Sets the official Beginning Date of Aid (BDA) as the date the signed application is received by the county, and outlines same-day intake screening protocols.",
+    "summary": "Lists the forms that may be used to apply for CalFresh (CF 285, SAWS 1 and SAWS 2 Plus). An application must be accepted if it has the applicant's name, address and the signature of a responsible household member or Authorized Representative, and it may be submitted in person, by mail, online, by fax or by phone, with electronic or telephonic signatures. A Public Assistance application is also a CalFresh request. The date the county receives the application sets the Beginning Date of Aid (the next business day if received after hours or on a non-business day) and the SAR payment period. Also covers proration in the month of application, using a CalFresh application for Medi-Cal, and not delaying CalFresh while other programs' verifications are pending.",
     "status": "verified",
     "pdf_sha256": "e13ca72a957cd8bac78a0c9c47ca12a588fb3e19a3ddc0347293105d2d5dd3b5",
     "updated": "2026-11-13"
@@ -96,7 +96,7 @@
     "updated": "2026-11-13"
   },
   "cf-019": {
-    "summary": "Establishes baseline non-financial criteria for CalFresh and CFAP eligibility, including verification of identity, residency within San Diego County, citizenship/eligible immigration status, household composition, institutional status, and student status. Outlines mandatory screening steps caseworkers must complete during intake before evaluating income and financial eligibility.",
+    "summary": "Lists the non-financial criteria that must be evaluated when determining eligibility for CalFresh and the California Food Assistance Program (CFAP): identity, residency, household composition, institutionalization status, citizenship, noncitizen status and sponsorship, Social Security Number, student status, fleeing felon status and parole or probation violations, voluntary quit and reduction of hours, participation in the Food Distribution Program on Indian Reservations, Categorical Eligibility or Modified Categorical Eligibility, resources (only for expedited service and non-CE/MCE cases), Intentional Program Violator status, work registration, and the ABAWD time limit.",
     "status": "verified",
     "pdf_sha256": "2ae6e99ef11de38323078db2bb34cacc00f73b8b07d33df00b32123a8b5a682b",
     "updated": "2026-11-13"
@@ -120,7 +120,7 @@
     "updated": "2026-11-13"
   },
   "cf-023": {
-    "summary": "Governs the state-funded California Food Assistance Program (CFAP) providing food assistance to qualified noncitizens who are ineligible for federal SNAP solely due to their immigration status (such as LPRs subject to the 5-year waiting period). Details eligibility rules, benefit levels identical to federal CalFresh allotments, and state-funded benefit issuances.",
+    "summary": "The California Food Assistance Program (CFAP) gives state-funded food benefits, issued the same way as CalFresh, to noncitizens who are ineligible for CalFresh solely because of their immigration status under PRWORA, and to battered noncitizens. Qualified noncitizens such as Lawful Permanent Residents, conditional entrants and parolees are eligible until they meet a noncitizen condition (Section 63-154), while battered noncitizens qualify regardless. Explains eligibility for trafficking victims pending a T Visa and crime victims who applied for a U Visa, when parolees lose eligibility, and work registration and ABAWD rules, with example scenarios.",
     "status": "verified",
     "pdf_sha256": "644832d8ca00ddd65647a7b8b96976f7336989d1629e9f5a9b8969849a9637e7",
     "updated": "2026-11-13"
@@ -210,7 +210,7 @@
     "updated": "2026-11-13"
   },
   "cf-040": {
-    "summary": "Specifies standard deduction amounts adjusted annually by household size and calculates the statutory 20% earned income disregard applied to gross wages. The standard deduction is subtracted from gross income for all households to account for basic non-shelter living costs, and the 20% earned income deduction serves as a work incentive by exempting one-fifth of earnings from net income calculation.",
+    "summary": "All CalFresh households receive the standard deduction, which varies by household size; ineligible household members are not counted in the household size when assigning it. Households with earned income also receive the earned income deduction, equal to 20 percent of gross monthly earned income. For self-employment income, the earned income deduction is calculated after allowable self-employment expenses are deducted. Current standard deduction amounts are in Section 63-1101.",
     "status": "verified",
     "pdf_sha256": "57f9b97922b1eb3c82328e97b7c7ba0e8568e1df3f72e6387bd67ea283ca2420",
     "updated": "2026-11-13"
@@ -276,7 +276,7 @@
     "updated": "2026-11-13"
   },
   "cf-051": {
-    "summary": "Establishes the cyclical structure of the SAR payment period, identifying the 6-month intervals based on the Beginning Date of Aid (BDA). Defines critical operational milestones: the Data Month (month 5), the Submit Month (month 6 when SAR 7 is due), and the Payment Period (the upcoming 6 months). Outlines notice mailing timelines and caseworker processing deadlines.",
+    "summary": "Explains the Semi-Annual Reporting (SAR) cycle and defines the Data Month, Submit Month and SAR Payment Period. A table shows how often each household type submits a SAR 7: every 6 months for regular, homeless and migrant or seasonal farmworker households; every 12 months for 24-month certifications, such as all-elderly-or-disabled adults with nondisabled minor children or households on an Indian Reservation (at 6, 12 and 18 months if they have earned income); and at 12 and 24 months for households losing ESAP eligibility. The Beginning Date of Aid month sets the cycle (One through Six), and CalWORKs and CalFresh redeterminations are aligned for combined cases.",
     "status": "verified",
     "pdf_sha256": "6ba62bebfb1e213cca762f81b3a0bbd102d778d731b0fd13b9739fe2204c155f",
     "updated": "2026-11-13"
@@ -324,7 +324,7 @@
     "updated": "2026-11-13"
   },
   "cf-059": {
-    "summary": "Authorizes expedited restoration of CalFresh cases discontinued due to failure to submit a complete SAR 7 report or recertification packet. If the household submits the required report, verifications, and interview within 30 calendar days following the effective date of discontinuance, the county must restore eligibility and issue prorated benefits without requiring a new initial application.",
+    "summary": "Under the restoration of eligibility waiver, a CalFresh household discontinued for not providing a timely or complete SAR 7, required verification or other information at the periodic report can have benefits restored in the month after discontinuance by submitting the missing items within 30 days, without a new application or interview. Benefits for the first month are prorated from the date all required information is provided. Good cause is evaluated first. Households that did not complete recertification, moved away and returned, or are disqualified (such as Intentional Program Violators) must reapply. Restored households keep their original certification and SAR cycle and are not evaluated for expedited services.",
     "status": "verified",
     "pdf_sha256": "94a35c67d3c382a98afbe7b31a19675fc6f288a0dd69cb2a39910190e8ce1532",
     "updated": "2026-11-13"
@@ -546,7 +546,7 @@
     "updated": "2026-11-13"
   },
   "cf-103": {
-    "summary": "Details the Able-Bodied Adults Without Dependents (ABAWD) rule, limiting food assistance to 3 months in a 36-month period unless the individual works or participates in qualifying work activities for at least 20 hours per week (80 hours monthly), and outlines geographic waiver criteria and individual exemption rules.",
+    "summary": "California's statewide waiver of the Able-Bodied Adults Without Dependents (ABAWD) time limit ended after H.R. 1 (signed July 4, 2025) limited waivers to areas with unemployment above 10 percent. San Diego is not a waived county, so the time limit applies to applications and recertifications on or after June 1, 2026. An ABAWD is age 18 through 64 and able-bodied without dependent children under 14, and may receive only three full months of benefits in a fixed 36-month period (the first runs January 1, 2026 to December 31, 2028) unless exempt or meeting the work requirement: 20 hours per week or 80 hours a month of work, volunteering, or school or job training. Covers screening, exemptions and countable months.",
     "status": "verified",
     "pdf_sha256": "f1c8ac0359776b1ec5886d6a3571d739a640490317cd868caf14e8d9e4e50090",
     "updated": "2026-11-13"
@@ -564,19 +564,19 @@
     "updated": "2026-11-13"
   },
   "cf-109": {
-    "summary": "Special Notice publishing the annual federal Cost-of-Living Adjustments (COLA) for Federal Fiscal Year 2021, detailing updated CalFresh Maximum Monthly Allotments, revised standard deductions across all household sizes, and updated Gross and Net Income eligibility thresholds.",
+    "summary": "SN 20-01 (effective 10/01/2020) gives the CalFresh Cost-of-Living Adjustments for Federal Fiscal Year 2021. Maximum allotments and income eligibility standards increased (see the Assistance Standards Chart); the Excess Shelter Deduction rose from $569 to $586; the standard deduction is $167 for 1 to 3 eligible members, $181 for 4, $212 for 5 and $243 for 6 or more; the homeless shelter allowance rose to $156, the SUA to $438 and the LUA to $139. The minimum allotment ($16), resource limits ($3,500 and $2,250) and TUA ($18) did not change. A mass update applied the changes, and timely notice is not required.",
     "status": "verified",
     "pdf_sha256": "a7e855e46fcd1424a8b3a0e4fc554588df04652cdc77afaf6b6a6add51450218",
     "updated": "2026-11-13"
   },
   "cf-111": {
-    "summary": "Special Notice detailing disaster income eligibility standards and allotment tables for Federal Fiscal Year 2021, establishing operational benefit tables and emergency issuance criteria in the event of an authorized Disaster CalFresh implementation in San Diego County.",
+    "summary": "SN 20-02 (effective 10/01/2020) gives the FFY 2021 Disaster CalFresh income eligibility standards and allotments that San Diego County uses if the Disaster CalFresh Program is implemented after a presidential disaster declaration. A table lists the disaster gross income limit and maximum allotment by household size, from $1,817 and $204 for one person to $4,506 and $1,224 for eight, plus $374 and $153 for each additional member. The Disaster CalFresh Desk Aid was updated with the new amounts.",
     "status": "verified",
     "pdf_sha256": "2622141a2ba2c644039527e54e5f832f4ad297f41ad52046402a5805f97183c0",
     "updated": "2026-11-13"
   },
   "cf-112": {
-    "summary": "Special Notice directing caseworkers on implementing California's statutory minimum wage increase ($14.00/hour), detailing procedures for recalculating earned income, budgeting disregards, and re-evaluating work registration and student employment hour thresholds.",
+    "summary": "SN 20-03 (also CalWORKs 20-05 and General Relief 20-02) announces that the California minimum wage rises from $13.00 to $14.00 per hour on January 1, 2021 ($13.00 for businesses with fewer than 26 employees). CalWORKs and CalFresh customers are expected to report the higher income starting with the January 2021 SAR 7 data month or February 2021 redetermination. The minimum wage is used for work registration, student eligibility, voluntary quit, CFAP and E&T work requirements and WINS eligibility, to set CalFresh E&T workfare hours and General Relief Work Project days (Attachment A), and in Employment Services work experience and community service hour calculations.",
     "status": "verified",
     "pdf_sha256": "550bb87fee673782ca3c9fa92bece6b29ad84239af192c98c6edfcbaac660858",
     "updated": "2026-11-13"

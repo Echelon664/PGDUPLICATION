@@ -18,19 +18,19 @@
     "updated": "2026-11-13"
   },
   "mc-291": {
-    "summary": "SN 26-02 directs mandatory annual client outreach across Medi-Cal, CalWORKs, CalFresh, and CAPI regarding the federal Earned Income Tax Credit (EITC), California Earned Income Tax Credit (CalEITC), and Young Child Tax Credit. Reaffirms that state and federal tax refunds and tax credits are fully exempt from Medi-Cal income and property evaluations.",
+    "summary": "SN 26-02 (effective March 1, 2026), issued jointly for Medi-Cal, CalWORKs, CalFresh, General Relief, CAPI and CMS, explains how Earned Income Tax Credit payments are treated. EITC, CalEITC, Foster Youth Tax Credit and Expanded Young Child Tax Credit payments are exempt as income for Medi-Cal, CalWORKs, CalFresh, CAPI and CMS, but count as unearned income for General Relief. For Medi-Cal they are also exempt as property in the month after receipt (CalWORKs and CalFresh exempt them for 12 months). Staff give customers EITC postcards at every contact and refer them to 2-1-1 for free tax filing help.",
     "status": "verified",
     "pdf_sha256": "4622894151a92608b0a5ead2c0f6d492cbcc44673d05423e0b29395551b95f4f",
     "updated": "2026-11-13"
   },
   "mc-292": {
-    "summary": "SN 25-07 details the 2.8% Social Security Administration (SSA) Cost-of-Living Adjustment (COLA) effective December 31, 2025 (payable January 1, 2026). Directs caseworkers on Title II benefit disregard budgeting under the Pickle Amendment, updated Medicare Part B premium standard deductions, and automated mass change processing in CalSAWS.",
+    "summary": "SN 25-07 (also CalWORKs 25-04 and CalFresh 25-03) covers the 2.8 percent Social Security COLA effective December 31, 2025 and payable January 1, 2026, and the increase in the Medicare Part B premium to $202.90 a month. For Non-MAGI Medi-Cal, the increase is not applied to the ABD FPL program and Medicare Savings Programs until April 1, 2026, but medically needy cases with Title II income have their share of cost adjusted in January 2026. The Part B premium is disregarded for the ABD FPL program. Gives step-by-step calculations of the new benefit amount; a CalSAWS mass update runs December 6, 2025.",
     "status": "verified",
     "pdf_sha256": "3ee683c6e684b13fa5c27aa479d4f54f2d56adf5c517f300f7ecf079b8d4bbc8",
     "updated": "2026-11-13"
   },
   "mc-293": {
-    "summary": "SN 25-06 establishes operational procedures for the 2025 Covered California Open Enrollment period (November 1, 2025 – January 31, 2026) for Advanced Premium Tax Credit (APTC) to MAGI Medi-Cal referrals. Outlines automated CalHEERS interface notices, manual referral review steps, and the application of Carry Forward Status (CFS) protection.",
+    "summary": "SN 25-06 (effective November 1, 2025) explains how to process Covered California renewal referrals during Open Enrollment (November 1, 2025 to January 31, 2026), when information reported at renewal shows possible Medi-Cal eligibility and CalHEERS sends an APTC to MAGI referral to the county. Customers are placed in a Carry Forward Status hold so they do not lose coverage while Medi-Cal is evaluated, and if eligible, Medi-Cal starts January 1, 2026. Explains how to review multiple referrals for different benefit months, tell renewal referrals from regular ones, and assign them to caseload banks.",
     "status": "verified",
     "pdf_sha256": "0a9373755614ddc6241c527bd78f4c8d6826c5a6193763f56d1b9cf804916428",
     "updated": "2026-11-13"
@@ -60,7 +60,7 @@
     "updated": "2026-11-13"
   },
   "mc-298": {
-    "summary": "SN 24-04 details annual Cost-of-Living Adjustments (COLA) for SSA Title II payments, SSI/SSP grant levels, and related Medicare Part B premium changes effective January 2025. Outlines caseworker procedures for automated MEDS mass updates, Pickle Amendment financial disregard budgeting, and maintenance need level calculations.",
+    "summary": "SN 24-04 (effective January 1, 2025) gives the 2.5 percent COLA for Social Security Title II benefits and updates the Medi-Cal Assistance Standards chart with 2025 values, including SSI/SSP levels and In-Kind Support and Maintenance for Pickle eligibility, the Pickle Disregard computation chart, the Federal Benefit Rate, SSI standard, community spouse and parental allocation amounts, Medicare premiums and SGA. The increase is not applied to the ABD FPL program and Medicare Savings Programs until April 2025, and MAGI groups are not affected until CalHEERS updates the FPLs. CalSAWS ran a mass update the weekend of December 7, 2024.",
     "status": "verified",
     "pdf_sha256": "7e859f62997aad1c220e24e2363f0538c882b3a9076f1160ff95f67a435d3cd2",
     "updated": "2026-11-13"
@@ -90,31 +90,31 @@
     "updated": "2026-11-13"
   },
   "mc-303": {
-    "summary": "SN 23-06 implements Assembly Bill 133 Phase II, completely eliminating the asset test for all Non-MAGI Medi-Cal programs effective January 1, 2024. Prohibits caseworkers from requesting, collecting, or evaluating property, bank accounts, vehicles, real estate, or life insurance when determining Medi-Cal eligibility or Share of Cost.",
+    "summary": "SN 23-06 (effective January 1, 2024) implements Phase 2 of Assembly Bill 133, eliminating the asset test for all Non-MAGI Medi-Cal programs, including Long Term Care and Medicare Savings Programs (Phase 1 raised the limit to $130,000 per individual on July 1, 2022). New and ongoing cases are evaluated without verifying assets; only income from income-producing assets is verified. Customers denied for excess property in December 2023 are re-evaluated, overpayments for excess property are no longer established, and the Community Spouse Resource Allowance no longer applies. Transfers before January 2024 are still reviewed for long-term care during a look-back period that shrinks each month, and property forms are made obsolete.",
     "status": "verified",
     "pdf_sha256": "b4aea479b974d73372bccb1c2ff8b6748e25692b9d531362feac53df52cd723b",
     "updated": "2026-11-13"
   },
   "mc-304": {
-    "summary": "SN 23-07 details the 3.2% Social Security Title II Cost-of-Living Adjustment (COLA) and SSI/SSP payment standard revisions effective January 1, 2024. Directs staff on automated system batch processing, Pickle Amendment disregards, and protecting beneficiaries from loss of coverage during annual federal benefit updates.",
+    "summary": "SN 23-07 (effective January 1, 2024) gives the 3.2 percent COLA for Social Security Title II benefits and updates the Medi-Cal Maintenance Need Assistance Standards charts with 2024 values, including SSI/SSP levels and In-Kind Support and Maintenance for Pickle eligibility, the Pickle disregard chart, the Federal Benefit Rate, Medicare premiums and SGA. The increase does not apply to the FPL programs (Aged and Disabled FPL, Blind FPL and Medicare Savings Programs) until April 2024, and MAGI cases are not affected until CalHEERS updates the FPLs. No negative action may be taken on continuous coverage cases until their unwind renewal. CalSAWS ran a mass update the weekend of December 2, 2023.",
     "status": "verified",
     "pdf_sha256": "f9ab655c3c4dbd93324ac49dc1ca7823ba58edafcb3a9a6204692142cbf3649f",
     "updated": "2026-11-13"
   },
   "mc-305": {
-    "summary": "SN 23-03 establishes the 2023 Statewide Average Private Pay Rate (APPR) of $11,576 per month for Nursing Facility Level of Care services. Outlines the calculation of penalty periods of ineligibility for institutionalized individuals who transferred non-exempt real or personal property for less than fair market value.",
+    "summary": "SN 23-03 sets the 2023 Statewide Average Private Pay Rate (APPR) for Nursing Facility Level of Care at $11,576, effective January 1, 2023. The APPR is used to calculate the period of ineligibility when non-exempt property is transferred for less than fair market value; the 2023 figure is not used to recalculate periods when the application or institutionalization date was before January 1, 2023. Each transfer is calculated manually on form MC 176 PI, and the period is entered in CalWIN to send restriction code 951 to MEDS.",
     "status": "verified",
     "pdf_sha256": "a12bfe84083fb44e93dc1b8ef62168ff4621ca32ae3c5bd9dd6061efc2ca8849",
     "updated": "2026-11-13"
   },
   "mc-306": {
-    "summary": "SN 23-02 publishes 2023 Medicare Catastrophic Coverage Act (MCCA) spousal impoverishment caps, including the Maximum Community Spouse Resource Allowance (CSRA) and Minimum Monthly Maintenance Needs Allowance (MMMNA). Outlines spousal income allocation rules and annual Federal Poverty Level updates.",
+    "summary": "SN 23-02 gives the 2023 spousal impoverishment amounts effective January 1, 2023, a Community Spouse Resource Allowance (CSRA) of $148,620 and a Minimum Monthly Maintenance Needs Allowance (MMMNA) of $3,716, and the 2023 Federal Poverty Level increases. The new FPLs apply retroactively to January 1, 2023 for MAGI and for Medicare Savings Program customers without Title II income, retroactively to March 1, 2023 for MSP customers with Title II income, and from April 1, 2023 for the ABD FPL programs and the 250% Working Disabled Program.",
     "status": "verified",
     "pdf_sha256": "5eb8da2cd7f422b2b0d678473b4ba08a8f0bfdf475c44604dab1e6c4378ca895",
     "updated": "2026-11-13"
   },
   "mc-307": {
-    "summary": "SN 23-01 outlines caseworker guidelines for the annual Earned Income Tax Credit outreach campaign, ensuring clients receive informational flyers regarding federal EITC, CalEITC, and free tax filing services. Reconfirms statutory exemptions protecting tax credits from Medi-Cal eligibility budgeting.",
+    "summary": "SN 23-01 (effective February 1, 2023), issued jointly for CalWORKs, CalFresh, Medi-Cal, General Relief, CAPI and CMS, gives the federal and California Earned Income Tax Credit (CalEITC) income limits and maximum credits for the year (Appendix A) and their impact on the programs. The federal EITC requires earned income, a valid Social Security Number and U.S. residence for more than half the year; the CalEITC is open to filers ages 18 to 65 without qualifying children, or any age with children, including ITIN holders. Lists free tax help such as 2-1-1, MyFreeTaxes and the IRS VITA program, and the distribution of EITC postcards.",
     "status": "verified",
     "pdf_sha256": "51f0deff1adef962ab91441a967f57ec187211541875ab5aa51870a50b6248db",
     "updated": "2026-11-13"
@@ -162,7 +162,7 @@
     "updated": "2026-11-13"
   },
   "mc-315": {
-    "summary": "SN 22-01 establishes 2022 Medicare Catastrophic Coverage Act (MCCA) spousal impoverishment caps and the Substantial Gainful Activity (SGA) threshold ($1,350/mo for non-blind, $2,260/mo for blind). Directs caseworkers on evaluating disability linkage for working individuals claiming Non-MAGI Medi-Cal.",
+    "summary": "SN 22-01 gives the amounts effective January 1, 2022: Substantial Gainful Activity (SGA) of $1,350 for non-blind and $2,260 for blind individuals, used to decide whether a working person claiming a disability has Non-MAGI linkage; a Community Spouse Resource Allowance (CSRA) of $137,400; and a Minimum Monthly Maintenance Needs Allowance (MMMNA) of $3,435 for spousal impoverishment. Staff use BEnDS 49130 until CalWIN is updated with the new CSRA and MMMNA.",
     "status": "verified",
     "pdf_sha256": "9508a83a63d1c99bce7440d695837906eb386094a449c1ea4d12e707ca65fbaf",
     "updated": "2026-11-13"
@@ -198,7 +198,7 @@
     "updated": "2026-11-13"
   },
   "mc-321": {
-    "summary": "SN 18-07 Addendum A provides detailed caseworker instructions and case lists for resolving obsolete and transitional pre-ACA aid codes remaining active in MEDS. Mandates timely redeterminations and case conversions to permanent MAGI or Non-MAGI aid codes to comply with state audit requirements.",
+    "summary": "SN 18-07 Addendum A (effective March 1, 2019) sends staff a new DHCS list of cases still active in MEDS on obsolete pre-ACA or transitional aid codes, to be processed by April 12, 2019. It covers New Adult Group (M1/M2) members who are 65 or older, 18 or younger, or entitled to Medicare; pre-ACA aid codes no longer in use; and people kept too long on transitional codes such as Craig v. Bonta, CHDP Gateway, Accelerated Enrollment, Transitional Medi-Cal and Continuing Eligibility for Children. Each person is evaluated and moved to a MAGI or Non-MAGI aid code or discontinued, following step-by-step procedures in CalWIN and MEDS, with weekly progress reports.",
     "status": "verified",
     "pdf_sha256": "74e349b6e44760ec78b9e5c9da22f2e55c6892863e7c3715980fcc538c930e8f",
     "updated": "2026-11-13"
@@ -228,7 +228,7 @@
     "updated": "2026-11-13"
   },
   "mc-326": {
-    "summary": "SN 13-09 Addendum E governs citizenship and immigration verification under ACA rules, unconditionally available income requirements, allowable federal tax deductions, American Indian/Alaska Native cost-sharing exemptions, and long-term care budgeting intersections with MAGI.",
+    "summary": "SN 13-09 Addendum E (April 18, 2014) clarifies Health Care Reform rules on citizenship and immigration status (all California residents may apply, and workers request a Bottom Line Override when CalHEERS gives the wrong benefit level), retroactive Medi-Cal, unconditionally available income, MAGI countable income and income deductions, property, exemptions from premium payments for American Indians and Alaska Natives, and long term care cases. Notes that the ACA created the Children's, Parent/Caretaker, Pregnant Women and New Adult groups and extended Former Foster Care Children coverage to age 26.",
     "status": "verified",
     "pdf_sha256": "2f3a32d4b85d7f8516114066c6bf757a0fd202309007a091447a1bbd2cbdc82c",
     "updated": "2026-11-13"
@@ -252,7 +252,7 @@
     "updated": "2026-11-13"
   },
   "mc-330": {
-    "summary": "Governs county jurisdiction and responsibility for Medi-Cal case administration based on customer physical residence and intent to reside. Details jurisdiction rules for individuals placed in out-of-home care, skilled nursing facilities, children under court jurisdiction, and inter-county courtesy applications.",
+    "summary": "Explains which county is responsible for a Medi-Cal case. When eligibility is based on a family, it is the county of the family's principal residence (or of physical presence if the residence is unclear); otherwise it is the county where the person lives and maintains residence. Staff also weigh factors such as the applicant's age, condition and travel distance. Covers out-of-home placements by public or private agencies, people in state hospitals or placed in long-term care after release, incompetent or incapacitated individuals, public assistance recipients, deceased persons, people absent from the state, courtesy applications, and persons under 21.",
     "status": "verified",
     "pdf_sha256": "1c185ba58b6413b12a96ed55498323637e1e59a5af79b5895bc25501c6123ea3",
     "updated": "2026-11-13"
@@ -264,7 +264,7 @@
     "updated": "2026-11-13"
   },
   "mc-332": {
-    "summary": "Establishes baseline conditions of eligibility for Medi-Cal, including California residency, state physical presence, identity verification, citizenship or immigration status, and categorical linkage. Details differences in requirements between MAGI health reform programs and traditional Non-MAGI pathways.",
+    "summary": "Lists each Medi-Cal condition of eligibility and the MPG section that covers it: California residence; citizenship or immigration status (which sets full-scope or restricted benefits, not eligibility); Non-MAGI property limits; a Social Security Number within 60 days for full-scope applicants; applying for unconditionally available income; linkage to cash assistance or to AFDC, ABD or Medically Indigent; institutional status; medical support referrals; applying for Medicare; other health coverage; veteran's benefits; and third party liability. Approval must not be delayed while the SSN, UAI, medical support, Medicare, other coverage, veteran or third-party information is pending if the customer is otherwise eligible.",
     "status": "verified",
     "pdf_sha256": "d211e22bb1b14a86e1c6395266b15a86205b9e7ab4f9efa3597ebfccd3b57876",
     "updated": "2026-11-13"
@@ -300,7 +300,7 @@
     "updated": "2026-11-13"
   },
   "mc-338": {
-    "summary": "Details mandatory verification and documentation procedures, emphasizing an 'electronic verification first' standard via CalHEERS, MEDS, EDD, and federal hubs. Directs caseworkers to issue Form CW 2200 providing 10 calendar days for paper proof only when electronic sources fail, with a mandatory county duty to assist.",
+    "summary": "Covers Medi-Cal verification rules (MPG 04.07.01 to 04.07.16). Staff must explain verification requirements, judge the customer's ability to get proof and help obtain it. Lists what must be verified before approval, such as income, deductions and disability (and property only for Non-MAGI applications dated before January 1, 2024), and what may be self-attested unless questionable, such as date of birth, family size, residency and pregnancy. Separate sections cover verifying income, deductions, property, California residency, identity, citizenship and immigration status, and pregnancy, electronic verifications, telephonic and electronic signatures, sworn statements when verification is not available, and requesting missing verification.",
     "status": "verified",
     "pdf_sha256": "c3e4e3eb279636c514e86e8014e178f2e09abc3373af7053b824eda70b84d661",
     "updated": "2026-11-13"
@@ -402,7 +402,7 @@
     "updated": "2026-11-13"
   },
   "mc-355": {
-    "summary": "Governs Medi-Cal linkage for the MAGI Parent/Caretaker Relative group and the Aid to Families with Dependent Children - Medically Needy (AFDC-MN) program. Establishes that linkage is created when a parent or caretaker relative lives with a child for whose care they have primary responsibility. Confirms that under ACA health reform rules, deprivation (parental absence, unemployment, or incapacity) is no longer required for MAGI parent/caretaker eligibility.",
+    "summary": "Since January 1, 2014, linkage to the MAGI Parent/Caretaker group and the AFDC-Medically Needy program is established when a parent or caretaker relative lives with the child they are primarily responsible for; deprivation is no longer required. A child is under 18 (or 18 and a full-time secondary student) for the Parent/Caretaker group, and a non-disabled person under 21 or a disabled person under 18 for AFDC-MN. An unborn child gives linkage in the last trimester for the Parent/Caretaker group and from conception for AFDC-MN. Also covers stepparents, Sneede v. Kizer and registered domestic partners.",
     "status": "verified",
     "pdf_sha256": "1356c7cb77a66b8d7b67f41d80276317e4b5f49cff55de2900a36766853a83a4",
     "updated": "2026-11-13"
@@ -450,7 +450,7 @@
     "updated": "2026-11-13"
   },
   "mc-363": {
-    "summary": "Details categorical full-scope Medi-Cal for children in Foster Care (Aid Codes 40, 42, 43), Kinship-Guardianship Assistance (Kin-GAP, Aid Code 4T), and the Adoption Assistance Program (AAP, Aid Code 03). Explains continuous coverage under the Affordable Care Act for Former Foster Youth up to age 26 (Aid Code 4M), exempting them from income and asset tests regardless of living arrangements.",
+    "summary": "Explains Medi-Cal for children adopted from foster care (Adoption Assistance Payments), children in foster care, children in Kinship Guardianship Assistance (aid code 4T for federally funded KinGAP), and Unaccompanied Refugee Minors, and lists the aid codes for each group. Each child is their own Medi-Cal Family Budget Unit, so the income and resources of parents and siblings are not considered. Former Foster Youth stay on Medi-Cal under aid code 4M until age 26, even if contact is lost.",
     "status": "verified",
     "pdf_sha256": "5ac3b90b0145d1efb11eea2f2be0a6e94826ce38a3fa2781f2305ac21266e287",
     "updated": "2026-11-13"
@@ -462,7 +462,7 @@
     "updated": "2026-11-13"
   },
   "mc-365": {
-    "summary": "Governs Medicare Savings Programs assisting low-income Medicare beneficiaries: Qualified Medicare Beneficiary (QMB, pays Part A/B premiums, deductibles, and coinsurance up to 100% FPL), Specified Low-Income Medicare Beneficiary (SLMB, pays Part B premiums 100-120% FPL), and Qualifying Individual (QI-1, pays Part B premiums 120-135% FPL). Outlines automated State Buy-In processing and SSA data matches.",
+    "summary": "Covers the Medicare Savings Programs created by the Medicare Catastrophic Coverage Act of 1988: Qualified Medicare Beneficiary (QMB, income up to 100% of the FPL), Specified Low-Income Medicare Beneficiary (SLMB), Qualifying Individual (QI) and Qualified Disabled and Working Individual (QDWI). Explains Medicare Part A and Part B benefits, enrollment periods and late-enrollment penalties, and how Medi-Cal Buy-In pays Medicare premiums, including reporting Buy-In problems to DHCS. The May 2025 revision removes property from eligibility, since resources are no longer considered, and notes that DHCS now handles QMB cases for SSI/SSP recipients.",
     "status": "verified",
     "pdf_sha256": "24ba07ed7d4885a898b6a4c327f61c3b4933b3b131b4e3f7be4d27038eb5a9d9",
     "updated": "2026-11-13"
@@ -486,7 +486,7 @@
     "updated": "2026-11-13"
   },
   "mc-369": {
-    "summary": "Governs the specialized Tuberculosis (TB) program under Section 13603 of OBRA '93 for TB-infected individuals ineligible for other Medi-Cal. Details clinical certification requirements on Form MC 274 TB, TB-specific income limits, and covered services limited to outpatient diagnostic testing, physician visits, prescription anti-tuberculosis therapy, and directly observed therapy (DOT).",
+    "summary": "Covers the Tuberculosis (TB) Program created by Section 13603 of OBRA '93 (effective October 1, 1994) for people infected with TB whose income and resources do not exceed the limit for a disabled individual and who are not covered by a federally mandated Medi-Cal program; they receive aid code 7H. Benefits are limited to TB-related services: physician and clinic services, outpatient hospital services, federally qualified health center services, case management, and services to monitor prescribed drugs. TB clinics and providers may help applicants complete the MC 274 TB application and other forms. Explains income and property rules for adults, couples and children, and redeterminations.",
     "status": "verified",
     "pdf_sha256": "95945f925d2b60c86f977b6e130013b1b219445e6a86dabc4811d152954b18c9",
     "updated": "2026-11-13"
@@ -522,7 +522,7 @@
     "updated": "2026-11-13"
   },
   "mc-375": {
-    "summary": "Defines institutional status across public institutions, skilled nursing facilities, intermediate care facilities, and correctional institutions. Establishes the legal boundaries governing Medicaid federal financial participation, distinguishing allowable inpatient care from ineligible general institutionalization.",
+    "summary": "Explains how institutional status affects Medi-Cal. Living in a public institution does not by itself disqualify an applicant: an eligible inmate is granted Medi-Cal and immediately suspended until release, and inpatient care off the grounds is covered through the Medi-Cal Inmate Eligibility Program (MCIEP). Lists public institutions (prisons, jails, detention centers, alternative custody programs) and facilities that are not, such as medical institutions, intermediate care facilities and community care facilities, and defines who is and is not an inmate. Residents of the CCTRP and MCRP reentry programs stop being inmates when they reach phase three. Also covers Penal Codes 1367, 1370 and 1372 on competency to stand trial.",
     "status": "verified",
     "pdf_sha256": "4b98fe4b5c5ef1539e2596969fff7a648a5fa2bdffbc485187fd2336657dd64c",
     "updated": "2026-11-13"
@@ -540,7 +540,7 @@
     "updated": "2026-11-13"
   },
   "mc-378": {
-    "summary": "Clarifies policy rules regarding fleeing felons and probation/parole violators. Confirms that under California Medi-Cal regulations, an outstanding felony warrant does NOT disqualify an individual from receiving Medi-Cal benefits, distinguishing Medi-Cal from CalFresh and CalWORKs cash aid rules.",
+    "summary": "Fleeing felons are not eligible for CalWORKs, SSI/SSP, CalFresh or General Relief, but are eligible for Medi-Cal if they meet all other requirements. A fleeing felon is someone fleeing to avoid prosecution, custody or confinement for a felony, or violating a condition of probation or parole. Medi-Cal continues until the person is booked, sentenced or incarcerated, when eligibility is suspended (see MPG 6.2.5). References to drug felons were removed because those programs no longer deny benefits to drug felons.",
     "status": "verified",
     "pdf_sha256": "319bee519c2c4ee5b469745f121aaa95af1fd7d2bba776570ec6cc7646a997e6",
     "updated": "2026-11-13"
@@ -564,7 +564,7 @@
     "updated": "2026-11-13"
   },
   "mc-382": {
-    "summary": "Governs the formation and composition of the Medi-Cal Family Budget Unit (MFBU) in Non-MAGI cases. Details legal financial responsibility between spouses and from parents to minor unmarried children under age 21, establishing mandatory inclusion and optional member rules.",
+    "summary": "Explains how to build the Medi-Cal Family Budget Unit (MFBU) for Non-MAGI cases. Responsibility for health care costs is limited to spouse for spouse and parent for child; a caretaker relative is not a responsible relative. Spouses are responsible for each other when they live together, with special rules when one or both are in long-term care or board and care, and a parent is responsible for a child living in the home and, in some cases, outside it. Also covers the status of each family member, who may be excluded from the MFBU, MFBU composition, and questions and answers on responsible relatives.",
     "status": "verified",
     "pdf_sha256": "d781e011e0181e3935c649941ff7bd0e378113002f37dd0511bbd3f7b5f944ba",
     "updated": "2026-11-13"
@@ -594,7 +594,7 @@
     "updated": "2026-11-13"
   },
   "mc-387": {
-    "summary": "Establishes full legal equality and recognition for same-sex marriages in California Medi-Cal determinations pursuant to federal Supreme Court rulings. Enforces identical marital budgeting, spousal income deeming, spousal impoverishment protections, and tax household rules for all married couples.",
+    "summary": "Same-sex spouses are evaluated as married in all Medi-Cal cases, regardless of where they married, and their sworn statement that they are legally married is accepted without further verification. For MAGI, the couple's tax filing status is used, and spouses living together are in the same tax household. For Non-MAGI, the same rules apply as for opposite-sex couples, including spousal impoverishment and long-term care. The changes are retroactive to June 26, 2013 for Non-MAGI and January 1, 2014 for MAGI. Gives the background of the 2008 California ruling, Proposition 8, United States v. Windsor and Obergefell.",
     "status": "verified",
     "pdf_sha256": "9dbe2a048022772c0c817b2b053212c2a9d2c3f4d1510ef091c108e62b6bbcd5",
     "updated": "2026-11-13"
@@ -618,7 +618,7 @@
     "updated": "2026-11-13"
   },
   "mc-391": {
-    "summary": "Establishes statutory protections for the applicant's principal residence. Confirms that the primary home and contiguous real property are completely exempt from property consideration regardless of value, provided the applicant, spouse, or dependent child resides there or the applicant states intent to return home.",
+    "summary": "Explains when a home or former home is exempt from Medi-Cal property as a principal residence. Only one property may be exempt, and it includes all appertaining land and buildings, and an entire multiple-unit dwelling if any part of it is the residence. It is exempt if the applicant or their family lives there, or in the other listed situations, such as when the applicant intends to return home; there are no utilization requirements. Defines dependent relatives and legal obstacles to selling a home, and covers liens, personal property used as a home, referrals to the Public Guardian, county reviews and state hearings, and forms and notices.",
     "status": "verified",
     "pdf_sha256": "2796523b08f9a1936ad71cc26e33f401cd5dea89b8c3a6d5cecd9dcaf2bda331",
     "updated": "2026-11-13"
@@ -654,7 +654,7 @@
     "updated": "2026-11-13"
   },
   "mc-397": {
-    "summary": "Details the treatment of bona fide loans under Medi-Cal financial eligibility rules. Distinguishes enforceable written loan agreements with unconditional obligations to repay from gifts or countable income, ensuring borrowed proceeds are not counted as taxable income.",
+    "summary": "Explains how loans are treated as property for Medi-Cal. Loans exempt as income, or counted as income because they need not be repaid, are not counted in the property reserve; loans that must be repaid count beginning with the month of receipt. Covers commercial loans (only the part that must be repaid is property), personal loans (which need an acknowledged obligation to repay plus a repayment plan or collateral), Home Equity Conversion plans such as reverse annuity mortgages, deferred payment loans, sale-leasebacks and time sales, and lines of credit, whose unused balance is not available property. Lists acceptable verification of loans.",
     "status": "verified",
     "pdf_sha256": "4c6ec76b96bf285cba9d5618bd6fb235c04dda2fa883e39be2b286957c13a1b6",
     "updated": "2026-11-13"
@@ -726,7 +726,7 @@
     "updated": "2026-11-13"
   },
   "mc-409": {
-    "summary": "Governs Maintenance Need Levels (MNL) in Non-MAGI Medically Needy Medi-Cal, representing the amount of net monthly income protected for basic food, clothing, and shelter needs. Details MNL sizing based on MFBU size and establishes the baseline for calculating a beneficiary's Share of Cost.",
+    "summary": "Maintenance need is the amount of income a person or family may keep for living expenses, set by State legislation (current amounts in Appendix 11-1A). Explains the maintenance need when a child lives apart from the parents, and for people in Long Term Care: an amount for therapeutic wages, home upkeep when the person is expected to return within six months, support of a community spouse and dependents, and support of a disabled relative. Also notes the no share of cost programs (133%, Income Disregard and Asset Waiver) and the Qualified Medicare Beneficiary program for income at or below 100% of the Federal Poverty Level.",
     "status": "verified",
     "pdf_sha256": "819e071f26f0f97d323bae5fe114c4af69b67b9833da6c64dcc0f6acf49272e5",
     "updated": "2026-11-13"
@@ -786,7 +786,7 @@
     "updated": "2026-11-13"
   },
   "mc-419": {
-    "summary": "Details county caseworker responsibilities regarding Third Party Liability (TPL) casualty and tort claims. Outlines mandatory notification to the DHCS Third Party Liability and Recovery Division when an injury is caused by a third party, motor vehicle accident, or workers' compensation claim.",
+    "summary": "Medi-Cal is the payer of last resort, so beneficiaries must repay Medi-Cal when they receive payment for care from a third party such as an insurance company or a lawsuit. Staff notify the Department of Health Care Services (DHCS) when the Statement of Facts or other information shows potential third party liability, the beneficiary receives Medi-Cal and intends to use it for injury-related care, and an insurance, workers' compensation, wrongful death, malpractice or similar claim has been filed. Notices are sent through the DHCS online Personal Injury or Workers' Compensation forms, and DHCS then verifies eligibility and notifies the beneficiary and insurers.",
     "status": "verified",
     "pdf_sha256": "fd98888729758b74deddc7e5b75ab03c8f03f4a29bb349fae49278d4922b5a6f",
     "updated": "2026-11-13"

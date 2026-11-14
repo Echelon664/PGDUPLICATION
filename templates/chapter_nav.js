@@ -3,7 +3,7 @@
     // documents, each with its date, summary and PDF buttons.
     // Inlined into index.html by generate_preview.py (edit this file, then
     // regenerate). Uses DOCS_BY_ID, activeProgram, escapeHtml, viewDocPdf,
-    // docOpenUrl, pdfViewerUrl, isSourceMissing, docDateLine and formatLongDate from the page.
+    // docOpenUrl, pdfViewerUrl, isSourceMissing, docDateLine, docDateHint and formatLongDate from the page.
     // ---------------------------------------------------------------------
     const CN_PROGRAMS = ['CalFresh', 'CalWORKs', 'Medi-Cal'];
     const CN_PROGRAM_TITLES = { 'CalFresh': 'CalFresh (SNAP)', 'CalWORKs': 'CalWORKs (TANF)', 'Medi-Cal': 'Medi-Cal (Medicaid)' };
@@ -89,8 +89,12 @@
     function cnIncludesText(chapter) {
       if (chapter.notices || chapter.docs.length < 2) return '';
       const names = [];
+      const chapterKey = cnSlug(chapter.name);
       chapter.docs.forEach(doc => {
-        const name = (doc.section_title || doc.title || '')
+        // CalWORKs sections repeat the chapter name as their section title; their own name is in the title.
+        let raw = doc.section_title || '';
+        if (!raw || cnSlug(raw) === chapterKey) raw = doc.title || '';
+        const name = raw
           .replace(/^[A-Z]\.\s+/, '')
           .replace(/^(Section\s+)?\d[\w.]*\s*[-–:]?\s*/i, '')
           .trim();
@@ -103,10 +107,12 @@
     }
 
     function cnShortDate(doc) {
-      const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(doc.pdf_date || '');
+      // Old Medi-Cal sections are dated to the month only ("2001-01" -> "Jan 2001").
+      const m = /^(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(doc.pdf_date || '');
       if (!m) return '';
-      return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3]))
-        .toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+      const parts = m[3] ? { year: 'numeric', month: 'short', day: 'numeric' } : { year: 'numeric', month: 'short' };
+      return new Date(Date.UTC(+m[1], +m[2] - 1, m[3] ? +m[3] : 1))
+        .toLocaleDateString('en-US', Object.assign(parts, { timeZone: 'UTC' }));
     }
 
     function cnEl(tag, className, text) {
@@ -153,7 +159,11 @@
       const posted = formatLongDate(doc.published_on || '');
       if (dateLine || posted) {
         const meta = cnEl('p', 'cn-meta');
-        if (dateLine) meta.append(cnEl('strong', '', dateLine));
+        if (dateLine) {
+          const strong = cnEl('strong', '', dateLine);
+          strong.title = docDateHint(doc);
+          meta.append(strong);
+        }
         if (dateLine && posted) meta.append(document.createTextNode(' · '));
         if (posted) meta.append(document.createTextNode('Posted on County site: ' + posted));
         text.append(meta);
