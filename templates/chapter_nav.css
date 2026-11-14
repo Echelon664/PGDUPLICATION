@@ -54,7 +54,7 @@
     .cn-meta strong { color: #065f46; font-weight: 700; }
     .cn-summary { margin: 0; font-size: 16px; line-height: 1.6; color: #1e293b; max-width: 75ch;
       border: 1.5px solid #000; border-radius: 8px; padding: 10px 14px; background: #fff; }
-    /* "View summary": a pill tinted in the program's color. Fills solid while its summary is open. */
+    /* "Hide summary" / "View summary": a pill tinted in the program's color, above each summary. */
     .cn-sum-toggle { --sum-c: #047857; --sum-tint: #ecfdf5; --sum-tint2: #d1fae5; --sum-line: #a7f3d0;
       display: inline-flex; align-items: center; gap: 8px; margin: 2px 0 0; padding: 4px 12px 4px 4px;
       border: 1px solid var(--sum-line); border-radius: 999px; background: var(--sum-tint); color: var(--sum-c);
@@ -70,10 +70,9 @@
       border-radius: 50%; background: var(--sum-c); color: #fff; transition: background .18s, color .18s; }
     .cn-sum-badge svg { width: 12px; height: 12px; }
     .cn-sum-chev { width: 14px; height: 14px; flex: none; transition: transform .25s ease; }
-    .cn-sum-toggle[aria-expanded="true"] { background: var(--sum-c); border-color: var(--sum-c); color: #fff; margin-bottom: 10px; }
-    .cn-sum-toggle[aria-expanded="true"] .cn-sum-badge { background: #fff; color: var(--sum-c); }
+    .cn-sum-toggle[aria-expanded="true"] { margin-bottom: 10px; }
     .cn-sum-toggle[aria-expanded="true"] .cn-sum-chev { transform: rotate(180deg); }
-    .cn-summary:not([hidden]) { animation: cn-sum-in .22s ease-out; }
+    .cn-summary.cn-sum-reveal { animation: cn-sum-in .22s ease-out; }
     @keyframes cn-sum-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
     .cn-summary[hidden] { display: none; }
     /* Desktop: the two buttons stack, same width. Phones lay them out in a row (media query below). */
@@ -103,4 +102,4 @@
       .cn-actions { flex-direction: row; flex-wrap: wrap; }
       .cn-year { padding-left: 12px; padding-right: 12px; }
     }
-    @media (prefers-reduced-motion: reduce) { .cn-chevron, .cn-sum-toggle, .cn-sum-chev { transition: none; } .cn-summary:not([hidden]) { animation: none; } }
+    @media (prefers-reduced-motion: reduce) { .cn-chevron, .cn-sum-toggle, .cn-sum-chev { transition: none; } .cn-summary.cn-sum-reveal { animation: none; } }

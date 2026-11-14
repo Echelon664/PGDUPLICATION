@@ -168,18 +168,17 @@
         if (posted) meta.append(document.createTextNode('Posted on County site: ' + posted));
         text.append(meta);
       }
-      // The summary starts hidden; a small button shows it, so long chapters stay easy to scan.
+      // The summary shows by default; a small button above it hides it (and brings it back).
       const summary = cnEl('p', 'cn-summary', doc.summary || 'County of San Diego Health and Human Services Agency policy document.');
       summary.id = 'cn-sum-' + doc.id;
-      summary.hidden = true;
       const toggle = cnEl('button', 'cn-sum-toggle');
       toggle.type = 'button';
-      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-expanded', 'true');
       toggle.setAttribute('aria-controls', summary.id);
       const badge = cnEl('span', 'cn-sum-badge');
       badge.setAttribute('aria-hidden', 'true');
       badge.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 7h14M5 12h14M5 17h9"/></svg>';
-      const label = cnEl('span', '', 'View summary');
+      const label = cnEl('span', '', 'Hide summary');
       const chev = cnEl('span', '');
       chev.setAttribute('aria-hidden', 'true');
       chev.innerHTML = '<svg class="cn-sum-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
@@ -188,6 +187,7 @@
       toggle.addEventListener('click', () => {
         const open = summary.hidden;
         summary.hidden = !open;
+        summary.classList.toggle('cn-sum-reveal', open);
         toggle.setAttribute('aria-expanded', String(open));
         label.textContent = open ? 'Hide summary' : 'View summary';
       });
