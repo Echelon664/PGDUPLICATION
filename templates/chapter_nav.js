@@ -176,10 +176,15 @@
       toggle.type = 'button';
       toggle.setAttribute('aria-expanded', 'false');
       toggle.setAttribute('aria-controls', summary.id);
-      const icon = cnEl('span', 'cn-sum-icon');
-      icon.setAttribute('aria-hidden', 'true');
+      const badge = cnEl('span', 'cn-sum-badge');
+      badge.setAttribute('aria-hidden', 'true');
+      badge.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 7h14M5 12h14M5 17h9"/></svg>';
       const label = cnEl('span', '', 'View summary');
-      toggle.append(icon, label);
+      const chev = cnEl('span', '');
+      chev.setAttribute('aria-hidden', 'true');
+      chev.innerHTML = '<svg class="cn-sum-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>';
+      chev.style.display = 'inline-flex';
+      toggle.append(badge, label, chev);
       toggle.addEventListener('click', () => {
         const open = summary.hidden;
         summary.hidden = !open;
