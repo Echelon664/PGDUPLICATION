@@ -54,7 +54,7 @@
     .cn-meta strong { color: #065f46; font-weight: 700; }
     .cn-summary { margin: 0; font-size: 16px; line-height: 1.6; color: #1e293b; max-width: 75ch;
       border: 1.5px solid #000; border-radius: 8px; padding: 10px 14px; background: #fff; }
-    /* "Hide summary" / "View summary": a pill tinted in the program's color, above each summary. */
+    /* "View summary" / "Hide summary": a pill tinted in the program's color, above each summary. */
     .cn-sum-toggle { --sum-c: #047857; --sum-tint: #ecfdf5; --sum-tint2: #d1fae5; --sum-line: #a7f3d0;
       display: inline-flex; align-items: center; gap: 8px; margin: 2px 0 0; padding: 4px 12px 4px 4px;
       border: 1px solid var(--sum-line); border-radius: 999px; background: var(--sum-tint); color: var(--sum-c);
