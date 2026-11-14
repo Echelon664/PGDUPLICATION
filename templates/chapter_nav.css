@@ -46,7 +46,7 @@
     .cn-detail-text { flex: 1; min-width: 0; }
     .cn-detail.is-target { background: #fefce8; }
     .cn-detail-solo { border-radius: 0 0 10px 10px; }
-    .cn-doc-title { margin: 0 0 6px; font-size: 17px; font-weight: 700; color: #0f172a; line-height: 1.35; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .cn-doc-title { margin: 0 0 6px; font-size: 19px; font-weight: 800; color: #0f172a; line-height: 1.35; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
     .cn-doc-link { padding: 0; border: 0; background: none; font: inherit; color: inherit; text-align: left; cursor: pointer;
       text-decoration: underline; text-decoration-color: #94a3b8; text-underline-offset: 3px; }
     .cn-doc-link:hover { color: #1d4ed8; text-decoration-color: currentColor; }

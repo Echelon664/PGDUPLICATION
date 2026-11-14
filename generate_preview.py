@@ -1405,7 +1405,7 @@ __THEME_CSS__
           <div class="flex flex-wrap items-center gap-2 mb-1.5">
             <span class="px-2 py-0.5 rounded text-xs font-bold border ${{progBadgeColor}}">${{(doc.programs || []).join(' / ')}}</span>
             ${{secBadgeHtml}}
-            <span class="font-bold text-slate-800 text-xs sm:text-sm">${{escapeHtml(doc.title)}}</span>
+            <span class="font-extrabold text-slate-900 text-base sm:text-lg leading-snug">${{escapeHtml(doc.title)}}</span>
             ${{missing ? '<span class="px-2 py-0.5 rounded text-xs font-bold border bg-amber-100 text-amber-900 border-amber-300">County document not bundled</span>' : ''}}
             ${{summaryStale(doc) ? '<span class="px-2 py-0.5 rounded text-xs font-bold border bg-amber-100 text-amber-900 border-amber-300" title="The County updated this PDF after the summary was written. Check the PDF.">Summary under review</span>' : ''}}
           </div>
