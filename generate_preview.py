@@ -341,9 +341,8 @@ html_template = f"""<!DOCTYPE html>
     .pdf-side[hidden] {{ display: none; }}
     .pdf-side-bar {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 10px 8px 14px;
       background: #0f172a; color: #f1f5f9; flex: none; }}
-    .pdf-side-badge {{ flex: none; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; padding: 2px 6px;
-      border-radius: 4px; background: rgba(59,130,246,.2); color: #93c5fd; border: 1px solid rgba(96,165,250,.3); }}
-    .pdf-side-title {{ margin: 0; font-size: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+    .pdf-side-count {{ font-size: 12.5px; font-weight: 600; color: #94a3b8; white-space: nowrap; }}
+    .pdf-side-count.is-full {{ color: #fbbf24; }}
     .pdf-side-actions {{ display: flex; align-items: center; gap: 6px; flex: none; }}
     .pdf-side-btn {{ display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px; border: 1px solid #334155; border-radius: 8px;
       background: #1e293b; color: #e2e8f0; font-size: 12.5px; font-weight: 600; cursor: pointer; text-decoration: none; transition: background .15s; }}
@@ -351,12 +350,44 @@ html_template = f"""<!DOCTYPE html>
     .pdf-side-btn:focus-visible {{ outline: 2px solid #60a5fa; outline-offset: 1px; }}
     .pdf-side-close {{ padding: 5px 7px; }}
     .pdf-side-body {{ position: relative; flex: 1; min-height: 0; }}
-    .pdf-side-body iframe {{ width: 100%; height: 100%; border: 0; display: block; }}
+    /* Background tabs stay laid out (just invisible) so their PDFs can load, keep their page and jump to search matches. */
+    .pdf-side-frames {{ position: relative; width: 100%; height: 100%; }}
+    .pdf-side-frames iframe {{ position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }}
+    .pdf-side-frames iframe[hidden] {{ display: block; visibility: hidden; pointer-events: none; }}
+    /* One tab per open PDF. */
+    .pdf-tabs {{ display: flex; gap: 3px; padding: 6px 6px 0; background: #1e293b; flex: none; overflow: hidden; }}
+    .pdf-tab {{ display: flex; align-items: center; min-width: 0; flex: 0 1 190px; border-radius: 7px 7px 0 0; background: #334155; color: #cbd5e1;
+      transition: background .15s, color .15s; }}
+    .pdf-tab:hover {{ background: #475569; color: #fff; }}
+    .pdf-tab.is-active {{ background: #e2e8f0; color: #0f172a; }}
+    .pdf-tab-main {{ flex: 1; min-width: 0; padding: 6px 4px 6px 10px; border: 0; background: none; color: inherit; font-size: 12.5px; font-weight: 600;
+      text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }}
+    .pdf-tab-x {{ flex: none; display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; margin-right: 4px;
+      border: 0; border-radius: 5px; background: none; color: inherit; opacity: .7; cursor: pointer; }}
+    .pdf-tab-x:hover {{ opacity: 1; background: rgba(148,163,184,.25); }}
+    .pdf-tab button:focus-visible {{ outline: 2px solid #60a5fa; outline-offset: -2px; }}
+    /* Shown when a 7th PDF is asked for. */
+    .pdf-side-warn {{ display: flex; align-items: flex-start; gap: 8px; margin: 8px 8px 0; padding: 8px 10px; flex: none;
+      border: 1px solid #fcd34d; border-radius: 8px; background: #fffbeb; color: #78350f; font-size: 13px; line-height: 1.45;
+      animation: pdf-warn-in .2s ease-out; }}
+    .pdf-side-warn[hidden] {{ display: none; }}
+    .pdf-side-warn strong {{ font-weight: 700; }}
+    .pdf-side-warn a {{ color: #92400e; text-decoration: underline; }}
+    .pdf-side-warn-icon {{ width: 16px; height: 16px; flex: none; margin-top: 2px; }}
+    .pdf-side-warn-x {{ flex: none; margin-left: auto; padding: 2px; border: 0; background: none; color: inherit; cursor: pointer; border-radius: 4px; }}
+    @keyframes pdf-warn-in {{ from {{ opacity: 0; transform: translateY(-4px); }} to {{ opacity: 1; transform: none; }} }}
+    html.dark .pdf-side-warn {{ background: rgba(251,191,36,.12); border-color: rgba(251,191,36,.45); color: #fde68a; }}
+    html.dark .pdf-side-warn a {{ color: #fcd34d; }}
+    /* The section whose View PDF was blocked by the tab limit gives a short shake. */
+    .is-denied {{ animation: pdf-denied .45s; }}
+    @keyframes pdf-denied {{ 0%, 100% {{ transform: none; }} 25% {{ transform: translateX(-4px); }} 75% {{ transform: translateX(4px); }} }}
+    @media (prefers-reduced-motion: reduce) {{ .is-denied, .pdf-side-warn {{ animation: none; }} }}
     .pdf-side-loading {{ position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
       background: #f1f5f9; color: #334155; font-size: 13px; font-weight: 600; z-index: 1; }}
     html.dark .pdf-side {{ border-color: #334155; background: #020617; }}
     html.dark .pdf-side-loading {{ background: #0f172a; color: #cbd5e1; }}
-    /* The section whose PDF is open in the panel. */
+    /* Sections open in a panel tab (light bar); the one being read (dark bar). */
+    .is-open-tab {{ box-shadow: inset 3px 0 0 #6ee7b7; }}
     .is-viewing {{ box-shadow: inset 4px 0 0 #047857; background: #ecfdf5 !important; }}
     html.dark .is-viewing {{ background: rgba(4,120,87,.18) !important; }}
     .prog-dot {{ width: 9px; height: 9px; border-radius: 50%; flex: none; }}
@@ -587,15 +618,10 @@ __THEME_CSS__
 
     </div>
 
-    <!-- Docked PDF panel: View PDF opens here on wide screens; "Pop out" moves it to the full-screen viewer. -->
+    <!-- Docked PDF panel: View PDF opens here on wide screens, one tab per PDF (up to 6); "Pop out" moves the current tab to the full-screen viewer. -->
     <aside id="pdfSidePanel" class="pdf-side" aria-label="PDF viewer" hidden>
       <div class="pdf-side-bar">
-        <div class="min-w-0">
-          <div class="flex items-center gap-2 min-w-0">
-            <span id="pdfSideProgram" class="pdf-side-badge">CalFresh</span>
-            <h3 id="pdfSideTitle" class="pdf-side-title">Policy document</h3>
-          </div>
-        </div>
+        <span id="pdfSideCount" class="pdf-side-count" aria-live="polite">1 of 6 PDFs open</span>
         <div class="pdf-side-actions">
           <button type="button" class="pdf-side-btn" onclick="popOutPdf()" title="Open in the full-screen viewer">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
@@ -605,17 +631,25 @@ __THEME_CSS__
             <span>New tab</span>
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
-          <button type="button" class="pdf-side-btn pdf-side-close" onclick="closeSidePanel()" title="Close the PDF (Esc)" aria-label="Close the PDF">
+          <button type="button" class="pdf-side-btn pdf-side-close" onclick="closeSidePanel()" title="Close all PDFs (Esc)" aria-label="Close all PDFs">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
           </button>
         </div>
       </div>
+      <div id="pdfSideTabs" class="pdf-tabs" role="tablist" aria-label="Open PDFs"></div>
+      <div id="pdfSideWarn" class="pdf-side-warn" role="status" hidden>
+        <svg class="pdf-side-warn-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+        <div class="min-w-0"><strong>You have 6 PDFs open, the most allowed.</strong> Close a tab to open <span id="pdfSideWarnName"></span>, or <a id="pdfSideWarnLink" href="#" target="_blank" rel="noopener" onclick="hideTabLimitWarning()">open it in a new browser tab</a>.</div>
+        <button type="button" class="pdf-side-warn-x" onclick="hideTabLimitWarning()" aria-label="Dismiss">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
       <div class="pdf-side-body">
-        <div id="pdfSideLoading" class="pdf-side-loading">
+        <div id="pdfSideLoading" class="pdf-side-loading hidden">
           <div class="w-8 h-8 border-3 border-blue-600 border-t-transparent rounded-full animate-spin mb-3"></div>
           <span>Loading PDF...</span>
         </div>
-        <iframe id="pdfSideFrame" src="about:blank" title="PDF viewer" onload="if (this.src !== 'about:blank') document.getElementById('pdfSideLoading').classList.add('hidden')"></iframe>
+        <div id="pdfSideFrames" class="pdf-side-frames"></div>
       </div>
     </aside>
     </div>
@@ -1378,6 +1412,11 @@ __THEME_CSS__
       modal.classList.remove('flex');
       if (iframe) iframe.src = 'about:blank';
       document.body.classList.remove('overflow-hidden');
+      if (pdfPoppedOut) {{
+        // Closed instead of docked: the popped-out tabs are done too.
+        pdfPoppedOut = false;
+        discardPdfTabs();
+      }}
     }}
 
     function setModalSummaryOpen(open) {{
@@ -1409,7 +1448,7 @@ __THEME_CSS__
       }}
       const pdfUrl = resolveLocalPdfUrl(doc.local_pdf_url, doc.id);
       const dateLine = docDateLine(doc);
-      currentPdf = {{
+      const p = {{
         docId: doc.id,
         pdfUrl,
         title: doc.title,
@@ -1417,14 +1456,23 @@ __THEME_CSS__
         summary: (dateLine ? dateLine + '. ' : '') + (doc.summary || doc.snippet || ''),
         section: doc.chapter || doc.id
       }};
-      if (canDockPdf()) openSidePanel(currentPdf);
-      else openPdfFromState(currentPdf);
+      if (canDockPdf()) {{
+        openSidePanel(p);
+      }} else {{
+        currentPdf = p;
+        openPdfFromState(p);
+      }}
     }}
 
-    // ---- Docked PDF panel ----
-    // Wide screens show the PDF beside the list; "Pop out" / "Dock to side" move it between the panel and the full-screen viewer.
-    let currentPdf = null;
+    // ---- Docked PDF panel with tabs ----
+    // Wide screens show PDFs beside the list, one tab each (up to MAX_PDF_TABS). "Pop out" shows the
+    // current tab in the full-screen viewer; "Dock to side" brings the panel back with all its tabs.
+    const MAX_PDF_TABS = 6;
     const DOCK_QUERY = window.matchMedia('(min-width: 1100px)');
+    let currentPdf = null;       // the PDF being read (active tab, or the full-screen viewer's)
+    let pdfTabs = [];            // [{{ p, frame, el }}] in tab order
+    let pdfPoppedOut = false;    // panel hidden while its current tab shows full screen
+    let pdfWarnTimer = null;
 
     function canDockPdf() {{
       return DOCK_QUERY.matches;
@@ -1439,30 +1487,39 @@ __THEME_CSS__
       if (p) openPdfModal(p.pdfUrl, p.title, p.program, p.summary, p.section);
     }}
 
+    function findPdfTab(docId) {{
+      return pdfTabs.find(t => t.p.docId === docId) || null;
+    }}
+
     function viewingRow(docId) {{
       if (!docId) return null;
       const btn = document.querySelector('[data-view-doc="' + CSS.escape(docId) + '"]');
       return btn ? btn.closest('.cn-detail, .doc-card') : null;
     }}
 
-    function markViewing(docId) {{
-      document.querySelectorAll('.is-viewing').forEach(el => el.classList.remove('is-viewing'));
+    // Mark every section that has a tab open, and the one being read, in the list or search results.
+    function markViewing() {{
+      document.querySelectorAll('.is-viewing, .is-open-tab').forEach(el => el.classList.remove('is-viewing', 'is-open-tab'));
       document.querySelectorAll('[data-view-doc][data-label]').forEach(btn => {{
         const label = btn.querySelector('span:last-of-type');
         if (label) label.textContent = btn.dataset.label;
         btn.removeAttribute('data-label');
         btn.removeAttribute('aria-current');
       }});
-      if (!docId) return;
-      document.querySelectorAll('[data-view-doc="' + CSS.escape(docId) + '"]').forEach(btn => {{
-        const row = btn.closest('.cn-detail, .doc-card');
-        if (row) row.classList.add('is-viewing');
-        const label = btn.querySelector('span:last-of-type');
-        if (label) {{
-          btn.dataset.label = label.textContent;
-          label.textContent = 'Viewing';
-        }}
-        btn.setAttribute('aria-current', 'true');
+      if (!isSidePanelOpen()) return;
+      const activeId = currentPdf && currentPdf.docId;
+      pdfTabs.forEach(t => {{
+        const active = t.p.docId === activeId;
+        document.querySelectorAll('[data-view-doc="' + CSS.escape(t.p.docId) + '"]').forEach(btn => {{
+          const row = btn.closest('.cn-detail, .doc-card');
+          if (row) row.classList.add(active ? 'is-viewing' : 'is-open-tab');
+          const label = btn.querySelector('span:last-of-type');
+          if (label) {{
+            btn.dataset.label = label.textContent;
+            label.textContent = active ? 'Viewing' : 'Switch to tab';
+          }}
+          if (active) btn.setAttribute('aria-current', 'true');
+        }});
       }});
     }}
 
@@ -1475,50 +1532,165 @@ __THEME_CSS__
       }}
     }}
 
-    function openSidePanel(p) {{
+    function showSidePanel(anchorDocId) {{
       const panel = document.getElementById('pdfSidePanel');
-      const frame = document.getElementById('pdfSideFrame');
-      if (!panel || !frame || !p) return;
-      const row = viewingRow(p.docId);
-      keepRowInPlace(row, () => {{
-        document.getElementById('pdfSideTitle').textContent = p.title || 'Policy document';
-        document.getElementById('pdfSideProgram').textContent = p.program || 'HHSA';
-        document.getElementById('pdfSideNewTab').href = pdfViewerUrl(p.pdfUrl);
-        const src = pdfViewerUrl(p.pdfUrl);
-        if (frame.getAttribute('src') !== src) {{
-          document.getElementById('pdfSideLoading').classList.remove('hidden');
-          frame.setAttribute('src', src);
-        }}
+      if (!panel || !panel.hidden) return;
+      keepRowInPlace(viewingRow(anchorDocId), () => {{
         panel.hidden = false;
         document.body.classList.add('pdf-docked');
-        markViewing(p.docId);
       }});
     }}
 
-    function closeSidePanel() {{
+    function hideSidePanel() {{
       const panel = document.getElementById('pdfSidePanel');
-      const frame = document.getElementById('pdfSideFrame');
       if (!panel || panel.hidden) return;
-      const row = viewingRow(currentPdf && currentPdf.docId);
-      keepRowInPlace(row, () => {{
+      keepRowInPlace(viewingRow(currentPdf && currentPdf.docId), () => {{
         panel.hidden = true;
         document.body.classList.remove('pdf-docked');
-        if (frame) frame.setAttribute('src', 'about:blank');
-        markViewing(null);
+        markViewing();
       }});
-      const btn = currentPdf && document.querySelector('[data-view-doc="' + CSS.escape(currentPdf.docId) + '"]');
+    }}
+
+    function renderPdfTabs() {{
+      const strip = document.getElementById('pdfSideTabs');
+      const count = document.getElementById('pdfSideCount');
+      if (!strip) return;
+      strip.replaceChildren();
+      pdfTabs.forEach(t => {{
+        const active = currentPdf && t.p.docId === currentPdf.docId;
+        const tab = document.createElement('div');
+        tab.className = 'pdf-tab' + (active ? ' is-active' : '');
+        const main = document.createElement('button');
+        main.type = 'button';
+        main.className = 'pdf-tab-main';
+        main.setAttribute('role', 'tab');
+        main.setAttribute('aria-selected', active ? 'true' : 'false');
+        main.title = t.p.title || '';
+        main.textContent = t.p.title || 'Policy document';
+        main.addEventListener('click', () => activatePdfTab(t.p.docId));
+        const x = document.createElement('button');
+        x.type = 'button';
+        x.className = 'pdf-tab-x';
+        x.setAttribute('aria-label', 'Close ' + (t.p.title || 'PDF'));
+        x.innerHTML = '<svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg>';
+        x.addEventListener('click', () => closePdfTab(t.p.docId));
+        tab.append(main, x);
+        strip.append(tab);
+      }});
+      if (count) {{
+        count.textContent = pdfTabs.length + ' of ' + MAX_PDF_TABS + ' PDFs open';
+        count.classList.toggle('is-full', pdfTabs.length >= MAX_PDF_TABS);
+      }}
+    }}
+
+    function activatePdfTab(docId) {{
+      const tab = findPdfTab(docId);
+      if (!tab) return;
+      currentPdf = tab.p;
+      pdfTabs.forEach(t => {{ t.frame.hidden = t !== tab; }});
+      document.getElementById('pdfSideNewTab').href = pdfViewerUrl(tab.p.pdfUrl);
+      document.getElementById('pdfSideLoading').classList.toggle('hidden', tab.frame.dataset.loaded === '1');
+      renderPdfTabs();
+      markViewing();
+    }}
+
+    // View PDF on a wide screen: switch to its tab, open a new tab, or warn at the limit.
+    function openSidePanel(p) {{
+      if (!p) return;
+      if (!findPdfTab(p.docId)) {{
+        if (pdfTabs.length >= MAX_PDF_TABS) {{
+          showTabLimitWarning(p);
+          return;
+        }}
+        const frame = document.createElement('iframe');
+        frame.title = p.title || 'PDF viewer';
+        frame.hidden = true;
+        frame.addEventListener('load', () => {{
+          frame.dataset.loaded = '1';
+          if (currentPdf && currentPdf.docId === p.docId) document.getElementById('pdfSideLoading').classList.add('hidden');
+        }});
+        frame.src = pdfViewerUrl(p.pdfUrl);
+        document.getElementById('pdfSideFrames').append(frame);
+        pdfTabs.push({{ p, frame }});
+      }}
+      hideTabLimitWarning();
+      showSidePanel(p.docId);
+      activatePdfTab(p.docId);
+    }}
+
+    function closePdfTab(docId) {{
+      const i = pdfTabs.findIndex(t => t.p.docId === docId);
+      if (i < 0) return;
+      if (pdfTabs.length === 1) {{
+        closeSidePanel();
+        return;
+      }}
+      const [gone] = pdfTabs.splice(i, 1);
+      gone.frame.remove();
+      hideTabLimitWarning();
+      if (currentPdf && currentPdf.docId === docId) {{
+        activatePdfTab(pdfTabs[Math.min(i, pdfTabs.length - 1)].p.docId);
+      }} else {{
+        renderPdfTabs();
+        markViewing();
+      }}
+    }}
+
+    function discardPdfTabs() {{
+      pdfTabs.forEach(t => t.frame.remove());
+      pdfTabs = [];
+      renderPdfTabs();
+    }}
+
+    // The panel's X (and Esc): close every tab and the panel.
+    function closeSidePanel() {{
+      if (!isSidePanelOpen()) return;
+      const focusId = currentPdf && currentPdf.docId;
+      hideSidePanel();
+      hideTabLimitWarning();
+      discardPdfTabs();
+      const btn = focusId && document.querySelector('[data-view-doc="' + CSS.escape(focusId) + '"]');
       if (btn) btn.focus({{ preventScroll: true }});
     }}
 
+    function showTabLimitWarning(p) {{
+      const warn = document.getElementById('pdfSideWarn');
+      document.getElementById('pdfSideWarnName').textContent = p.title || 'this PDF';
+      document.getElementById('pdfSideWarnLink').href = pdfViewerUrl(p.pdfUrl);
+      warn.hidden = true;
+      void warn.offsetWidth;   // restart the slide-in when it's already showing
+      warn.hidden = false;
+      const row = viewingRow(p.docId);
+      if (row) {{
+        row.classList.remove('is-denied');
+        void row.offsetWidth;
+        row.classList.add('is-denied');
+        setTimeout(() => row.classList.remove('is-denied'), 500);
+      }}
+      clearTimeout(pdfWarnTimer);
+      pdfWarnTimer = setTimeout(hideTabLimitWarning, 6000);
+    }}
+
+    function hideTabLimitWarning() {{
+      clearTimeout(pdfWarnTimer);
+      const warn = document.getElementById('pdfSideWarn');
+      if (warn) warn.hidden = true;
+    }}
+
+    // Pop out: show the current tab full screen and keep the other tabs for "Dock to side".
     function popOutPdf() {{
       const p = currentPdf;
-      closeSidePanel();
+      if (!p) return;
+      hideTabLimitWarning();
+      hideSidePanel();
+      pdfPoppedOut = pdfTabs.length > 0;
       openPdfFromState(p);
     }}
 
     function dockPdfToSide() {{
       const p = currentPdf;
       if (!p || !canDockPdf()) return;
+      pdfPoppedOut = false;
       closePdfModal();
       openSidePanel(p);
     }}
@@ -1531,7 +1703,7 @@ __THEME_CSS__
       btn.classList.toggle('flex', show);
     }}
 
-    // Too narrow for two columns: move an open panel into the full-screen viewer.
+    // Too narrow for two columns: move the current tab into the full-screen viewer.
     DOCK_QUERY.addEventListener('change', () => {{
       if (!canDockPdf() && isSidePanelOpen()) popOutPdf();
       updateDockButton();
@@ -1692,7 +1864,7 @@ __CHAPTER_NAV_JS__
       docs.forEach(doc => {{
         container.appendChild(createDocumentCard(doc, query));
       }});
-      if (isSidePanelOpen() && currentPdf) markViewing(currentPdf.docId);
+      if (isSidePanelOpen()) markViewing();
     }}
 
     function cancelSearchToDropdowns(opts = {{}}) {{

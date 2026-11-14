@@ -394,7 +394,7 @@
       } else {
         cnChapters.forEach(ch => { if (wasOpen.has(ch.id)) cnSetChapterOpen(ch, true); });
       }
-      if (isSidePanelOpen() && currentPdf) markViewing(currentPdf.docId);
+      if (isSidePanelOpen()) markViewing();
     }
 
     // Kept for older bookmarks and inline handlers.
