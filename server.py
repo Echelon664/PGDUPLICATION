@@ -168,10 +168,13 @@ class BenefitsHandler(BaseHTTPRequestHandler):
                 limit = 250
             q = q[:300]
 
-            results = get_index().search(q, program_filter=program, top_k=limit)
+            exact = query_params.get("exact", ["0"])[0] in ("1", "true")
+            found = get_index().search_with_correction(q, program_filter=program, top_k=limit, correct=not exact)
+            results = found["results"]
             self._set_headers(200)
             self.wfile.write(json.dumps({
                 "query": q,
+                "corrected_query": found["corrected_query"],
                 "program": program,
                 "total": len(results),
                 "results": results

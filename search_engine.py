@@ -25,7 +25,7 @@ DEFAULT_DB_PATH = os.path.join(BASE_DIR, "data", "search.db")
 FTS_WEIGHTS = (0.0, 20.0, 10.0, 4.0, 1.0)
 
 # Bump when the tables in _build change so existing search.db files rebuild.
-SCHEMA_VERSION = "3"
+SCHEMA_VERSION = "4"
 
 # Longest text returned for a section-code hit that has no matching chunk.
 CODE_HIT_TEXT_CHARS = 1500
@@ -149,6 +149,97 @@ def parse_query(query: str) -> Tuple[List[str], List[List[str]]]:
     return codes, groups
 
 
+# ---------------------------------------------------------------- spelling
+WORD_RE = re.compile(r"[A-Za-z]+")
+# Words this short are left alone: too many real words sit one letter apart.
+MIN_CORRECT_LEN = 4
+
+
+def _edit_distance(a: str, b: str, limit: int) -> int:
+    """Damerau-Levenshtein distance (adjacent swaps count as one edit).
+
+    Returns limit + 1 as soon as the distance must exceed limit.
+    """
+    if abs(len(a) - len(b)) > limit:
+        return limit + 1
+    prev_prev: List[int] = []
+    prev = list(range(len(b) + 1))
+    for i in range(1, len(a) + 1):
+        cur = [i] + [0] * len(b)
+        best = cur[0]
+        for j in range(1, len(b) + 1):
+            cost = 0 if a[i - 1] == b[j - 1] else 1
+            value = min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + cost)
+            if i > 1 and j > 1 and a[i - 1] == b[j - 2] and a[i - 2] == b[j - 1]:
+                value = min(value, prev_prev[j - 2] + 1)
+            cur[j] = value
+            best = min(best, value)
+        if best > limit:
+            return limit + 1
+        prev_prev, prev = prev, cur
+    return prev[-1]
+
+
+def _closest_word(word: str, vocab: Dict[str, int]) -> Optional[str]:
+    """The most frequent known word within 1 edit (2 for words of 6+ letters)."""
+    limit = 1 if len(word) <= 5 else 2
+    best: Optional[Tuple[int, int, str]] = None
+    for candidate, freq in vocab.items():
+        if freq < 2 or abs(len(candidate) - len(word)) > limit:
+            continue
+        distance = _edit_distance(word, candidate, limit)
+        if distance <= limit:
+            key = (distance, -freq, candidate)
+            if best is None or key < best:
+                best = key
+    return best[2] if best else None
+
+
+def correct_query(query: str, vocab: Dict[str, int]) -> Optional[str]:
+    """Return the query with misspelled words fixed, or None if nothing changed.
+
+    Only words that never appear in the documents are changed. Section codes,
+    numbers, quoted phrases, known abbreviations and short words are left alone.
+    """
+    if not query or not vocab:
+        return None
+    protected = [m.span() for m in CODE_RE.finditer(query)]
+    protected += [m.span() for m in re.finditer(r'"[^"]*"', query)]
+    pieces: List[str] = []
+    last = 0
+    changed = False
+    for m in WORD_RE.finditer(query):
+        word = m.group(0)
+        lower = word.lower()
+        start, end = m.span()
+        skip = (
+            len(lower) < MIN_CORRECT_LEN
+            or lower in vocab
+            or lower in STOPWORDS
+            or lower in TOKEN_ALIASES
+            or any(a <= start < b for a, b in protected)
+            or (end < len(query) and query[end].isdigit())
+            or (start > 0 and query[start - 1].isdigit())
+        )
+        if skip:
+            continue
+        fix = _closest_word(lower, vocab)
+        if not fix:
+            continue
+        if word.isupper():
+            fix = fix.upper()
+        elif word[0].isupper():
+            fix = fix.capitalize()
+        pieces.append(query[last:start])
+        pieces.append(fix)
+        last = end
+        changed = True
+    if not changed:
+        return None
+    pieces.append(query[last:])
+    return "".join(pieces)
+
+
 class SearchEngine:
     def __init__(self, docs_path: str = DEFAULT_DOCS_PATH, db_path: str = DEFAULT_DB_PATH):
         self.docs_path = docs_path
@@ -157,6 +248,8 @@ class SearchEngine:
         self._announced = False
         self._bm25: Optional[BM25Index] = None
         self._bm25_mtime = 0.0
+        self._vocab: Optional[Dict[str, int]] = None
+        self._vocab_mtime = 0.0
 
         if FTS5_AVAILABLE:
             os.makedirs(os.path.dirname(self.db_path) or ".", exist_ok=True)
@@ -250,6 +343,11 @@ class SearchEngine:
                     tokenize='porter unicode61'
                 );
 
+                CREATE TABLE vocab (
+                    word TEXT PRIMARY KEY,
+                    freq INTEGER
+                );
+
                 CREATE TABLE index_meta (
                     key TEXT PRIMARY KEY,
                     value TEXT
@@ -303,6 +401,16 @@ class SearchEngine:
                 chunk_rows,
             )
 
+            # Every word in the documents, for spelling correction.
+            counts: Dict[str, int] = {}
+            for doc in docs:
+                text = " ".join((doc.get("title", ""), doc.get("section_title", ""),
+                                 doc.get("summary", ""), doc.get("content", "")))
+                for word in WORD_RE.findall(text.lower()):
+                    if len(word) >= 3:
+                        counts[word] = counts.get(word, 0) + 1
+            con.executemany("INSERT INTO vocab(word, freq) VALUES (?, ?)", counts.items())
+
             con.executemany(
                 "INSERT INTO index_meta(key, value) VALUES (?, ?)",
                 [
@@ -346,7 +454,46 @@ class SearchEngine:
         self._announced = True
 
     # ----------------------------------------------------------------- search
+    def vocab(self) -> Dict[str, int]:
+        """Word frequencies from the index, reloaded when the index is rebuilt."""
+        built = os.path.getmtime(self.db_path) if os.path.exists(self.db_path) else 0
+        if self._vocab is None or self._vocab_mtime != built:
+            con = sqlite3.connect(self.db_path)
+            try:
+                self._vocab = dict(con.execute("SELECT word, freq FROM vocab"))
+            finally:
+                con.close()
+            self._vocab_mtime = built
+        return self._vocab
+
+    def search_with_correction(
+        self,
+        query: str,
+        program_filter: str = "All",
+        top_k: int = 250,
+        correct: bool = True,
+    ) -> Dict[str, Any]:
+        """Search, fixing misspelled words first.
+
+        Returns {"results": [...], "corrected_query": str or None}. When a word
+        is corrected, the results are for the corrected query.
+        """
+        corrected = None
+        if correct and FTS5_AVAILABLE and query and query.strip():
+            self.ensure_index()
+            corrected = correct_query(query, self.vocab())
+        results = self._search(corrected or query, program_filter, top_k)
+        return {"results": results, "corrected_query": corrected}
+
     def search(
+        self,
+        query: str,
+        program_filter: str = "All",
+        top_k: int = 250,
+    ) -> List[Dict[str, Any]]:
+        return self.search_with_correction(query, program_filter, top_k)["results"]
+
+    def _search(
         self,
         query: str,
         program_filter: str = "All",
