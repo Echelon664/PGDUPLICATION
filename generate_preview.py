@@ -403,9 +403,6 @@ __THEME_CSS__
 
         <!-- Program tabs (styled by switchProgram) -->
         <div class="prog-seg" role="group" aria-label="Program">
-          <button type="button" id="tab-All" onclick="switchProgram('All')" class="program-btn" title="All programs">
-            <span class="prog-dot" style="background:#64748b"></span><span>All</span><span class="prog-count">{all_count}</span>
-          </button>
           <button type="button" id="tab-CalFresh" onclick="switchProgram('CalFresh')" class="program-btn is-active" aria-pressed="true" title="CalFresh (SNAP)">
             <span class="prog-dot" style="background:#047857"></span><span>CalFresh</span><span class="prog-count">{cf_count}</span>
           </button>
@@ -414,6 +411,9 @@ __THEME_CSS__
           </button>
           <button type="button" id="tab-Medi-Cal" onclick="switchProgram('Medi-Cal')" class="program-btn" title="Medi-Cal (Medicaid)">
             <span class="prog-dot" style="background:#0f766e"></span><span>Medi-Cal</span><span class="prog-count">{mc_count}</span>
+          </button>
+          <button type="button" id="tab-All" onclick="switchProgram('All')" class="program-btn" title="All programs">
+            <span class="prog-dot" style="background:#64748b"></span><span>All</span><span class="prog-count">{all_count}</span>
           </button>
         </div>
 
